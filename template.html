@@ -178,7 +178,7 @@ const pos=p=>{const t=p.split('/')[0].toUpperCase();return /HP$|^P$/.test(t)?'P'
 const yr=y=>{const t=y.replace(/^R-/,'').replace('.','').toLowerCase();return t.startsWith('fr')?'Fr':t.startsWith('so')?'So':t.startsWith('jr')?'Jr':t.startsWith('sr')?'Sr':'Gr'};
 const st=h=>{if(!h||!h.includes(','))return 'Not listed';const s=(h.split(',').pop()||'').trim().replace(/\./g,'').toUpperCase();return s==='ON'?'Ontario':s};
 const cur=+TODAY.slice(0,4)+(+TODAY.slice(5,7)>=8?1:0);
-for(const s of SCHOOLS){s.flags=s.flags||[];if(s.season&&+s.season<cur&&s.roster)s.flags.unshift(`${cur} roster not posted yet. The seniors and grads shown played their final season in spring ${s.season}.`);s.players=s.roster.trim()?s.roster.trim().split('\n').map(l=>{const[n,p,y,h]=l.split('|');return{n:n||'',raw:p,p:pos(p),two:p.includes('/'),y:yr(y),red:/^R-/.test(y),h,st:st(h)}}):[]}
+for(const s of SCHOOLS){s.flags=(s.flags||[]).filter(f=>!/roster not posted yet\. Seniors/.test(f));if(s.season&&+s.season<cur&&s.roster)s.flags.unshift(`${cur} roster not posted yet. The seniors and grads shown played their final season in spring ${s.season}.`);s.players=s.roster.trim()?s.roster.trim().split('\n').map(l=>{const[n,p,y,h]=l.split('|');return{n:n||'',raw:p,p:pos(p),two:p.includes('/'),y:yr(y),red:/^R-/.test(y),h,st:st(h)}}):[]}
 const miles=(a,b,c,d)=>{const r=x=>x*Math.PI/180,R=3959,dl=r(c-a),dn=r(d-b),q=Math.sin(dl/2)**2+Math.cos(r(a))*Math.cos(r(c))*Math.sin(dn/2)**2;return 2*R*Math.asin(Math.sqrt(q))};
 const fmtD=d=>new Date(d+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
 
@@ -199,7 +199,7 @@ function geo(s){
 function look(id){
  const s=SCHOOLS.find(x=>x.id===id);if(!s)return;
  const n=s.players.length,lv=s.players.filter(p=>LEAVE.includes(p.y)).length,yg=s.players.filter(p=>['Fr','So'].includes(p.y)).length;
- const up=s.camps.filter(c=>(c.e||c.d)>=TODAY),past=s.camps.filter(c=>(c.e||c.d)<TODAY);
+ const cs=s.camps.filter(c=>c.d);const up=cs.filter(c=>(c.e||c.d)>=TODAY),past=cs.filter(c=>(c.e||c.d)<TODAY).sort((a,b)=>b.d.localeCompare(a.d));
  const camp=c=>{const d=new Date(c.d+'T12:00:00');return `<div class="camp ${(c.e||c.d)<TODAY?'past':''}"><time datetime="${c.d}">${d.toLocaleDateString('en-US',{month:'short'})}<span>${d.getDate()}</span>${d.getFullYear()}</time><div><b>${esc(c.n)}</b>${c.e?` <span class="meta">to ${fmtD(c.e)}</span>`:''}<br><span class="meta">${esc(c.info)}</span><br><a href="${c.u}">Registration page</a></div></div>`};
  const t=s.tuition;
  document.getElementById('p-look').innerHTML=`

@@ -16,74 +16,34 @@
   "roster": "Scott Newman|OF|Gr|Glenview, Ill.\nJustin MacCormack|LHP|So|Watertown, MA\nCharlie Meglio|INF|Sr|Jackson, NJ\nSam Mummau|INF|Sr|Palm Harbor, FL\nGavin Greger|OF|Gr|Bristol, CT\nRyan Jaros|INF|Sr|Cranford, NJ\nHenry Radbill|LHP|So|Marlton, NJ\nCole Marchetti|RHP|Fr|Columbus, NJ\nNolan Peel|RHP|Jr|Landenberg, PA\nYomar Carreras|INF|Jr|North Brunswick, NJ\nAyden Ellis|C|So|Branchville, NJ\nMickey Gilligan|C|Fr|Ringwood, NJ\nLuke Fithian|RHP|Jr|Stow Creek, NJ\nLogan Martel|C|Fr|Westfield, NJ\nAlbert Maldonado Jr.|RHP/INF|Fr|Elizabeth, NJ\nCarter Sweeney-Strawberry|OF|Fr|Olney, MD\nRyan Mealy|RHP|Jr|Wappingers Falls, NY\nAnthony Meady|RHP|Fr|Fort Myers, FL\nJaxon Appelman|RHP|Jr|Edison, NJ\nChris Sand|RHP|So|Lebanon, NJ\nTyler Garbooshian|INF|Fr|Brick, NJ\nGabriel Rivera|INF|So|Brooklyn, NY\nPepe Ortiz|LHP|Fr|Brooklyn, NY\nLuke Foulds|RHP|So|Thunder Bay, Ontario\nTyler Kane|RHP|Sr|Manalapan, NJ\nJacob Snyder|LHP/OF|Fr|Exeter, PA\nCharles Batista|RHP|Jr|Weehawken, NJ\nJack Sweeney|OF|Jr|Cream Ridge, NJ\nNick Shuhet|C|Sr|Mountain Lakes, NJ\nTristan Salinas|OF|Sr|Boone, N.C.\nRyan King|RHP|Sr|Bloomfield Hills, Mich.\nThomas Zwirecki|C|Gr|East Amherst, NY\nJoseph Gjelaj|RHP|Fr|Eastchester, NY\nMax Wearing|INF|Fr|Charlotte, N.C.\nFinn Haines|LHP|So|Northfield, NJ\nDylan Anderson|OF|Fr|Silver Spring, MD\nWarren Miller|LHP|Jr|Plattsburgh, NY\nLuke Billings|RHP|Jr|Robbinsville, NJ\nEnger Paulino|RHP|Sr|Worcester, MA\nPatrick Cassels|RHP|Fr|West Orange, NJ",
   "coaches": [
    [
+    "Steve Owens",
     "Head Coach",
-    "baseball@scarletknights.com",
     "baseball@scarletknights.com"
    ],
    [
-    "Associate Head Coach/Hitting/Recruiting",
-    "mgarza@scarletknights.com",
+    "Mike Garza",
+    "Associate Head Coach / Hitting / Recruiting",
     "mgarza@scarletknights.com"
    ],
    [
-    "Associate Head Coach/Pitching",
-    "rfecteau@scarletknights.com",
+    "Ryan Fecteau",
+    "Associate Head Coach / Pitching",
     "rfecteau@scarletknights.com"
    ],
    [
+    "Danny Bethea",
     "Assistant Coach",
-    "d.bethea@scarletknights.com",
     "d.bethea@scarletknights.com"
    ],
    [
-    "Director of Baseball Administration/Sport Operations Liaison",
-    "pbarron@scarletknights.com",
+    "Peter Barron",
+    "Director of Baseball Administration",
     "pbarron@scarletknights.com"
    ],
    [
+    "Jack Arend",
     "Director of Player Development",
-    "jarend@scarletknights.com",
     "jarend@scarletknights.com"
-   ],
-   [
-    "Senior Athletic Trainer (Baseball)",
-    "apallone@scarletknights.com",
-    "apallone@scarletknights.com"
-   ],
-   [
-    "Assistant Director, Communications (Baseball, Women's Soccer, Gymnastics, Football - tertiary)",
-    "gwhitmer@scarletknights.com",
-    "gwhitmer@scarletknights.com"
-   ],
-   [
-    "Head Student Manager/Bullpen Catcher",
-    "",
-    ""
-   ],
-   [
-    "Graduate Manager",
-    "",
-    ""
-   ],
-   [
-    "Student Manager",
-    "",
-    ""
-   ],
-   [
-    "Student Manager",
-    "",
-    ""
-   ],
-   [
-    "Student Manager",
-    "",
-    ""
-   ],
-   [
-    "Student Manager",
-    "",
-    ""
    ]
   ],
   "camps": [

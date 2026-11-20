@@ -186,22 +186,47 @@ def parse_sidearm_roster(html: str) -> tuple[str | None, list[str]]:
     return season, rows
 
 
+SUPPORT = re.compile(r"trainer|communications|manager|nutrition|psycholog|strength|academic|equipment|video|intern|sport administrator|student-athlete development", re.I)
+MONTHS = {m: i for i, m in enumerate(["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], 1)}
+
+
+def camp_date(title: str, posted: str) -> tuple[str, bool]:
+    """Best guess at the camp date from a headline like 'Prospect Clinic on Aug. 29th'.
+    Returns (iso date, True) when found in the title, else (posted date, False)."""
+    try:
+        p = dt.datetime.strptime(" ".join(posted.split()[1:4]), "%d %b %Y").date()
+    except Exception:
+        p = TODAY
+    m = re.search(r"\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s+(\d{1,2})", title, re.I)
+    if m:
+        d = dt.date(p.year, MONTHS[m.group(1).lower()], int(m.group(2)))
+        if d < p:
+            d = dt.date(p.year + 1, d.month, d.day)
+        return d.isoformat(), True
+    return p.isoformat(), False
+
+
 def parse_sidearm_coaches(html: str) -> list[list[str]]:
     soup = BeautifulSoup(html, "html.parser")
     out = []
     for table in soup.find_all("table"):
-        heads = [clean(th.get_text()).lower() for th in table.find_all("th")]
+        first = table.find("tr")
+        heads = [clean(c.get_text()).lower() for c in first.find_all(["th", "td"])] if first else []
         if "name" not in heads or "title" not in heads:
             continue
         ni, ti = heads.index("name"), heads.index("title")
         for tr in table.find_all("tr")[1:]:
-            tds = tr.find_all("td")
-            if len(tds) <= max(ni, ti):
-                # some sites put the photo in a <th>; fall back to the row text
+            cells = tr.find_all(["td", "th"])
+            if len(cells) != len(heads):
+                cells = tr.find_all("td")
+            if len(cells) <= max(ni, ti):
+                continue
+            name, title = clean(cells[ni].get_text(" ")), clean(cells[ti].get_text(" "))
+            if not name or "@" in name or SUPPORT.search(title):
                 continue
             mail = tr.select_one('a[href^="mailto:"]')
             email = mail["href"][7:].split("?")[0] if mail else ""
-            out.append([clean(tds[ni].get_text(" ")), clean(tds[ti].get_text(" ")), email])
+            out.append([name, title, email])
         if out:
             break
     return out
@@ -218,7 +243,9 @@ def parse_rss_camps(xml: str) -> list[dict]:
         if not re.search(r"\b(camp|clinic|showcase)s?\b", title, re.I):
             continue
         link, pub = tag(block, "link"), tag(block, "pubDate")
-        camps.append({"n": title, "posted": pub, "u": link, "info": "From the team's news feed; open the post for dates and cost"})
+        d, exact = camp_date(title, pub)
+        info = "Date from the headline; open the post for times and cost" if exact else "Posted on this date; open the post for the camp date"
+        camps.append({"n": title.title() if title.isupper() else title, "d": d, "u": link, "info": info})
     return camps
 
 
@@ -304,8 +331,6 @@ def scrape_school(row: dict, prev: dict | None, key: str | None) -> dict:
         if c.get("inS"):
             s["tuition"] = {"yr": "latest", "inS": c["inS"], "inNote": "tuition", "outS": c["outS"], "outNote": "tuition", "u": "https://collegescorecard.ed.gov/"}
 
-    if s.get("season") and int(s["season"]) < (TODAY.year + 1 if TODAY.month >= 8 else TODAY.year):
-        flags.append(f"{int(s['season']) + 1} roster not posted yet. Seniors and grads shown have played their final season.")
     s["flags"] = flags
     return s
 

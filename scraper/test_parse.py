@@ -1,6 +1,6 @@
 """Parser checks against small pages shaped like real Sidearm roster/coaches/RSS markup.
 Run: python -m pytest -q   (or python test_parse.py)"""
-from scrape import parse_sidearm_roster, parse_sidearm_coaches, parse_rss_camps, norm_year, split_hometown
+from scrape import camp_date, parse_sidearm_roster, parse_sidearm_coaches, parse_rss_camps, norm_year, split_hometown
 
 ROSTER_TABLE = """
 <h2>2026 Baseball Roster</h2>
@@ -19,8 +19,9 @@ ROSTER_CARDS = """
 
 COACHES = """
 <table><tr><th>Name</th><th>Title</th><th>Email Address</th></tr>
-<tr><td>Mike Dickson</td><td>Head Coach</td><td><a href="mailto:dickson@rowan.edu">dickson@rowan.edu</a></td></tr>
-<tr><td>Chris Rollins</td><td>Assistant Coach</td><td></td></tr></table>"""
+<tr><th scope="row">Mike Dickson</th><td>Head Coach</td><td><a href="mailto:dickson@rowan.edu">dickson@rowan.edu</a></td></tr>
+<tr><td>Chris Rollins</td><td>Assistant Coach</td><td></td></tr>
+<tr><td>Adam Pallone</td><td>Senior Athletic Trainer (Baseball)</td><td></td></tr></table>"""
 
 RSS = """<rss><channel>
 <item><title>Baseball to Host Prospect Camp</title><link>https://x.edu/news/1</link><pubDate>Tue, 17 Jun 2026</pubDate></item>
@@ -46,6 +47,8 @@ def test_coaches():
 def test_camps_only():
     camps = parse_rss_camps(RSS)
     assert len(camps) == 1 and camps[0]["u"] == "https://x.edu/news/1"
+    assert camp_date("BASEBALL TO HOLD PROSPECT CLINIC ON AUG. 29TH", "Mon, 20 Jul 2026 09:42:00 EST") == ("2026-08-29", True)
+    assert camp_date("Winter camp registration open", "Mon, 20 Jul 2026 09:42:00 EST") == ("2026-07-20", False)
 
 
 def test_normalisers():
