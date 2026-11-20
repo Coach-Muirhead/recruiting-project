@@ -48,6 +48,7 @@ UA = "RecruitingProjectBot/1.0 (+contact: coach email in README)"
 PAUSE = 3.0  # seconds between schools
 TODAY = dt.date.today()
 
+REPORT: dict[str, dict] = {}
 session = requests.Session()
 session.headers["User-Agent"] = UA
 _robots: dict[str, urllib.robotparser.RobotFileParser] = {}
@@ -304,6 +305,7 @@ def scrape_school(row: dict, prev: dict | None, key: str | None) -> dict:
     html = get(roster_url)
     if html:
         season, players = parse_roster(html)
+        REPORT[row["id"]] = {"roster": len(players), "season": season}
         if players:
             s["roster"], s["season"] = "\n".join(players), season or s.get("season", "")
         else:
@@ -311,18 +313,24 @@ def scrape_school(row: dict, prev: dict | None, key: str | None) -> dict:
             s["roster"] = s.get("roster", "") if prev else ""
     else:
         flags.append("The roster page couldn't be reached today; showing the last good copy.")
+        REPORT[row["id"]] = {"roster": "unreachable"}
 
     html = get(coach_url)
     if html:
         coaches = parse_sidearm_coaches(html)
+        REPORT.setdefault(row["id"], {})["coaches"] = len(coaches) or "none parsed, kept last copy"
         if coaches:
             s["coaches"] = coaches
 
     xml = get(rss_url)
     if xml:
-        found = parse_rss_camps(xml)
-        known = {c.get("u") for c in s.get("camps", [])}
-        s["camps"] = s.get("camps", []) + [c for c in found if c["u"] not in known]
+        found = {c["u"]: c for c in parse_rss_camps(xml)}
+        kept = [c for c in s.get("camps", []) if c.get("u") not in found]
+        s["camps"] = kept + list(found.values())
+    for c in s.get("camps", []):  # older entries saved before camp dates were parsed
+        if not c.get("d"):
+            c["d"], exact = camp_date(c.get("n", ""), c.pop("posted", ""))
+            c["n"] = c["n"].title() if c.get("n", "").isupper() else c.get("n", "")
 
     if key:
         c = scorecard(row, key)
@@ -358,6 +366,7 @@ def main() -> None:
 
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps(out, indent=1, ensure_ascii=False))
+    (OUT.parent / "report.json").write_text(json.dumps({"date": TODAY.isoformat(), "schools": REPORT}, indent=1))
     log(f"wrote {len(out)} schools to {OUT}")
 
 
