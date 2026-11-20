@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Recruiting Project</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: a coach's scouting binder: direct, useful, honest about gaps
+   IDEA: the fall depth-chart card a college staff fills in, position by class year
+   PICTURE: position x class grid, the years that are leaving chalked in clay
+   COLOUR/TYPE: infield-grass green band, chalk white, clay accent; Barlow Condensed + Barlow
+   LAYOUT: green band with search and tabs; profile cards beneath; stacks to one column on phones */
+:root{color-scheme:light dark;--bg:light-dark(#f6f7f3,#0c1411);--card:light-dark(#fff,#14201b);--ink:light-dark(#13211b,#e7eee9);--mute:light-dark(#566760,#9db0a6);--line:light-dark(#dde4de,#24342d);--grass:#0f3d2e;--grass2:#164f3c;--chalk:#f3f5ee;--clay:#c8643c;--clayt:light-dark(#9f4622,#f2986f);--soft:light-dark(#e8efe9,#1b2b24);--claysoft:light-dark(#f8e6dc,#3a241a)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Barlow,system-ui,sans-serif;overflow-x:clip}
+h1,h2,h3{font-family:"Barlow Condensed",Barlow,sans-serif;font-weight:700;line-height:1.05;margin:0;text-wrap:balance}
+h1{font-size:clamp(34px,5vw,50px)}h2{font-size:26px}h3{font-size:20px}
+a{color:var(--clayt)}
+.band{padding:clamp(24px,4vw,52px) max(5vw,16px)}
+.wrap{max-width:1240px;margin:0 auto}
+header{background:var(--grass);color:var(--chalk);padding-bottom:0}
+header p{color:#c9d8cf;max-width:62ch;margin:8px 0 18px}
+.tabs{display:flex;gap:4px;flex-wrap:wrap;margin-top:22px}
+.tabs button{font:600 16px Barlow;background:var(--grass2);color:#d9e6de;border:0;border-radius:10px 10px 0 0;padding:12px 18px;min-height:44px;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--bg);color:var(--ink)}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
+.search{position:relative;max-width:560px}
+.search input{width:100%;font:16px Barlow;padding:14px 16px;border-radius:10px;border:0;background:var(--chalk);color:#13211b;min-height:50px}
+.menu{position:absolute;z-index:5;left:0;right:0;top:56px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:10px;box-shadow:0 12px 30px #0004;overflow:hidden}
+.menu button{display:flex;justify-content:space-between;gap:12px;width:100%;text-align:left;font:16px Barlow;background:none;border:0;color:inherit;padding:12px 16px;min-height:44px;cursor:pointer}
+.menu button:hover,.menu button.on{background:var(--soft)}
+.menu small{color:var(--mute)}
+.panel[hidden]{display:none}
+.top{display:flex;flex-wrap:wrap;gap:10px 24px;align-items:baseline;justify-content:space-between;margin-bottom:18px}
+.meta{color:var(--mute);font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chip{background:var(--soft);border-radius:99px;padding:3px 12px;font-size:14px;font-weight:600;white-space:nowrap}
+.grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{margin-bottom:4px}.card .sub{color:var(--mute);font-size:14px;margin:0 0 14px}
+.span{grid-column:1/-1}
+.depth{width:100%;border-collapse:separate;border-spacing:4px;font-variant-numeric:tabular-nums}
+.depth th{font:600 14px Barlow;color:var(--mute);text-align:center;padding:4px}
+.depth th.rowh{text-align:left;color:var(--ink);font-size:16px;white-space:nowrap}
+.depth td{background:var(--soft);border-radius:8px;text-align:center;height:58px;vertical-align:middle;padding:4px}
+.depth td.leave{background:var(--claysoft)}
+.depth td b{display:block;font:700 22px "Barlow Condensed"}
+.dots{display:flex;flex-wrap:wrap;gap:3px;justify-content:center;margin-top:2px}
+.dots i{width:7px;height:7px;border-radius:50%;background:var(--grass2)}
+:root .depth td.leave .dots i{background:var(--clay)}
+.depth td.tot{background:none;font-weight:600}
+.depth thead th.leaveh{color:var(--clayt)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;color:var(--mute);font-size:14px;margin-top:10px}
+.legend span::before{content:"";display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:var(--soft)}
+.legend .l::before{background:var(--claysoft)}
+.bars{display:grid;gap:8px}
+.bar{display:grid;grid-template-columns:7.5em minmax(0,1fr) 2.5em;gap:10px;align-items:center;font-size:15px}
+.bar div{height:14px;border-radius:7px;background:var(--soft);overflow:hidden}.bar div span{display:block;height:100%;background:var(--grass2)}
+.bar:first-child div span{background:var(--clay)}
+.bar em{font-style:normal;text-align:right;font-variant-numeric:tabular-nums}
+.big{font:700 clamp(40px,6vw,56px)/1 "Barlow Condensed";color:var(--clayt)}
+table.list{width:100%;border-collapse:collapse;font-size:15px}
+.list th{text-align:left;font-weight:600;color:var(--mute);border-bottom:1px solid var(--line);padding:6px 8px}
+.list td{border-bottom:1px solid var(--line);padding:9px 8px;vertical-align:top}
+.copy{font:600 14px Barlow;background:var(--soft);color:var(--ink);border:0;border-radius:8px;padding:8px 12px;min-height:36px;cursor:pointer;white-space:nowrap}
+.none{color:var(--mute);font-style:italic}
+.flag{display:inline-block;font-size:13px;color:var(--clayt);font-weight:600}
+.money{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.money div{background:var(--soft);border-radius:10px;padding:12px}
+.money b{display:block;font:700 28px "Barlow Condensed";font-variant-numeric:tabular-nums}
+.camp{display:flex;gap:14px;padding:10px 0;border-bottom:1px solid var(--line)}
+.camp time{flex:none;width:4.2em;text-align:center;background:var(--soft);border-radius:8px;padding:6px 0;font:700 15px/1.1 "Barlow Condensed"}
+.camp time span{display:block;font-size:24px}
+.camp.past{opacity:.6}
+details summary{cursor:pointer;font-weight:600;min-height:44px;display:flex;align-items:center}
+.src{font-size:14px;color:var(--mute)}
+form.find{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+fieldset{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0;background:var(--card)}
+legend{font-weight:600;padding:0 6px}
+fieldset label{display:inline-flex;align-items:center;gap:8px;margin:4px 14px 4px 0;min-height:36px;white-space:nowrap}
+input[type=checkbox],input[type=radio]{width:20px;height:20px;accent-color:var(--clay)}
+select{font:16px Barlow;padding:10px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);width:100%;min-height:44px;margin-top:6px}
+.result{display:grid;grid-template-columns:5.5em minmax(0,1fr);gap:16px;align-items:start;padding:16px 0;border-bottom:1px solid var(--line)}
+.score{text-align:center;border-radius:12px;padding:10px 4px;background:var(--soft)}
+.score b{display:block;font:700 36px/1 "Barlow Condensed"}
+.score small{font-size:12px;font-weight:600}
+.score.hot{background:var(--clay);color:#fff}
+.result button.link{background:none;border:0;padding:0;font:700 21px "Barlow Condensed";color:var(--ink);cursor:pointer;text-align:left;text-decoration:underline;text-decoration-color:var(--clay);text-underline-offset:4px}
+.why{margin:4px 0 0;padding-left:18px;color:var(--mute);font-size:15px}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;padding:0;list-style:none}
+.steps li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.steps li b{display:block;font:700 19px "Barlow Condensed";margin-bottom:4px}
+.note{font-size:14px;color:var(--mute);margin-top:14px}
+@media(max-width:820px){.grid{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){.depth{border-spacing:2px}.depth td{height:50px}.depth td b{font-size:18px}.dots{display:none}.money{grid-template-columns:1fr}.list .hide{display:none}.result{grid-template-columns:4.5em minmax(0,1fr)}}
+@media(prefers-reduced-motion:no-preference){.panel:not([hidden]) .card{animation:up .35s ease both}@keyframes up{from{opacity:0;transform:translateY(6px)}}}
+</style>
+</head>
+<body>
+<header class="band">
+ <div class="wrap">
+  <h1>Recruiting Project</h1>
+  <p>Look up a college program to see who is graduating, where the roster comes from, who to email, and what it costs. Or enter your position and let it find programs with room for you.</p>
+  <div class="search">
+   <label for="q" style="position:absolute;left:-9999px">Search for a school</label>
+   <input id="q" type="search" autocomplete="off" placeholder="Type a school, e.g. Rowan, Ramapo, Seton Hall">
+   <div class="menu" id="menu" hidden></div>
+  </div>
+  <div class="tabs" role="tablist">
+   <button role="tab" id="t-look" aria-selected="true" data-p="look">School lookup</button>
+   <button role="tab" id="t-find" aria-selected="false" data-p="find">Find my matches</button>
+   <button role="tab" id="t-data" aria-selected="false" data-p="data">How the data stays current</button>
+  </div>
+ </div>
+</header>
+
+<main class="band"><div class="wrap">
+ <section class="panel" id="p-look" aria-labelledby="t-look"></section>
+
+ <section class="panel" id="p-find" aria-labelledby="t-find" hidden>
+  <div class="top"><h2>Programs with room at your position</h2><span class="meta" id="pilot"></span></div>
+  <form class="find" id="ff">
+   <fieldset><legend>Your position(s)</legend>
+    <label><input type="checkbox" name="pos" value="P" checked>Pitcher</label>
+    <label><input type="checkbox" name="pos" value="C">Catcher</label>
+    <label><input type="checkbox" name="pos" value="INF">Infield</label>
+    <label><input type="checkbox" name="pos" value="OF">Outfield</label>
+   </fieldset>
+   <fieldset><legend>Level</legend>
+    <label><input type="checkbox" name="div" value="D1" checked>Division I</label>
+    <label><input type="checkbox" name="div" value="D2" checked>Division II</label>
+    <label><input type="checkbox" name="div" value="D3" checked>Division III</label>
+    <label><input type="checkbox" name="div" value="NAIA" checked>NAIA</label>
+    <label><input type="checkbox" name="div" value="JUCO" checked>Junior college</label>
+   </fieldset>
+   <fieldset><legend>School size (undergrads)</legend>
+    <select name="size" aria-label="School size">
+     <option value="any">Any size</option><option value="s">Small, under 5,000</option><option value="m">Medium, 5,000 to 15,000</option><option value="l">Large, over 15,000</option>
+    </select>
+   </fieldset>
+   <fieldset><legend>Distance from home</legend>
+    <select name="home" aria-label="Home state"></select>
+    <select name="miles" aria-label="Maximum distance">
+     <option value="100">Within 100 miles</option><option value="250" selected>Within 250 miles</option><option value="500">Within 500 miles</option><option value="1000">Within 1,000 miles</option><option value="99999">Anywhere</option>
+    </select>
+   </fieldset>
+  </form>
+  <div id="results" style="margin-top:18px"></div>
+  <p class="note">Opportunity score, 0 to 100: half comes from how far the returning players at your position fall short of a typical roster share (pitchers 45%, infield 25%, outfield 17%, catchers 10%), about a third from the share of that position who are seniors or grad students, and the rest from how few freshmen and sophomores are behind them. It points you to programs worth a conversation; it is not a verdict on any coach's plans.</p>
+ </section>
+
+ <section class="panel" id="p-data" aria-labelledby="t-data" hidden>
+  <div class="top"><h2>How the data stays current</h2><span class="meta" id="lastcheck"></span></div>
+  <ol class="steps">
+   <li><b>Rosters and coaches, daily</b>Most athletic sites run on the same two platforms (Sidearm and PrestoSports), so one parser reads the roster and coaches pages of hundreds of programs. It records position, class, hometown and the staff emails each site publishes.</li>
+   <li><b>Camps, daily</b>Programs post camps on their own news pages and on registration sites such as Ryzer. The agent searches both and keeps only events at that school, then marks each one upcoming or past.</li>
+   <li><b>Tuition and enrollment, yearly</b>These change once a year, so they come from each school's cost page and the federal College Scorecard and IPEDS data rather than a daily scrape.</li>
+   <li><b>Change alerts</b>When a page disagrees with itself, such as a coach listed on the roster page but not the staff page, or a roster that has not been posted for the new season, the profile flags it instead of guessing.</li>
+  </ol>
+  <p class="note">Loaded so far: every NJAC baseball program plus Rutgers and Seton Hall. New Jersey City University is not listed because its baseball team ended with the Kean merger; Kean Jersey City sponsors only women's soccer and men's basketball. The scraper that refreshes these profiles runs from a scheduled job outside this page; each school shows the date it was last checked.</p>
+ </section>
+</div></main>
+
+<script type="application/json" id="data">[{"id": "rutgers", "name": "Rutgers University–New Brunswick", "short": "Rutgers", "city": "Piscataway, NJ", "lat": 40.52, "lon": -74.46, "div": "D1", "conf": "Big Ten", "enroll": 36344, "enrollNote": "undergraduates, fall 2022 (NJ Office of Higher Education)", "season": "2027", "rosterUrl": "https://scarletknights.com/sports/baseball/roster", "coachUrl": "https://scarletknights.com/sports/baseball/coaches", "roster": "Scott Newman|OF|Gr|Glenview, IL\nJustin MacCormack|LHP|So|Watertown, MA\nCharlie Meglio|INF|Sr|Jackson, NJ\nSam Mummau|INF|Sr|Palm Harbor, FL\nGavin Greger|OF|Gr|Bristol, CT\nRyan Jaros|INF|Sr|Cranford, NJ\nHenry Radbill|LHP|So|Marlton, NJ\nCole Marchetti|RHP|Fr|Columbus, NJ\nNolan Peel|RHP|Jr|Landenberg, PA\nYomar Carreras|INF|Jr|North Brunswick, NJ\nAyden Ellis|C|So|Branchville, NJ\nMickey Gilligan|C|Fr|Ringwood, NJ\nLuke Fithian|RHP|Jr|Stow Creek, NJ\nLogan Martel|C|Fr|Westfield, NJ\nAlbert Maldonado Jr.|RHP/INF|Fr|Elizabeth, NJ\nCarter Sweeney-Strawberry|OF|Fr|Olney, MD\nRyan Mealy|RHP|Jr|Wappingers Falls, NY\nAnthony Meady|RHP|Fr|Fort Myers, FL\nJaxon Appelman|RHP|Jr|Edison, NJ\nChris Sand|RHP|So|Lebanon, NJ\nTyler Garbooshian|INF|Fr|Brick, NJ\nGabriel Rivera|INF|So|Brooklyn, NY\nPepe Ortiz|LHP|Fr|Brooklyn, NY\nLuke Foulds|RHP|So|Thunder Bay, ON\nTyler Kane|RHP|R-Sr|Manalapan, NJ\nJacob Snyder|LHP/OF|Fr|Exeter, PA\nCharles Batista|RHP|Jr|Weehawken, NJ\nJack Sweeney|OF|Jr|Cream Ridge, NJ\nNick Shuhet|C|Sr|Mountain Lakes, NJ\nTristan Salinas|OF|Sr|Boone, NC\nRyan King|RHP|Sr|Bloomfield Hills, MI\nThomas Zwirecki|C|Gr|East Amherst, NY\nJoseph Gjelaj|RHP|Fr|Eastchester, NY\nMax Wearing|INF|Fr|Charlotte, NC\nFinn Haines|LHP|So|Northfield, NJ\nDylan Anderson|OF|Fr|Silver Spring, MD\nWarren Miller|LHP|Jr|Plattsburgh, NY\nLuke Billings|RHP|Jr|Robbinsville, NJ\nEnger Paulino|RHP|Sr|Worcester, MA\nPatrick Cassels|RHP|Fr|West Orange, NJ", "coaches": [["Steve Owens", "Head Coach", "baseball@scarletknights.com"], ["Mike Garza", "Associate Head Coach / Hitting / Recruiting", "mgarza@scarletknights.com"], ["Ryan Fecteau", "Associate Head Coach / Pitching", "rfecteau@scarletknights.com"], ["Danny Bethea", "Assistant Coach", "d.bethea@scarletknights.com"], ["Peter Barron", "Director of Baseball Administration", "pbarron@scarletknights.com"], ["Jack Arend", "Director of Player Development", "jarend@scarletknights.com"]], "camps": [{"n": "Friday Knight Lights skill session", "d": "2025-12-19", "info": "Ages 14+, 6–8 PM", "u": "https://register.ryzer.com/camp.cfm?id=312090"}, {"n": "Elite Winter Prospect Camp", "d": "2026-01-17", "info": "Grades 8+, $212 per session, sold out", "u": "https://register.ryzer.com/camp.cfm?id=317279"}], "tuition": {"yr": "2026–27", "inS": "$15,381", "inNote": "tuition, plus about $4,008 in mandatory fees", "outS": "$40,839", "outNote": "tuition and fees", "u": "https://www.rutgers.edu/news/rutgers-board-approves-62-billion-budget-focused-affordability-student-aid-cost-containment"}, "checked": "2026-11-20"}, {"id": "setonhall", "name": "Seton Hall University", "short": "Seton Hall", "city": "South Orange, NJ", "lat": 40.743, "lon": -74.246, "div": "D1", "conf": "Big East", "enroll": 6014, "enrollNote": "undergraduates, fall 2022 (NJ Office of Higher Education)", "season": "2026", "rosterUrl": "https://shupirates.com/sports/baseball/roster", "coachUrl": "https://shupirates.com/sports/baseball/coaches", "roster": "|INF|Jr|Wall, NJ\n|OF|Gr|Old Bridge, NJ\n|OF|So|Coatesville, PA\n|C|Jr|Barrington, NH\n|INF|Gr|Holtsville, NY\n|RHP|So|New Market, MD\n|UTIL|Jr|Roxbury, NJ\n|OF|So|Gladstone, NJ\n|RHP|Sr|Glenside, PA\n|C|R-Jr|Bourne, MA\n|INF|Jr|Jamison, PA\n|INF|Jr|Middletown, NJ\n|RHP|Sr|Selinsgrove, PA\n|LHP|So|Middletown, NJ\n|LHP|Sr|New Hyde Park, NY\n|C|Fr|Katonah, NY\n|INF|So|Ramsey, NJ\n|INF|Jr|West Deptford, NJ\n|RHP|So|Westfield, NJ\n|RHP|So|Staten Island, NY\n|RHP|Gr|Middletown, NJ\n|RHP|Gr|Monroe, NJ\n|INF|Jr|Cranford, NJ\n|LHP|Fr|Tewksbury, MA\n|C/OF|Fr|Nanuet, NY\n|INF|Jr|Tinton Falls, NJ\n|RHP|Jr|Basking Ridge, NJ\n|RHP|Fr|Waldwick, NJ\n|LHP|Gr|Union, NJ\n|RHP|So|Matawan, NJ\n|INF|Fr|Trumbull, CT\n|INF|Fr|West Hartford, CT\n|RHP|Fr|Nutley, NJ\n|RHP|Gr|Cedar Grove, NJ\n|RHP|Gr|Westfield, NJ\n|RHP|Fr|Montgomery, NJ\n|OF|Jr|Oakland, NJ", "flags": ["Player names could not be read from the roster page; positions, classes and hometowns were."], "coaches": [["Rob Sheppard", "Head Coach", "robert.sheppard@shu.edu"], ["Giuseppe Papaccio", "Associate Head Coach", "giuseppe.papaccio@shu.edu"], ["Jimmy Moran", "Pitching Coach", "james.moran1@shu.edu"], ["Ryan Ramiz", "Assistant Coach", "ryan.ramiz@shu.edu"], ["Kyle Ganning", "Director of Baseball Operations", ""]], "camps": [], "tuition": {"yr": "2026–27", "missing": "The 2026–27 undergraduate rate was not on a page the agent could read. Seton Hall reported a 3.25% rise in posted costs for the year; 2024–25 tuition was $50,380.", "u": "https://www.thesetonian.com/r/e10ac8e866"}, "checked": "2026-11-20"}, {"id": "kean", "name": "Kean University", "short": "Kean", "city": "Union, NJ", "lat": 40.68, "lon": -74.23, "div": "D3", "conf": "NJAC", "enroll": null, "enrollNote": "", "season": "2026", "rosterUrl": "https://keanathletics.com/sports/baseball/roster", "coachUrl": "https://keanathletics.com/coaches.aspx?rc=560", "roster": "", "flags": ["The agent couldn't open Kean's current roster page this run, so there's no depth chart yet. Kean finished 31-13-1 in 2026 and reached the NCAA regional finals.", "Undergraduate enrollment not loaded yet."], "coaches": [["Neil Ioviero", "Head Coach (30th season)", ""], ["Mike Matera", "Assistant Coach (camp contact)", "mimatera@kean.edu"], ["Sal Taormina", "Assistant Coach", ""]], "camps": [{"n": "Prospect Camp", "d": "2026-08-04", "info": "One day at Jim Hynes Stadium", "u": "https://keanathletics.com/news/2026/6/17/baseball-to-host-prospect-camp.aspx"}], "tuition": {"yr": "2026–27", "inS": "$16,370", "inNote": "tuition and fees", "outS": "$16,370", "outNote": "same rate: Kean dropped out-of-state tuition in fall 2026", "u": "https://www.kean.edu/news/kean-university-sets-tuition-rates-2026-2027"}, "checked": "2026-11-20"}, {"id": "montclair", "name": "Montclair State University", "short": "Montclair State", "city": "Montclair, NJ", "lat": 40.86, "lon": -74.2, "div": "D3", "conf": "NJAC", "enroll": 16093, "enrollNote": "undergraduates, fall 2021 (NJ Office of Higher Education)", "season": "2027", "rosterUrl": "https://montclairathletics.com/sports/baseball/roster", "coachUrl": "https://montclairathletics.com/staff-directory/dave-lorber/277", "roster": "", "flags": ["The 2027 roster page is up but has no players listed yet."], "coaches": [["Dave Lorber", "Head Coach", "lorberd@montclair.edu"], ["Casey Gaynor", "Pitching Coach / Recruiting Coordinator", ""], ["Joe Norton", "Assistant Coach", ""], ["Nic Menarchek", "Assistant Coach", ""], ["Norm Schoenig", "Special Assistant to the Head Coach", ""]], "camps": [{"n": "3-Day Team Camp", "d": "2026-07-17", "e": "2026-07-19", "info": "For 2027–2030 grad teams, $2,120 per team", "u": "https://register.ryzer.com/camp.cfm?id=313315"}, {"n": "Prospect Camp", "d": "2026-08-15", "info": "Ages 13–18, $159", "u": "https://register.ryzer.com/camp.cfm?id=313311"}], "tuition": {"yr": "2026–27", "inS": "$17,810", "inNote": "tuition and fees", "outS": "$29,146", "outNote": "tuition and fees", "u": "https://www.montclair.edu/node/7072"}, "checked": "2026-11-20"}, {"id": "ramapo", "name": "Ramapo College of New Jersey", "short": "Ramapo", "city": "Mahwah, NJ", "lat": 41.08, "lon": -74.17, "div": "D3", "conf": "NJAC", "enroll": 5150, "enrollNote": "full-time undergraduates (D3baseball.com)", "season": "2026", "rosterUrl": "https://ramapoathletics.com/sports/baseball/roster", "coachUrl": "https://ramapoathletics.com/sports/baseball/roster", "roster": "Dan Maglio|C|Gr|Park Ridge, NJ\nBrandon Tauber|OF|Jr|East Meadow, NY\nEric Knapp|INF|Sr|Somerville, NJ\nNick Pellegrino|1B|So|Bridgewater, NJ\nZach Novakowski|INF/OF|Jr|Hillsdale, NJ\nMichael Zalinkanskas|RHP|So|Cranford, NJ\nGreg Guzman|RHP|Fr|Elmwood Park, NJ\nWill Kennedy|LHP|Sr|Old Bridge, NJ\nMelvin Matias|INF|Sr|Montclair, NJ\nJames Kahn|RHP|So|Rockaway, NJ\nJoe Micchio|RHP|Fr|North Haledon, NJ\nJack Tallent|INF/OF|So|South Amboy, NJ\nJohn Hacker|LHP|Gr|Saddle Brook, NJ\nJames Zwolinski|INF|So|Oakland, NJ\nCasey Chiola|OF|Fr|Colonia, NJ\nJulian Schultz|OF|Fr|Livingston, NJ\nCody Quagliato|RHP|So|Bangor, PA\nBraden Schappert|INF|Fr|Sparta, NJ\nHunter Sabbers|LHP|Gr|Westwood, NJ\nNick Cavagnaro|C|Fr|Wayne, NJ\nChris Dandrea|C|Jr|Denville, NJ\nDustin McGuinness|SS|Fr|East Brunswick, NJ\nDerek Brand|INF|Fr|Kearny, NJ\nColin Kassai|OF|Fr|Alexandria Twp., NJ\nZach Barbash|C|So|Mount Laurel, NJ\nKevin Penny|LHP|Fr|South Plainfield, NJ\nThomas Schlaline|RHP|Fr|Sayreville, NJ\nWill Egner|INF|Gr|Livingston, NJ\nNick Atme|OF/RHP|Fr|Glen Rock, NJ\nJack Fournier|RHP|Fr|Hackettstown, NJ\nCarlo Lalomia Jr.|RHP|Jr|Paramus, NJ\nJulian Caruso|OF|So|Jackson, NJ\nEldon Lempa|RHP|Fr|Jersey City, NJ", "coaches": [["Ryan Rinsky", "Head Coach", "rrinsky@ramapo.edu"], ["Joe Maugeri", "Associate Head Coach", ""], ["Walker Larson", "Pitching Coach", ""], ["James Garthaffner", "Assistant Coach", ""], ["Vin Timpanelli", "Assistant Coach", ""], ["Jack Martin", "Assistant Coach", ""]], "camps": [{"n": "Prospect Clinic", "d": "2025-09-21", "info": "High school players", "u": "https://ramapoathletics.com/news/2025/8/6/baseball-baseball-to-hold-prospect-clinic-on-sept-21st.aspx"}], "tuition": {"yr": "2026–27", "inS": "$18,320", "inNote": "tuition and fees", "outS": "$30,258", "outNote": "tuition and fees", "u": "https://www.ramapo.edu/admissions/financial-aid-tuition/tuition-costs/"}, "checked": "2026-11-20"}, {"id": "rowan", "name": "Rowan University", "short": "Rowan", "city": "Glassboro, NJ", "lat": 39.71, "lon": -75.12, "div": "D3", "conf": "NJAC", "enroll": 7821, "enrollNote": "full-time undergraduates (D3baseball.com)", "season": "2026", "rosterUrl": "https://rowanathletics.com/sports/baseball/roster", "coachUrl": "https://rowanathletics.com/sports/baseball/coaches", "roster": "Mason Dorsey|OF|Sr|Hammonton, NJ\nMatt Kane|C|Fr|Wallingford, PA\nKevin Cole|IF|Sr|Williamsburg, VA\nJoey Bogart|IF|Jr|Sicklerville, NJ\nJack Norton|RHP|Sr|Woodbury, NJ\nMark Grubb|RHP|Jr|Mullica Hill, NJ\nMichael DeBlasio|LHP|So|Galloway, NJ\nDamon Suriani|OF|So|Swedesboro, NJ\nJayson Dougherty|LHP|Sr|Medford, NJ\nChristian Rice|RHP|Sr|Colts Neck, NJ\nJason Bennett|IF|Fr|Broomall, PA\nZach Coluccio|RHP|Gr|Erial, NJ\nPete Ramirez|OF|Fr|Springfield\nEvan McCoach|OF/1B|So|Philadelphia, PA\nAiden Ryder|IF|Fr|Cherry Hill, NJ\nTy Pridgen|RHP|So|York, PA\nEvan Brasberger|RHP|So|Sicklerville, NJ\nNick Struble|IF|Sr|Hackettstown, NJ\nBrett Chiesa|3B|Fr|Marlton, NJ\nIan Murphy|1B/OF|Sr|West Deptford, NJ\nCharlie Russell|RHP|Sr|Hackettstown, NJ\nShane Sax|LHP|Sr|Marlton, NJ\nJason Schooley|C/IF|Jr|Marlton, NJ\nJake Bartletta|OF|Fr|Hainesport, NJ\nLuke Bickunas|C/1B|Sr|South Plainfield, NJ\nDane Samartino|RHP|Jr|Haddonfield, NJ\nMiles DeVincentis|LHP|Fr|Collingswood, NJ\nAnthony Pallone|OF|Jr|Ramsey, NJ\nTravis Jerrell|LHP|Fr|Moorestown, NJ\nJake Andrey|RHP|Gr|Cherry Hill, NJ\nBrayden Davis|IF/RHP|Jr|Shamong, NJ\nNick Watson|IF/P|Fr|Washington Twp., NJ\nBen Schild|RHP|Jr|Lincroft, NJ\nCollin Denton|RHP|Fr|Tinton Falls, NJ\nAJ Maddalena|LHP|Fr|Hamilton, NJ\nAustin Kreyenhagen|RHP|So|Souderton, PA\nKyle Lamanteer|IF|Fr|Vineland, NJ", "coaches": [["Mike Dickson", "Head Coach", "dickson@rowan.edu"], ["Jordan Friedman", "Assistant Coach", "friedmanj1@rowan.edu"], ["Chris Rollins", "Assistant Coach", ""], ["Jason O'Neill", "Assistant Coach", ""], ["Gary Herron", "Assistant Coach", ""]], "camps": [], "tuition": {"yr": "2026–27", "missing": "Rowan's 2026–27 page lists out-of-state tuition at $12,163 per semester before fees; the full in-state total wasn't readable.", "u": "https://sites.rowan.edu/bursar/tuitionfees/2026-27-tuition-and-fees/2026-27-undergraduate-tuition-and-fees/"}, "checked": "2026-11-20"}, {"id": "rutgerscamden", "name": "Rutgers University–Camden", "short": "Rutgers-Camden", "city": "Camden, NJ", "lat": 39.95, "lon": -75.12, "div": "D3", "conf": "NJAC", "enroll": 5350, "enrollNote": "full-time undergraduates (D3baseball.com)", "season": "2026", "rosterUrl": "https://scarletraptors.com/sports/baseball/roster", "coachUrl": "https://scarletraptors.com/sports/baseball/coaches", "flags": ["The roster page lists Andrew Young, Jordan Fisher and Jordan Gray; the coaches page still lists Patrick Fisher."], "roster": "Gavin McCaffrey|OF|So|Clarksboro, NJ\nJacob Watson|OF|Jr|Elk Township, NJ\nMichael McGinley|1B/C|So|Franklinville, NJ\nEvan Carbone|C|Sr|Blackwood, NJ\nMatt McAleer|OF|Jr|Atco, NJ\nJustin Figueroa|1B|Sr|Mount Laurel, NJ\nChris Smith|INF|So|Washington Township, NJ\nMateo Santiago|OF|So|Silver Spring, MD\nD.J. Juliano|P|Jr|Woolwich Township, NJ\nWill Gural|INF|So|Philadelphia, PA\nGabe McCracken|P|Fr|Audubon, NJ\nNikolas Kalogiros|P|Fr|Audubon, NJ\nLuke Linden|P|So|Washington Township, NJ\nRicky Snyder|P|Sr|Mount Laurel, NJ\nMason Blizzard|C|So|Dennis Township, NJ\nChris Stinson|OF|Fr|Marlton, NJ\nNick Traynor|1B/DH|Fr|Sicklerville, NJ\nKillian McCaffrey|P|Fr|Clarksboro, NJ\nMatt Marino|C/2B|Fr|Fox Chase, PA\nJake Slusarski|OF|So|Williamstown, NJ\nAnthony Alessandroni|P/DH|Fr|Cinnaminson, NJ\nSean Glenn|P|Jr|Swedesboro, NJ\nAustin Dubler|MIF/OF|Jr|Erial, NJ\nCameron Stephenson|OF|Fr|East Greenwich, NJ\nDylan Oliver|P|Sr|Seaville, NJ\nDanny Torres Jr.|P/1B|So|Marlton, NJ\nAustin Wokock|P|Jr|Landisville, NJ\nJohn Ormsby IV|P|Jr|Haddonfield, NJ\nMichael Whitmore|P|Jr|Medford, NJ\nGavin Cunard|P|Jr|Mullica Hill, NJ\nRyan Joseph|OF|So|Winslow Township, NJ\nJulian Gonzalez|C|Jr|Woolwich Township, NJ\nRyan Harrison|P|So|Franklinville, NJ\nAnthony Angelo Jr.|P|Jr|Washington Township, NJ\nChristian Meitzler|OF|Fr|Philadelphia, PA\nAnthony Gogolski|P|Fr|Laurel Springs, NJ\nRichie Rosati|INF|Fr|Philadelphia, PA", "coaches": [["Ryan Kulik", "Head Coach", "rk924@camden.rutgers.edu"], ["Andrew Young", "Assistant Coach", ""], ["Jordan Fisher", "Assistant Coach", ""], ["Jordan Gray", "Pitching Coach", ""], ["Derek Smolinski", "Volunteer Assistant Coach", ""], ["R.J. McGettigan", "Volunteer Assistant Coach", ""], ["Dustin Bellis", "Volunteer Assistant Coach", ""], ["Gerry Slavin", "Volunteer Assistant Coach", ""]], "camps": [], "tuition": {"yr": "2026–27", "inS": "$15,381", "inNote": "tuition; mandatory fees vary by campus", "outS": "$36,831", "outNote": "tuition; fees vary by campus", "u": "https://admissions.rutgers.edu/sites/default/files/2026-08/2026%20Financing%20Your%20Education%20Brochure.pdf"}, "checked": "2026-11-20"}, {"id": "rutgersnewark", "name": "Rutgers University–Newark", "short": "Rutgers-Newark", "city": "Newark, NJ", "lat": 40.74, "lon": -74.17, "div": "D3", "conf": "NJAC", "enroll": 4425, "enrollNote": "full-time undergraduates (D3baseball.com, 2020)", "season": "2026", "rosterUrl": "https://rutgersnewarkathletics.com/sports/baseball/roster", "coachUrl": "https://rutgersnewarkathletics.com/sports/baseball/roster", "roster": "Anthony Calantoni|INF|FR|Edison, NJ\nChase Ostrowski|RHP|JR|San Jose, CA\nDamon Rivera|UTL|FR|Hasbrouck Heights, NJ\nOhm Desai|RHP|FR|Monroe, NJ\nReid Duffus|OF|SR|Wyckoff, NJ\nGilroy Prial|OF|SR|Caldwell, NJ\nMichael Weinbel|INF|SR|Middletown, NJ\nTrevor Wallace|INF|JR|Monroe Township, NJ\nMatthew Torreto|OF|SR|Burlington, NJ\nAnthony Patrickio|OF|FR|Sparta, NJ\nRyan Miqueli|LHP|SO|West New York, NJ\nJoey Santi|RHP|SO|Oceanport, NJ\nLuke Hagen|LHP|SO|Old Bridge, NJ\nDaniel Fedorco|OF|JR|Hazlet, NJ\nJohn Farrington|RHP|SR|Rochelle Park, NJ\nManny Nunez|OF|FR|Elizabeth, NJ\nMichael Scaglione|RHP|SR|West Caldwell, NJ\nMax Eder|RHP|FR|Greenbrook, NJ\nRJ Kernan|INF|JR|Middletown, NJ\nMichael Canavesio|RHP|JR|\nJonathan Jerez|INF|FR|Elmwood Park, NJ\nLukas Meyer|RHP|SO|East Brunswick, NJ\nMalik Little|INF|JR|Bergenfield, NJ\nAdrian Rojas|RHP|SO|Union, NJ\nDonovan Claiborne|LHP|JR|Iselin, NJ\nRichie Barton|RHP|JR|Monmouth Beach, NJ\nMichael Romano|RHP|SO|Little Falls, NJ\nJoshua Warming|UTL|SO|Glen Spey, NY\nNick Bentz|RHP|JR|Manville, NJ\nKevin Soltys|RHP|JR|Wayne, NJ\nJacob Giarrusso|INF|FR|Totowa, NJ\nLiam Riley|C|FR|Pompton Plains, NJ\nJack Pozo|LHP|FR|Bayonne, NJ\nAustin Schoell|RHP|FR|Atco, NJ\nBrendan Kelly|RHP|FR|Mahwah, NJ\nJoseph Bernardo|UTL|JR|Wayne, NJ\nJack Gamba-Ellis|C|FR|Neptune, NJ\nMatt Fasulo|RHP|FR|Colonia, NJ\nMatthew L'Hommedieu|RHP|SR|Dumont, NJ\nAidan Burgos|LHP|FR|Roseland, NJ\nDiego Vazquez|C|FR|Secaucus, NJ\nJustin Bonito|RHP|JR|Edison, NJ\nKJ Stockert|UTL|FR|Cedar Knolls, NJ", "coaches": [["Conor Kortmann", "Head Coach", ""], ["Brandon Lopez", "Assistant Coach / Recruiting Coordinator", ""], ["Gino Mirabella", "Assistant Coach", ""], ["Justin Kessler", "Assistant Coach", ""], ["Jon Rosado", "Assistant Coach", ""], ["Eric Recchia", "Student Assistant", ""]], "camps": [], "tuition": {"yr": "2026–27", "inS": "$15,381", "inNote": "tuition; mandatory fees vary by campus", "outS": "$36,831", "outNote": "tuition; fees vary by campus", "u": "https://admissions.rutgers.edu/sites/default/files/2026-08/2026%20Financing%20Your%20Education%20Brochure.pdf"}, "checked": "2026-11-20"}, {"id": "stockton", "name": "Stockton University", "short": "Stockton", "city": "Galloway, NJ", "lat": 39.49, "lon": -74.53, "div": "D3", "conf": "NJAC", "enroll": 7455, "enrollNote": "full-time undergraduates (NCSA)", "season": "2026", "rosterUrl": "https://stocktonathletics.com/sports/baseball/roster", "coachUrl": "https://stocktonathletics.com/sports/baseball/roster", "roster": "Dom Vizzoni|INF|So|Trenton, NJ\nDane Jorgensen|P|Fr|Jackson, NJ\nSal Cassano|INF|Fr|Matawan, NJ\nRJ Coleman|P/INF|So|Iselin, NJ\nDominic Mallamaci|P|Jr|Manalapan, NJ\nTim Welsh|P|So|Allentown, NJ\nLogan Madison|C|Fr|Warminster, PA\nJimmy Casey|OF|Fr|Newtown, PA\nMatthew McCloskey|OF|So|Cinnaminson, NJ\nRichie Bayachek|P|Fr|Newtown, PA\nJustin Prekop|P|So|Hamilton, NJ\nMichael Antonucci|OF|Sr|Manasquan, NJ\nJoe Gmitter|INF|Sr|Hamilton, NJ\nChris Galasso|INF|So|Matawan, NJ\nKevin DiPede|INF|So|Morganville, NJ\nConnor Dunn|UTL/P|Fr|Langhorne, PA\nChase Rubenstein|P|Fr|Absecon, NJ\nAnthony Ungaro|P|Fr|Cherry Hill, NJ\nThomas Bomberger|C|Fr|West Islip, NY\nEvan Palmer|C|So|Manchester, NJ\nRussell Halvorsen|OF|Jr|Howell, NJ\nColin McGeehan|OF/P|Fr|Matawan, NJ\nMatt Sabatella|P|Fr|Emerson, NJ\nConner Praschil|OF/P|Jr|Emerson, NJ\nHoyt Smith|INF|So|Little Silver, NJ\nStephen DeMilio|P|Sr|Tuckerton, NJ\nNick Kowalewski|P|Fr|Point Pleasant, NJ\nMax Kaplan|OF|Gr|Wall, NJ\nLiam Schwinn|INF|Fr|West Chester, PA\nYenuelle Rodriguez|UTL|Jr|Vineland, NJ\nNick Avagnano|INF|Sr|Paramus, NJ", "coaches": [["Rich Gawlak", "Head Baseball Coach", ""], ["Steve Bucci", "Assistant Coach", ""], ["Steve Struble", "Assistant Coach", ""], ["Phil Kahn", "Assistant Coach", ""], ["LT Struble", "Assistant Coach", ""], ["Sean Donovan", "Assistant Coach", ""], ["Brian Robertson", "Assistant Coach", ""]], "camps": [{"n": "Prospect Clinic", "d": "2026-01-25", "info": "Boys 15–18, $100, Stockton Sports Center", "u": "https://stocktonathletics.com/news/2017/1/5/stockton-baseball-clinic.aspx"}, {"n": "Prospect Clinic", "d": "2026-02-08", "info": "Boys 15–18, $100, Stockton Sports Center", "u": "https://stocktonathletics.com/news/2017/1/5/stockton-baseball-clinic.aspx"}], "tuition": {"yr": "2026–27", "inS": "$17,256", "inNote": "tuition and fees", "outS": "$26,016", "outNote": "tuition and fees", "u": "https://stockton.edu/admissions/costs.html"}, "checked": "2026-11-20"}, {"id": "tcnj", "name": "The College of New Jersey", "short": "TCNJ", "city": "Ewing, NJ", "lat": 40.27, "lon": -74.78, "div": "D3", "conf": "NJAC", "enroll": 7435, "enrollNote": "undergraduates, fall 2024 (TCNJ institutional profile)", "season": "2026", "rosterUrl": "https://tcnjathletics.com/sports/baseball/roster", "coachUrl": "https://tcnjathletics.com/sports/baseball/coaches", "roster": "Michael Contiliano|INF|So|Flemington, NJ\nJoe Tammaro|INF|Fr|River Vale, NJ\nNate McLaughlin|OF|Fr|Ramsey, NJ\nMike Doran|IF/P|Sr|Millstone Twp., NJ\nTim Search Jr.|IF|Jr|Collingswood, NJ\nJake Carter|OF|Jr|Cranford, NJ\nAntonio Destribats|OF|Fr|Ewing, NJ\nAndrew Pearson|INF/C|So|West Windsor, NJ\nJack O'Donnell|OF|Sr|Bayonne, NJ\nJoe Dwyer|C|Fr|Somers, NY\nChris Salmon|C|So|Ewing, NJ\nAlex Reiling|C|Fr|Hillsborough, NJ\nJesse Beer|P/IF|So|Thousand Oaks, CA\nBrian Lovaglio|C|Sr|Montville, NJ\nAlex Luchynskyi|RHP|Fr|Mahwah, NJ\nConnor Lamanteer|P|Jr|Vineland, NJ\nBraden Dromboski|IF|Jr|Columbus, NJ\nAustin Hanni|LHP|Fr|Cherry Hill, NJ\nJack Reardon|P|So|Milford, NJ\nEvan Frank|P|Jr|Wilmington, DE\nTyler Provost|OF|Sr|Robbinsville, NJ\nJalen Maharaja|P|Jr|Lyndhurst, NJ\nDeclan Leary|RHP|Fr|Lincroft, NJ\nJohn DiCostanzo|P|Sr|Haddon Heights, NJ\nAndrew Wilkinson|RHP|Fr|Medford, NJ\nBodhi Lettieri|RHP/C|So|Ocean Township, NJ\nJack O'Shea|P|Jr|Spring Lake Heights, NJ\nCole Haskew|RHP|Fr|Warwick, NY\nTyler McDevitt|P|So|Dennis Twp., NJ\nLC Smith|P|So|Cinnaminson, NJ\nRyan Greenstein|P|So|Skillman, NJ\nBrady Reardon|RHP|Fr|Holland, NJ\nTyler Perry|RHP|Fr|Wallington, NJ\nOwen Hoffman|P|So|Delran, NJ\nMax Sanchez|P|Fr|Allendale, NJ\nMike Gelewski|LHP|So|Glen Rock, NJ", "flags": ["Andrew Schmid appears on the roster page staff list but not the coaches page; Rob Maida appears on the coaches page only."], "coaches": [["Chris Collazo", "Head Coach", "collazoc@tcnj.edu"], ["Frank Collazo", "Assistant Coach / Pitching Coach", ""], ["Chris Reeder", "Assistant Coach", "reederc1@tcnj.edu"], ["Phil Stahl", "Assistant Coach", ""], ["Rob Maida", "Assistant Coach / Player Development", ""], ["Joe Godri", "Director of Program Development", "godrij@tcnj.edu"]], "camps": [], "tuition": {"yr": "2026–27", "inS": "$20,986", "inNote": "tuition and fees", "outS": "$27,520", "outNote": "tuition and fees", "u": "https://admissions.tcnj.edu/?p=23"}, "checked": "2026-11-20"}, {"id": "wpu", "name": "William Paterson University", "short": "William Paterson", "city": "Wayne, NJ", "lat": 40.95, "lon": -74.2, "div": "D3", "conf": "NJAC", "enroll": 5134, "enrollNote": "full-time undergraduates (NCSA)", "season": "2026", "rosterUrl": "https://www.wpupioneers.com/sports/baseball/roster", "coachUrl": "https://www.wpupioneers.com/sports/baseball/roster", "roster": "Jordan Brown|INF|Sr|Piscataway, NJ\nJulian Pinto|INF|Sr|Bergenfield, NJ\nJulian Salinas|RHP|Sr|Teaneck, NJ\nKevin Reiner|RHP|Jr|Maywood, NJ\nStephen Kubis|OF|Jr|Wayne, NJ\nDylan Santos|INF|Sr|Nutley, NJ\nSteven Peralta|OF/INF|Sr|Paterson, NJ\nLeo Spitaleri|C|So|Hackensack, NJ\nChris Quartuccio|RHP|Sr|Glen Gardner, NJ\nRob Nathan|RHP|Jr|Lords Valley, PA\nSean Lauterhahn|OF|So|Oradell, NJ\nAngel Colon|INF|Sr|Hawthorne, NJ\nJoe Sutera|RHP|Fr|Dumont, NJ\nChristian Peluso|C|Sr|Bridgewater, NJ\nAvery Whitney|OF/INF|Jr|Hillsborough, NJ\nJacob Herrera|RHP|Jr|Bayonne, NJ\nJesse Bash|OF|So|Tenafly, NJ\nEvan Soto|RHP|Fr|Nutley, NJ\nJT Pugliese|RHP|Fr|Wayne, NJ\nThomas Jova|OF|Sr|Gillette, NJ\nMike Peia|C|Jr|Mount Arlington, NJ\nSean Bauer|INF|Fr|Butler, NJ\nCorey Mulholland|RHP|So|Totowa, NJ\nPete Hammerle|LHP|Fr|Frankford, NJ\nJayden Villalta|RHP|So|Pompton Lakes, NJ\nAlex Gomez|C|So|Rutherford, NJ\nMatt Caruso|OF|Fr|North Haledon, NJ\nChristian Pelaez|INF|Fr|Hackensack, NJ\nJose Marte|RHP|Jr|Bogota, NJ\nNick Durso|RHP|Sr|Morris Plains, NJ\nJT DeRiso|LHP|Fr|River Vale, NJ\nEliot Germanson|C|Sr|New York, NY\nDaury Rodriguez|RHP|So|Weehawken, NJ\nTy Kobylakiewicz|1B|Jr|Woodbridge, NJ\nDevin Daproza|INF|Jr|Englewood, NJ", "coaches": [["Mike Lauterhahn", "Head Baseball Coach", ""], ["Mike Santana", "Associate Head Coach", ""], ["Tom Gaccione", "Assistant Coach", ""], ["Colin Lombardo", "Assistant Coach", ""]], "camps": [], "tuition": {"yr": "2026–27", "inS": "$16,758", "inNote": "tuition and fees", "outS": "", "outNote": "", "missing2": "Out-of-state rate not found", "u": "https://ww2.wpunj.edu/studentaccounts/tuition-and-fees"}, "checked": "2026-11-20"}]</script>
+<script>
+{
+const SCHOOLS=JSON.parse(document.getElementById('data').textContent);
+const TODAY=SCHOOLS.map(s=>s.checked).sort().pop();
+const POS=[['P','Pitchers'],['C','Catchers'],['INF','Infield'],['OF','Outfield'],['UTIL','Utility']];
+const YRS=['Fr','So','Jr','Sr','Gr'],LEAVE=['Sr','Gr'];
+const SHARE={P:.45,C:.10,INF:.25,OF:.17};
+const ST={NJ:[40.19,-74.67],NY:[42.9,-75.5],PA:[40.9,-77.8],CT:[41.6,-72.7],MA:[42.3,-71.8],RI:[41.7,-71.5],NH:[43.7,-71.6],VT:[44.0,-72.7],ME:[45.3,-69.2],DE:[39.0,-75.5],MD:[39.0,-76.8],VA:[37.5,-78.8],WV:[38.6,-80.6],NC:[35.5,-79.4],SC:[33.9,-80.9],GA:[32.7,-83.4],FL:[28.6,-82.4],OH:[40.3,-82.8],MI:[44.3,-85.4],IN:[39.9,-86.3],IL:[40.0,-89.2],TN:[35.9,-86.4],KY:[37.5,-85.3],TX:[31.5,-99.3],CA:[37.2,-119.5]};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const pos=p=>{const t=p.split('/')[0].toUpperCase();return /HP$|^P$/.test(t)?'P':t==='C'?'C':t==='OF'?'OF':/^UT/.test(t)?'UTIL':'INF'};
+const yr=y=>{const t=y.replace(/^R-/,'').replace('.','').toLowerCase();return t.startsWith('fr')?'Fr':t.startsWith('so')?'So':t.startsWith('jr')?'Jr':t.startsWith('sr')?'Sr':'Gr'};
+const st=h=>{if(!h||!h.includes(','))return 'Not listed';const s=(h.split(',').pop()||'').trim().replace(/\./g,'').toUpperCase();return s==='ON'?'Ontario':s};
+const cur=+TODAY.slice(0,4)+(+TODAY.slice(5,7)>=8?1:0);
+for(const s of SCHOOLS){s.flags=s.flags||[];if(s.season&&+s.season<cur&&s.roster)s.flags.unshift(`${cur} roster not posted yet. The seniors and grads shown played their final season in spring ${s.season}.`);s.players=s.roster.trim()?s.roster.trim().split('\n').map(l=>{const[n,p,y,h]=l.split('|');return{n:n||'',raw:p,p:pos(p),two:p.includes('/'),y:yr(y),red:/^R-/.test(y),h,st:st(h)}}):[]}
+const miles=(a,b,c,d)=>{const r=x=>x*Math.PI/180,R=3959,dl=r(c-a),dn=r(d-b),q=Math.sin(dl/2)**2+Math.cos(r(a))*Math.cos(r(c))*Math.sin(dn/2)**2;return 2*R*Math.asin(Math.sqrt(q))};
+const fmtD=d=>new Date(d+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+
+function depth(s){
+ if(!s.players.length)return `<p class="none">No players listed for the ${s.season} season yet.</p>`;
+ const head=`<thead><tr><th></th>${YRS.map(y=>`<th class="${LEAVE.includes(y)?'leaveh':''}">${y==='Gr'?'Grad':y}</th>`).join('')}<th>Total</th></tr></thead>`;
+ const rows=POS.map(([k,l])=>{const at=s.players.filter(p=>p.p===k);if(!at.length&&k==='UTIL')return'';
+  const hand=k==='P'?` <span class="meta">${at.filter(p=>/^RHP/.test(p.raw)).length}R · ${at.filter(p=>/^LHP/.test(p.raw)).length}L</span>`:'';
+  return `<tr><th class="rowh" scope="row">${l}${hand}</th>${YRS.map(y=>{const c=at.filter(p=>p.y===y);return `<td class="${LEAVE.includes(y)?'leave':''}" title="${esc(c.map(p=>p.n||p.h).join(', '))}"><b>${c.length||'–'}</b><div class="dots">${'<i></i>'.repeat(c.length)}</div></td>`}).join('')}<td class="tot">${at.length}</td></tr>`}).join('');
+ return `<div class="scroll"><table class="depth">${head}<tbody>${rows}</tbody></table></div>`;
+}
+function geo(s){
+ if(!s.players.length)return `<p class="none">Will appear once the roster is posted.</p>`;
+ const m={};s.players.forEach(p=>m[p.st]=(m[p.st]||0)+1);
+ const a=Object.entries(m).sort((x,y)=>y[1]-x[1]),n=s.players.length,home=s.city.slice(-2),hp=Math.round(100*(m[home]||0)/n);
+ return `<p style="margin:0 0 12px"><span class="big">${hp}%</span> from ${home}, ${a.filter(x=>x[0]!=='Not listed').length} states or provinces in all</p><div class="bars">${a.map(([k,v])=>`<div class="bar"><span>${esc(k)}</span><div><span style="width:${100*v/a[0][1]}%"></span></div><em>${v}</em></div>`).join('')}</div>`;
+}
+function look(id){
+ const s=SCHOOLS.find(x=>x.id===id);if(!s)return;
+ const n=s.players.length,lv=s.players.filter(p=>LEAVE.includes(p.y)).length,yg=s.players.filter(p=>['Fr','So'].includes(p.y)).length;
+ const up=s.camps.filter(c=>(c.e||c.d)>=TODAY),past=s.camps.filter(c=>(c.e||c.d)<TODAY);
+ const camp=c=>{const d=new Date(c.d+'T12:00:00');return `<div class="camp ${(c.e||c.d)<TODAY?'past':''}"><time datetime="${c.d}">${d.toLocaleDateString('en-US',{month:'short'})}<span>${d.getDate()}</span>${d.getFullYear()}</time><div><b>${esc(c.n)}</b>${c.e?` <span class="meta">to ${fmtD(c.e)}</span>`:''}<br><span class="meta">${esc(c.info)}</span><br><a href="${c.u}">Registration page</a></div></div>`};
+ const t=s.tuition;
+ document.getElementById('p-look').innerHTML=`
+ <div class="top"><div><h2>${esc(s.name)}</h2><div class="chips"><span class="chip">${s.div==='D1'?'NCAA Division I':s.div==='D3'?'NCAA Division III':s.div}</span><span class="chip">${s.conf}</span><span class="chip">${s.city}</span>${s.enroll?`<span class="chip">${s.enroll.toLocaleString()} undergrads</span>`:''}</div></div><span class="meta">Checked ${fmtD(s.checked)} · <a href="${s.rosterUrl}">roster source</a></span></div>
+ ${(s.flags||[]).map(f=>`<p class="flag">Heads up: ${esc(f)}</p>`).join('')}
+ <div class="grid">
+  <div class="card"><h3>Depth chart by class</h3><p class="sub">${s.season} roster${n?`: ${n} players, ${lv} seniors or grads, ${yg} freshmen and sophomores`:''}</p>${depth(s)}
+   <div class="legend"><span class="l">Seniors and grads (leaving)</span><span>Returning classes</span></div></div>
+  <div class="card"><h3>Where the roster is from</h3><p class="sub">Players by home state</p>${geo(s)}</div>
+  <div class="card"><h3>Coaching staff</h3><p class="sub">As listed on the <a href="${s.coachUrl}">school's website</a></p>
+   <table class="list"><thead><tr><th>Coach</th><th class="hide">Title</th><th>Email</th></tr></thead><tbody>${s.coaches.map(([a,b,e])=>`<tr><td><b>${esc(a)}</b><br><span class="meta">${esc(b)}</span></td><td class="hide">${esc(b)}</td><td>${e?`<span style="overflow-wrap:anywhere">${esc(e)}</span><br><button class="copy" data-c="${esc(e)}">Copy</button>`:'<span class="none">Not listed</span>'}</td></tr>`).join('')}</tbody></table></div>
+  <div class="card"><h3>Camps on campus</h3><p class="sub">${up.length?up.length+' upcoming':'No upcoming camps posted as of '+fmtD(TODAY)}</p>
+   ${up.map(camp).join('')}${past.length?`<details${up.length?'':' open'}><summary>Most recent camps (${past.length})</summary>${past.map(camp).join('')}</details>`:'<p class="none">None found on the school site or Ryzer.</p>'}</div>
+  <div class="card span"><h3>Tuition, ${t.yr}</h3><p class="sub">Published sticker price before aid. <a href="${t.u}">Source</a></p>
+   ${t.missing?`<p class="flag">${esc(t.missing)}</p>`:`<div class="money"><div><span class="meta">New Jersey residents</span><b>${t.inS}</b><span class="meta">${t.inNote}</span></div><div><span class="meta">Out of state</span><b>${t.outS||'–'}</b><span class="meta">${t.outS?t.outNote:'Not published on the page checked'}</span></div></div>`}
+   <p class="note">${s.enroll?`Enrollment: ${s.enroll.toLocaleString()} ${s.enrollNote}.`:'Enrollment not loaded yet.'}</p></div>
+ </div>`;
+}
+
+function score(s,ps){
+ const N=s.players.length;let best=null;
+ for(const k of ps){const at=s.players.filter(p=>p.p===k||(k==='INF'&&p.p==='UTIL')),c=at.length,l=at.filter(p=>LEAVE.includes(p.y)).length,y=at.filter(p=>['Fr','So'].includes(p.y)).length,need=Math.max(1,Math.round(N*SHARE[k]));
+  const gap=Math.min(1,Math.max(0,(need-(c-l))/need)),lr=c?l/c:1,yr2=c?y/c:0,sc=Math.round(100*(.5*gap+.35*lr+.15*(1-yr2)));
+  const lab=POS.find(x=>x[0]===k)[1].toLowerCase();
+  const r={k,sc,why:[`${l} of ${c} ${lab} are seniors or grads`,`${c-l} return against about ${need} a roster this size usually carries`,`${y} ${y===1?'freshman or sophomore':'freshmen and sophomores'} in the pipeline`]};
+  if(!best||r.sc>best.sc)best=r}
+ return best;
+}
+function find(){
+ const f=document.getElementById('ff'),fd=new FormData(f),ps=fd.getAll('pos'),ds=fd.getAll('div'),size=fd.get('size'),home=ST[fd.get('home')],mx=+fd.get('miles');
+ const ok=s=>ds.includes(s.div)&&(size==='any'||(s.enroll&&size==='s'&&s.enroll<5000)||(size==='m'&&s.enroll>=5000&&s.enroll<=15000)||(size==='l'&&s.enroll>15000))&&miles(home[0],home[1],s.lat,s.lon)<=mx;
+ const out=document.getElementById('results');
+ if(!ps.length){out.innerHTML='<p class="none">Pick at least one position.</p>';return}
+ const pool=SCHOOLS.filter(ok),scored=pool.filter(s=>s.players.length).map(s=>({s,r:score(s,ps)})).sort((a,b)=>b.r.sc-a.r.sc),wait=pool.filter(s=>!s.players.length);
+ const missing=ds.filter(d=>!SCHOOLS.some(s=>s.div===d)).map(d=>d==='JUCO'?'junior college':d==='NAIA'?'NAIA':'Division '+(d==='D2'?'II':d));
+ out.innerHTML=(scored.length?scored.map(({s,r})=>`<div class="result"><div class="score ${r.sc>=70?'hot':''}"><b>${r.sc}</b><small>${r.sc>=70?'Strong opening':r.sc>=45?'Worth a look':'Crowded'}</small></div><div><button class="link" data-go="${s.id}">${esc(s.name)}</button><div class="meta">${s.div} · ${s.conf} · ${Math.round(miles(home[0],home[1],s.lat,s.lon))} miles · ${s.enroll?s.enroll.toLocaleString()+' undergrads · ':''}${s.season} roster</div><ul class="why">${r.why.map(w=>`<li>${w}</li>`).join('')}</ul></div></div>`).join(''):'<p class="none">No programs with a posted roster match these filters. Try a wider distance or more levels.</p>')
+ +(wait.length?`<p class="note">Also matches your filters but can't be scored until its roster is posted: ${wait.map(s=>`<button class="copy" data-go="${s.id}">${esc(s.short)}</button>`).join(' ')}</p>`:'')
+ +(missing.length?`<p class="note">No ${missing.join(', ')} programs are loaded in this pilot yet.</p>`:'');
+}
+
+const tabs=[...document.querySelectorAll('.tabs button')];
+const show=p=>{tabs.forEach(b=>b.setAttribute('aria-selected',b.dataset.p===p));document.querySelectorAll('.panel').forEach(x=>x.hidden=x.id!=='p-'+p);if(p==='find')find()};
+tabs.forEach(b=>b.addEventListener('click',()=>show(b.dataset.p)));
+
+const q=document.getElementById('q'),menu=document.getElementById('menu');let idx=0,hits=[];
+const draw=()=>{const v=q.value.trim().toLowerCase();hits=SCHOOLS.filter(s=>!v||(s.name+' '+s.short+' '+s.city).toLowerCase().includes(v));idx=Math.min(idx,Math.max(0,hits.length-1));
+ menu.innerHTML=hits.length?hits.map((s,i)=>`<button type="button" class="${i===idx?'on':''}" data-go="${s.id}"><span>${esc(s.name)}</span><small>${s.div} · ${s.city}</small></button>`).join(''):`<div style="padding:12px 16px" class="none">Not loaded yet. ${SCHOOLS.length} New Jersey programs are in so far.</div>`;menu.hidden=false};
+const pick=id=>{const s=SCHOOLS.find(x=>x.id===id);q.value=s.name;menu.hidden=true;look(id);show('look');try{localStorage.setItem('rp-last',id)}catch(e){}};
+q.addEventListener('input',()=>{idx=0;draw()});q.addEventListener('focus',draw);
+q.addEventListener('keydown',e=>{if(menu.hidden)return;if(e.key==='ArrowDown'){idx=Math.min(idx+1,hits.length-1);draw();e.preventDefault()}else if(e.key==='ArrowUp'){idx=Math.max(idx-1,0);draw();e.preventDefault()}else if(e.key==='Enter'&&hits[idx]){pick(hits[idx].id);e.preventDefault()}else if(e.key==='Escape')menu.hidden=true});
+document.addEventListener('click',e=>{const g=e.target.closest('[data-go]');if(g){pick(g.dataset.go);window.scrollTo({top:0});return}
+ const c=e.target.closest('[data-c]');if(c){navigator.clipboard.writeText(c.dataset.c).then(()=>{c.textContent='Copied'},()=>{c.textContent='Select to copy'});return}
+ if(!e.target.closest('.search'))menu.hidden=true});
+
+document.getElementById('lastcheck').textContent='Last checked '+fmtD(TODAY);
+document.getElementById('pilot').textContent=`${SCHOOLS.length} New Jersey programs loaded`;
+const hs=document.querySelector('[name=home]');hs.innerHTML=Object.keys(ST).sort().map(k=>`<option value="${k}"${k==='NJ'?' selected':''}>Home state: ${k}</option>`).join('');
+document.getElementById('ff').addEventListener('change',find);
+let start='rutgers';try{const l=localStorage.getItem('rp-last');if(SCHOOLS.some(s=>s.id===l))start=l}catch(e){}
+look(start);q.value=SCHOOLS.find(s=>s.id===start).name;
+}
+</script>
+</body>
+</html>

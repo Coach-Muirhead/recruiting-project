@@ -1,0 +1,37 @@
+name: Refresh recruiting data
+on:
+  schedule:
+    - cron: "17 10 * * *"      # every day, 6:17 AM New York time (10:17 UTC)
+  workflow_dispatch: {}         # "Run workflow" button for a manual refresh
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install requests beautifulsoup4
+      - run: python scraper/test_parse.py
+      - name: Scrape rosters, coaches and camps
+        run: python scraper/scrape.py $([ "$(date +%u)" = "1" ] && echo --with-costs)
+        env:
+          SCORECARD_API_KEY: ${{ secrets.SCORECARD_API_KEY }}
+      - run: python build.py
+      - name: Save today's data
+        run: |
+          git config user.name "recruiting-bot"
+          git config user.email "recruiting-bot@users.noreply.github.com"
+          git add data/schools.json site/index.html
+          git diff --cached --quiet || git commit -m "Daily refresh $(date +%F)"
+          git push
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: site }
+      - id: deploy
+        uses: actions/deploy-pages@v4
