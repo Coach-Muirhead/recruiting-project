@@ -13,37 +13,77 @@
   "season": "2027",
   "rosterUrl": "https://scarletknights.com/sports/baseball/roster",
   "coachUrl": "https://scarletknights.com/sports/baseball/coaches",
-  "roster": "Scott Newman|OF|Gr|Glenview, IL\nJustin MacCormack|LHP|So|Watertown, MA\nCharlie Meglio|INF|Sr|Jackson, NJ\nSam Mummau|INF|Sr|Palm Harbor, FL\nGavin Greger|OF|Gr|Bristol, CT\nRyan Jaros|INF|Sr|Cranford, NJ\nHenry Radbill|LHP|So|Marlton, NJ\nCole Marchetti|RHP|Fr|Columbus, NJ\nNolan Peel|RHP|Jr|Landenberg, PA\nYomar Carreras|INF|Jr|North Brunswick, NJ\nAyden Ellis|C|So|Branchville, NJ\nMickey Gilligan|C|Fr|Ringwood, NJ\nLuke Fithian|RHP|Jr|Stow Creek, NJ\nLogan Martel|C|Fr|Westfield, NJ\nAlbert Maldonado Jr.|RHP/INF|Fr|Elizabeth, NJ\nCarter Sweeney-Strawberry|OF|Fr|Olney, MD\nRyan Mealy|RHP|Jr|Wappingers Falls, NY\nAnthony Meady|RHP|Fr|Fort Myers, FL\nJaxon Appelman|RHP|Jr|Edison, NJ\nChris Sand|RHP|So|Lebanon, NJ\nTyler Garbooshian|INF|Fr|Brick, NJ\nGabriel Rivera|INF|So|Brooklyn, NY\nPepe Ortiz|LHP|Fr|Brooklyn, NY\nLuke Foulds|RHP|So|Thunder Bay, ON\nTyler Kane|RHP|R-Sr|Manalapan, NJ\nJacob Snyder|LHP/OF|Fr|Exeter, PA\nCharles Batista|RHP|Jr|Weehawken, NJ\nJack Sweeney|OF|Jr|Cream Ridge, NJ\nNick Shuhet|C|Sr|Mountain Lakes, NJ\nTristan Salinas|OF|Sr|Boone, NC\nRyan King|RHP|Sr|Bloomfield Hills, MI\nThomas Zwirecki|C|Gr|East Amherst, NY\nJoseph Gjelaj|RHP|Fr|Eastchester, NY\nMax Wearing|INF|Fr|Charlotte, NC\nFinn Haines|LHP|So|Northfield, NJ\nDylan Anderson|OF|Fr|Silver Spring, MD\nWarren Miller|LHP|Jr|Plattsburgh, NY\nLuke Billings|RHP|Jr|Robbinsville, NJ\nEnger Paulino|RHP|Sr|Worcester, MA\nPatrick Cassels|RHP|Fr|West Orange, NJ",
+  "roster": "Scott Newman|OF|Gr|Glenview, Ill.\nJustin MacCormack|LHP|So|Watertown, MA\nCharlie Meglio|INF|Sr|Jackson, NJ\nSam Mummau|INF|Sr|Palm Harbor, FL\nGavin Greger|OF|Gr|Bristol, CT\nRyan Jaros|INF|Sr|Cranford, NJ\nHenry Radbill|LHP|So|Marlton, NJ\nCole Marchetti|RHP|Fr|Columbus, NJ\nNolan Peel|RHP|Jr|Landenberg, PA\nYomar Carreras|INF|Jr|North Brunswick, NJ\nAyden Ellis|C|So|Branchville, NJ\nMickey Gilligan|C|Fr|Ringwood, NJ\nLuke Fithian|RHP|Jr|Stow Creek, NJ\nLogan Martel|C|Fr|Westfield, NJ\nAlbert Maldonado Jr.|RHP/INF|Fr|Elizabeth, NJ\nCarter Sweeney-Strawberry|OF|Fr|Olney, MD\nRyan Mealy|RHP|Jr|Wappingers Falls, NY\nAnthony Meady|RHP|Fr|Fort Myers, FL\nJaxon Appelman|RHP|Jr|Edison, NJ\nChris Sand|RHP|So|Lebanon, NJ\nTyler Garbooshian|INF|Fr|Brick, NJ\nGabriel Rivera|INF|So|Brooklyn, NY\nPepe Ortiz|LHP|Fr|Brooklyn, NY\nLuke Foulds|RHP|So|Thunder Bay, Ontario\nTyler Kane|RHP|Sr|Manalapan, NJ\nJacob Snyder|LHP/OF|Fr|Exeter, PA\nCharles Batista|RHP|Jr|Weehawken, NJ\nJack Sweeney|OF|Jr|Cream Ridge, NJ\nNick Shuhet|C|Sr|Mountain Lakes, NJ\nTristan Salinas|OF|Sr|Boone, N.C.\nRyan King|RHP|Sr|Bloomfield Hills, Mich.\nThomas Zwirecki|C|Gr|East Amherst, NY\nJoseph Gjelaj|RHP|Fr|Eastchester, NY\nMax Wearing|INF|Fr|Charlotte, N.C.\nFinn Haines|LHP|So|Northfield, NJ\nDylan Anderson|OF|Fr|Silver Spring, MD\nWarren Miller|LHP|Jr|Plattsburgh, NY\nLuke Billings|RHP|Jr|Robbinsville, NJ\nEnger Paulino|RHP|Sr|Worcester, MA\nPatrick Cassels|RHP|Fr|West Orange, NJ",
   "coaches": [
    [
-    "Steve Owens",
     "Head Coach",
+    "baseball@scarletknights.com",
     "baseball@scarletknights.com"
    ],
    [
-    "Mike Garza",
-    "Associate Head Coach / Hitting / Recruiting",
+    "Associate Head Coach/Hitting/Recruiting",
+    "mgarza@scarletknights.com",
     "mgarza@scarletknights.com"
    ],
    [
-    "Ryan Fecteau",
-    "Associate Head Coach / Pitching",
+    "Associate Head Coach/Pitching",
+    "rfecteau@scarletknights.com",
     "rfecteau@scarletknights.com"
    ],
    [
-    "Danny Bethea",
     "Assistant Coach",
+    "d.bethea@scarletknights.com",
     "d.bethea@scarletknights.com"
    ],
    [
-    "Peter Barron",
-    "Director of Baseball Administration",
+    "Director of Baseball Administration/Sport Operations Liaison",
+    "pbarron@scarletknights.com",
     "pbarron@scarletknights.com"
    ],
    [
-    "Jack Arend",
     "Director of Player Development",
+    "jarend@scarletknights.com",
     "jarend@scarletknights.com"
+   ],
+   [
+    "Senior Athletic Trainer (Baseball)",
+    "apallone@scarletknights.com",
+    "apallone@scarletknights.com"
+   ],
+   [
+    "Assistant Director, Communications (Baseball, Women's Soccer, Gymnastics, Football - tertiary)",
+    "gwhitmer@scarletknights.com",
+    "gwhitmer@scarletknights.com"
+   ],
+   [
+    "Head Student Manager/Bullpen Catcher",
+    "",
+    ""
+   ],
+   [
+    "Graduate Manager",
+    "",
+    ""
+   ],
+   [
+    "Student Manager",
+    "",
+    ""
+   ],
+   [
+    "Student Manager",
+    "",
+    ""
+   ],
+   [
+    "Student Manager",
+    "",
+    ""
+   ],
+   [
+    "Student Manager",
+    "",
+    ""
    ]
   ],
   "camps": [
@@ -68,7 +108,8 @@
    "outNote": "tuition and fees",
    "u": "https://www.rutgers.edu/news/rutgers-board-approves-62-billion-budget-focused-affordability-student-aid-cost-containment"
   },
-  "checked": "2026-11-20"
+  "checked": "2026-11-20",
+  "flags": []
  },
  {
   "id": "setonhall",
@@ -84,20 +125,15 @@
   "season": "2026",
   "rosterUrl": "https://shupirates.com/sports/baseball/roster",
   "coachUrl": "https://shupirates.com/sports/baseball/coaches",
-  "roster": "|INF|Jr|Wall, NJ\n|OF|Gr|Old Bridge, NJ\n|OF|So|Coatesville, PA\n|C|Jr|Barrington, NH\n|INF|Gr|Holtsville, NY\n|RHP|So|New Market, MD\n|UTIL|Jr|Roxbury, NJ\n|OF|So|Gladstone, NJ\n|RHP|Sr|Glenside, PA\n|C|R-Jr|Bourne, MA\n|INF|Jr|Jamison, PA\n|INF|Jr|Middletown, NJ\n|RHP|Sr|Selinsgrove, PA\n|LHP|So|Middletown, NJ\n|LHP|Sr|New Hyde Park, NY\n|C|Fr|Katonah, NY\n|INF|So|Ramsey, NJ\n|INF|Jr|West Deptford, NJ\n|RHP|So|Westfield, NJ\n|RHP|So|Staten Island, NY\n|RHP|Gr|Middletown, NJ\n|RHP|Gr|Monroe, NJ\n|INF|Jr|Cranford, NJ\n|LHP|Fr|Tewksbury, MA\n|C/OF|Fr|Nanuet, NY\n|INF|Jr|Tinton Falls, NJ\n|RHP|Jr|Basking Ridge, NJ\n|RHP|Fr|Waldwick, NJ\n|LHP|Gr|Union, NJ\n|RHP|So|Matawan, NJ\n|INF|Fr|Trumbull, CT\n|INF|Fr|West Hartford, CT\n|RHP|Fr|Nutley, NJ\n|RHP|Gr|Cedar Grove, NJ\n|RHP|Gr|Westfield, NJ\n|RHP|Fr|Montgomery, NJ\n|OF|Jr|Oakland, NJ",
+  "roster": "Gabe Cavazzoni|INF|Jr|Wall, NJ\nJoe Marini|OF|Gr|Old Bridge, NJ\nMagnus Krieger|OF|So|Coatsville, PA\nAidan Sengenberger|C|Jr|Barrington, N.H.\nTy Acker|INF|Gr|Holtsville, NY\nStephen Curry|RHP|So|Frederick, MD\nJustin Ford|UTIL|Jr|Roxbury, NJ\nAiden Dill|OF|So|Gladstone, NJ\nAnthony Ehly|RHP|Sr|Glenside, PA\nJake Walman|C|Jr|Bourne, MA\nJoey Wilga|INF|Jr|Doylestown, PA\nRyan Frontera|INF|Jr|Middletown, NJ\nRyan Reich|RHP|Sr|Selinsgrove, PA\nJohn Downing|LHP|Sr|New Hyde Park, NY\nNick Tomasetto|INF|Jr|West Deptford, NJ\nTommy Manzo|INF|So|Ramsey, NJ\nRyan Strnad|C|Fr|Katonah, NY\nTomas Cestero|RHP|So|Westfield, NJ\nGregory Bruno|RHP|So|Staten Island, NY\nMatt Pontari|RHP|Gr|Middletown, NJ\nJohn Higgins|RHP|Gr|Point Pleasant, NJ\nShea Grady|INF|Jr|Cranford, NJ\nZach Russo|LHP|Fr|Tewksbury, MA\nVincent Duffy|C/OF|Fr|Nanuet, NY\nFrankie Scrivanic|INF|Jr|Tinton Falls, NJ\nConnor Byrne|RHP|Jr|Basking Ridge, NJ\nJason Kuhn|RHP|Fr|Waldwick, NJ\nJayden Barroqueiro|LHP|Gr|Union, NJ\nSteven Svenson|RHP|So|Matawan, NJ\nRyan Johnston|INF|Fr|Trumbull, CT\nDominic Trolio|INF|Fr|West Hartford, CT\nDrew Slomkowski|RHP|Fr|Nutley, NJ\nDerek Benzinger|RHP|Gr|Cedar Grove, NJ\nChristopher Ho|RHP|Gr|Westfield, NJ\nJohn Donahue|RHP|Fr|Montgomery, NJ\nMason Christopher|LHP|So|Middletown, NJ\nJake Lopez|OF|Jr|Oakland, NJ",
   "flags": [
-   "Player names could not be read from the roster page; positions, classes and hometowns were."
+   "2027 roster not posted yet. Seniors and grads shown have played their final season."
   ],
   "coaches": [
    [
     "Rob Sheppard",
     "Head Coach",
     "robert.sheppard@shu.edu"
-   ],
-   [
-    "Giuseppe Papaccio",
-    "Associate Head Coach",
-    "giuseppe.papaccio@shu.edu"
    ],
    [
     "Jimmy Moran",
@@ -136,26 +172,40 @@
   "enrollNote": "",
   "season": "2026",
   "rosterUrl": "https://keanathletics.com/sports/baseball/roster",
-  "coachUrl": "https://keanathletics.com/coaches.aspx?rc=560",
-  "roster": "",
+  "coachUrl": "https://keanathletics.com/sports/baseball/coaches",
+  "roster": "Dominic Masino|IF|Jr|Bayville, NJ\nBrett Hilsheimer|IF|Gr|Holmdel, NJ\nDan Reistle|1B|Jr|Washington Township, NJ\nMatthew Falzarano|C|Fr|Peapack, NJ\nChase Koplitz|OF|Fr|Branchburg, NJ\nJude Clough|C|Jr|Fairfield, NJ\nChris Murano|P|Fr|Roseland, NJ\nTyler Stone|OF|Sr|Branchburg, NJ\nBryan McCartin|1B/OF|Fr|Matawan, NJ\nNick Sellari|IF|Jr|Monroe, NJ\nJustin Teixeira|OF|Sr|Springfield, NJ\nJoe Galeotafiore|IF|Fr|Bethpage, NY\nAJ Franzese|1B/OF|So|Pearl River, NY\nSean DuBois|P|Sr|Wayne, NJ\nSantino Czarecki|IF|Fr|Mendham, NJ\nCal Chase|P|Jr|Rutherford, NJ\nLucas White|P|So|Monroe Township, NJ\nChris Long|P|Fr|Middletown, NJ\nConnor Ramsey|P|Jr|Mount Olive, NJ\nAyden Aguiar|P|So|Hamburg, NJ\nPeyton Shaw|P|Fr|Newtown, PA\nCole McGourty|P/DH|Gr|Asbury, NJ\nLuke Haddad|P|Jr|Washington Township, NJ\nMike Colonnello|OF|Jr|Sayreville, NJ\nJeremy Vasquez|OF|Fr|South Amboy, NJ\nNoah Rivera|P|Sr|Hamilton, NJ\nMatt Sabato|OF/P|So|Lafayette, NJ\nMax Casazza|IF|Fr|Hoboken, NJ\nMichael Simone|DH/1B|Fr|Denville, NJ\nJohn Chiusano|C|Jr|Middletown, NJ\nDylan Falk|OF|So|Cranford, NJ\nJT Meyer|P|So|Old Bridge, NJ\nAdam Scire|IF|Jr|Old Bridge, NJ\nRyan Chorba|P|Fr|Pompton Plains, NJ\nAnthony Holtje|P|Jr|Bloomingdale, NJ\nJason Basilicata|P|Jr|Bayville, NJ\nAnthony Marano|P|Jr|North Haledon, NJ\nChristian Pareja|P|Sr|Clifton, NJ\nJT Abrusci|OF|Jr|Flanders, NJ",
   "flags": [
-   "The agent couldn't open Kean's current roster page this run, so there's no depth chart yet. Kean finished 31-13-1 in 2026 and reached the NCAA regional finals.",
-   "Undergraduate enrollment not loaded yet."
+   "2027 roster not posted yet. Seniors and grads shown have played their final season."
   ],
   "coaches": [
    [
-    "Neil Ioviero",
-    "Head Coach (30th season)",
+    "Head Coach (#31)",
+    "nioviero@kean.edu",
+    "nioviero@kean.edu"
+   ],
+   [
+    "Assistant Coach (#45)",
+    "",
     ""
    ],
    [
-    "Mike Matera",
-    "Assistant Coach (camp contact)",
+    "Assistant Coach (#46)",
+    "",
+    ""
+   ],
+   [
+    "Assistant Coach (#47)",
+    "mimatera@kean.edu",
     "mimatera@kean.edu"
    ],
    [
-    "Sal Taormina",
-    "Assistant Coach",
+    "Assistant Coach (#48)",
+    "",
+    ""
+   ],
+   [
+    "Assistant Coach (#21)",
+    "",
     ""
    ]
   ],
@@ -190,35 +240,35 @@
   "enrollNote": "undergraduates, fall 2021 (NJ Office of Higher Education)",
   "season": "2027",
   "rosterUrl": "https://montclairathletics.com/sports/baseball/roster",
-  "coachUrl": "https://montclairathletics.com/staff-directory/dave-lorber/277",
+  "coachUrl": "https://montclairathletics.com/sports/baseball/coaches",
   "roster": "",
   "flags": [
-   "The 2027 roster page is up but has no players listed yet."
+   "The 2027 roster page is up but lists no players yet."
   ],
   "coaches": [
    [
-    "Dave Lorber",
     "Head Coach",
+    "lorberd@montclair.edu",
     "lorberd@montclair.edu"
    ],
    [
-    "Casey Gaynor",
     "Pitching Coach / Recruiting Coordinator",
-    ""
+    "gaynork@montclair.edu",
+    "gaynork@montclair.edu"
    ],
    [
-    "Joe Norton",
     "Assistant Coach",
-    ""
+    "nortonj@montclair.edu",
+    "nortonj@montclair.edu"
    ],
    [
-    "Nic Menarchek",
     "Assistant Coach",
-    ""
+    "menarchekn@montclair.edu",
+    "menarchekn@montclair.edu"
    ],
    [
-    "Norm Schoenig",
-    "Special Assistant to the Head Coach",
+    "Special Assistant to Head Coach",
+    "",
     ""
    ]
   ],
@@ -260,37 +310,37 @@
   "enrollNote": "full-time undergraduates (D3baseball.com)",
   "season": "2026",
   "rosterUrl": "https://ramapoathletics.com/sports/baseball/roster",
-  "coachUrl": "https://ramapoathletics.com/sports/baseball/roster",
+  "coachUrl": "https://ramapoathletics.com/sports/baseball/coaches",
   "roster": "Dan Maglio|C|Gr|Park Ridge, NJ\nBrandon Tauber|OF|Jr|East Meadow, NY\nEric Knapp|INF|Sr|Somerville, NJ\nNick Pellegrino|1B|So|Bridgewater, NJ\nZach Novakowski|INF/OF|Jr|Hillsdale, NJ\nMichael Zalinkanskas|RHP|So|Cranford, NJ\nGreg Guzman|RHP|Fr|Elmwood Park, NJ\nWill Kennedy|LHP|Sr|Old Bridge, NJ\nMelvin Matias|INF|Sr|Montclair, NJ\nJames Kahn|RHP|So|Rockaway, NJ\nJoe Micchio|RHP|Fr|North Haledon, NJ\nJack Tallent|INF/OF|So|South Amboy, NJ\nJohn Hacker|LHP|Gr|Saddle Brook, NJ\nJames Zwolinski|INF|So|Oakland, NJ\nCasey Chiola|OF|Fr|Colonia, NJ\nJulian Schultz|OF|Fr|Livingston, NJ\nCody Quagliato|RHP|So|Bangor, PA\nBraden Schappert|INF|Fr|Sparta, NJ\nHunter Sabbers|LHP|Gr|Westwood, NJ\nNick Cavagnaro|C|Fr|Wayne, NJ\nChris Dandrea|C|Jr|Denville, NJ\nDustin McGuinness|SS|Fr|East Brunswick, NJ\nDerek Brand|INF|Fr|Kearny, NJ\nColin Kassai|OF|Fr|Alexandria Twp., NJ\nZach Barbash|C|So|Mount Laurel, NJ\nKevin Penny|LHP|Fr|South Plainfield, NJ\nThomas Schlaline|RHP|Fr|Sayreville, NJ\nWill Egner|INF|Gr|Livingston, NJ\nNick Atme|OF/RHP|Fr|Glen Rock, NJ\nJack Fournier|RHP|Fr|Hackettstown, NJ\nCarlo Lalomia Jr.|RHP|Jr|Paramus, NJ\nJulian Caruso|OF|So|Jackson, NJ\nEldon Lempa|RHP|Fr|Jersey City, NJ",
   "coaches": [
    [
-    "Ryan Rinsky",
     "Head Coach",
+    "rrinsky@ramapo.edu",
     "rrinsky@ramapo.edu"
    ],
    [
-    "Joe Maugeri",
-    "Associate Head Coach",
-    ""
-   ],
-   [
-    "Walker Larson",
     "Pitching Coach",
+    "wlarson@ramapo.edu",
+    "wlarson@ramapo.edu"
+   ],
+   [
+    "Associate Head Coach",
+    "jmaugeri@ramapo.edu",
+    "jmaugeri@ramapo.edu"
+   ],
+   [
+    "Assistant Coach",
+    "",
     ""
    ],
    [
-    "James Garthaffner",
     "Assistant Coach",
+    "",
     ""
    ],
    [
-    "Vin Timpanelli",
     "Assistant Coach",
-    ""
-   ],
-   [
-    "Jack Martin",
-    "Assistant Coach",
+    "",
     ""
    ]
   ],
@@ -300,6 +350,12 @@
     "d": "2025-09-21",
     "info": "High school players",
     "u": "https://ramapoathletics.com/news/2025/8/6/baseball-baseball-to-hold-prospect-clinic-on-sept-21st.aspx"
+   },
+   {
+    "n": "BASEBALL TO HOLD PROSPECT CLINIC ON AUG. 29TH",
+    "posted": "Mon, 20 Jul 2026 09:42:00 EST",
+    "u": "https://ramapoathletics.com/news/2026/7/20/baseball-baseball-to-hold-prospect-clinic-on-aug-29th.aspx",
+    "info": "From the team's news feed; open the post for dates and cost"
    }
   ],
   "tuition": {
@@ -310,7 +366,10 @@
    "outNote": "tuition and fees",
    "u": "https://www.ramapo.edu/admissions/financial-aid-tuition/tuition-costs/"
   },
-  "checked": "2026-11-20"
+  "checked": "2026-11-20",
+  "flags": [
+   "2027 roster not posted yet. Seniors and grads shown have played their final season."
+  ]
  },
  {
   "id": "rowan",
@@ -329,28 +388,28 @@
   "roster": "Mason Dorsey|OF|Sr|Hammonton, NJ\nMatt Kane|C|Fr|Wallingford, PA\nKevin Cole|IF|Sr|Williamsburg, VA\nJoey Bogart|IF|Jr|Sicklerville, NJ\nJack Norton|RHP|Sr|Woodbury, NJ\nMark Grubb|RHP|Jr|Mullica Hill, NJ\nMichael DeBlasio|LHP|So|Galloway, NJ\nDamon Suriani|OF|So|Swedesboro, NJ\nJayson Dougherty|LHP|Sr|Medford, NJ\nChristian Rice|RHP|Sr|Colts Neck, NJ\nJason Bennett|IF|Fr|Broomall, PA\nZach Coluccio|RHP|Gr|Erial, NJ\nPete Ramirez|OF|Fr|Springfield\nEvan McCoach|OF/1B|So|Philadelphia, PA\nAiden Ryder|IF|Fr|Cherry Hill, NJ\nTy Pridgen|RHP|So|York, PA\nEvan Brasberger|RHP|So|Sicklerville, NJ\nNick Struble|IF|Sr|Hackettstown, NJ\nBrett Chiesa|3B|Fr|Marlton, NJ\nIan Murphy|1B/OF|Sr|West Deptford, NJ\nCharlie Russell|RHP|Sr|Hackettstown, NJ\nShane Sax|LHP|Sr|Marlton, NJ\nJason Schooley|C/IF|Jr|Marlton, NJ\nJake Bartletta|OF|Fr|Hainesport, NJ\nLuke Bickunas|C/1B|Sr|South Plainfield, NJ\nDane Samartino|RHP|Jr|Haddonfield, NJ\nMiles DeVincentis|LHP|Fr|Collingswood, NJ\nAnthony Pallone|OF|Jr|Ramsey, NJ\nTravis Jerrell|LHP|Fr|Moorestown, NJ\nJake Andrey|RHP|Gr|Cherry Hill, NJ\nBrayden Davis|IF/RHP|Jr|Shamong, NJ\nNick Watson|IF/P|Fr|Washington Twp., NJ\nBen Schild|RHP|Jr|Lincroft, NJ\nCollin Denton|RHP|Fr|Tinton Falls, NJ\nAJ Maddalena|LHP|Fr|Hamilton, NJ\nAustin Kreyenhagen|RHP|So|Souderton, PA\nKyle Lamanteer|IF|Fr|Vineland, NJ",
   "coaches": [
    [
-    "Mike Dickson",
     "Head Coach",
+    "dickson@rowan.edu",
     "dickson@rowan.edu"
    ],
    [
-    "Jordan Friedman",
     "Assistant Coach",
+    "friedmanj1@rowan.edu",
     "friedmanj1@rowan.edu"
    ],
    [
-    "Chris Rollins",
     "Assistant Coach",
+    "",
     ""
    ],
    [
-    "Jason O'Neill",
     "Assistant Coach",
+    "",
     ""
    ],
    [
-    "Gary Herron",
     "Assistant Coach",
+    "",
     ""
    ]
   ],
@@ -360,7 +419,10 @@
    "missing": "Rowan's 2026–27 page lists out-of-state tuition at $12,163 per semester before fees; the full in-state total wasn't readable.",
    "u": "https://sites.rowan.edu/bursar/tuitionfees/2026-27-tuition-and-fees/2026-27-undergraduate-tuition-and-fees/"
   },
-  "checked": "2026-11-20"
+  "checked": "2026-11-20",
+  "flags": [
+   "2027 roster not posted yet. Seniors and grads shown have played their final season."
+  ]
  },
  {
   "id": "rutgerscamden",
@@ -377,48 +439,48 @@
   "rosterUrl": "https://scarletraptors.com/sports/baseball/roster",
   "coachUrl": "https://scarletraptors.com/sports/baseball/coaches",
   "flags": [
-   "The roster page lists Andrew Young, Jordan Fisher and Jordan Gray; the coaches page still lists Patrick Fisher."
+   "2027 roster not posted yet. Seniors and grads shown have played their final season."
   ],
-  "roster": "Gavin McCaffrey|OF|So|Clarksboro, NJ\nJacob Watson|OF|Jr|Elk Township, NJ\nMichael McGinley|1B/C|So|Franklinville, NJ\nEvan Carbone|C|Sr|Blackwood, NJ\nMatt McAleer|OF|Jr|Atco, NJ\nJustin Figueroa|1B|Sr|Mount Laurel, NJ\nChris Smith|INF|So|Washington Township, NJ\nMateo Santiago|OF|So|Silver Spring, MD\nD.J. Juliano|P|Jr|Woolwich Township, NJ\nWill Gural|INF|So|Philadelphia, PA\nGabe McCracken|P|Fr|Audubon, NJ\nNikolas Kalogiros|P|Fr|Audubon, NJ\nLuke Linden|P|So|Washington Township, NJ\nRicky Snyder|P|Sr|Mount Laurel, NJ\nMason Blizzard|C|So|Dennis Township, NJ\nChris Stinson|OF|Fr|Marlton, NJ\nNick Traynor|1B/DH|Fr|Sicklerville, NJ\nKillian McCaffrey|P|Fr|Clarksboro, NJ\nMatt Marino|C/2B|Fr|Fox Chase, PA\nJake Slusarski|OF|So|Williamstown, NJ\nAnthony Alessandroni|P/DH|Fr|Cinnaminson, NJ\nSean Glenn|P|Jr|Swedesboro, NJ\nAustin Dubler|MIF/OF|Jr|Erial, NJ\nCameron Stephenson|OF|Fr|East Greenwich, NJ\nDylan Oliver|P|Sr|Seaville, NJ\nDanny Torres Jr.|P/1B|So|Marlton, NJ\nAustin Wokock|P|Jr|Landisville, NJ\nJohn Ormsby IV|P|Jr|Haddonfield, NJ\nMichael Whitmore|P|Jr|Medford, NJ\nGavin Cunard|P|Jr|Mullica Hill, NJ\nRyan Joseph|OF|So|Winslow Township, NJ\nJulian Gonzalez|C|Jr|Woolwich Township, NJ\nRyan Harrison|P|So|Franklinville, NJ\nAnthony Angelo Jr.|P|Jr|Washington Township, NJ\nChristian Meitzler|OF|Fr|Philadelphia, PA\nAnthony Gogolski|P|Fr|Laurel Springs, NJ\nRichie Rosati|INF|Fr|Philadelphia, PA",
+  "roster": "Gavin McCaffrey|OF|So|Clarksboro, NJ\nJacob Watson|OF|Jr|Elk Township, NJ\nMichael McGinley|1B/C|So|Franklinville, NJ\nEvan Carbone|C|Sr|Blackwood, NJ\nMatt McAleer|OF|Jr|Atco, NJ\nJustin Figueroa|1B|Sr|Mount Laurel, NJ\nChris Smith|INF|So|Washington Township, NJ\nMateo Santiago|OF|So|Silver Spring, MD\nD.J. Juliano|P|Jr|Woolwich Township, NJ\nWill Gural|INF|So|Philadelphia, PA\nGabe McCracken|P|Fr|Audubon, NJ\nNikolas Kalogiros|P|Fr|Audubon, NJ\nLuke Linden|P|So|Washington Township, NJ\nRicky Snyder|P|Sr|Mount Laurel, NJ\nMason Blizzard|C|So|Dennis Township, NJ\nChris Stinson|OF|Fr|Marlton, NJ\nNick Traynor|1B/DH|Fr|Sicklerville, NJ\nKillian McCaffrey|P|Fr|Clarksboro, NJ\nMatt Marino|C/2B|Fr|Fox Chase, PA\nJake Slusarski|OF|So|Williamstown, NJ\nAnthony Alessandroni|P/DH|Fr|Cinnaminson, NJ\nSean Glenn|P|Jr|Swedesboro, NJ\nAustin Dubler|MIF/OF|Jr|Erial, NJ\nCameron Stephenson|OF|Fr|East Greenwich, NJ\nDylan Oliver|P|Sr|Seaville, NJ\nDanny Torres Jr.|P/1B|So|Marlton, NJ\nAustin Wokock|P|Jr|Landisville, NJ\nJohn Ormsby IV|P|Jr|Haddonfield, NJ\nMichael Whitmore|P|Jr|Medford, NJ\nGavin Cunard|P|Jr|Mullica Hill, NJ\nRyan Joseph|OF|So|Winslow Township\nJulian Gonzalez|C|Jr|Woolwich Township, NJ\nRyan Harrison|P|So|Franklinville, NJ\nAnthony Angelo Jr.|P|Jr|Washington Township, NJ\nChristian Meitzler|OF|Fr|Philadelphia, PA\nAnthony Gogolski|P|Fr|Laurel Springs, NJ\nRichie Rosati|INF|Fr|Philadelphia, PA",
   "coaches": [
    [
-    "Ryan Kulik",
     "Head Coach",
+    "rk924@camden.rutgers.edu",
     "rk924@camden.rutgers.edu"
    ],
    [
-    "Andrew Young",
     "Assistant Coach",
+    "",
     ""
    ],
    [
-    "Jordan Fisher",
     "Assistant Coach",
+    "",
     ""
    ],
    [
-    "Jordan Gray",
     "Pitching Coach",
+    "",
     ""
    ],
    [
-    "Derek Smolinski",
     "Volunteer Assistant Coach",
+    "",
     ""
    ],
    [
-    "R.J. McGettigan",
     "Volunteer Assistant Coach",
+    "",
     ""
    ],
    [
-    "Dustin Bellis",
     "Volunteer Assistant Coach",
+    "",
     ""
    ],
    [
-    "Gerry Slavin",
     "Volunteer Assistant Coach",
+    "",
     ""
    ]
   ],
@@ -446,37 +508,37 @@
   "enrollNote": "full-time undergraduates (D3baseball.com, 2020)",
   "season": "2026",
   "rosterUrl": "https://rutgersnewarkathletics.com/sports/baseball/roster",
-  "coachUrl": "https://rutgersnewarkathletics.com/sports/baseball/roster",
-  "roster": "Anthony Calantoni|INF|FR|Edison, NJ\nChase Ostrowski|RHP|JR|San Jose, CA\nDamon Rivera|UTL|FR|Hasbrouck Heights, NJ\nOhm Desai|RHP|FR|Monroe, NJ\nReid Duffus|OF|SR|Wyckoff, NJ\nGilroy Prial|OF|SR|Caldwell, NJ\nMichael Weinbel|INF|SR|Middletown, NJ\nTrevor Wallace|INF|JR|Monroe Township, NJ\nMatthew Torreto|OF|SR|Burlington, NJ\nAnthony Patrickio|OF|FR|Sparta, NJ\nRyan Miqueli|LHP|SO|West New York, NJ\nJoey Santi|RHP|SO|Oceanport, NJ\nLuke Hagen|LHP|SO|Old Bridge, NJ\nDaniel Fedorco|OF|JR|Hazlet, NJ\nJohn Farrington|RHP|SR|Rochelle Park, NJ\nManny Nunez|OF|FR|Elizabeth, NJ\nMichael Scaglione|RHP|SR|West Caldwell, NJ\nMax Eder|RHP|FR|Greenbrook, NJ\nRJ Kernan|INF|JR|Middletown, NJ\nMichael Canavesio|RHP|JR|\nJonathan Jerez|INF|FR|Elmwood Park, NJ\nLukas Meyer|RHP|SO|East Brunswick, NJ\nMalik Little|INF|JR|Bergenfield, NJ\nAdrian Rojas|RHP|SO|Union, NJ\nDonovan Claiborne|LHP|JR|Iselin, NJ\nRichie Barton|RHP|JR|Monmouth Beach, NJ\nMichael Romano|RHP|SO|Little Falls, NJ\nJoshua Warming|UTL|SO|Glen Spey, NY\nNick Bentz|RHP|JR|Manville, NJ\nKevin Soltys|RHP|JR|Wayne, NJ\nJacob Giarrusso|INF|FR|Totowa, NJ\nLiam Riley|C|FR|Pompton Plains, NJ\nJack Pozo|LHP|FR|Bayonne, NJ\nAustin Schoell|RHP|FR|Atco, NJ\nBrendan Kelly|RHP|FR|Mahwah, NJ\nJoseph Bernardo|UTL|JR|Wayne, NJ\nJack Gamba-Ellis|C|FR|Neptune, NJ\nMatt Fasulo|RHP|FR|Colonia, NJ\nMatthew L'Hommedieu|RHP|SR|Dumont, NJ\nAidan Burgos|LHP|FR|Roseland, NJ\nDiego Vazquez|C|FR|Secaucus, NJ\nJustin Bonito|RHP|JR|Edison, NJ\nKJ Stockert|UTL|FR|Cedar Knolls, NJ",
+  "coachUrl": "https://rutgersnewarkathletics.com/sports/baseball/coaches",
+  "roster": "Anthony Calantoni|INF|Fr|Edison, NJ\nChase Ostrowski|RHP|Jr|San Jose, CA\nDamon Rivera|UTL|Fr|Hasbrocuk Heights, NJ\nOhm Desai|RHP|Fr|Monroe, NJ\nReid Duffus|OF|Sr|Wyckoff, NJ\nGilroy Prial|OF|Sr|Caldwell, NJ\nMichael Weinbel|INF|Sr|Middletown, NJ\nTrevor Wallace|INF|Jr|Monroe Township, NJ /\nMatthew Torreto|OF|Sr|Burlington, NJ\nAnthony Patrickio|OF|Fr|Sparta, NJ\nRyan Miqueli|LHP|So|West New York, NJ\nJoey Santi|RHP|So|Oceanport, NJ\nLuke Hagen|LHP|So|Old Bridge, NJ\nDaniel Fedorco|OF|Jr|Hazlet, NJ\nJohn Farrington|RHP|Sr|Rochelle Park, NJ\nManny Nunez|OF|Fr|Elizabeth, NJ\nMichael Scaglione|RHP|Sr|West Caldwell, NJ\nMax Eder|RHP|Fr|Greenbrook, NJ\nRJ Kernan|INF|Jr|Middletown, NJ\nMichael Canavesio|RHP|Jr|/\nJonathan Jerez|INF|Fr|Elmwood Park, NJ\nLukas Meyer|RHP|So|East Brunswick, NJ\nMalik Little|INF|Jr|Bergenfield, NJ\nAdrian Rojas|RHP|So|Union, NJ\nDonovan Claiborne|LHP|Jr|Iselin, NJ\nRichie Barton|RHP|Jr|Monmouth Beach, NJ\nMichael Romano|RHP|So|Little Falls, NJ\nJoshua Warming|UTL|So|Glen Spey, NY\nNick Bentz|RHP|Jr|Manville, NJ\nKevin Soltys|RHP|Jr|Wayne, NJ /\nJacob Giarrusso|INF|Fr|Totowa, NJ\nLiam Riley|C|Fr|Pompton Plains, NJ\nJack Pozo|LHP|Fr|Bayonne, NJ\nAustin Schoell|RHP|Fr|Atco, NJ\nBrendan Kelly|RHP|Fr|Mahwah, NJ\nJoseph Bernardo|UTL|Jr|Wayne, NJ\nJack Gamba-Ellis|C|Fr|Neptune, NJ\nMatt Fasulo|RHP|Fr|Colonia, NJ\nMatthew L'Hommedieu|RHP|Sr|Dumont, NJ\nAidan Burgos|LHP|Fr|Roseland, NJ\nDiego Vazquez|C|Fr|Secaucus, NJ\nJustin Bonito|RHP|Jr|Edison, NJ\nKJ Stockert|UTL|Fr|Cedar Knolls, NJ",
   "coaches": [
    [
-    "Conor Kortmann",
     "Head Coach",
-    ""
+    "conor.kortmann@rutgers.edu",
+    "conor.kortmann@rutgers.edu"
    ],
    [
-    "Brandon Lopez",
     "Assistant Coach / Recruiting Coordinator",
-    ""
+    "BL821@scarletmail.rutgers.edu",
+    "BL821@scarletmail.rutgers.edu"
    ],
    [
-    "Gino Mirabella",
     "Assistant Coach",
-    ""
+    "gm1009@newark.rutgers.edu",
+    "gm1009@newark.rutgers.edu"
    ],
    [
-    "Justin Kessler",
     "Assistant Coach",
-    ""
+    "jk2295@newark.rutgers.edu",
+    " jk2295@newark.rutgers.edu"
    ],
    [
-    "Jon Rosado",
     "Assistant Coach",
-    ""
+    "jmr642@scarletmail.rutgers.edu",
+    "jmr642@scarletmail.rutgers.edu"
    ],
    [
-    "Eric Recchia",
     "Student Assistant",
+    "",
     ""
    ]
   ],
@@ -489,7 +551,10 @@
    "outNote": "tuition; fees vary by campus",
    "u": "https://admissions.rutgers.edu/sites/default/files/2026-08/2026%20Financing%20Your%20Education%20Brochure.pdf"
   },
-  "checked": "2026-11-20"
+  "checked": "2026-11-20",
+  "flags": [
+   "2027 roster not posted yet. Seniors and grads shown have played their final season."
+  ]
  },
  {
   "id": "stockton",
@@ -504,42 +569,42 @@
   "enrollNote": "full-time undergraduates (NCSA)",
   "season": "2026",
   "rosterUrl": "https://stocktonathletics.com/sports/baseball/roster",
-  "coachUrl": "https://stocktonathletics.com/sports/baseball/roster",
+  "coachUrl": "https://stocktonathletics.com/sports/baseball/coaches",
   "roster": "Dom Vizzoni|INF|So|Trenton, NJ\nDane Jorgensen|P|Fr|Jackson, NJ\nSal Cassano|INF|Fr|Matawan, NJ\nRJ Coleman|P/INF|So|Iselin, NJ\nDominic Mallamaci|P|Jr|Manalapan, NJ\nTim Welsh|P|So|Allentown, NJ\nLogan Madison|C|Fr|Warminster, PA\nJimmy Casey|OF|Fr|Newtown, PA\nMatthew McCloskey|OF|So|Cinnaminson, NJ\nRichie Bayachek|P|Fr|Newtown, PA\nJustin Prekop|P|So|Hamilton, NJ\nMichael Antonucci|OF|Sr|Manasquan, NJ\nJoe Gmitter|INF|Sr|Hamilton, NJ\nChris Galasso|INF|So|Matawan, NJ\nKevin DiPede|INF|So|Morganville, NJ\nConnor Dunn|UTL/P|Fr|Langhorne, PA\nChase Rubenstein|P|Fr|Absecon, NJ\nAnthony Ungaro|P|Fr|Cherry Hill, NJ\nThomas Bomberger|C|Fr|West Islip, NY\nEvan Palmer|C|So|Manchester, NJ\nRussell Halvorsen|OF|Jr|Howell, NJ\nColin McGeehan|OF/P|Fr|Matawan, NJ\nMatt Sabatella|P|Fr|Emerson, NJ\nConner Praschil|OF/P|Jr|Emerson, NJ\nHoyt Smith|INF|So|Little Silver, NJ\nStephen DeMilio|P|Sr|Tuckerton, NJ\nNick Kowalewski|P|Fr|Point Pleasant, NJ\nMax Kaplan|OF|Gr|Wall, NJ\nLiam Schwinn|INF|Fr|West Chester, PA\nYenuelle Rodriguez|UTL|Jr|Vineland, NJ\nNick Avagnano|INF|Sr|Paramus, NJ",
   "coaches": [
    [
-    "Rich Gawlak",
     "Head Baseball Coach",
+    "gawlakr@stockton.edu",
+    "gawlakr@stockton.edu"
+   ],
+   [
+    "Assistant Baseball Coach",
+    "",
     ""
    ],
    [
-    "Steve Bucci",
-    "Assistant Coach",
+    "Assistant Baseball Coach",
+    "",
     ""
    ],
    [
-    "Steve Struble",
-    "Assistant Coach",
+    "Assistant Baseball Coach",
+    "",
     ""
    ],
    [
-    "Phil Kahn",
-    "Assistant Coach",
+    "Assistant Baseball Coach",
+    "",
     ""
    ],
    [
-    "LT Struble",
-    "Assistant Coach",
+    "Assistant Baseball Coach",
+    "",
     ""
    ],
    [
-    "Sean Donovan",
-    "Assistant Coach",
-    ""
-   ],
-   [
-    "Brian Robertson",
-    "Assistant Coach",
+    "Assistant Baseball Coach",
+    "",
     ""
    ]
   ],
@@ -565,7 +630,10 @@
    "outNote": "tuition and fees",
    "u": "https://stockton.edu/admissions/costs.html"
   },
-  "checked": "2026-11-20"
+  "checked": "2026-11-20",
+  "flags": [
+   "2027 roster not posted yet. Seniors and grads shown have played their final season."
+  ]
  },
  {
   "id": "tcnj",
@@ -581,39 +649,39 @@
   "season": "2026",
   "rosterUrl": "https://tcnjathletics.com/sports/baseball/roster",
   "coachUrl": "https://tcnjathletics.com/sports/baseball/coaches",
-  "roster": "Michael Contiliano|INF|So|Flemington, NJ\nJoe Tammaro|INF|Fr|River Vale, NJ\nNate McLaughlin|OF|Fr|Ramsey, NJ\nMike Doran|IF/P|Sr|Millstone Twp., NJ\nTim Search Jr.|IF|Jr|Collingswood, NJ\nJake Carter|OF|Jr|Cranford, NJ\nAntonio Destribats|OF|Fr|Ewing, NJ\nAndrew Pearson|INF/C|So|West Windsor, NJ\nJack O'Donnell|OF|Sr|Bayonne, NJ\nJoe Dwyer|C|Fr|Somers, NY\nChris Salmon|C|So|Ewing, NJ\nAlex Reiling|C|Fr|Hillsborough, NJ\nJesse Beer|P/IF|So|Thousand Oaks, CA\nBrian Lovaglio|C|Sr|Montville, NJ\nAlex Luchynskyi|RHP|Fr|Mahwah, NJ\nConnor Lamanteer|P|Jr|Vineland, NJ\nBraden Dromboski|IF|Jr|Columbus, NJ\nAustin Hanni|LHP|Fr|Cherry Hill, NJ\nJack Reardon|P|So|Milford, NJ\nEvan Frank|P|Jr|Wilmington, DE\nTyler Provost|OF|Sr|Robbinsville, NJ\nJalen Maharaja|P|Jr|Lyndhurst, NJ\nDeclan Leary|RHP|Fr|Lincroft, NJ\nJohn DiCostanzo|P|Sr|Haddon Heights, NJ\nAndrew Wilkinson|RHP|Fr|Medford, NJ\nBodhi Lettieri|RHP/C|So|Ocean Township, NJ\nJack O'Shea|P|Jr|Spring Lake Heights, NJ\nCole Haskew|RHP|Fr|Warwick, NY\nTyler McDevitt|P|So|Dennis Twp., NJ\nLC Smith|P|So|Cinnaminson, NJ\nRyan Greenstein|P|So|Skillman, NJ\nBrady Reardon|RHP|Fr|Holland, NJ\nTyler Perry|RHP|Fr|Wallington, NJ\nOwen Hoffman|P|So|Delran, NJ\nMax Sanchez|P|Fr|Allendale, NJ\nMike Gelewski|LHP|So|Glen Rock, NJ",
+  "roster": "Michael Contiliano|INF|So|Flemington, NJ\nJoe Tammaro|INF|Fr|River Vale, NJ\nNate McLaughlin|OF|Fr|Ramsey, NJ\nMike Doran|IF/P|Sr|Millstone Twp., NJ\nTim Search Jr.|IF|Jr|Collingswood, NJ\nJake Carter|OF|Jr|Cranford, NJ\nAntonio Destribats|OF|Fr|Ewing, NJ\nAndrew Pearson|INF/C|So|West Windsor, NJ\nJack O'Donnell|OF|Sr|Bayonne, NJ\nJoe Dwyer|C|Fr|Somers, NY\nChris Salmon|C|So|Ewing, NJ\nAlex Reiling|C|Fr|Hillsborough, NJ\nJesse Beer|P/IF|So|Thousand Oaks, Calif.\nBrian Lovaglio|C|Sr|Montville, NJ\nAlex Luchynskyi|RHP|Fr|Mahwah, NJ\nConnor Lamanteer|P|Jr|Vineland, NJ\nBraden Dromboski|IF|Jr|Columbus, NJ\nAustin Hanni|LHP|Fr|Cherry Hill, NJ\nJack Reardon|P|So|Milford, NJ\nEvan Frank|P|Jr|Wilmington, DE\nTyler Provost|OF|Sr|Robbinsville, NJ\nJalen Maharaja|P|Jr|Lyndhurst, NJ\nDeclan Leary|RHP|Fr|Lincroft, NJ\nJohn DiCostanzo|P|Sr|Haddon Heights, NJ\nAndrew Wilkinson|RHP|Fr|Medford, NJ\nBodhi Lettieri|RHP/C|So|Ocean Township, NJ\nJack O'Shea|P|Jr|Spring Lake Heights, NJ\nCole Haskew|RHP|Fr|Warwick, NY\nTyler McDevitt|P|So|Dennis Twp., NJ\nLC Smith|P|So|Cinnaminson, NJ\nRyan Greenstein|P|So|Skillman, NJ\nBrady Reardon|RHP|Fr|Holland, NJ\nTyler Perry|RHP|Fr|Wallington, NJ\nOwen Hoffman|P|So|Delran, NJ\nMax Sanchez|P|Fr|Allendale, NJ\nMike Gelewski|LHP|So|Glen Rock, NJ",
   "flags": [
-   "Andrew Schmid appears on the roster page staff list but not the coaches page; Rob Maida appears on the coaches page only."
+   "2027 roster not posted yet. Seniors and grads shown have played their final season."
   ],
   "coaches": [
    [
-    "Chris Collazo",
     "Head Coach",
+    "",
     "collazoc@tcnj.edu"
    ],
    [
-    "Frank Collazo",
-    "Assistant Coach / Pitching Coach",
+    "Assistant Coach/Pitching Coach",
+    "",
     ""
    ],
    [
-    "Chris Reeder",
     "Assistant Coach",
+    "",
     "reederc1@tcnj.edu"
    ],
    [
-    "Phil Stahl",
     "Assistant Coach",
+    "",
     ""
    ],
    [
-    "Rob Maida",
-    "Assistant Coach / Player Development",
+    "Assistant Coach/Infield and Defensive Strategy",
+    "",
     ""
    ],
    [
-    "Joe Godri",
     "Director of Program Development",
+    "",
     "godrij@tcnj.edu"
    ]
   ],
@@ -641,27 +709,27 @@
   "enrollNote": "full-time undergraduates (NCSA)",
   "season": "2026",
   "rosterUrl": "https://www.wpupioneers.com/sports/baseball/roster",
-  "coachUrl": "https://www.wpupioneers.com/sports/baseball/roster",
+  "coachUrl": "https://www.wpupioneers.com/sports/baseball/coaches",
   "roster": "Jordan Brown|INF|Sr|Piscataway, NJ\nJulian Pinto|INF|Sr|Bergenfield, NJ\nJulian Salinas|RHP|Sr|Teaneck, NJ\nKevin Reiner|RHP|Jr|Maywood, NJ\nStephen Kubis|OF|Jr|Wayne, NJ\nDylan Santos|INF|Sr|Nutley, NJ\nSteven Peralta|OF/INF|Sr|Paterson, NJ\nLeo Spitaleri|C|So|Hackensack, NJ\nChris Quartuccio|RHP|Sr|Glen Gardner, NJ\nRob Nathan|RHP|Jr|Lords Valley, PA\nSean Lauterhahn|OF|So|Oradell, NJ\nAngel Colon|INF|Sr|Hawthorne, NJ\nJoe Sutera|RHP|Fr|Dumont, NJ\nChristian Peluso|C|Sr|Bridgewater, NJ\nAvery Whitney|OF/INF|Jr|Hillsborough, NJ\nJacob Herrera|RHP|Jr|Bayonne, NJ\nJesse Bash|OF|So|Tenafly, NJ\nEvan Soto|RHP|Fr|Nutley, NJ\nJT Pugliese|RHP|Fr|Wayne, NJ\nThomas Jova|OF|Sr|Gillette, NJ\nMike Peia|C|Jr|Mount Arlington, NJ\nSean Bauer|INF|Fr|Butler, NJ\nCorey Mulholland|RHP|So|Totowa, NJ\nPete Hammerle|LHP|Fr|Frankford, NJ\nJayden Villalta|RHP|So|Pompton Lakes, NJ\nAlex Gomez|C|So|Rutherford, NJ\nMatt Caruso|OF|Fr|North Haledon, NJ\nChristian Pelaez|INF|Fr|Hackensack, NJ\nJose Marte|RHP|Jr|Bogota, NJ\nNick Durso|RHP|Sr|Morris Plains, NJ\nJT DeRiso|LHP|Fr|River Vale, NJ\nEliot Germanson|C|Sr|New York, NY\nDaury Rodriguez|RHP|So|Weehawken, NJ\nTy Kobylakiewicz|1B|Jr|Woodbridge, NJ\nDevin Daproza|INF|Jr|Englewood, NJ",
   "coaches": [
    [
-    "Mike Lauterhahn",
     "Head Baseball Coach",
+    "lauterhahnm@wpunj.edu",
+    "lauterhahnm@wpunj.edu"
+   ],
+   [
+    "Assistant Baseball Coach",
+    "",
     ""
    ],
    [
-    "Mike Santana",
-    "Associate Head Coach",
-    ""
+    "Assistant Baseball Coach",
+    "santanam2@wpunj.edu",
+    "santanam2@wpunj.edu"
    ],
    [
-    "Tom Gaccione",
-    "Assistant Coach",
-    ""
-   ],
-   [
-    "Colin Lombardo",
-    "Assistant Coach",
+    "Assistant Baseball Coach",
+    "",
     ""
    ]
   ],
@@ -675,6 +743,9 @@
    "missing2": "Out-of-state rate not found",
    "u": "https://ww2.wpunj.edu/studentaccounts/tuition-and-fees"
   },
-  "checked": "2026-11-20"
+  "checked": "2026-11-20",
+  "flags": [
+   "2027 roster not posted yet. Seniors and grads shown have played their final season."
+  ]
  }
 ]
