@@ -1,8 +1,25 @@
 {
- "programs": 0,
- "by_level": {},
- "ready": {},
- "platform": {},
- "no_scorecard_match": 0,
- "added_to_schools_csv": 0
+ "programs": 72,
+ "by_level": {
+  "D1": 8,
+  "D2": 8,
+  "D3": 8,
+  "NAIA": 8,
+  "JUCO": 40
+ },
+ "ready": {
+  "D1": 3,
+  "D2": 6,
+  "D3": 4,
+  "NAIA": 4,
+  "JUCO": 5
+ },
+ "platform": {
+  "not found": 48,
+  "sidearm": 21,
+  "blocked": 2,
+  "presto": 1
+ },
+ "no_scorecard_match": 4,
+ "added_to_schools_csv": 22
 }
