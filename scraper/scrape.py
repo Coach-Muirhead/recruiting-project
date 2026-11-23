@@ -45,7 +45,8 @@ ROOT = Path(__file__).resolve().parent.parent
 SCHOOLS_CSV = ROOT / "scraper" / "schools.csv"
 OUT = ROOT / "data" / "schools.json"
 UA = "RecruitingProjectBot/1.0 (+contact: coach email in README)"
-PAUSE = 3.0  # seconds between schools
+PAUSE = 2.0  # seconds between pages of one school
+WORKERS = 6
 TODAY = dt.date.today()
 
 REPORT: dict[str, dict] = {}
@@ -74,6 +75,7 @@ def get(url: str) -> str | None:
         return None
     try:
         r = session.get(url, timeout=25)
+        time.sleep(1)  # one school's pages are fetched one at a time, a second apart
         r.raise_for_status()
         return r.text
     except requests.RequestException as e:
@@ -258,8 +260,33 @@ def parse_presto_roster(html: str) -> tuple[str | None, list[str]]:
 
 
 # ---------------------------------------------------------------- costs
+SC_ALL: dict[str, dict] = {}
+
+
+def scorecard_bulk(key: str) -> None:
+    """Every operating institution in ~70 requests (the per-school lookup would exceed the API's hourly limit)."""
+    fields = "id,school.name,latest.cost.tuition.in_state,latest.cost.tuition.out_of_state,latest.student.size"
+    page = 0
+    while True:
+        try:
+            j = session.get(f"https://api.data.gov/ed/collegescorecard/v1/schools?school.operating=1&fields={fields}&per_page=100&page={page}&api_key={key}", timeout=60).json()
+        except Exception as e:
+            log(f"scorecard bulk page {page} failed: {e}"); return
+        for r in j.get("results", []):
+            SC_ALL[str(r["id"])] = r
+        if (page + 1) * 100 >= j.get("metadata", {}).get("total", 0):
+            break
+        page += 1
+    log(f"scorecard: {len(SC_ALL)} institutions")
+
+
 def scorecard(row: dict, key: str) -> dict:
     """Looks a school up by its federal ID (unitid column) or, if blank, by name and state."""
+    r = SC_ALL.get(str(row.get("unitid") or ""))
+    if r:
+        return {"inS": f"${r['latest.cost.tuition.in_state']:,}" if r.get("latest.cost.tuition.in_state") else "",
+                "outS": f"${r['latest.cost.tuition.out_of_state']:,}" if r.get("latest.cost.tuition.out_of_state") else "",
+                "enroll": r.get("latest.student.size"), "unitid": r["id"]}
     fields = "id,school.name,latest.cost.tuition.in_state,latest.cost.tuition.out_of_state,latest.student.size"
     q = f"id={row['unitid']}" if row.get("unitid") else f"school.name={requests.utils.quote(row['name'])}&school.state={row['city'][-2:]}"
     url = f"https://api.data.gov/ed/collegescorecard/v1/schools?{q}&fields={fields}&per_page=20&api_key={key}"
@@ -363,16 +390,21 @@ def main() -> None:
     key = os.environ.get("SCORECARD_API_KEY") if args.with_costs else None
     only = set(args.only.split(",")) if args.only else None
 
-    out = []
-    with SCHOOLS_CSV.open() as f:
-        for row in csv.DictReader(f):
-            if only and row["id"] not in only:
-                if row["id"] in prev:
-                    out.append(prev[row["id"]])
-                continue
-            log(f"{row['id']}")
-            out.append(scrape_school(row, prev.get(row["id"]), key))
-            time.sleep(PAUSE)
+    if key:
+        scorecard_bulk(key)
+    rows = list(csv.DictReader(SCHOOLS_CSV.open()))
+    todo = [r for r in rows if not only or r["id"] in only]
+
+    def one(row):
+        log(row["id"])
+        res = scrape_school(row, prev.get(row["id"]), key)
+        time.sleep(PAUSE)
+        return res
+
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(WORKERS) as ex:  # different schools are different sites; each site still sees one request at a time
+        done = {r["id"]: r for r in ex.map(one, todo)}
+    out = [done.get(r["id"]) or prev[r["id"]] for r in rows if r["id"] in done or r["id"] in prev]
 
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps(out, indent=1, ensure_ascii=False))

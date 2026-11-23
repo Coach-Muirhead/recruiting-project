@@ -177,21 +177,23 @@ select{font:16px Barlow;padding:10px;border-radius:8px;border:1px solid var(--li
  </section>
 </div></main>
 
-<script type="application/json" id="data">/*__DATA__*/</script>
 <script>
 {
-const SCHOOLS=JSON.parse(document.getElementById('data').textContent);
+fetch('data/index.json',{cache:'no-cache'}).then(r=>r.json()).then(SCHOOLS=>{
 const TODAY=SCHOOLS.map(s=>s.checked).sort().pop();
 const POS=[['P','Pitchers'],['C','Catchers'],['INF','Infield'],['OF','Outfield'],['UTIL','Utility']];
 const YRS=['Fr','So','Jr','Sr','Gr'],LEAVE=['Sr','Gr'];
 const SHARE={P:.45,C:.10,INF:.25,OF:.17};
-const ST={NJ:[40.19,-74.67],NY:[42.9,-75.5],PA:[40.9,-77.8],CT:[41.6,-72.7],MA:[42.3,-71.8],RI:[41.7,-71.5],NH:[43.7,-71.6],VT:[44.0,-72.7],ME:[45.3,-69.2],DE:[39.0,-75.5],MD:[39.0,-76.8],VA:[37.5,-78.8],WV:[38.6,-80.6],NC:[35.5,-79.4],SC:[33.9,-80.9],GA:[32.7,-83.4],FL:[28.6,-82.4],OH:[40.3,-82.8],MI:[44.3,-85.4],IN:[39.9,-86.3],IL:[40.0,-89.2],TN:[35.9,-86.4],KY:[37.5,-85.3],TX:[31.5,-99.3],CA:[37.2,-119.5]};
+const ST={AL:[32.8,-86.8],AK:[61.4,-150],AZ:[34.2,-111.6],AR:[34.9,-92.4],CA:[37.2,-119.5],CO:[39,-105.5],CT:[41.6,-72.7],DE:[39,-75.5],DC:[38.9,-77],FL:[28.6,-82.4],GA:[32.7,-83.4],HI:[20.8,-156.3],ID:[44.4,-114.6],IL:[40,-89.2],IN:[39.9,-86.3],IA:[42,-93.5],KS:[38.5,-98.4],KY:[37.5,-85.3],LA:[31,-92],ME:[45.3,-69.2],MD:[39,-76.8],MA:[42.3,-71.8],MI:[44.3,-85.4],MN:[46.3,-94.3],MS:[32.7,-89.7],MO:[38.4,-92.5],MT:[47,-109.6],NE:[41.5,-99.8],NV:[39.3,-116.6],NH:[43.7,-71.6],NJ:[40.19,-74.67],NM:[34.4,-106.1],NY:[42.9,-75.5],NC:[35.5,-79.4],ND:[47.5,-100.5],OH:[40.3,-82.8],OK:[35.6,-97.5],OR:[43.9,-120.6],PA:[40.9,-77.8],RI:[41.7,-71.5],SC:[33.9,-80.9],SD:[44.4,-100.2],TN:[35.9,-86.4],TX:[31.5,-99.3],UT:[39.3,-111.7],VT:[44,-72.7],VA:[37.5,-78.8],WA:[47.4,-120.5],WV:[38.6,-80.6],WI:[44.6,-89.9],WY:[43,-107.5]};
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const pos=p=>{const t=p.split('/')[0].toUpperCase();return /HP$|^P$/.test(t)?'P':t==='C'?'C':t==='OF'?'OF':/^UT/.test(t)?'UTIL':'INF'};
 const yr=y=>{const t=y.replace(/^R-/,'').replace('.','').toLowerCase();return t.startsWith('fr')?'Fr':t.startsWith('so')?'So':t.startsWith('jr')?'Jr':t.startsWith('sr')?'Sr':'Gr'};
 const st=h=>{if(!h||!h.includes(','))return 'Not listed';const s=(h.split(',').pop()||'').trim().replace(/\./g,'').toUpperCase();return s==='ON'?'Ontario':s};
 const cur=+TODAY.slice(0,4)+(+TODAY.slice(5,7)>=8?1:0);
-for(const s of SCHOOLS){s.flags=(s.flags||[]).filter(f=>!/roster not posted yet\. Seniors/.test(f));if(s.season&&+s.season<cur&&s.roster)s.flags.unshift(`${cur} roster not posted yet. The seniors and grads shown played their final season in spring ${s.season}.`);s.players=s.roster.trim()?s.roster.trim().split('\n').map(l=>{const[n,p,y,h]=l.split('|');return{n:n||'',raw:p,p:pos(p),two:p.includes('/'),y:yr(y),red:/^R-/.test(y),h,st:st(h)}}):[]}
+const DETAIL={};
+function prep(s){s.flags=(s.flags||[]).filter(f=>!/roster not posted yet\. Seniors/.test(f));if(s.season&&+s.season<cur&&s.roster)s.flags.unshift(`${cur} roster not posted yet. The seniors and grads shown played their final season in spring ${s.season}.`);s.players=s.roster.trim()?s.roster.trim().split('\n').map(l=>{const[n,p,y,h]=l.split('|');return{n:n||'',raw:p,p:pos(p),two:p.includes('/'),y:yr(y),red:/^R-/.test(y),h,st:st(h)}}):[];return s}
+const detail=id=>DETAIL[id]?Promise.resolve(DETAIL[id]):fetch('data/s/'+id+'.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>DETAIL[id]=prep(d));
+const sum=a=>a.reduce((x,y)=>x+y,0);
 const miles=(a,b,c,d)=>{const r=x=>x*Math.PI/180,R=3959,dl=r(c-a),dn=r(d-b),q=Math.sin(dl/2)**2+Math.cos(r(a))*Math.cos(r(c))*Math.sin(dn/2)**2;return 2*R*Math.asin(Math.sqrt(q))};
 const fmtD=d=>new Date(d+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
 
@@ -209,14 +211,17 @@ function geo(s){
  const a=Object.entries(m).sort((x,y)=>y[1]-x[1]),n=s.players.length,home=s.city.slice(-2),hp=Math.round(100*(m[home]||0)/n);
  return `<p style="margin:0 0 12px"><span class="big">${hp}%</span> from ${home}, ${a.filter(x=>x[0]!=='Not listed').length} states or provinces in all</p><div class="bars">${a.map(([k,v])=>`<div class="bar"><span>${esc(k)}</span><div><span style="width:${100*v/a[0][1]}%"></span></div><em>${v}</em></div>`).join('')}</div>`;
 }
-function look(id){
- const s=SCHOOLS.find(x=>x.id===id);if(!s)return;
+async function look(id){
+ if(!SCHOOLS.some(x=>x.id===id))return;
+ const box=document.getElementById('p-look');if(!DETAIL[id])box.innerHTML='<p class="meta">Loading the roster…</p>';
+ let s;try{s=await detail(id)}catch(e){box.innerHTML='<p class="flag">Couldn\'t load this school. Check your connection and try again.</p>';return}
+ if(current!==id)return;
  const n=s.players.length,lv=s.players.filter(p=>LEAVE.includes(p.y)).length,yg=s.players.filter(p=>['Fr','So'].includes(p.y)).length;
  const cs=s.camps.filter(c=>c.d);const up=cs.filter(c=>(c.e||c.d)>=TODAY),past=cs.filter(c=>(c.e||c.d)<TODAY).sort((a,b)=>b.d.localeCompare(a.d));
  const camp=c=>{const d=new Date(c.d+'T12:00:00');return `<div class="camp ${(c.e||c.d)<TODAY?'past':''}"><time datetime="${c.d}">${d.toLocaleDateString('en-US',{month:'short'})}<span>${d.getDate()}</span>${d.getFullYear()}</time><div><b>${esc(c.n)}</b>${c.e?` <span class="meta">to ${fmtD(c.e)}</span>`:''}<br><span class="meta">${esc(c.info)}</span><br><a href="${c.u}">Registration page</a></div></div>`};
  const t=s.tuition;
  document.getElementById('p-look').innerHTML=`
- <div class="top"><div><h2>${esc(s.name)} ${favBtn(s.id)}</h2><div class="chips"><span class="chip">${s.div==='D1'?'NCAA Division I':s.div==='D3'?'NCAA Division III':s.div}</span><span class="chip">${s.conf}</span><span class="chip">${s.city}</span>${s.enroll?`<span class="chip">${s.enroll.toLocaleString()} undergrads</span>`:''}</div></div><span class="meta">Checked ${fmtD(s.checked)} · <a href="${s.rosterUrl}">roster source</a></span></div>
+ <div class="top"><div><h2>${esc(s.name)} ${favBtn(s.id)}</h2><div class="chips"><span class="chip">${({D1:'NCAA Division I',D2:'NCAA Division II',D3:'NCAA Division III',NAIA:'NAIA',JUCO:'Junior college'})[s.div]||s.div}</span><span class="chip">${s.conf}</span><span class="chip">${s.city}</span>${s.enroll?`<span class="chip">${s.enroll.toLocaleString()} undergrads</span>`:''}</div></div><span class="meta">Checked ${fmtD(s.checked)} · <a href="${s.rosterUrl}">roster source</a></span></div>
  ${(s.flags||[]).map(f=>`<p class="flag">Heads up: ${esc(f)}</p>`).join('')}
  <div class="grid">
   <div class="card"><h3>Depth chart by class</h3><p class="sub">${s.season} roster${n?`: ${n} players, ${lv} seniors or grads, ${yg} freshmen and sophomores`:''}</p>${depth(s)}
@@ -227,14 +232,14 @@ function look(id){
   <div class="card"><h3>Camps on campus</h3><p class="sub">${up.length?up.length+' upcoming':'No upcoming camps posted as of '+fmtD(TODAY)}</p>
    ${up.map(camp).join('')}${past.length?`<details${up.length?'':' open'}><summary>Most recent camps (${past.length})</summary>${past.map(camp).join('')}</details>`:'<p class="none">None found on the school site or Ryzer.</p>'}</div>
   <div class="card span"><h3>Tuition, ${t.yr}</h3><p class="sub">Published sticker price before aid. <a href="${t.u}">Source</a></p>
-   ${t.missing?`<p class="flag">${esc(t.missing)}</p>`:`<div class="money"><div><span class="meta">New Jersey residents</span><b>${t.inS}</b><span class="meta">${t.inNote}</span></div><div><span class="meta">Out of state</span><b>${t.outS||'–'}</b><span class="meta">${t.outS?t.outNote:'Not published on the page checked'}</span></div></div>`}
+   ${t.missing?`<p class="flag">${esc(t.missing)}</p>`:`<div class="money"><div><span class="meta">In-state</span><b>${t.inS}</b><span class="meta">${t.inNote}</span></div><div><span class="meta">Out of state</span><b>${t.outS||'–'}</b><span class="meta">${t.outS?t.outNote:'Not published on the page checked'}</span></div></div>`}
    <p class="note">${s.enroll?`Enrollment: ${s.enroll.toLocaleString()} ${s.enrollNote}.`:'Enrollment not loaded yet.'}</p></div>
  </div>`;
 }
 
 function score(s,ps){
- const N=s.players.length;let best=null;
- for(const k of ps){const at=s.players.filter(p=>p.p===k||(k==='INF'&&p.p==='UTIL')),c=at.length,l=at.filter(p=>LEAVE.includes(p.y)).length,y=at.filter(p=>['Fr','So'].includes(p.y)).length,need=Math.max(1,Math.round(N*SHARE[k]));
+ const N=s.n;let best=null;
+ for(const k of ps){const at=k==='INF'?s.cnt.INF.map((v,i)=>v+s.cnt.UTIL[i]):s.cnt[k],c=sum(at),l=at[3]+at[4],y=at[0]+at[1],need=Math.max(1,Math.round(N*SHARE[k]));
   const gap=Math.min(1,Math.max(0,(need-(c-l))/need)),lr=c?l/c:1,yr2=c?y/c:0,sc=Math.round(100*(.5*gap+.35*lr+.15*(1-yr2)));
   const lab=POS.find(x=>x[0]===k)[1].toLowerCase();
   const r={k,sc,why:[`${l} of ${c} ${lab} are seniors or grads`,`${c-l} return against about ${need} a roster this size usually carries`,`${y} ${y===1?'freshman or sophomore':'freshmen and sophomores'} in the pipeline`]};
@@ -246,11 +251,11 @@ function find(){
  const ok=s=>ds.includes(s.div)&&(size==='any'||(s.enroll&&size==='s'&&s.enroll<5000)||(size==='m'&&s.enroll>=5000&&s.enroll<=15000)||(size==='l'&&s.enroll>15000))&&miles(home[0],home[1],s.lat,s.lon)<=mx;
  const out=document.getElementById('results');
  if(!ps.length){out.innerHTML='<p class="none">Pick at least one position.</p>';return}
- const pool=SCHOOLS.filter(ok),scored=pool.filter(s=>s.players.length).map(s=>({s,r:score(s,ps)})).sort((a,b)=>b.r.sc-a.r.sc),wait=pool.filter(s=>!s.players.length);
+ const pool=SCHOOLS.filter(ok),scored=pool.filter(s=>s.n).map(s=>({s,r:score(s,ps)})).sort((a,b)=>b.r.sc-a.r.sc),wait=pool.filter(s=>!s.n);
  const missing=ds.filter(d=>!SCHOOLS.some(s=>s.div===d)).map(d=>d==='JUCO'?'junior college':d==='NAIA'?'NAIA':'Division '+(d==='D2'?'II':d));
  out.innerHTML=(scored.length?scored.map(({s,r})=>`<div class="result"><div class="score ${r.sc>=70?'hot':''}"><b>${r.sc}</b><small>${r.sc>=70?'Strong opening':r.sc>=45?'Worth a look':'Crowded'}</small></div><div><button class="link" data-go="${s.id}">${esc(s.name)}</button>${favBtn(s.id,1)}<div class="meta">${s.div} · ${s.conf} · ${Math.round(miles(home[0],home[1],s.lat,s.lon))} miles · ${s.enroll?s.enroll.toLocaleString()+' undergrads · ':''}${s.season} roster</div><ul class="why">${r.why.map(w=>`<li>${w}</li>`).join('')}</ul></div></div>`).join(''):'<p class="none">No programs with a posted roster match these filters. Try a wider distance or more levels.</p>')
- +(wait.length?`<p class="note">Also matches your filters but can't be scored until its roster is posted: ${wait.map(s=>`<button class="copy" data-go="${s.id}">${esc(s.short)}</button>`).join(' ')}</p>`:'')
- +(missing.length?`<p class="note">No ${missing.join(', ')} programs are loaded in this pilot yet.</p>`:'');
+ +(wait.length?`<p class="note">Also matches your filters but can't be scored until its roster is posted: ${wait.slice(0,40).map(s=>`<button class="copy" data-go="${s.id}">${esc(s.short)}</button>`).join(' ')}${wait.length>40?` and ${wait.length-40} more`:''}</p>`:'')
+ +(missing.length?`<p class="note">No ${missing.join(', ')} programs are loaded yet.</p>`:'');
 }
 
 let LIST={};try{LIST=JSON.parse(localStorage.getItem('rp-list')||'{}')||{}}catch(e){}
@@ -264,15 +269,15 @@ function list(){
  const ids=Object.keys(LIST).sort((a,b)=>LIST[a].added.localeCompare(LIST[b].added)),el=document.getElementById('p-list');
  if(!ids.length){el.innerHTML=`<div class="top"><h2>My List</h2></div><div class="card"><h3>No schools saved yet</h3><p class="sub">Tap <b>☆ Add to My List</b> on any school's profile or in your matches. Your list keeps the numbers side by side, with the head coach's email and room for your own notes.</p><button class="copy" data-go="${current||SCHOOLS[0].id}">Browse schools</button></div>`;return}
  const posName=ps.map(p=>POS.find(x=>x[0]===p)[1].toLowerCase()).join(', ');
- const rows=ids.map(id=>{const s=SCHOOLS.find(x=>x.id===id),r=s.players.length&&ps.length?score(s,ps):null,t=s.tuition||{},hc=(s.coaches||[]).find(c=>c[2])||(s.coaches||[])[0],up=(s.camps||[]).filter(c=>c.d&&(c.e||c.d)>=TODAY).sort((a,b)=>a.d.localeCompare(b.d))[0];
+ const rows=ids.map(id=>{const s=SCHOOLS.find(x=>x.id===id),r=s.n&&ps.length?score(s,ps):null,t=s.tuition||{},hc=s.hc,up=s.camp&&(s.camp.e||s.camp.d)>=TODAY?s.camp:null;
   return {s,r,t,hc,up,mi:Math.round(miles(home[0],home[1],s.lat,s.lon))}});
  LT=()=>rows.map(({s,r,t,hc,up,mi})=>[`${s.name} (${s.div}, ${s.conf})`,`  ${mi} miles from ${hk}${s.enroll?`, ${s.enroll.toLocaleString()} undergrads`:''}`,t.inS?`  Tuition: ${t.inS} in-state, ${t.outS||'n/a'} out-of-state (${t.yr})`:'',r?`  Opportunity score for ${posName}: ${r.sc}`:'',hc?`  Coach: ${hc[0]}, ${hc[1]}${hc[2]?' – '+hc[2]:''}`:'',up?`  Next camp: ${up.n}, ${fmtD(up.d)}`:'',LIST[s.id].note?`  My notes: ${LIST[s.id].note}`:''].filter(Boolean).join('\n')).join('\n\n');
  el.innerHTML=`<div class="top"><div><h2>My List</h2><p class="meta" style="margin:6px 0 0">${ids.length} school${ids.length>1?'s':''} · distances from ${hk}${ps.length?` · scores for ${posName}`:''} (change these on Find my matches)</p></div><button class="copy" data-copylist>Copy my list</button></div>
  <div class="lcards">${rows.map(({s,r,t,hc,up,mi})=>`<article class="lcard">
   <div class="row"><button class="link" data-go="${s.id}" style="background:none;border:0;padding:0;font:700 22px 'Barlow Condensed';color:var(--ink);cursor:pointer;text-align:left;text-decoration:underline;text-decoration-color:var(--clay);text-underline-offset:4px">${esc(s.name)}</button><button class="copy" data-unfav="${s.id}">Remove</button></div>
   <div class="chips" style="margin:0"><span class="chip">${s.div}</span><span class="chip">${esc(s.conf)}</span><span class="chip">${mi} miles</span>${s.enroll?`<span class="chip">${s.enroll.toLocaleString()} undergrads</span>`:''}</div>
-  <div class="facts"><div><span class="meta">Opportunity</span><b>${r?r.sc:'–'}</b><span class="meta">${r?(r.sc>=70?'Strong opening':r.sc>=45?'Worth a look':'Crowded'):s.players.length?'Pick a position':'Roster not posted'}</span></div>
-   <div><span class="meta">Leaving after ${s.season||'this season'}</span><b>${s.players.filter(p=>LEAVE.includes(p.y)).length||'–'}</b><span class="meta">seniors and grads</span></div>
+  <div class="facts"><div><span class="meta">Opportunity</span><b>${r?r.sc:'–'}</b><span class="meta">${r?(r.sc>=70?'Strong opening':r.sc>=45?'Worth a look':'Crowded'):s.n?'Pick a position':'Roster not posted'}</span></div>
+   <div><span class="meta">Leaving after ${s.season||'this season'}</span><b>${s.n?s.lv:'–'}</b><span class="meta">seniors and grads</span></div>
    <div><span class="meta">In-state</span><b>${t.inS||'–'}</b><span class="meta">${esc(t.yr||'')}</span></div>
    <div><span class="meta">Out of state</span><b>${t.outS||'–'}</b><span class="meta">${esc(t.yr||'')}</span></div></div>
   ${hc?`<div class="row"><span><b>${esc(hc[0])}</b><br><span class="meta">${esc(hc[1])}${hc[2]?` · <span style="overflow-wrap:anywhere">${esc(hc[2])}</span>`:''}</span></span>${hc[2]?`<button class="copy" data-c="${esc(hc[2])}">Copy email</button>`:''}</div>`:''}
@@ -286,8 +291,8 @@ const show=p=>{panel=p;tabs.forEach(b=>b.setAttribute('aria-selected',b.dataset.
 tabs.forEach(b=>b.addEventListener('click',()=>show(b.dataset.p)));
 
 const q=document.getElementById('q'),menu=document.getElementById('menu');let idx=0,hits=[];
-const draw=()=>{const v=q.value.trim().toLowerCase();hits=SCHOOLS.filter(s=>!v||(s.name+' '+s.short+' '+s.city).toLowerCase().includes(v));idx=Math.min(idx,Math.max(0,hits.length-1));
- menu.innerHTML=hits.length?hits.map((s,i)=>`<button type="button" class="${i===idx?'on':''}" data-go="${s.id}"><span>${esc(s.name)}</span><small>${s.div} · ${s.city}</small></button>`).join(''):`<div style="padding:12px 16px" class="none">Not loaded yet. ${SCHOOLS.length} New Jersey programs are in so far.</div>`;menu.hidden=false};
+const draw=()=>{const v=q.value.trim().toLowerCase();hits=SCHOOLS.filter(s=>!v||(s.name+' '+s.short+' '+s.city+' '+s.conf).toLowerCase().includes(v)).slice(0,12);idx=Math.min(idx,Math.max(0,hits.length-1));
+ menu.innerHTML=hits.length?hits.map((s,i)=>`<button type="button" class="${i===idx?'on':''}" data-go="${s.id}"><span>${esc(s.name)}</span><small>${s.div} · ${s.city}</small></button>`).join(''):`<div style="padding:12px 16px" class="none">Not found. ${SCHOOLS.length.toLocaleString()} programs are loaded so far; try the school's short name or city.</div>`;menu.hidden=false};
 const pick=id=>{current=id;const s=SCHOOLS.find(x=>x.id===id);q.value=s.name;menu.hidden=true;look(id);show('look');try{localStorage.setItem('rp-last',id)}catch(e){}};
 q.addEventListener('input',()=>{idx=0;draw()});q.addEventListener('focus',draw);
 q.addEventListener('keydown',e=>{if(menu.hidden)return;if(e.key==='ArrowDown'){idx=Math.min(idx+1,hits.length-1);draw();e.preventDefault()}else if(e.key==='ArrowUp'){idx=Math.max(idx-1,0);draw();e.preventDefault()}else if(e.key==='Enter'&&hits[idx]){pick(hits[idx].id);e.preventDefault()}else if(e.key==='Escape')menu.hidden=true});
@@ -300,13 +305,14 @@ document.addEventListener('click',e=>{
  if(!e.target.closest('.search'))menu.hidden=true});
 
 document.getElementById('lastcheck').textContent='Last checked '+fmtD(TODAY);
-document.getElementById('pilot').textContent=`${SCHOOLS.length} New Jersey programs loaded`;
+document.getElementById('pilot').textContent=`${SCHOOLS.length.toLocaleString()} programs loaded`;
 const hs=document.querySelector('[name=home]');hs.innerHTML=Object.keys(ST).sort().map(k=>`<option value="${k}"${k==='NJ'?' selected':''}>Home state: ${k}</option>`).join('');
 document.getElementById('ff').addEventListener('change',find);
 document.addEventListener('input',e=>{const n=e.target.dataset&&e.target.dataset.note;if(n&&LIST[n]){LIST[n].note=e.target.value;saveList()}});
 count();
 let start='rutgers';try{const l=localStorage.getItem('rp-last');if(SCHOOLS.some(s=>s.id===l))start=l}catch(e){}
 current=start;look(start);q.value=SCHOOLS.find(s=>s.id===start).name;
+}).catch(e=>{document.getElementById('p-look').innerHTML='<p class="flag">Couldn\'t load the school list. Refresh the page to try again.</p>'});
 }
 </script>
 </body>
