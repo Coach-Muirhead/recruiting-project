@@ -183,60 +183,106 @@ def match(p: dict, sc_by_state: dict) -> dict | None:
 
 
 # ------------------------------------------------------------ 3. athletics website
-def wiki_sites(programs: list[dict]) -> None:
-    """Sets p['wiki_site'] from Wikidata P856 of the athletics article, when one exists."""
-    titles = {}
-    for p in programs:
-        team = p.get("wiki_team") or ""
-        if team and p["nickname"] and p["nickname"].split()[-1].lower() in team.lower():
-            titles[re.sub(r" baseball$", "", team)] = p
-            continue
-        short = p.get("short") or re.sub(r"\b(university|college|community|of|the|state university)\b", " ", p["full"], flags=re.I)
-        q = f'{" ".join(short.split())} {p["nickname"]}'
-        r = get("https://en.wikipedia.org/w/api.php", params={"action": "query", "list": "search", "srsearch": q, "srlimit": 3, "format": "json"})
-        hits = [h["title"] for h in (r.json().get("query", {}).get("search", []) if r and r.ok else [])]
-        nick = p["nickname"].lower()
-        t = next((h for h in hits if nick in h.lower() and "baseball" not in h.lower() and "season" not in h.lower()), None) \
-            or next((h.replace(" baseball", "") for h in hits if nick in h.lower() and h.lower().endswith(" baseball")), None)
-        if t:
-            titles[t] = p
-        time.sleep(0.1)
-    items = {}
-    keys = list(titles)
-    for i in range(0, len(keys), 50):
-        r = get("https://en.wikipedia.org/w/api.php", params={"action": "query", "prop": "pageprops", "titles": "|".join(keys[i:i + 50]), "redirects": 1, "format": "json", "formatversion": 2})
-        if not r or not r.ok:
-            continue
-        j = r.json()["query"]
-        back = {x["to"]: x["from"] for x in j.get("redirects", [])}
+def _wd_items(titles: list[str]) -> dict[str, str]:
+    """Wikipedia title -> Wikidata id (follows redirects and title normalisation)."""
+    out = {}
+    for i in range(0, len(titles), 50):
+        r = get("https://en.wikipedia.org/w/api.php", params={"action": "query", "prop": "pageprops", "ppprop": "wikibase_item", "titles": "|".join(titles[i:i + 50]), "redirects": 1, "format": "json", "formatversion": 2})
+        if r is None or not r.ok:
+            log(f"  pageprops HTTP {r.status_code if r is not None else 'error'}"); continue
+        j = r.json().get("query", {})
+        alias = {}
+        for x in j.get("normalized", []) + j.get("redirects", []):
+            alias[x["to"]] = alias.get(x["from"], x["from"])
         for pg in j.get("pages", []):
             qid = pg.get("pageprops", {}).get("wikibase_item")
             if qid:
-                items[qid] = titles.get(back.get(pg["title"], pg["title"])) or titles.get(pg["title"])
-    ids = [q for q in items if items[q]]
-    for i in range(0, len(ids), 50):
-        r = get("https://www.wikidata.org/w/api.php", params={"action": "wbgetentities", "ids": "|".join(ids[i:i + 50]), "props": "claims", "format": "json"})
-        if not r or not r.ok:
-            continue
+                out[alias.get(pg["title"], pg["title"])] = qid
+                out[pg["title"]] = qid
+        time.sleep(0.2)
+    return out
+
+
+def _wd_claims(qids: list[str]) -> dict[str, dict]:
+    out = {}
+    for i in range(0, len(qids), 50):
+        r = get("https://www.wikidata.org/w/api.php", params={"action": "wbgetentities", "ids": "|".join(qids[i:i + 50]), "props": "claims", "format": "json"})
+        if r is None or not r.ok:
+            log(f"  wikidata HTTP {r.status_code if r is not None else 'error'}"); continue
         for qid, e in r.json().get("entities", {}).items():
-            vals = [c["mainsnak"].get("datavalue", {}).get("value") for c in e.get("claims", {}).get("P856", [])]
-            vals = [v for v in vals if isinstance(v, str)]
-            if vals and items.get(qid):
-                items[qid]["wiki_site"] = vals[-1]
-    log(f"wikipedia: athletics site found for {sum(1 for p in programs if p.get('wiki_site'))} of {len(programs)}")
+            def vals(p):
+                return [c["mainsnak"].get("datavalue", {}).get("value") for c in e.get("claims", {}).get(p, [])]
+            out[qid] = {"site": [v for v in vals("P856") if isinstance(v, str)], "ipeds": [v for v in vals("P1771") if isinstance(v, str)]}
+        time.sleep(0.2)
+    return out
+
+
+def wiki_sites(programs: list[dict]) -> None:
+    """From Wikidata: the athletics article's official website (p['wiki_site']) and the
+    school article's federal IPEDS id (p['ipeds']) and website (p['wiki_school_site'])."""
+    team_title = {}
+    searched = 0
+    for p in programs:
+        team = p.get("wiki_team") or ""
+        if team and p["nickname"] and p["nickname"].split()[-1].lower() in team.lower():
+            team_title[id(p)] = re.sub(r" baseball$", "", team)
+            continue
+        if not p["nickname"]:
+            continue
+        short = p.get("short") if p.get("short") != p["full"] else ""
+        short = short or re.sub(r"\b(university|college|community|of|the|state university)\b", " ", p["full"], flags=re.I)
+        r = get("https://en.wikipedia.org/w/api.php", params={"action": "query", "list": "search", "srsearch": f'{" ".join(short.split())} {p["nickname"]}', "srlimit": 5, "format": "json"})
+        searched += 1
+        hits = [h["title"] for h in (r.json().get("query", {}).get("search", []) if r is not None and r.ok else [])]
+        nick = p["nickname"].lower()
+        t = next((h for h in hits if nick in h.lower() and not re.search(r"baseball|season|football|basketball|stadium|field|arena", h.lower())), None) \
+            or next((h[: -len(" baseball")] for h in hits if nick in h.lower() and h.lower().endswith(" baseball")), None)
+        if t:
+            team_title[id(p)] = t
+        time.sleep(0.1)
+    school_title = {id(p): p["wiki_school"] for p in programs if p.get("wiki_school")}
+    qid = _wd_items(sorted(set(team_title.values()) | set(school_title.values())))
+    claims = _wd_claims(sorted(set(qid.values())))
+    for p in programs:
+        t = claims.get(qid.get(team_title.get(id(p), ""), ""), {})
+        sc = claims.get(qid.get(school_title.get(id(p), ""), ""), {})
+        if t.get("site") and t is not sc:
+            p["wiki_site"] = t["site"][-1]
+        if sc.get("ipeds"):
+            p["ipeds"] = sc["ipeds"][0]
+        if sc.get("site"):
+            p["wiki_school_site"] = sc["site"][-1]
+    log(f"wikipedia: searched {searched}, team articles {len(team_title)}, school articles {len(school_title)}, wikidata items {len(set(qid.values()))}, "
+        f"athletics sites {sum(1 for p in programs if p.get('wiki_site'))}, IPEDS ids {sum(1 for p in programs if p.get('ipeds'))} of {len(programs)}")
+
+
+ATHLETIC_HOSTS = re.compile(r"prestosports\.com|sidearmsports\.com|athletics|sports\.com|/athletics", re.I)
 
 
 def home_athletics_link(school_url: str) -> str | None:
+    """Finds the athletics site from the school's home page, following one /athletics hop."""
     if not school_url:
         return None
     base = school_url if school_url.startswith("http") else "https://" + school_url
     r = get(base)
-    if not r or r.status_code != 200:
+    if r is None or r.status_code != 200:
         return None
-    for href, text in re.findall(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>', r.text, re.S | re.I):
+    best = None
+    for href, text in re.findall(r'<a[^>]+href="([^"#]+)"[^>]*>(.*?)</a>', r.text, re.S | re.I):
         t = re.sub(r"<[^>]+>|\s+", " ", text).strip().lower()
-        if t in ("athletics", "athletics website", "intercollegiate athletics", "sports", "varsity athletics") or (t.startswith("athletics") and len(t) < 30):
-            return urljoin(r.url, href)
+        u = urljoin(r.url, href)
+        if ("athletic" in t and len(t) < 40) or (t in ("sports", "go ") ) or re.search(r"prestosports\.com|sidearmsports\.com", u):
+            if domain(u) != domain(r.url):
+                return u  # an outside athletics site: the usual case
+            best = best or u
+    if best:  # an /athletics page on the school site: look there for the outside site
+        r2 = get(best)
+        if r2 is not None and r2.status_code == 200:
+            for href in re.findall(r'href="(https?://[^"#]+)"', r2.text):
+                d = domain(href)
+                if d != domain(r.url) and ATHLETIC_HOSTS.search(href) and not re.search(r"facebook|twitter|x\.com|instagram|youtube|ncaa\.org|njcaa\.org|naia\.org|tiktok", d):
+                    return href
+        return best
     return None
 
 
@@ -270,7 +316,7 @@ def resolve(p: dict) -> dict:
     cands = []
     if p.get("wiki_site"):
         cands.append(p["wiki_site"])
-    link = home_athletics_link(p.get("school_url") or "")
+    link = home_athletics_link(p.get("school_url") or p.get("wiki_school_site") or "")
     if link and domain(link) not in [domain(c) for c in cands]:
         cands.append(link)
     if p.get("school_url"):
@@ -316,13 +362,13 @@ def main():
     by_state: dict[str, list] = {}
     for c in sc:
         by_state.setdefault(c.get("school.state"), []).append(c)
+    wiki_sites(programs)
+    by_id = {str(c["id"]): c for c in sc}
     for p in programs:
-        c = match(p, by_state)
+        c = by_id.get(str(p.get("ipeds") or "")) or match(p, by_state)
         if c:
             p.update({"unitid": c["id"], "sc_name": c["school.name"], "lat": c.get("location.lat"), "lon": c.get("location.lon"), "enroll": c.get("latest.student.size"), "school_url": c.get("school.school_url") or ""})
     log(f"scorecard matched {sum(1 for p in programs if p.get('unitid'))} of {len(programs)}")
-
-    wiki_sites(programs)
     with ThreadPoolExecutor(a.workers) as ex:
         done = list(ex.map(resolve, programs))
 
