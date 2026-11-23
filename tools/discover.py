@@ -89,7 +89,7 @@ def state_code(t: str) -> str:
 
 
 def wiki_html(page: str) -> str:
-    r = wget("https://en.wikipedia.org/w/api.php", {"action": "parse", "page": page, "prop": "text", "format": "json", "formatversion": 2}, timeout=60)
+    r = wget("https://en.wikipedia.org/w/api.php", {"action": "parse", "page": page, "prop": "text", "format": "json", "formatversion": 2})
     return r.json()["parse"]["text"] if r and r.ok and "parse" in r.json() else ""
 
 
