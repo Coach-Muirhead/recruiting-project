@@ -9,7 +9,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install requests
-      - run: python tools/sample_sources.py
+      - run: python tools/sample_urls.py
       - name: Save samples to the "samples" branch
         run: |
           git config user.name "recruiting-bot"; git config user.email "recruiting-bot@users.noreply.github.com"
