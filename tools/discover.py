@@ -33,10 +33,12 @@ OUT = ROOT / "data" / "discovered.csv"
 UA = "RecruitingProjectBot/1.0 (college baseball recruiting tool; github.com/Coach-Muirhead/recruiting-project)"
 S = requests.Session(); S.headers["User-Agent"] = UA
 
-LEVELS = {  # Baseball Cube list code -> (division, association label)
-    "ncaa-1": ("D1", None), "ncaa-2": ("D2", None), "ncaa-3": ("D3", None),
-    "naia": ("NAIA", None), "njcaa": ("JUCO", None), "CCCAA": ("JUCO", "CCCAA"), "nwac": ("JUCO", "NWAC"),
+LEVELS = {  # source -> division
+    "d1": "D1", "d2": "D2", "d3": "D3", "naia": "NAIA", "njcaa1": "JUCO", "njcaa2": "JUCO", "njcaa3": "JUCO", "nwac": "JUCO", "cccaa": "JUCO",
 }
+WIKI_PAGES = {"d1": "List_of_NCAA_Division_I_baseball_programs", "d2": "List_of_NCAA_Division_II_baseball_programs", "d3": "List_of_NCAA_Division_III_institutions",
+              "naia": "List_of_NAIA_institutions", "njcaa1": "List_of_NJCAA_Division_I_schools", "njcaa2": "List_of_NJCAA_Division_II_schools",
+              "njcaa3": "List_of_NJCAA_Division_III_schools", "nwac": "Northwest_Athletic_Conference"}
 STATES = {"Alabama": "AL", "Alaska": "AK", "Arizona": "AZ", "Arkansas": "AR", "California": "CA", "Colorado": "CO", "Connecticut": "CT", "Delaware": "DE", "District of Columbia": "DC", "Florida": "FL", "Georgia": "GA", "Hawaii": "HI", "Idaho": "ID", "Illinois": "IL", "Indiana": "IN", "Iowa": "IA", "Kansas": "KS", "Kentucky": "KY", "Louisiana": "LA", "Maine": "ME", "Maryland": "MD", "Massachusetts": "MA", "Michigan": "MI", "Minnesota": "MN", "Mississippi": "MS", "Missouri": "MO", "Montana": "MT", "Nebraska": "NE", "Nevada": "NV", "New Hampshire": "NH", "New Jersey": "NJ", "New Mexico": "NM", "New York": "NY", "North Carolina": "NC", "North Dakota": "ND", "Ohio": "OH", "Oklahoma": "OK", "Oregon": "OR", "Pennsylvania": "PA", "Rhode Island": "RI", "South Carolina": "SC", "South Dakota": "SD", "Tennessee": "TN", "Texas": "TX", "Utah": "UT", "Vermont": "VT", "Virginia": "VA", "Washington": "WA", "West Virginia": "WV", "Wisconsin": "WI", "Wyoming": "WY", "Puerto Rico": "PR"}
 SEASONS = ["2026-27", "2025-26"]
 
@@ -62,36 +64,90 @@ def slug(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", s.lower())[:28]
 
 
-# ------------------------------------------------------------ 1. membership
-def baseball_cube(code: str) -> list[dict]:
-    url = f"https://thebaseballcube.com/content/schools/{code}/"
-    rp = urllib.robotparser.RobotFileParser("https://thebaseballcube.com/robots.txt")
-    try:
-        rp.read()
-        if not rp.can_fetch(UA, url):
-            log(f"robots.txt disallows {url}"); return []
-    except Exception:
-        pass
-    r = get(url, timeout=40)
-    if not r or r.status_code != 200:
-        log(f"list {code}: HTTP {r.status_code if r else 'error'}"); return []
+# ------------------------------------------------------------ 1. membership (Wikipedia member lists)
+def strip(h: str) -> str:
+    h = re.sub(r"<sup.*?</sup>", "", h, flags=re.S)
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", h)).replace("&amp;", "&").replace("&#39;", "'").strip()
+
+
+def state_code(t: str) -> str:
+    t = re.sub(r"\(.*?\)", "", t).strip()
+    return t if t in STATES.values() else STATES.get(t, t)
+
+
+def wiki_html(page: str) -> str:
+    r = get("https://en.wikipedia.org/w/api.php", params={"action": "parse", "page": page, "prop": "text", "format": "json", "formatversion": 2}, timeout=60)
+    return r.json()["parse"]["text"] if r and r.ok and "parse" in r.json() else ""
+
+
+def wiki_tables(html: str) -> list[dict]:
+    """Rows of every wikitable, keyed by normalised header, with the first link title of each cell."""
     out = []
-    for tr in re.findall(r"<tr class='data-row.*?</tr>", r.text, re.S):
-        tds = [re.sub(r"<[^>]+>", "", td).strip() for td in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)]
-        if len(tds) < 6:
+    for t in re.findall(r'<table class="[^"]*wikitable[^"]*".*?</table>', html, re.S):
+        trs = re.findall(r"<tr.*?</tr>", t, re.S)
+        if not trs:
             continue
-        short, nick, conf, loc, full, year = tds[:6]
-        city, _, state = loc.partition(",")
-        if not year.isdigit() or int(year) < 2025:
+        heads = [strip(c).lower() for c in re.findall(r"<t[hd][^>]*>(.*?)</t[hd]>", trs[0], re.S)]
+        for tr in trs[1:]:
+            cells = re.findall(r"<t[hd][^>]*>(.*?)</t[hd]>", tr, re.S)
+            if len(cells) != len(heads):
+                continue
+            row = {}
+            for h, c in zip(heads, cells):
+                link = re.search(r'<a href="/wiki/[^"]+" [^>]*title="([^"]+)"', c)
+                row[h] = strip(c); row[h + "@link"] = link.group(1).replace("&amp;", "&").replace("&#39;", "'") if link else ""
+            out.append(row)
+    return out
+
+
+def col(row: dict, *names: str, link=False) -> str:
+    for k in row:
+        if k.endswith("@link"):
             continue
-        out.append({"short": short, "nickname": nick, "conf": conf, "city": city.strip(), "state": STATES.get(state.strip(), state.strip()), "full": full or short})
-    log(f"list {code}: {len(out)} active programs"); time.sleep(2)
+        if any(k.startswith(n) for n in names):
+            return row.get(k + "@link", "") if link else row[k]
+    return ""
+
+
+def membership(src: str) -> list[dict]:
+    if src == "cccaa":
+        return []  # filled from College Scorecard in main()
+    html = wiki_html(WIKI_PAGES[src]); time.sleep(1)
+    out = []
+    if src.startswith("njcaa"):
+        for state_html in re.split(r'<h3 id="', html)[1:]:
+            state = state_code(state_html.split('"', 1)[0].replace("_", " "))
+            for li in re.findall(r"<li>(.*?)</li>", state_html, re.S):
+                a = re.search(r'<a href="/wiki/[^"]+"[^>]*title="([^"]+)"[^>]*>(.*?)</a>(.*)', li, re.S)
+                if not a:
+                    continue
+                rest = strip(a.group(3))
+                nick, _, city = rest.partition(" in ")
+                out.append({"full": strip(a.group(2)), "wiki_school": a.group(1), "nickname": nick.strip(), "city": city.strip(), "state": state, "conf": f"NJCAA Division {'I' * int(src[-1])}"})
+        log(f"list {src}: {len(out)} member schools"); return out
+    for r in wiki_tables(html):
+        school = col(r, "school", "team", "institution")
+        if not school or school.lower().startswith(("school", "team")):
+            continue
+        st = state_code(col(r, "state"))
+        city = col(r, "city")
+        loc = col(r, "location")
+        if loc and not city:
+            city, _, st2 = loc.partition(",")
+            st = state_code(st2.strip()) or st
+        if src == "nwac" and st not in ("WA", "OR", "ID"):
+            continue  # skip the BC (Canada) members
+        out.append({"full": re.sub(r"\s*\*$", "", re.sub(r"\s*\(.*?\)\s*$", "", school)).strip(), "short": (re.search(r"\((.*?)\)", school) or [None, ""])[1],
+                    "wiki_school": col(r, "school", "team", "institution", link=True), "nickname": col(r, "nickname"),
+                    "wiki_team": col(r, "nickname", link=True), "city": city.strip(), "state": st,
+                    "conf": "NWAC – " + col(r, "division") if src == "nwac" else col(r, "conference")})
+    log(f"list {src}: {len(out)} rows")
     return out
 
 
 # ------------------------------------------------------------ 2. College Scorecard (bulk)
 def scorecard_all(key: str) -> list[dict]:
-    fields = "id,school.name,school.alias,school.city,school.state,school.school_url,location.lat,location.lon,latest.student.size"
+    fields = "id,school.name,school.alias,school.city,school.state,school.school_url,school.ownership,school.degrees_awarded.predominant,location.lat,location.lon,latest.student.size"
     rows, page = [], 0
     while True:
         r = get(f"https://api.data.gov/ed/collegescorecard/v1/schools?school.operating=1&fields={fields}&per_page=100&page={page}&api_key={key}", timeout=60)
@@ -131,7 +187,12 @@ def wiki_sites(programs: list[dict]) -> None:
     """Sets p['wiki_site'] from Wikidata P856 of the athletics article, when one exists."""
     titles = {}
     for p in programs:
-        q = f'"{p["short"]} {p["nickname"]}"'
+        team = p.get("wiki_team") or ""
+        if team and p["nickname"] and p["nickname"].split()[-1].lower() in team.lower():
+            titles[re.sub(r" baseball$", "", team)] = p
+            continue
+        short = p.get("short") or re.sub(r"\b(university|college|community|of|the|state university)\b", " ", p["full"], flags=re.I)
+        q = f'{" ".join(short.split())} {p["nickname"]}'
         r = get("https://en.wikipedia.org/w/api.php", params={"action": "query", "list": "search", "srsearch": q, "srlimit": 3, "format": "json"})
         hits = [h["title"] for h in (r.json().get("query", {}).get("search", []) if r and r.ok else [])]
         nick = p["nickname"].lower()
@@ -225,7 +286,7 @@ def resolve(p: dict) -> dict:
 # ------------------------------------------------------------ main
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--levels", default=",".join(LEVELS))
+    ap.add_argument("--levels", default=",".join(LEVELS))  # d1,d2,d3,naia,njcaa1,njcaa2,njcaa3,nwac,cccaa
     ap.add_argument("--limit", type=int, default=0, help="programs per level, for test runs")
     ap.add_argument("--workers", type=int, default=8)
     a = ap.parse_args()
@@ -234,17 +295,24 @@ def main():
         sys.exit("SCORECARD_API_KEY is required")
 
     programs = []
-    for code in a.levels.split(","):
-        div, assoc = LEVELS[code]
-        rows = baseball_cube(code)
+    for src in a.levels.split(","):
+        rows = membership(src)
         if a.limit:
             rows = rows[: a.limit]
         for r in rows:
-            r["div"] = div
-            r["conf"] = f"{assoc} – {r['conf']}" if assoc and assoc not in r["conf"] else r["conf"]
+            r["div"] = LEVELS[src]
+            r.setdefault("short", ""); r["short"] = r["short"] or r["full"]
             programs.append(r)
 
     sc = scorecard_all(key)
+    if "cccaa" in a.levels.split(","):
+        cc = [c for c in sc if c.get("school.state") == "CA" and c.get("school.ownership") == 1 and c.get("school.degrees_awarded.predominant") == 2]
+        if a.limit:
+            cc = cc[: a.limit]
+        programs += [{"full": c["school.name"], "short": c["school.name"], "nickname": "", "city": c.get("school.city") or "", "state": "CA", "conf": "CCCAA", "div": "JUCO"} for c in cc]
+        log(f"list cccaa: {len(cc)} California public two-year colleges to check")
+    seen = set()  # a school listed twice (e.g. NJCAA and NWAC) keeps its first entry
+    programs = [p for p in programs if not ((norm(p["full"]), p["state"]) in seen or seen.add((norm(p["full"]), p["state"])))]
     by_state: dict[str, list] = {}
     for c in sc:
         by_state.setdefault(c.get("school.state"), []).append(c)

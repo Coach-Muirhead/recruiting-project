@@ -2,7 +2,7 @@ name: Discover programs
 on:
   workflow_dispatch:
     inputs:
-      levels: { description: "Lists to read (ncaa-1,ncaa-2,ncaa-3,naia,njcaa,CCCAA,nwac)", default: "ncaa-1,ncaa-2,ncaa-3,naia,njcaa,CCCAA,nwac" }
+      levels: { description: "Lists to read (d1,d2,d3,naia,njcaa1,njcaa2,njcaa3,nwac,cccaa)", default: "d1,d2,d3,naia,njcaa1,njcaa2,njcaa3,nwac,cccaa" }
       limit: { description: "Programs per list (0 = all; small numbers for a test)", default: "0" }
 permissions: { contents: write }
 concurrency: { group: data-writes, cancel-in-progress: false }
