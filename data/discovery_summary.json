@@ -8,17 +8,17 @@
   "JUCO": 40
  },
  "ready": {
-  "D1": 3,
-  "D2": 6,
+  "D1": 8,
+  "D2": 8,
   "D3": 6,
-  "NAIA": 4,
-  "JUCO": 5
+  "NAIA": 5,
+  "JUCO": 7
  },
  "platform": {
-  "not found": 46,
-  "sidearm": 24,
+  "sidearm": 34,
+  "not found": 36,
   "blocked": 2
  },
- "no_scorecard_match": 4,
- "added_to_schools_csv": 3
+ "no_scorecard_match": 3,
+ "added_to_schools_csv": 10
 }
