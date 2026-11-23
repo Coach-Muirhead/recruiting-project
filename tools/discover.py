@@ -54,6 +54,19 @@ def get(url, **kw):
         return None
 
 
+def wget(url, params):
+    """Wikipedia/Wikidata request: one at a time, honours 429 Retry-After, up to 5 tries."""
+    params = {**params, "maxlag": 5}
+    for attempt in range(5):
+        r = get(url, params=params, timeout=40)
+        if r is not None and r.status_code == 200 and "maxlag" not in r.text[:300]:
+            time.sleep(0.5)
+            return r
+        wait = int(r.headers.get("Retry-After", "0") or 0) if r is not None else 0
+        time.sleep(max(wait, 5 * (attempt + 1)))
+    return r
+
+
 def norm(s: str) -> str:
     s = s.lower().replace("&", " and ").replace("saint ", "st ").replace("st. ", "st ")
     s = re.sub(r"\bthe\b|\bcommunity college\b|\bcc\b|\bcollege\b|\buniversity\b|\bof\b|[^a-z0-9 ]", " ", s)
@@ -76,7 +89,7 @@ def state_code(t: str) -> str:
 
 
 def wiki_html(page: str) -> str:
-    r = get("https://en.wikipedia.org/w/api.php", params={"action": "parse", "page": page, "prop": "text", "format": "json", "formatversion": 2}, timeout=60)
+    r = wget("https://en.wikipedia.org/w/api.php", {"action": "parse", "page": page, "prop": "text", "format": "json", "formatversion": 2}, timeout=60)
     return r.json()["parse"]["text"] if r and r.ok and "parse" in r.json() else ""
 
 
@@ -187,7 +200,7 @@ def _wd_items(titles: list[str]) -> dict[str, str]:
     """Wikipedia title -> Wikidata id (follows redirects and title normalisation)."""
     out = {}
     for i in range(0, len(titles), 50):
-        r = get("https://en.wikipedia.org/w/api.php", params={"action": "query", "prop": "pageprops", "ppprop": "wikibase_item", "titles": "|".join(titles[i:i + 50]), "redirects": 1, "format": "json", "formatversion": 2})
+        r = wget("https://en.wikipedia.org/w/api.php", {"action": "query", "prop": "pageprops", "ppprop": "wikibase_item", "titles": "|".join(titles[i:i + 50]), "redirects": 1, "format": "json", "formatversion": 2})
         if r is None or not r.ok:
             log(f"  pageprops HTTP {r.status_code if r is not None else 'error'}"); continue
         j = r.json().get("query", {})
@@ -206,7 +219,7 @@ def _wd_items(titles: list[str]) -> dict[str, str]:
 def _wd_claims(qids: list[str]) -> dict[str, dict]:
     out = {}
     for i in range(0, len(qids), 50):
-        r = get("https://www.wikidata.org/w/api.php", params={"action": "wbgetentities", "ids": "|".join(qids[i:i + 50]), "props": "claims", "format": "json"})
+        r = wget("https://www.wikidata.org/w/api.php", {"action": "wbgetentities", "ids": "|".join(qids[i:i + 50]), "props": "claims", "format": "json"})
         if r is None or not r.ok:
             log(f"  wikidata HTTP {r.status_code if r is not None else 'error'}"); continue
         for qid, e in r.json().get("entities", {}).items():
@@ -231,7 +244,7 @@ def wiki_sites(programs: list[dict]) -> None:
             continue
         short = p.get("short") if p.get("short") != p["full"] else ""
         short = short or re.sub(r"\b(university|college|community|of|the|state university)\b", " ", p["full"], flags=re.I)
-        r = get("https://en.wikipedia.org/w/api.php", params={"action": "query", "list": "search", "srsearch": f'{" ".join(short.split())} {p["nickname"]}', "srlimit": 5, "format": "json"})
+        r = wget("https://en.wikipedia.org/w/api.php", {"action": "query", "list": "search", "srsearch": f'{" ".join(short.split())} {p["nickname"]}', "srlimit": 5, "format": "json"})
         searched += 1
         hits = [h["title"] for h in (r.json().get("query", {}).get("search", []) if r is not None and r.ok else [])]
         nick = p["nickname"].lower()
@@ -239,7 +252,6 @@ def wiki_sites(programs: list[dict]) -> None:
             or next((h[: -len(" baseball")] for h in hits if nick in h.lower() and h.lower().endswith(" baseball")), None)
         if t:
             team_title[id(p)] = t
-        time.sleep(0.1)
     school_title = {id(p): p["wiki_school"] for p in programs if p.get("wiki_school")}
     qid = _wd_items(sorted(set(team_title.values()) | set(school_title.values())))
     claims = _wd_claims(sorted(set(qid.values())))
