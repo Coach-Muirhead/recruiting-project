@@ -65,6 +65,16 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid 
 table.list{width:100%;border-collapse:collapse;font-size:15px}
 .list th{text-align:left;font-weight:600;color:var(--mute);border-bottom:1px solid var(--line);padding:6px 8px}
 .list td{border-bottom:1px solid var(--line);padding:9px 8px;vertical-align:top}
+.star{font:600 15px Barlow;background:var(--card);color:var(--ink);border:2px solid var(--clay);border-radius:99px;padding:8px 16px;min-height:44px;cursor:pointer;white-space:nowrap}
+.star[aria-pressed=true]{background:var(--clay);color:#fff}
+.star.sm{min-height:36px;padding:4px 12px;font-size:14px;margin-left:8px;vertical-align:3px}
+.lcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:16px}
+.lcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:grid;gap:10px;align-content:start}
+.lcard .facts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.lcard .facts div{background:var(--soft);border-radius:8px;padding:8px 10px;font-size:14px}
+.lcard .facts b{display:block;font:700 20px "Barlow Condensed";font-variant-numeric:tabular-nums}
+.lcard textarea{font:16px Barlow;width:100%;min-height:70px;border:1px solid var(--line);border-radius:8px;padding:8px;background:var(--bg);color:var(--ink);resize:vertical}
+.lcard .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}
 .copy{font:600 14px Barlow;background:var(--soft);color:var(--ink);border:0;border-radius:8px;padding:8px 12px;min-height:36px;cursor:pointer;white-space:nowrap}
 .none{color:var(--mute);font-style:italic}
 .flag{display:inline-block;font-size:13px;color:var(--clayt);font-weight:600}
@@ -112,6 +122,7 @@ select{font:16px Barlow;padding:10px;border-radius:8px;border:1px solid var(--li
   <div class="tabs" role="tablist">
    <button role="tab" id="t-look" aria-selected="true" data-p="look">School lookup</button>
    <button role="tab" id="t-find" aria-selected="false" data-p="find">Find my matches</button>
+   <button role="tab" id="t-list" aria-selected="false" data-p="list">My List <span id="lc"></span></button>
    <button role="tab" id="t-data" aria-selected="false" data-p="data">How the data stays current</button>
   </div>
  </div>
@@ -151,6 +162,8 @@ select{font:16px Barlow;padding:10px;border-radius:8px;border:1px solid var(--li
   <div id="results" style="margin-top:18px"></div>
   <p class="note">Opportunity score, 0 to 100: half comes from how far the returning players at your position fall short of a typical roster share (pitchers 45%, infield 25%, outfield 17%, catchers 10%), about a third from the share of that position who are seniors or grad students, and the rest from how few freshmen and sophomores are behind them. It points you to programs worth a conversation; it is not a verdict on any coach's plans.</p>
  </section>
+
+ <section class="panel" id="p-list" aria-labelledby="t-list" hidden></section>
 
  <section class="panel" id="p-data" aria-labelledby="t-data" hidden>
   <div class="top"><h2>How the data stays current</h2><span class="meta" id="lastcheck"></span></div>
@@ -203,7 +216,7 @@ function look(id){
  const camp=c=>{const d=new Date(c.d+'T12:00:00');return `<div class="camp ${(c.e||c.d)<TODAY?'past':''}"><time datetime="${c.d}">${d.toLocaleDateString('en-US',{month:'short'})}<span>${d.getDate()}</span>${d.getFullYear()}</time><div><b>${esc(c.n)}</b>${c.e?` <span class="meta">to ${fmtD(c.e)}</span>`:''}<br><span class="meta">${esc(c.info)}</span><br><a href="${c.u}">Registration page</a></div></div>`};
  const t=s.tuition;
  document.getElementById('p-look').innerHTML=`
- <div class="top"><div><h2>${esc(s.name)}</h2><div class="chips"><span class="chip">${s.div==='D1'?'NCAA Division I':s.div==='D3'?'NCAA Division III':s.div}</span><span class="chip">${s.conf}</span><span class="chip">${s.city}</span>${s.enroll?`<span class="chip">${s.enroll.toLocaleString()} undergrads</span>`:''}</div></div><span class="meta">Checked ${fmtD(s.checked)} · <a href="${s.rosterUrl}">roster source</a></span></div>
+ <div class="top"><div><h2>${esc(s.name)} ${favBtn(s.id)}</h2><div class="chips"><span class="chip">${s.div==='D1'?'NCAA Division I':s.div==='D3'?'NCAA Division III':s.div}</span><span class="chip">${s.conf}</span><span class="chip">${s.city}</span>${s.enroll?`<span class="chip">${s.enroll.toLocaleString()} undergrads</span>`:''}</div></div><span class="meta">Checked ${fmtD(s.checked)} · <a href="${s.rosterUrl}">roster source</a></span></div>
  ${(s.flags||[]).map(f=>`<p class="flag">Heads up: ${esc(f)}</p>`).join('')}
  <div class="grid">
   <div class="card"><h3>Depth chart by class</h3><p class="sub">${s.season} roster${n?`: ${n} players, ${lv} seniors or grads, ${yg} freshmen and sophomores`:''}</p>${depth(s)}
@@ -235,22 +248,54 @@ function find(){
  if(!ps.length){out.innerHTML='<p class="none">Pick at least one position.</p>';return}
  const pool=SCHOOLS.filter(ok),scored=pool.filter(s=>s.players.length).map(s=>({s,r:score(s,ps)})).sort((a,b)=>b.r.sc-a.r.sc),wait=pool.filter(s=>!s.players.length);
  const missing=ds.filter(d=>!SCHOOLS.some(s=>s.div===d)).map(d=>d==='JUCO'?'junior college':d==='NAIA'?'NAIA':'Division '+(d==='D2'?'II':d));
- out.innerHTML=(scored.length?scored.map(({s,r})=>`<div class="result"><div class="score ${r.sc>=70?'hot':''}"><b>${r.sc}</b><small>${r.sc>=70?'Strong opening':r.sc>=45?'Worth a look':'Crowded'}</small></div><div><button class="link" data-go="${s.id}">${esc(s.name)}</button><div class="meta">${s.div} · ${s.conf} · ${Math.round(miles(home[0],home[1],s.lat,s.lon))} miles · ${s.enroll?s.enroll.toLocaleString()+' undergrads · ':''}${s.season} roster</div><ul class="why">${r.why.map(w=>`<li>${w}</li>`).join('')}</ul></div></div>`).join(''):'<p class="none">No programs with a posted roster match these filters. Try a wider distance or more levels.</p>')
+ out.innerHTML=(scored.length?scored.map(({s,r})=>`<div class="result"><div class="score ${r.sc>=70?'hot':''}"><b>${r.sc}</b><small>${r.sc>=70?'Strong opening':r.sc>=45?'Worth a look':'Crowded'}</small></div><div><button class="link" data-go="${s.id}">${esc(s.name)}</button>${favBtn(s.id,1)}<div class="meta">${s.div} · ${s.conf} · ${Math.round(miles(home[0],home[1],s.lat,s.lon))} miles · ${s.enroll?s.enroll.toLocaleString()+' undergrads · ':''}${s.season} roster</div><ul class="why">${r.why.map(w=>`<li>${w}</li>`).join('')}</ul></div></div>`).join(''):'<p class="none">No programs with a posted roster match these filters. Try a wider distance or more levels.</p>')
  +(wait.length?`<p class="note">Also matches your filters but can't be scored until its roster is posted: ${wait.map(s=>`<button class="copy" data-go="${s.id}">${esc(s.short)}</button>`).join(' ')}</p>`:'')
  +(missing.length?`<p class="note">No ${missing.join(', ')} programs are loaded in this pilot yet.</p>`:'');
 }
 
+let LIST={};try{LIST=JSON.parse(localStorage.getItem('rp-list')||'{}')||{}}catch(e){}
+for(const k of Object.keys(LIST))if(!SCHOOLS.some(s=>s.id===k))delete LIST[k];
+const saveList=()=>{try{localStorage.setItem('rp-list',JSON.stringify(LIST))}catch(e){}};
+function favBtn(id,sm){const on=!!LIST[id];return `<button type="button" class="star${sm?' sm':''}" data-fav="${id}" aria-pressed="${on}">${on?'★ On My List':'☆ Add to My List'}</button>`}
+let current=null,panel='look',LT=()=>'';
+function count(){const n=Object.keys(LIST).length;document.getElementById('lc').textContent=n?`(${n})`:''}
+function list(){
+ const fd=new FormData(document.getElementById('ff')),ps=fd.getAll('pos'),hk=fd.get('home'),home=ST[hk];
+ const ids=Object.keys(LIST).sort((a,b)=>LIST[a].added.localeCompare(LIST[b].added)),el=document.getElementById('p-list');
+ if(!ids.length){el.innerHTML=`<div class="top"><h2>My List</h2></div><div class="card"><h3>No schools saved yet</h3><p class="sub">Tap <b>☆ Add to My List</b> on any school's profile or in your matches. Your list keeps the numbers side by side, with the head coach's email and room for your own notes.</p><button class="copy" data-go="${current||SCHOOLS[0].id}">Browse schools</button></div>`;return}
+ const posName=ps.map(p=>POS.find(x=>x[0]===p)[1].toLowerCase()).join(', ');
+ const rows=ids.map(id=>{const s=SCHOOLS.find(x=>x.id===id),r=s.players.length&&ps.length?score(s,ps):null,t=s.tuition||{},hc=(s.coaches||[]).find(c=>c[2])||(s.coaches||[])[0],up=(s.camps||[]).filter(c=>c.d&&(c.e||c.d)>=TODAY).sort((a,b)=>a.d.localeCompare(b.d))[0];
+  return {s,r,t,hc,up,mi:Math.round(miles(home[0],home[1],s.lat,s.lon))}});
+ LT=()=>rows.map(({s,r,t,hc,up,mi})=>[`${s.name} (${s.div}, ${s.conf})`,`  ${mi} miles from ${hk}${s.enroll?`, ${s.enroll.toLocaleString()} undergrads`:''}`,t.inS?`  Tuition: ${t.inS} in-state, ${t.outS||'n/a'} out-of-state (${t.yr})`:'',r?`  Opportunity score for ${posName}: ${r.sc}`:'',hc?`  Coach: ${hc[0]}, ${hc[1]}${hc[2]?' – '+hc[2]:''}`:'',up?`  Next camp: ${up.n}, ${fmtD(up.d)}`:'',LIST[s.id].note?`  My notes: ${LIST[s.id].note}`:''].filter(Boolean).join('\n')).join('\n\n');
+ el.innerHTML=`<div class="top"><div><h2>My List</h2><p class="meta" style="margin:6px 0 0">${ids.length} school${ids.length>1?'s':''} · distances from ${hk}${ps.length?` · scores for ${posName}`:''} (change these on Find my matches)</p></div><button class="copy" data-copylist>Copy my list</button></div>
+ <div class="lcards">${rows.map(({s,r,t,hc,up,mi})=>`<article class="lcard">
+  <div class="row"><button class="link" data-go="${s.id}" style="background:none;border:0;padding:0;font:700 22px 'Barlow Condensed';color:var(--ink);cursor:pointer;text-align:left;text-decoration:underline;text-decoration-color:var(--clay);text-underline-offset:4px">${esc(s.name)}</button><button class="copy" data-unfav="${s.id}">Remove</button></div>
+  <div class="chips" style="margin:0"><span class="chip">${s.div}</span><span class="chip">${esc(s.conf)}</span><span class="chip">${mi} miles</span>${s.enroll?`<span class="chip">${s.enroll.toLocaleString()} undergrads</span>`:''}</div>
+  <div class="facts"><div><span class="meta">Opportunity</span><b>${r?r.sc:'–'}</b><span class="meta">${r?(r.sc>=70?'Strong opening':r.sc>=45?'Worth a look':'Crowded'):s.players.length?'Pick a position':'Roster not posted'}</span></div>
+   <div><span class="meta">Leaving after ${s.season||'this season'}</span><b>${s.players.filter(p=>LEAVE.includes(p.y)).length||'–'}</b><span class="meta">seniors and grads</span></div>
+   <div><span class="meta">In-state</span><b>${t.inS||'–'}</b><span class="meta">${esc(t.yr||'')}</span></div>
+   <div><span class="meta">Out of state</span><b>${t.outS||'–'}</b><span class="meta">${esc(t.yr||'')}</span></div></div>
+  ${hc?`<div class="row"><span><b>${esc(hc[0])}</b><br><span class="meta">${esc(hc[1])}${hc[2]?` · <span style="overflow-wrap:anywhere">${esc(hc[2])}</span>`:''}</span></span>${hc[2]?`<button class="copy" data-c="${esc(hc[2])}">Copy email</button>`:''}</div>`:''}
+  <div class="meta">${up?`Next camp: <b>${esc(up.n)}</b>, ${fmtD(up.d)}`:'No upcoming camps posted'}</div>
+  <label class="meta" for="n-${s.id}">My notes</label><textarea id="n-${s.id}" data-note="${s.id}" placeholder="Visit dates, what the coach said, academics, how it felt">${esc(LIST[s.id].note||'')}</textarea>
+ </article>`).join('')}</div>
+ <p class="note">Your list is saved in this browser on this device. Open the page on the same phone or laptop and it will be here; another device starts fresh. Use Copy my list to send it to a parent or your coach.</p>`;
+}
 const tabs=[...document.querySelectorAll('.tabs button')];
-const show=p=>{tabs.forEach(b=>b.setAttribute('aria-selected',b.dataset.p===p));document.querySelectorAll('.panel').forEach(x=>x.hidden=x.id!=='p-'+p);if(p==='find')find()};
+const show=p=>{panel=p;tabs.forEach(b=>b.setAttribute('aria-selected',b.dataset.p===p));document.querySelectorAll('.panel').forEach(x=>x.hidden=x.id!=='p-'+p);if(p==='find')find();if(p==='list')list()};
 tabs.forEach(b=>b.addEventListener('click',()=>show(b.dataset.p)));
 
 const q=document.getElementById('q'),menu=document.getElementById('menu');let idx=0,hits=[];
 const draw=()=>{const v=q.value.trim().toLowerCase();hits=SCHOOLS.filter(s=>!v||(s.name+' '+s.short+' '+s.city).toLowerCase().includes(v));idx=Math.min(idx,Math.max(0,hits.length-1));
  menu.innerHTML=hits.length?hits.map((s,i)=>`<button type="button" class="${i===idx?'on':''}" data-go="${s.id}"><span>${esc(s.name)}</span><small>${s.div} · ${s.city}</small></button>`).join(''):`<div style="padding:12px 16px" class="none">Not loaded yet. ${SCHOOLS.length} New Jersey programs are in so far.</div>`;menu.hidden=false};
-const pick=id=>{const s=SCHOOLS.find(x=>x.id===id);q.value=s.name;menu.hidden=true;look(id);show('look');try{localStorage.setItem('rp-last',id)}catch(e){}};
+const pick=id=>{current=id;const s=SCHOOLS.find(x=>x.id===id);q.value=s.name;menu.hidden=true;look(id);show('look');try{localStorage.setItem('rp-last',id)}catch(e){}};
 q.addEventListener('input',()=>{idx=0;draw()});q.addEventListener('focus',draw);
 q.addEventListener('keydown',e=>{if(menu.hidden)return;if(e.key==='ArrowDown'){idx=Math.min(idx+1,hits.length-1);draw();e.preventDefault()}else if(e.key==='ArrowUp'){idx=Math.max(idx-1,0);draw();e.preventDefault()}else if(e.key==='Enter'&&hits[idx]){pick(hits[idx].id);e.preventDefault()}else if(e.key==='Escape')menu.hidden=true});
-document.addEventListener('click',e=>{const g=e.target.closest('[data-go]');if(g){pick(g.dataset.go);window.scrollTo({top:0});return}
+document.addEventListener('click',e=>{
+ const fv=e.target.closest('[data-fav],[data-unfav]');if(fv){const id=fv.dataset.fav||fv.dataset.unfav;if(LIST[id])delete LIST[id];else LIST[id]={added:new Date().toISOString(),note:''};saveList();count();
+  if(panel==='look')look(current);else if(panel==='find')find();else list();return}
+ const cl=e.target.closest('[data-copylist]');if(cl){navigator.clipboard.writeText(LT()).then(()=>{cl.textContent='Copied'},()=>{cl.textContent='Copy failed'});return}
+ const g=e.target.closest('[data-go]');if(g){pick(g.dataset.go);window.scrollTo({top:0});return}
  const c=e.target.closest('[data-c]');if(c){navigator.clipboard.writeText(c.dataset.c).then(()=>{c.textContent='Copied'},()=>{c.textContent='Select to copy'});return}
  if(!e.target.closest('.search'))menu.hidden=true});
 
@@ -258,8 +303,10 @@ document.getElementById('lastcheck').textContent='Last checked '+fmtD(TODAY);
 document.getElementById('pilot').textContent=`${SCHOOLS.length} New Jersey programs loaded`;
 const hs=document.querySelector('[name=home]');hs.innerHTML=Object.keys(ST).sort().map(k=>`<option value="${k}"${k==='NJ'?' selected':''}>Home state: ${k}</option>`).join('');
 document.getElementById('ff').addEventListener('change',find);
+document.addEventListener('input',e=>{const n=e.target.dataset&&e.target.dataset.note;if(n&&LIST[n]){LIST[n].note=e.target.value;saveList()}});
+count();
 let start='rutgers';try{const l=localStorage.getItem('rp-last');if(SCHOOLS.some(s=>s.id===l))start=l}catch(e){}
-look(start);q.value=SCHOOLS.find(s=>s.id===start).name;
+current=start;look(start);q.value=SCHOOLS.find(s=>s.id===start).name;
 }
 </script>
 </body>
