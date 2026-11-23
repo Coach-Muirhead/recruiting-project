@@ -5,67 +5,67 @@
    "roster": 40,
    "season": "2027",
    "coaches": "none parsed, kept last copy",
-   "costs": "ok"
+   "costs": "ok (federal id 186380)"
   },
   "setonhall": {
    "roster": 37,
    "season": "2026",
    "coaches": 4,
-   "costs": "ok"
+   "costs": "ok (federal id 186584)"
   },
   "kean": {
    "roster": 39,
    "season": "2026",
    "coaches": 6,
-   "costs": "ok"
+   "costs": "ok (federal id 185262)"
   },
   "montclair": {
    "roster": 0,
    "season": "2027",
    "coaches": 5,
-   "costs": "ok"
+   "costs": "ok (federal id 185590)"
   },
   "ramapo": {
    "roster": 33,
    "season": "2026",
    "coaches": 6,
-   "costs": "ok"
+   "costs": "ok (federal id 186201)"
   },
   "rowan": {
    "roster": 37,
    "season": "2026",
    "coaches": 5,
-   "costs": "ok"
+   "costs": "ok (federal id 184782)"
   },
   "rutgerscamden": {
    "roster": 37,
    "season": "2026",
    "coaches": 8,
-   "costs": "ok"
+   "costs": "ok (federal id 186371)"
   },
   "rutgersnewark": {
    "roster": 43,
    "season": "2026",
    "coaches": 6,
-   "costs": "ok"
+   "costs": "ok (federal id 186399)"
   },
   "stockton": {
    "roster": 31,
    "season": "2026",
    "coaches": 7,
-   "costs": "ok"
+   "costs": "ok (federal id 186876)"
   },
   "tcnj": {
    "roster": 36,
    "season": "2026",
    "coaches": 6,
-   "costs": "ok"
+   "costs": "ok (federal id 187134)"
   },
   "wpu": {
    "roster": 35,
    "season": "2026",
    "coaches": 4,
-   "costs": "ok"
+   "costs": "no exact match - pin the unitid in schools.csv"
   }
  }
 }
