@@ -4,57 +4,68 @@
   "rutgers": {
    "roster": 40,
    "season": "2027",
-   "coaches": "none parsed, kept last copy"
+   "coaches": "none parsed, kept last copy",
+   "costs": "ok"
   },
   "setonhall": {
    "roster": 37,
    "season": "2026",
-   "coaches": 4
+   "coaches": 4,
+   "costs": "ok"
   },
   "kean": {
    "roster": 39,
    "season": "2026",
-   "coaches": 6
+   "coaches": 6,
+   "costs": "ok"
   },
   "montclair": {
    "roster": 0,
    "season": "2027",
-   "coaches": 5
+   "coaches": 5,
+   "costs": "ok"
   },
   "ramapo": {
    "roster": 33,
    "season": "2026",
-   "coaches": 6
+   "coaches": 6,
+   "costs": "ok"
   },
   "rowan": {
    "roster": 37,
    "season": "2026",
-   "coaches": 5
+   "coaches": 5,
+   "costs": "ok"
   },
   "rutgerscamden": {
    "roster": 37,
    "season": "2026",
-   "coaches": 8
+   "coaches": 8,
+   "costs": "ok"
   },
   "rutgersnewark": {
    "roster": 43,
    "season": "2026",
-   "coaches": 6
+   "coaches": 6,
+   "costs": "ok"
   },
   "stockton": {
    "roster": 31,
    "season": "2026",
-   "coaches": 7
+   "coaches": 7,
+   "costs": "ok"
   },
   "tcnj": {
    "roster": 36,
    "season": "2026",
-   "coaches": 6
+   "coaches": 6,
+   "costs": "ok"
   },
   "wpu": {
    "roster": 35,
    "season": "2026",
-   "coaches": 4
+   "coaches": 4,
+   "costs": "ok"
   }
  }
 }
