@@ -68,7 +68,7 @@
    "outNote": "tuition and fees",
    "u": "https://www.rutgers.edu/news/rutgers-board-approves-62-billion-budget-focused-affordability-student-aid-cost-containment"
   },
-  "checked": "2026-11-22",
+  "checked": "2026-11-23",
   "flags": []
  },
  {
@@ -115,7 +115,7 @@
    "missing": "The 2026–27 undergraduate rate was not on a page the agent could read. Seton Hall reported a 3.25% rise in posted costs for the year; 2024–25 tuition was $50,380.",
    "u": "https://www.thesetonian.com/r/e10ac8e866"
   },
-  "checked": "2026-11-22"
+  "checked": "2026-11-23"
  },
  {
   "id": "kean",
@@ -181,7 +181,7 @@
    "outNote": "same rate: Kean dropped out-of-state tuition in fall 2026",
    "u": "https://www.kean.edu/news/kean-university-sets-tuition-rates-2026-2027"
   },
-  "checked": "2026-11-22"
+  "checked": "2026-11-23"
  },
  {
   "id": "montclair",
@@ -251,7 +251,7 @@
    "outNote": "tuition and fees",
    "u": "https://www.montclair.edu/node/7072"
   },
-  "checked": "2026-11-22"
+  "checked": "2026-11-23"
  },
  {
   "id": "ramapo",
@@ -322,7 +322,7 @@
    "outNote": "tuition and fees",
    "u": "https://www.ramapo.edu/admissions/financial-aid-tuition/tuition-costs/"
   },
-  "checked": "2026-11-22",
+  "checked": "2026-11-23",
   "flags": []
  },
  {
@@ -373,7 +373,7 @@
    "missing": "Rowan's 2026–27 page lists out-of-state tuition at $12,163 per semester before fees; the full in-state total wasn't readable.",
    "u": "https://sites.rowan.edu/bursar/tuitionfees/2026-27-tuition-and-fees/2026-27-undergraduate-tuition-and-fees/"
   },
-  "checked": "2026-11-22",
+  "checked": "2026-11-23",
   "flags": []
  },
  {
@@ -443,7 +443,7 @@
    "outNote": "tuition; fees vary by campus",
    "u": "https://admissions.rutgers.edu/sites/default/files/2026-08/2026%20Financing%20Your%20Education%20Brochure.pdf"
   },
-  "checked": "2026-11-22"
+  "checked": "2026-11-23"
  },
  {
   "id": "rutgersnewark",
@@ -501,7 +501,7 @@
    "outNote": "tuition; fees vary by campus",
    "u": "https://admissions.rutgers.edu/sites/default/files/2026-08/2026%20Financing%20Your%20Education%20Brochure.pdf"
   },
-  "checked": "2026-11-22",
+  "checked": "2026-11-23",
   "flags": []
  },
  {
@@ -578,7 +578,7 @@
    "outNote": "tuition and fees",
    "u": "https://stockton.edu/admissions/costs.html"
   },
-  "checked": "2026-11-22",
+  "checked": "2026-11-23",
   "flags": []
  },
  {
@@ -638,7 +638,7 @@
    "outNote": "tuition and fees",
    "u": "https://admissions.tcnj.edu/?p=23"
   },
-  "checked": "2026-11-22"
+  "checked": "2026-11-23"
  },
  {
   "id": "wpu",
@@ -687,7 +687,7 @@
    "missing2": "Out-of-state rate not found",
    "u": "https://ww2.wpunj.edu/studentaccounts/tuition-and-fees"
   },
-  "checked": "2026-11-22",
+  "checked": "2026-11-23",
   "flags": []
  }
 ]
