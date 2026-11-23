@@ -262,9 +262,15 @@ def scorecard(row: dict, key: str) -> dict:
     """Looks a school up by its federal ID (unitid column) or, if blank, by name and state."""
     fields = "id,school.name,latest.cost.tuition.in_state,latest.cost.tuition.out_of_state,latest.student.size"
     q = f"id={row['unitid']}" if row.get("unitid") else f"school.name={requests.utils.quote(row['name'])}&school.state={row['city'][-2:]}"
-    url = f"https://api.data.gov/ed/collegescorecard/v1/schools?{q}&fields={fields}&api_key={key}"
+    url = f"https://api.data.gov/ed/collegescorecard/v1/schools?{q}&fields={fields}&per_page=20&api_key={key}"
     try:
-        r = session.get(url, timeout=25).json()["results"][0]
+        results = session.get(url, timeout=25).json()["results"]
+        # name search is fuzzy: insist on the exact school, or skip rather than show another school's numbers
+        want = re.sub(r"[^a-z]", "", row["name"].lower())
+        r = next(x for x in results if row.get("unitid") or re.sub(r"[^a-z]", "", x["school.name"].lower()) == want)
+    except StopIteration:
+        log(f"  scorecard: no exact match for {row['name']}")
+        return {}
     except Exception as e:
         log(f"  scorecard failed for {row['name']}: {e}")
         return {}
@@ -272,6 +278,7 @@ def scorecard(row: dict, key: str) -> dict:
         "inS": f"${r['latest.cost.tuition.in_state']:,}" if r.get("latest.cost.tuition.in_state") else "",
         "outS": f"${r['latest.cost.tuition.out_of_state']:,}" if r.get("latest.cost.tuition.out_of_state") else "",
         "enroll": r.get("latest.student.size"),
+        "unitid": r.get("id"),
     }
 
 
@@ -334,7 +341,7 @@ def scrape_school(row: dict, prev: dict | None, key: str | None) -> dict:
 
     if key:
         c = scorecard(row, key)
-        REPORT.setdefault(row["id"], {})["costs"] = "ok" if c.get("enroll") else "not found"
+        REPORT.setdefault(row["id"], {})["costs"] = f"ok (federal id {c['unitid']})" if c.get("enroll") else "no exact match - pin the unitid in schools.csv"
         if c.get("enroll"):
             s["enroll"], s["enrollNote"] = c["enroll"], "undergraduates (College Scorecard)"
         # federal tuition lags a year or two: only fill a gap, never replace a rate read off the school's own page
