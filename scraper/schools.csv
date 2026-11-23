@@ -1,12 +1,12 @@
 id,name,short,city,div,conf,lat,lon,platform,athletics_base,unitid
-rutgers,Rutgers University–New Brunswick,Rutgers,"Piscataway, NJ",D1,Big Ten,40.52,-74.46,sidearm,https://scarletknights.com,
-setonhall,Seton Hall University,Seton Hall,"South Orange, NJ",D1,Big East,40.743,-74.246,sidearm,https://shupirates.com,
-kean,Kean University,Kean,"Union, NJ",D3,NJAC,40.68,-74.23,sidearm,https://keanathletics.com,
-montclair,Montclair State University,Montclair State,"Montclair, NJ",D3,NJAC,40.86,-74.20,sidearm,https://montclairathletics.com,
-ramapo,Ramapo College of New Jersey,Ramapo,"Mahwah, NJ",D3,NJAC,41.08,-74.17,sidearm,https://ramapoathletics.com,
-rowan,Rowan University,Rowan,"Glassboro, NJ",D3,NJAC,39.71,-75.12,sidearm,https://rowanathletics.com,
-rutgerscamden,Rutgers University–Camden,Rutgers-Camden,"Camden, NJ",D3,NJAC,39.95,-75.12,sidearm,https://scarletraptors.com,
-rutgersnewark,Rutgers University–Newark,Rutgers-Newark,"Newark, NJ",D3,NJAC,40.74,-74.17,sidearm,https://rutgersnewarkathletics.com,
-stockton,Stockton University,Stockton,"Galloway, NJ",D3,NJAC,39.49,-74.53,sidearm,https://stocktonathletics.com,
-tcnj,The College of New Jersey,TCNJ,"Ewing, NJ",D3,NJAC,40.27,-74.78,sidearm,https://tcnjathletics.com,
+rutgers,Rutgers University–New Brunswick,Rutgers,"Piscataway, NJ",D1,Big Ten,40.52,-74.46,sidearm,https://scarletknights.com,186380
+setonhall,Seton Hall University,Seton Hall,"South Orange, NJ",D1,Big East,40.743,-74.246,sidearm,https://shupirates.com,186584
+kean,Kean University,Kean,"Union, NJ",D3,NJAC,40.68,-74.23,sidearm,https://keanathletics.com,185262
+montclair,Montclair State University,Montclair State,"Montclair, NJ",D3,NJAC,40.86,-74.20,sidearm,https://montclairathletics.com,185590
+ramapo,Ramapo College of New Jersey,Ramapo,"Mahwah, NJ",D3,NJAC,41.08,-74.17,sidearm,https://ramapoathletics.com,186201
+rowan,Rowan University,Rowan,"Glassboro, NJ",D3,NJAC,39.71,-75.12,sidearm,https://rowanathletics.com,184782
+rutgerscamden,Rutgers University–Camden,Rutgers-Camden,"Camden, NJ",D3,NJAC,39.95,-75.12,sidearm,https://scarletraptors.com,186371
+rutgersnewark,Rutgers University–Newark,Rutgers-Newark,"Newark, NJ",D3,NJAC,40.74,-74.17,sidearm,https://rutgersnewarkathletics.com,186399
+stockton,Stockton University,Stockton,"Galloway, NJ",D3,NJAC,39.49,-74.53,sidearm,https://stocktonathletics.com,186876
+tcnj,The College of New Jersey,TCNJ,"Ewing, NJ",D3,NJAC,40.27,-74.78,sidearm,https://tcnjathletics.com,187134
 wpu,William Paterson University,William Paterson,"Wayne, NJ",D3,NJAC,40.95,-74.20,sidearm,https://www.wpupioneers.com,
