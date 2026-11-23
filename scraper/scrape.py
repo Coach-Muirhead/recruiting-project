@@ -292,8 +292,9 @@ def scrape_school(row: dict, prev: dict | None, key: str | None) -> dict:
     flags = []
 
     if row["platform"] == "sidearm":
-        roster_url = f"{base}/sports/baseball/roster"
-        coach_url = f"{base}/sports/baseball/coaches"
+        rp = row.get("roster_path") or "/sports/baseball/roster"
+        roster_url = base + rp
+        coach_url = base + rp.replace("/roster", "/coaches")
         rss_url = f"{base}/rss.aspx?path=baseball"
         parse_roster = parse_sidearm_roster
     elif row["platform"] == "presto":

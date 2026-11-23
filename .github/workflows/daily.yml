@@ -3,6 +3,7 @@ on:
   schedule:
     - cron: "17 10 * * *"      # every day, 6:17 AM New York time (10:17 UTC)
   workflow_dispatch: {}         # "Run workflow" button for a manual refresh
+concurrency: { group: data-writes, cancel-in-progress: false }
 permissions:
   contents: write
   pages: write
