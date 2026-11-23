@@ -337,12 +337,17 @@ def resolve(p: dict) -> dict:
         cands.append(link)
     if p.get("school_url"):
         cands.append(p["school_url"])  # some schools host rosters on the main site
+    blocked = None
+    last = None
     for c in cands:
         res = probe(c)
         if res["platform"] in ("sidearm", "presto"):
-            return {**p, **res, "site_source": "wikipedia" if c == p.get("wiki_site") else "homepage" if c == link else "school site"}
+            return {**p, **res, "site_source": "wikipedia" if c == p.get("wiki_site") else "homepage" if c == link else "school site", "home_link": link or ""}
+        if res["platform"] == "blocked" and not blocked:
+            blocked = res
         last = res
-    return {**p, **(last if cands else {"platform": "", "athletics_base": "", "roster_path": "", "probe": "no candidate site"}), "site_source": "", "home_link": link or "", "home_diag": HOME_DIAG.get(p.get("school_url") or p.get("wiki_school_site") or "", "")}
+    res = blocked or last or {"platform": "", "athletics_base": "", "roster_path": "", "probe": "no candidate site"}
+    return {**p, **res, "site_source": "", "home_link": link or "", "home_diag": HOME_DIAG.get(p.get("school_url") or p.get("wiki_school_site") or "", "")}
 
 
 # ------------------------------------------------------------ main
