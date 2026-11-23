@@ -31,7 +31,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SCHOOLS = ROOT / "scraper" / "schools.csv"
 OUT = ROOT / "data" / "discovered.csv"
 UA = "RecruitingProjectBot/1.0 (college baseball recruiting tool; github.com/Coach-Muirhead/recruiting-project)"
-S = requests.Session(); S.headers["User-Agent"] = UA
+S = requests.Session(); S.headers.update({"User-Agent": UA, "Accept": "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8", "Accept-Language": "en-US,en;q=0.9"})
 
 LEVELS = {  # source -> division
     "d1": "D1", "d2": "D2", "d3": "D3", "naia": "NAIA", "njcaa1": "JUCO", "njcaa2": "JUCO", "njcaa3": "JUCO", "nwac": "JUCO", "cccaa": "JUCO",
@@ -271,12 +271,16 @@ def wiki_sites(programs: list[dict]) -> None:
 ATHLETIC_HOSTS = re.compile(r"prestosports\.com|sidearmsports\.com|athletics|sports\.com|/athletics", re.I)
 
 
+HOME_DIAG: dict[str, str] = {}
+
+
 def home_athletics_link(school_url: str) -> str | None:
     """Finds the athletics site from the school's home page, following one /athletics hop."""
     if not school_url:
         return None
     base = school_url if school_url.startswith("http") else "https://" + school_url
     r = get(base)
+    HOME_DIAG[school_url] = f"home:{r.status_code if r is not None else 0}:{len(r.text) if r is not None else 0}:links={len(re.findall('<a ', r.text)) if r is not None else 0}"
     if r is None or r.status_code != 200:
         return None
     best = None
@@ -338,7 +342,7 @@ def resolve(p: dict) -> dict:
         if res["platform"] in ("sidearm", "presto"):
             return {**p, **res, "site_source": "wikipedia" if c == p.get("wiki_site") else "homepage" if c == link else "school site"}
         last = res
-    return {**p, **(last if cands else {"platform": "", "athletics_base": "", "roster_path": "", "probe": "no candidate site"}), "site_source": ""}
+    return {**p, **(last if cands else {"platform": "", "athletics_base": "", "roster_path": "", "probe": "no candidate site"}), "site_source": "", "home_link": link or "", "home_diag": HOME_DIAG.get(p.get("school_url") or p.get("wiki_school_site") or "", "")}
 
 
 # ------------------------------------------------------------ main
@@ -385,7 +389,7 @@ def main():
         done = list(ex.map(resolve, programs))
 
     # write the full discovery table
-    cols = ["div", "conf", "short", "nickname", "full", "city", "state", "unitid", "sc_name", "lat", "lon", "enroll", "school_url", "wiki_site", "site_source", "athletics_base", "platform", "roster_path", "probe"]
+    cols = ["div", "conf", "short", "nickname", "full", "city", "state", "unitid", "sc_name", "lat", "lon", "enroll", "school_url", "wiki_site", "site_source", "athletics_base", "platform", "roster_path", "probe", "home_link", "home_diag"]
     OUT.parent.mkdir(exist_ok=True)
     with OUT.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore"); w.writeheader(); w.writerows(done)
