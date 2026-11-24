@@ -385,20 +385,27 @@ def polite(url: str):
     return r if r is not None and r.status_code == 200 else None
 
 
+CRAWL_DIAG: dict = {}
+
+
 def crawl(start: str) -> dict | None:
     """Follows Athletics -> Baseball -> Roster links on any site, a few pages at most.
     Returns a row the nightly job can read when the roster is a table with Name / Pos / Yr headers."""
     if not start:
         return None
-    home = polite(start if "//" in start else "https://" + start)
+    url0 = start if "//" in start else "https://" + start
+    if not allowed(url0):
+        CRAWL_DIAG[start] = "robots.txt says no"; return None
+    home = polite(url0)
     if home is None:
-        return None
+        CRAWL_DIAG[start] = "start page unreachable"; return None
     pages = [home]
     ball = [u for u, t in links(home.text, home.url) if ("baseball" in t or re.search(r"baseball|/bsb\b|/sports/m-basebl", u, re.I)) and "softball" not in (u + t).lower()]
     for u in list(dict.fromkeys(ball))[:3]:
         r = polite(u)
         if r is not None:
             pages.append(r)
+    tried = []
     for pg in pages[1:] + pages[:1]:
         cands = [pg.url] + [u for u, t in links(pg.text, pg.url) if "roster" in t or "/roster" in u.lower()]
         for u in list(dict.fromkeys(cands))[:3]:
@@ -406,6 +413,7 @@ def crawl(start: str) -> dict | None:
             if r is None:
                 continue
             _, rows = parse_sidearm_roster(r.text)
+            tried.append(f"{urlparse(r.url).path[:40]}={len(rows)}")
             title = (re.search(r"<title[^>]*>(.*?)</title>", r.text, re.S | re.I) or [None, ""])[1].lower()
             is_ball = re.search(r"baseball|/bsb\b|basebl", r.url.lower()) or ("baseball" in title and "softball" not in title)
             if len(rows) < 8 or not is_ball or "softball" in r.url.lower():
@@ -417,6 +425,7 @@ def crawl(start: str) -> dict | None:
             return {"platform": plat, "athletics_base": base, "roster_path": urlparse(r.url).path + (("?" + urlparse(r.url).query) if urlparse(r.url).query else ""),
                     "coaches_path": (urlparse(coach).path + (("?" + urlparse(coach).query) if urlparse(coach).query else "")) if coach else "",
                     "probe": f"crawl:{len(rows)} players at {r.url}"}
+    CRAWL_DIAG[start] = f"baseball links {len(ball)}; pages read: {' '.join(tried[:6]) or 'none'}"
     return None
 
 
@@ -445,6 +454,8 @@ def resolve(p: dict) -> dict:
             if hit:
                 log(f"  crawl found {p['full']}: {hit['platform']} {hit['probe']} coaches={hit['coaches_path'] or '-'}")
                 return {**p, **hit, "site_source": "crawl", "home_link": link or ""}
+    if not blocked:
+        log(f"  crawl missed {p['full'][:40]}: " + " | ".join(f"{urlparse(c).netloc} {CRAWL_DIAG.get(c, '')}" for c in dict.fromkeys([link] + cands) if c)[:300])
     res = blocked or last or {"platform": "", "athletics_base": "", "roster_path": "", "probe": "no candidate site"}
     return {**p, **res, "site_source": "", "home_link": link or "", "home_diag": HOME_DIAG.get(p.get("school_url") or p.get("wiki_school_site") or "", "")}
 
