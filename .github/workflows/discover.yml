@@ -2,25 +2,47 @@ name: Discover programs
 on:
   workflow_dispatch:
     inputs:
-      levels: { description: "Lists to read (d1,d2,d3,naia,njcaa1,njcaa2,njcaa3,nwac,cccaa)", default: "d1,d2,d3,naia,njcaa1,njcaa2,njcaa3,nwac,cccaa" }
+      levels: { description: "Lists to read, comma-separated (d1,d2,d3,naia,njcaa1,njcaa2,njcaa3,nwac,cccaa)", default: "d1,d2,d3,naia,njcaa1,njcaa2,njcaa3,nwac,cccaa" }
       limit: { description: "Programs per list (0 = all; small numbers for a test)", default: "0" }
 permissions: { contents: write }
-concurrency: { group: data-writes, cancel-in-progress: false }
 jobs:
-  discover:
+  plan:
     runs-on: ubuntu-latest
-    timeout-minutes: 300
+    outputs: { levels: "${{ steps.p.outputs.levels }}" }
+    steps:
+      - id: p
+        run: echo "levels=$(echo '${{ inputs.levels }}' | python3 -c 'import sys,json;print(json.dumps(sys.stdin.read().strip().split(",")))')" >> "$GITHUB_OUTPUT"
+  discover:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix: { level: "${{ fromJSON(needs.plan.outputs.levels) }}" }
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install requests
-      - run: python tools/discover.py --levels "${{ inputs.levels }}" --limit "${{ inputs.limit }}"
+      - run: python tools/discover.py --levels "${{ matrix.level }}" --limit "${{ inputs.limit }}" --no-merge
         env: { SCORECARD_API_KEY: "${{ secrets.SCORECARD_API_KEY }}" }
+      - uses: actions/upload-artifact@v4
+        with: { name: "discovered-${{ matrix.level }}", path: "data/discovered/${{ matrix.level }}.csv" }
+  merge:
+    needs: discover
+    if: always()
+    runs-on: ubuntu-latest
+    concurrency: { group: data-writes, cancel-in-progress: false }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: { path: incoming, pattern: "discovered-*", merge-multiple: true }
+      - run: mkdir -p data/discovered && cp incoming/*.csv data/discovered/ && pip install requests && python tools/discover.py --merge-only
       - name: Save the master list
         run: |
           git config user.name "recruiting-bot"; git config user.email "recruiting-bot@users.noreply.github.com"
-          git add scraper/schools.csv data/discovered.csv data/discovery_summary.json
+          git add scraper/schools.csv data/discovered.csv data/discovered data/discovery_summary.json
           git diff --cached --quiet || git commit -m "Discovery run $(date +%F)"
           git pull --rebase -X theirs origin main || true
           git push

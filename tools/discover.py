@@ -49,7 +49,7 @@ def log(*a):
 
 def get(url, **kw):
     try:
-        return S.get(url, timeout=kw.pop("timeout", 20), **kw)
+        return S.get(url, timeout=kw.pop("timeout", 12), **kw)
     except requests.RequestException as e:
         return None
 
@@ -356,7 +356,11 @@ def main():
     ap.add_argument("--levels", default=",".join(LEVELS))  # d1,d2,d3,naia,njcaa1,njcaa2,njcaa3,nwac,cccaa
     ap.add_argument("--limit", type=int, default=0, help="programs per level, for test runs")
     ap.add_argument("--workers", type=int, default=8)
+    ap.add_argument("--no-merge", action="store_true")
+    ap.add_argument("--merge-only", action="store_true")
     a = ap.parse_args()
+    if a.merge_only:
+        return merge()
     key = os.environ.get("SCORECARD_API_KEY")
     if not key:
         sys.exit("SCORECARD_API_KEY is required")
@@ -390,21 +394,42 @@ def main():
         if c:
             p.update({"unitid": c["id"], "sc_name": c["school.name"], "lat": c.get("location.lat"), "lon": c.get("location.lon"), "enroll": c.get("latest.student.size"), "school_url": c.get("school.school_url") or ""})
     log(f"scorecard matched {sum(1 for p in programs if p.get('unitid'))} of {len(programs)}")
+    counter = {"n": 0}
+
+    def step(p):
+        r = resolve(p)
+        counter["n"] += 1
+        if counter["n"] % 50 == 0:
+            log(f"  checked {counter['n']} of {len(programs)}")
+        return r
+
     with ThreadPoolExecutor(a.workers) as ex:
-        done = list(ex.map(resolve, programs))
+        done = list(ex.map(step, programs))
 
-    # write the full discovery table
     cols = ["div", "conf", "short", "nickname", "full", "city", "state", "unitid", "sc_name", "lat", "lon", "enroll", "school_url", "wiki_site", "site_source", "athletics_base", "platform", "roster_path", "probe", "home_link", "home_diag"]
-    OUT.parent.mkdir(exist_ok=True)
-    with OUT.open("w", newline="") as f:
+    part = ROOT / "data" / "discovered" / f"{a.levels.replace(',', '+')}.csv"
+    part.parent.mkdir(parents=True, exist_ok=True)
+    with part.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore"); w.writeheader(); w.writerows(done)
+    log(f"wrote {len(done)} programs to {part}")
+    if not a.no_merge:
+        merge()
 
-    # add ready programs to schools.csv
+
+def merge():
+    """Combines data/discovered/*.csv into data/discovered.csv and adds ready programs to schools.csv."""
+    from collections import Counter
+    done = []
+    for f in sorted((ROOT / "data" / "discovered").glob("*.csv")):
+        done += list(csv.DictReader(f.open()))
+    if not done:
+        return
+    with OUT.open("w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(done[0].keys())); w.writeheader(); w.writerows(done)
     existing = list(csv.DictReader(SCHOOLS.open()))
     fields = list(existing[0].keys())
-    for extra in ("roster_path",):
-        if extra not in fields:
-            fields.append(extra)
+    if "roster_path" not in fields:
+        fields.append("roster_path")
     have_ids = {r["id"] for r in existing}
     have_unit = {r.get("unitid") for r in existing if r.get("unitid")}
     have_base = {domain(r["athletics_base"]) for r in existing}
@@ -417,22 +442,23 @@ def main():
         i = slug(p["short"])
         if i in have_ids:
             i = slug(p["short"] + p["state"])
-        have_ids.add(i); have_base.add(domain(p["athletics_base"]))
+        if i in have_ids:
+            i = slug(p["full"] + p["state"])
+        have_ids.add(i); have_base.add(domain(p["athletics_base"])); have_unit.add(str(p.get("unitid") or ""))
         existing.append({"id": i, "name": p.get("sc_name") or p["full"], "short": p["short"], "city": f"{p['city']}, {p['state']}", "div": p["div"], "conf": p["conf"],
                          "lat": round(float(p["lat"]), 3), "lon": round(float(p["lon"]), 3), "platform": p["platform"], "athletics_base": p["athletics_base"],
                          "unitid": p.get("unitid") or "", "roster_path": p["roster_path"]})
         added += 1
     with SCHOOLS.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore", lineterminator="\n"); w.writeheader(); w.writerows(existing)
-
-    from collections import Counter
     summary = {
         "programs": len(done),
         "by_level": Counter(p["div"] for p in done),
         "ready": Counter(p["div"] for p in done if p["platform"] in ("sidearm", "presto")),
-        "platform": Counter(p["platform"] or "not found" for p in done),
+        "blocked": Counter(p["div"] for p in done if p["platform"] == "blocked"),
+        "not_found": Counter(p["div"] for p in done if not p["platform"]),
         "no_scorecard_match": sum(1 for p in done if not p.get("unitid")),
-        "added_to_schools_csv": added,
+        "schools_csv_rows": len(existing), "added_this_merge": added,
     }
     (ROOT / "data" / "discovery_summary.json").write_text(json.dumps(summary, indent=1))
     log(json.dumps(summary, indent=1))
