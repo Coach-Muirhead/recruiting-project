@@ -46,3 +46,940 @@ avemariauniversity,Ave Maria University,Ave Maria University,"Ave Maria, FL",NAI
 calhouncommunitycollege,John C Calhoun State Community College,Calhoun Community College,"Tanner, AL",JUCO,NJCAA Division I,34.646,-86.95,sidearm,https://aumathletics.com,101514,/sports/baseball/roster
 centralalabamacommunitycolle,Central Alabama Community College,Central Alabama Community College,"Alexander City, AL",JUCO,NJCAA Division I,32.925,-85.945,sidearm,https://troytrojans.com,100760,/sports/baseball/roster
 benedictinecollege,Benedictine College,Benedictine College,"Atchison, KS",NAIA,Heart of America Athletic Conference,39.573,-95.114,sidearm,https://ravenathletics.com,154712,/sports/baseball/roster
+canadacollege,Canada College,Canada College,"Redwood City, CA",JUCO,CCCAA,37.449,-122.265,presto,https://canadacollege.prestosports.com,111434,/sports/bsb/2025-26/roster
+mtsanantoniocollege,Mt San Antonio College,Mt San Antonio College,"Walnut, CA",JUCO,CCCAA,34.048,-117.847,presto,https://www.mtsacathletics.com,119164,/sports/bsb/2026-27/roster
+sanbernardinovalleycollege,San Bernardino Valley College,San Bernardino Valley College,"San Bernardino, CA",JUCO,CCCAA,34.086,-117.313,presto,https://sbvc.prestosports.com,123527,/sports/bsb/2026-27/roster
+eastcarolinauniversity,East Carolina University,East Carolina University,", NC",D1,American,35.607,-77.368,sidearm,https://ecupirates.com,198464,/sports/baseball/roster
+fau,Florida Atlantic University,FAU,", FL",D1,American,26.372,-80.103,sidearm,https://fausports.com,133669,/sports/baseball/roster
+universityofmemphis,University of Memphis,University of Memphis,", TN",D1,American,35.119,-89.938,sidearm,https://gotigersgo.com,220862,/sports/baseball/roster
+riceuniversity,Rice University,Rice University,", TX",D1,American,29.718,-95.402,sidearm,https://riceowls.com,227757,/sports/baseball/roster
+usf,University of South Florida,USF,", FL",D1,American,28.061,-82.413,sidearm,https://gousfbulls.com,137351,/sports/baseball/roster
+tulaneuniversity,Tulane University of Louisiana,Tulane University,", LA",D1,American,29.94,-90.122,sidearm,https://tulanegreenwave.com,160755,/sports/baseball/roster
+uab,University of Alabama at Birmingham,UAB,", AL",D1,American,33.506,-86.799,sidearm,https://uabsports.com,100663,/sports/baseball/roster
+utsa,The University of Texas at San Antonio,UTSA,", TX",D1,American,29.584,-98.621,sidearm,https://goutsa.com,229027,/sports/baseball/roster
+wichitastateuniversity,Wichita State University,Wichita State University,", KS",D1,American,37.719,-97.292,sidearm,https://goshockers.com,156125,/sports/baseball/roster
+bostoncollege,Boston College,Boston College,", MA",D1,Atlantic Coast,42.336,-71.169,sidearm,https://bceagles.com,164924,/sports/baseball/roster
+californiacal,University of California-Berkeley,California/Cal,", CA",D1,Atlantic Coast,37.872,-122.26,sidearm,https://calbears.com,110635,/sports/baseball/roster
+clemsonuniversity,Clemson University,Clemson University,", SC",D1,Atlantic Coast,34.679,-82.835,sidearm,https://clemsontigers.com,217882,/sports/baseball/roster
+dukeuniversity,Duke University,Duke University,", NC",D1,Atlantic Coast,36.001,-78.938,sidearm,https://goduke.com,198419,/sports/baseball/roster
+floridastateuniversity,Florida State University,Florida State University,", FL",D1,Atlantic Coast,30.443,-84.295,sidearm,https://seminoles.com,134097,/sports/baseball/roster
+georgiatech,Georgia Institute of Technology-Main Campus,Georgia Tech,", GA",D1,Atlantic Coast,33.772,-84.395,sidearm,https://ramblinwreck.com,139755,/sports/m-basebl/roster
+universityoflouisville,University of Louisville,University of Louisville,", KY",D1,Atlantic Coast,38.217,-85.76,sidearm,https://gocards.com,157289,/sports/baseball/roster
+universityofmiami,University of Miami,University of Miami,", FL",D1,Atlantic Coast,25.721,-80.279,sidearm,https://miamihurricanes.com,135726,/sports/baseball/roster
+northcarolinacarolina,University of North Carolina at Chapel Hill,North Carolina/Carolina,", NC",D1,Atlantic Coast,35.912,-79.051,sidearm,https://goheels.com,199120,/sports/baseball/roster
+ncstate,North Carolina State University at Raleigh,NC State,", NC",D1,Atlantic Coast,35.785,-78.675,sidearm,https://gopack.com,199193,/sports/baseball/roster
+universityofnotredame,University of Notre Dame,University of Notre Dame,", IN",D1,Atlantic Coast,41.703,-86.239,sidearm,https://fightingirish.com,152080,/sports/baseball/roster
+pitt,University of Pittsburgh-Pittsburgh Campus,Pitt,", PA",D1,Atlantic Coast,40.444,-79.953,sidearm,https://pittsburghpanthers.com,215293,/sports/baseball/roster
+stanforduniversity,Stanford University,Stanford University,", CA",D1,Atlantic Coast,37.429,-122.167,sidearm,https://gostanford.com,243744,/sports/baseball/roster
+universityofvirginia,University of Virginia-Main Campus,University of Virginia,", VA",D1,Atlantic Coast,38.036,-78.503,sidearm,https://virginiasports.com,234076,/sports/baseball/roster
+virginiatech,Virginia Polytechnic Institute and State University,Virginia Tech,", VA",D1,Atlantic Coast,37.229,-80.424,sidearm,https://hokiesports.com,233921,/sports/baseball/roster
+wakeforestuniversity,Wake Forest University,Wake Forest University,", NC",D1,Atlantic Coast,36.134,-80.277,sidearm,https://godeacs.com,199847,/sports/baseball/roster
+bellarmineuniversity,Bellarmine University,Bellarmine University,", KY",D1,ASUN,38.219,-85.705,sidearm,https://athletics.bellarmine.edu,156286,/sports/baseball/roster
+fgcu,Florida Gulf Coast University,FGCU,", FL",D1,ASUN,26.464,-81.773,sidearm,https://fgcuathletics.com,433660,/sports/baseball/roster
+jacksonvilleuniversity,Jacksonville University,Jacksonville University,", FL",D1,ASUN,30.353,-81.605,sidearm,https://judolphins.com,134945,/sports/baseball/roster
+lipscombuniversity,Lipscomb University,Lipscomb University,", TN",D1,ASUN,36.106,-86.8,sidearm,https://lipscombsports.com,219976,/sports/baseball/roster
+universityofnorthflorida,University of North Florida,University of North Florida,", FL",D1,ASUN,30.272,-81.509,sidearm,https://unfospreys.com,136172,/sports/baseball/roster
+queensuniversityofcharlotte,Queens University of Charlotte,Queens University of Charlotte,", NC",D1,ASUN,35.189,-80.834,sidearm,https://queensathletics.com,199412,/sports/baseball/roster
+stetsonuniversity,Stetson University,Stetson University,", FL",D1,ASUN,29.035,-81.301,sidearm,https://gohatters.com,137546,/sports/baseball/roster
+davidsoncollege,Davidson College,Davidson College,", NC",D1,Atlantic 10,35.5,-80.844,sidearm,https://davidsonwildcats.com,198385,/sports/baseball/roster
+universityofdayton,University of Dayton,University of Dayton,", OH",D1,Atlantic 10,39.74,-84.176,sidearm,https://daytonflyers.com,202480,/sports/baseball/roster
+fordhamuniversity,Fordham University,Fordham University,", NY",D1,Atlantic 10,40.859,-73.883,sidearm,https://fordhamsports.com,191241,/sports/baseball/roster
+georgemasonuniversity,George Mason University,George Mason University,", VA",D1,Atlantic 10,38.832,-77.307,sidearm,https://gomason.com,232186,/sports/baseball/roster
+georgewashingtonuniversity,George Washington University,George Washington University,", Washington, D.C.",D1,Atlantic 10,38.899,-77.048,sidearm,https://gwsports.com,131469,/sports/baseball/roster
+lasalleuniversity,La Salle University,La Salle University,", PA",D1,Atlantic 10,40.038,-75.153,sidearm,https://goexplorers.com,213367,/sports/baseball/roster
+universityofrhodeisland,University of Rhode Island,University of Rhode Island,", RI",D1,Atlantic 10,41.485,-71.527,sidearm,https://gorhody.com,217484,/sports/baseball/roster
+universityofrichmond,University of Richmond,University of Richmond,", VA",D1,Atlantic 10,37.577,-77.539,sidearm,https://richmondspiders.com,233374,/sports/baseball/roster
+stbonaventureuniversity,St Bonaventure University,St. Bonaventure University,", NY",D1,Atlantic 10,42.08,-78.481,sidearm,https://gobonnies.com,195164,/sports/baseball/roster
+saintjosephsuniversity,Saint Joseph's University - Philadelphia,Saint Joseph's University,", PA",D1,Atlantic 10,39.994,-75.238,sidearm,https://sjuhawks.com,215770,/sports/baseball/roster
+saintlouisuniversity,Saint Louis University,Saint Louis University,", MO",D1,Atlantic 10,38.637,-90.235,sidearm,https://slubillikens.com,179159,/sports/baseball/roster
+vcu,Virginia Commonwealth University,VCU,", VA",D1,Atlantic 10,37.55,-77.453,sidearm,https://vcuathletics.com,234030,/sports/baseball/roster
+butleruniversity,Butler University,Butler University,", IN",D1,Big East,39.837,-86.172,sidearm,https://butlersports.com,150163,/sports/baseball/roster
+creightonuniversity,Creighton University,Creighton University,", NE",D1,Big East,41.265,-95.948,sidearm,https://gocreighton.com,181002,/sports/baseball/roster
+georgetownuniversity,Georgetown University,Georgetown University,", Washington, D.C.",D1,Big East,38.909,-77.073,sidearm,https://guhoyas.com,131496,/sports/baseball/roster
+stjohnsuniversity,St. John's University-New York,St. John's University,", NY",D1,Big East,40.723,-73.796,sidearm,https://redstormsports.com,195809,/sports/baseball/roster
+uconn,University of Connecticut,UConn,", CT",D1,Big East,41.809,-72.25,sidearm,https://uconnhuskies.com,129020,/sports/baseball/roster
+villanovauniversity,Villanova University,Villanova University,", PA",D1,Big East,40.036,-75.341,sidearm,https://villanova.com,216597,/sports/baseball/roster
+xavieruniversity,Xavier University,Xavier University,", OH",D1,Big East,39.15,-84.475,sidearm,https://goxavier.com,206622,/sports/baseball/roster
+charlestonsouthernuniversity,Charleston Southern University,Charleston Southern University,", SC",D1,Big South,32.983,-80.073,sidearm,https://csusports.com,217688,/sports/baseball/roster
+gardnerwebbuniversity,Gardner-Webb University,Gardner–Webb University,", NC",D1,Big South,35.247,-81.668,sidearm,https://gwusports.com,198561,/sports/baseball/roster
+highpointuniversity,High Point University,High Point University,", NC",D1,Big South,35.972,-79.995,sidearm,https://highpointpanthers.com,198695,/sports/baseball/roster
+longwooduniversity,Longwood University,Longwood University,", VA",D1,Big South,37.298,-78.397,sidearm,https://longwoodlancers.com,232566,/sports/baseball/roster
+presbyteriancollege,Presbyterian College,Presbyterian College,", SC",D1,Big South,34.466,-81.874,sidearm,https://gobluehose.com,218539,/sports/baseball/roster
+radforduniversity,Radford University,Radford University,", VA",D1,Big South,37.137,-80.55,sidearm,https://radfordathletics.com,233277,/sports/baseball/roster
+uncasheville,University of North Carolina Asheville,UNC Asheville,", NC",D1,Big South,35.617,-82.565,sidearm,https://uncabulldogs.com,199111,/sports/baseball/roster
+uscupstate,University of South Carolina-Upstate,USC Upstate,", SC",D1,Big South,34.996,-81.971,sidearm,https://upstatespartans.com,218742,/sports/baseball/roster
+winthropuniversity,Winthrop University,Winthrop University,", SC",D1,Big South,34.942,-81.031,sidearm,https://winthropeagles.com,218964,/sports/baseball/roster
+illinois,University of Illinois Urbana-Champaign,Illinois,", IL",D1,Big Ten,40.105,-88.229,sidearm,https://fightingillini.com,145637,/sports/baseball/roster
+indiana,Indiana University-Bloomington,Indiana,", IN",D1,Big Ten,39.166,-86.527,sidearm,https://iuhoosiers.com,151351,/sports/baseball/roster
+universityofiowa,University of Iowa,University of Iowa,", IA",D1,Big Ten,41.662,-91.536,sidearm,https://hawkeyesports.com,153658,/sports/baseball/roster
+maryland,University of Maryland-College Park,Maryland,", MD",D1,Big Ten,38.988,-76.945,sidearm,https://umterps.com,163286,/sports/baseball/roster
+universityofmichigan,University of Michigan-Ann Arbor,University of Michigan,", MI",D1,Big Ten,42.278,-83.735,sidearm,https://mgoblue.com,170976,/sports/baseball/roster
+michiganstateuniversity,Michigan State University,Michigan State University,", MI",D1,Big Ten,42.732,-84.476,sidearm,https://msuspartans.com,171100,/sports/baseball/roster
+universityofminnesota,University of Minnesota-Twin Cities,University of Minnesota,", MN",D1,Big Ten,44.973,-93.235,sidearm,https://gophersports.com:443,174066,/sports/baseball/roster
+nebraska,University of Nebraska-Lincoln,Nebraska,", NE",D1,Big Ten,40.818,-96.701,sidearm,https://huskers.com,181464,/sports/baseball/roster
+northwesternuniversity,Northwestern University,Northwestern University,", IL",D1,Big Ten,42.05,-87.68,sidearm,https://nusports.com,147767,/sports/baseball/roster
+ohiostateuniversity,Ohio State University-Main Campus,Ohio State University,", OH",D1,Big Ten,40.0,-83.008,sidearm,https://ohiostatebuckeyes.com,204796,/sports/baseball/roster
+universityoforegon,University of Oregon,University of Oregon,", OR",D1,Big Ten,44.045,-123.076,sidearm,https://goducks.com,209551,/sports/baseball/roster
+pennstate,Pennsylvania State University-Main Campus,Penn State,", PA",D1,Big Ten,40.797,-77.863,sidearm,https://gopsusports.com,214777,/sports/baseball/roster
+purdueuniversity,Purdue University-Main Campus,Purdue University,", IN",D1,Big Ten,40.428,-86.914,sidearm,https://purduesports.com,243780,/sports/baseball/roster
+ucla,University of California-Los Angeles,UCLA,", CA",D1,Big Ten,34.072,-118.442,sidearm,https://uclabruins.com,110662,/sports/baseball/roster
+uscsoutherncal,University of Southern California,USC/Southern Cal,", CA",D1,Big Ten,34.021,-118.284,sidearm,https://usctrojans.com,123961,/sports/baseball/roster
+universityofwashington,University of Washington-Seattle Campus,University of Washington,", WA",D1,Big Ten,47.655,-122.305,sidearm,https://gohuskies.com,236948,/sports/baseball/roster
+universityofarizona,University of Arizona,University of Arizona,", AZ",D1,Big 12,32.233,-110.951,sidearm,https://arizonawildcats.com,104179,/sports/baseball/roster
+arizonastateuniversity,Arizona State University Campus Immersion,Arizona State University,", AZ",D1,Big 12,33.418,-111.934,sidearm,https://thesundevils.com,104151,/sports/baseball/roster
+bayloruniversity,Baylor University,Baylor University,", TX",D1,Big 12,31.547,-97.121,sidearm,https://baylorbears.com,223232,/sports/baseball/roster
+byu,Brigham Young University,BYU,", UT",D1,Big 12,40.251,-111.649,sidearm,https://byucougars.com,230038,/sports/baseball/roster
+universityofcincinnati,University of Cincinnati-Main Campus,University of Cincinnati,", OH",D1,Big 12,39.131,-84.514,sidearm,https://gobearcats.com,201885,/sports/baseball/roster
+universityofhouston,University of Houston,University of Houston,", TX",D1,Big 12,29.72,-95.344,sidearm,https://uhcougars.com,225511,/sports/baseball/roster
+universityofkansas,University of Kansas,University of Kansas,", KS",D1,Big 12,38.959,-95.248,sidearm,https://kuathletics.com,155317,/sports/baseball/roster
+kansasstateuniversity,Kansas State University,Kansas State University,", KS",D1,Big 12,39.189,-96.581,sidearm,https://www.kstatesports.com,155399,/sports/baseball/roster
+oklahomastateuniversity,Oklahoma State University-Main Campus,Oklahoma State University,", OK",D1,Big 12,36.123,-97.07,sidearm,https://okstate.com,207388,/sports/baseball/roster
+tcu,Texas Christian University,TCU,", TX",D1,Big 12,32.71,-97.365,sidearm,https://gofrogs.com,228875,/sports/baseball/roster
+texastechuniversity,Texas Tech University,Texas Tech University,", TX",D1,Big 12,33.583,-101.875,sidearm,https://texastech.com,229115,/sports/baseball/roster
+ucf,University of Central Florida,UCF,", FL",D1,Big 12,28.602,-81.201,sidearm,https://ucfknights.com,132903,/sports/baseball/roster
+universityofutah,University of Utah,University of Utah,", UT",D1,Big 12,40.762,-111.846,sidearm,https://utahutes.com,230764,/sports/baseball/roster
+westvirginiauniversity,West Virginia University,West Virginia University,", WV",D1,Big 12,39.634,-79.954,sidearm,https://wvusports.com:443,238032,/sports/baseball/roster
+californiabaptistuniversity,California Baptist University,California Baptist University,", CA",D1,Big West,33.929,-117.426,sidearm,https://cbulancers.com,110361,/sports/baseball/roster
+calpoly,California Polytechnic State University-San Luis Obispo,Cal Poly,", CA",D1,Big West,35.3,-120.657,sidearm,https://gopoly.com,110422,/sports/baseball/roster
+calstatefullerton,California State University-Fullerton,Cal State Fullerton,", CA",D1,Big West,33.882,-117.885,sidearm,https://fullertontitans.com,110565,/sports/baseball/roster
+csuncalstatenorthridge,California State University-Northridge,CSUN/Cal State Northridge,", CA",D1,Big West,34.24,-118.529,sidearm,https://gomatadors.com,110608,/sports/baseball/roster
+bakersfieldcsubakersfield,California State University-Bakersfield,Bakersfield/CSU Bakersfield,", CA",D1,Big West,35.35,-119.105,sidearm,https://gorunners.com,110486,/sports/baseball/roster
+longbeachstate,California State University-Long Beach,Long Beach State,", CA",D1,Big West,33.783,-118.112,sidearm,https://longbeachstate.com,110583,/sports/baseball/roster
+sacramentostate,California State University-Sacramento,Sacramento State,", CA",D1,Big West,38.559,-121.424,sidearm,https://hornetsports.com,110617,/sports/baseball/roster
+ucirvine,University of California-Irvine,UC Irvine,", CA",D1,Big West,33.648,-117.841,sidearm,https://ucirvinesports.com:443,110653,/sports/baseball/roster
+ucriverside,University of California-Riverside,UC Riverside,", CA",D1,Big West,33.972,-117.327,sidearm,https://gohighlanders.com,110671,/sports/baseball/roster
+ucsandiego,University of California-San Diego,UC San Diego,", CA",D1,Big West,32.878,-117.236,sidearm,https://ucsdtritons.com,110680,/sports/baseball/roster
+ucsantabarbara,University of California-Santa Barbara,UC Santa Barbara,", CA",D1,Big West,34.416,-119.846,sidearm,https://ucsbgauchos.com,110705,/sports/baseball/roster
+utahvalleyuniversity,Utah Valley University,Utah Valley University,", UT",D1,Big West,40.281,-111.716,sidearm,https://gouvu.com,230737,/sports/baseball/roster
+campbelluniversity,Campbell University,Campbell University,", NC",D1,Coastal Athletic,35.409,-78.738,sidearm,https://gocamels.com,198136,/sports/baseball/roster
+charleston,College of Charleston,Charleston,", SC",D1,Coastal Athletic,32.784,-79.94,sidearm,https://cofcsports.com,217819,/sports/baseball/roster
+elonuniversity,Elon University,Elon University,", NC",D1,Coastal Athletic,36.104,-79.503,sidearm,https://elonphoenix.com,198516,/sports/baseball/roster
+hofstrauniversity,Hofstra University,Hofstra University,", NY",D1,Coastal Athletic,40.716,-73.601,sidearm,https://gohofstra.com,191649,/sports/baseball/roster
+monmouthuniversity,Monmouth University,Monmouth University,", NJ",D1,Coastal Athletic,40.28,-74.006,sidearm,https://monmouthhawks.com,185572,/sports/baseball/roster
+northcarolinaat,North Carolina A & T State University,North Carolina A&T,", NC",D1,Coastal Athletic,36.073,-79.773,sidearm,https://ncataggies.com,199102,/sports/baseball/roster
+northeasternuniversity,Northeastern University,Northeastern University,", MA",D1,Coastal Athletic,42.34,-71.089,sidearm,https://nuhuskies.com,167358,/sports/baseball/roster
+stonybrookuniversity,Stony Brook University,Stony Brook University,", NY",D1,Coastal Athletic,40.915,-73.12,sidearm,https://stonybrookathletics.com,196097,/sports/baseball/roster
+towsonuniversity,Towson University,Towson University,", MD",D1,Coastal Athletic,39.394,-76.611,sidearm,https://towsontigers.com,164076,/sports/baseball/roster
+uncwilmingtonuncw,University of North Carolina Wilmington,UNC Wilmington/UNCW,", NC",D1,Coastal Athletic,34.225,-77.876,sidearm,https://uncwsports.com,199218,/sports/baseball/roster
+collegeofwilliammary,William & Mary,College of William & Mary,", VA",D1,Coastal Athletic,37.269,-76.708,sidearm,https://tribeathletics.com,231624,/sports/baseball/roster
+universityofdelaware,University of Delaware,University of Delaware,", DE",D1,Conference USA,39.68,-75.753,sidearm,https://bluehens.com,130943,/sports/baseball/roster
+fiu,Florida International University,FIU,", FL",D1,Conference USA,25.757,-80.374,sidearm,https://fiusports.com,133951,/sports/baseball/roster
+kennesawstateuniversity,Kennesaw State University,Kennesaw State University,", GA",D1,Conference USA,34.039,-84.583,sidearm,https://ksuowls.com,486840,/sports/baseball/roster
+libertyuniversity,Liberty University,Liberty University,", VA",D1,Conference USA,37.35,-79.182,sidearm,https://libertyflames.com,232557,/sports/baseball/roster
+middletennessee,Middle Tennessee State University,Middle Tennessee,", TN",D1,Conference USA,35.848,-86.361,sidearm,https://goblueraiders.com:443,220978,/sports/baseball/roster
+missouristateuniversity,Missouri State University-Springfield,Missouri State University,", MO",D1,Conference USA,37.199,-93.281,sidearm,https://missouristatebears.com,179566,/sports/baseball/roster
+newmexicostateuniversity,New Mexico State University-Main Campus,New Mexico State University,", NM",D1,Conference USA,32.282,-106.752,sidearm,https://nmstatesports.com,188030,/sports/baseball/roster
+samhouston,Sam Houston State University,Sam Houston,", TX",D1,Conference USA,30.715,-95.546,sidearm,https://gobearkats.com,227881,/sports/baseball/roster
+wku,Western Kentucky University,WKU,", KY",D1,Conference USA,36.985,-86.457,sidearm,https://wkusports.com,157951,/sports/baseball/roster
+milwaukee,University of Wisconsin-Milwaukee,Milwaukee,", WI",D1,Horizon League,43.077,-87.88,sidearm,https://mkepanthers.com,240453,/sports/baseball/roster
+niu,Northern Illinois University,NIU,", IL",D1,Horizon League,41.934,-88.766,sidearm,https://niuhuskies.com,147703,/sports/baseball/roster
+northernkentuckyuniversity,Northern Kentucky University,Northern Kentucky University,", KY",D1,Horizon League,39.03,-84.463,sidearm,https://nkunorse.com,157447,/sports/baseball/roster
+oaklanduniversity,Oakland University,Oakland University,", MI",D1,Horizon League,42.675,-83.216,sidearm,https://goldengrizzlies.com,171571,/sports/baseball/roster
+wrightstateuniversity,Wright State University-Main Campus,Wright State University,", OH",D1,Horizon League,39.781,-84.065,sidearm,https://wsuraiders.com,206604,/sports/baseball/roster
+youngstownstateuniversity,Youngstown State University,Youngstown State University,", OH",D1,Horizon League,41.105,-80.647,sidearm,https://ysusports.com:443,206695,/sports/baseball/roster
+brownuniversity,Brown University,Brown University,", RI",D1,Ivy League,41.826,-71.404,sidearm,https://brownbears.com,217156,/sports/baseball/roster
+columbiauniversity,Columbia University in the City of New York,Columbia University,", NY",D1,Ivy League,40.808,-73.962,sidearm,https://gocolumbialions.com,190150,/sports/baseball/roster
+cornelluniversity,Cornell University,Cornell University,", NY",D1,Ivy League,42.447,-76.483,sidearm,https://cornellbigred.com,190415,/sports/baseball/roster
+dartmouthcollege,Dartmouth College,Dartmouth College,", NH",D1,Ivy League,43.704,-72.29,sidearm,https://dartmouthsports.com,182670,/sports/baseball/roster
+harvarduniversity,Harvard University,Harvard University,", MA",D1,Ivy League,42.374,-71.118,sidearm,https://gocrimson.com,166027,/sports/baseball/roster
+penn,University of Pennsylvania,Penn,", PA",D1,Ivy League,39.951,-75.194,sidearm,https://pennathletics.com,215062,/sports/baseball/roster
+princetonuniversity,Princeton University,Princeton University,", NJ",D1,Ivy League,40.349,-74.659,sidearm,https://goprincetontigers.com,186131,/sports/baseball/roster
+yaleuniversity,Yale University,Yale University,", CT",D1,Ivy League,41.311,-72.927,sidearm,https://yalebulldogs.com,130794,/sports/baseball/roster
+canisiusuniversity,Canisius University,Canisius University,", NY",D1,Metro,42.925,-78.853,sidearm,https://gogriffs.com,189705,/sports/baseball/roster
+fairfielduniversity,Fairfield University,Fairfield University,", CT",D1,Metro,41.158,-73.256,sidearm,https://fairfieldstags.com,129242,/sports/baseball/roster
+ionauniversity,Iona University,Iona University,", NY",D1,Metro,40.926,-73.788,sidearm,https://ionagaels.com,191931,/sports/baseball/roster
+manhattanuniversity,Manhattan University,Manhattan University,", NY",D1,Metro,40.89,-73.902,sidearm,https://gojaspers.com,192703,/sports/baseball/roster
+maristuniversity,Marist University,Marist University,", NY",D1,Metro,41.721,-73.935,sidearm,https://goredfoxes.com,192819,/sports/baseball/roster
+merrimackcollege,Merrimack College,Merrimack College,", MA",D1,Metro,42.668,-71.124,sidearm,https://merrimackathletics.com,166850,/sports/baseball/roster
+mountstmarysuniversity,Mount St. Mary's University,Mount St. Mary's University,", MD",D1,Metro,39.682,-77.352,sidearm,https://mountathletics.com,163462,/sports/baseball/roster
+niagarauniversity,Niagara University,Niagara University,", NY",D1,Metro,43.137,-79.037,sidearm,https://purpleeagles.com,193973,/sports/baseball/roster
+quinnipiacuniversity,Quinnipiac University,Quinnipiac University,", CT",D1,Metro,41.419,-72.894,sidearm,https://gobobcats.com,130226,/sports/baseball/roster
+rideruniversity,Rider University,Rider University,", NJ",D1,Metro,40.279,-74.738,sidearm,https://gobroncs.com,186283,/sports/baseball/roster
+sacredheartuniversity,Sacred Heart University,Sacred Heart University,", CT",D1,Metro,41.221,-73.243,sidearm,https://sacredheartpioneers.com:443,130253,/sports/baseball/roster
+saintpetersuniversity,Saint Peter's University,Saint Peter's University,", NJ",D1,Metro,40.727,-74.072,sidearm,https://saintpeterspeacocks.com,186432,/sports/baseball/roster
+sienauniversity,Siena University,Siena University,", NY",D1,Metro,42.718,-73.753,sidearm,https://sienasaints.com,195474,/sports/baseball/roster
+universityofakron,University of Akron Main Campus,University of Akron,", OH",D1,Mid-American,41.076,-81.511,sidearm,https://gozips.com,200800,/sports/baseball/roster
+ballstateuniversity,Ball State University,Ball State University,", IN",D1,Mid-American,40.203,-85.409,sidearm,https://ballstatesports.com,150136,/sports/baseball/roster
+bowlinggreen,Bowling Green State University-Main Campus,Bowling Green,", OH",D1,Mid-American,41.376,-83.641,sidearm,https://bgsufalcons.com,201441,/sports/baseball/roster
+centralmichiganuniversity,Central Michigan University,Central Michigan University,", MI",D1,Mid-American,43.591,-84.775,sidearm,https://cmuchippewas.com,169248,/sports/baseball/roster
+easternmichiganuniversity,Eastern Michigan University,Eastern Michigan University,", MI",D1,Mid-American,42.252,-83.627,sidearm,https://emueagles.com,169798,/sports/baseball/roster
+kentstateuniversity,Kent State University at Kent,Kent State University,", OH",D1,Mid-American,41.147,-81.343,sidearm,https://kentstatesports.com,203517,/sports/baseball/roster
+massachusettsumass,University of Massachusetts-Amherst,Massachusetts/UMass,", MA",D1,Mid-American,42.386,-72.527,sidearm,https://umassathletics.com,166629,/sports/baseball/roster
+miamiofohio,Miami University-Oxford,Miami of Ohio,", OH",D1,Mid-American,39.508,-84.733,sidearm,https://miamiredhawks.com,204024,/sports/baseball/roster
+ohiouniversity,Ohio University-Main Campus,Ohio University,", OH",D1,Mid-American,39.327,-82.101,sidearm,https://ohiobobcats.com,204857,/sports/baseball/roster
+universityoftoledo,University of Toledo,University of Toledo,", OH",D1,Mid-American,41.661,-83.615,sidearm,https://utrockets.com,206084,/sports/baseball/roster
+westernmichiganuniversity,Western Michigan University,Western Michigan University,", MI",D1,Mid-American,42.282,-85.614,sidearm,https://wmubroncos.com,172699,/sports/baseball/roster
+bradleyuniversity,Bradley University,Bradley University,", IL",D1,Missouri Valley,40.697,-89.617,sidearm,https://bradleybraves.com,143358,/sports/baseball/roster
+universityofevansville,University of Evansville,University of Evansville,", IN",D1,Missouri Valley,37.972,-87.532,sidearm,https://gopurpleaces.com,150534,/sports/baseball/roster
+illinoisstateuniversity,Illinois State University,Illinois State University,", IL",D1,Missouri Valley,40.509,-88.99,sidearm,https://goredbirds.com,145813,/sports/baseball/roster
+indianastateuniversity,Indiana State University,Indiana State University,", IN",D1,Missouri Valley,39.469,-87.408,sidearm,https://gosycamores.com,151324,/sports/baseball/roster
+murraystateuniversity,Murray State University,Murray State University,", KY",D1,Missouri Valley,36.612,-88.324,sidearm,https://goracers.com,157401,/sports/baseball/roster
+southernillinoissiu,Southern Illinois University-Carbondale,Southern Illinois/SIU,", IL",D1,Missouri Valley,37.714,-89.217,sidearm,https://siusalukis.com,149222,/sports/baseball/roster
+uic,University of Illinois Chicago,UIC,", IL",D1,Missouri Valley,41.872,-87.651,sidearm,https://uicflames.com,145600,/sports/baseball/roster
+valparaisouniversity,Valparaiso University,Valparaiso University,", IN",D1,Missouri Valley,41.462,-87.04,sidearm,https://valpoathletics.com,152600,/sports/baseball/roster
+airforce,United States Air Force Academy,Air Force,", CO",D1,Mountain West,39.011,-104.891,sidearm,https://goairforcefalcons.com,128328,/sports/baseball/roster
+grandcanyonuniversity,Grand Canyon University,Grand Canyon University,", AZ",D1,Mountain West,33.513,-112.13,sidearm,https://gculopes.com,104717,/sports/baseball/roster
+hawaii,University of Hawaii at Manoa,Hawaiʻi,", HI",D1,Mountain West,21.299,-157.819,sidearm,https://hawaiiathletics.com,141574,/sports/baseball/roster
+nevada,University of Nevada-Reno,Nevada,", NV",D1,Mountain West,39.544,-119.815,sidearm,https://nevadawolfpack.com,182290,/sports/baseball/roster
+universityofnewmexico,University of New Mexico-Main Campus,University of New Mexico,", NM",D1,Mountain West,35.084,-106.62,sidearm,https://golobos.com,187985,/sports/baseball/roster
+sanjosestateuniversity,San Jose State University,San Jose State University,", CA",D1,Mountain West,37.337,-121.881,sidearm,https://sjsuspartans.com,122755,/sports/baseball/roster
+ucdavis,University of California-Davis,UC Davis,", CA",D1,Mountain West,38.54,-121.75,sidearm,https://ucdavisaggies.com,110644,/sports/baseball/roster
+unlv,University of Nevada-Las Vegas,UNLV,", NV",D1,Mountain West,36.106,-115.138,sidearm,https://unlvrebels.com,182281,/sports/baseball/roster
+utahtechuniversity,Utah Tech University,Utah Tech University,", UT",D1,Mountain West,37.103,-113.566,sidearm,https://utahtechtrailblazers.com,230171,/sports/baseball/roster
+coppinstateuniversity,Coppin State University,Coppin State University,", MD",D1,NEC,39.311,-76.659,sidearm,https://coppinstatesports.com,162283,/sports/baseball/roster
+delawarestateuniversity,Delaware State University,Delaware State University,", DE",D1,NEC,39.187,-75.541,sidearm,https://dsuhornets.com,130934,/sports/baseball/roster
+fairleighdickinsonuniversity,Fairleigh Dickinson University-Metropolitan Campus,Fairleigh Dickinson University,", NJ",D1,NEC,40.897,-74.029,sidearm,https://fduknights.com,184603,/sports/baseball/roster
+lemoynecollege,Le Moyne College,Le Moyne College,", NY",D1,NEC,43.049,-76.09,sidearm,https://lemoynedolphins.com,192323,/sports/baseball/roster
+liu,Long Island University,LIU,", NY",D1,NEC,40.821,-73.594,sidearm,https://www.liuathletics.com,192448,/sports/baseball/roster
+umes,University of Maryland Eastern Shore,UMES,", MD",D1,NEC,38.207,-75.687,sidearm,https://umeshawksports.com,163338,/sports/baseball/roster
+norfolkstateuniversity,Norfolk State University,Norfolk State University,", VA",D1,NEC,36.848,-76.261,sidearm,https://nsuspartans.com,232937,/sports/baseball/roster
+stonehillcollege,Stonehill College,Stonehill College,", MA",D1,NEC,42.059,-71.081,sidearm,https://stonehillskyhawks.com,167996,/sports/baseball/roster
+wagnercollege,Wagner College,Wagner College,", NY",D1,NEC,40.616,-74.093,sidearm,https://wagnerathletics.com,197197,/sports/baseball/roster
+easternillinoisuniversity,Eastern Illinois University,Eastern Illinois University,", IL",D1,Ohio Valley,39.48,-88.176,sidearm,https://eiupanthers.com,144892,/sports/baseball/roster
+lindenwooduniversity,Lindenwood University,Lindenwood University,", MO",D1,Ohio Valley,38.785,-90.501,sidearm,https://lindenwoodlions.com,177968,/sports/baseball/roster
+moreheadstateuniversity,Morehead State University,Morehead State University,", KY",D1,Ohio Valley,38.187,-83.434,sidearm,https://msueagles.com,157386,/sports/baseball/roster
+southeastmissourisemo,Southeast Missouri State University,Southeast Missouri/SEMO,", MO",D1,Ohio Valley,37.311,-89.531,sidearm,https://semoredhawks.com,179557,/sports/baseball/roster
+siuedwardsvillesiue,Southern Illinois University Edwardsville,SIU Edwardsville/SIUE,", IL",D1,Ohio Valley,38.794,-89.998,sidearm,https://siuecougars.com,149231,/sports/baseball/roster
+universityofsouthernindiana,University of Southern Indiana,University of Southern Indiana,", IN",D1,Ohio Valley,37.962,-87.677,sidearm,https://usiscreamingeagles.com,151306,/sports/baseball/roster
+utmartin,The University of Tennessee-Martin,UT Martin,", TN",D1,Ohio Valley,36.34,-88.864,sidearm,https://utmsports.com,221768,/sports/baseball/roster
+westernillinoisuniversity,Western Illinois University,Western Illinois University,", IL",D1,Ohio Valley,40.468,-90.687,sidearm,https://goleathernecks.com,149772,/sports/baseball/roster
+dallasbaptistuniversity,Dallas Baptist University,Dallas Baptist University,", TX",D1,Pac-12,32.71,-96.947,sidearm,https://dbupatriots.com,224226,/sports/baseball/roster
+fresnostate,California State University-Fresno,Fresno State,", CA",D1,Pac-12,36.811,-119.745,sidearm,https://gobulldogs.com,110556,/sports/baseball/roster
+gonzagauniversity,Gonzaga University,Gonzaga University,", WA",D1,Pac-12,47.667,-117.401,sidearm,https://gozags.com,235316,/sports/baseball/roster
+oregonstateuniversity,Oregon State University,Oregon State University,", OR",D1,Pac-12,44.564,-123.275,sidearm,https://osubeavers.com,209542,/sports/baseball/roster
+sandiegostateuniversity,San Diego State University,San Diego State University,", CA",D1,Pac-12,32.775,-117.071,sidearm,https://goaztecs.com,122409,/sports/baseball/roster
+texasstateuniversity,Texas State University,Texas State University,", TX",D1,Pac-12,29.889,-97.943,sidearm,https://txst.com,228459,/sports/baseball/roster
+washingtonstateuniversity,Washington State University,Washington State University,", WA",D1,Pac-12,46.73,-117.158,sidearm,https://wsucougars.com,236939,/sports/baseball/roster
+army,United States Military Academy,Army,", NY",D1,Patriot League,41.389,-73.957,sidearm,https://goarmywestpoint.com,197036,/sports/baseball/roster
+bucknelluniversity,Bucknell University,Bucknell University,", PA",D1,Patriot League,40.954,-76.883,sidearm,https://bucknellbison.com,211291,/sports/baseball/roster
+collegeoftheholycross,College of the Holy Cross,College of the Holy Cross,", MA",D1,Patriot League,42.238,-71.808,sidearm,https://goholycross.com,166124,/sports/baseball/roster
+lafayettecollege,Lafayette College,Lafayette College,", PA",D1,Patriot League,40.7,-75.21,sidearm,https://goleopards.com,213385,/sports/baseball/roster
+lehighuniversity,Lehigh University,Lehigh University,", PA",D1,Patriot League,40.607,-75.38,sidearm,https://lehighsports.com,213543,/sports/baseball/roster
+navy,United States Naval Academy,Navy,", MD",D1,Patriot League,38.981,-76.482,sidearm,https://navysports.com,164155,/sports/baseball/roster
+universityofalabama,The University of Alabama,University of Alabama,", AL",D1,Southeastern,33.212,-87.546,sidearm,https://rolltide.com,100751,/sports/baseball/roster
+auburnuniversity,Auburn University,Auburn University,", AL",D1,Southeastern,32.599,-85.488,sidearm,https://auburntigers.com,100858,/sports/baseball/roster
+universityofflorida,University of Florida,University of Florida,", FL",D1,Southeastern,29.646,-82.348,sidearm,https://floridagators.com,134130,/sports/baseball/roster
+universityofgeorgia,University of Georgia,University of Georgia,", GA",D1,Southeastern,33.956,-83.374,sidearm,https://georgiadogs.com,139959,/sports/baseball/roster
+universityofkentucky,University of Kentucky,University of Kentucky,", KY",D1,Southeastern,38.039,-84.505,sidearm,https://ukathletics.com,157085,/sports/baseball/roster/
+lsu,Louisiana State University and Agricultural & Mechanical College,LSU,", LA",D1,Southeastern,30.415,-91.179,sidearm,https://lsusports.net,159391,/sports/bsb/roster
+olemiss,University of Mississippi,Ole Miss,", MS",D1,Southeastern,34.366,-89.537,sidearm,https://olemisssports.com,176017,/sports/baseball/roster
+mississippistateuniversity,Mississippi State University,Mississippi State University,", MS",D1,Southeastern,33.455,-88.79,sidearm,https://hailstate.com,176080,/sports/baseball/roster
+universityofoklahoma,University of Oklahoma-Norman Campus,University of Oklahoma,", OK",D1,Southeastern,35.209,-97.444,sidearm,https://soonersports.com,207500,/sports/baseball/roster
+universityofsouthcarolina,University of South Carolina-Columbia,University of South Carolina,", SC",D1,Southeastern,33.997,-81.027,sidearm,https://gamecocksonline.com,218663,/sports/baseball/roster/
+universityoftennessee,The University of Tennessee-Knoxville,University of Tennessee,", TN",D1,Southeastern,35.952,-83.926,sidearm,https://utsports.com,221759,/sports/baseball/roster
+texas,The University of Texas at Austin,Texas,", TX",D1,Southeastern,30.283,-97.738,sidearm,https://texaslonghorns.com,228778,/sports/baseball/roster
+tamu,Texas A&M University-College Station,TAMU,", TX",D1,Southeastern,30.619,-96.336,sidearm,https://12thman.com,228723,/sports/baseball/roster
+vanderbiltuniversity,Vanderbilt University,Vanderbilt University,", TN",D1,Southeastern,36.147,-86.803,sidearm,https://vucommodores.com,221999,/sports/baseball/roster
+thecitadel,Citadel Military College of South Carolina,The Citadel,", SC",D1,Southern,32.797,-79.959,sidearm,https://citadelsports.com,217864,/sports/baseball/roster
+etsu,East Tennessee State University,ETSU,", TN",D1,Southern,36.302,-82.367,sidearm,https://etsubucs.com,220075,/sports/baseball/roster
+merceruniversity,Mercer University,Mercer University,", GA",D1,Southern,32.829,-83.649,sidearm,https://mercerbears.com,140447,/sports/baseball/roster
+samforduniversity,Samford University,Samford University,", AL",D1,Southern,33.464,-86.792,sidearm,https://samfordsports.com,102049,/sports/baseball/roster
+uncgreensborouncg,University of North Carolina at Greensboro,UNC Greensboro/UNCG,", NC",D1,Southern,36.068,-79.809,sidearm,https://uncgspartans.com,199148,/sports/baseball/roster
+vmi,Virginia Military Institute,VMI,", VA",D1,Southern,37.79,-79.437,sidearm,https://vmikeydets.com,234085,/sports/baseball/roster
+westerncarolinauniversity,Western Carolina University,Western Carolina University,", NC",D1,Southern,35.309,-83.186,sidearm,https://catamountsports.com,200004,/sports/baseball/roster
+woffordcollege,Wofford College,Wofford College,", SC",D1,Southern,34.959,-81.934,sidearm,https://woffordterriers.com,218973,/sports/baseball/roster
+houstonchristianuniversity,Houston Christian University,Houston Christian University,", TX",D1,Southland,29.694,-95.516,sidearm,https://hcuhuskies.com,225399,/sports/baseball/roster
+alternatelyuiw,University of the Incarnate Word,alternately UIW,", TX",D1,Southland,29.467,-98.466,sidearm,https://uiwcardinals.com,225627,/sports/baseball/roster
+lamaruniversity,Lamar University,Lamar University,", TX",D1,Southland,30.043,-94.072,sidearm,https://lamarcardinals.com,226091,/sports/baseball/roster
+lsuneworleans,University of New Orleans,LSU New Orleans,", LA",D1,Southland,30.028,-90.067,sidearm,https://privateersports.com,159939,/sports/baseball/roster
+mcneese,McNeese State University,McNeese,", LA",D1,Southland,30.178,-93.217,sidearm,https://mcneesesports.com,159717,/sports/baseball/roster
+nicholls,Nicholls State University,Nicholls,", LA",D1,Southland,29.794,-90.802,sidearm,https://geauxcolonels.com,159966,/sports/baseball/roster
+northwesternstateuniversity,Northwestern State University of Louisiana,Northwestern State University,", LA",D1,Southland,31.751,-93.098,sidearm,https://nsudemons.com,160038,/sports/baseball/roster
+southeasternlouisianaunivers,Southeastern Louisiana University,Southeastern Louisiana University,", LA",D1,Southland,30.515,-90.469,sidearm,https://lionsports.net,160612,/sports/baseball/roster
+texasamuniversitycorpuschris,Texas A & M University-Corpus Christi,Texas A&M University–Corpus Christi,", TX",D1,Southland,27.714,-97.324,sidearm,https://goislanders.com,224147,/sports/baseball/roster
+alabamaamuniversity,Alabama A & M University,Alabama A&M University,", AL",D1,SWAC,34.783,-86.569,sidearm,https://aamusports.com,100654,/sports/baseball/roster
+alabamastateuniversity,Alabama State University,Alabama State University,", AL",D1,SWAC,32.364,-86.296,sidearm,https://bamastatesports.com,100724,/sports/baseball/roster
+alcornstateuniversity,Alcorn State University,Alcorn State University,", MS",D1,SWAC,31.877,-91.143,sidearm,https://alcornsports.com,175342,/sports/baseball/roster
+arkansaspinebluff,University of Arkansas at Pine Bluff,Arkansas–Pine Bluff,", AR",D1,SWAC,34.244,-92.019,sidearm,https://uapblionsroar.com,106412,/sports/baseball/roster
+bethunecookmanuniversity,Bethune-Cookman University,Bethune–Cookman University,", FL",D1,SWAC,29.207,-81.033,sidearm,https://bcuathletics.com,132602,/sports/baseball/roster
+gramblingstateuniversity,Grambling State University,Grambling State University,", LA",D1,SWAC,32.524,-92.713,sidearm,https://gsutigers.com,159009,/sports/baseball/roster
+jacksonstateuniversity,Jackson State University,Jackson State University,", MS",D1,SWAC,32.296,-90.207,sidearm,https://gojsutigers.com,175856,/sports/baseball/roster
+mississippivalleystateuniver,Mississippi Valley State University,Mississippi Valley State University,", MS",D1,SWAC,33.514,-90.341,sidearm,https://mvsusports.com,176044,/sports/baseball/roster
+prairieviewamuniversity,Prairie View A & M University,Prairie View A&M University,", TX",D1,SWAC,30.092,-95.989,sidearm,https://pvpanthers.com,227526,/sports/baseball/roster
+southernuniversity,Southern University and A & M College,Southern University,", LA",D1,SWAC,30.525,-91.19,sidearm,https://gojagsports.com,160621,/sports/baseball/roster
+texassouthernuniversity,Texas Southern University,Texas Southern University,", TX",D1,SWAC,29.721,-95.361,sidearm,https://tsusports.com,229063,/sports/baseball/roster
+northdakotastateuniversity,North Dakota State University-Main Campus,North Dakota State University,", ND",D1,The Summit,46.893,-96.801,sidearm,https://gobison.com,200332,/sports/baseball/roster
+universityofnortherncolorado,University of Northern Colorado,University of Northern Colorado,", CO",D1,The Summit,40.411,-104.693,sidearm,https://uncbears.com,127741,/sports/baseball/roster
+omaha,University of Nebraska at Omaha,Omaha,", NE",D1,The Summit,41.259,-96.009,sidearm,https://omahamavs.com,181394,/sports/baseball/roster
+oralrobertsuniversity,Oral Roberts University,Oral Roberts University,", OK",D1,The Summit,36.049,-95.953,sidearm,https://oruathletics.com,207582,/sports/baseball/roster
+universityofstthomas,University of St Thomas,University of St. Thomas,", MN",D1,The Summit,44.943,-93.189,sidearm,https://tommiesports.com,174914,/sports/baseball/roster
+southdakotastateuniversity,South Dakota State University,South Dakota State University,", SD",D1,The Summit,44.317,-96.782,sidearm,https://gojacks.com,219356,/sports/baseball/roster
+appalachianstateuniversity,Appalachian State University,Appalachian State University,", NC",D1,Sun Belt,36.216,-81.681,sidearm,https://appstatesports.com,197869,/sports/baseball/roster
+arkansasstateuniversity,Arkansas State University,Arkansas State University,", AR",D1,Sun Belt,35.842,-90.68,sidearm,https://astateredwolves.com,106458,/sports/baseball/roster
+coastalcarolinauniversity,Coastal Carolina University,Coastal Carolina University,", SC",D1,Sun Belt,33.795,-79.012,sidearm,https://goccusports.com,218724,/sports/baseball/roster
+georgiasouthernuniversity,Georgia Southern University,Georgia Southern University,", GA",D1,Sun Belt,32.426,-81.784,sidearm,https://gseagles.com,139931,/sports/baseball/roster
+georgiastateuniversity,Georgia State University,Georgia State University,", GA",D1,Sun Belt,33.753,-84.387,sidearm,https://georgiastatesports.com,139940,/sports/baseball/roster
+jamesmadisonuniversity,James Madison University,James Madison University,", VA",D1,Sun Belt,38.436,-78.87,sidearm,https://jmusports.com,232423,/sports/baseball/roster
+louisiana,University of Louisiana at Lafayette,Louisiana,", LA",D1,Sun Belt,30.212,-92.02,sidearm,https://ragincajuns.com,160658,/sports/baseball/roster
+louisianamonroeulm,University of Louisiana at Monroe,Louisiana–Monroe/ULM,", LA",D1,Sun Belt,32.528,-92.074,sidearm,https://ulmwarhawks.com,159993,/sports/baseball/roster
+louisianatechuniversity,Louisiana Tech University,Louisiana Tech University,", LA",D1,Sun Belt,32.528,-92.65,sidearm,https://latechsports.com,159647,/sports/baseball/roster
+marshalluniversity,Marshall University,Marshall University,", WV",D1,Sun Belt,38.422,-82.429,sidearm,https://herdzone.com,237525,/sports/baseball/roster
+olddominionuniversity,Old Dominion University,Old Dominion University,", VA",D1,Sun Belt,36.886,-76.307,sidearm,https://odusports.com,232982,/sports/baseball/roster
+universityofsouthalabama,University of South Alabama,University of South Alabama,", AL",D1,Sun Belt,30.696,-88.179,sidearm,https://usajaguars.com,102094,/sports/baseball/roster
+southernmiss,University of Southern Mississippi,Southern Miss,", MS",D1,Sun Belt,31.327,-89.331,sidearm,https://southernmiss.com,176372,/sports/baseball/roster
+abilenechristianuniversity,Abilene Christian University,Abilene Christian University,", TX",D1,United Athletic,32.469,-99.71,sidearm,https://acusports.com,222178,/sports/baseball/roster
+austinpeay,Austin Peay State University,Austin Peay,", TN",D1,United Athletic,36.533,-87.354,sidearm,https://letsgopeay.com,219602,/sports/baseball/roster
+universityofcentralarkansas,University of Central Arkansas,University of Central Arkansas,", AR",D1,United Athletic,35.078,-92.458,sidearm,https://ucasports.com,106704,/sports/baseball/roster
+eku,Eastern Kentucky University,EKU,", KY",D1,United Athletic,37.741,-84.301,sidearm,https://ekusports.com,156620,/sports/baseball/roster
+littlerock,University of Arkansas at Little Rock,Little Rock,", AR",D1,United Athletic,34.723,-92.34,sidearm,https://lrtrojans.com,106245,/sports/baseball/roster
+universityofnorthalabama,University of North Alabama,University of North Alabama,", AL",D1,United Athletic,34.807,-87.68,sidearm,https://roarlions.com,101879,/sports/baseball/roster
+tarletonstateuniversity,Tarleton State University,Tarleton State University,", TX",D1,United Athletic,32.218,-98.219,sidearm,https://tarletonsports.com,228529,/sports/baseball/roster
+utarlingtonuta,The University of Texas at Arlington,UT Arlington/UTA,", TX",D1,United Athletic,32.73,-97.113,sidearm,https://utamavs.com,228769,/sports/baseball/roster
+alternatelylmu,Loyola Marymount University,alternately LMU,", CA",D1,West Coast,33.971,-118.416,sidearm,https://lmulions.com,117946,/sports/baseball/roster
+universityofthepacific,University of the Pacific,University of the Pacific,", CA",D1,West Coast,37.981,-121.312,sidearm,https://pacifictigers.com,120883,/sports/baseball/roster
+pepperdineuniversity,Pepperdine University,Pepperdine University,", CA",D1,West Coast,34.038,-118.707,sidearm,https://pepperdinewaves.com,121150,/sports/baseball/roster
+universityofportland,University of Portland,University of Portland,", OR",D1,West Coast,45.573,-122.727,sidearm,https://portlandpilots.com,209825,/sports/baseball/roster
+saintmaryssmc,Saint Mary's College of California,Saint Mary's/SMC,", CA",D1,West Coast,37.841,-122.109,sidearm,https://smcgaels.com,123554,/sports/baseball/roster
+universityofsandiego,University of San Diego,University of San Diego,", CA",D1,West Coast,32.771,-117.192,sidearm,https://usdtoreros.com,122436,/sports/baseball/roster
+universityofsanfrancisco,University of San Francisco,University of San Francisco,", CA",D1,West Coast,37.777,-122.45,sidearm,https://usfdons.com,122612,/sports/baseball/roster
+santaclarauniversity,Santa Clara University,Santa Clara University,", CA",D1,West Coast,37.348,-121.938,sidearm,https://santaclarabroncos.com,122931,/sports/baseball/roster
+seattleuniversity,Seattle University,Seattle University,", WA",D1,West Coast,47.609,-122.319,sidearm,https://goseattleu.com,236595,/sports/baseball/roster
+mercyhurstuniversity,Mercyhurst University,Mercyhurst University,", PA",D1,NEC,42.106,-80.053,sidearm,https://hurstathletics.com,213987,/sports/baseball/roster
+universityofnewhaven,University of New Haven,University of New Haven,", CT",D1,NEC,41.291,-72.961,sidearm,https://newhavenchargers.com,129941,/sports/baseball/roster
+universityofwestflorida,University of West Florida,University of West Florida,", FL",D1,Atlantic Sun,30.549,-87.219,sidearm,https://goargos.com,138354,/sports/baseball/roster
+universityofwestgeorgia,University of West Georgia,University of West Georgia,", GA",D1,United Athletic,33.574,-85.098,sidearm,https://uwgathletics.com,141334,/sports/baseball/roster
+arkansasfortsmith,University of Arkansas-Fort Smith,Arkansas–Fort Smith,"Fort Smith, AR",D2,MIAA,35.384,-94.374,sidearm,https://uafortsmithlions.com,108092,/sports/baseball/roster
+arkansasmonticello,University of Arkansas at Monticello,Arkansas–Monticello,"Monticello, AR",D2,GAC,33.591,-91.811,sidearm,https://www.uamsports.com,106485,/sports/baseball/roster
+ashland,Ashland University,Ashland,"Ashland, OH",D2,G-MAC,40.862,-82.321,sidearm,https://goashlandeagles.com,201104,/sports/baseball/roster
+assumption,Assumption University,Assumption,"Worcester, MA",D2,NE-10,42.294,-71.829,sidearm,https://assumptiongreyhounds.com,164562,/sports/baseball/roster
+augusta,Augusta University,Augusta,"Augusta, GA",D2,Peach Belt,33.47,-81.989,sidearm,https://augustajags.com,482149,/sports/baseball/roster
+augustana,Augustana University,Augustana,"Sioux Falls, SD",D2,NSIC,43.525,-96.737,sidearm,https://goaugie.com,219000,/sports/baseball/roster
+barry,Barry University,Barry,"Miami Shores, FL",D2,SSC,25.879,-80.199,sidearm,https://gobarrybucs.com,132471,/sports/baseball/roster
+barton,Barton College,Barton,"Wilson, NC",D2,Carolinas,35.734,-77.914,sidearm,https://bartonbulldogs.com,197911,/sports/baseball/roster
+belmontabbey,Belmont Abbey College,Belmont Abbey,"Belmont, NC",D2,Carolinas,35.261,-81.041,sidearm,https://abbeyathletics.com,197984,/sports/baseball/roster
+bemidjistate,Bemidji State University,Bemidji State,"Bemidji, MN",D2,NSIC,47.482,-94.874,sidearm,https://bsubeavers.com,173124,/sports/baseball/roster
+benedict,Benedict College,Benedict,"Columbia, SC",D2,SIAC,34.013,-81.02,sidearm,https://benedicttigers.com,217721,/sports/baseball/roster
+bentley,Bentley University,Bentley,"Waltham, MA",D2,NE-10,42.386,-71.223,sidearm,https://bentleyfalcons.com,164739,/sports/baseball/roster
+biola,Biola University,Biola,"La Mirada, CA",D2,PacWest,33.906,-118.014,sidearm,https://athletics.biola.edu,110097,/sports/baseball/roster
+bluefieldstate,Bluefield State University,Bluefield State,"Bluefield, WV",D2,Independent,37.266,-81.239,sidearm,https://gobstate.com,237215,/sports/baseball/roster
+caldwell,Caldwell University,Caldwell,"Caldwell, NJ",D2,CACC,40.833,-74.273,sidearm,https://caldwellathletics.com,183910,/sports/baseball/roster
+calpolypomona,California State Polytechnic University-Pomona,Cal Poly Pomona,"Pomona, CA",D2,CCAA,34.058,-117.821,sidearm,https://broncoathletics.com,110529,/sports/baseball/roster
+calstatedominguezhills,California State University-Dominguez Hills,Cal State Dominguez Hills,"Carson, CA",D2,CCAA,33.865,-118.256,sidearm,https://gotoros.com,110547,/sports/baseball/roster
+calstateeastbay,California State University-East Bay,Cal State East Bay,"Hayward, CA",D2,CCAA,37.658,-122.054,sidearm,https://eastbaypioneers.com,110574,/sports/baseball/roster
+calstatelosangeles,California State University-Los Angeles,Cal State Los Angeles,"Los Angeles, CA",D2,CCAA,34.067,-118.169,sidearm,https://lagoldeneagles.com,110592,/sports/baseball/roster
+calstatemontereybay,California State University-Monterey Bay,Cal State Monterey Bay,"Seaside, CA",D2,CCAA,36.652,-121.796,sidearm,https://otterathletics.com,409698,/sports/baseball/roster
+calstatesanbernardino,California State University-San Bernardino,Cal State San Bernardino,"San Bernardino, CA",D2,CCAA,34.183,-117.324,sidearm,https://csusbathletics.com,110510,/sports/baseball/roster
+calstatesanmarcos,California State University-San Marcos,Cal State San Marcos,"San Marcos, CA",D2,CCAA,33.131,-117.159,sidearm,https://csusmcougars.com,366711,/sports/baseball/roster
+calstatestanislaus,California State University-Stanislaus,Cal State Stanislaus,"Turlock, CA",D2,CCAA,37.526,-120.853,sidearm,https://warriorathletics.com,110495,/sports/baseball/roster
+pa,Saint Joseph's University - Lancaster,PA,"California, PA",D2,PSAC,40.06,-76.247,sidearm,https://calvulcans.com,442356,/sports/baseball/roster
+cameron,Cameron University,Cameron,"Lawton, OK",D2,Lone Star,34.606,-98.434,sidearm,https://cameronaggies.com,206914,/sports/baseball/roster
+catawba,Catawba College,Catawba,"Salisbury, NC",D2,SAC,35.691,-80.483,sidearm,https://catawbaathletics.com,198215,/sports/baseball/roster
+cedarville,Cedarville University,Cedarville,"Cedarville, OH",D2,G-MAC,39.749,-83.815,sidearm,https://yellowjackets.cedarville.edu,201654,/sports/baseball/roster
+centralmissouri,University of Central Missouri,Central Missouri,"Warrensburg, MO",D2,MIAA,38.759,-93.737,sidearm,https://ucmathletics.com,176965,/sports/baseball/roster
+centraloklahoma,University of Central Oklahoma,Central Oklahoma,"Edmond, OK",D2,MIAA,35.655,-97.472,sidearm,https://bronchosports.com,206941,/sports/baseball/roster
+centralwashington,Central Washington University,Central Washington,"Ellensburg, WA",D2,GNAC,47.003,-120.538,sidearm,https://wildcatsports.com,234827,/sports/baseball/roster
+chaminade,Chaminade University of Honolulu,Chaminade,"Honolulu, HI",D2,PacWest,21.29,-157.808,sidearm,https://goswords.com,141486,/sports/baseball/roster
+wv,University of Charleston,WV,"Charleston, WV",D2,MEC,38.333,-81.616,sidearm,https://ucgoldeneagles.com,237312,/sports/baseball/roster
+chestnuthill,Chestnut Hill College,Chestnut Hill,"Philadelphia, PA",D2,CACC,40.087,-75.229,sidearm,https://griffinathletics.com,211583,/sports/baseball/roster
+chicostate,California State University-Chico,Chico State,"Chico, CA",D2,CCAA,39.73,-121.845,sidearm,https://chicowildcats.com,110538,/sports/baseball/roster
+chowan,Chowan University,Chowan,"Murfreesboro, NC",D2,Carolinas,36.436,-77.099,sidearm,https://gocuhawks.com,198303,/sports/baseball/roster
+christianbrothers,Christian Brothers University,Christian Brothers,"Memphis, TN",D2,Gulf South,35.127,-89.983,sidearm,https://cbubucs.com,219833,/sports/baseball/roster
+claflin,Claflin University,Claflin,"Orangeburg, SC",D2,Peach Belt,33.498,-80.854,sidearm,https://athletics.claflin.edu,217873,/sports/baseball/roster
+clarkatlanta,Clark Atlanta University,Clark Atlanta,"Atlanta, GA",D2,SIAC,33.748,-84.413,sidearm,https://clarkatlantasports.com,138947,/sports/baseball/roster
+coloradochristian,Colorado Christian University,Colorado Christian,"Lakewood, CO",D2,RMAC,39.714,-105.095,sidearm,https://ccucougars.com,126669,/sports/baseball/roster
+coloradomesa,Colorado Mesa University,Colorado Mesa,"Grand Junction, CO",D2,RMAC,39.081,-108.553,sidearm,https://cmumavericks.com,127556,/sports/baseball/roster
+coloradomines,Colorado School of Mines,Colorado Mines,"Golden, CO",D2,RMAC,39.751,-105.223,sidearm,https://minesathletics.com,126775,/sports/baseball/roster
+columbusstate,Columbus State University,Columbus State,"Columbus, GA",D2,Peach Belt,32.501,-84.941,sidearm,https://csucougars.com,139366,/sports/baseball/roster
+concord,Concord University,Concord,"Athens, WV",D2,MEC,37.424,-81.007,sidearm,https://cumountainlions.com,237330,/sports/baseball/roster
+concordiairvine,Concordia University-Irvine,Concordia–Irvine,"Irvine, CA",D2,PacWest,33.654,-117.812,sidearm,https://cuigoldeneagles.com,112075,/sports/baseball/roster
+concordiastpaul,Concordia University-Saint Paul,Concordia–St. Paul,"Saint Paul, MN",D2,NSIC,44.95,-93.155,sidearm,https://cspbears.com,173328,/sports/baseball/roster
+csupueblo,Colorado State University Pueblo,CSU Pueblo,"Pueblo, CO",D2,RMAC,38.309,-104.579,sidearm,https://gothunderwolves.com,128106,/sports/baseball/roster
+davenport,Davenport University,Davenport,"Grand Rapids, MI",D2,GLIAC,42.85,-85.534,sidearm,https://dupanthers.com,169479,/sports/baseball/roster
+daviselkins,Davis & Elkins College,Davis & Elkins,"Elkins, WV",D2,MEC,38.931,-79.846,sidearm,https://senatornation.com,237358,/sports/baseball/roster
+deltastate,Delta State University,Delta State,"Cleveland, MS",D2,Gulf South,33.745,-90.735,sidearm,https://gostatesmen.com,175616,/sports/baseball/roster
+drury,Drury University,Drury,"Springfield, MO",D2,GLVC,37.22,-93.286,sidearm,https://drurypanthers.com,177214,/sports/baseball/roster
+dyouville,D'Youville  University,D'Youville,"Buffalo, NY",D2,ECC,42.903,-78.891,sidearm,https://dyusaints.com,190716,/sports/baseball/roster
+eastcentral,East Central University,East Central,"Ada, OK",D2,GAC,34.772,-96.664,sidearm,https://ecutigers.com,207041,/sports/baseball/roster
+eaststroudsburg,East Stroudsburg University of Pennsylvania,East Stroudsburg,"East Stroudsburg, PA",D2,PSAC,40.996,-75.174,sidearm,https://esuwarriors.com,212115,/sports/baseball/roster
+easternnewmexico,Eastern New Mexico University-Main Campus,Eastern New Mexico,"Portales, NM",D2,Lone Star,34.176,-103.348,sidearm,https://goeasternathletics.com,187648,/sports/baseball/roster
+eckerd,Eckerd College,Eckerd,"St. Petersburg, FL",D2,SSC,27.716,-82.687,sidearm,https://eckerdtritons.com,133492,/sports/baseball/roster
+edwardwaters,Edward Waters University,Edward Waters,"Jacksonville, FL",D2,SIAC,30.345,-81.685,sidearm,https://ewutigerpride.com,133526,/sports/baseball/roster
+embryriddle,Embry-Riddle Aeronautical University-Worldwide,Embry–Riddle,"Daytona Beach, FL",D2,SSC,29.19,-81.048,sidearm,https://erauathletics.com,426314,/sports/baseball/roster
+emporiastate,Emporia State University,Emporia State,"Emporia, KS",D2,MIAA,38.415,-96.179,sidearm,https://esuhornets.com,155025,/sports/baseball/roster
+erskine,Erskine College,Erskine,"Due West, SC",D2,Carolinas,34.332,-82.391,sidearm,https://erskinesports.com,217998,/sports/baseball/roster
+fairmontstate,Fairmont State University,Fairmont State,"Fairmont, WV",D2,MEC,39.483,-80.162,sidearm,https://fightingfalcons.com,237367,/sports/baseball/roster
+felician,Felician University,Felician,"Lodi, NJ",D2,CACC,40.867,-74.096,sidearm,https://felicianuathletics.com,184612,/sports/baseball/roster
+ferrum,Ferrum College,Ferrum,"Ferrum, VA",D2,Carolinas,36.926,-80.021,sidearm,https://ferrumpanthers.com,232089,/sports/baseball/roster
+findlay,The University of Findlay,Findlay,"Findlay, OH",D2,G-MAC,41.053,-83.652,sidearm,https://findlayoilers.com,202763,/sports/baseball/roster
+flagler,Flagler College,Flagler,"St. Augustine, FL",D2,Peach Belt,29.893,-81.315,sidearm,https://flaglerathletics.com,133711,/sports/baseball/roster
+floridasouthern,Florida Southern College,Florida Southern,"Lakeland, FL",D2,SSC,28.032,-81.948,sidearm,https://fscmocs.com,134079,/sports/baseball/roster
+floridatech,Florida Institute of Technology,Florida Tech,"Melbourne, FL",D2,SSC,28.066,-80.623,sidearm,https://floridatechsports.com,133881,/sports/baseball/roster
+forthaysstate,Fort Hays State University,Fort Hays State,"Hays, KS",D2,MIAA,38.872,-99.343,sidearm,https://fhsuathletics.com,155061,/sports/baseball/roster
+francismarion,Francis Marion University,Francis Marion,"Florence, SC",D2,Carolinas,34.19,-79.653,sidearm,https://fmupatriots.com,218061,/sports/baseball/roster
+franklinpierce,Franklin Pierce University,Franklin Pierce,"Rindge, NH",D2,NE-10,42.78,-72.058,sidearm,https://fpuravens.com,182795,/sports/baseball/roster
+fresnopacific,Fresno Pacific University,Fresno Pacific,"Fresno, CA",D2,CCAA,36.727,-119.735,sidearm,https://www.fpusunbirds.com,114813,/sports/baseball/roster
+frostburgstate,Frostburg State University,Frostburg State,"Frostburg, MD",D2,MEC,39.651,-78.934,sidearm,https://frostburgsports.com,162584,/sports/baseball/roster
+gannon,Gannon University,Gannon,"Erie, PA",D2,PSAC,42.128,-80.087,sidearm,https://gannonsports.com,212601,/sports/baseball/roster
+georgiacollege,Georgia College & State University,Georgia College,"Milledgeville, GA",D2,Peach Belt,33.083,-83.232,sidearm,https://gcsubobcats.com,139861,/sports/baseball/roster
+georgiasouthwesternstate,Georgia Southwestern State University,Georgia Southwestern State,"Americus, GA",D2,Peach Belt,32.055,-84.218,sidearm,https://gswcanes.com,139764,/sports/baseball/roster
+glenvillestate,Glenville State University,Glenville State,"Glenville, WV",D2,MEC,38.935,-80.834,sidearm,https://gstatepioneers.com,237385,/sports/baseball/roster
+goldeybeacom,Goldey-Beacom College,Goldey–Beacom,"Pike Creek Valley, DE",D2,CACC,39.742,-75.69,sidearm,https://www.gbcathletics.com,130989,/sports/baseball/roster
+grandvalleystate,Grand Valley State University,Grand Valley State,"Allendale, MI",D2,GLIAC,42.963,-85.89,sidearm,https://gvsulakers.com,170082,/sports/baseball/roster
+harding,Harding University,Harding,"Searcy, AR",D2,GAC,35.247,-91.726,sidearm,https://hardingsports.com,107044,/sports/baseball/roster
+hawaiihilo,University of Hawaii at Hilo,Hawaiʻi–Hilo,"Hilo, HI",D2,PacWest,19.701,-155.081,sidearm,https://hiloathletics.com,141565,/sports/baseball/roster
+hawaiipacific,Hawaii Pacific University,Hawaiʻi Pacific,"Honolulu, HI",D2,PacWest,21.31,-157.86,sidearm,https://hpusharks.com,141644,/sports/baseball/roster
+hendersonstate,Henderson State University,Henderson State,"Arkadelphia, AR",D2,GAC,34.128,-93.06,sidearm,https://hsusports.com,107071,/sports/baseball/roster
+hillsdale,Hillsdale College,Hillsdale,"Hillsdale, MI",D2,G-MAC,41.934,-84.633,sidearm,https://hillsdalechargers.com,170286,/sports/baseball/roster
+holyfamily,Holy Family University,Holy Family,"Philadelphia, PA",D2,CACC,40.061,-74.986,sidearm,https://athletics.holyfamily.edu,212984,/sports/baseball/roster
+indianapolis,University of Indianapolis,Indianapolis,"Indianapolis, IN",D2,GLVC,39.71,-86.134,sidearm,https://athletics.uindy.edu,151263,/sports/baseball/roster
+iup,Indiana University of Pennsylvania,IUP,"Indiana, PA",D2,PSAC,40.618,-79.159,sidearm,https://iupathletics.com,213020,/sports/baseball/roster
+jamestown,University of Jamestown,Jamestown,"Jamestown, ND",D2,NSIC,46.914,-98.698,sidearm,https://jimmiepride.com,200156,/sports/baseball/roster
+jefferson,Thomas Jefferson University,Jefferson,"Philadelphia, PA",D2,CACC,39.948,-75.158,sidearm,http://jeffersonrams.com,216366,/sports/baseball/roster
+jessup,William Jessup University,Jessup,"Rocklin, CA",D2,PacWest,38.82,-121.292,sidearm,https://jessupathletics.com,122728,/sports/baseball/roster
+kentuckystate,Kentucky State University,Kentucky State,"Frankfort, KY",D2,SIAC,38.201,-84.855,sidearm,https://ksuthorobreds.com,157058,/sports/baseball/roster
+kentuckywesleyan,Kentucky Wesleyan College,Kentucky Wesleyan,"Owensboro, KY",D2,G-MAC,37.744,-87.12,sidearm,https://kwcpanthers.com,157076,/sports/baseball/roster
+king,King University,King,"Bristol, TN",D2,Carolinas,36.585,-82.159,sidearm,https://www.kingtornado.com,220516,/sports/baseball/roster
+kutztown,Kutztown University of Pennsylvania,Kutztown,"Kutztown, PA",D2,PSAC,40.514,-75.784,sidearm,https://kubears.com,213349,/sports/baseball/roster
+lander,Lander University,Lander,"Greenwood, SC",D2,Peach Belt,34.2,-82.165,sidearm,https://landerbearcats.com,218229,/sports/baseball/roster
+lakeerie,Lake Erie College,Lake Erie,"Painesville, OH",D2,G-MAC,41.718,-81.252,sidearm,https://lakeeriestorm.com,203580,/sports/baseball/roster
+lee,Lee University,Lee,"Cleveland, TN",D2,Gulf South,35.166,-84.871,sidearm,https://leeuflames.com,220613,/sports/baseball/roster
+lemoyneowen,Le Moyne-Owen College,LeMoyne–Owen,"Memphis, TN",D2,SIAC,35.119,-90.034,sidearm,https://athletics.loc.edu,220604,/sports/baseball/roster
+lenoirrhyne,Lenoir-Rhyne University,Lenoir–Rhyne,"Hickory, NC",D2,SAC,35.74,-81.328,sidearm,https://lrbears.com,198835,/sports/baseball/roster
+lewis,Lewis University,Lewis,"Romeoville, IL",D2,GLVC,41.605,-88.079,sidearm,https://lewisflyers.com,146612,/sports/baseball/roster
+mo,Lincoln University,MO,"Jefferson City, MO",D2,GLVC,38.564,-92.167,sidearm,https://lubluetigers.com,177940,/sports/baseball/roster
+papa,Lincoln University,PA,"Oxford, PA",D2,CACC,39.808,-75.926,sidearm,https://lulions.com,213598,/sports/baseball/roster
+lincolnmemorial,Lincoln Memorial University,Lincoln Memorial,"Harrogate, TN",D2,SAC,36.579,-83.66,sidearm,https://lmurailsplitters.com,220631,/sports/baseball/roster
+lubbockchristian,Lubbock Christian University,Lubbock Christian,"Lubbock, TX",D2,Lone Star,33.576,-101.934,sidearm,https://lcuchaps.com,226383,/sports/baseball/roster
+lynn,Lynn University,Lynn,"Boca Raton, FL",D2,SSC,26.386,-80.123,sidearm,https://lynnfightingknights.com,132657,/sports/baseball/roster
+malone,Malone University,Malone,"Canton, OH",D2,G-MAC,40.826,-81.377,sidearm,https://malonepioneers.com,203775,/sports/baseball/roster
+mary,University of Mary,Mary,"Bismarck, ND",D2,NSIC,46.724,-100.753,sidearm,https://goumary.com,200217,/sports/baseball/roster
+momo,Maryville University of Saint Louis,MO,"Town and Country, MO",D2,GLVC,38.645,-90.506,sidearm,https://maryvillesaints.com,178059,/sports/baseball/roster
+mckendree,McKendree University,McKendree,"Lebanon, IL",D2,GLVC,38.608,-89.817,sidearm,https://mckbearcats.com,147013,/sports/baseball/roster
+menlo,Menlo College,Menlo,"Atherton, CA",D2,CCAA,37.453,-122.191,sidearm,https://menloathletics.com,118693,/sports/baseball/roster
+mercy,Mercy University,Mercy,"Dobbs Ferry, NY",D2,ECC,41.022,-73.874,sidearm,https://mercyathletics.com,193016,/sports/baseball/roster
+metropolitanstate,Metropolitan State University of Denver,Metropolitan State,"Denver, CO",D2,RMAC,39.744,-105.005,sidearm,https://roadrunnersathletics.com,127565,/sports/baseball/roster
+miles,Miles College,Miles,"Fairfield, AL",D2,SIAC,33.482,-86.909,sidearm,https://milesgoldenbears.com,101675,/sports/baseball/roster
+millersville,Millersville University of Pennsylvania,Millersville,"Millersville, PA",D2,PSAC,40.0,-76.357,sidearm,https://millersvilleathletics.com,214041,/sports/baseball/roster
+minnesotastate,Minnesota State University-Mankato,Minnesota State,"Mankato, MN",D2,NSIC,44.147,-93.999,sidearm,https://msumavericks.com,173920,/sports/baseball/roster
+minnesotacrookston,University of Minnesota-Crookston,Minnesota–Crookston,"Crookston, MN",D2,NSIC,47.803,-96.606,sidearm,https://goldeneaglesports.com,174075,/sports/baseball/roster
+minnesotaduluth,University of Minnesota-Duluth,Minnesota–Duluth,"Duluth, MN",D2,NSIC,46.817,-92.084,sidearm,https://umdbulldogs.com,174233,/sports/baseball/roster
+minotstate,Minot State University,Minot State,"Minot, ND",D2,NSIC,48.247,-101.299,sidearm,https://msubeavers.com,200253,/sports/baseball/roster
+mississippichristian,Mississippi Christian University,Mississippi Christian,"Clinton, MS",D2,Gulf South,32.336,-90.33,sidearm,https://www.gochoctaws.com,176053,/sports/baseball/roster
+missourisouthern,Missouri Southern State University,Missouri Southern,"Joplin, MO",D2,MIAA,37.095,-94.462,sidearm,https://mssulions.com,178341,/sports/baseball/roster
+missourist,Missouri University of Science and Technology,Missouri S&T,"Rolla, MO",D2,GLVC,37.954,-91.773,sidearm,https://minerathletics.com,178411,/sports/baseball/roster
+missouriwestern,Missouri Western State University,Missouri Western,"St. Joseph, MO",D2,MIAA,39.758,-94.786,sidearm,https://gogriffons.com,178387,/sports/baseball/roster
+molloy,Molloy University,Molloy,"Rockville Centre, NY",D2,ECC,40.686,-73.626,sidearm,https://molloylions.com,193292,/sports/baseball/roster
+montanastatebillings,Montana State University Billings,Montana State–Billings,"Billings, MT",D2,GNAC,45.797,-108.523,sidearm,https://msubsports.com,180179,/sports/baseball/roster
+montevallo,University of Montevallo,Montevallo,"Montevallo, AL",D2,Gulf South,33.106,-86.865,sidearm,https://montevallofalcons.com,101709,/sports/baseball/roster
+morehouse,Morehouse College,Morehouse,"Atlanta, GA",D2,SIAC,33.746,-84.415,sidearm,https://morehouseathletics.com,140553,/sports/baseball/roster
+mountolive,University of Mount Olive,Mount Olive,"Mount Olive, NC",D2,Carolinas,35.208,-78.069,sidearm,https://umotrojans.com,199069,/sports/baseball/roster
+newmexicohighlands,New Mexico Highlands University,New Mexico Highlands,"Las Vegas, NM",D2,RMAC,35.596,-105.219,sidearm,https://nmhuathletics.com,187897,/sports/baseball/roster
+newberry,Newberry College,Newberry,"Newberry, SC",D2,SAC,34.286,-81.62,sidearm,https://newberrywolves.com,218414,/sports/baseball/roster
+newman,Newman University,Newman,"Wichita, KS",D2,MIAA,37.673,-97.378,sidearm,https://newmanjets.com,155335,/sports/baseball/roster
+northgeorgia,University of North Georgia,North Georgia,"Dahlonega, GA",D2,Peach Belt,34.53,-83.986,sidearm,https://ungathletics.com,482680,/sports/baseball/roster
+northgreenville,North Greenville University,North Greenville,"Tigerville, SC",D2,Carolinas,35.07,-82.37,sidearm,https://www.nguathletics.com,218441,/sports/baseball/roster
+northeasternstate,Northeastern State University,Northeastern State,"Tahlequah, OK",D2,MIAA,35.92,-94.967,sidearm,https://goriverhawksgo.com,207263,/sports/baseball/roster
+northernstate,Northern State University,Northern State,"Aberdeen, SD",D2,NSIC,45.451,-98.485,sidearm,https://nsuwolves.com,219259,/sports/baseball/roster
+northwestmissouristate,Northwest Missouri State University,Northwest Missouri State,"Maryville, MO",D2,MIAA,40.352,-94.883,sidearm,https://bearcatsports.com,178624,/sports/baseball/roster
+northwestnazarene,Northwest Nazarene University,Northwest Nazarene,"Nampa, ID",D2,GNAC,43.562,-116.566,sidearm,https://nnusports.com,142461,/sports/baseball/roster
+northwesternoklahomastate,Northwestern Oklahoma State University,Northwestern Oklahoma State,"Alva, OK",D2,GAC,36.797,-98.668,sidearm,https://riderangersride.com,207306,/sports/baseball/roster
+novasoutheastern,Nova Southeastern University,Nova Southeastern,"Davie, FL",D2,SSC,26.082,-80.25,sidearm,https://nsusharks.com,136215,/sports/baseball/roster
+ohiodominican,Ohio Dominican University,Ohio Dominican,"Columbus, OH",D2,G-MAC,39.993,-82.941,sidearm,https://ohiodominicanpanthers.com,204617,/sports/baseball/roster
+oklahomabaptist,Oklahoma Baptist University,Oklahoma Baptist,"Shawnee, OK",D2,GAC,35.36,-96.932,sidearm,https://obubison.com,207403,/sports/baseball/roster
+oklahomachristian,Oklahoma Christian University,Oklahoma Christian,"Oklahoma City, OK",D2,Lone Star,35.611,-97.47,sidearm,https://oceagles.com,207324,/sports/baseball/roster
+ouachitabaptist,Ouachita Baptist University,Ouachita Baptist,"Arkadelphia, AR",D2,GAC,34.126,-93.052,sidearm,https://obutigers.com,107512,/sports/baseball/roster
+pace,Pace University,Pace,"Pleasantville, NY",D2,NE-10,40.711,-74.005,sidearm,https://paceuathletics.com,194310,/sports/baseball/roster
+palmbeachatlantic,Palm Beach Atlantic University,Palm Beach Atlantic,"West Palm Beach, FL",D2,SSC,26.704,-80.052,sidearm,https://pbasailfish.com,136330,/sports/baseball/roster
+parkside,University of Wisconsin-Parkside,Parkside,"Somers, WI",D2,GLIAC,42.648,-87.855,sidearm,https://parksiderangers.com,240374,/sports/baseball/roster
+pittsburgstate,Pittsburg State University,Pittsburg State,"Pittsburg, KS",D2,MIAA,37.392,-94.702,sidearm,https://pittstategorillas.com,155681,/sports/baseball/roster
+pittjohnstown,University of Pittsburgh-Johnstown,Pitt–Johnstown,"Johnstown, PA",D2,PSAC,40.266,-78.834,sidearm,https://pittjohnstownathletics.com,215284,/sports/baseball/roster
+pointlomanazarene,Point Loma Nazarene University,Point Loma Nazarene,"San Diego, CA",D2,PacWest,32.718,-117.25,sidearm,https://plnusealions.com,121309,/sports/baseball/roster
+pointpark,Point Park University,Point Park,"Pittsburgh, PA",D2,MEC,40.439,-80.002,sidearm,https://pointparksports.com,215442,/sports/baseball/roster
+post,Post University,Post,"Waterbury, CT",D2,CACC,41.536,-73.081,sidearm,https://posteagles.com,130183,/sports/baseball/roster
+purduenorthwest,Purdue University Northwest,Purdue Northwest,"Hammond, IN",D2,GLIAC,41.584,-87.474,sidearm,https://pnwathletics.com,490805,/sports/baseball/roster
+ny,CUNY Queens College,NY,"Queens, NY",D2,ECC,40.736,-73.82,sidearm,https://queensknights.com,190664,/sports/baseball/roster
+quincy,Quincy University,Quincy,"Quincy, IL",D2,GLVC,39.939,-91.386,sidearm,https://quhawks.com,148131,/sports/baseball/roster
+regis,Regis University,Regis,"Denver, CO",D2,RMAC,39.788,-105.031,sidearm,https://regisrangers.com,127918,/sports/baseball/roster
+rockhurst,Rockhurst University,Rockhurst,"Kansas City, MO",D2,GLVC,39.032,-94.573,sidearm,https://rockhursthawks.com,179043,/sports/baseball/roster
+rogersstate,Rogers State University,Rogers State,"Claremore, OK",D2,MIAA,36.321,-95.636,sidearm,https://rsuhillcats.com,207661,/sports/baseball/roster
+rollins,Rollins College,Rollins,"Winter Park, FL",D2,SSC,28.593,-81.349,sidearm,https://rollinssports.com,136950,/sports/baseball/roster
+roosevelt,Roosevelt University,Roosevelt,"Chicago, IL",D2,GLIAC,41.876,-87.625,sidearm,https://rooseveltlakers.com,148487,/sports/baseball/roster
+saginawvalleystate,Saginaw Valley State University,Saginaw Valley State,"University Center, MI",D2,GLIAC,43.512,-83.964,sidearm,https://svsucardinals.com,172051,/sports/baseball/roster
+saintanselm,Saint Anselm College,Saint Anselm,"Goffstown, NH",D2,NE-10,42.987,-71.504,sidearm,https://saintanselmhawks.com,183239,/sports/baseball/roster
+stcloudstate,Saint Cloud State University,St. Cloud State,"St. Cloud, MN",D2,NSIC,45.553,-94.153,sidearm,https://scsuhuskies.com,174783,/sports/baseball/roster
+stedwards,Saint Edward's University,St. Edward's,"Austin, TX",D2,Lone Star,30.23,-97.755,sidearm,https://gohilltoppers.com,227845,/sports/baseball/roster
+saintleo,Saint Leo University,Saint Leo,"St. Leo, FL",D2,SSC,28.337,-82.258,sidearm,https://saintleolions.com,137032,/sports/baseball/roster
+saintmartins,Saint Martin's University,Saint Martin's,"Lacey, WA",D2,GNAC,47.041,-122.816,sidearm,https://smusaints.com,236452,/sports/baseball/roster
+stmarys,St. Mary's University,St. Mary's,"San Antonio, TX",D2,Lone Star,29.453,-98.563,sidearm,https://rattlerathletics.com,228149,/sports/baseball/roster
+saintmichaels,Saint Michael's College,Saint Michael's,"Colchester, VT",D2,NE-10,44.495,-73.167,sidearm,https://smcathletics.com,231059,/sports/baseball/roster
+sanfranciscostate,San Francisco State University,San Francisco State,"San Francisco, CA",D2,CCAA,37.721,-122.477,sidearm,https://sfstategators.com,122597,/sports/baseball/roster
+savannahstate,Savannah State University,Savannah State,"Savannah, GA",D2,SIAC,32.025,-81.063,sidearm,https://ssuathletics.com,140960,/sports/baseball/roster
+setonhill,Seton Hill University,Seton Hill,"Greensburg, PA",D2,PSAC,40.309,-79.557,sidearm,https://athletics.setonhill.edu,215947,/
+shawneestate,Shawnee State University,Shawnee State,"Portsmouth, OH",D2,MEC,38.731,-82.994,sidearm,https://ssubears.com,205443,/sports/baseball/roster
+shepherd,Shepherd University,Shepherd,"Shepherdstown, WV",D2,PSAC,39.433,-77.804,sidearm,https://shepherdrams.com,237792,/sports/baseball/roster
+shippensburg,Shippensburg University of Pennsylvania,Shippensburg,"Shippensburg, PA",D2,PSAC,40.058,-77.522,sidearm,https://shipraiders.com,216010,/sports/baseball/roster
+shorter,Shorter University,Shorter,"Rome, GA",D2,Carolinas,34.258,-85.197,sidearm,https://goshorterhawks.com,140988,/sports/baseball/roster
+siouxfalls,University of Sioux Falls,Sioux Falls,"Sioux Falls, SD",D2,NSIC,43.532,-96.738,sidearm,https://usfcougars.com,219383,/sports/baseball/roster
+slipperyrock,Slippery Rock University of Pennsylvania,Slippery Rock,"Slippery Rock, PA",D2,PSAC,41.063,-80.046,sidearm,https://rockathletics.com,216038,/sports/baseball/roster
+southeasternoklahomastate,Southeastern Oklahoma State University,Southeastern Oklahoma State,"Durant, OK",D2,GAC,34.007,-96.377,sidearm,https://gosoutheastern.com,207847,/sports/baseball/roster
+southernarkansas,Southern Arkansas University Main Campus,Southern Arkansas,"Magnolia, AR",D2,GAC,33.292,-93.236,sidearm,https://muleriderathletics.com,107983,/sports/baseball/roster
+southernconnecticut,Southern Connecticut State University,Southern Connecticut,"New Haven, CT",D2,NE-10,41.333,-72.948,sidearm,https://scsuowls.com,130493,/sports/baseball/roster
+southernnazarene,Southern Nazarene University,Southern Nazarene,"Bethany, OK",D2,GAC,35.513,-97.63,sidearm,https://snuathletics.com,206862,/sports/baseball/roster
+southernnewhampshire,Southern New Hampshire University,Southern New Hampshire,"Manchester, NH",D2,NE-10,43.039,-71.452,sidearm,https://snhupenmen.com,183026,/sports/baseball/roster
+southernwesleyan,Southern Wesleyan University,Southern Wesleyan,"Central, SC",D2,Carolinas,34.728,-82.762,sidearm,https://swuathletics.com,217776,/sports/baseball/roster
+southwestbaptist,Southwest Baptist University,Southwest Baptist,"Bolivar, MO",D2,GLVC,37.602,-93.407,sidearm,https://www.sbubearcats.com,179326,/sports/baseball/roster
+southwestminnesotastate,Southwest Minnesota State University,Southwest Minnesota State,"Marshall, MN",D2,NSIC,44.454,-95.76,sidearm,https://smsumustangs.com,175078,/sports/baseball/roster
+southwesternoklahomastate,Southwestern Oklahoma State University,Southwestern Oklahoma State,"Weatherford, OK",D2,GAC,35.535,-98.708,sidearm,https://swosuathletics.com,207865,/sports/baseball/roster
+springhill,Spring Hill College,Spring Hill,"Mobile, AL",D2,SIAC,30.695,-88.138,sidearm,https://shcbadgers.com,102234,/sports/baseball/roster
+statenisland,College of Staten Island CUNY,Staten Island,"Staten Island, NY",D2,ECC,40.602,-74.148,sidearm,https://csidolphins.com,190558,/sports/baseball/roster
+sulrossstate,Sul Ross State University,Sul Ross State,"Alpine, TX",D2,Lone Star,30.363,-103.651,sidearm,https://srlobos.com,228501,/sports/baseball/roster
+texasaminternational,Texas A & M International University,Texas A&M International,"Laredo, TX",D2,Lone Star,27.571,-99.436,sidearm,https://godustdevils.com,226152,/sports/baseball/roster
+texasamkingsville,Texas A&M University-Kingsville,Texas A&M–Kingsville,"Kingsville, TX",D2,Lone Star,27.525,-97.882,sidearm,https://javelinaathletics.com,228705,/sports/baseball/roster
+thomasmore,Thomas More University,Thomas More,"Crestview Hills, KY",D2,G-MAC,39.023,-84.569,sidearm,https://thomasmoresaints.com,157809,/sports/baseball/roster
+tiffin,Tiffin University,Tiffin,"Tiffin, OH",D2,G-MAC,41.118,-83.184,sidearm,https://gotiffindragons.com,206048,/sports/baseball/roster
+treveccanazarene,Trevecca Nazarene University,Trevecca Nazarene,"Nashville, TN",D2,Gulf South,36.141,-86.754,sidearm,https://tnutrojans.com,221892,/sports/baseball/roster
+truman,Truman State University,Truman,"Kirksville, MO",D2,GLVC,40.188,-92.582,sidearm,https://trumanbulldogs.com,178615,/sports/baseball/roster
+tuskegee,Tuskegee University,Tuskegee,"Tuskegee, AL",D2,SIAC,32.431,-85.708,sidearm,https://goldentigersports.com,102377,/sports/baseball/roster
+uccs,University of Colorado Colorado Springs,UCCS,"Colorado Springs, CO",D2,RMAC,38.893,-104.8,sidearm,https://gomountainlions.com,126580,/sports/baseball/roster
+uis,University of Illinois Springfield,UIS,"Springfield, IL",D2,GLVC,39.73,-89.617,sidearm,https://uisprairiestars.com,148654,/sports/baseball/roster
+umsl,University of Missouri-St Louis,UMSL,"St. Louis, MO",D2,GLVC,38.71,-90.311,sidearm,https://umsltritons.com,178420,/sports/baseball/roster
+uncpembroke,University of North Carolina at Pembroke,UNC Pembroke,"Pembroke, NC",D2,Carolinas,34.688,-79.2,sidearm,https://uncpbraves.com,199281,/sports/baseball/roster
+union,Union University,Union,"Jackson, TN",D2,Gulf South,35.677,-88.859,sidearm,https://uuathletics.com,221971,/sports/baseball/roster
+upperiowa,Upper Iowa University,Upper Iowa,"Fayette, IA",D2,GLVC,42.838,-91.8,sidearm,https://uiupeacocks.com,154493,/sports/baseball/roster
+uscaiken,University of South Carolina Aiken,USC Aiken,"Aiken, SC",D2,Peach Belt,33.573,-81.768,sidearm,https://pacersports.com,218645,/sports/baseball/roster
+uscbeaufort,University of South Carolina Beaufort,USC Beaufort,"Bluffton, SC",D2,Peach Belt,32.303,-80.974,sidearm,https://uscbathletics.com,218654,/sports/baseball/roster
+utdallas,The University of Texas at Dallas,UT Dallas,"Richardson, TX",D2,Lone Star,32.985,-96.75,sidearm,https://utdcomets.com,228787,/sports/baseball/roster
+utpermianbasin,The University of Texas Permian Basin,UT Permian Basin,"Odessa, TX",D2,Lone Star,31.89,-102.33,sidearm,https://utpbfalcons.com,229018,/sports/baseball/roster
+uttyler,The University of Texas at Tyler,UT Tyler,"Tyler, TX",D2,Lone Star,32.316,-95.254,sidearm,https://uttylerpatriots.com,228802,/sports/baseball/roster
+uvawise,University of Virginia's College at Wise,UVA Wise,"Wise, VA",D2,SAC,36.971,-82.56,sidearm,https://uvawisecavs.com,233897,/sports/baseball/roster
+valdostastate,Valdosta State University,Valdosta State,"Valdosta, GA",D2,Gulf South,30.847,-83.289,sidearm,https://vstateblazers.com,141264,/sports/baseball/roster
+vanguard,Vanguard University of Southern California,Vanguard,"Costa Mesa, CA",D2,PacWest,33.663,-117.901,sidearm,https://vanguardlions.com,123651,/sports/baseball/roster
+virginiastate,Virginia State University,Virginia State,"Ettrick, VA",D2,Independent,37.235,-77.419,sidearm,https://govsutrojans.com,234155,/sports/baseball/roster
+walsh,Walsh University,Walsh,"North Canton, OH",D2,G-MAC,40.874,-81.37,sidearm,https://athletics.walsh.edu,206437,/sports/baseball/roster
+washburn,Washburn University,Washburn,"Topeka, KS",D2,MIAA,39.034,-95.702,sidearm,https://wusports.com,156082,/sports/baseball/roster
+mi,Wayne State University,MI,"Detroit, MI",D2,GLIAC,42.359,-83.069,sidearm,https://wsuathletics.com,172644,/sports/baseball/roster
+ne,Wayne State College,NE,"Wayne, NE",D2,NSIC,42.242,-97.015,sidearm,https://wscwildcats.com,181783,/sports/baseball/roster
+westalabama,University of West Alabama,West Alabama,"Livingston, AL",D2,Gulf South,32.588,-88.186,sidearm,https://uwaathletics.com,101587,/sports/baseball/roster
+westchester,West Chester University of Pennsylvania,West Chester,"West Chester, PA",D2,PSAC,39.953,-75.598,sidearm,https://wcupagoldenrams.com,216764,/sports/baseball/roster
+westliberty,West Liberty University,West Liberty,"West Liberty, WV",D2,MEC,40.164,-80.602,sidearm,https://hilltoppersports.com,237932,/sports/baseball/roster
+westtexasam,West Texas A & M University,West Texas A&M,"Canyon, TX",D2,Lone Star,34.983,-101.915,sidearm,https://gobuffsgo.com,229814,/sports/baseball/roster
+westvirginiastate,West Virginia State University,West Virginia State,"Institute, WV",D2,MEC,38.381,-81.765,sidearm,https://wvsuyellowjackets.com,237899,/sports/baseball/roster
+westvirginiawesleyan,West Virginia Wesleyan College,West Virginia Wesleyan,"Buckhannon, WV",D2,MEC,38.991,-80.219,sidearm,https://wesleyanbobcats.com,237969,/sports/baseball/roster
+westernoregon,Western Oregon University,Western Oregon,"Monmouth, OR",D2,GNAC,44.852,-123.238,sidearm,https://wouwolves.com,210429,/sports/baseball/roster
+westmont,Westmont College,Westmont,"Santa Barbara, CA",D2,PacWest,34.45,-119.663,sidearm,https://athletics.westmont.edu,125727,/sports/baseball/roster
+wheeling,Wheeling University,Wheeling,"Wheeling, WV",D2,MEC,40.071,-80.691,sidearm,https://wucardinals.com,238078,/sports/baseball/roster
+williamjewell,William Jewell College,William Jewell,"Liberty, MO",D2,GLVC,39.248,-94.413,sidearm,https://jewellcardinals.com,179955,/sports/baseball/roster
+wingate,Wingate University,Wingate,"Wingate, NC",D2,SAC,34.986,-80.443,sidearm,https://wingatebulldogs.com,199962,/sports/baseball/roster
+winonastate,Winona State University,Winona State,"Winona, MN",D2,NSIC,44.046,-91.644,sidearm,https://winonastatewarriors.com,175272,/sports/baseball/roster
+youngharris,Young Harris College,Young Harris,"Young Harris, GA",D2,Carolinas,34.934,-83.846,sidearm,https://yhcathletics.com,141361,/sports/baseball/roster
+lackawanna,Lackawanna College,Lackawanna,"Scranton, PA",D2,PSAC,41.412,-75.659,sidearm,https://lackawannafalcons.com,213376,/sports/baseball/roster
+la,Loyola University New Orleans,LA,"New Orleans, LA",D2,Gulf South,29.936,-90.12,sidearm,https://loyolawolfpack.com,159656,/sports/baseball/roster
+texaswesleyan,Texas Wesleyan University,Texas Wesleyan,"Fort Worth, TX",D2,Lone Star,32.733,-97.28,sidearm,https://ramsports.net,229160,/sports/baseball/roster
+arcadiauniversity,Arcadia University,Arcadia University,"Glenside, PA",D3,MAC Freedom,40.093,-75.164,sidearm,https://arcadiaknights.com,211088,/sports/baseball/roster
+augsburguniversity,Augsburg University,Augsburg University,"Minneapolis, MN",D3,Minnesota Intercollegiate Athletic Conference,44.966,-93.24,sidearm,https://athletics.augsburg.edu,173045,/sports/baseball/roster
+augustanacollege,Augustana College,Augustana College,"Rock Island, IL",D3,College Conference of Illinois and Wisconsin,41.502,-90.551,sidearm,https://athletics.augustana.edu,143084,/sports/baseball/roster
+aurorauniversity,Aurora University,Aurora University,"Aurora, IL",D3,Northern Athletics Collegiate Conference,41.754,-88.349,sidearm,https://athletics.aurora.edu,143118,/sports/baseball/roster
+averettuniversity,Averett University,Averett University,"Danville, VA",D3,Old Dominion Athletic Conference,36.577,-79.413,sidearm,https://averettcougars.com,231420,/sports/baseball/roster
+azusapacificuniversity,Azusa Pacific University,Azusa Pacific University,"Azusa, CA",D3,Southern California Intercollegiate Athletic Conference,34.13,-117.888,sidearm,https://athletics.apu.edu,109785,/sports/baseball/roster
+babsoncollege,Babson College,Babson College,"Wellesley, MA",D3,New England Women's and Men's Athletic Conference,42.297,-71.264,sidearm,https://babsonathletics.com,164580,/sports/baseball/roster
+baldwinwallaceuniversity,Baldwin Wallace University,Baldwin Wallace University,"Berea, OH",D3,Ohio Athletic Conference,41.373,-81.851,sidearm,https://bwyellowjackets.com,201195,/sports/baseball/roster
+bardcollege,Bard College,Bard College,"Annandale-on-Hudson, NY",D3,Liberty League,42.02,-73.91,sidearm,https://bardathletics.com,189088,/sports/baseball/roster
+baruchcollege,CUNY Bernard M Baruch College,Baruch College,"New York, NY",D3,City University of New York Athletic Conference,40.74,-73.983,sidearm,https://athletics.baruch.cuny.edu,190512,/sports/baseball/roster
+batescollege,Bates College,Bates College,"Lewiston, ME",D3,New England Small College Athletic Conference,44.105,-70.203,sidearm,https://gobatesbobcats.com,160977,/sports/baseball/roster
+battenuniversity,Virginia Wesleyan University,Batten University,"Virginia Beach, VA",D3,Old Dominion Athletic Conference,36.868,-76.186,sidearm,https://battenathletics.com,234173,/sports/baseball/roster
+belhavenuniversity,Belhaven University,Belhaven University,"Jackson, MS",D3,Collegiate Conference of the South,32.318,-90.169,sidearm,https://blazers.belhaven.edu,175421,/sports/baseball/roster
+beloitcollege,Beloit College,Beloit College,"Beloit, WI",D3,Midwest Conference,42.504,-89.029,sidearm,https://beloitcollegeathletics.com,238333,/sports/baseball/roster
+bereacollege,Berea College,Berea College,"Berea, KY",D3,Heartland Collegiate Athletic Conference,37.572,-84.293,sidearm,https://bereaathletics.com,156295,/sports/baseball/roster
+berrycollege,Berry College,Berry College,"Mount Berry, GA",D3,Southern Athletic Association,34.29,-85.189,sidearm,https://berryvikings.com,139144,/sports/baseball/roster
+bethanycollege,Bethany College,Bethany College,"Bethany, WV",D3,Presidents' Athletic Conference,40.206,-80.56,sidearm,https://bethanybison.com,237181,/sports/baseball/roster
+betheluniversity,Bethel University,Bethel University,"Arden Hills, MN",D3,Minnesota Intercollegiate Athletic Conference,45.058,-93.162,sidearm,https://athletics.bethel.edu,173160,/sports/baseball/roster
+bowdoincollege,Bowdoin College,Bowdoin College,"Brunswick, ME",D3,New England Small College Athletic Conference,43.907,-69.964,sidearm,https://athletics.bowdoin.edu,161004,/sports/baseball/roster
+brandeisuniversity,Brandeis University,Brandeis University,"Waltham, MA",D3,University Athletic Association,42.366,-71.26,sidearm,https://brandeisjudges.com,165015,/sports/baseball/roster
+bridgewatercollege,Bridgewater College,Bridgewater College,"Bridgewater, VA",D3,Old Dominion Athletic Conference,38.378,-78.969,sidearm,https://bridgewatereagles.com,231581,/sports/baseball/roster
+buenavistauniversity,Buena Vista University,Buena Vista University,"Storm Lake, IA",D3,American Rivers Conference,42.642,-95.209,sidearm,https://bvuathletics.com,153001,/sports/baseball/roster
+cairnuniversity,Cairn University-Langhorne,Cairn University,"Langhorne, PA",D3,United East Conference,40.166,-74.91,sidearm,https://www.cairnhighlanders.com,215114,/sports/baseball/roster
+californiainstituteoftechnol,California Institute of Technology,California Institute of Technology,"Pasadena, CA",D3,Southern California Intercollegiate Athletic Conference,34.137,-118.126,sidearm,https://gocaltech.com,110404,/sports/baseball/roster
+californialutheranuniversity,California Lutheran University,California Lutheran University,"Thousand Oaks, CA",D3,Southern California Intercollegiate Athletic Conference,34.225,-118.879,sidearm,https://clusports.com,110413,/sports/baseball/roster
+universityofcaliforniasantac,University of California-Santa Cruz,"University of California, Santa Cruz","Santa Cruz, CA",D3,Coast to Coast Athletic Conference,36.996,-122.059,sidearm,https://goslugs.com,110714,/sports/baseball/roster
+calvinuniversity,Calvin University,Calvin University,"Grand Rapids, MI",D3,Michigan Intercollegiate Athletic Association,42.93,-85.588,sidearm,https://calvinknights.com,169080,/sports/baseball/roster
+capitaluniversity,Capital University,Capital University,"Bexley, OH",D3,Ohio Athletic Conference,39.955,-82.938,sidearm,https://athletics.capital.edu,201548,/sports/baseball/roster
+carletoncollege,Carleton College,Carleton College,"Northfield, MN",D3,Minnesota Intercollegiate Athletic Conference,44.462,-93.155,sidearm,https://athletics.carleton.edu,173258,/sports/baseball/roster
+carrolluniversity,Carroll University,Carroll University,"Waukesha, WI",D3,College Conference of Illinois and Wisconsin,43.005,-88.228,sidearm,https://gopios.com,238458,/sports/baseball/roster
+carthagecollege,Carthage College,Carthage College,"Kenosha, WI",D3,College Conference of Illinois and Wisconsin,42.623,-87.821,sidearm,https://athletics.carthage.edu,238476,/sports/baseball/roster
+casewesternreserveuniversity,Case Western Reserve University,Case Western Reserve University,"Cleveland, OH",D3,University Athletic Association,41.507,-81.61,sidearm,https://athletics.case.edu,201645,/sports/baseball/roster
+catholicuniversityofamerica,The Catholic University of America,Catholic University of America,"Washington, DC",D3,Landmark Conference,38.934,-76.998,sidearm,https://catholicathletics.com,131283,/sports/baseball/roster
+centenaryuniversity,Centenary University,Centenary University,"Hackettstown, NJ",D3,Atlantic East Conference ( United East Conference in 2027),40.848,-74.834,sidearm,https://centenarycyclones.com,183974,/sports/baseball/roster
+centralcollege,Central College,Central College,"Pella, IA",D3,American Rivers Conference,41.402,-92.922,sidearm,https://athletics.central.edu,153108,/sports/baseball/roster
+chapmanuniversity,Chapman University,Chapman University,"Orange, CA",D3,Southern California Intercollegiate Athletic Conference,33.793,-117.853,sidearm,https://athletics.chapman.edu,111948,/sports/baseball/roster
+universityofchicago,University of Chicago,University of Chicago,"Chicago, IL",D3,University Athletic Association,41.788,-87.6,sidearm,https://athletics.uchicago.edu,144050,/sports/baseball/roster
+christophernewportuniversity,Christopher Newport University,Christopher Newport University,"Newport News, VA",D3,Coast to Coast Athletic Conference,37.062,-76.494,sidearm,https://www.cnusports.com,231712,/sports/baseball/roster
+claremontmckennacollegeharve,Claremont McKenna College,"Claremont McKenna College , Harvey Mudd College , and Scripps College","Claremont, CA",D3,Southern California Intercollegiate Athletic Conference,34.102,-117.711,sidearm,https://cmsathletics.org,112260,/sports/baseball/roster
+clarkuniversity,Clark University,Clark University,"Worcester, MA",D3,New England Women's and Men's Athletic Conference,42.25,-71.823,sidearm,https://clarkathletics.com,165334,/sports/baseball/roster
+clarksonuniversity,Clarkson University,Clarkson University,"Potsdam, NY",D3,Liberty League,44.663,-74.999,sidearm,https://clarksonathletics.com,190044,/sports/baseball/roster
+coecollege,Coe College,Coe College,"Cedar Rapids, IA",D3,American Rivers Conference,41.988,-91.658,sidearm,https://kohawkathletics.com,153144,/sports/baseball/roster
+colbycollege,Colby College,Colby College,"Waterville, ME",D3,New England Small College Athletic Conference,44.564,-69.663,sidearm,https://colbyathletics.com,161086,/sports/baseball/roster
+colbysawyercollege,Colby-Sawyer College,Colby–Sawyer College,"New London, NH",D3,Great Northeast Athletic Conference,43.412,-71.976,sidearm,https://www.colby-sawyerathletics.com,182634,/sports/baseball/roster
+concordiauniversitychicago,Concordia University-Chicago,Concordia University Chicago,"River Forest, IL",D3,Northern Athletics Collegiate Conference,41.899,-87.809,sidearm,https://www.cucougars.com,144351,/sports/baseball/roster
+concordiauniversitytexas,Concordia University Texas,Concordia University Texas,"Austin, TX",D3,Southern Collegiate Athletic Conference,30.42,-97.836,sidearm,https://athletics.concordia.edu,224004,/sports/baseball/roster
+concordiauniversitywisconsin,Concordia University-Wisconsin,Concordia University Wisconsin,"Mequon, WI",D3,Northern Athletics Collegiate Conference ( College Conference of Illinois and Wisconsin in 2027),43.253,-87.916,sidearm,https://cuwfalcons.com,238616,/sports/baseball/roster
+cornellcollege,Cornell College,Cornell College,"Mount Vernon, IA",D3,Midwest Conference,41.925,-91.424,sidearm,https://cornellrams.com,153162,/sports/baseball/roster
+covenantcollege,Covenant College,Covenant College,"Lookout Mountain, GA",D3,Collegiate Conference of the South,34.965,-85.375,sidearm,https://athletics.covenant.edu,139393,/sports/baseball/roster
+crowncollege,Crown College,Crown College,"St. Bonifacius, MN",D3,Upper Midwest Athletic Conference,44.885,-93.743,sidearm,https://athletics.crown.edu,174862,/sports/baseball/roster
+universityofdallas,University of Dallas,University of Dallas,"Irving, TX",D3,Southern Collegiate Athletic Conference,32.846,-96.92,sidearm,https://udallasathletics.com,224323,/sports/baseball/roster
+deancollege,Dean College,Dean College,"Franklin, MA",D3,Great Northeast Athletic Conference,42.086,-71.398,sidearm,https://deanbulldogs.com,165574,/sports/baseball/roster
+denisonuniversity,Denison University,Denison University,"Granville, OH",D3,North Coast Athletic Conference,40.072,-82.523,sidearm,https://bigred.denison.edu,202523,/sports/baseball/roster
+depauwuniversity,DePauw University,DePauw University,"Greencastle, IN",D3,North Coast Athletic Conference,39.641,-86.86,sidearm,https://depauwtigers.com,150400,/sports/baseball/roster
+desalesuniversity,DeSales University,DeSales University,"Center Valley, PA",D3,MAC Freedom,40.539,-75.376,sidearm,https://athletics.desales.edu,210739,/sports/baseball/roster
+dickinsoncollege,Dickinson College,Dickinson College,"Carlisle, PA",D3,Centennial Conference,40.203,-77.198,sidearm,https://dickinsonathletics.com,212009,/sports/baseball/roster
+dominicanuniversity,Dominican University,Dominican University,"River Forest, IL",D3,Northern Athletics Collegiate Conference,41.903,-87.823,sidearm,https://dustars.com,148496,/sports/baseball/roster
+drewuniversity,Drew University,Drew University,"Madison, NJ",D3,Landmark Conference,40.762,-74.425,sidearm,https://drewrangers.com,184348,/sports/baseball/roster
+universityofdubuque,University of Dubuque,University of Dubuque,"Dubuque, IA",D3,American Rivers Conference,42.497,-90.693,sidearm,https://udspartans.com,153278,/sports/baseball/roster
+earlhamcollege,Earlham College,Earlham College,"Richmond, IN",D3,Heartland Collegiate Athletic Conference,39.823,-84.915,sidearm,https://goearlham.com,150455,/sports/baseball/roster
+easternconnecticutstateunive,Eastern Connecticut State University,Eastern Connecticut State University,"Willimantic, CT",D3,Little East Conference,41.722,-72.219,sidearm,https://gowarriorathletics.com,129215,/sports/baseball/roster
+easternmennoniteuniversity,Eastern Mennonite University,Eastern Mennonite University,"Harrisonburg, VA",D3,Old Dominion Athletic Conference,38.471,-78.88,sidearm,https://emuroyals.com,232043,/sports/baseball/roster
+edgewooduniversity,Edgewood University,Edgewood University,"Madison, WI",D3,Northern Athletics Collegiate Conference,43.057,-89.423,sidearm,https://edgewoodeagles.com,238661,/sports/baseball/roster
+elizabethtowncollege,Elizabethtown College,Elizabethtown College,"Elizabethtown, PA",D3,Landmark Conference,40.149,-76.593,sidearm,https://etownbluejays.com,212197,/sports/baseball/roster
+elmhurstuniversity,Elmhurst University,Elmhurst University,"Elmhurst, IL",D3,College Conference of Illinois and Wisconsin,41.897,-87.945,sidearm,https://elmhurstbluejays.com,144962,/sports/baseball/roster
+elmiracollege,Elmira College,Elmira College,"Elmira, NY",D3,Empire 8,42.096,-76.813,sidearm,https://athletics.elmira.edu,190983,/sports/baseball/roster
+emoryuniversity,Emory University,Emory University,"Atlanta, GA",D3,University Athletic Association,33.79,-84.326,sidearm,https://emoryathletics.com,139658,/sports/baseball/roster
+farmingdalestatecollege,Farmingdale State College,Farmingdale State College,"Farmingdale, NY",D3,Skyline Conference,40.754,-73.428,sidearm,https://farmingdalesports.com,196042,/sports/baseball/roster
+franciscanuniversityofsteube,Franciscan University of Steubenville,Franciscan University of Steubenville,"Steubenville, OH",D3,Presidents' Athletic Conference,40.377,-80.621,sidearm,https://franciscanathletics.com,205957,/sports/baseball/roster
+franklinmarshallcollege,Franklin and Marshall College,Franklin & Marshall College,"Lancaster, PA",D3,Centennial Conference,40.048,-76.319,sidearm,https://godiplomats.com,212577,/sports/baseball/roster
+franklincollege,Franklin College,Franklin College,"Franklin, IN",D3,Heartland Collegiate Athletic Conference,39.478,-86.047,sidearm,https://franklingrizzlies.com,150604,/sports/baseball/roster
+genevacollege,Geneva College,Geneva College,"Beaver Falls, PA",D3,Presidents' Athletic Conference,40.773,-80.322,sidearm,https://athletics.geneva.edu,212656,/sports/baseball/roster
+georgefoxuniversity,George Fox University,George Fox University,"Newberg, OR",D3,Northwest Conference,45.304,-122.967,sidearm,https://athletics.georgefox.edu,208822,/sports/baseball/roster
+gettysburgcollege,Gettysburg College,Gettysburg College,"Gettysburg, PA",D3,Centennial Conference,39.837,-77.237,sidearm,https://gettysburgsports.com,212674,/sports/baseball/roster
+gordoncollege,Gordon College,Gordon College,"Wenham, MA",D3,Conference of New England,42.591,-70.822,sidearm,https://athletics.gordon.edu,165936,/sports/baseball/roster
+greensborocollege,Greensboro College,Greensboro College,"Greensboro, NC",D3,USA South Athletic Conference,36.071,-79.8,sidearm,https://greensborocollegesports.com,198598,/sports/baseball/roster
+grinnellcollege,Grinnell College,Grinnell College,"Grinnell, IA",D3,Midwest Conference,41.748,-92.722,sidearm,https://pioneers.grinnell.edu,153384,/sports/baseball/roster
+grovecitycollege,Grove City College,Grove City College,"Grove City, PA",D3,Presidents' Athletic Conference,41.156,-80.081,sidearm,https://athletics.gcc.edu,212805,/sports/baseball/roster
+guilfordcollege,Guilford College,Guilford College,"Greensboro, NC",D3,Old Dominion Athletic Conference,36.094,-79.888,sidearm,https://guilfordquakers.com,198613,/sports/baseball/roster
+gustavusadolphuscollege,Gustavus Adolphus College,Gustavus Adolphus College,"St. Peter, MN",D3,Minnesota Intercollegiate Athletic Conference,44.324,-93.972,sidearm,https://gogusties.com,173647,/sports/baseball/roster
+gwyneddmercyuniversity,Gwynedd Mercy University,Gwynedd Mercy University,"Lower Gwynedd Township, PA",D3,Atlantic East Conference ( United East Conference in 2027),40.198,-75.237,sidearm,https://gwyneddathletics.com,212832,/sports/baseball/roster
+hamiltoncollege,Hamilton College,Hamilton College,"Clinton, NY",D3,New England Small College Athletic Conference,43.05,-75.408,sidearm,https://athletics.hamilton.edu,191515,/sports/baseball/roster
+hamlineuniversity,Hamline University,Hamline University,"St. Paul, MN",D3,Minnesota Intercollegiate Athletic Conference,44.966,-93.164,sidearm,https://hamlineathletics.com,173665,/sports/baseball/roster
+hampdensydneycollege,Hampden-Sydney College,Hampden–Sydney College,"Hampden Sydney, VA",D3,Old Dominion Athletic Conference,37.241,-78.464,sidearm,https://hscathletics.com,232256,/sports/baseball/roster
+hanovercollege,Hanover College,Hanover College,"Hanover, IN",D3,Heartland Collegiate Athletic Conference,38.716,-85.46,sidearm,https://athletics.hanover.edu,150756,/sports/baseball/roster
+hardinsimmonsuniversity,Hardin-Simmons University,Hardin–Simmons University,"Abilene, TX",D3,American Southwest Conference,32.476,-99.736,sidearm,https://hsuathletics.com,225247,/sports/baseball/roster
+universityofhartford,University of Hartford,University of Hartford,"West Hartford, CT",D3,Conference of New England,41.799,-72.715,sidearm,https://hartfordhawks.com,129525,/sports/baseball/roster
+haverfordcollege,Haverford College,Haverford College,"Haverford, PA",D3,Centennial Conference,40.007,-75.305,sidearm,https://haverfordathletics.com,212911,/sports/baseball/roster
+heidelberguniversity,Heidelberg University,Heidelberg University,"Tiffin, OH",D3,Ohio Athletic Conference,41.115,-83.168,sidearm,https://www.bergathletics.com,203085,/sports/baseball/roster
+hilbertcollege,Hilbert College,Hilbert College,"Hamburg, NY",D3,Allegheny Mountain Collegiate Conference,42.755,-78.82,sidearm,https://hilberthawks.com,191621,/sports/baseball/roster
+hiramcollege,Hiram College,Hiram College,"Hiram, OH",D3,Presidents' Athletic Conference,41.311,-81.144,sidearm,https://hiramterriers.com,203128,/sports/baseball/roster
+hobartcollege,Hobart William Smith Colleges,Hobart College,"Geneva, NY",D3,Liberty League,42.858,-76.986,sidearm,https://hwsathletics.com,191630,/sports/baseball/roster
+hoodcollege,Hood College,Hood College,"Frederick, MD",D3,MAC Commonwealth,39.421,-77.419,sidearm,https://hoodathletics.com,162760,/sports/baseball/roster
+houghtonuniversity,Houghton University,Houghton University,"Houghton, NY",D3,Empire 8,42.426,-78.155,sidearm,https://athletics.houghton.edu,191676,/sports/baseball/roster
+howardpayneuniversity,Howard Payne University,Howard Payne University,"Brownwood, TX",D3,American Southwest Conference,31.716,-98.985,sidearm,https://hpusports.com,225548,/sports/baseball/roster
+hussonuniversity,Husson University,Husson University,"Bangor, ME",D3,North Atlantic Conference,44.829,-68.791,sidearm,https://hussoneagles.com,487524,/sports/baseball/roster
+illinoiscollege,Illinois College,Illinois College,"Jacksonville, IL",D3,Midwest Conference,39.731,-90.246,sidearm,https://illinoiscollegeathletics.com,145691,/sports/baseball/roster
+illinoisinstituteoftechnolog,Illinois Institute of Technology,Illinois Institute of Technology,"Chicago, IL",D3,Northern Athletics Collegiate Conference,41.831,-87.627,sidearm,https://illinoistechathletics.com,145725,/sports/baseball/roster
+illinoiswesleyanuniversity,Illinois Wesleyan University,Illinois Wesleyan University,"Bloomington, IL",D3,College Conference of Illinois and Wisconsin,40.49,-88.992,sidearm,https://www.iwusports.com,145646,/sports/baseball/roster
+immaculatauniversity,Immaculata University,Immaculata University,"Immaculata, PA",D3,Atlantic East Conference ( United East Conference in 2027),40.028,-75.571,sidearm,https://gomightymacs.com,213011,/sports/baseball/roster
+ithacacollege,Ithaca College,Ithaca College,"Ithaca, NY",D3,Liberty League,42.422,-76.494,sidearm,https://athletics.ithaca.edu,191968,/sports/baseball/roster
+johncarrolluniversity,John Carroll University,John Carroll University,"University Heights, OH",D3,North Coast Athletic Conference,41.49,-81.531,sidearm,https://jcusports.com,203368,/sports/baseball/roster
+johnjaycollegeofcriminaljust,CUNY John Jay College of Criminal Justice,John Jay College of Criminal Justice,"New York, NY",D3,City University of New York Athletic Conference,40.77,-73.988,sidearm,https://johnjayathletics.com,190600,/sports/baseball/roster
+johnshopkinsuniversity,Johns Hopkins University,Johns Hopkins University,"Baltimore, MD",D3,Centennial Conference,39.329,-76.622,sidearm,https://hopkinssports.com,162928,/sports/baseball/roster
+johnsonwalesuniversity,Johnson & Wales University-Providence,Johnson & Wales University,"Providence, RI",D3,Conference of New England,41.82,-71.413,sidearm,https://providence.jwuathletics.com,217235,/sports/baseball/roster
+johnsonwalesuniversitycharlo,Johnson & Wales University-Charlotte,Johnson & Wales University Charlotte,"Charlotte, NC",D3,Coast to Coast Athletic Conference,35.234,-80.851,sidearm,https://charlotte.jwuathletics.com,445708,/sports/baseball/roster
+kalamazoocollege,Kalamazoo College,Kalamazoo College,"Kalamazoo, MI",D3,Michigan Intercollegiate Athletic Association,42.291,-85.602,sidearm,https://hornets.kzoo.edu,170532,/sports/baseball/roster
+keenestatecollege,Keene State College,Keene State College,"Keene, NH",D3,Little East Conference,42.926,-72.279,sidearm,https://keeneowls.com,183062,/sports/baseball/roster
+kenyoncollege,Kenyon College,Kenyon College,"Gambier, OH",D3,North Coast Athletic Conference,40.374,-82.398,sidearm,https://athletics.kenyon.edu,203535,/sports/baseball/roster
+keukacollege,Keuka College,Keuka College,"Keuka Park, NY",D3,Empire 8 ( Allegheny Mountain Collegiate Conference in 2027),42.615,-77.091,sidearm,https://keukaathletics.com,192192,/sports/baseball/roster
+kingscollege,King's College,King's College,"Wilkes-Barre, PA",D3,MAC Freedom,41.25,-75.88,sidearm,https://kingscollegeathletics.com,213321,/sports/baseball/roster
+knoxcollege,Knox College,Knox College,"Galesburg, IL",D3,Midwest Conference,40.943,-90.373,sidearm,https://prairiefire.knox.edu,146427,/
+lagrangecollege,LaGrange College,LaGrange College,"LaGrange, GA",D3,Collegiate Conference of the South,33.039,-85.043,sidearm,https://lagrangepanthers.com,140234,/sports/baseball/roster
+lakelanduniversity,Lakeland University,Lakeland University,"Sheboygan, WI",D3,Northern Athletics Collegiate Conference,43.842,-87.883,sidearm,https://lakelandmuskies.com,238980,/sports/baseball/roster
+lancasterbiblecollege,Lancaster Bible College,Lancaster Bible College,"Lancaster, PA",D3,United East Conference,40.075,-76.288,sidearm,https://lbcchargers.com,213400,/sports/baseball/roster
+lebanonvalleycollege,Lebanon Valley College,Lebanon Valley College,"Annville, PA",D3,MAC Freedom,40.331,-76.514,sidearm,https://godutchmen.com,213507,/sports/baseball/roster
+lehmancollege,CUNY Lehman College,Lehman College,"Bronx, NY",D3,City University of New York Athletic Conference,40.873,-73.895,sidearm,https://lehmanathletics.com,190637,/sports/baseball/roster
+letourneauuniversity,LeTourneau University,LeTourneau University,"Longview, TX",D3,Southern Collegiate Athletic Conference,32.466,-94.726,sidearm,https://letuathletics.com,226231,/sports/baseball/roster
+lewisclarkcollege,Lewis & Clark College,Lewis & Clark College,"Portland, OR",D3,Northwest Conference,45.451,-122.669,sidearm,https://golcathletics.com,209056,/sports/baseball/roster
+linfielduniversity,Linfield University,Linfield University,"McMinnville, OR",D3,Northwest Conference,45.201,-123.2,sidearm,https://golinfieldwildcats.com,209065,/sports/baseball/roster
+lorascollege,Loras College,Loras College,"Dubuque, IA",D3,American Rivers Conference,42.504,-90.679,sidearm,https://duhawks.com,153825,/sports/baseball/roster
+luthercollege,Luther College,Luther College,"Decorah, IA",D3,Midwest Conference,43.312,-91.803,sidearm,https://luthernorse.com,153834,/sports/baseball/roster
+lycomingcollege,Lycoming College,Lycoming College,"Williamsport, PA",D3,Landmark Conference,41.247,-77.0,sidearm,https://lycomingathletics.com,213668,/sports/baseball/roster
+universityoflynchburg,University of Lynchburg,University of Lynchburg,"Lynchburg, VA",D3,Old Dominion Athletic Conference,37.4,-79.182,sidearm,https://lynchburgsports.com,232609,/sports/baseball/roster
+macalestercollege,Macalester College,Macalester College,"St. Paul, MN",D3,Minnesota Intercollegiate Athletic Conference,44.939,-93.168,sidearm,https://athletics.macalester.edu,173902,/sports/baseball/roster
+manchesteruniversity,Manchester University,Manchester University,"North Manchester, IN",D3,Heartland Collegiate Athletic Conference,41.012,-85.762,sidearm,https://muspartans.com,151777,/sports/baseball/roster
+manhattanvilleuniversity,Manhattanville University,Manhattanville University,"Purchase, NY",D3,Skyline Conference,41.032,-73.716,sidearm,https://govaliants.com,192749,/sports/baseball/roster
+maranathabaptistuniversity,Maranatha Baptist University,Maranatha Baptist University,"Watertown, WI",D3,Independent,43.195,-88.737,sidearm,https://mbusabercats.com,239071,/sports/baseball/roster
+marianuniversity,Marian University,Marian University,"Fond du Lac, WI",D3,Northern Athletics Collegiate Conference,43.777,-88.421,sidearm,https://sabreathletics.com,239080,/sports/baseball/roster
+marybaldwinuniversity,Mary Baldwin University,Mary Baldwin University,"Staunton, VA",D3,USA South Athletic Conference,38.154,-79.069,sidearm,https://marybaldwinathletics.com,232672,/sports/baseball/roster
+universityofmarywashington,University of Mary Washington,University of Mary Washington,"Fredericksburg, VA",D3,Coast to Coast Athletic Conference,38.302,-77.476,sidearm,https://umweagles.com,232681,/sports/baseball/roster
+marymountuniversity,Marymount University,Marymount University,"Arlington, VA",D3,Atlantic East Conference ( United East Conference in 2027),38.906,-77.129,sidearm,https://marymountsaints.com,232706,/sports/baseball/roster
+maryvillecollege,Maryville College,Maryville College,"Maryville, TN",D3,Southern Athletic Association ( Collegiate Conference of the South in 2027),35.752,-83.964,sidearm,https://mcscots.com,220710,/sports/baseball/roster
+marywooduniversity,Marywood University,Marywood University,"Scranton, PA",D3,MAC Freedom,41.435,-75.634,sidearm,https://marywoodpacers.com,213826,/sports/baseball/roster
+universityofmassachusettsbos,University of Massachusetts-Boston,University of Massachusetts Boston,"Boston, MA",D3,Little East Conference,42.313,-71.037,sidearm,https://beaconsathletics.com,166638,/sports/baseball/roster
+universityofmassachusettsdar,University of Massachusetts-Dartmouth,University of Massachusetts Dartmouth,"Dartmouth, MA",D3,Little East Conference,41.629,-71.005,sidearm,https://corsairathletics.com,167987,/sports/baseball/roster
+massachusettsinstituteoftech,Massachusetts Institute of Technology,Massachusetts Institute of Technology,"Cambridge, MA",D3,New England Women's and Men's Athletic Conference,42.359,-71.093,sidearm,https://mitathletics.com,166683,/sports/baseball/roster
+mcdanielcollege,McDaniel College,McDaniel College,"Westminster, MD",D3,Centennial Conference,39.584,-77.002,sidearm,https://mcdanielathletics.com,164270,/sports/baseball/roster
+mcmurryuniversity,McMurry University,McMurry University,"Abilene, TX",D3,American Southwest Conference,32.43,-99.749,sidearm,https://mcmurrysports.com,226587,/sports/baseball/roster
+messiahuniversity,Messiah University,Messiah University,"Grantham, PA",D3,MAC Commonwealth,40.157,-76.988,sidearm,https://gomessiah.com,213996,/sports/baseball/roster
+methodistuniversity,Methodist University,Methodist University,"Fayetteville, NC",D3,USA South Athletic Conference,35.135,-78.874,sidearm,https://mumonarchs.com,198969,/sports/baseball/roster
+middleburycollege,Middlebury College,Middlebury College,"Middlebury, VT",D3,New England Small College Athletic Conference,44.009,-73.176,sidearm,https://athletics.middlebury.edu,230959,/sports/baseball/roster
+millikinuniversity,Millikin University,Millikin University,"Decatur, IL",D3,College Conference of Illinois and Wisconsin,39.843,-88.976,sidearm,https://athletics.millikin.edu,147244,/sports/baseball/roster
+millsapscollege,Millsaps College,Millsaps College,"Jackson, MS",D3,Southern Athletic Association ( Southern Collegiate Athletic Conference in 2027),32.323,-90.18,sidearm,https://gomajors.com,175980,/sports/baseball/roster
+milwaukeeschoolofengineering,Milwaukee School of Engineering,Milwaukee School of Engineering,"Milwaukee, WI",D3,Northern Athletics Collegiate Conference,43.045,-87.908,sidearm,https://msoeraiders.com,239318,/sports/baseball/roster
+universityofminnesotamorris,University of Minnesota-Morris,University of Minnesota Morris,"Morris, MN",D3,Upper Midwest Athletic Conference,45.59,-95.9,sidearm,https://morriscougars.com,174251,/sports/baseball/roster
+misericordiauniversity,Misericordia University,Misericordia University,"Dallas, PA",D3,MAC Freedom,41.345,-75.972,sidearm,https://athletics.misericordia.edu,214069,/sports/baseball/roster
+mississippiuniversityforwome,Mississippi University for Women,Mississippi University for Women,"Columbus, MS",D3,St. Louis Intercollegiate Athletic Conference,33.493,-88.419,sidearm,https://owlsathletics.com,176035,/sports/baseball/roster
+monmouthcollege,Monmouth College,Monmouth College,"Monmouth, IL",D3,Midwest Conference,40.915,-90.637,sidearm,https://monmouthscots.com,147341,/sports/baseball/roster
+mountaloysiuscollege,Mount Aloysius College,Mount Aloysius College,"Cresson, PA",D3,Allegheny Mountain Collegiate Conference,40.46,-78.601,sidearm,https://mountieathletics.com,214166,/sports/baseball/roster
+mountstjosephuniversity,Mount St. Joseph University,Mount St. Joseph University,"Cincinnati, OH",D3,Heartland Collegiate Athletic Conference,39.096,-84.639,sidearm,https://msjlions.com,204200,/sports/baseball/roster
+mountsaintmarycollege,Mount Saint Mary College,Mount Saint Mary College,"Newburgh, NY",D3,Skyline Conference,41.514,-74.013,sidearm,https://msmcknights.com,193353,/sports/baseball/roster
+universityofmountsaintvincen,University of Mount Saint Vincent,University of Mount Saint Vincent,"Bronx, NY",D3,Skyline Conference,40.914,-73.909,sidearm,https://umsvathletics.com,193399,/sports/baseball/roster
+universityofmountunion,University of Mount Union,University of Mount Union,"Alliance, OH",D3,Ohio Athletic Conference,40.905,-81.111,sidearm,http://mtun.sidearmsports.com,204185,/sports/baseball/roster
+muhlenbergcollege,Muhlenberg College,Muhlenberg College,"Allentown, PA",D3,Centennial Conference,40.596,-75.509,sidearm,https://muhlenbergsports.com,214175,/sports/baseball/roster
+nebraskawesleyanuniversity,Nebraska Wesleyan University,Nebraska Wesleyan University,"Lincoln, NE",D3,American Rivers Conference,40.839,-96.648,sidearm,https://nwusports.com,181446,/sports/baseball/roster
+neumannuniversity,Neumann University,Neumann University,"Aston, PA",D3,MAC Commonwealth,39.875,-75.44,sidearm,https://www.neumannathletics.com,214272,/sports/baseball/roster
+newenglandcollege,New England College,New England College,"Henniker, NH",D3,Great Northeast Athletic Conference,43.176,-71.822,sidearm,https://athletics.nec.edu,182980,/sports/baseball/roster
+stateuniversityofnewyorkatbr,SUNY Brockport,State University of New York at Brockport,"Brockport, NY",D3,Empire 8,43.212,-77.947,sidearm,https://gobrockport.com,196121,/sports/baseball/roster
+stateuniversityofnewyorkatca,SUNY College of Technology at Canton,State University of New York at Canton,"Canton, NY",D3,State University of New York Athletic Conference,44.604,-75.183,sidearm,https://rooathletics.com,196015,/sports/baseball/roster
+stateuniversityofnewyorkatco,State University of New York at Cortland,State University of New York at Cortland,"Cortland, NY",D3,State University of New York Athletic Conference,42.598,-76.189,sidearm,https://www.cortlandreddragons.com,196149,/sports/baseball/roster
+stateuniversityofnewyorkatfr,SUNY at Fredonia,State University of New York at Fredonia,"Fredonia, NY",D3,State University of New York Athletic Conference,42.452,-79.337,sidearm,https://fredoniabluedevils.com,196158,/sports/baseball/roster
+stateuniversityofnewyorkmari,SUNY Maritime College,State University of New York Maritime College,"The Bronx, NY",D3,Skyline Conference,40.807,-73.795,sidearm,https://maritimeathletics.com,196291,/sports/baseball/roster
+stateuniversityofnewyorkatne,State University of New York at New Paltz,State University of New York at New Paltz,"New Paltz, NY",D3,New Jersey Athletic Conference,41.741,-74.082,sidearm,https://nphawks.com,196176,/sports/baseball/roster
+stateuniversityofnewyorkatol,SUNY Old Westbury,State University of New York at Old Westbury,"Old Westbury, NY",D3,Skyline Conference,40.799,-73.572,sidearm,https://www.oldwestburypanthers.com,196237,/sports/baseball/roster
+stateuniversityofnewyorkaton,SUNY Oneonta,State University of New York at Oneonta,"Oneonta, NY",D3,State University of New York Athletic Conference,42.469,-75.064,sidearm,https://oneontaathletics.com,196185,/sports/baseball/roster
+stateuniversityofnewyorkatos,State University of New York at Oswego,State University of New York at Oswego,"Oswego, NY",D3,State University of New York Athletic Conference,43.454,-76.541,sidearm,https://oswegolakers.com,196194,/sports/baseball/roster
+stateuniversityofnewyorkatpl,State University of New York at Plattsburgh,State University of New York at Plattsburgh,"Plattsburgh, NY",D3,State University of New York Athletic Conference,44.693,-73.467,sidearm,https://gocardinalsports.com,196246,/sports/baseball/roster
+stateuniversityofnewyorkatpu,SUNY at Purchase College,State University of New York at Purchase,"Purchase, NY",D3,Skyline Conference,41.047,-73.702,sidearm,https://www.purchasecollegeathletics.com,196219,/sports/baseball/roster
+newyorkuniversity,New York University,New York University,"New York, NY",D3,University Athletic Association,40.729,-73.997,sidearm,https://gonyuathletics.com,193900,/sports/baseball/roster
+nicholscollege,Nichols College,Nichols College,"Dudley, MA",D3,Conference of New England,42.044,-71.93,sidearm,https://nicholsathletics.com,167260,/sports/baseball/roster
+northcarolinawesleyanunivers,North Carolina Wesleyan University,North Carolina Wesleyan University,"Rocky Mount, NC",D3,USA South Athletic Conference,36.02,-77.774,sidearm,https://ncwsports.com,199209,/sports/baseball/roster
+northcentralcollege,North Central College,North Central College,"Naperville, IL",D3,College Conference of Illinois and Wisconsin,41.776,-88.143,sidearm,https://northcentralcardinals.com,147660,/sports/baseball/roster
+northcentraluniversity,North Central University,North Central University,"Minneapolis, MN",D3,Upper Midwest Athletic Conference,44.969,-93.262,sidearm,https://ncurams.com,174437,/sports/baseball/roster
+northparkuniversity,North Park University,North Park University,"Chicago, IL",D3,College Conference of Illinois and Wisconsin,41.975,-87.71,sidearm,https://athletics.northpark.edu,147679,/sports/baseball/roster
+universityofnorthwesternstpa,University of Northwestern-St Paul,University of Northwestern - St. Paul,"Roseville, MN",D3,Upper Midwest Athletic Conference,45.034,-93.168,sidearm,https://unweagles.com,174491,/sports/baseball/roster
+norwichuniversity,Norwich University,Norwich University,"Northfield, VT",D3,Great Northeast Athletic Conference,44.14,-72.66,sidearm,https://norwichathletics.com,230995,/sports/baseball/roster
+notredameofmarylanduniversit,Notre Dame of Maryland University,Notre Dame of Maryland University,"Baltimore, MD",D3,United East Conference,39.351,-76.62,sidearm,https://notredamegators.com,163578,/sports/baseball/roster
+oberlincollege,Oberlin College,Oberlin College,"Oberlin, OH",D3,North Coast Athletic Conference,41.292,-82.217,sidearm,https://goyeo.com,204501,/sports/baseball/roster
+occidentalcollege,Occidental College,Occidental College,"Los Angeles, CA",D3,Southern California Intercollegiate Athletic Conference,34.127,-118.211,sidearm,https://oxyathletics.com,120254,/sports/baseball/roster
+ohiowesleyanuniversity,Ohio Wesleyan University,Ohio Wesleyan University,"Delaware, OH",D3,North Coast Athletic Conference,40.296,-83.07,sidearm,https://battlingbishops.com,204909,/sports/baseball/roster
+otterbeinuniversity,Otterbein University,Otterbein University,"Westerville, OH",D3,Ohio Athletic Conference,40.125,-82.936,sidearm,https://otterbeincardinals.com,204936,/sports/baseball/roster
+universityoftheozarks,University of the Ozarks,University of the Ozarks,"Clarksville, AR",D3,Southern Collegiate Athletic Conference,35.476,-93.467,sidearm,https://uofoathletics.com,107558,/sports/baseball/roster
+pacificlutheranuniversity,Pacific Lutheran University,Pacific Lutheran University,"Tacoma, WA",D3,Northwest Conference,47.145,-122.44,sidearm,https://golutes.com,236230,/sports/baseball/roster
+pacificuniversity,Pacific University,Pacific University,"Forest Grove, OR",D3,Northwest Conference,45.521,-123.109,sidearm,https://goboxers.com,209612,/sports/baseball/roster
+pennsylvaniacollegeoftechnol,Pennsylvania College of Technology,Pennsylvania College of Technology,"Williamsport, PA",D3,United East Conference,41.234,-77.024,sidearm,https://pctwildcats.com,366252,/sports/baseball/roster
+pennsylvaniastateuniversitya,Pennsylvania State University-Penn State Abington,"Pennsylvania State University, Abington","Abington, PA",D3,United East Conference,40.117,-75.111,sidearm,https://abingtonsports.com,214801,/sports/baseball/roster
+pennsylvaniastateuniversityb,Pennsylvania State University-Penn State Berks,"Pennsylvania State University, Berks College","Reading, PA",D3,United East Conference,40.359,-75.973,sidearm,https://psuberksathletics.com,214704,/sports/baseball/roster
+pennsylvaniastateuniversityh,Pennsylvania State University-Penn State Harrisburg,"Pennsylvania State University, Harrisburg","Harrisburg, PA",D3,United East Conference,40.204,-76.741,sidearm,https://psuharrisburgsports.com,214713,/sports/baseball/roster
+pfeifferuniversity,Pfeiffer University,Pfeiffer University,"Misenheimer, NC",D3,USA South Athletic Conference,35.485,-80.283,sidearm,https://gofalconsports.com,199306,/sports/baseball/roster
+universityofpittsburghatgree,University of Pittsburgh-Greensburg,University of Pittsburgh at Greensburg,"Greensburg, PA",D3,Allegheny Mountain Collegiate Conference,40.276,-79.533,sidearm,https://pittgreensburgathletics.com,215275,/sports/baseball/roster
+plymouthstateuniversity,Plymouth State University,Plymouth State University,"Plymouth, NH",D3,Little East Conference,43.76,-71.69,sidearm,https://athletics.plymouth.edu,183080,/sports/baseball/roster
+pomonacollegeandpitzercolleg,Pomona College,Pomona College and Pitzer College,"Claremont, CA",D3,Southern California Intercollegiate Athletic Conference,34.099,-117.715,sidearm,https://sagehens.com,121345,/sports/baseball/roster
+principiacollege,Principia College,Principia College,"Elsah, IL",D3,St. Louis Intercollegiate Athletic Conference,38.949,-90.35,sidearm,https://athletics.principiacollege.edu,148016,/sports/baseball/roster
+universityofpugetsound,University of Puget Sound,University of Puget Sound,"Tacoma, WA",D3,Northwest Conference,47.263,-122.479,sidearm,https://loggerathletics.com,236328,/sports/baseball/roster
+randolphmaconcollege,Randolph-Macon College,Randolph–Macon College,"Ashland, VA",D3,Old Dominion Athletic Conference,37.76,-77.478,sidearm,https://rmcathletics.com,233295,/sports/baseball/roster
+universityofredlands,University of Redlands,University of Redlands,"Redlands, CA",D3,Southern California Intercollegiate Athletic Conference,34.064,-117.163,sidearm,https://goredlands.com,121691,/sports/baseball/roster
+regentuniversity,Regent University,Regent University,"Virginia Beach, VA",D3,Coast to Coast Athletic Conference,36.801,-76.195,sidearm,https://regentroyals.com,231651,/sports/baseball/roster
+rensselaerpolytechnicinstitu,Rensselaer Polytechnic Institute,Rensselaer Polytechnic Institute,"Troy, NY",D3,Liberty League,42.73,-73.677,sidearm,https://rpiathletics.com,194824,/sports/baseball/roster
+rhodeislandcollege,Rhode Island College,Rhode Island College,"Providence, RI",D3,Little East Conference,41.842,-71.466,sidearm,https://goanchormen.com,217420,/sports/baseball/roster
+riponcollege,Ripon College,Ripon College,"Ripon, WI",D3,Midwest Conference,43.844,-88.842,sidearm,https://riponredhawks.com,239628,/sports/baseball/roster
+rivieruniversity,Rivier University,Rivier University,"Nashua, NH",D3,Great Northeast Athletic Conference,42.739,-71.456,sidearm,https://rivierathletics.com,183211,/sports/baseball/roster
+roanokecollege,Roanoke College,Roanoke College,"Salem, VA",D3,Old Dominion Athletic Conference,37.295,-80.055,sidearm,https://roanokemaroons.com,233426,/sports/baseball/roster
+universityofrochester,University of Rochester,University of Rochester,"Rochester, NY",D3,University Athletic Association,43.126,-77.631,sidearm,https://uofrathletics.com,195030,/sports/baseball/roster
+rochesterinstituteoftechnolo,Rochester Institute of Technology,Rochester Institute of Technology,"Rochester, NY",D3,Liberty League,43.084,-77.674,sidearm,https://ritathletics.com,195003,/sports/baseball/roster
+rockforduniversity,Rockford University,Rockford University,"Rockford, IL",D3,Northern Athletics Collegiate Conference,42.271,-89.02,sidearm,https://rockfordregents.com,148405,/sports/baseball/roster
+rogerwilliamsuniversity,Roger Williams University,Roger Williams University,"Bristol, RI",D3,Conference of New England,41.65,-71.26,sidearm,https://rwuhawks.com,217518,/sports/baseball/roster
+rosehulmaninstituteoftechnol,Rose-Hulman Institute of Technology,Rose-Hulman Institute of Technology,"Terre Haute, IN",D3,Heartland Collegiate Athletic Conference,39.484,-87.327,sidearm,https://athletics.rose-hulman.edu,152318,/sports/baseball/roster
+stjohnfisheruniversity,St. John Fisher University,St. John Fisher University,"Pittsford, NY",D3,Empire 8,43.116,-77.513,sidearm,https://sjfathletics.com,195720,/sports/baseball/roster
+saintjohnsuniversity,College of Saint Benedict,Saint John's University,"Collegeville, MN",D3,Minnesota Intercollegiate Athletic Conference,45.562,-94.32,sidearm,https://gojohnnies.com,174747,/sports/baseball/roster
+saintjosephscollegeofmaine,Saint Joseph's College of Maine,Saint Joseph's College of Maine,"Standish, ME",D3,Great Northeast Athletic Conference,43.826,-70.483,sidearm,https://gomonks.com,161518,/sports/baseball/roster
+stlawrenceuniversity,St Lawrence University,St. Lawrence University,"Canton, NY",D3,Liberty League,44.59,-75.161,sidearm,https://saintsathletics.com,195216,/sports/baseball/roster
+stmaryscollegeofmaryland,St. Mary's College of Maryland,St. Mary's College of Maryland,"St. Mary's City, MD",D3,United East Conference,38.188,-76.431,sidearm,https://smcmathletics.com,163912,/sports/baseball/roster
+saintmarysuniversityofminnes,Saint Mary's University of Minnesota,Saint Mary's University of Minnesota,"Winona, MN",D3,Minnesota Intercollegiate Athletic Conference,44.045,-91.695,sidearm,https://saintmaryssports.com,174817,/sports/baseball/roster
+stnorbertcollege,Saint Norbert College,St. Norbert College,"De Pere, WI",D3,Northern Athletics Collegiate Conference,44.445,-88.068,sidearm,https://athletics.snc.edu,239716,/sports/baseball/roster
+thecollegeofstscholastica,The College of Saint Scholastica,The College of St. Scholastica,"Duluth, MN",D3,Minnesota Intercollegiate Athletic Conference,46.816,-92.106,sidearm,https://csssaints.com,174899,/sports/baseball/roster
+texastx,University of St Thomas,Texas,"Houston, TX",D3,Southern Collegiate Athletic Conference,29.736,-95.393,sidearm,https://ustcelts.com,227863,/sports/baseball/roster
+saintvincentcollege,Saint Vincent College,Saint Vincent College,"Latrobe, PA",D3,Presidents' Athletic Conference,40.293,-79.404,sidearm,https://athletics.stvincent.edu,215798,/sports/baseball/roster
+salisburyuniversity,Salisbury University,Salisbury University,"Salisbury, MD",D3,Coast to Coast Athletic Conference,38.346,-75.605,sidearm,https://suseagulls.com,163851,/sports/baseball/roster
+salvereginauniversity,Salve Regina University,Salve Regina University,"Newport, RI",D3,New England Women's and Men's Athletic Conference,41.472,-71.301,sidearm,https://salveathletics.com,217536,/sports/baseball/roster
+universityofscranton,University of Scranton,University of Scranton,"Scranton, PA",D3,Landmark Conference,41.407,-75.657,sidearm,https://athletics.scranton.edu,215929,/sports/baseball/roster
+shenandoahuniversity,Shenandoah University,Shenandoah University,"Winchester, VA",D3,Old Dominion Athletic Conference,39.167,-78.157,sidearm,https://suhornets.com,233541,/sports/baseball/roster
+skidmorecollege,Skidmore College,Skidmore College,"Saratoga Springs, NY",D3,Liberty League,43.097,-73.785,sidearm,https://skidmoreathletics.com,195526,/sports/baseball/roster
+universityofsouthernmaine,University of Southern Maine,University of Southern Maine,"Portland, ME",D3,Little East Conference,43.663,-70.274,sidearm,https://southernmainehuskies.com,161554,/sports/baseball/roster
+southernvirginiauniversity,Southern Virginia University,Southern Virginia University,"Buena Vista, VA",D3,USA South Athletic Conference,37.74,-79.35,sidearm,https://knightathletics.com,233611,/sports/baseball/roster
+southwesternuniversity,Southwestern University,Southwestern University,"Georgetown, TX",D3,Southern Athletic Association ( Southern Collegiate Athletic Conference in 2027),30.634,-97.666,sidearm,https://southwesternpirates.com,228343,/sports/baseball/roster
+spaldinguniversity,Spalding University,Spalding University,"Louisville, KY",D3,St. Louis Intercollegiate Athletic Conference,38.242,-85.758,sidearm,https://spaldingathletics.com,157757,/sports/baseball/roster
+springfieldcollege,Springfield College,Springfield College,"Springfield, MA",D3,New England Women's and Men's Athletic Conference,42.102,-72.557,sidearm,https://springfieldcollegepride.com,167899,/sports/baseball/roster
+stevensinstituteoftechnology,Stevens Institute of Technology,Stevens Institute of Technology,"Hoboken, NJ",D3,MAC Freedom,40.745,-74.025,sidearm,https://stevensducks.com,186867,/sports/baseball/roster
+stevensonuniversity,Stevenson University,Stevenson University,"Stevenson, MD",D3,MAC Commonwealth,39.426,-76.776,sidearm,https://gomustangsports.com,164173,/sports/baseball/roster
+texaslutheranuniversity,Texas Lutheran University,Texas Lutheran University,"Seguin, TX",D3,Southern Collegiate Athletic Conference,29.573,-97.983,sidearm,https://tlubulldogs.com,228981,/sports/baseball/roster
+thielcollege,Thiel College,Thiel College,"Greenville, PA",D3,Presidents' Athletic Conference,41.414,-80.384,sidearm,https://thielathletics.com,216357,/sports/baseball/roster
+thomascollege,Thomas College,Thomas College,"Waterville, ME",D3,North Atlantic Conference,44.525,-69.665,sidearm,https://athletics.thomas.edu,161563,/sports/baseball/roster
+transylvaniauniversity,Transylvania University,Transylvania University,"Lexington, KY",D3,Heartland Collegiate Athletic Conference,38.053,-84.493,sidearm,https://transysports.com,157818,/sports/baseball/roster
+trineuniversity,Trine University,Trine University,"Angola, IN",D3,Michigan Intercollegiate Athletic Association,41.633,-85.008,sidearm,https://trinethunder.com,152567,/sports/baseball/roster
+trinitycollege,Trinity College,Trinity College,"Hartford, CT",D3,New England Small College Athletic Conference,41.747,-72.691,sidearm,https://bantamsports.com,130590,/sports/baseball/roster
+trinityuniversity,Trinity University,Trinity University,"San Antonio, TX",D3,Southern Athletic Association,29.463,-98.482,sidearm,https://trinitytigers.com,229267,/sports/baseball/roster
+tuftsuniversity,Tufts University,Tufts University,"Medford, MA",D3,New England Small College Athletic Conference,42.409,-71.118,sidearm,https://gotuftsjumbos.com,168148,/sports/baseball/roster
+unioncollege,Union College,Union College,"Schenectady, NY",D3,Liberty League,42.818,-73.929,sidearm,https://unionathletics.com,196866,/sports/baseball/roster
+unitedstatescoastguardacadem,United States Coast Guard Academy,United States Coast Guard Academy,"New London, CT",D3,New England Women's and Men's Athletic Conference,41.376,-72.102,sidearm,https://coastguardathletics.com,130624,/sports/baseball/roster
+unitedstatesmerchantmarineac,United States Merchant Marine Academy,United States Merchant Marine Academy,"Kings Point, NY",D3,Skyline Conference,40.814,-73.763,sidearm,https://www.usmmasports.com,197027,/sports/baseball/roster
+ursinuscollege,Ursinus College,Ursinus College,"Collegeville, PA",D3,Centennial Conference,40.193,-75.457,sidearm,https://ursinusathletics.com,216524,/sports/baseball/roster
+uticauniversity,Utica University,Utica University,"Utica, NY",D3,Empire 8,43.096,-75.273,sidearm,https://uticapioneers.com,197045,/sports/baseball/roster
+vassarcollege,Vassar College,Vassar College,"Poughkeepsie, NY",D3,Liberty League,41.687,-73.895,sidearm,https://www.vassarathletics.com,197133,/sports/baseball/roster
+wabashcollege,Wabash College,Wabash College,"Crawfordsville, IN",D3,North Coast Athletic Conference,40.038,-86.906,sidearm,https://sports.wabash.edu,152673,/sports/baseball/roster
+wartburgcollege,Wartburg College,Wartburg College,"Waverly, IA",D3,American Rivers Conference,42.728,-92.483,sidearm,https://go-knights.net,154527,/sports/baseball/roster
+washingtonjeffersoncollege,Washington & Jefferson College,Washington & Jefferson College,"Washington, PA",D3,Presidents' Athletic Conference,40.171,-80.24,sidearm,https://gopresidents.com,216667,/sports/baseball/roster
+washingtonandleeuniversity,Washington and Lee University,Washington and Lee University,"Lexington, VA",D3,Old Dominion Athletic Conference,37.789,-79.443,sidearm,https://generalssports.com,234207,/sports/baseball/roster
+washingtoncollege,Washington College,Washington College,"Chestertown, MD",D3,Centennial Conference,39.217,-76.069,sidearm,https://washcollsports.com,164216,/sports/baseball/roster
+washingtonuniversityinstloui,Washington University in St Louis,Washington University in St. Louis,"St. Louis, MO",D3,University Athletic Association,38.648,-90.311,sidearm,https://washubears.com,179867,
+waynesburguniversity,Waynesburg University,Waynesburg University,"Waynesburg, PA",D3,Presidents' Athletic Conference,39.9,-80.186,sidearm,https://waynesburgsports.com,216694,/sports/baseball/roster
+websteruniversity,Webster University,Webster University,"St. Louis, MO",D3,St. Louis Intercollegiate Athletic Conference,38.589,-90.345,sidearm,https://websterathletics.com,179894,/sports/baseball/roster
+wesleyanuniversity,Wesleyan University,Wesleyan University,"Middletown, CT",D3,New England Small College Athletic Conference,41.555,-72.657,sidearm,https://athletics.wesleyan.edu,130697,/sports/baseball/roster
+westernconnecticutstateunive,Western Connecticut State University,Western Connecticut State University,"Danbury, CT",D3,Little East Conference,41.4,-73.444,sidearm,https://westconnathletics.com,130776,/sports/baseball/roster
+westernnewenglanduniversity,Western New England University,Western New England University,"Springfield, MA",D3,Conference of New England,42.115,-72.52,sidearm,https://wnegoldenbears.com,168254,/sports/baseball/roster
+wheatoncollege,Wheaton College (Massachusetts),Wheaton College,"Norton, MA",D3,New England Women's and Men's Athletic Conference,41.967,-71.184,sidearm,https://wheatoncollegelyons.com,168281,/sports/baseball/roster
+whitmancollege,Whitman College,Whitman College,"Walla Walla, WA",D3,Northwest Conference,46.07,-118.332,sidearm,https://whitmanblues.com,237057,/sports/baseball/roster
+wideneruniversity,Widener University,Widener University,"Chester, PA",D3,MAC Commonwealth,39.862,-75.355,sidearm,https://widenerpride.com,216852,/sports/baseball/roster
+wilkesuniversity,Wilkes University,Wilkes University,"Wilkes-Barre, PA",D3,Landmark Conference,41.244,-75.89,sidearm,https://gowilkesu.com,216931,/sports/baseball/roster
+williampeaceuniversity,William Peace University,William Peace University,"Raleigh, NC",D3,USA South Athletic Conference,35.789,-78.638,sidearm,https://gopeacepacers.com,199272,/sports/baseball/roster
+williamscollege,Williams College,Williams College,"Williamstown, MA",D3,New England Small College Athletic Conference,42.713,-73.203,sidearm,https://ephsports.williams.edu,168342,/sports/baseball/roster
+wilmingtoncollege,Wilmington College,Wilmington College,"Wilmington, OH",D3,Ohio Athletic Conference,39.445,-83.818,sidearm,https://wilmingtonquakers.com,206507,/sports/baseball/roster
+universityofwisconsineauclai,University of Wisconsin-Eau Claire,University of Wisconsin–Eau Claire,"Eau Claire, WI",D3,Wisconsin Intercollegiate Athletic Conference,44.798,-91.502,sidearm,https://blugolds.com,240268,/sports/baseball/roster
+universityofwisconsinlacross,University of Wisconsin-La Crosse,University of Wisconsin–La Crosse,"La Crosse, WI",D3,Wisconsin Intercollegiate Athletic Conference,43.816,-91.232,sidearm,https://uwlathletics.com,240329,/sports/baseball/roster
+wisconsinlutherancollege,Wisconsin Lutheran College,Wisconsin Lutheran College,"Milwaukee, WI",D3,Northern Athletics Collegiate Conference,43.037,-88.023,sidearm,https://wlcsports.com,240338,/sports/baseball/roster
+universityofwisconsinoshkosh,University of Wisconsin-Oshkosh,University of Wisconsin–Oshkosh,"Oshkosh, WI",D3,Wisconsin Intercollegiate Athletic Conference,44.026,-88.549,sidearm,https://uwoshkoshtitans.com,240365,/sports/baseball/roster
+universityofwisconsinplattev,University of Wisconsin-Platteville,University of Wisconsin–Platteville,"Platteville, WI",D3,Wisconsin Intercollegiate Athletic Conference,42.733,-90.486,sidearm,https://letsgopioneers.com,240462,/sports/baseball/roster
+universityofwisconsinriverfa,University of Wisconsin-River Falls,University of Wisconsin–River Falls,"River Falls, WI",D3,Wisconsin Intercollegiate Athletic Conference,44.853,-92.623,sidearm,https://uwrfsports.com,240471,/sports/baseball/roster
+universityofwisconsinstevens,University of Wisconsin-Stevens Point,University of Wisconsin–Stevens Point,"Stevens Point, WI",D3,Wisconsin Intercollegiate Athletic Conference,44.53,-89.571,sidearm,https://athletics.uwsp.edu,240480,/sports/baseball/roster
+universityofwisconsinstoutpo,University of Wisconsin-Stout,University of Wisconsin–Stout Polytechnic,"Menomonie, WI",D3,Wisconsin Intercollegiate Athletic Conference,44.873,-91.927,sidearm,https://stoutbluedevils.com,240417,/sports/baseball/roster
+universityofwisconsinwhitewa,University of Wisconsin-Whitewater,University of Wisconsin–Whitewater,"Whitewater, WI",D3,Wisconsin Intercollegiate Athletic Conference,42.836,-88.742,sidearm,https://uwwsports.com,240189,/sports/baseball/roster
+collegeofwooster,The College of Wooster,College of Wooster,"Wooster, OH",D3,North Coast Athletic Conference,40.81,-81.935,sidearm,https://woosterathletics.com,206589,/sports/baseball/roster
+worcesterpolytechnicinstitut,Worcester Polytechnic Institute,Worcester Polytechnic Institute,"Worcester, MA",D3,New England Women's and Men's Athletic Conference,42.275,-71.808,sidearm,https://athletics.wpi.edu,168421,/sports/baseball/roster
+yeshivauniversity,Yeshiva University,Yeshiva University,"New York, NY",D3,Skyline Conference,40.851,-73.93,sidearm,https://yumacs.com,197708,/sports/baseball/roster
+yorkcollegeofpennsylvania,York College of Pennsylvania,York College of Pennsylvania,"York, PA",D3,MAC Commonwealth,39.946,-76.728,sidearm,https://ycpspartans.com,217059,/sports/baseball/roster
+in,Bethel University,IN,"Mishawaka, IN",NAIA,Crossroads League,41.678,-86.195,sidearm,https://bupilots.com,150145,/sports/baseball/roster
+tn,Bethel University,TN,"McKenzie, TN",NAIA,Mid-South Conference,36.138,-88.517,sidearm,https://bethelathletics.com,219718,/sports/baseball/roster
+bismarckstatecollege,Bismarck State College,Bismarck State College,"Bismarck, ND",NAIA,Frontier Conference,46.821,-100.817,sidearm,https://bscmystics.com,200022,/sports/baseball/roster
+bluefielduniversity,Bluefield University,Bluefield University,"Bluefield, VA",NAIA,Appalachian Athletic Conference,37.245,-81.246,sidearm,https://burams.com,231554,/sports/baseball/roster
+brewtonparkerchristianuniver,Brewton-Parker Christian University,Brewton–Parker Christian University,"Mount Vernon, GA",NAIA,Southern States Athletic Conference,32.186,-82.586,sidearm,https://bpcuathletics.com,139205,/sports/baseball/roster
+briarcliffuniversity,Briar Cliff University,Briar Cliff University,"Sioux City, IA",NAIA,Great Plains Athletic Conference,42.526,-96.428,sidearm,https://bcuchargers.com,152992,/sports/baseball/roster
+bushnelluniversity,Bushnell University,Bushnell University,"Eugene, OR",NAIA,Cascade Collegiate Conference,44.047,-123.08,sidearm,https://bushnellbeacons.com,209409,/sports/baseball/roster
+campbellsvilleuniversity,Campbellsville University,Campbellsville University,"Campbellsville, KY",NAIA,Mid-South Conference,37.343,-85.349,sidearm,https://campbellsvilletigers.com,156365,/sports/baseball/roster
+carolinauniversity,Carolina University,Carolina University,"Winston-Salem, NC",NAIA,Continental Athletic Conference ( Appalachian Athletic Conference in 2027),36.088,-80.25,sidearm,https://cubruins.com,489937,/sports/baseball/roster
+centralchristiancollegeofkan,Central Christian College of Kansas,Central Christian College of Kansas,"McPherson, KS",NAIA,Sooner Athletic Conference,38.358,-97.669,sidearm,https://ccctigers.com,154855,/sports/baseball/roster
+columbiacollegemo,Columbia College,MO,"Columbia, MO",NAIA,American Midwest Conference,38.957,-92.326,sidearm,https://columbiacougars.com,177065,/sports/baseball/roster
+columbiainternationalunivers,Columbia International University,Columbia International University,"Columbia, SC",NAIA,Appalachian Athletic Conference,34.076,-81.074,sidearm,https://ciurams.com,217925,/sports/baseball/roster
+corbanuniversity,Corban University,Corban University,"Salem, OR",NAIA,Cascade Collegiate Conference,44.882,-122.961,sidearm,https://corbanwarriors.com,210331,/sports/baseball/roster
+universityofthecumberlands,University of the Cumberlands,University of the Cumberlands,"Williamsburg, KY",NAIA,Mid-South Conference,36.737,-84.162,sidearm,https://cumberlandspatriots.com,156541,/sports/baseball/roster
+dakotastateuniversity,Dakota State University,Dakota State University,"Madison, SD",NAIA,Frontier Conference,44.013,-97.113,sidearm,https://dsuathletics.com,219082,/sports/baseball/roster
+dickinsonstateuniversity,Dickinson State University,Dickinson State University,"Dickinson, ND",NAIA,Frontier Conference,46.883,-102.8,sidearm,https://dsubluehawks.com,200059,/sports/baseball/roster
+dordtuniversity,Dordt University,Dordt University,"Sioux Center, IA",NAIA,Great Plains Athletic Conference,43.083,-96.167,sidearm,https://godordt.com,153250,/sports/baseball/roster
+easternoregonuniversity,Eastern Oregon University,Eastern Oregon University,"La Grande, OR",NAIA,Cascade Collegiate Conference,45.32,-118.092,sidearm,https://eousports.com,208646,/sports/baseball/roster
+evangeluniversity,Evangel University,Evangel University,"Springfield, MO",NAIA,Kansas Collegiate Athletic Conference,37.221,-93.263,sidearm,https://evangelathletics.com,177339,/sports/baseball/roster
+faulkneruniversity,Faulkner University,Faulkner University,"Montgomery, AL",NAIA,Southern States Athletic Conference,32.384,-86.216,sidearm,https://faulknereagles.com,101189,/sports/baseball/roster
+floridamemorialuniversity,Florida Memorial University,Florida Memorial University,"Miami Gardens, FL",NAIA,Sun Conference,25.918,-80.271,sidearm,https://athletics.fmu.edu,133979,/sports/baseball/roster
+floridanationaluniversity,Florida National University-Main Campus,Florida National University,"Miami, FL",NAIA,Continental Athletic Conference,25.862,-80.322,sidearm,https://fnusports.com,408844,/sports/baseball/roster
+freedhardemanuniversity,Freed-Hardeman University,Freed–Hardeman University,"Henderson, TN",NAIA,Mid-South Conference,35.441,-88.638,sidearm,https://gofhulions.com,220215,/sports/baseball/roster
+friendsuniversity,Friends University,Friends University,"Wichita, KS",NAIA,Kansas Collegiate Athletic Conference,37.678,-97.367,sidearm,https://friendsathletics.com,155089,/sports/baseball/roster
+georgiagwinnettcollege,Georgia Gwinnett College,Georgia Gwinnett College,"Lawrenceville, GA",NAIA,Continental Athletic Conference,33.979,-84.005,sidearm,https://ggcathletics.com,447689,/sports/baseball/roster
+goshencollege,Goshen College,Goshen College,"Goshen, IN",NAIA,Crossroads League,41.564,-85.828,sidearm,https://goleafs.net,150668,/sports/baseball/roster
+gracecollegeseminary,Grace College and Theological Seminary,Grace College & Seminary,"Winona Lake, IN",NAIA,Crossroads League,41.226,-85.814,sidearm,https://gclancers.com,150677,/sports/baseball/roster
+grandviewuniversity,Grand View University,Grand View University,"Des Moines, IA",NAIA,Heart of America Athletic Conference,41.62,-93.601,sidearm,https://gvvikings.com,153375,/sports/baseball/roster
+hanniballagrangeuniversity,Hannibal-LaGrange University,Hannibal–LaGrange University,"Hannibal, MO",NAIA,American Midwest Conference,39.729,-91.391,sidearm,https://hlgtrojans.com,177542,/sports/baseball/roster
+harrisstowestateuniversity,Harris-Stowe State University,Harris–Stowe State University,"St. Louis, MO",NAIA,American Midwest Conference,38.632,-90.224,sidearm,https://hornetsathletics.com,177551,/sports/baseball/roster
+hesstoncollege,Hesston College,Hesston College,"Hesston, KS",NAIA,Continental Athletic Conference,38.135,-97.434,sidearm,https://hclarks.com,155177,/sports/baseball/roster
+hopeinternationaluniversity,Hope International University,Hope International University,"Fullerton, CA",NAIA,Great Southwest Athletic Conference,33.876,-117.886,sidearm,https://hiuroyals.com,120537,/sports/baseball/roster
+hustontillotsonuniversity,Huston-Tillotson University,Huston–Tillotson University,"Austin, TX",NAIA,HBCU Athletic Conference,30.265,-97.722,sidearm,https://htramsathletics.com,225575,/sports/baseball/roster
+collegeofidaho,The College of Idaho,College of Idaho,"Caldwell, ID",NAIA,Cascade Collegiate Conference,43.652,-116.678,sidearm,https://yoteathletics.com,142294,/sports/baseball/roster
+indianatech,Indiana Institute of Technology,Indiana Tech,"Fort Wayne, IN",NAIA,Wolverine–Hoosier Athletic Conference,41.078,-85.116,sidearm,https://indianatechwarriors.com,151290,/sports/baseball/roster
+iusouthbend,Indiana University-South Bend,IU South Bend,"South Bend, IN",NAIA,Chicagoland Collegiate Athletic Conference,41.665,-86.222,sidearm,https://iusbtitans.com,151342,/sports/baseball/roster
+iusoutheastorius,Indiana University-Southeast,IU Southeast or IUS,"New Albany, IN",NAIA,River States Conference,38.345,-85.82,sidearm,https://iusathletics.com,151379,/sports/baseball/roster
+indianawesleyanuniversity,Indiana Wesleyan University-Marion,Indiana Wesleyan University,"Marion, IN",NAIA,Crossroads League,40.518,-85.668,sidearm,https://iwuwildcats.com,151801,/sports/baseball/roster
+kansaswesleyanuniversity,Kansas Wesleyan University,Kansas Wesleyan University,"Salina, KS",NAIA,Kansas Collegiate Athletic Conference,38.814,-97.608,sidearm,https://kwucoyotes.com,155414,/sports/baseball/roster
+keiseruniversity,Keiser University-Ft Lauderdale,Keiser University,"West Palm Beach, FL",NAIA,Sun Conference,26.186,-80.164,sidearm,https://kuseahawks.com,135081,/sports/baseball/roster
+lawrencetech,Lawrence Technological University,Lawrence Tech,"Southfield, MI",NAIA,Wolverine–Hoosier Athletic Conference,42.474,-83.25,sidearm,https://ltuathletics.com,170675,/sports/baseball/roster
+lewisclarkstatecollege,Lewis-Clark State College,Lewis–Clark State College,"Lewiston, ID",NAIA,Cascade Collegiate Conference,46.412,-117.025,sidearm,https://lcwarriors.com,142328,/sports/baseball/roster
+lindseywilsonuniversity,Lindsey Wilson University,Lindsey Wilson University,"Columbia, KY",NAIA,Mid-South Conference,37.102,-85.3,sidearm,https://lindseyathletics.com,157216,/sports/baseball/roster
+louisianachristianuniversity,Louisiana Christian University,Louisiana Christian University,"Pineville, LA",NAIA,Red River Athletic Conference,31.325,-92.426,sidearm,https://www.lcwildcats.net,159568,/sports/baseball/roster
+lsualexandria,Louisiana State University at Alexandria,LSU Alexandria,"Alexandria, LA",NAIA,Red River Athletic Conference,31.179,-92.414,sidearm,https://lsuagenerals.com,159382,/sports/baseball/roster
+madonnauniversity,Madonna University,Madonna University,"Livonia, MI",NAIA,Wolverine–Hoosier Athletic Conference,42.384,-83.405,sidearm,https://mucrusaders.com,170806,/sports/baseball/roster
+marianuniversityin,Marian University,Marian University,"Indianapolis, IN",NAIA,Crossroads League,39.813,-86.203,sidearm,https://muknights.com,151786,/sports/baseball/roster
+mcphersoncollege,McPherson College,McPherson College,"McPherson, KS",NAIA,Kansas Collegiate Athletic Conference,38.371,-97.643,sidearm,https://macbulldogs.com,155511,/sports/baseball/roster
+midamericachristianuniversit,Mid-America Christian University,Mid-America Christian University,"Oklahoma City, OK",NAIA,Sooner Athletic Conference,35.348,-97.578,sidearm,https://macuathletics.com,245953,/sports/baseball/roster
+midamericanazareneuniversity,MidAmerica Nazarene University,MidAmerica Nazarene University,"Olathe, KS",NAIA,Heart of America Athletic Conference,38.875,-94.782,sidearm,https://mnusports.com,155520,/sports/baseball/roster
+midwayuniversity,Midway University,Midway University,"Midway, KY",NAIA,River States Conference,38.146,-84.678,sidearm,https://gomidwayeagles.com,157377,/sports/baseball/roster
+milliganuniversity,Milligan University,Milligan University,"Elizabethton, TN",NAIA,Appalachian Athletic Conference,36.3,-82.294,sidearm,https://milliganbuffs.com,486901,/sports/baseball/roster
+missionuniversity,Mission University,Mission University,"Springfield, MO",NAIA,American Midwest Conference,37.24,-93.284,sidearm,https://gopatriotathletics.com,176664,/sports/baseball/roster
+missouribaptistuniversity,Missouri Baptist University,Missouri Baptist University,"St. Louis, MO",NAIA,Heart of America Athletic Conference,38.642,-90.463,sidearm,https://mbuspartans.com,178244,/sports/baseball/roster
+universityofmobile,University of Mobile,University of Mobile,"Prichard, AL",NAIA,Southern States Athletic Conference,30.793,-88.129,sidearm,https://umobilerams.com,101693,/sports/baseball/roster
+universityofmontanawestern,The University of Montana-Western,University of Montana–Western,"Dillon, MT",NAIA,Frontier Conference,45.208,-112.639,sidearm,https://umwbulldogs.com,180692,/sports/baseball/roster
+montreatcollege,Montreat College,Montreat College,"Montreat, NC",NAIA,Appalachian Athletic Conference,35.647,-82.298,sidearm,https://montreatcavaliers.com,199032,/sports/baseball/roster
+mountmartyuniversity,Mount Marty University,Mount Marty University,"Yankton, SD",NAIA,Great Plains Athletic Conference,42.874,-97.41,sidearm,https://mountmartyathletics.com,219198,/sports/baseball/roster
+newcollegeofflorida,New College of Florida,New College of Florida,"Sarasota, FL",NAIA,Sun Conference,27.385,-82.559,sidearm,https://gomightybanyans.com,262129,/sports/baseball/roster
+northwesterncollege,Northwestern College,Northwestern College,"Orange City, IA",NAIA,Great Plains Athletic Conference,42.999,-96.059,sidearm,https://nwcraiders.com,154101,/sports/baseball/roster
+oakwooduniversity,Oakwood University,Oakwood University,"Huntsville, AL",NAIA,HBCU Athletic Conference,34.756,-86.653,sidearm,https://athletics.oakwood.edu,101912,/sports/baseball/roster
+oklahomacityuniversity,Oklahoma City University,Oklahoma City University,"Oklahoma City, OK",NAIA,Sooner Athletic Conference,35.495,-97.541,sidearm,https://www.ocusports.com,207458,/sports/baseball/roster
+oklahomawesleyanuniversity,Oklahoma Wesleyan University,Oklahoma Wesleyan University,"Bartlesville, OK",NAIA,Kansas Collegiate Athletic Conference,36.717,-95.957,sidearm,https://okwueagles.com,206835,/sports/baseball/roster
+oregontech,Oregon Institute of Technology,Oregon Tech,"Klamath Falls, OR",NAIA,Cascade Collegiate Conference,42.257,-121.785,sidearm,https://oregontechowls.com,209506,/sports/baseball/roster
+ottawauniversity,Ottawa University-Ottawa,Ottawa University,"Ottawa, KS",NAIA,Kansas Collegiate Athletic Conference,38.603,-95.264,sidearm,https://ottawabraves.com,155627,/sports/baseball/roster
+parkuniversity,Park University,Park University,"Parkville, MO",NAIA,Heart of America Athletic Conference,39.189,-94.679,sidearm,https://parkathletics.com,178721,/sports/baseball/roster
+perustatecollege,Peru State College,Peru State College,"Peru, NE",NAIA,Heart of America Athletic Conference,40.475,-95.733,sidearm,https://pscbobcats.com,181534,/sports/baseball/roster
+universityofpikeville,University of Pikeville,University of Pikeville,"Pikeville, KY",NAIA,Appalachian Athletic Conference,37.479,-82.521,sidearm,https://upikebears.com,157535,/sports/baseball/roster
+universityofstfrancis,University of St Francis,University of St. Francis,"Joliet, IL",NAIA,Chicagoland Collegiate Athletic Conference,41.532,-88.096,sidearm,https://gofightingsaints.com,148584,/sports/baseball/roster
+universityofsaintmary,University of Saint Mary,University of Saint Mary,"Leavenworth, KS",NAIA,Kansas Collegiate Athletic Conference,39.279,-94.907,sidearm,https://www.gospires.com,155812,/sports/baseball/roster
+stthomasuniversity,St. Thomas University,St. Thomas University,"Miami Gardens, FL",NAIA,Sun Conference,25.922,-80.253,sidearm,https://stubobcats.com,137476,/sports/baseball/roster
+saintxavieruniversity,Saint Xavier University,Saint Xavier University,"Chicago, IL",NAIA,Chicagoland Collegiate Athletic Conference,41.707,-87.715,sidearm,https://sxucougars.com,148627,/sports/baseball/roster
+simpsonuniversity,Simpson University,Simpson University,"Redding, CA",NAIA,California Pacific Conference ( Cascade Collegiate Conference in 2027),40.613,-122.333,sidearm,https://simpsonredhawks.com,123457,/sports/baseball/roster
+southeasternuniversity,Southeastern University,Southeastern University,"Lakeland, FL",NAIA,Sun Conference,28.03,-81.918,sidearm,https://fire.seu.edu,137564,/sports/baseball/roster
+universityofthesouthwest,University of the Southwest,University of the Southwest,"Hobbs, NM",NAIA,Red River Athletic Conference,32.775,-103.187,sidearm,https://uswathletics.com,188182,/sports/baseball/roster
+southwesterncollege,Southwestern College,Southwestern College,"Winfield, KS",NAIA,Kansas Collegiate Athletic Conference,37.249,-96.975,sidearm,https://buildersports.com,155900,/sports/baseball/roster
+springarboruniversity,Spring Arbor University,Spring Arbor University,"Spring Arbor, MI",NAIA,Crossroads League,42.207,-84.556,sidearm,https://saucougars.com,172334,/sports/baseball/roster
+taborcollege,Tabor College,Tabor College,"Hillsboro, KS",NAIA,Kansas Collegiate Athletic Conference,38.349,-97.2,sidearm,https://taborbluejays.com,155973,/sports/baseball/roster
+talladegacollege,Talladega College,Talladega College,"Talladega, AL",NAIA,HBCU Athletic Conference,33.433,-86.113,sidearm,https://talladegatornadoes.com,102298,/sports/baseball/roster
+utsouthern,The University of Tennessee Southern,UT Southern,"Pulaski, TN",NAIA,Southern States Athletic Conference,35.201,-87.036,sidearm,https://utsfirehawks.com,220701,/sports/baseball/roster
+thomasuniversity,Thomas University,Thomas University,"Thomasville, GA",NAIA,Southern States Athletic Conference,30.816,-83.964,sidearm,https://tunighthawks.com,141167,/sports/baseball/roster
+truettmcconnelluniversity,Truett McConnell University,Truett McConnell University,"Cleveland, GA",NAIA,Appalachian Athletic Conference,34.596,-83.749,sidearm,https://tmbears.com,141237,/sports/baseball/roster
+unitedstatessportsuniversity,United States Sports University,United States Sports University,"Daphne, AL",NAIA,Continental Athletic Conference ( Southern States Athletic Conference in 2027),30.639,-87.912,sidearm,https://ussueagles.com,102395,/sports/baseball/roster
+valleycitystateuniversity,Valley City State University,Valley City State University,"Valley City, ND",NAIA,Frontier Conference,46.919,-98.004,sidearm,https://vcsuvikings.com,200572,/sports/baseball/roster
+voorheesuniversity,Voorhees University,Voorhees University,"Denmark, SC",NAIA,HBCU Athletic Conference,33.307,-81.128,sidearm,https://voorheesathletics.com,218919,/sports/baseball/roster
+warneruniversity,Warner University,Warner University,"Lake Wales, FL",NAIA,Sun Conference,27.826,-81.6,sidearm,https://warnerroyals.com,138275,/sports/baseball/roster
+warnerpacificuniversity,Warner Pacific University,Warner Pacific University,"Portland, OR",NAIA,Cascade Collegiate Conference,45.506,-122.592,sidearm,https://wpuknights.com,210304,/sports/baseball/roster
+waylandbaptistuniversity,Wayland Baptist University,Wayland Baptist University,"Plainview, TX",NAIA,Sooner Athletic Conference,34.188,-101.73,sidearm,https://wbuathletics.com,229780,/sports/baseball/roster
+webberinternationaluniversit,Webber International University,Webber International University,"Babson Park, FL",NAIA,Sun Conference,27.839,-81.532,sidearm,https://webberathletics.com,138293,/sports/baseball/roster
+williamcareyuniversity,William Carey University,William Carey University,"Hattiesburg, MS",NAIA,Southern States Athletic Conference,31.305,-89.292,sidearm,https://careyathletics.com,176479,/sports/baseball/roster
+williamwoodsuniversity,William Woods University,William Woods University,"Fulton, MO",NAIA,Heart of America Athletic Conference,38.86,-91.95,sidearm,https://wwuowls.com,179964,/sports/baseball/roster
+xavieruniversityoflouisiana,Xavier University of Louisiana,Xavier University of Louisiana,"New Orleans, LA",NAIA,Southern States Athletic Conference,29.964,-90.107,sidearm,https://xulagold.com,160904,/sports/baseball/roster
+yorkuniversity,York University,York University,"York, NE",NAIA,Kansas Collegiate Athletic Conference,40.87,-97.579,sidearm,https://yorkpanthers.com,181853,/sports/baseball/roster
+floridapoly,Florida Polytechnic University,Florida Poly,"Lakeland, FL",NAIA,Sun Conference,28.15,-81.846,sidearm,https://athletics.floridapoly.edu,482936,/sports/baseball/roster
+wallacecommunitycollege,George C Wallace Community College-Dothan,Wallace Community College,"Dothan, AL",JUCO,NJCAA Division I,31.315,-85.466,sidearm,https://wallacegovs.com,101286,/sports/baseball/roster
+coloradonorthwesterncommunit,Colorado Northwestern Community College,Colorado Northwestern Community College,"Rangely, CO",JUCO,NJCAA Division I,40.081,-108.79,sidearm,https://athletics.cncc.edu,126748,/sports/baseball/roster
+polkstatecollege,Polk State College,Polk State College,"Winter Haven, FL",JUCO,NJCAA Division I,28.032,-81.712,sidearm,https://polkeagles.com,136516,/sports/baseball/roster
+seminolestatecollegeofflorid,Seminole State College of Florida,Seminole State College of Florida,"Sanford, FL",JUCO,NJCAA Division I,28.745,-81.308,sidearm,https://seminolestateraiders.com,137209,/sports/baseball/roster
+southfloridastatecollege,South Florida State College,South Florida State College,"Avon Park, FL",JUCO,NJCAA Division I,27.57,-81.509,sidearm,https://www.southflorida.edu,137315,/community/athletics/baseball/roster
+collegeofsouthernidaho,College of Southern Idaho,College of Southern Idaho,"Twin Falls, ID",JUCO,NJCAA Division I,42.58,-114.474,sidearm,https://athletics.csi.edu,142559,/sports/baseball/roster
+tritoncollege,Triton College,Triton College,"River Grove, IL",JUCO,NJCAA Division I,41.916,-87.841,sidearm,https://tritonathletics.com,149532,/sports/baseball/roster
+cloudcountycommunitycollege,Cloud County Community College,Cloud County Community College,"Concordia, KS",JUCO,NJCAA Division I,39.554,-97.664,sidearm,https://cloudtbirds.com,154907,/sports/baseball/roster
+dodgecitycommunitycollege,Dodge City Community College,Dodge City Community College,"Dodge City, KS",JUCO,NJCAA Division I,37.777,-100.037,sidearm,https://goconqs.com,154998,/sports/baseball/roster
+delgadocommunitycollege,Delgado Community College,Delgado Community College,"New Orleans, LA",JUCO,NJCAA Division I,29.985,-90.104,sidearm,https://delgadoathletics.com,158662,/sports/baseball/roster
+louisianastateuniversityateu,Louisiana State University-Eunice,Louisiana State University at Eunice,"Eunice, LA",JUCO,NJCAA Division I,30.473,-92.435,sidearm,https://athletics.lsue.edu,159407,/sports/baseball/roster
+alleganycollegeofmaryland,Allegany College of Maryland,Allegany College of Maryland,"Cumberland, MD",JUCO,NJCAA Division I,39.652,-78.73,sidearm,https://acmtrojans.com,161688,/sports/baseball/roster
+harfordcommunitycollege,Harford Community College,Harford Community College,"Bel Air, MD",JUCO,NJCAA Division I,39.561,-76.283,sidearm,https://harfordathletics.com,162706,/sports/baseball/roster
+coahomacommunitycollege,Coahoma Community College,Coahoma Community College,"Clarksdale, MS",JUCO,NJCAA Division I,34.254,-90.568,sidearm,https://coahomasports.com,175519,/sports/baseball/roster
+jonescountyjuniorcollege,Jones County Junior College,Jones County Junior College,"Ellisville, MS",JUCO,NJCAA Division I,31.597,-89.201,sidearm,https://jcbobcats.com,175883,/sports/baseball/roster
+northwestmississippicommunit,Northwest Mississippi Community College,Northwest Mississippi Community College,"Senatobia, MS",JUCO,NJCAA Division I,34.626,-89.97,sidearm,https://nwccrangers.com,176178,/sports/baseball/roster
+southwestmississippicommunit,Southwest Mississippi Community College,Southwest Mississippi Community College,"Summit, MS",JUCO,NJCAA Division I,31.295,-90.443,sidearm,https://southwestbearathletics.com,176354,/sports/baseball/roster
+collegeofsouthernnevada,College of Southern Nevada,College of Southern Nevada,"Henderson, NV",JUCO,NJCAA Division I,36.158,-115.233,sidearm,https://csncoyotes.com,182005,/sports/baseball/roster
+murraystatecollege,Murray State College,Murray State College,"Tishomingo, OK",JUCO,NJCAA Division I,34.223,-96.678,sidearm,https://mscaggies.com,207236,/sports/baseball/roster
+universityofsouthcarolinalan,University of South Carolina-Lancaster,University of South Carolina Lancaster,"Lancaster, SC",JUCO,NJCAA Division I,34.736,-80.787,sidearm,https://usclathletics.com,218672,/sports/baseball/roster
+universityofsouthcarolinasal,University of South Carolina-Salkehatchie,University of South Carolina Salkehatchie,"Allendale, SC",JUCO,NJCAA Division I,33.014,-81.302,sidearm,https://www.uscsalkathletics.com,218681,/sports/baseball/roster
+blinncollege,Blinn College District,Blinn College,"Brenham, TX",JUCO,NJCAA Division I,30.16,-96.409,sidearm,https://buccaneersports.com,223427,/sports/baseball/roster
+navarrocollege,Navarro College,Navarro College,"Corsicana, TX",JUCO,NJCAA Division I,32.076,-96.499,sidearm,https://navarrobulldogs.com,227146,/sports/baseball/roster
+saltlakecommunitycollege,Salt Lake Community College,Salt Lake Community College,"Salt Lake, UT",JUCO,NJCAA Division I,40.672,-111.943,sidearm,https://slccbruins.com,230746,/sports/baseball/roster
+pascohernandostatecollege,Pasco-Hernando State College,Pasco–Hernando State College,"New Port Richey, FL",JUCO,NJCAA Division II,28.275,-82.647,sidearm,https://bobcats.phsc.edu,136400,/sports/baseball/roster
+danvilleareacommunitycollege,Danville Area Community College,Danville Area Community College,"Danville, IL",JUCO,NJCAA Division II,40.128,-87.588,sidearm,https://danvillejaguars.com,144564,/sports/baseball/roster
+heartlandcommunitycollege,Heartland Community College,Heartland Community College,"Normal, IL",JUCO,NJCAA Division II,40.533,-89.015,sidearm,https://heartlandhawks.com,384342,/sports/baseball/roster
+mortoncollege,Morton College,Morton College,"Cicero, IL",JUCO,NJCAA Division II,41.824,-87.762,sidearm,https://gomcpanthers.com,147411,/sports/baseball/roster
+oliveharveycollege,City Colleges of Chicago-Olive-Harvey College,Olive-Harvey College,"Chicago, IL",JUCO,NJCAA Division II,41.71,-87.589,sidearm,https://citycollegeofchicagoathletics.com,144175,/sports/baseball/roster
+parklandcollege,Parkland College,Parkland College,"Champaign, IL",JUCO,NJCAA Division II,40.132,-88.29,sidearm,https://athletics.parkland.edu,147916,/sports/baseball/roster
+prairiestatecollege,Prairie State College,Prairie State College,"Chicago Heights, IL",JUCO,NJCAA Division II,41.525,-87.639,sidearm,https://prairiestateathletics.com,148007,/sports/baseball/roster
+highlandcommunitycollege,Highland Community College,Highland Community College,"Highland ( https://www.highlandcc.edu/ ), KS",JUCO,NJCAA Division II,39.86,-95.272,sidearm,https://scottieathletics.com,155186,/sports/baseball/roster
+macombcommunitycollege,Macomb Community College,Macomb Community College,"Warren, MI",JUCO,NJCAA Division II,42.506,-82.972,sidearm,https://macombmonarchs.com,170790,/sports/baseball/roster
+harcumcollege,Harcum College,Harcum College,"Bryn Mawr, PA",JUCO,NJCAA Division II,40.023,-75.315,sidearm,https://www.harcum.edu,212869,/s/1044/bp20/interior.aspx
+northlandcommunitytechnicalc,Northland Community and Technical College,Northland Community & Technical College,"Thief River Falls, MN",JUCO,NJCAA Division III,48.125,-96.162,sidearm,https://northlandpioneers.com,174473,/sports/baseball/roster
+boroughofmanhattancommunityc,CUNY Borough of Manhattan Community College,Borough of Manhattan Community College,"New York City, NY",JUCO,NJCAA Division III,40.719,-74.012,sidearm,https://bmccathletics.com,190521,/sports/baseball/roster
+bronxcommunitycollege,CUNY Bronx Community College,Bronx Community College,"University Heights, NY",JUCO,NJCAA Division III,40.858,-73.912,sidearm,https://bronxbroncos.com,190530,/sports/baseball/roster
+kingsboroughcommunitycollege,CUNY Kingsborough Community College,Kingsborough Community College,"Brooklyn, NY",JUCO,NJCAA Division III,40.577,-73.936,sidearm,https://kccathletics.com,190619,/sports/baseball/roster
+nassaucommunitycollege,Nassau Community College,Nassau Community College,"Garden City, NY",JUCO,NJCAA Division III,40.729,-73.595,sidearm,https://nassaulions.com,193478,/sports/baseball/roster
+onondagacommunitycollege,Onondaga Community College,Onondaga Community College,"Syracuse, NY",JUCO,NJCAA Division III,43.006,-76.198,sidearm,https://onondagalazers.com,194222,/sports/baseball/roster
+queensboroughcommunitycolleg,CUNY Queensborough Community College,Queensborough Community College,"Queens, NY",JUCO,NJCAA Division III,40.755,-73.757,sidearm,https://qcctigers.com,190673,/sports/baseball/roster
+northamptoncommunitycollege,Northampton County Area Community College,Northampton Community College,"Bethlehem, PA",JUCO,NJCAA Division III,40.673,-75.324,sidearm,https://www.nccspartans.com,214379,/sports/baseball/roster
+madisonareatechnicalcollege,Madison Area Technical College,Madison Area Technical College,"Madison, WI",JUCO,NJCAA Division III,43.122,-89.328,sidearm,https://madisoncollegeathletics.com,238263,/sports/baseball/roster
+milwaukeeareatechnicalcolleg,Milwaukee Area Technical College,Milwaukee Area Technical College,"Milwaukee, WI",JUCO,NJCAA Division III,43.044,-87.921,sidearm,https://matcstormers.com,239248,/sports/baseball/roster
+graysharborcollege,Grays Harbor College,Grays Harbor College,"Aberdeen, WA",JUCO,NWAC – Western,46.954,-123.803,sidearm,https://ghcathletics.com,235334,/sports/baseball/roster
+lowercolumbiacollege,Lower Columbia College,Lower Columbia College,"Longview, WA",JUCO,NWAC – Western,46.142,-122.936,sidearm,https://lccreddevils.com,235750,/sports/baseball/roster
+southwesternoregoncommunityc,Southwestern Oregon Community College,Southwestern Oregon Community College,"Coos Bay, OR",JUCO,NWAC – Southern,43.395,-124.252,sidearm,https://swoccathletics.com,210155,/sports/baseball/roster
+wenatcheevalleycollege,Wenatchee Valley College,Wenatchee Valley College,"Wenatchee, WA",JUCO,NWAC – Eastern,47.431,-120.337,sidearm,https://gowvc.com,236975,/sports/baseball/roster
+yakimavalleycollege,Yakima Valley College,Yakima Valley College,"Yakima, WA",JUCO,NWAC – Eastern,46.586,-120.529,sidearm,https://goyaks.com,237109,/sports/baseball/roster
