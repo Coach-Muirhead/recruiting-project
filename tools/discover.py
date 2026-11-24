@@ -441,6 +441,7 @@ def resolve(p: dict) -> dict:
         for start in dict.fromkeys([link] + cands):
             hit = crawl(start) if start else None
             if hit:
+                log(f"  crawl found {p['full']}: {hit['platform']} {hit['probe']} coaches={hit['coaches_path'] or '-'}")
                 return {**p, **hit, "site_source": "crawl", "home_link": link or ""}
     res = blocked or last or {"platform": "", "athletics_base": "", "roster_path": "", "probe": "no candidate site"}
     return {**p, **res, "site_source": "", "home_link": link or "", "home_diag": HOME_DIAG.get(p.get("school_url") or p.get("wiki_school_site") or "", "")}
@@ -525,8 +526,9 @@ def merge():
         done += list(csv.DictReader(f.open()))
     if not done:
         return
+    cols = list(dict.fromkeys(k for p in done for k in p))  # files from different runs may differ by a column
     with OUT.open("w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=list(done[0].keys())); w.writeheader(); w.writerows(done)
+        w = csv.DictWriter(f, fieldnames=cols, restval=""); w.writeheader(); w.writerows(done)
     existing = [r for r in csv.DictReader(SCHOOLS.open()) if r["id"] in HAND_ENTERED]  # rebuilt from scratch each merge
     fields = list(existing[0].keys())
     for col in ("roster_path", "coaches_path", "scorecard_name"):
