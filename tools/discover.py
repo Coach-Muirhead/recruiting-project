@@ -152,7 +152,11 @@ def membership(src: str) -> list[dict]:
             st = state_code(st2.strip()) or st
         if src == "nwac" and st not in ("WA", "OR", "ID"):
             continue  # skip the BC (Canada) members
-        out.append({"full": re.sub(r"\s*\*$", "", re.sub(r"\s*\(.*?\)\s*$", "", school)).strip(), "short": (re.search(r"\((.*?)\)", school) or [None, ""])[1],
+        paren = (re.search(r"\((.*?)\)", school) or [None, ""])[1]
+        bare = re.sub(r"\s*\*$", "", re.sub(r"\s*\(.*?\)\s*$", "", school)).strip()
+        if paren and (paren in STATES.values() or paren in STATES):  # "California (PA)": the state, not a short name
+            paren = f"{bare} ({paren})"
+        out.append({"full": bare, "short": paren,
                     "wiki_school": col(r, "school", "team", "institution", link=True), "nickname": col(r, "nickname"),
                     "wiki_team": col(r, "nickname", link=True), "city": city.strip(), "state": st,
                     "conf": "NWAC – " + col(r, "division") if src == "nwac" else col(r, "conference")})
@@ -178,7 +182,7 @@ def scorecard_all(key: str) -> list[dict]:
 
 def match(p: dict, sc_by_state: dict) -> dict | None:
     cands = sc_by_state.get(p["state"], [])
-    want = {norm(p["full"]), norm(p["short"])}
+    want = {norm(p["full"])} | ({norm(p["short"])} if len(norm(p["short"])) > 3 and "(" not in p["short"] else set())
     for c in cands:
         names = [c["school.name"]] + [a.strip() for a in (c.get("school.alias") or "").split(",") if a.strip()]
         if any(norm(n) in want for n in names):
@@ -413,6 +417,8 @@ def main():
         c = by_id.get(str(p.get("ipeds") or "")) or match(p, by_state)
         if c:
             p.update({"unitid": c["id"], "sc_name": c["school.name"], "lat": c.get("location.lat"), "lon": c.get("location.lon"), "enroll": c.get("latest.student.size"), "school_url": c.get("school.school_url") or ""})
+            p["city"] = p.get("city") or c.get("school.city") or ""
+            p["state"] = p.get("state") or c.get("school.state") or ""
     log(f"scorecard matched {sum(1 for p in programs if p.get('unitid'))} of {len(programs)}")
     counter = {"n": 0}
 
@@ -436,6 +442,9 @@ def main():
         merge()
 
 
+HAND_ENTERED = {"rutgers", "setonhall", "kean", "montclair", "ramapo", "rowan", "rutgerscamden", "rutgersnewark", "stockton", "tcnj", "wpu"}
+
+
 def merge():
     """Combines data/discovered/*.csv into data/discovered.csv and adds ready programs to schools.csv."""
     from collections import Counter
@@ -446,7 +455,7 @@ def merge():
         return
     with OUT.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(done[0].keys())); w.writeheader(); w.writerows(done)
-    existing = list(csv.DictReader(SCHOOLS.open()))
+    existing = [r for r in csv.DictReader(SCHOOLS.open()) if r["id"] in HAND_ENTERED]  # rebuilt from scratch each merge
     fields = list(existing[0].keys())
     if "roster_path" not in fields:
         fields.append("roster_path")
@@ -465,7 +474,7 @@ def merge():
         if i in have_ids:
             i = slug(p["full"] + p["state"])
         have_ids.add(i); have_base.add(domain(p["athletics_base"])); have_unit.add(str(p.get("unitid") or ""))
-        existing.append({"id": i, "name": p.get("sc_name") or p["full"], "short": p["short"], "city": f"{p['city']}, {p['state']}", "div": p["div"], "conf": p["conf"],
+        existing.append({"id": i, "name": p.get("sc_name") or p["full"], "short": p["short"], "city": ", ".join(x for x in (p["city"], p["state"]) if x), "div": p["div"], "conf": p["conf"],
                          "lat": round(float(p["lat"]), 3), "lon": round(float(p["lon"]), 3), "platform": p["platform"], "athletics_base": p["athletics_base"],
                          "unitid": p.get("unitid") or "", "roster_path": p["roster_path"]})
         added += 1
