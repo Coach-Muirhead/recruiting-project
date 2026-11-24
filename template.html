@@ -29,7 +29,7 @@ header p{color:#c9d8cf;max-width:62ch;margin:8px 0 18px}
 button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
 .search{position:relative;max-width:560px}
 .search input{width:100%;font:16px Barlow;padding:14px 16px;border-radius:10px;border:0;background:var(--chalk);color:#13211b;min-height:50px}
-.menu{position:absolute;z-index:5;left:0;right:0;top:56px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:10px;box-shadow:0 12px 30px #0004;overflow:hidden}
+.menu{position:absolute;z-index:5;left:0;right:0;top:56px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:10px;box-shadow:0 12px 30px #0004;overflow:hidden auto;max-height:min(60vh,420px)}
 .menu button{display:flex;justify-content:space-between;gap:12px;width:100%;text-align:left;font:16px Barlow;background:none;border:0;color:inherit;padding:12px 16px;min-height:44px;cursor:pointer}
 .menu button:hover,.menu button.on{background:var(--soft)}
 .menu small{color:var(--mute)}
@@ -117,7 +117,7 @@ select{font:16px Barlow;padding:10px;border-radius:8px;border:1px solid var(--li
   <p>Look up a college program to see who is graduating, where the roster comes from, who to email, and what it costs. Or enter your position and let it find programs with room for you.</p>
   <div class="search">
    <label for="q" style="position:absolute;left:-9999px">Search for a school</label>
-   <input id="q" type="search" autocomplete="off" placeholder="Type a school, e.g. Rowan, Ramapo, Seton Hall">
+   <input id="q" type="search" autocomplete="off" placeholder="Search any college program by school, city or state">
    <div class="menu" id="menu" hidden></div>
   </div>
   <div class="tabs" role="tablist">
@@ -297,10 +297,16 @@ const show=p=>{panel=p;tabs.forEach(b=>b.setAttribute('aria-selected',b.dataset.
 tabs.forEach(b=>b.addEventListener('click',()=>show(b.dataset.p)));
 
 const q=document.getElementById('q'),menu=document.getElementById('menu');let idx=0,hits=[];
-const draw=()=>{const v=q.value.trim().toLowerCase();hits=SCHOOLS.filter(s=>!v||(s.name+' '+s.short+' '+s.city+' '+s.conf).toLowerCase().includes(v)).slice(0,12);idx=Math.min(idx,Math.max(0,hits.length-1));
- menu.innerHTML=hits.length?hits.map((s,i)=>`<button type="button" class="${i===idx?'on':''}" data-go="${s.id}"><span>${esc(s.name)}</span><small>${s.div} · ${s.city}${s.ls?' · directory only':''}</small></button>`).join(''):`<div style="padding:12px 16px" class="none">Not found. ${SCHOOLS.length.toLocaleString()} programs are loaded so far; try the school's short name or city.</div>`;menu.hidden=false};
+const fold=t=>(t||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/&/g,' and ').replace(/[^a-z0-9]+/g,' ').trim();
+const draw=()=>{const v=fold(q.value),words=v.split(' ').filter(Boolean);
+ if(!words.length){hits=[];menu.innerHTML=`<div style="padding:12px 16px" class="none">Search all ${SCHOOLS.length.toLocaleString()} programs: type a school, city, state or conference.</div>`;menu.hidden=false;return}
+ hits=SCHOOLS.map(s=>{const nm=fold(s.name+' '+s.short),all=nm+' '+fold(s.city+' '+s.conf+' '+s.div);if(!words.every(w=>all.includes(w)))return null;
+  const r=fold(s.name).startsWith(v)||fold(s.short).startsWith(v)?0:words.every(w=>nm.includes(w))?1:2;return{s,r}}).filter(Boolean)
+  .sort((a,b)=>a.r-b.r||a.s.name.localeCompare(b.s.name)).slice(0,25).map(x=>x.s);
+ idx=Math.min(idx,Math.max(0,hits.length-1));
+ menu.innerHTML=hits.length?hits.map((s,i)=>`<button type="button" class="${i===idx?'on':''}" data-go="${s.id}"><span>${esc(s.name)}</span><small>${s.div} · ${esc(s.city)}${s.ls?' · directory only':''}</small></button>`).join(''):`<div style="padding:12px 16px" class="none">No match among ${SCHOOLS.length.toLocaleString()} programs. Try the school's short name, city or state.</div>`;menu.hidden=false};
 const pick=id=>{current=id;const s=SCHOOLS.find(x=>x.id===id);q.value=s.name;menu.hidden=true;look(id);show('look');try{localStorage.setItem('rp-last',id)}catch(e){}};
-q.addEventListener('input',()=>{idx=0;draw()});q.addEventListener('focus',draw);
+q.addEventListener('input',()=>{idx=0;draw()});q.addEventListener('focus',()=>{q.select();draw()});
 q.addEventListener('keydown',e=>{if(menu.hidden)return;if(e.key==='ArrowDown'){idx=Math.min(idx+1,hits.length-1);draw();e.preventDefault()}else if(e.key==='ArrowUp'){idx=Math.max(idx-1,0);draw();e.preventDefault()}else if(e.key==='Enter'&&hits[idx]){pick(hits[idx].id);e.preventDefault()}else if(e.key==='Escape')menu.hidden=true});
 document.addEventListener('click',e=>{
  const fv=e.target.closest('[data-fav],[data-unfav]');if(fv){const id=fv.dataset.fav||fv.dataset.unfav;if(LIST[id])delete LIST[id];else LIST[id]={added:new Date().toISOString(),note:''};saveList();count();
