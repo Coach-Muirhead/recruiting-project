@@ -10,8 +10,11 @@ S = requests.Session(); S.headers["User-Agent"] = "RecruitingProjectBot/1.0 (+ht
 
 
 def latest():
-    files = [f for f in S.get(API + "fileList", timeout=60).json() if f.get("Format") == "Excel"]
-    return max(files, key=lambda f: f["Year"])
+    files = S.get(API + "fileList", timeout=60).json()
+    for f in sorted(files, key=lambda f: f["Year"])[-6:]:
+        print("available:", f, file=sys.stderr)
+    xl = [f for f in files if "excel" in (f.get("Format") or "").lower() or "xls" in f["FileName"].lower()]
+    return max(xl, key=lambda f: (f["Year"], "combined" in f["FileName"].lower()))
 
 
 def main(inspect=False):
@@ -20,7 +23,7 @@ def main(inspect=False):
     print("contents:", z.namelist(), file=sys.stderr)
     out = {}
     for name in z.namelist():
-        if not name.lower().endswith((".xlsx", ".xls")):
+        if not name.lower().endswith(".xlsx"):
             continue
         wb = openpyxl.load_workbook(io.BytesIO(z.read(name)), read_only=True)
         ws = wb.worksheets[0]
