@@ -1,13 +1,18 @@
 {
- "programs": 50,
+ "programs": 6,
  "by_level": {
-  "JUCO": 50
+  "D1": 3,
+  "JUCO": 3
  },
  "ready": {},
- "platform": {
-  "not found": 47,
-  "blocked": 3
+ "blocked": {
+  "D1": 1,
+  "JUCO": 3
  },
- "no_scorecard_match": 4,
- "added_to_schools_csv": 0
+ "not_found": {
+  "D1": 2
+ },
+ "no_scorecard_match": 1,
+ "schools_csv_rows": 46,
+ "added_this_merge": 0
 }
