@@ -13,8 +13,8 @@ def latest():
     files = S.get(API + "fileList", timeout=60).json()
     for f in sorted(files, key=lambda f: f["Year"])[-6:]:
         print("available:", f, file=sys.stderr)
-    xl = [f for f in files if "excel" in (f.get("Format") or "").lower() or "xls" in f["FileName"].lower()]
-    return max(xl, key=lambda f: (f["Year"], "combined" in f["FileName"].lower()))
+    per_sport = [f for f in files if "record for every sport" in (f.get("Description") or "") and "combined" not in f["FileName"].lower()]
+    return max(per_sport, key=lambda f: f["Year"])
 
 
 def main(inspect=False):
