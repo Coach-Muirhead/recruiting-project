@@ -406,8 +406,10 @@ def crawl(start: str) -> dict | None:
             if r is None:
                 continue
             _, rows = parse_sidearm_roster(r.text)
-            if len(rows) < 8 or "softball" in r.url.lower():
-                continue
+            title = (re.search(r"<title[^>]*>(.*?)</title>", r.text, re.S | re.I) or [None, ""])[1].lower()
+            is_ball = re.search(r"baseball|/bsb\b|basebl", r.url.lower()) or ("baseball" in title and "softball" not in title)
+            if len(rows) < 8 or not is_ball or "softball" in r.url.lower():
+                continue  # a roster, but not baseball's
             low = r.text.lower()
             plat = "sidearm" if "sidearm" in low and "/sports/" in r.url else "presto" if "/sports/bsb/" in r.url else "table"
             coach = next((c for c, t in links(r.text, r.url) if ("coach" in t or "staff" in t) and domain(c) == domain(r.url) and ("baseball" in c.lower() or "bsb" in c.lower())), "")
