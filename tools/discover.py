@@ -250,10 +250,13 @@ def wiki_sites(programs: list[dict]) -> None:
         searched += 1
         hits = [h["title"] for h in (r.json().get("query", {}).get("search", []) if r is not None and r.ok else [])]
         nick = p["nickname"].lower()
+        words = [w for w in norm(p["full"]).split() if len(w) > 3 and w not in ("state", "community", "technical", "junior", "north", "south", "east", "west", "central")]
+        hits = [h for h in hits if any(w in norm(h).split() for w in words)]  # must name this school, not just share a mascot
         t = next((h for h in hits if nick in h.lower() and not re.search(r"baseball|season|football|basketball|stadium|field|arena", h.lower())), None) \
             or next((h[: -len(" baseball")] for h in hits if nick in h.lower() and h.lower().endswith(" baseball")), None)
         if t:
             team_title[id(p)] = t
+            p["wiki_searched"] = True
     school_title = {id(p): p["wiki_school"] for p in programs if p.get("wiki_school")}
     qid = _wd_items(sorted(set(team_title.values()) | set(school_title.values())))
     claims = _wd_claims(sorted(set(qid.values())))
@@ -264,6 +267,11 @@ def wiki_sites(programs: list[dict]) -> None:
             p["wiki_site"] = t["site"][-1]
         if sc.get("ipeds"):
             p["ipeds"] = sc["ipeds"][0]
+    from collections import Counter
+    used = Counter(domain(p["wiki_site"]) for p in programs if p.get("wiki_site"))
+    for p in programs:  # one athletics site claimed by two different schools is a bad match
+        if p.get("wiki_site") and used[domain(p["wiki_site"])] > 1 and len({p2["full"] for p2 in programs if p2.get("wiki_site") and domain(p2["wiki_site"]) == domain(p["wiki_site"])}) > 1:
+            p["wiki_site"] = ""
         if sc.get("site"):
             p["wiki_school_site"] = sc["site"][-1]
     log(f"wikipedia: searched {searched}, team articles {len(team_title)}, school articles {len(school_title)}, wikidata items {len(set(qid.values()))}, "
@@ -346,7 +354,7 @@ def resolve(p: dict) -> dict:
         cands.append(p["wiki_site"])
     link = home_athletics_link(p.get("school_url") or p.get("wiki_school_site") or "")
     if link and domain(link) not in [domain(c) for c in cands]:
-        cands.append(link)
+        cands.insert(0 if p.get("wiki_searched") else len(cands), link)  # the school's own link beats a search guess
     if p.get("school_url"):
         cands.append(p["school_url"])  # some schools host rosters on the main site
     blocked = None
