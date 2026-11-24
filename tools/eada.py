@@ -49,6 +49,9 @@ def main(inspect=False):
                                      "classification": g("classification_name"), "men": men}
     (ROOT / "data" / "eada_baseball.json").write_text(json.dumps(out, indent=0, sort_keys=True))
     print("schools with men's baseball:", len(out), file=sys.stderr)
+    from collections import Counter
+    for k, v in Counter(x["classification"] for x in out.values()).most_common():
+        print(f"  class {v:5d}  {k}", file=sys.stderr)
 
 
 if __name__ == "__main__":
