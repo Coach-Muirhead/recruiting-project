@@ -310,6 +310,7 @@ def scorecard_bulk(key: str) -> None:
 
 def scorecard(row: dict, key: str) -> dict:
     """Looks a school up by its federal ID (unitid column) or, if blank, by name and state."""
+    row = {**row, "name": row.get("scorecard_name") or row["name"]}  # campuses reported under a parent school
     r = SC_ALL.get(str(row.get("unitid") or ""))
     if r:
         return {"inS": f"${r['latest.cost.tuition.in_state']:,}" if r.get("latest.cost.tuition.in_state") else "",
@@ -358,6 +359,11 @@ def scrape_school(row: dict, prev: dict | None, key: str | None) -> dict:
         coach_url = f"{base}/sports/bsb/coaches/index"
         rss_url = f"{base}/sports/bsb/headlines-featured?feed=rss_2.0"
         parse_roster = parse_presto_roster
+    elif row["platform"] == "table":  # any site whose roster is a table with Name / Pos / Yr headers
+        roster_url = base + row["roster_path"]
+        coach_url = base + row["coaches_path"] if row.get("coaches_path") else ""
+        rss_url = ""
+        parse_roster = parse_sidearm_roster
     else:
         log(f"  {row['id']}: unsupported platform {row['platform']}")
         s.setdefault("flags", []).append("This site's layout isn't supported by the scraper yet.")
@@ -378,14 +384,14 @@ def scrape_school(row: dict, prev: dict | None, key: str | None) -> dict:
         flags.append("The roster page couldn't be reached today; showing the last good copy.")
         REPORT[row["id"]] = {"roster": "unreachable"}
 
-    html = get(coach_url)
+    html = get(coach_url) if coach_url else None
     if html:
         coaches = parse_sidearm_coaches(html)
         REPORT.setdefault(row["id"], {})["coaches"] = len(coaches) or "none parsed, kept last copy"
         if coaches:
             s["coaches"] = coaches
 
-    xml = get(rss_url)
+    xml = get(rss_url) if rss_url else None
     if xml:
         found = {c["u"]: c for c in parse_rss_camps(xml)}
         kept = [c for c in s.get("camps", []) if c.get("u") not in found]

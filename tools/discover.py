@@ -136,6 +136,8 @@ def membership(src: str) -> list[dict]:
                 a = re.search(r'<a href="/wiki/[^"]+"[^>]*title="([^"]+)"[^>]*>(.*?)</a>(.*)', li, re.S)
                 if not a:
                     continue
+                if re.match(r"(List of|NJCAA|National Junior College)", a.group(1)) or re.search(r"Conference|Region \d", a.group(1)):
+                    continue  # navigation links, not schools
                 rest = strip(a.group(3))
                 nick, _, city = rest.partition(" in ")
                 out.append({"full": strip(a.group(2)), "wiki_school": a.group(1), "nickname": nick.strip(), "city": city.strip(), "state": state, "conf": f"NJCAA Division {'I' * int(src[-1])}"})
@@ -198,7 +200,18 @@ def match(p: dict, sc_by_state: dict) -> dict | None:
             j = len(w & cw) / len(w | cw)
             if j > score:
                 best, score = c, j
-    return best if score >= 0.5 else None
+    if score >= 0.5:
+        return best
+    # branch campuses ("CCBC-Catonsville", "Clinton Community College (Iowa)"): the one two-year college in that city
+    if p["div"] == "JUCO":
+        two = [c for c in cands if (c.get("school.city") or "").lower() == p["city"].lower() and c.get("school.degrees_awarded.predominant") in (1, 2)]
+        if len(two) == 1:
+            return two[0]
+        bare = norm(re.sub(r"\s*\(.*?\)", "", p["full"]))
+        for c in cands:
+            if norm(c["school.name"]) == bare:
+                return c
+    return None
 
 
 # ------------------------------------------------------------ 3. athletics website
@@ -351,6 +364,60 @@ def probe(site: str) -> dict:
     return {"platform": "", "athletics_base": base, "roster_path": "", "probe": " ".join(seen)}
 
 
+sys.path.insert(0, str(ROOT / "scraper"))
+from scrape import allowed, parse_sidearm_roster  # noqa: E402  same robots check and table reader as the nightly job
+
+SOCIAL = re.compile(r"facebook|twitter|x\.com|instagram|youtube|tiktok|linkedin|flickr|ncaa\.org|njcaa\.org|naia\.org", re.I)
+
+
+def links(html: str, base: str):
+    for href, text in re.findall(r'<a[^>]+href="([^"#]+)"[^>]*>(.*?)</a>', html, re.S | re.I):
+        u = urljoin(base, href.replace("&amp;", "&"))
+        if u.startswith("http") and not SOCIAL.search(u) and not re.search(r"\.(js|css|png|jpe?g|svg|gif|pdf|ico)(\?|$)", u, re.I):
+            yield u, re.sub(r"<[^>]+>|\s+", " ", text).strip().lower()
+
+
+def polite(url: str):
+    if not allowed(url):
+        return None
+    time.sleep(1)
+    r = get(url)
+    return r if r is not None and r.status_code == 200 else None
+
+
+def crawl(start: str) -> dict | None:
+    """Follows Athletics -> Baseball -> Roster links on any site, a few pages at most.
+    Returns a row the nightly job can read when the roster is a table with Name / Pos / Yr headers."""
+    if not start:
+        return None
+    home = polite(start if "//" in start else "https://" + start)
+    if home is None:
+        return None
+    pages = [home]
+    ball = [u for u, t in links(home.text, home.url) if ("baseball" in t or re.search(r"baseball|/bsb\b|/sports/m-basebl", u, re.I)) and "softball" not in (u + t).lower()]
+    for u in list(dict.fromkeys(ball))[:3]:
+        r = polite(u)
+        if r is not None:
+            pages.append(r)
+    for pg in pages[1:] + pages[:1]:
+        cands = [pg.url] + [u for u, t in links(pg.text, pg.url) if "roster" in t or "/roster" in u.lower()]
+        for u in list(dict.fromkeys(cands))[:3]:
+            r = pg if u == pg.url else polite(u)
+            if r is None:
+                continue
+            _, rows = parse_sidearm_roster(r.text)
+            if len(rows) < 8 or "softball" in r.url.lower():
+                continue
+            low = r.text.lower()
+            plat = "sidearm" if "sidearm" in low and "/sports/" in r.url else "presto" if "/sports/bsb/" in r.url else "table"
+            coach = next((c for c, t in links(r.text, r.url) if ("coach" in t or "staff" in t) and domain(c) == domain(r.url) and ("baseball" in c.lower() or "bsb" in c.lower())), "")
+            base = f"{urlparse(r.url).scheme}://{urlparse(r.url).netloc}"
+            return {"platform": plat, "athletics_base": base, "roster_path": urlparse(r.url).path + (("?" + urlparse(r.url).query) if urlparse(r.url).query else ""),
+                    "coaches_path": (urlparse(coach).path + (("?" + urlparse(coach).query) if urlparse(coach).query else "")) if coach else "",
+                    "probe": f"crawl:{len(rows)} players at {r.url}"}
+    return None
+
+
 def resolve(p: dict) -> dict:
     sc_dom = domain(p.get("school_url") or "x")
     cands = []
@@ -370,6 +437,11 @@ def resolve(p: dict) -> dict:
         if res["platform"] == "blocked" and not blocked:
             blocked = res
         last = res
+    if not blocked:  # nothing at the usual addresses: follow the links instead
+        for start in dict.fromkeys([link] + cands):
+            hit = crawl(start) if start else None
+            if hit:
+                return {**p, **hit, "site_source": "crawl", "home_link": link or ""}
     res = blocked or last or {"platform": "", "athletics_base": "", "roster_path": "", "probe": "no candidate site"}
     return {**p, **res, "site_source": "", "home_link": link or "", "home_diag": HOME_DIAG.get(p.get("school_url") or p.get("wiki_school_site") or "", "")}
 
@@ -432,7 +504,7 @@ def main():
     with ThreadPoolExecutor(a.workers) as ex:
         done = list(ex.map(step, programs))
 
-    cols = ["div", "conf", "short", "nickname", "full", "city", "state", "unitid", "sc_name", "lat", "lon", "enroll", "school_url", "wiki_site", "site_source", "athletics_base", "platform", "roster_path", "probe", "home_link", "home_diag"]
+    cols = ["div", "conf", "short", "nickname", "full", "city", "state", "unitid", "sc_name", "lat", "lon", "enroll", "school_url", "wiki_site", "site_source", "athletics_base", "platform", "roster_path", "coaches_path", "probe", "home_link", "home_diag"]
     part = ROOT / "data" / "discovered" / f"{a.levels.replace(',', '+')}.csv"
     part.parent.mkdir(parents=True, exist_ok=True)
     with part.open("w", newline="") as f:
@@ -457,14 +529,23 @@ def merge():
         w = csv.DictWriter(f, fieldnames=list(done[0].keys())); w.writeheader(); w.writerows(done)
     existing = [r for r in csv.DictReader(SCHOOLS.open()) if r["id"] in HAND_ENTERED]  # rebuilt from scratch each merge
     fields = list(existing[0].keys())
-    if "roster_path" not in fields:
-        fields.append("roster_path")
+    for col in ("roster_path", "coaches_path", "scorecard_name"):
+        if col not in fields:
+            fields.append(col)
     have_ids = {r["id"] for r in existing}
     have_unit = {r.get("unitid") for r in existing if r.get("unitid")}
     have_base = {domain(r["athletics_base"]) for r in existing}
+    fix = {r["athletics_domain"]: r for r in csv.DictReader((ROOT / "tools" / "overrides.csv").open())} if (ROOT / "tools" / "overrides.csv").exists() else {}
     added = 0
     for p in done:
-        if p["platform"] not in ("sidearm", "presto") or p.get("lat") in (None, ""):
+        o = fix.get(domain(p.get("athletics_base") or ""))
+        if o:  # hand corrections that survive every rebuild
+            p.update({"sc_name": o["name"], "scorecard_name": o.get("scorecard_name", ""), "unitid": o["unitid"] or p.get("unitid", "")})
+            if o["lat"]:
+                p["lat"], p["lon"] = o["lat"], o["lon"]
+            if o["city"]:
+                p["city"], p["state"] = [x.strip() for x in o["city"].rsplit(",", 1)]
+        if p["platform"] not in ("sidearm", "presto", "table") or p.get("lat") in (None, ""):
             continue
         if (p.get("unitid") and str(p["unitid"]) in have_unit) or domain(p["athletics_base"]) in have_base:
             continue
@@ -476,14 +557,15 @@ def merge():
         have_ids.add(i); have_base.add(domain(p["athletics_base"])); have_unit.add(str(p.get("unitid") or ""))
         existing.append({"id": i, "name": p.get("sc_name") or p["full"], "short": p["short"], "city": ", ".join(x for x in (p["city"], p["state"]) if x), "div": p["div"], "conf": p["conf"],
                          "lat": round(float(p["lat"]), 3), "lon": round(float(p["lon"]), 3), "platform": p["platform"], "athletics_base": p["athletics_base"],
-                         "unitid": p.get("unitid") or "", "roster_path": p["roster_path"]})
+                         "unitid": p.get("unitid") or "", "roster_path": p["roster_path"], "coaches_path": p.get("coaches_path", ""), "scorecard_name": p.get("scorecard_name", "")})
         added += 1
     with SCHOOLS.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore", lineterminator="\n"); w.writeheader(); w.writerows(existing)
     summary = {
         "programs": len(done),
         "by_level": Counter(p["div"] for p in done),
-        "ready": Counter(p["div"] for p in done if p["platform"] in ("sidearm", "presto")),
+        "ready": Counter(p["div"] for p in done if p["platform"] in ("sidearm", "presto", "table")),
+        "by_platform": Counter(p["platform"] or "not found" for p in done),
         "blocked": Counter(p["div"] for p in done if p["platform"] == "blocked"),
         "not_found": Counter(p["div"] for p in done if not p["platform"]),
         "no_scorecard_match": sum(1 for p in done if not p.get("unitid")),
