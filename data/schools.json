@@ -724,6 +724,32 @@
   "roster": ""
  },
  {
+  "id": "montereypeninsulacollege",
+  "name": "Monterey Peninsula College",
+  "short": "Monterey Peninsula College",
+  "city": "Monterey, CA",
+  "div": "JUCO",
+  "conf": "CCCAA",
+  "lat": 36.591,
+  "lon": -121.885,
+  "checked": "2026-11-24",
+  "rosterUrl": "https://athletics.mpc.edu/teams/mens-sports/baseball/team-roster.html",
+  "coachUrl": "https://athletics.mpc.edu/teams/mens-sports/baseball/coaching-staff.html",
+  "roster": "ADRIAN LEON|RHP|So|WATSONVILLE (ST. FRANCIS HS)\nREY AVILA|UTL|So|PACIFIC GROVE (PGHS)\nJOHNNIE DEBRUM|UTL|So|ATASCADERO (ATASCADERO HS)\nJAKE YEATER|OF|So|SALINAS (SALINAS HS)\nJAXON FOX|INF|So|HOLLADAY, UT (OLYMPUS HS)\nROSS FRANK|RHP/INF|Fr|FT. COLLINS, CO (ROCKY MOUNTAIN HS)\nTANNER LEE|C/UTL|So|LIVERMORE (LIVERMORE HS)\nJAYDEN KIM|C|So|SEASIDE (PALMA HS)\nFABIO BUNDI|RHP|So|BASEL, SWITZERLAND\nJAXON CARABAJAL|RHP|Fr|COMMERCE CITY, CO (RIVERDALE RIDGE HS)\nPEDRO IBARRA|UTL|Fr|WATSONVILLE (ST. FRANCIS HS)\nROBBIE LARDNER|LHP|So|TEMPLETON (TEMPLETON HS)\nMAX COHEN|LHP|So|ALAMEDA (ALAMEDA HS)\nISAIAH MCCOY|RHP|Fr|CARLSBAD (CARLSBAD HS)\nETHAN JACKSON|C|So|CARMEL (CARMEL HS)\nRYAN CAMPBELL|RHP|So|DANVILLE (MONTE VISTA HS)\nNOAH PIONA|OF|Fr|APTOS (SOQUEL HS)\nDOMINIC TOMASI|RHP|So|SALINAS (SALINAS HS)\nRYUGA SAKAMOTO|RHP|Fr|TOCHIGI, JAPAN\nKALEB SHANNON|1B|So|SALINAS (PALMA HS)\nCHRISTOPHER MARTINEZ|OF|So|SALINAS (PALMA HS)\nJJ SANCHEZ|LHP/UTL|Fr|CARMEL (CARMEL HS)\nCARLOS CRUZ MAR|INF|So|SANTA CRUZ (HARBOR HS)\nNATE CRUZ|RHP|So|SALINAS (PALMA HS)\nBLAKE YOUNG|OF|Fr|LAKEWOOD, CO (MULLEN HS)\nANDREW WASILCHUK|OF|So|FRESNO (CENTRAL EAST HS)\nETHAN ALEJO|INF|Fr|PARKER, CO (PONDEROSA HS)\nNOLAN HOULIHAN|OF|Fr|FRESNO (CLOVIS NORTH HS)\nRYAN BRENNAN|RHP/UTL|Fr|DENVER, CO (CHERRY CREEK HS)\nANDREW AIRADA|LHP|Fr|SALINAS (RL STEVENSON HS)\nJAXSON BAYANI|UTL|Fr|STOCKTON (BEAR CREEK HS)\nBEN TUCKER|C|Fr|CARMEL (CARMEL HS)\nBENNY RAMIREZ|LHP/UTL|Fr|SALINAS (SALINAS HS)\nNICK SIEMERS|OF|Fr|ZURICH, SWITZERLAND\nJACKSON EVERETT|RHP|Fr|MONTEREY (MONTEREY HS)\nADAM MORRIS|LHP|Fr|SALINAS (RANCHO SAN JUAN HS)\nANDREW FICHTNER|RHP|Fr|LODI (LODI HS)",
+  "season": "",
+  "enroll": 5624,
+  "enrollNote": "undergraduates (College Scorecard)",
+  "tuition": {
+   "yr": "most recent federal figure",
+   "inS": "$1,188",
+   "inNote": "tuition (College Scorecard; may lag a year)",
+   "outS": "$10,788",
+   "outNote": "tuition (College Scorecard)",
+   "u": "https://collegescorecard.ed.gov/"
+  },
+  "flags": []
+ },
+ {
   "id": "mtsanantoniocollege",
   "name": "Mt San Antonio College",
   "short": "Mt San Antonio College",
@@ -877,7 +903,7 @@
   "checked": "2026-11-24",
   "rosterUrl": "https://bryantbulldogs.com/sports/baseball/roster",
   "coachUrl": "https://bryantbulldogs.com/sports/baseball/coaches",
-  "roster": "Elliot Miles|INF|Sr|Portsmouth, NH\nJorge Falagan|C|Fr|Miami Lakes, FL\nHunter Kingsbury|OF|Jr|Newbury, MA\nDylan Prince|INF|So|Doral, FL\nZac Zyons|INF|Gr|South Kingstown, RI\nMichael Belcher|RHP|Jr|Prospect, CT\nJack Treat|1B/OF|Fr|Oakdale, CT\nKai Miller|INF|Jr|Bothell, WA\nZev Salsberg|RHP|Jr|Toronto, Ont.\nCam Papetti|C/INF|Jr|Grafton, MA\nMike Fiatarone|INF|So|Shelton, CT\nIan Carter|RHP|So|Milford, MA\nSean Clifford|RHP|Jr|Woonsocket, RI\nHudson Story|INF|Sr|Stevenson Ranch, CA\nJustin Hackett|INF|Gr|Wallingford, CT\nTyler Stone|RHP|So|Hamden, CT\nTy Davis|RHP|Jr|Bristol, CT\nWill Margolies|LHP|Fr|Trumbull, CT\nThomas Galusha|RHP|Jr|Middlebury, CT\nCharlie Saul|OF|Jr|River Vale, NJ\nJoe Coughlan|INF|Fr|Sandwich, MA\nCharlie Firth|RHP|Fr|Ottawa, Ont.\nLiam Flynn|C|Gr|Charlestown, RI\nJustin Dressler|RHP|Jr|Waldwick, NJ\nWill Hurley|RHP|So|Longmeadow, MA\nMax Burkholz|OF|So|Boynton Beach, FL\nLorenzo Camilleri|1B/OF|So|Hasbrouch Heights, NJ\nLogan Fesh|LHP|Fr|Bethel, CT\nCameron Soroko|INF/OF|So|Saugus, MA\nOwen Birchard|RHP|Jr|Auburn, NY\nTommy Malloy|C|So|North Providence, RI\nZach Davis|RHP|Jr|Colchester, VT\nNik Pavia|RHP|Sr|Bolton, MA\nChris Cundari|RHP|Fr|Wayne, NJ\nSean Zaslaw|RHP|Sr|Weymouth, MA\nTim Sample|LHP|Fr|Bristol, CT\nPatrick Van Note|INF|Fr|Montclair, NJ\nTobey Bajda|RHP|Fr|Monroe, CT\nKyler Ackert|RHP|So|Albany, NY\nBrendan Walker|RHP|Gr|Woodsville, NH\nBilly Mulholland|RHP/C|Sr|Montvale, NJ\nThomas Maher|LHP|Sr|Nanuet, NY\nAidan Gallagher|OF|Jr|Hopewell Junction, NY\nNolan Gillis|RHP|Fr|Surry, NH\nBo Jonas|,C|So|Cape Coral, FL\nJameson Dobis|RHP|So|Medford, NJ",
+  "roster": "Elliot Miles|INF|Sr|Portsmouth, NH\nJorge Falagan|C|Fr|Miami Lakes, FL\nHunter Kingsbury|OF|Jr|Newbury, MA\nDylan Prince|INF|So|Doral, FL\nZac Zyons|INF|Gr|South Kingstown, RI\nMichael Belcher|RHP|Jr|Prospect, CT\nJack Treat|1B/OF|Fr|Oakdale, CT\nKai Miller|INF|Jr|Bothell, WA\nZev Salsberg|RHP|Jr|Toronto, Ont.\nCam Papetti|C/INF|Jr|Grafton, MA\nMike Fiatarone|INF|So|Shelton, CT\nIan Carter|RHP|So|Milford, MA\nSean Clifford|RHP|Jr|Woonsocket, RI\nHudson Story|INF|Sr|Stevenson Ranch, CA\nJustin Hackett|INF|Gr|Wallingford, CT\nTyler Stone|RHP|So|Hamden, CT\nTy Davis|RHP|Jr|Bristol, CT\nWill Margolies|LHP|Fr|Trumbull, CT\nThomas Galusha|RHP|Jr|Middlebury, CT\nCharlie Saul|OF|Jr|River Vale, NJ\nJoe Coughlan|INF|Fr|Sandwich, MA\nCharlie Firth|RHP|Fr|Ottawa, Ont.\nLiam Flynn|C|Gr|Charlestown, RI\nJustin Dressler|RHP|Jr|Waldwick, NJ\nWill Hurley|RHP|So|Longmeadow, MA\nMax Burkholz|OF|So|Boynton Beach, FL\nLorenzo Camilleri|1B/OF|So|Hasbrouck Heights, NJ\nLogan Fesh|LHP|Fr|Bethel, CT\nCameron Soroko|INF/OF|So|Saugus, MA\nOwen Birchard|RHP|Jr|Auburn, NY\nTommy Malloy|C|So|North Providence, RI\nZach Davis|RHP|Jr|Colchester, VT\nNik Pavia|RHP|Sr|Bolton, MA\nChris Cundari|RHP|Fr|Wayne, NJ\nSean Zaslaw|RHP|Sr|Weymouth, MA\nTim Sample|LHP|Fr|Bristol, CT\nPatrick Van Note|INF|Fr|Montclair, NJ\nTobey Bajda|RHP|Fr|Monroe, CT\nKyler Ackert|RHP|So|Albany, NY\nBrendan Walker|RHP|Gr|Woodsville, NH\nBilly Mulholland|RHP/C|Sr|Montvale, NJ\nThomas Maher|LHP|Sr|Nanuet, NY\nAidan Gallagher|OF|Jr|Hopewell Junction, NY\nNolan Gillis|RHP|Fr|Surry, NH\nBo Jonas|,C|So|Cape Coral, FL\nJameson Dobis|RHP|So|Medford, NJ",
   "season": "2027",
   "coaches": [
    [
@@ -889,6 +915,11 @@
     "Franklin Jennings",
     "Assistant Coach",
     "fjennings@bryant.edu"
+   ],
+   [
+    "Tyler Fitzgerald",
+    "Assistant Coach | Pitching Coach",
+    "tfitzgerald4@bryant.edu"
    ],
    [
     "Danny Neri",
@@ -4635,7 +4666,7 @@
   "rosterUrl": "https://ohiostatebuckeyes.com/sports/baseball/roster",
   "coachUrl": "https://ohiostatebuckeyes.com/sports/baseball/coaches",
   "roster": "Sam York|INF|Jr|El Dorado, AR\nAndrew Fulmer|INF|So|Tullahoma, TN\nAlex Bemis|OF|Sr|Monroe, OH\nJordan Serrano|OF|So|Somerdale, NJ\nZak Sigman|RHP|Sr|Grove City, OH\nAddison Binnie|OF|Sr|Clinton, IA\nCJ Reid|INF|Sr|Colorado Springs, CO\nBrock Moore|C|Jr|Urbandale, IA\nConnor Fuhrer|RHP|So|Loveland, OH\nWilson Wells|RHP/OF|Fr|Granville, OH\nGavin West|INF|Sr|Macon, GA\nJacob Parr|OF|So|Lemont, IL\nSahil Patel|LHP|Gr|Buford, GA\nOwen Graf|RHP|So|Toledo, OH\nJack Cecil|RHP|Jr|Lebanon, OH\nDane Harvey|1B|Sr|Warfordsburg, PA\nChris Domke|RHP|Sr|North Royalton, OH\nJake Michalak|RHP|Sr|North Royalton, OH\nPierce Herrenbruck|RHP|Sr|Evansville, IN\nJude Fisher|RHP|So|Cleveland, OH\nNathan Bryant|RHP|Fr|Akron, OH\nKayden Campbell|INF|Fr|Kennesaw, GA\nMartin Serrano|C|Jr|Pocatello, ID\nLandon Thiel|LHP|Fr|Massillon, OH\nMack Hieber|RHP|Fr|Hamler, OH\nRyder Hernandez|INF|Gr|Cedar Park, TX\nLincoln McVicker|RHP|Sr|Highlands Ranch, CO\nAustin Rose|C|So|Newark, OH\nChance Key|LHP|Gr|Waverly, IA\nJaxon Murray|INF|Fr|Beallsville, OH\nRyan Zamora|RHP|Gr|Elk Grove, CA\nLogan Cole|RHP|Fr|Liberty Township, OH\nKellan Klosterman|RHP|Jr|Loveland, OH\nBrady Lester|OF|Sr|Fredericktown, OH\nGavin Kuzniewski|RHP|Jr|Fishers, IN\nNick Sawyer|RHP|Sr|Upper Arlington, OH",
-  "season": "2027",
+  "season": "2026",
   "coaches": [
    [
     "Justin Haire",
@@ -5335,9 +5366,7 @@
    "outNote": "tuition (College Scorecard)",
    "u": "https://collegescorecard.ed.gov/"
   },
-  "flags": [
-   "The roster page couldn't be reached today; showing the last good copy."
-  ]
+  "flags": []
  },
  {
   "id": "oklahomastateuniversity",
@@ -5557,7 +5586,7 @@
   "rosterUrl": "https://utahutes.com/sports/baseball/roster",
   "coachUrl": "https://utahutes.com/sports/baseball/coaches",
   "roster": "Jackson Wilkerson|LHP|Jr|Houston, TX\nMaddox Riske|INF|Jr|Las Vegas, NV\nLuke Jacobs|OF|Sr|Centerville, UT\nCarson Page|INF|Jr|Valdosta, GA\nBobby Pierce Jr.|INF|Jr|Chandler, AZ\nCal Kilgore|C/OF|Sr|Overland Park, KS\nJack Kleveno|C|Sr|Riverside, CA\nCal Miller|INF|So|Centerville, UT\nDavid Galindo|RHP|Jr|Phoenix, AZ\nDillon Fine|RHP|So|Caldwell, ID\nJake Bitonti|INF/OF|Fr|Hesperia, CA\nDavis Germann|OF|Sr|Kitchener, Ontario\nDemitri Diamant|RHP|Sr|Las Vegas, NV\nGavin McLendon|LHP|Jr|Rocklin, CA\nBradley Navarro|OF|Sr|Huntington Beach, CA\nCameron Gurney|INF|Sr|Scotland, Ontario\nIan Lenius|LHP|So|Middleton, ID\nBoston Snyder|RHP|So|Herriman, UT\nPayton Riske|RHP|Sr|Las Vegas, NV\nJackson Kirby|RHP|So|St. George, UT\nBentley Crook|LHP|So|Sandy, UT\nDylan Venturini|RHP|Jr|Las Vegas, NV\nHayden Smith|C|Jr|Santa Clara, UT\nAnson McGorman|RHP|Sr|Parksville, British Columbia\nRocco Loffredo|RHP|So|Stilwell, KS\nKaden Cloward|RHP|Sr|Salem, UT\nGage Olsen|RHP|Sr|West Jordan, UT\nAnthony Mazza|C|Jr|Prairie Village, KS\nMalik Harris|RHP|Jr|Draper, UT\nRoman Trinidad|OF|Jr|Emerald Hills, CA\nJustin Santiago|RHP|Jr|La Vern, CA\nSeth Petersen|INF|Fr|Gillette, WY\nTurner Spoljaric|RHP|Sr|Lisle, Ontario\nBrandon Thomas|RHP|So|Cypress, CA\nWyatt Thornbury|RHP|Sr|Carlsbad, CA",
-  "season": "2026",
+  "season": "2027",
   "coaches": [
    [
     "Gary Henderson",
@@ -7807,6 +7836,50 @@
   "flags": []
  },
  {
+  "id": "cornelluniversity",
+  "name": "Cornell University",
+  "short": "Cornell University",
+  "city": "Ithaca, NY",
+  "div": "D1",
+  "conf": "Ivy League",
+  "lat": 42.447,
+  "lon": -76.483,
+  "checked": "2026-11-24",
+  "rosterUrl": "https://cornellbigred.com/sports/baseball/roster",
+  "coachUrl": "https://cornellbigred.com/sports/baseball/coaches",
+  "roster": "Caden Callaway|INF/OF|Fr|Kingwood, TX\nMason Barela|C/INF|So|Jupiter, FL\nEthan Van Sice|RHP|Jr|Arlington, VA\nCaden Wildman|OF|Sr|Woodbury, MN\nTyler Beaulieu|OF|So|Berwyn, PA\nEthan McHugh|RHP|Sr|Lebanon, NJ\nLuke Johnson|INF|Jr|Coto de Caza, CA\nRyan Dillon|C|So|Marlborough, MA\nGraham Biben|RHP|Jr|New York, NY\nMatthew Walters|OF|Sr|Granbury, TX\nSam Keene|LHP|So|Cohasset, MA\nEthan Hamill|RHP|Sr|Chester, VA\nKevin Hager|INF|Jr|Berkeley Heights, NJ\nOwen Carlson|INF|Jr|Los Angeles, CA\nNoah Keller|LHP|Sr|Goodrich, MI\nGus Magill|RHP|So|New York, NY\nTJ Swidorski|INF/RHP|Sr|Woodbury, MN\nBraeden Johnson|LHP|So|Unadilla, NY\nTrent Lopez|OF|Fr|Chevy Chase, MD\nJohn Gerfen|LHP|Sr|Brewster, NY\nJohn Hegarty|RHP|So|Needham, MA\nJayden Shin|INF|So|Pennington, NJ\nBeck Urofsky|INF|Sr|Silver Spring, MD\nAiden Barclay|INF/OF|Fr|Dover, MA\nMax Foster|RHP|Jr|Bethel, CT\nWill Siwinski|LHP|So|San Francisco, CA\nAndrew Houghton|LHP|Jr|Portsmouth, NH\nConnor Niemiec|RHP|Fr|Westfield, MA\nCarson Mayfield|RHP|Sr|Annandale, VA\nTony Silva|RHP|Fr|Danvers, MA\nRoss Yoshida|RHP|Fr|Orchard Park, NY\nAlex Stoyer|RHP|Fr|Stewart Manor, NY\nNathaniel Jennewein|LHP|Jr|Tampa, FL\nHuxley Holcombe|LHP|Jr|Worcester, MA\nJake Hower|OF|Fr|Erie, PA\nJackson Marko|C|Sr|Syracuse, NY\nJosh Shea|RHP|Sr|Cortlandt Manor, NY\nMichael Tight|RHP|Fr|Lighthouse Point, FL\nTroy Ashkinos|OF/C|So|New York, NY\nTavian Ramos|RHP|So|Neenah, WI",
+  "season": "2026",
+  "coaches": [
+   [
+    "Dan Pepicelli",
+    "Ted Thoren Head Coach of Baseball",
+    "djp289@cornell.edu"
+   ],
+   [
+    "Kyle Canavally",
+    "Assistant Coach",
+    "kc2348@cornell.edu"
+   ],
+   [
+    "McGwire Tuffy",
+    "Assistant Coach",
+    "mt933@cornell.edu"
+   ]
+  ],
+  "camps": [],
+  "enroll": 15995,
+  "enrollNote": "undergraduates (College Scorecard)",
+  "tuition": {
+   "yr": "most recent federal figure",
+   "inS": "$72,270",
+   "inNote": "tuition (College Scorecard; may lag a year)",
+   "outS": "$72,270",
+   "outNote": "tuition (College Scorecard)",
+   "u": "https://collegescorecard.ed.gov/"
+  },
+  "flags": []
+ },
+ {
   "id": "dartmouthcollege",
   "name": "Dartmouth College",
   "short": "Dartmouth College",
@@ -7975,7 +8048,7 @@
   "rosterUrl": "https://goprincetontigers.com/sports/baseball/roster",
   "coachUrl": "https://goprincetontigers.com/sports/baseball/coaches",
   "roster": "Isaac Lamson|INF|So|Stow, MA\nJames Beasley|P|So|Herndon, VA\nJake Koonin|INF|Sr|Winston Salem, NC\nJoseph Zorc|INF|So|Sterling, VA\nBryce Gayan|OF|Jr|Seattle, WA\nJustin Kim|P|Sr|Cypress, TX\nTommy Googins|INF|Jr|Cincinnati, OH\nCharlie Wolf|P|Jr|Chicago, IL\nChristian Clarke|OF|Fr|Wesley Chapel, FL\nBrady Kaufman|P/UTL|Fr|Dresden, OH\nDylan Zdunek|C/UTL|Jr|San Gabriel, CA\nWill Sword|P|Sr|Cary, NC\nBennett Crerar|INF|Fr|Cheshire, CT\nKasey Gilman|P|Jr|Staten Island, NY\nTomas Cernius|1B/OF|Fr|Yorba Linda, CA\nGrant Werdesheim|INF|So|Studio City, CA\nNick Shenefelt|UTL|So|Birmingham, MI\nJackson Baldrate|P|Jr|McLean, VA\nJay Mentink|OF|Jr|Lake Tapps, WA\nLiam Kinneen|P|So|Lexington, MA\nWill Robbins|C|So|Hillsborough, CA\nParker Codington|P|Fr|Virginia Beach, VA\nVince Menard|P|Fr|Newport Beach, CA\nEthan Hsu|P|Sr|San Ramon Calif.\nElliott Eaton|P|Jr|Washington, DC\nJake Kernodle|INF|Jr|Charlotte, NC\nJoe Montembeau|UTL|Fr|Brookhaven, GA\nRyan Penney|P|Fr|Scottsdale, AZ",
-  "season": "2027",
+  "season": "2026",
   "coaches": [
    [
     "Ryan Forrest",
@@ -11714,6 +11787,32 @@
   ]
  },
  {
+  "id": "universityofarkansas",
+  "name": "University of Arkansas",
+  "short": "University of Arkansas",
+  "city": "Fayetteville, AR",
+  "div": "D1",
+  "conf": "Southeastern",
+  "lat": 36.07,
+  "lon": -94.177,
+  "checked": "2026-11-24",
+  "rosterUrl": "https://arkansasrazorbacks.com/sport/m-basebl/roster/",
+  "coachUrl": "",
+  "roster": "Carson Brumbaugh|INF|Fr|Edmond, OK\nNolan Souza|INF|Jr|Honolulu, Hawai'i\nMaika Niu|OF|Sr|Mechanicsburg, PA\nTJ Pompey|INF|Jr|Coppell, TX\nCamden Kozeal|INF|Jr|Omaha, NE\nAlexander Peck|INF|Fr|Franklin, TN\nTyler Holland|INF|Fr|Mission Viejo, CA\nLuke Cornelison|INF/RHP|Fr|Springdale, AR\nCarter Rutenbar|C|Fr|Midlothian, TX\nSteele Eaves|RHP|So|Lonoke, AR\nMark Brissey|RHP|Fr|Batesville, AR\nJackson Kircher|RHP|So|Little Rock, AR\nChristian Turner|OF|Fr|Haughton, LA\nZack Stewart|OF|Sr|Lebanon, MO\nReese Robinett|INF|Jr|Kennett, MO\nCarson Willis|C|Fr|Hot Springs, AR\nGabe Gaeckle|RHP|Jr|Aptos, CA\nBrenton Clark|OF|Fr|Texarkana, TX\nPeyton Lee|RHP|Fr|Maumelle, AR\nLandon Schaefer|INF/OF|Fr|Fayetteville, AR\nKuhio Aloy|OF|Jr|Wailuku, Hawai'i\nTate McGuire|RHP|Jr|Liberty, MO\nRyder Helfrick|C|Jr|Discovery Bay, CA\nJordan Martin|RHP|Fr|Jefferson City, MO\nCole Gibler|LHP|So|Blue Springs, MO\nHunter Dietz|LHP|So|Trinity, FL\nEthan McElvain|LHP|Jr|Thompson's Station, TN\nJoey Lorenzini|LHP|Fr|Rocklin, CA\nCayden Mitchell|INF|Fr|Arlington, TX\nParker Coil|LHP|Sr|Edmond, OK\nGrant Wren|RHP|Fr|Melbourne, AR\nColin Fisher|LHP|Jr|Noble, OK\nJacob Imoto|LHP|So|Vista, CA\nJames DeCremer|RHP|So|Phoenix, AZ\nDamian Ruiz|OF|Jr|Livingston, TX\nCarson Wiggins|RHP|So|Roland, OK\nTye Briscoe|UTL|Fr|Abilene, TX\nCooper Dossett|RHP|Jr|Springdale, AR\nBrendan Kleiman|C|Gr|Olney, MD",
+  "season": "",
+  "enroll": 28677,
+  "enrollNote": "undergraduates (College Scorecard)",
+  "tuition": {
+   "yr": "most recent federal figure",
+   "inS": "$10,496",
+   "inNote": "tuition (College Scorecard; may lag a year)",
+   "outS": "$31,550",
+   "outNote": "tuition (College Scorecard)",
+   "u": "https://collegescorecard.ed.gov/"
+  },
+  "flags": []
+ },
+ {
   "id": "auburnuniversity",
   "name": "Auburn University",
   "short": "Auburn University",
@@ -12025,6 +12124,32 @@
    "inS": "$10,604",
    "inNote": "tuition (College Scorecard; may lag a year)",
    "outS": "$28,736",
+   "outNote": "tuition (College Scorecard)",
+   "u": "https://collegescorecard.ed.gov/"
+  },
+  "flags": []
+ },
+ {
+  "id": "mizzou",
+  "name": "University of Missouri-Columbia",
+  "short": "Mizzou",
+  "city": "Columbia, MO",
+  "div": "D1",
+  "conf": "Southeastern",
+  "lat": 38.945,
+  "lon": -92.329,
+  "checked": "2026-11-24",
+  "rosterUrl": "https://mutigers.com/sports/baseball/roster",
+  "coachUrl": "",
+  "roster": "Wilfred Gonzalez|INF|Sr|Miami, FL\nTy Waid|INF/OF|Sr|Texarkana, AR\nRichie Swain|RHP|So|Wentzville, MO\nAnthony Diaz|OF|Sr|Tucson, AZ\nSteve Solorzano|INF|Sr|Las Cruces, NM\nStephen Lewis|RHP|Jr|Manvel, TX\nCam Pruitt|INF/OF|Sr|Dallas, TX\nMilo Burton|INF|Fr|Overland Park, KS\nTrey Lawrence|RHP|Jr|Palmetto, FL\nSeaton Thompson|INF|Fr|Creve Coeur, MO\nJD Dohrmann|RHP|So|St. Louis, MO\nEthan Moore|INF|So|River Forest, IL\nJackson Sobel|LHP|Sr|Charleston, SC\nEli Skidmore|RHP|So|O'Fallon, MO\nEric Maisonet|INF|Sr|Florida, P.R.\nJake Janisko|LHP|Jr|Schaumburg, IL\nNolan Foster|RHP|Gr|McKinney, TX\nZach Van Hook|LHP|Fr|St. Louis, MO\nConnor Jones|RHP|So|Houston, TX\nCharlie Wortham|C/UT|So|St. Peters, MO\nSam Schmidt|RHP|Sr|Hoover, AL\nAdam Kilburn|RHP|So|St. Louis, MO\nNolan Sissom|INF|Fr|O'Fallon, MO\nJuliomar Campos|C|So|San Juan, P.R.\nJuan Villarreal|LHP|Gr|Panama City, Panama\nDane Bjorn|LHP|Jr|St. Louis, MO\nLuke Sullivan|RHP|So|St. Louis, MO\nCarter DeGondea|LHP|Gr|Raymore, MO\nLuke Fricker|RHP|Sr|Kansas City, KS\nSeojun Oh|C|Sr|Anyang, South Korea\nLeo Humbert|OF|So|St. Charles, MO\nJadyn Furgason|RHP|So|St. Louis, MO\nBrady Kehlenbrink|LHP|Jr|Ballwin, MO\nMyles Ross|INF|Fr|Kansas City, KS\nKhamaree Thomas|OF|Jr|Chicago, IL\nSam Rosand|RHP|So|Washington, DC\nCodey Gauff|C|Fr|Delray Beach, FL\nIsaiah Salas|LHP|So|The Woodlands, TX\nBen Smith|RHP|Sr|Springfield, MO\nKelly Robertson Jr.|OF|Jr|Louisville, KY\nDylan Curtis|RHP|Fr|O'Fallon, MO\nDonovan Jordan|OF|Jr|Humble, TX",
+  "season": "2027",
+  "enroll": 23929,
+  "enrollNote": "undergraduates (College Scorecard)",
+  "tuition": {
+   "yr": "most recent federal figure",
+   "inS": "$15,548",
+   "inNote": "tuition (College Scorecard; may lag a year)",
+   "outS": "$37,820",
    "outNote": "tuition (College Scorecard)",
    "u": "https://collegescorecard.ed.gov/"
   },
@@ -12782,9 +12907,9 @@
   "flags": []
  },
  {
-  "id": "alternatelyuiw",
+  "id": "uiw",
   "name": "University of the Incarnate Word",
-  "short": "alternately UIW",
+  "short": "UIW",
   "city": "San Antonio, TX",
   "div": "D1",
   "conf": "Southland",
@@ -13859,7 +13984,7 @@
   "rosterUrl": "https://uncbears.com/sports/baseball/roster",
   "coachUrl": "https://uncbears.com/sports/baseball/coaches",
   "roster": "Ryder Florence|INF|Rs.|Draper, UT\nCaden Taylor|INF|Rs.|La Center, WA\nBrien Kenny|INF|Sr|Parker, CO\nMason Griffin|OF|So|Windsor, CO\nYale Johnson|INF|Fr|Chandler, AZ\nCole Pfeifer|INF|Rs.|Arvada, CO\nEthan Sanchez|OF|So|Broomfield, CO\nEthan Fillinger|INF|So|Greeley, CO\nBrady Hudson|RHP|Jr|Boulder, CO\nLucas Stone|LHP|Jr|Eaton, CO\nAsher Clark|RHP|So|Castle Rock, CO\nZeke Minic|C/OF|Jr|Thornton, CO\nJax Pfister|RHP|So|Centennial, CO\nWilson Kieffer|INF|So|Rapid City, SD\nKaveh Meredith|RHP|So|Erie, CO\nEthan Mooser|OF|Jr|Mount Elgin, Ontario, Canada\nLogan Steckel|RHP|Rs.|Parker, CO\nSam Pease|C|Sr|Fort Collins, CO\nJake Storey|RHP|Gr|Frisco, TX\nBrandon Dickinson|OF|Jr|Frisco, TX\nZak White|RHP|Rs.|Lafayette, CO\nBritain Fox|OF|Fr|Broomfield, CO\nJaden Stone|OF|Gr|Eaton, CO\nJake Paczkowski|C|Jr|Littleton, CO\nMitch Haythorn|RHP|So|Eaton, CO\nHarrison Hart|INF|Rs.|Omaha, NE\nTrevor Landen|RHP|Sr|Littleton, CO\nNathan Huie|INF|Rs.|Sahuarita, AZ\nTate Smith|RHP|Jr|Eaton, CO\nJackson Sanders|RHP|Rs.|Peoria, AZ\nMason Bright|RHP|Sr|Severence, CO\nGunner Gienger|LHP|Fr|Castle Rock, CO\nMac Hibben|LHP|So|Torrington, WY\nJayden Watts|LHP|Rs.|Henderson, CO",
-  "season": "2027",
+  "season": "2026",
   "coaches": [
    [
     "Mike Anderson",
@@ -15282,9 +15407,9 @@
   "flags": []
  },
  {
-  "id": "alternatelylmu",
+  "id": "lmu",
   "name": "Loyola Marymount University",
-  "short": "alternately LMU",
+  "short": "LMU",
   "city": "Los Angeles, CA",
   "div": "D1",
   "conf": "West Coast",
@@ -15772,6 +15897,33 @@
   },
   "flags": [
    "The 2027 roster page is up but lists no players yet."
+  ]
+ },
+ {
+  "id": "tennesseestateuniversity",
+  "name": "Tennessee State University",
+  "short": "Tennessee State University",
+  "city": "Nashville, TN",
+  "div": "D1",
+  "conf": "Ohio Valley",
+  "lat": 36.166,
+  "lon": -86.828,
+  "checked": "2026-11-24",
+  "rosterUrl": "https://tsutigers.com/sports/baseball/roster",
+  "coachUrl": "https://tsutigers.com/sports/baseball/coaches",
+  "roster": "",
+  "enroll": 4848,
+  "enrollNote": "undergraduates (College Scorecard)",
+  "tuition": {
+   "yr": "most recent federal figure",
+   "inS": "$9,048",
+   "inNote": "tuition (College Scorecard; may lag a year)",
+   "outS": "$22,848",
+   "outNote": "tuition (College Scorecard)",
+   "u": "https://collegescorecard.ed.gov/"
+  },
+  "flags": [
+   "The current roster page is up but lists no players yet."
   ]
  },
  {
@@ -16870,40 +17022,6 @@
   "flags": []
  },
  {
-  "id": "benedict",
-  "name": "Benedict College",
-  "short": "Benedict",
-  "city": "Columbia, SC",
-  "div": "D2",
-  "conf": "SIAC",
-  "lat": 34.013,
-  "lon": -81.02,
-  "checked": "2026-11-24",
-  "rosterUrl": "https://benedicttigers.com/sports/baseball/roster",
-  "coachUrl": "https://benedicttigers.com/sports/baseball/coaches",
-  "roster": "Kenyan Conner Jr|P/UTL|Sr|Columbia, SC\nCurtis Lindsey|OF/1B|Jr|Las Vegas, NV\nJaquez Akins|P/OF|So|Atlanta, GA\nElijah Banks|OF|Jr|Atlanta, GA\nMichael Belcher|C|Fr|Jacksonville, FL\nChristopher Trujillo Ruiz|P/UTL|Sr|Upland, CA\nColin Jones|2B/SS/OF|So|Stone Mountain, GA\nAdam Zendejas|RHP|Fr|Upland, CA\nBranden Caballero|Inf|Fr|Lexington, KY\nMilton Herring|C/1B/3B|So|Layton, UT\nMalcolm Bates|Inf|Jr|Irmo, SC\nDavid Ortiz|P/2B|Fr|Lexington, SC\nGarvey Chiarolanzio|RHP|So|Accord, NY\nMyles Blue|RHP|Sr|Raleigh, NC\nJim Johnson|LHP/1B|Fr|Baldwin Park, CA\nKent Johnson|P/OF/1B|Sr|Los Angeles, CA\nCameron Haley|1B|Sr|Los Angeles, CA\nJohnny Barrow|Inf|Fr|Los Angeles, CA\nJonathan Olmedo|Inf|Sr|Santa Monica, CA\nSebastian Vargas|LHP|So|Ridgefield Park, NJ\nIvan Cisneros|RHP|Jr|Los Angeles, CA\nAnthony Ramos|P|So|Hawthorne, CA\nElijah Horn|OF|Fr|Los Angeles, CA\nLefrederick Wooten|RHP|Jr|Council, NC\nJoshua Medina|LHP/1B|Jr|Ontario, CA\nLewis Brown|RHP/1B|Fr|Pauline, SC",
-  "season": "2026",
-  "coaches": [
-   [
-    "Selwyn Young",
-    "Head Baseball Coach",
-    "Selwyn.Young@benedict.edu"
-   ]
-  ],
-  "camps": [],
-  "enroll": 1536,
-  "enrollNote": "undergraduates (College Scorecard)",
-  "tuition": {
-   "yr": "most recent federal figure",
-   "inS": "$18,103",
-   "inNote": "tuition (College Scorecard; may lag a year)",
-   "outS": "$18,103",
-   "outNote": "tuition (College Scorecard)",
-   "u": "https://collegescorecard.ed.gov/"
-  },
-  "flags": []
- },
- {
   "id": "bentley",
   "name": "Bentley University",
   "short": "Bentley",
@@ -17521,6 +17639,55 @@
   "flags": [
    "The 2027 roster page is up but lists no players yet."
   ]
+ },
+ {
+  "id": "californiapa",
+  "name": "PennWest California",
+  "short": "California (PA)",
+  "city": "California, PA",
+  "div": "D2",
+  "conf": "PSAC",
+  "lat": 40.066,
+  "lon": -79.893,
+  "checked": "2026-11-24",
+  "rosterUrl": "https://calvulcans.com/sports/baseball/roster",
+  "coachUrl": "https://calvulcans.com/sports/baseball/coaches",
+  "roster": "Jason Nuttridge|UTL|Jr|Bethel Park, PA\nEthan Minerva|UTL|Fr|Greensburg, PA\nRoman Gill|P|Sr|Aliquippa, PA\nCole Fleck|OF/INF|So|McKees Rocks, PA\nMichael Valente|P|Sr|Wallingford, PA\nPeyton Ford|UTL|So|Wexford, PA\nAlex Arrigo|OF|So|Clinton, PA\nBrandon McClain-Banks|INF|So|Pittsburgh, PA\nAdam Hess|INF|Fr|Greensburg, PA\nNoah Kaszer|OF|Fr|Jefferson Hills, PA\nTanner Phillips|P|Fr|Centreville, VA\nNate Persinger|P|Fr|Wexford, PA\nConnor Evans|UTL|Sr|Hermitage, PA\nJosh Bryson|P|Jr|Huntingdon, PA\nEvan Ables|P|Jr|Dayton, OH\nColeman Fletcher|P|So|Moon Twp., PA\nJacob Stallsmith|P|Fr|Saxonburg, PA\nTyler Zallenick|P|So|Oakdale, PA\nColin Patterson|INF|Sr|Butler, PA\nChad Helwich|OF|Fr|Pittsburgh, PA\nEvan Stranko|INF/P|Fr|Erie, PA\nAlex Ables|INF|Fr|Dayton, OH\nLogan Bauer|OF/INF/P|Fr|Pittsburgh, PA\nCorey Kuszaj|C|So|West Mifflin, PA\nColin Watson|P|So|Pittsburgh, PA\nCaleb Collins|INF|Jr|Uniontown, OH\nAJ Verdi|C|Fr|New Castle, PA\nConor Carney|UTL|Sr|Harmony, PA\nCarson Shuglie|INF|So|Greensburg, PA\nNathan Holmes|P|Sr|North Versailles, PA\nKyle Rizzo|C|Jr|Willow Grove, PA\nRyan Sluk|P|Jr|Jefferson Hills, PA\nConner McTighe|C|Jr|Butler, PA\nBeau Bigam|P|Jr|Connellsville, PA\nIkon Jones|OF|Jr|Parkside, PA\nChase Lemke|INF|Fr|Murrysville, PA\nCharlie Nigut|OF|Fr|Elizabeth, PA\nMichael Switala|C/INF|Fr|Pittsburgh, PA\nBen Barr|P|So|Pittsburgh, PA\nOwen Harriger|P|Fr|Vintondale, PA\nLucas Burt|INF|Fr|Eighty Four, PA\nPaul Gubba|INF|Fr|Grove City, PA\nWill Feser|INF|Fr|Hartville, OH\nAidan Hill|P|Fr|Garrettsville, OH\nNoah Zadroga|P|Sr|Irwin, PA",
+  "season": "2026",
+  "coaches": [
+   [
+    "Joey Noro",
+    "Head Baseball Coach",
+    "noro@pennwest.edu"
+   ],
+   [
+    "Vincent Morelli",
+    "Assistant Baseball Coach",
+    "morelli_v@pennwest.edu"
+   ],
+   [
+    "Nelson Cooper IV",
+    "Volunteer Assistant",
+    "cooper_n@pennwest.edu"
+   ],
+   [
+    "Quinn McGrath",
+    "Volunteer Assistant",
+    "mcgrath_q@pennwest.edu"
+   ]
+  ],
+  "camps": [],
+  "enroll": 7451,
+  "enrollNote": "undergraduates (College Scorecard)",
+  "tuition": {
+   "yr": "most recent federal figure",
+   "inS": "$12,075",
+   "inNote": "tuition (College Scorecard; may lag a year)",
+   "outS": "$17,006",
+   "outNote": "tuition (College Scorecard)",
+   "u": "https://collegescorecard.ed.gov/"
+  },
+  "flags": []
  },
  {
   "id": "cameron",
@@ -18237,6 +18404,50 @@
    "inS": "$30,270",
    "inNote": "tuition (College Scorecard; may lag a year)",
    "outS": "$30,270",
+   "outNote": "tuition (College Scorecard)",
+   "u": "https://collegescorecard.ed.gov/"
+  },
+  "flags": []
+ },
+ {
+  "id": "clarion",
+  "name": "PennWest Clarion",
+  "short": "Clarion",
+  "city": "Clarion, PA",
+  "div": "D2",
+  "conf": "PSAC",
+  "lat": 41.21,
+  "lon": -79.38,
+  "checked": "2026-11-24",
+  "rosterUrl": "https://clariongoldeneagles.com/sports/baseball/roster",
+  "coachUrl": "https://clariongoldeneagles.com/sports/baseball/coaches",
+  "roster": "Luca Santini|RHP|Fr|New Castle, PA\nAiden Hartle|RHP|Sr|Leeper, PA\nWyatt Fether|C/OF|Jr|Canton, OH\nEmilio Rodriguez|RHP|Gr|Baltimore, MD\nSamuel Camacho Jr.|IF|Jr|Plantation, FL\nJonathan Vazquez|OF|So|Miami Lakes, FL\nTyler Boraski|C/RHP|Jr|Fallsington, PA\nKieran Coleman|UTIL|Jr|Starkville, MS\nZachary Colangelo|OF|Sr|Stafford, VA\nAdrian Quinones|IF|Sr|Alafaya, FL\nElvin Robles|IF|So|Vega Alta, P.R.\nCesar Lopez|OF|Jr|Trujillo Alto, P.R.\nBrice Boling|RHP|Fr|Owings, MD\nWill Dean|LHP|Gr|Coatesville, PA\nJack McNally|C/3B|So|Glen Burnie, MD\nEthan Giangiulio|1B|Sr|West Chester, PA\nColin Miller|RHP|Sr|Haymarket, VA\nChase Speiden|OF|So|New Windsor, MD\nAiden Gruber|RHP|So|Frewsburg, NY\nJacoby Chambers|RHP|Fr|Buffalo, NY\nEthan McNally|C|Sr|Severn, MD\nRob Hall|RHP|Jr|Alexandria, VA\nJacob Patterson|IF|Sr|Pittsburgh, PA\nJoseph Campoli|LHP|So|New Castle, PA\nBrody Hinkle|1B/3B|Gr|Wrightsville, PA\nVinnie Markulin|LHP|Sr|McKees Rocks, PA\nSebastian Perez|RHP|Jr|Syosset, NY\nNoah Harrison|IF|So|Clarion, PA\nIsaac Schleich|RHP|Gr|New Wilmington, PA\nCarter Barrett|RHP|Sr|Indian Land, SC\nTommy Smith|UTIL|Jr|Clarion, PA\nBrayden Stutzman|RHP|Gr|Mt. Airy, MD\nAnthony Robinson|RHP|Jr|Loveland, OH\nBrandt Johnson|C/UTIL|Fr|Mount Wolf, PA\nDerek Smail|1B/OF|So|Shippenville, PA\nJosh Erd|RHP|Sr|Rockville, MD\nShawn Miller|RHP|Sr|Bridgeville, PA\nLogan Figlar|LHP|Jr|Santa Rosa, CA\nGavin Crandell|OF|Fr|Lothian, MD\nLuke Pietrandrea|LHP|Gr|Woodbridge, VA\nLogan Hinds|RHP|Sr|Warrington, PA",
+  "season": "2027",
+  "coaches": [
+   [
+    "Johnny Poss",
+    "Head Coach",
+    "poss_j@pennwest.edu"
+   ],
+   [
+    "Tanner LaBenne",
+    "Assistant Coach - Infield",
+    "LAB92894@pennwest.edu"
+   ],
+   [
+    "Zach Kelly",
+    "Assistant Coach (Pitching)",
+    "kel95435@pennwest.edu"
+   ]
+  ],
+  "camps": [],
+  "enroll": 7451,
+  "enrollNote": "undergraduates (College Scorecard)",
+  "tuition": {
+   "yr": "most recent federal figure",
+   "inS": "$12,075",
+   "inNote": "tuition (College Scorecard; may lag a year)",
+   "outS": "$17,006",
    "outNote": "tuition (College Scorecard)",
    "u": "https://collegescorecard.ed.gov/"
   },
@@ -19152,7 +19363,7 @@
  },
  {
   "id": "embryriddle",
-  "name": "Embry-Riddle Aeronautical University-Worldwide",
+  "name": "Embry-Riddle Aeronautical University-Daytona Beach",
   "short": "Embry–Riddle",
   "city": "Daytona Beach, FL",
   "div": "D2",
@@ -19192,7 +19403,7 @@
    ]
   ],
   "camps": [],
-  "enroll": 9139,
+  "enroll": 7860,
   "enrollNote": "undergraduates (College Scorecard)",
   "tuition": {
    "yr": "most recent federal figure",
@@ -23079,7 +23290,7 @@
   "checked": "2026-11-24",
   "rosterUrl": "https://nsuwolves.com/sports/baseball/roster",
   "coachUrl": "https://nsuwolves.com/sports/baseball/coaches",
-  "roster": "Jordan Ellingson|IF/RHP|Fr|Willmar, MN\nBrody Jacobson|IF|Fr|Hartford, SD\nPalmer Boyd|RHP|Jr|Sioux Falls, SD\nMaddox Plack|RHP|Jr|Harrisburg, SD\nNoah Boschee|IF|So|Sioux Falls, SD\nDylan Soulek|IF|Sr|Mitchell, SD\nAndrew Niaves|C/OF|Gr|Oregon, WI\nCaleb Christianson|IF|So|Fargo, ND\nCasey Vining|IF|Sr|Aberdeen, SD\nChase Cherne|IF/OF|Fr|Miami, FL\nDominic Holmstrup|C|Jr|Nanaimo, British Columbia\nCaden Stern|OF|Jr|Woodbury, MN\nKyle Konechne|OF|Sr|Hartford, SD\nOwen Douglas|RHP|Sr|Bennington, NE\nJJ Bauzá|C|Fr|Miami, FL\nMiles Olson|IF|Fr|Prior Lake, MN\nDamian Espinales|OF|Fr|Miami, FL\nIsaac Lewis|OF|So|Bismarck, ND\nDalton Kesti|OF|Jr|Farmington, MN\nJack Welters|C|Fr|Plymouth, MN\nRyu Iwakura|RHP|So|Tokyo, Japan\nAiden Scheetz|RHP|Sr|Vernal, UT\nKarl Hartmann|P|Fr|Sioux Falls, SD\nMason Culbertson|P|Fr|Coon Rapids, IA\nRyan Kwasnycia|RHP|So|Stony Plain, Alberta\nMason Hoheisel|RHP|Sr|Anoka, MN\nEthan Hartsock|RHP|So|Churubusco, IN\nEthan Price|LHP|Gr|Mitchell, SD\nKolby Culbertson|LHP|Jr|Coon Rapids, IA\nCarter Sommer|IF/RHP|So|Parkston, SD\nTyler Madsen|RHP/IF|Fr|Willmar, MN\nCaleb Schusted|P|Jr|Braham, MN\nCasey Lamb|RHP|So|Sterling, VA\nHyunwoo Kim|RHP|Gr|Seoul, South Korea",
+  "roster": "Jordan Ellingson|IF/RHP|Fr|Willmar, MN\nBrody Jacobson|IF|Fr|Hartford, SD\nPalmer Boyd|RHP|Jr|Sioux Falls, SD\nJarrett Erdmann||Rf.|\nMaddox Plack|RHP|Jr|Harrisburg, SD\nNoah Boschee|IF|So|Sioux Falls, SD\nJase Satterfield||Rf.|\nDylan Soulek|IF|Sr|Mitchell, SD\nAndrew Niaves|C/OF|Gr|Oregon, WI\nCaleb Christianson|IF|So|Fargo, ND\nCasey Vining|IF|Sr|Aberdeen, SD\nTakuto Usami||Rf.|\nChase Cherne|IF/OF|Fr|Miami, FL\nDominic Holmstrup|C|Jr|Nanaimo, British Columbia\nCaden Stern|OF|Jr|Woodbury, MN\nKyle Konechne|OF|Sr|Hartford, SD\nOwen Douglas|RHP|Sr|Bennington, NE\nJJ Bauzá|C|Fr|Miami, FL\nMiles Olson|IF|Fr|Prior Lake, MN\nDamian Espinales|OF|Fr|Miami, FL\nIsaac Lewis|OF|So|Bismarck, ND\nDalton Kesti|OF|Jr|Farmington, MN\nJack Welters|C|Fr|Plymouth, MN\nShane Santaga||Rf.|\nRyu Iwakura|RHP|So|Tokyo, Japan\nMason Schreiber||Rf.|\nAiden Scheetz|RHP|Sr|Vernal, UT\nKarl Hartmann|P|Fr|Sioux Falls, SD\nMason Culbertson|P|Fr|Coon Rapids, IA\nRyan Kwasnycia|RHP|So|Stony Plain, Alberta\nMason Hoheisel|RHP|Sr|Anoka, MN\nEthan Hartsock|RHP|So|Churubusco, IN\nEthan Price|LHP|Gr|Mitchell, SD\nKolby Culbertson|LHP|Jr|Coon Rapids, IA\nCarter Sommer|IF/RHP|So|Parkston, SD\nTravis Richter||Rf.|\nTyler Madsen|RHP/IF|Fr|Willmar, MN\nCaleb Schusted|P|Jr|Braham, MN\nCasey Lamb|RHP|So|Sterling, VA\nKyoungseo Min||Rf.|\nHyunwoo Kim|RHP|Gr|Seoul, South Korea",
   "season": "2027",
   "coaches": [
    [
@@ -28132,6 +28343,65 @@
   "flags": []
  },
  {
+  "id": "asburyuniversity",
+  "name": "Asbury University",
+  "short": "Asbury University",
+  "city": "Wilmore, KY",
+  "div": "D3",
+  "conf": "Collegiate Conference of the South",
+  "lat": 37.862,
+  "lon": -84.663,
+  "checked": "2026-11-24",
+  "rosterUrl": "https://asburyeagles.com/sports/baseball/roster",
+  "coachUrl": "https://asburyeagles.com/sports/baseball/coaches",
+  "roster": "Baylor Hair|RHP|So|Taylorsville, KY\nAvery Hare|IF|Sr|Louisville, KY\nDrew Miller|C|Fr|\nEli Fletcher|IF|So|Ashland, KY\nAiden Masters|IF|So|Richmond, KY\nAaron Beaman|C/IF|Sr|Franklin, TN\nWessen Falin|IF|Jr|Mount Vernon, KY\nRyan Yates|RhP|Sr|Franklin, TN\nBrandon McKindley|RHP|So|Rancho Santa, CA\nJacob Camfield|RHP|Sr|Knoxville, TN\nBaylor Varner|RHP|Fr|\nLogan Wilson|OF|Gr|Willis, TX\nKJ Cochran|IF|Jr|Cicero, NY\nElijah Dobes|LHP|So|Springfield, VA\nAustin Akridge|IF|Gr|Louisville, KY\nLuke Cherry|RHP/OF|So|Fishers, IN\nTate Scott|IF/OF|Jr|Grayson, KY\nTy Scott|IF/OF|Jr|Grayson, KY\nLevi Rogers|RHP|So|Sonora, KY\nWill Jones|RHP/OF|Fr|\nLuke Conley|OF|So|Brooklin, Ont.\nSam Narron|RHP|So|Clayton, NC\nTyler Wulder|OF|Gr|\nDevin Walker|RHP|Sr|Saluda, NC\nRyder Bunfill|IF|Sr|Dallas, TX\nJackson Mays|C|Fr|\nTrey Floden|IF|Fr|\nHayden Fisher|C|So|Elizabethtown, KY\nBrady Robeson|RHP|Sr|Lexington, KY\nWesley Stewart|RHP|So|Brentwood, TN\nCarver Rice|RHP/IF/OF|Fr|Greenville, KY\nCayden Smithers|IF|Jr|Williamstown, KY\nSamuel Marshall|LHP|So|St. Louis, MO\nLacey Dicken|RHP|Fr|Stanton, KY\nBen Propes|LHP|Sr|Birmingham, AL\nDaniel Hussey|IF/OF|Fr|\nHank Burns|C/OF|Jr|Louisville, KY\nRyan Camas|LHP|Fr|Cave Creek, AZ\nBryce Hayden|IF|Gr|Corydon, KY",
+  "season": "2027",
+  "coaches": [
+   [
+    "Wynn Harris",
+    "Head Coach",
+    "winston.harris@asbury.edu"
+   ],
+   [
+    "Jackson Cole",
+    "Assistant Coach",
+    "jackson.cole@asbury.edu"
+   ],
+   [
+    "Kaden Dugle",
+    "Assistant Coach",
+    "kaden.dugle@asbury.edu"
+   ],
+   [
+    "Dakota Walker",
+    "Assistant Coach",
+    ""
+   ],
+   [
+    "Ethan Revell",
+    "Graduate Assistant",
+    "ethan.revell@asbury.edu"
+   ],
+   [
+    "Jon Stratton",
+    "Operations Coordinator",
+    "jonathan.stratton@asbury.edu"
+   ]
+  ],
+  "camps": [],
+  "enroll": 1420,
+  "enrollNote": "undergraduates (College Scorecard)",
+  "tuition": {
+   "yr": "most recent federal figure",
+   "inS": "$35,452",
+   "inNote": "tuition (College Scorecard; may lag a year)",
+   "outS": "$35,452",
+   "outNote": "tuition (College Scorecard)",
+   "u": "https://collegescorecard.ed.gov/"
+  },
+  "flags": []
+ },
+ {
   "id": "augsburguniversity",
   "name": "Augsburg University",
   "short": "Augsburg University",
@@ -29038,7 +29308,7 @@
   "checked": "2026-11-24",
   "rosterUrl": "https://brandeisjudges.com/sports/baseball/roster",
   "coachUrl": "https://brandeisjudges.com/sports/baseball/coaches",
-  "roster": "Nico D'Andrea|IF|Fr|New Canaan, CT\nKeni Franck|LHP|Jr|Harrison, NY\nBobby Quill|OF|Jr|Raynham, MA\nMatt Chafin|IF|Sr|Canton, MA\nBen Kuja|IF|Jr|Madison, CT\nPatrick Ross|IF|Fr|Salem, NH\nTeddy Levin|OF|Fr|Santa Monica, CA\nDylan Walsh|IF|Sr|Arlington, MA\nNoah Koong|IF|So|Sammamish, WA\nBrady Lane|RHP|Jr|Hingham, MA\nJackson Herzog|LHP|So|New York, NY\nJoey Fava|LHP|Fr|\nKeith Lee|C|Jr|Milford, MA\nMano Boutsikakis|IF|Sr|Astoria, NY\nSean Kryzak|OF|Fr|Franklin, MA\nNolan Wanat|1B/C|So|Eastham, MA\nConnor Crowley|OF|Sr|Guilford, CT\nJason Daly|RHP|So|Armonk, NY\nTJ Dimitriou|LHP|Gr|Norwood, MA\nKyle Murray|RHP|Sr|West Roxbury, MA\nQuinn Lanagan|C|So|Raynham, MA\nEthan Yerow|OF|Fr|Basking Ridge, NJ\nDanny Tambascia|1B|Jr|Newton, MA\nTaki Chronopolous|C|So|Chicago, IL\nDimitri Skourides|LHP|Sr|Arlington, MA\nHenry Aronwald|OF|Sr|Rye Brook, NY\nRohan Shah|RHP|Jr|Hicksville, NY\nBrady Ross|RHP|So|Rye, NY\nJohn Milewski|RHP|Jr|Framingham, MA\nJack Sweeney|RHP|Jr|Waltham, MA\nTrevor Mintz|LHP|Fr|Toronto, ON\nNick Hart-Nibbrig|RHP|Jr|Winchester, MA\nMarco Sullivan|LHP|Fr|Boston, MA\nAlex Anderson|RHP|Fr|Barrington, RI\nZahgros Tanner|RHP|Fr|West Newton, MA\nJackson Garcia|RHP|So|Port Washington, NY\nGriffin Byrne|LHP|Fr|Madison, CT\nGriffin Byrne|LHP|Fr|Madison, CT\nBen Salama|RHP|So|Hillsborough, CA\nColby Harrington|OF|Jr|W. Springfield, MA\nAndrew Tringe|RHP|Sr|Montpelier, VT",
+  "roster": "Nico D'Andrea|IF|Fr|New Canaan, CT\nKeni Franck|LHP|Jr|Harrison, NY\nBobby Quill|OF|Jr|Raynham, MA\nMatt Chafin|IF|Sr|Canton, MA\nBen Kuja|IF|Jr|Madison, CT\nPatrick Ross|IF|Fr|Salem, NH\nTeddy Levin|OF|Fr|Santa Monica, CA\nDylan Walsh|IF|Sr|Arlington, MA\nNoah Koong|IF|So|Sammamish, WA\nBrady Lane|RHP|Jr|Hingham, MA\nJackson Herzog|LHP|So|New York, NY\nJoey Fava|LHP|Fr|\nKeith Lee|C|Jr|Milford, MA\nMano Boutsikakis|IF|Sr|Astoria, NY\nSean Kryzak|OF|Fr|Franklin, MA\nNolan Wanat|1B/C|So|Eastham, MA\nConnor Crowley|OF|Sr|Guilford, CT\nJason Daly|RHP|So|Armonk, NY\nTJ Dimitriou|LHP|Gr|Norwood, MA\nKyle Murray|RHP|Sr|West Roxbury, MA\nQuinn Lanagan|C|So|Raynham, MA\nEthan Yerow|OF|Fr|Basking Ridge, NJ\nDanny Tambascia|1B|Jr|Newton, MA\nTaki Chronopolous|C|So|Chicago, IL\nDimitri Skourides|LHP|Sr|Arlington, MA\nHenry Aronwald|OF|Sr|Rye Brook, NY\nRohan Shah|RHP|Jr|Hicksville, NY\nBrady Ross|RHP|So|Rye, NY\nJohn Milewski|RHP|Jr|Framingham, MA\nJack Sweeney|RHP|Jr|Waltham, MA\nTrevor Mintz|LHP|Fr|Toronto, ON\nNick Hart-Nibbrig|RHP|Jr|Winchester, MA\nMarco Sullivan|LHP|Fr|Boston, MA\nAlex Anderson|RHP|Fr|Barrington, RI\nZahgros Tanner|RHP|Fr|West Newton, MA\nJackson Garcia|RHP|So|Port Washington, NY\nGriffin Byrne|LHP|Fr|Madison, CT\nBen Salama|RHP|So|Hillsborough, CA\nColby Harrington|OF|Jr|W. Springfield, MA\nAndrew Tringe|RHP|Sr|Montpelier, VT",
   "season": "2027",
   "coaches": [
    [
@@ -32875,45 +33145,6 @@
   "flags": []
  },
  {
-  "id": "howardpayneuniversity",
-  "name": "Howard Payne University",
-  "short": "Howard Payne University",
-  "city": "Brownwood, TX",
-  "div": "D3",
-  "conf": "American Southwest Conference",
-  "lat": 31.716,
-  "lon": -98.985,
-  "checked": "2026-11-24",
-  "rosterUrl": "https://hpusports.com/sports/baseball/roster",
-  "coachUrl": "https://hpusports.com/sports/baseball/coaches",
-  "roster": "Jace MacKenzie|OF|Sr|Bay City, TX\nTy Phillips|OF/P|Jr|Henderson, NV\nKaleb Kuligowski|P|Sr|Crawford, TX\nKyle Hemenway|OF|Sr|Pflugerville, TX\nBrant Wilson|P|Jr|Ft. Worth, TX\nBen Marasco|INF|So|San Antonio, TX\nBryce Kolb|C/P|Fr|Ft. Worth, TX\nJohn Garza|INF|Sr|Universal City, TX\nKenze Holubec|C|So|Brady, TX\nEli McNair|OF|Sr|Valley Mills, TX\nHuston Cornish|OF|Jr|Ft. Worth, TX\nBraden Franks|OF|Jr|Denton, TX\nNader Gulamhusein|INF/P|So|Floresville, TX\nColby Chapman|C|So|Crosby, TX\nRyan Pullen|OF|So|Georgetown, TX\nJoshua Norris|INF|Fr|Spring, TX\nTyler George|OF/P|So|Del Rio, TX\nWilson Russell|INF/P|Fr|Ft. Worth, TX\nBrandon Taylor|P|Sr|Spring Branch, TX\nCody Morris|P|So|Alpine, TX\nTrevor Rangel|P|Sr|Dallas, TX\nBrian Hill|P|Jr|Alvin, TX\nIsaiah Carrasco|P|Jr|North Richland Hill, TX\nByron Foster|P|Sr|Brownwood, TX\nCaden Beck|P|Gr|Houston, TX\nSkyler Fields|INF|Jr|Midlothian, TX\nTrace Garcia|P|Fr|Andrews, TX\nAndres Garcia|P|Fr|Houston, TX\nLandon Prestage|INF|Sr|Gainesville, TX\nLuke Watkins|P|Jr|League City, TX\nManuel Chaco|C|Jr|Kemper, TX\nXavier Sanchez|INF|So|Cypress, TX\nNathaniel Heredia|P|So|Waco, TX\nAJ Tapia|C|Jr|Cleburne, TX\nJoshua Lile|INF|Jr|New Braunfels, TX\nBradley Valenzuela|P|Jr|Artesia, NM\nCaden Foster|P|Fr|Henderson, TX\nHunter Pope|INF|Sr|Frisco, TX\nDylan Geren|INF|So|San Antonio, TX\nKT Smalls|OF|Fr|Boerne, TX\nBraiden Hurlbutt|INF|Fr|San Antonio, TX\nKallin Koehl|P|Fr|Cameron, TX\nJacob Hill|INF|So|Hagerstown, MD\nMaddux El-Hakam|INF|Fr|Houston, TX\nLogan Carter|OF/P|Fr|Van Vleck, TX",
-  "season": "2026",
-  "coaches": [
-   [
-    "Stephen Lynn",
-    "Head Baseball Coach",
-    "slynn@hputx.edu"
-   ],
-   [
-    "Tony Heiser",
-    "Assistant Coach",
-    "theiser@hputx.edu"
-   ]
-  ],
-  "camps": [],
-  "enroll": 713,
-  "enrollNote": "undergraduates (College Scorecard)",
-  "tuition": {
-   "yr": "most recent federal figure",
-   "inS": "$36,560",
-   "inNote": "tuition (College Scorecard; may lag a year)",
-   "outS": "$36,560",
-   "outNote": "tuition (College Scorecard)",
-   "u": "https://collegescorecard.ed.gov/"
-  },
-  "flags": []
- },
- {
   "id": "hussonuniversity",
   "name": "Husson University",
   "short": "Husson University",
@@ -34646,6 +34877,55 @@
    "inS": "$37,422",
    "inNote": "tuition (College Scorecard; may lag a year)",
    "outS": "$37,422",
+   "outNote": "tuition (College Scorecard)",
+   "u": "https://collegescorecard.ed.gov/"
+  },
+  "flags": []
+ },
+ {
+  "id": "martinluthercollege",
+  "name": "Martin Luther College",
+  "short": "Martin Luther College",
+  "city": "New Ulm, MN",
+  "div": "D3",
+  "conf": "Upper Midwest Athletic Conference",
+  "lat": 44.305,
+  "lon": -94.472,
+  "checked": "2026-11-24",
+  "rosterUrl": "https://mlcknights.com/sports/baseball/roster",
+  "coachUrl": "https://mlcknights.com/sports/baseball/coaches",
+  "roster": "John Westendorf|IF/P|Jr|Waukesha, WI\nNathan Vance|IF/P|So|New Ulm, MN\nConnor Heckendorf|P|Jr|Reno, NV\nMark Vogel|C|Jr|Grand Rapids, MI\nLogan Gray-Ives|IF|So|Eagle River, WI\nOwen Proctor|P|Fr|Peculiar, MO\nAidan Berg|P/IF|So|West Bend, WI\nRyan Pufahl|IF|Fr|Phoenix, AZ\nMicah Herbst|OF|Fr|Saint Joseph, MI\nMichel Krebs|IF|Fr|Beaver Dam, WI\nJackson Anderson|OF|Jr|Saint Joseph, MI\nEvan Kasa|IF|Fr|Cottage Grove, MN\nParker Winghart|IF/P|Jr|Brookings, SD\nWilliam Salgat|IF|Fr|Midland, MI\nSilas Winkel|IF|So|Milwaukee, WI\nCaleb Martin|P|Fr|Saginaw, MI\nJohn Kamps|IF/P|So|Coleman, WI\nCaleb Foxen|IF|So|Cedarburg, WI\nEthan Melso|C/IF|Jr|Appleton, WI\nCarlos Walta|OF/P|Sr|Milwaukee, WI",
+  "season": "2026",
+  "coaches": [
+   [
+    "Randy Cox",
+    "Head Baseball Coach",
+    "coxra@mlc-wels.edu"
+   ],
+   [
+    "Troy Kamm",
+    "Assistant Baseball Coach",
+    ""
+   ],
+   [
+    "Jake Mielke",
+    "Assistant Baseball Coach",
+    ""
+   ],
+   [
+    "John Giefer",
+    "Volunteer Assistant Baseball Coach",
+    ""
+   ]
+  ],
+  "camps": [],
+  "enroll": 725,
+  "enrollNote": "undergraduates (College Scorecard)",
+  "tuition": {
+   "yr": "most recent federal figure",
+   "inS": "$18,660",
+   "inNote": "tuition (College Scorecard; may lag a year)",
+   "outS": "$18,660",
    "outNote": "tuition (College Scorecard)",
    "u": "https://collegescorecard.ed.gov/"
   },
@@ -37820,6 +38100,50 @@
   "flags": []
  },
  {
+  "id": "piedmontuniversity",
+  "name": "Piedmont University",
+  "short": "Piedmont University",
+  "city": "Demorest, GA",
+  "div": "D3",
+  "conf": "Collegiate Conference of the South",
+  "lat": 34.566,
+  "lon": -83.542,
+  "checked": "2026-11-24",
+  "rosterUrl": "https://piedmontlions.com/sports/baseball/roster",
+  "coachUrl": "https://piedmontlions.com/sports/baseball/coaches",
+  "roster": "Cole Ellis|OF|Gr|Woodstock, GA\nBen Bodoh|C|So|Marietta, GA\nRyan Morgan|RHP|Fr|Cumming, GA\nCarter Few|IF|So|Alpharetta, GA\nBen Connelly|IF|So|Acworth, GA\nSean Bailey|IF|Sr|Peachtree City, GA\nJack Ryan|IF|So|Peachtree City, GA\nTyrese Robinson|OF|Fr|Dublin, GA\nMakana Peters|IF|Jr|Cumming, GA\nHarris Bryson|RHP|Jr|Marietta, GA\nAverett Thompson|RHP|Jr|Cumming, GA\nLayne Ayers|RHP|So|Covington, GA\nCody Funk|OF|Sr|McDonough, GA\nMatt Dupuis|OF|Sr|Woodstock, GA\nConnor Carlson|OF|So|Marietta, GA\nJustin Shaffer|C / IF|So|Gainesville, GA\nMilo Kennedy|RHP|Fr|Mableton, GA\nLuke Manry|RHP|Jr|Marietta, GA\nGarrett Burton|RHP|Sr|Jacksonville Beach, FL\nLandon May|IF / RHP|Fr|Grovetown, GA\nNash Chelcun|RHP|Sr|Huntersville, NC\nAndrew Misirly|RHP|So|Roswell, GA\nDrew O'Neill|RHP|Fr|Alpharetta, GA\nDavin Miller|OF|So|Locust Grove, GA\nAidan Hickman|IF / RHP|Fr|Ringgold, GA\nLogan Racine|C / IF|So|Alpharetta, GA\nAnderson Deaderick|OF|So|Marietta, GA\nBen Homansky|RHP|Fr|Smyrna, GA\nDalton Anderson|RHP|Sr|Newnan, GA\nJohn Dickerson|IF|So|Marietta, GA\nCruz Mullinix|IF|Sr|Toccoa, GA\nWill Schmidt|RHP|Fr|Woodstock, GA\nBrycen Wagoner|LHP|So|Cumming, GA\nLucas Tritt|RHP|Sr|Flowery Branch, GA\nRemi Weaver|RHP|Fr|Milledgeville, GA\nAndrew Pauldin|IF|Fr|Fayetteville, GA\nDemetri Tsesmelis|OF|Fr|Tarpn Springs, FL\nBrandon Blanco|C|Fr|Miami, FL\nChase Charles|IF / LHP|Fr|Suwanee, GA\nKeegan DeMayo|RHP|Fr|Tucker, GA\nSammy Ericson|RHP|Fr|Canton, GA\nCampbell Payton|LHP|Fr|Clermont, GA\nRiley McCallum|RHP|So|Culloden, GA",
+  "season": "2026",
+  "coaches": [
+   [
+    "Justin Scali",
+    "Head Baseball Coach",
+    "jscali@piedmont.edu"
+   ],
+   [
+    "Trey Pearce",
+    "Associate Head Baseball Coach",
+    "tpearce@piedmont.edu"
+   ],
+   [
+    "Pierce Crane",
+    "Student Assistant Coach",
+    ""
+   ]
+  ],
+  "camps": [],
+  "enroll": 1117,
+  "enrollNote": "undergraduates (College Scorecard)",
+  "tuition": {
+   "yr": "most recent federal figure",
+   "inS": "$32,760",
+   "inNote": "tuition (College Scorecard; may lag a year)",
+   "outS": "$32,760",
+   "outNote": "tuition (College Scorecard)",
+   "u": "https://collegescorecard.ed.gov/"
+  },
+  "flags": []
+ },
+ {
   "id": "universityofpittsburghatgree",
   "name": "University of Pittsburgh-Greensburg",
   "short": "University of Pittsburgh at Greensburg",
@@ -39137,9 +39461,9 @@
   "flags": []
  },
  {
-  "id": "texas",
+  "id": "universityofstthomastexas",
   "name": "University of St Thomas",
-  "short": "Texas",
+  "short": "University of St. Thomas (Texas)",
   "city": "Houston, TX",
   "div": "D3",
   "conf": "Southern Collegiate Athletic Conference",
@@ -45208,45 +45532,6 @@
   "flags": []
  },
  {
-  "id": "universityofmobile",
-  "name": "University of Mobile",
-  "short": "University of Mobile",
-  "city": "Prichard, AL",
-  "div": "NAIA",
-  "conf": "Southern States Athletic Conference",
-  "lat": 30.793,
-  "lon": -88.129,
-  "checked": "2026-11-24",
-  "rosterUrl": "https://umobilerams.com/sports/baseball/roster",
-  "coachUrl": "https://umobilerams.com/sports/baseball/coaches",
-  "roster": "Ethan Hilpert|MIF/RHP|Fr|Mobile, AL\nWil King|OF|Sr|Loxley, AL\nJake Hammonds|MIF|Jr|Sylacauga, AL\nWeston Tubbs|OF|Jr|Holtville, AL\nEli Smith|OF/LHP|Jr|Hurley, MS\nEthan Plank|INF|Jr|Lanett, AL\nColton Wood|C|Jr|Mobile, AL\nSteele Sims|C|Jr|Fairhope, AL\nJackson Williford|C|Jr|Bay Minette, AL\nTrevor Murphy|INF|Jr|Stapleton, AL\nReece Buck|1B|Jr|Bay Minette, AL\nDamian Ortiz|OF|Fr|Cayey, Puerto Rico\nAngel Ramos|MIF|Fr|Carolina, Puerto Rico\nGrant Driver|OF|Sr|Robertsdale, AL\nCarson Ellis|RHP|Sr|Laurel, MS\nDylan Moran|OF|Jr|Semmes, AL\nLogan Brewer|RHP|Jr|Saraland, AL\nAdrian Salas|C|Jr|Aguadilla, Puerto Rico\nMacks Bishop|RHP|Jr|Fort Payne, AL\nAndin Bolen|LHP|Jr|Lucedale, MS\nJacob Thompson|RHP|Jr|Peachtree City, GA\nJake Jaye|RHP|Fr|Bay Minette, AL\nAlexis Rodriguez Ruiz|RHP/DH|Sr|Yauco, Puerto Rico\nIsidro Jimenez|RHP|Sr|Santo Domingo, Dominican Republic\nReed Wilson|C/INF|Jr|Grove Hills, AL\nEthan McPherson|RHP|Gr|Mobile, AL\nTrey Simpkins|INF|Sr|Baldwin County, AL\nKolby Jordan|RHP|Fr|Loxley, AL\nBen Buxton|RHP|So|Saraland, AL\nLuke Barron|RHP|Fr|Troy, AL\nTyler Wabnitz|INF|Jr|Pinellas Park, FL\nTate Cuevas|LHP|Sr|Gulfport, MS\nColston Fultz|RHP|Jr|Linden, AL\nMatthew Young|RHP|Jr|Fairhope, AL\nBrody Swindle|LHP|Sr|Fairhope, AL\nJake Quina|RHP|Fr|Mobile, AL\nLott Putnam|RHP|So|Union Springs, AL\nChristian Sanchez|RHP|So|San German, Puerto Rico\nAdrian Roman|RHP|Jr|Newnan, GA",
-  "season": "2026",
-  "coaches": [
-   [
-    "Kyle Friday",
-    "Head Baseball Coach",
-    "kfriday@umobile.edu"
-   ],
-   [
-    "J.C. Romero",
-    "Assistant Baseball Coach",
-    ""
-   ]
-  ],
-  "camps": [],
-  "enroll": 1307,
-  "enrollNote": "undergraduates (College Scorecard)",
-  "tuition": {
-   "yr": "most recent federal figure",
-   "inS": "$27,930",
-   "inNote": "tuition (College Scorecard; may lag a year)",
-   "outS": "$27,930",
-   "outNote": "tuition (College Scorecard)",
-   "u": "https://collegescorecard.ed.gov/"
-  },
-  "flags": []
- },
- {
   "id": "universityofmontanawestern",
   "name": "The University of Montana-Western",
   "short": "University of Montana–Western",
@@ -47107,6 +47392,33 @@
   "flags": []
  },
  {
+  "id": "enterpriseozarkcommunitycoll",
+  "name": "Enterprise State Community College",
+  "short": "Enterprise-Ozark Community College",
+  "city": "Enterprise, AL",
+  "div": "JUCO",
+  "conf": "NJCAA Division I",
+  "lat": 31.297,
+  "lon": -85.837,
+  "checked": "2026-11-24",
+  "rosterUrl": "https://escc.prestosports.com/sports/bsb/2026-27/roster",
+  "coachUrl": "https://escc.prestosports.com/sports/bsb/coaches/index",
+  "enroll": 1585,
+  "enrollNote": "undergraduates (College Scorecard)",
+  "tuition": {
+   "yr": "most recent federal figure",
+   "inS": "$5,520",
+   "inNote": "tuition (College Scorecard; may lag a year)",
+   "outS": "$9,450",
+   "outNote": "tuition (College Scorecard)",
+   "u": "https://collegescorecard.ed.gov/"
+  },
+  "flags": [
+   "The roster page couldn't be reached today; showing the last good copy."
+  ],
+  "roster": ""
+ },
+ {
   "id": "wallacecommunitycollege",
   "name": "George C Wallace Community College-Dothan",
   "short": "Wallace Community College",
@@ -47193,6 +47505,33 @@
    "u": "https://collegescorecard.ed.gov/"
   },
   "flags": []
+ },
+ {
+  "id": "indianriverstatecollege",
+  "name": "Indian River State College",
+  "short": "Indian River State College",
+  "city": "Fort Pierce, FL",
+  "div": "JUCO",
+  "conf": "NJCAA Division I",
+  "lat": 27.424,
+  "lon": -80.359,
+  "checked": "2026-11-24",
+  "rosterUrl": "https://irsc.prestosports.com/sports/bsb/2026-27/roster",
+  "coachUrl": "https://irsc.prestosports.com/sports/bsb/coaches/index",
+  "enroll": 11822,
+  "enrollNote": "undergraduates (College Scorecard)",
+  "tuition": {
+   "yr": "most recent federal figure",
+   "inS": "$2,764",
+   "inNote": "tuition (College Scorecard; may lag a year)",
+   "outS": "$10,201",
+   "outNote": "tuition (College Scorecard)",
+   "u": "https://collegescorecard.ed.gov/"
+  },
+  "flags": [
+   "The roster page couldn't be reached today; showing the last good copy."
+  ],
+  "roster": ""
  },
  {
   "id": "polkstatecollege",
@@ -48068,6 +48407,33 @@
   ]
  },
  {
+  "id": "columbiastatecommunitycolleg",
+  "name": "Columbia State Community College",
+  "short": "Columbia State Community College",
+  "city": "Columbia, TN",
+  "div": "JUCO",
+  "conf": "NJCAA Division I",
+  "lat": 35.617,
+  "lon": -87.102,
+  "checked": "2026-11-24",
+  "rosterUrl": "https://columbiastatecc.prestosports.com/sports/bsb/2026-27/roster",
+  "coachUrl": "https://columbiastatecc.prestosports.com/sports/bsb/coaches/index",
+  "enroll": 3897,
+  "enrollNote": "undergraduates (College Scorecard)",
+  "tuition": {
+   "yr": "most recent federal figure",
+   "inS": "$5,104",
+   "inNote": "tuition (College Scorecard; may lag a year)",
+   "outS": "$8,682",
+   "outNote": "tuition (College Scorecard)",
+   "u": "https://collegescorecard.ed.gov/"
+  },
+  "flags": [
+   "The roster page couldn't be reached today; showing the last good copy."
+  ],
+  "roster": ""
+ },
+ {
   "id": "blinncollege",
   "name": "Blinn College District",
   "short": "Blinn College",
@@ -48151,6 +48517,32 @@
   "flags": []
  },
  {
+  "id": "northeasttexascommunitycolle",
+  "name": "Northeast Texas Community College",
+  "short": "Northeast Texas Community College",
+  "city": "Mount Pleasant, TX",
+  "div": "JUCO",
+  "conf": "NJCAA Division I",
+  "lat": 33.105,
+  "lon": -94.882,
+  "checked": "2026-11-24",
+  "rosterUrl": "https://ntcceagles.com/baseball/roster?season=fall_2026",
+  "coachUrl": "",
+  "roster": "Barrett Hamilton|RHP|So|Roanoke, TX\nBlaine Rusch|INF|Fr|Mainsfield, TX\nBrady Tran|LHP|Fr|Houston, TX\nBrody Frietas|INF|Fr|Spring, TX\nCaeden Alexander|RHP|So|Van, TX\nCam Reiter|INF|So|McKinney, TX\nChristian Martin|OF|Fr|Hallsville, TX\nChristopher Whitaker|RHP|So|Little Elm, TX\nCollin Martin|Catcher|Fr|Spring, TX\nDalton Hicks|Catcher|Fr|Naples, TX\nGannon Plummer|OF|Fr|Buda, TX",
+  "season": "2026",
+  "enroll": 1973,
+  "enrollNote": "undergraduates (College Scorecard)",
+  "tuition": {
+   "yr": "most recent federal figure",
+   "inS": "$2,957",
+   "inNote": "tuition (College Scorecard; may lag a year)",
+   "outS": "$5,597",
+   "outNote": "tuition (College Scorecard)",
+   "u": "https://collegescorecard.ed.gov/"
+  },
+  "flags": []
+ },
+ {
   "id": "saltlakecommunitycollege",
   "name": "Salt Lake Community College",
   "short": "Salt Lake Community College",
@@ -48194,6 +48586,32 @@
    "inS": "$4,543",
    "inNote": "tuition (College Scorecard; may lag a year)",
    "outS": "$14,884",
+   "outNote": "tuition (College Scorecard)",
+   "u": "https://collegescorecard.ed.gov/"
+  },
+  "flags": []
+ },
+ {
+  "id": "northarkansascollege",
+  "name": "North Arkansas College",
+  "short": "North Arkansas College",
+  "city": "Harrison, AR",
+  "div": "JUCO",
+  "conf": "NJCAA Division II",
+  "lat": 36.22,
+  "lon": -93.088,
+  "checked": "2026-11-24",
+  "rosterUrl": "https://www.northark.edu/athletics/baseball/",
+  "coachUrl": "https://www.northark.edu/athletics/baseball/baseball-coaches",
+  "roster": "Tegan Ashbury|OF|So|Branson, MO\nChristian Banning|RHP|Fr|Fort Worth, TX\nMax Barron|MIF|So|Forney, TX\nPrice Bedwell|MIF|Fr|Bentonville, AR\nDalton Bottoms|1B/LHP|Fr|Huntsville, AR\nLuke Bower|OF|So|Forney, TX\nReece Bray|RHP|Fr|Cave City, AR\nTrey Burton|OF|Fr|Ozark, MO\nAiden Buster|RHP|So|Muscatine, IA\nNate Castle|MIF|Fr|Ashdown, AR\nJackson Corp|OF|Fr|Mountain Home, AR\nHarrison Cranmer|1B|Fr|Lebanon, MO\nMatthew Derner|LHP/OF|Fr|Little Elm, TX\nFabian Diaz|OF/RHP|Fr|Long Island, NY\nKonner Drace|OF|So|Iberia, MO\nKaden Fort|C|Fr|Gravette, AR\nBrayden Fox|1B|Fr|Newton, KS\nAaron Graham|RHP|Fr|Lebanon, MO\nEli Graham|RHP|Fr|Lebanon, MO\nJaxon Gregg|RHP|Fr|Kimberling City, MO\nOwen Guffey|RHP|So|Salem, AR\nJamesyn Haley|RHP|Fr|Braymer, MO\nAndre Harris|3B/1B|So|Crosby, TX\nAnthony Herrera|C/RHP|So|Little Elm, TX\nPreston Jenkins|LHP|So|Skidmore, MO\nTyler Johnson|RHP|So|Rogers, AR\nGriffin Jones|RHP/UT|So|Fort Worth, TX\nPreston Katzer|RHP|So|Fayetteville, AR\nCody Keith|RHP|Fr|Collinsville, OK\nBrayden Kemp|OF|Fr|McKinney, TX\nRhett King|MIF/RHP|Fr|Cave City, AR\nCohen Kirkwood|RHP|Fr|Blenheim, ON\nLucas Krocka|MIF|Fr|Austin, TX\nRowden Lejeune|C|So|Springfield, MO\nIan Malicott|OF/RHP|Fr|Tulsa, OK\nRemington Manes|OF/RHP|Fr|Bolivar, MO\nDane Marlatt|RHP|So|Siloam Springs, AR\nColin McAvoy|3B/OF|Fr|St. Louis, MO\nXander McCandlis|C|Fr|Oxford, AR\nMason Meador|LHP|So|Green Forest, AR\nNathan Mehrhoff|RHP|So|St. Peters, MO\nBrock Mendenhall|OF/RHP|Fr|Wheatland, MO\nMaddox Ogle|OF/C|Fr|Prairie Grove, AR\nAdrian Olvera|MIF|So|Houston, TX\nNolan Parnell|IF|Fr|Ruston, LA\nWes Perkey|IF/RHP|Fr|Cotter, AR\nEthan Ramirez|1B/OF|So|Houston, TX\nJack Ratcliff|LHP|Fr|Metairie, LA\nPetyon Reese|MIF/RHP|Fr|Harrison, AR\nCarson Rollins|RHP|Fr|Springdale, AR\nRyder Schroeder|MIF|Fr|Branson, MO\nRiley Templin|LHP|So|Rogers, AR\nDylan Terry|LHP|So|Little Elm, TX\nKelly Thompson|MIF/RHP|So|Springdale, AR\nGarrison Tyner|RHP|Fr|Springdale, AR\nPayton Zielstra|UT/RHP|So|Sherwood, AR",
+  "season": "",
+  "enroll": 1202,
+  "enrollNote": "undergraduates (College Scorecard)",
+  "tuition": {
+   "yr": "most recent federal figure",
+   "inS": "$3,840",
+   "inNote": "tuition (College Scorecard; may lag a year)",
+   "outS": "$6,000",
    "outNote": "tuition (College Scorecard)",
    "u": "https://collegescorecard.ed.gov/"
   },
@@ -49384,33 +49802,6 @@
    "inS": "$7,725",
    "inNote": "tuition (College Scorecard; may lag a year)",
    "outS": "$7,725",
-   "outNote": "tuition (College Scorecard)",
-   "u": "https://collegescorecard.ed.gov/"
-  },
-  "flags": []
- },
- {
-  "id": "wenatcheevalleycollege",
-  "name": "Wenatchee Valley College",
-  "short": "Wenatchee Valley College",
-  "city": "Wenatchee, WA",
-  "div": "JUCO",
-  "conf": "NWAC – Eastern",
-  "lat": 47.431,
-  "lon": -120.337,
-  "checked": "2026-11-24",
-  "rosterUrl": "https://gowvc.com/sports/baseball/roster",
-  "coachUrl": "https://gowvc.com/sports/baseball/coaches",
-  "roster": "Eric Havili|OF|Fr|Federal Way, WA\nShion Habuto|3B/2B/OF|So|Tokyo,Japan\nJoe Schuyleman|RHP|So|Wenatchee, WA\nKaden Barnes|RHP|So|Renton, WA\nShiroma Konosuke|2B/SS|So|Okinawa, Japan\nKieran Cabral|3B/OF|So|Petersburg, AK\nJoel Votipka|RHP|So|Mount Vernon, WA\nAlex LaVassar|2B/3B|So|Des Moines, WA\nTanner DeLaRosa|LHP|Fr|Havre, MT\nCarter Perlinski|1B|So|Helena, MT\nJack Engell|OF|So|Petersburg, AK\nJohn Langen|RHP|Fr|Seattle, WA\nSchuyler Fairchild|RHP|Fr|Missoula, MT\nCarter Grant|RHP|Fr|Enumclaw, WA\nEvan Yates|C|Fr|Blaine, WA\nMiles Ducharme|RHP|Fr|Fife, WA\nSkylar Bryant|OF|So|East Wenatchee, WA\nJustus Schmidt|RHP/SS/2B|Fr|Ellensburg, WA\nLogan Kruger|OF|Fr|Yakima, WA\nKamren Agpalza|3B|Fr|Hilo, HI\nCaden Shoul|RHP|Fr|Auburn, WA\nMalikhi Emery- Henderson|OF|So|Lynnwood, WA\nEvan Reece|RHP|Fr|Edgewood, WA\nHudson Brown|C/1B|Fr|Puyallup, WA\nAndrew Roberts|C/1B|So|Medical Lake, WA\nSamuel Spangler|RHP|Fr|Tonasket, WA\nHaven Sagdal|1B|So|Renton, WA\nCarter Christiansen|C/3B|Fr|Edgewood, WA\nDominic Miller|RHP/OF|Fr|Redmond, WA\nRyder Jensen|SS/2B|Fr|Orting, WA\nLuke Sterkel|RHP|So|Ellensburg, WA\nLachlan West|C|Fr|Sydney, Australia\nJaden Sarto|OF|Fr|Spokane, WA\nTripp Kahsen|LHP/OF|Fr|Pahoa, HI\nDillon Jones|RHP|So|Sammamish, WA\nCole Benjamin|LHP|So|Mill Creek, WA\nCaden Werner|RHP/SS|Fr|Boise, ID\nDavid Madsen|LHP/OF|Fr|Spokane, WA\nLayne Bennett|RHP|Fr|Mead, WA\nTeyton Hardeman|LHP/OF|Fr|Lynnwood, WA\nRyo Oshima|RHP|So|Japan\nPreston Coleman|RHP|Fr|Sumner, WA\nBrady Coulter|3B|Fr|Pullman, WA\nDylan Goetz|RHP|Fr|Vancouver, WA\nJosh Zandberg|RHP/OF|Fr|Salt Lake City, UT",
-  "season": "2025",
-  "camps": [],
-  "enroll": 1759,
-  "enrollNote": "undergraduates (College Scorecard)",
-  "tuition": {
-   "yr": "most recent federal figure",
-   "inS": "$5,475",
-   "inNote": "tuition (College Scorecard; may lag a year)",
-   "outS": "$6,060",
    "outNote": "tuition (College Scorecard)",
    "u": "https://collegescorecard.ed.gov/"
   },
