@@ -130,6 +130,21 @@ FULL_STATES = {"Alabama": "AL", "Arizona": "AZ", "Arkansas": "AR", "California":
                "Washington": "WA", "West Virginia": "WV", "Wisconsin": "WI", "Wyoming": "WY"}
 
 
+STAFF = re.compile(r"\b(director|coordinator|trainer|dietitian|manager|coach|strength|equipment|communications|advisor|phone)\b|@", re.I)
+
+
+def clean_roster(text: str) -> str:
+    """Drops staff rows (no position and no class year, or a staff title) and tidies hometowns."""
+    keep = []
+    for line in text.splitlines():
+        parts = (line.split("|") + ["", "", "", ""])[:4]
+        if STAFF.search(parts[0]) or not (parts[1].strip() or parts[2].strip()):
+            continue
+        parts[3] = split_hometown(parts[3])
+        keep.append("|".join(parts))
+    return "\n".join(keep)
+
+
 def split_hometown(h: str) -> str:
     """'Hometown Wall, N.J. / Wall HS'  ->  'Wall, NJ'   (drops the label and the high school part)"""
     h = re.sub(r"^\s*(hometown|home town)\s*:?\s*", "", clean(h), flags=re.I)
@@ -419,6 +434,8 @@ def main() -> None:
         done = {r["id"]: r for r in ex.map(one, todo)}
     out = [done.get(r["id"]) or prev[r["id"]] for r in rows if r["id"] in done or r["id"] in prev]
 
+    for prof in out:  # also cleans copies kept from earlier runs
+        prof["roster"] = clean_roster(prof.get("roster") or "")
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps(out, indent=1, ensure_ascii=False))
     (OUT.parent / "report.json").write_text(json.dumps({"date": TODAY.isoformat(), "schools": REPORT}, indent=1))

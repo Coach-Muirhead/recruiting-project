@@ -720,7 +720,8 @@
   },
   "flags": [
    "The roster page couldn't be reached today; showing the last good copy."
-  ]
+  ],
+  "roster": ""
  },
  {
   "id": "mtsanantoniocollege",
@@ -746,7 +747,8 @@
   },
   "flags": [
    "The roster page couldn't be reached today; showing the last good copy."
-  ]
+  ],
+  "roster": ""
  },
  {
   "id": "sanbernardinovalleycollege",
@@ -772,7 +774,8 @@
   },
   "flags": [
    "The roster page couldn't be reached today; showing the last good copy."
-  ]
+  ],
+  "roster": ""
  },
  {
   "id": "albany",
@@ -4694,7 +4697,7 @@
   "checked": "2026-11-24",
   "rosterUrl": "https://goducks.com/sports/baseball/roster",
   "coachUrl": "https://goducks.com/sports/baseball/coaches",
-  "roster": "Mark Wasikowski|||\nMatt Florer|||\nBrett Thomas|||\nRyan Fineman|||\nTravis Buck|||\nDarrell Hunter|||\nTim Susnara|||\nDan Straily|||\nDominic Graziano|||\nCody Peterman|||\nJohn Mitchell|||\nJanice Beck|||\nLindsey Bingham|||\nMark Wasikowski Head Coach /Baseball baseball@uoregon.edu|||\nMatt Florer Assistant Coach /Baseball mflorer@uoregon.edu|||\nBrett Thomas Assistant Coach /Baseball|||\nRyan Fineman Assistant Coach/Recruiting Coordinator /Baseball|||\nTravis Buck Director of Baseball Operations /Baseball tbuc@uoregon.edu|||\nDarrell Hunter Head Strength Coach & Video Analytics Coordinator /Baseball|||\nTim Susnara Director of Player Development/Analytics /Baseball tsusnar6@uoregon.edu|||\nDan Straily Director of Pitching Development /Baseball|||\nDominic Graziano Director of Camps /Baseball|||\nCody Peterman Athletic Trainer /Baseball cpeterma@uoregon.edu|||\nJohn Mitchell Equipment Manager /Baseball Phone 541-346-0899|||\nJanice Beck Administrative Assistant /Baseball Phone 541-346-5776 janice@uoregon.edu|||\nLindsey Bingham Academic Advisor /Baseball Phone 541-346-8863 lbingham@uoregon.edu|||",
+  "roster": "",
   "season": "2027",
   "coaches": [
    [
@@ -4974,7 +4977,7 @@
   "checked": "2026-11-24",
   "rosterUrl": "https://arizonawildcats.com/sports/baseball/roster",
   "coachUrl": "https://arizonawildcats.com/sports/baseball/coaches",
-  "roster": "Chip Hale|||\nTrip Couch|||\nSean Kenny|||\nJack Meggs|||\nGaren Caulfield|||\nJalen Borders|||\nElla Wolters|||\nBen Kmetz|||\nParker Tipton|||\nDaniel Molinari|||\nOJ Favela|||\nChip Hale Head Coach /Baseball chale8@arizona.edu|||\nTrip Couch Assistant Coach /Baseball rcouch1@arizona.edu|||\nSean Kenny Assistant Coach /Baseball|||\nJack Meggs Assistant Coach /Baseball jmeggs@arizona.edu|||\nGaren Caulfield Director, Player Development & Recruiting /Baseball|||\nJalen Borders Director, Pitching Performance & Strategy /Baseball jalenborders32@arizona.edu|||\nElla Wolters Director Baseball Operations /Baseball ellawolters@arizona.edu|||\nBen Kmetz Athletic Trainer - Banner University Medicine /Baseball Phone 520-621-0820 bkmetz@arizona.edu|||\nParker Tipton Assistant Director of Equipment Operations /Baseball parkertipton@arizona.edu|||\nDaniel Molinari Catching and Hitting Assistant /Baseball|||\nOJ Favela Assistant Player Development /Baseball|||",
+  "roster": "",
   "season": "2027",
   "coaches": [
    [
@@ -6119,7 +6122,7 @@
   "checked": "2026-11-24",
   "rosterUrl": "https://gohighlanders.com/sports/baseball/roster",
   "coachUrl": "https://gohighlanders.com/sports/baseball/coaches",
-  "roster": "Gregg Wallis|||\nKade Mechals|||\nChris Jimenez|||\nChaneng Varela|||\nChad De La Guerra|||\nAlexa Banos|||\nGregg Wallis Head Baseball Coach /Baseball gregoryw@ucr.edu|||\nKade Mechals Pitching Coach /Baseball kadem@ucr.edu|||\nChris Jimenez Catching Coach/Assistant Recruiting Coordinator /Baseball chrisji@ucr.edu|||\nChaneng Varela Infield Coach / Recruiting Coordinator /Baseball allenv@ucr.edu|||\nChad De La Guerra Director of Operations / Assistant Hitting Coach /Baseball chadd@ucr.edu|||\nAlexa Banos Assistant Athletic Trainer (WSO, BASE, MTE, WTE) /Baseball alexa.banos@ucr.edu|||",
+  "roster": "",
   "season": "2027",
   "coaches": [
    [
@@ -11644,7 +11647,7 @@
   "checked": "2026-11-24",
   "rosterUrl": "https://rolltide.com/sports/baseball/roster",
   "coachUrl": "https://rolltide.com/sports/baseball/coaches",
-  "roster": "Rob Vaughn|||\nJason Jackson|||\nMike Morrison|||\nAnthony Papio|||\nAmanda Branson|||\nStephanie Godfrey|||\nJessica Paré|||\nJoey Jones|||\nKasen Rainey|||\nSean Stryker|||\nGarrett Wood|||\nBrett Price|||\nKevin Keister|||\nRob Vaughn Head Coach /Baseball Phone 205-963-5778|||\nJason Jackson Associate Head Coach /Baseball Phone 205-963-5778 jjackson@ia.ua.edu|||\nMike Morrison Assistant Coach /Baseball Phone 205-963-5778 mmorrison@ia.ua.edu|||\nAnthony Papio Assistant Coach /Baseball Phone 205-963-5778 apapio@ia.ua.edu|||\nAmanda Branson Director, Olympic Sport Performance Nutrition /Baseball Phone 205-963-5700 apoppleton@ia.ua.edu|||\nStephanie Godfrey Assistant Director, Athletics Student Services (Baseball, Softball) /Baseball Phone 205-963-5700 sgodfrey@ia.ua.edu|||\nJessica Paré Deputy Director of Athletics, External (Baseball Oversight) /Baseball Phone 205-963-5700 jpare@ia.ua.edu|||\nJoey Jones Operations Coordinator /Baseball Phone 205-963-5700 jdjones@ia.ua.edu|||\nKasen Rainey Director of Pitching Development and Analytics /Baseball Phone 205-963-5778 krainey@ia.ua.edu|||\nSean Stryker Athletic Trainer /Baseball Phone 205-963-5712 sstryker@ia.ua.edu|||\nGarrett Wood Director of Player Development and Recruiting /Baseball Phone 205-963-5367 gwood@ia.ua.edu|||\nBrett Price Associate Strength and Conditioning Coach (Baseball) /Baseball Phone 205-963-5700 brprice@ia.ua.edu|||\nKevin Keister Player Development Assistant (Hitting & Infield) /Baseball Phone 205-963-5700 kkeister@ia.ua.edu|||",
+  "roster": "",
   "season": "2027",
   "coaches": [
    [
@@ -15091,7 +15094,8 @@
   },
   "flags": [
    "The roster page couldn't be reached today; showing the last good copy."
-  ]
+  ],
+  "roster": ""
  },
  {
   "id": "universityofnorthalabama",
@@ -18089,7 +18093,7 @@
   "checked": "2026-11-24",
   "rosterUrl": "https://cbubucs.com/sports/baseball/roster",
   "coachUrl": "https://cbubucs.com/sports/baseball/coaches",
-  "roster": "Kayne Braxton|RHP|Jr|Lawrence, KS\nJackson Licata|SS|Sr|Orange, CA\nLucas Franz|C|So|Phoenix, AZ\nThomas Leiden|LHP|Sr|Omaha, NE\nCayden Freels|1B|Jr|Coral Springs, FL\nCharlie Wooten|1B|Sr|Beaumont, TX\nIvan Zambrano|OF|Sr|Maracaibo, Venezuela\nMikey Rodriguez|OF|Sr|New York, NY\nBrayden Basey|2B|Jr|Shelbyville, IN\nJack Todd|RHP|Fr|Paris, TN\nKade Johnson|RHP|Jr|Muskegon, MI\nJohn Decoste|RHP|Sr|Truro, Nova Scotia, Canada\nBennett Musser|RHP|So|Round Lake, IL\nWill Gossett|INF|Sr|Memphis, TN\nPatrick Mangels|C|Sr|Marietta, MS\nZowen Collins|1B|Jr|Cobleskill, NY\nMichael Atkinson|P|Sr|Bowie, MD\nBrady Moffitt|RHP|So|Memphis TN\nTownsend Buring|LHP|Fr|Memphis, TN\nShahkai Matthews|OF|Sr|Piscataway, NJ\nNick Petruzzello|OF|So|Ranson, WV\nIsaac Lemanski|3B/2B|Jr|Collinsville, IL\nCharlie Faoro|P | INF|Sr|Flossmoor, IL\nDaniel Ruiz|RHP|Jr|Gulfport, MS\nStephen Simmons Jr|OF|Fr|Memphis, TN\nNoah McGeary|C|Jr|Bell Buckle, TN\nJordan Rodriguez|SS|Sr|Albuquerque, NM\nHank Hisky|P|Jr|Memphis, TN\nEric Curtis|RHP|Jr|Nashville, TN\nHunter Mueller|C|So|St. Clairsvillle, OH\nMichael Hanna|P|Sr|New Orleans, LA\nCameron Olivo|P|Jr|Swanzey, NH\nCody Petrauskas|RHP|So|Bristow, VA\nJoseph Gibson|P|Gr|Memphis, TN\nJackson Allred|LHP|So|Omaha, NE\nShea Lewis|UTIL|Jr|Palmdale, CA\nWilliam Norris|RHP/OF|Sr|Southaven, MS",
+  "roster": "Kayne Braxton|RHP|Jr|Lawrence, KS\nJackson Licata|SS|Sr|Orange, CA\nLucas Franz|C|So|Phoenix, AZ\nThomas Leiden|LHP|Sr|Omaha, NE\nCayden Freels|1B|Jr|Coral Springs, FL\nCharlie Wooten|1B|Sr|Beaumont, TX\nIvan Zambrano|OF|Sr|Maracaibo, Venezuela\nMikey Rodriguez|OF|Sr|New York, NY\nBrayden Basey|2B|Jr|Shelbyville, IN\nJack Todd|RHP|Fr|Paris, TN\nKade Johnson|RHP|Jr|Muskegon, MI\nJohn Decoste|RHP|Sr|Truro, Nova Scotia, Canada\nBennett Musser|RHP|So|Round Lake, IL\nWill Gossett|INF|Sr|Memphis, TN\nPatrick Mangels|C|Sr|Marietta, MS\nZowen Collins|1B|Jr|Cobleskill, NY\nMichael Atkinson|P|Sr|Bowie, MD\nBrady Moffitt|RHP|So|Memphis TN\nTownsend Buring|LHP|Fr|Memphis, TN\nShahkai Matthews|OF|Sr|Piscataway, NJ\nNick Petruzzello|OF|So|Ranson, WV\nIsaac Lemanski|3B/2B|Jr|Collinsville, IL\nCharlie Faoro|P | INF|Sr\nDaniel Ruiz|RHP|Jr|Gulfport, MS\nStephen Simmons Jr|OF|Fr|Memphis, TN\nNoah McGeary|C|Jr|Bell Buckle, TN\nJordan Rodriguez|SS|Sr|Albuquerque, NM\nHank Hisky|P|Jr|Memphis, TN\nEric Curtis|RHP|Jr|Nashville, TN\nHunter Mueller|C|So|St. Clairsvillle, OH\nMichael Hanna|P|Sr|New Orleans, LA\nCameron Olivo|P|Jr|Swanzey, NH\nCody Petrauskas|RHP|So|Bristow, VA\nJoseph Gibson|P|Gr|Memphis, TN\nJackson Allred|LHP|So|Omaha, NE\nShea Lewis|UTIL|Jr|Palmdale, CA\nWilliam Norris|RHP/OF|Sr|Southaven, MS",
   "season": "2026",
   "coaches": [
    [
@@ -19671,7 +19675,7 @@
   "checked": "2026-11-24",
   "rosterUrl": "https://fhsuathletics.com/sports/baseball/roster",
   "coachUrl": "https://fhsuathletics.com/sports/baseball/coaches",
-  "roster": "Dylan Salcido|INF|Sr|Carlsbad, NM\nAlvin Santiago|UTIL|So|Tampa, FL\nCaleb Camp|LHP|Jr|Buena Vista, CO\nDylan Haselhorst|C|Jr|Hays, KS\nJaxon Schleper|INF|So|Colorado Springs, CO\nAaron Boutz|RHP|Sr|Parkville, MO\nJustin Lipka|C|Jr|Evergreen, CO\nMac Bowie|OF/1B|Sr|Spring, TX\nBret Deegan|RHP/1B|Sr|Spring, TX\nCaiden Bowman|LHP|Jr|Liberty, MO\nTucker Russell|LHP|Sr|Olathe, KS\nBraxton Madrigal|RHP|So|Mulvane, KS\nBrett Jacobs|RHP|Sr|Oklahoma City, OK\nTony Moore|INF|Jr|Hoisington, KS\nGehrig Heckathorn|OF|So|Tomball, TX\nJack Laird|RHP|Sr|Prairie Village, KS\nGarretson Cook|1B|So|Bolivar, MO\nAidan Bahn|||Kansas City, MO\nKeagan Baugh|||Goodyear, AZ\nCraig Busse|||Lakewood, CO\nCJ Chalk|||Tampa, FL\nCannon Credeur|||Hempstead, TX\nBrody Dinges|||Highlands Ranch, CO\nChase Ditmar|||Las Vegas, NV\nLorenzo Gonzalez|||Las Vegas, NV\nGunner Hewitt|||Wichita, KS\nTanner Jacobson|||Blair, NE\nCole Kuszak|||Broomfield, CO\nEli Lang|||Fowler, KS\nChase Lanning|||Fayetteville, AR\nKirin Lawing|||Broomfield, CO\nHolden Lough|||Spring Hill, KS\nLiam Mosley|||Centennial, CO\nWhitley Rhodes|||Hesston, KS\nBrady Todd|||Brighton, CO\nStone Vacek|||Cypress, TX\nRaul Zapata|||West Jordan, UT",
+  "roster": "Dylan Salcido|INF|Sr|Carlsbad, NM\nAlvin Santiago|UTIL|So|Tampa, FL\nCaleb Camp|LHP|Jr|Buena Vista, CO\nDylan Haselhorst|C|Jr|Hays, KS\nJaxon Schleper|INF|So|Colorado Springs, CO\nAaron Boutz|RHP|Sr|Parkville, MO\nJustin Lipka|C|Jr|Evergreen, CO\nMac Bowie|OF/1B|Sr|Spring, TX\nBret Deegan|RHP/1B|Sr|Spring, TX\nCaiden Bowman|LHP|Jr|Liberty, MO\nTucker Russell|LHP|Sr|Olathe, KS\nBraxton Madrigal|RHP|So|Mulvane, KS\nBrett Jacobs|RHP|Sr|Oklahoma City, OK\nTony Moore|INF|Jr|Hoisington, KS\nGehrig Heckathorn|OF|So|Tomball, TX\nJack Laird|RHP|Sr|Prairie Village, KS\nGarretson Cook|1B|So|Bolivar, MO",
   "season": "2027",
   "coaches": [
    [
@@ -20467,7 +20471,8 @@
   },
   "flags": [
    "The roster page couldn't be reached today; showing the last good copy."
-  ]
+  ],
+  "roster": ""
  },
  {
   "id": "holyfamily",
@@ -21150,7 +21155,7 @@
   "checked": "2026-11-24",
   "rosterUrl": "https://athletics.loc.edu/sports/baseball/roster",
   "coachUrl": "https://athletics.loc.edu/sports/baseball/coaches",
-  "roster": "Narrada Smith|INF|Fr|Buford, GA\nTahj Williams|SS|Fr|Atlanta, GA\nMason Beville||Sr|Pleasant Grove, AL\nOnterio Seaille|OF|Fr|Bessemer, AL\nKai Finch|C/INF|So|Birmingham, AL\nJayden Smith|RHP|Fr|Tuscaloosa, AL\nJohnathon Coleman|OF|Jr|Richmond, CA\nDarell Pender|CF|Fr|\nNathan Sanchez|UT|Fr|Miami, FL\nGabriel Fuentes|RHP|Jr|Lucille, Puerto Rico\nKevin Maya|1B|RHP|3B|Fr|Orlando, FL\nBrandon Gooden|UT|Fr|Tuscaloosa, AL\nAidan McCallister|LHP|Fr|Cayman Islands\nRyan Meglis|UT|So|Lewisburg, TN\nIbrahim Marrero|C/ 3RD|So|Miami, FL\nTrae Burton|LHP|Fr|Lawrenceville, GA\nBrody Ashley|RHP/INF|Fr|Culloden, GA\nVincent Norvell|RHP|Jr|Theodore, AL\nNapoleon Colston|P|Fr|\nParris Spraggins Jr|OF|Fr|\nCameron Williams|OF|Jr|Birmingham, AL",
+  "roster": "Narrada Smith|INF|Fr|Buford, GA\nTahj Williams|SS|Fr|Atlanta, GA\nMason Beville||Sr|Pleasant Grove, AL\nOnterio Seaille|OF|Fr|Bessemer, AL\nKai Finch|C/INF|So|Birmingham, AL\nJayden Smith|RHP|Fr|Tuscaloosa, AL\nJohnathon Coleman|OF|Jr|Richmond, CA\nDarell Pender|CF|Fr|\nNathan Sanchez|UT|Fr|Miami, FL\nGabriel Fuentes|RHP|Jr|Lucille, Puerto Rico\nKevin Maya|1B|RHP|3B\nBrandon Gooden|UT|Fr|Tuscaloosa, AL\nAidan McCallister|LHP|Fr|Cayman Islands\nRyan Meglis|UT|So|Lewisburg, TN\nIbrahim Marrero|C/ 3RD|So|Miami, FL\nTrae Burton|LHP|Fr|Lawrenceville, GA\nBrody Ashley|RHP/INF|Fr|Culloden, GA\nVincent Norvell|RHP|Jr|Theodore, AL\nNapoleon Colston|P|Fr|\nParris Spraggins Jr|OF|Fr|\nCameron Williams|OF|Jr|Birmingham, AL",
   "season": "2025",
   "coaches": [
    [
@@ -30592,7 +30597,8 @@
   },
   "flags": [
    "The roster page couldn't be reached today; showing the last good copy."
-  ]
+  ],
+  "roster": ""
  },
  {
   "id": "universityofdallas",
@@ -35534,7 +35540,8 @@
   },
   "flags": [
    "The roster page couldn't be reached today; showing the last good copy."
-  ]
+  ],
+  "roster": ""
  },
  {
   "id": "mississippiuniversityforwome",
@@ -37534,7 +37541,7 @@
   "checked": "2026-11-24",
   "rosterUrl": "https://pctwildcats.com/sports/baseball/roster",
   "coachUrl": "https://pctwildcats.com/sports/baseball/coaches",
-  "roster": "Jaiden Augustine|INF|Sr|Dillsburg, PA\nEthan Eckard|RHP|Sr|Cogan Station, PA\nKane Wright|RHP|So|Williamsport, PA\nJake Lewis|RHP|So|Lehighton, PA\nCaleb Szklenski|INF|So|Fairview, PA\nGriffin Vollman|LHP|Sr|Williamsport, PA\nChase Wright|INF|So|Williamsport, PA\nSam Staib|RHP|Sr|Bloomsburg, PA\nLevi Purnell|INF|Jr|Snow Shoe, PA\nDallas Alexander|LHP|Sr|Lock Haven, PA\nAJ Adlon|||\nJared Ahern|||\nBrody Aldenderfer|||\nMichael Antignani|||\nBrayden Beneito|||\nAqual Chapman|||\nCam Coudriet|||\nRobert Cruz|||\nEric David|||\nZach Dennis|||\nDylan Ferriera|||\nTeddy Fonseca|||\nDominick Fuchuck|||\nAndrew Holt|||\nBradon Howe|||\nAiden Jones|||\nDaniel Lamlamay|||\nTristan Llanes|||\nDomenic Lotruglio|||\nConnor Manning|||\nConnor Matier|||\nMason Nicklas|||\nMichael Purello|||\nBronzo Riccardo|||\nTrace Riden|||Kitty Hawk, NC\nJayden Runkel|||\nMason Schneck|||\nRowdy Sphar|||\nAustin Surber|||\nSean Tanaka|||\nMatthew Urena|||\nTrace Wertz|||",
+  "roster": "Jaiden Augustine|INF|Sr|Dillsburg, PA\nEthan Eckard|RHP|Sr|Cogan Station, PA\nKane Wright|RHP|So|Williamsport, PA\nJake Lewis|RHP|So|Lehighton, PA\nCaleb Szklenski|INF|So|Fairview, PA\nGriffin Vollman|LHP|Sr|Williamsport, PA\nChase Wright|INF|So|Williamsport, PA\nSam Staib|RHP|Sr|Bloomsburg, PA\nLevi Purnell|INF|Jr|Snow Shoe, PA\nDallas Alexander|LHP|Sr|Lock Haven, PA",
   "season": "2027",
   "coaches": [
    [
@@ -39661,7 +39668,8 @@
   },
   "flags": [
    "The roster page couldn't be reached today; showing the last good copy."
-  ]
+  ],
+  "roster": ""
  },
  {
   "id": "springfieldcollege",
@@ -42299,7 +42307,7 @@
   "checked": "2026-11-24",
   "rosterUrl": "https://andrewfightingtigers.com/sports/baseball/roster",
   "coachUrl": "https://andrewfightingtigers.com/sports/baseball/coaches",
-  "roster": "Anthony Grant|OF||Quincy, FL\nMatthew Phillips|INF|Fr|Seale, AL\nKiff Parrish|OF||Thomasville, GA\nJadyn Mattie|INF|Fr|Dawsonville, GA\nCaden Nelson|OF|Fr|Warner Robins, GA\nLuke Linn|C||Orlando, FL\nLuis Muniz|C/UTIL||Guanica, Puerto Rico\nLucas Romero|LHP||Port St. Lucie, FL\nHunter Anderson|||Howey in the Hills, FL\nJoshua Brannen|INF|Fr|Elmore County, AL\nJacob Loock|RHP||Williston, FL\nBrett Sturm|INF||Flowery Branch, GA\nJames Lindsay|LHP||Phenix City, AL\nGriffin Thomas|INF|Fr|Folkston, GA\nCarson Carswell|INF/RHP|Fr|Phenix City, AL\nPeyton Ferguson|INF|Fr|Loganville, GA\nJoan Rosquete|OF||Orlando, FL\nJonathan Bay|INF|Fr|St. Augustine, FL\nTyson Hobby|INF/OF|Fr|Moultrie, GA\nTripp White|LHP|2nd|Oglethorpe, GA\nConner Barton|OF/LHP||Cottondale, FL\nRyland Black-Long|RHP||Ringgold, GA\nEli Ossick|C|So|Carlton, GA\nEthan Phipps|RHP||Opelika, AL\nNoah Popiel|OF||Thomasville, GA\nJayden Bryant|OF||Kennesaw, GA\nEan Weldon|C/3B/OF||Tifton, GA\nLuke Russ|OF||Douglas, GA\nNoah Doolittle|RHP||Locust Grove, GA\nGriffin Morris|C||Girard, GA\nJoel Nsah|OF||McDonough, GA\nMichael Fallon|C/1B||Woodstock, GA\nMarquez Wilson|INF|Fr|Macon, GA\nDeclan Dunleavy|OF||Fleming Island, FL\nAlex Bellamy|OF|Fr|Chipley, FL\nRyan Cook|RHP|Fr|Henry County, GA\nBrody Eisenhuth|C/UTIL||St. Augustine, FL\nQuinn Carter|OF||Stone Mountain, GA\nChristian Laliberte|1B/DH||Fort Worth, TX\nJames Wathen|INF/OF|Fr|Lafayette, GA\nRussell Malcolm|||\nWilliam Walker|||\nBrendon Ward|||\nBryson Winford|||",
+  "roster": "Anthony Grant|OF||Quincy, FL\nMatthew Phillips|INF|Fr|Seale, AL\nKiff Parrish|OF||Thomasville, GA\nJadyn Mattie|INF|Fr|Dawsonville, GA\nCaden Nelson|OF|Fr|Warner Robins, GA\nLuke Linn|C||Orlando, FL\nLuis Muniz|C/UTIL||Guanica, Puerto Rico\nLucas Romero|LHP||Port St. Lucie, FL\nJoshua Brannen|INF|Fr|Elmore County, AL\nJacob Loock|RHP||Williston, FL\nBrett Sturm|INF||Flowery Branch, GA\nJames Lindsay|LHP||Phenix City, AL\nGriffin Thomas|INF|Fr|Folkston, GA\nCarson Carswell|INF/RHP|Fr|Phenix City, AL\nPeyton Ferguson|INF|Fr|Loganville, GA\nJoan Rosquete|OF||Orlando, FL\nJonathan Bay|INF|Fr|St. Augustine, FL\nTyson Hobby|INF/OF|Fr|Moultrie, GA\nTripp White|LHP|2nd|Oglethorpe, GA\nConner Barton|OF/LHP||Cottondale, FL\nRyland Black-Long|RHP||Ringgold, GA\nEli Ossick|C|So|Carlton, GA\nEthan Phipps|RHP||Opelika, AL\nNoah Popiel|OF||Thomasville, GA\nJayden Bryant|OF||Kennesaw, GA\nEan Weldon|C/3B/OF||Tifton, GA\nLuke Russ|OF||Douglas, GA\nNoah Doolittle|RHP||Locust Grove, GA\nGriffin Morris|C||Girard, GA\nJoel Nsah|OF||McDonough, GA\nMichael Fallon|C/1B||Woodstock, GA\nMarquez Wilson|INF|Fr|Macon, GA\nDeclan Dunleavy|OF||Fleming Island, FL\nAlex Bellamy|OF|Fr|Chipley, FL\nRyan Cook|RHP|Fr|Henry County, GA\nBrody Eisenhuth|C/UTIL||St. Augustine, FL\nQuinn Carter|OF||Stone Mountain, GA\nChristian Laliberte|1B/DH||Fort Worth, TX\nJames Wathen|INF/OF|Fr|Lafayette, GA",
   "season": "2027",
   "coaches": [
    [
@@ -45981,7 +45989,7 @@
   "checked": "2026-11-24",
   "rosterUrl": "https://www.gospires.com/sports/baseball/roster",
   "coachUrl": "https://www.gospires.com/sports/baseball/coaches",
-  "roster": "Brady Heinen|OF | R/R|So|Topeka, KS\nJohn Caime|OF | R/R|Sr|Kansas City, MO\nAiden Roberts|OF | R/R|Fr|Topeka, KS\nAJ Vernon|OF/MIF | R/R|Fr|Bryant, AR\nLucas Barta|2B | R/R|Jr|Overland Park, KS\nKeylan Overton|OF | R/R|So|Kansas City, KS\nColin Pitzer|1B/OF | L/R|Sr|Omaha, NE\nHunter Palmer|IF | R/R|Fr|Grower, MO\nPierce Gray|RHP/IF | R/R|Fr|Leavenworth, KS\nHolden Fields|LHP | L/L|Sr|Olathe, KS\nAbdullah Harris|MIF | R/R|So|Junction City, KS\nCooper Stein|LHP/OF | L/L|So|Lenexa, KS\nKyle Oakley|1B/OF | L/R|Fr|Parkville, MO\nJoseph Dunbar|LHP | L/L|So|Chicago, IL\nJosh Hudson|C | R/R|Gr|Kansas City, MO\nIan Maldonado|UTIL | R/R|Jr|Phoenix, AZ\nSaul Vazquez-Alvarado|UTIL | R/R|Jr|Abilene, TX\nNicholas Hotujac|RHP/OF | R/R|So|Tonganoxie, KS\nAaron Salazar|OF | R/R|Jr|Marietta, GA\nJaxon Sloan|3B/RHP | R/R|Jr|Raymore, MO\nHayden Roop|RHP | R/R|Sr|Grand Prairie, TX\nJohn Belizaire|RHP | R/R|Jr|Santo Domingo, Dominican Republic\nLawrence Westbrook Jr.|LHP | L/L|Jr|Vacaville, CA\nDalton Smith|RHP | R/R|So|Topeka, KS\nKenneth Cain|LHP/1B/OF | L/L|Fr|Wesley Chapel, FL\nJohnny Campbell|RHP | R/R|Sr|Leavenworth, KS\nDaxton Macias|C | R/R|Jr|Providence Village, TX\nNikolis Rueda|RHP | R/R|So|Miami, FL\nTim Wood|OF | L/L|Jr|Olathe, KS\nSpencer Baehman|IF | R/R|So|Columbia, MO\nBryce Miller|LHP | L/L|Sr|Olathe, KS\nTannen Buss|C | R/R|Sr|Olathe, KS\nJake Ross|OF | L/L|So|Grand Prairie, TX\nJordan Jardneaux|C | R/R|Fr|Sulphur, LA\nChris Reno|LHP | L/L|Fr|Kansas City, KS",
+  "roster": "Brady Heinen|OF | R/R|So\nJohn Caime|OF | R/R|Sr\nAiden Roberts|OF | R/R|Fr\nAJ Vernon|OF/MIF | R/R|Fr\nLucas Barta|2B | R/R|Jr\nKeylan Overton|OF | R/R|So\nColin Pitzer|1B/OF | L/R|Sr\nHunter Palmer|IF | R/R|Fr\nPierce Gray|RHP/IF | R/R|Fr\nHolden Fields|LHP | L/L|Sr\nAbdullah Harris|MIF | R/R|So\nCooper Stein|LHP/OF | L/L|So\nKyle Oakley|1B/OF | L/R|Fr\nJoseph Dunbar|LHP | L/L|So\nJosh Hudson|C | R/R|Gr\nIan Maldonado|UTIL | R/R|Jr\nSaul Vazquez-Alvarado|UTIL | R/R|Jr\nNicholas Hotujac|RHP/OF | R/R|So\nAaron Salazar|OF | R/R|Jr\nJaxon Sloan|3B/RHP | R/R|Jr\nHayden Roop|RHP | R/R|Sr\nJohn Belizaire|RHP | R/R|Jr\nLawrence Westbrook Jr.|LHP | L/L|Jr\nDalton Smith|RHP | R/R|So\nKenneth Cain|LHP/1B/OF | L/L|Fr\nJohnny Campbell|RHP | R/R|Sr\nDaxton Macias|C | R/R|Jr\nNikolis Rueda|RHP | R/R|So\nTim Wood|OF | L/L|Jr\nSpencer Baehman|IF | R/R|So\nBryce Miller|LHP | L/L|Sr\nTannen Buss|C | R/R|Sr\nJake Ross|OF | L/L|So\nJordan Jardneaux|C | R/R|Fr\nChris Reno|LHP | L/L|Fr",
   "season": "2027",
   "coaches": [
    [
@@ -47219,7 +47227,7 @@
   "checked": "2026-11-24",
   "rosterUrl": "https://seminolestateraiders.com/sports/baseball/roster",
   "coachUrl": "https://seminolestateraiders.com/sports/baseball/coaches",
-  "roster": "Chase Anello||Fr|Wesley Chapel, FL\nCory Banasiak||Fr|Fort Myers, FL\nEthan Barclay||Fr|Wesley Chapel, FL\nAdler Cervio||Fr|Fort Myers, FL\nBrody Challis|||Oviedo, FL\nTristan Closson||Fr|Jacksonville, FL\nJace Dardar||Fr|Dacula, GA\nErick Del Carmen||Fr|Santo Domingo, DR\nLuke Doman||Fr|Everett, WA\nEnzo Ercole||So|Curitiba, PR, Brazil\nJaden Garcia||So|Oviedo, FL\nJonathan Guillen||Fr|Kissimmee, FL\nJohn-Michael Howell||Fr|Oviedo, FL\nAndrew Jamgotchian||So|Montreal, QC, Canada\nJoseph Kraus|||Sanford, FL\nDominic Leoni||Fr|Viera, FL\nConnor McAfee||So|Apopka, FL\nAngel Mendoza||So|Santo Domingo, DR\nGavin Meyer||So|Lansing, IL\nJaiden Palmer||Fr|Deland, FL\nJonathan Paniagua||Fr|Miami, FL\nGabriel Parilli||Fr|Weston, FL\nHansel Ramirez||Fr|Miami, FL\nMason Resmondo||Fr|Winter Haven, FL\nRandall Riley III||Fr|Venice, FL\nBlake Sundberg||Fr|Coconut Creek, FL\nSteele Thalleen||Fr|Land O' Lakes, FL\nCJ Woolcock||Fr|Lilburn, GA",
+  "roster": "Chase Anello||Fr|Wesley Chapel, FL\nCory Banasiak||Fr|Fort Myers, FL\nEthan Barclay||Fr|Wesley Chapel, FL\nAdler Cervio||Fr|Fort Myers, FL\nTristan Closson||Fr|Jacksonville, FL\nJace Dardar||Fr|Dacula, GA\nErick Del Carmen||Fr|Santo Domingo, DR\nLuke Doman||Fr|Everett, WA\nEnzo Ercole||So|Curitiba, PR, Brazil\nJaden Garcia||So|Oviedo, FL\nJonathan Guillen||Fr|Kissimmee, FL\nJohn-Michael Howell||Fr|Oviedo, FL\nAndrew Jamgotchian||So|Montreal, QC, Canada\nDominic Leoni||Fr|Viera, FL\nConnor McAfee||So|Apopka, FL\nAngel Mendoza||So|Santo Domingo, DR\nGavin Meyer||So|Lansing, IL\nJaiden Palmer||Fr|Deland, FL\nJonathan Paniagua||Fr|Miami, FL\nGabriel Parilli||Fr|Weston, FL\nHansel Ramirez||Fr|Miami, FL\nMason Resmondo||Fr|Winter Haven, FL\nRandall Riley III||Fr|Venice, FL\nBlake Sundberg||Fr|Coconut Creek, FL\nSteele Thalleen||Fr|Land O' Lakes, FL\nCJ Woolcock||Fr|Lilburn, GA",
   "season": "2027",
   "camps": [
    {
@@ -48087,7 +48095,7 @@
   "checked": "2026-11-24",
   "rosterUrl": "https://navarrobulldogs.com/sports/baseball/roster",
   "coachUrl": "https://navarrobulldogs.com/sports/baseball/coaches",
-  "roster": "Brock DeYoung|B/T:||\nBrayden Mulkey|B/T:||\nJarett Boswell|B/T:||\nSteven Ramos|B/T:||\nSpencer Cox|B/T:||\nKyler Crites|B/T:||\nRock Duer|B/T:||\nBrayden McCormick|B/T:||\nCooper Markle|B/T:||\nGrant Harlan|B/T:||\nAJ Atkinson|B/T:||\nSpencer Coon|B/T:||\nLucius Sokolovic|B/T:||\nRoman Cariaga|B/T:||\nAlex Caddell|B/T:||\nGriffin Lyczkowski|B/T:||\nRobert Hamman|B/T:||\nTommy Mulkern|B/T:||\nBraxton Heffernan|B/T:||\nHagen Tijerina|B/T:||\nBranden West|B/T:||\nHayden Swenson|B/T:||\nJohn Morrow|B/T:||\nBrody Kahle|B/T:||\nAndrew Sanchez|B/T:||\nKannon Ritchie|B/T:||\nTyler Sessions|B/T:||\nKrayton Ritchie|B/T:||\nTyson Brooks|B/T:||\nBrady Boozer|B/T:||\nMatthew Williams|B/T:||\nAdrian Baston|B/T:||\nGrady Scarborough|||\nLucas Ponce|B/T:||\nEthan Minjarez|B/T:||\nCarter Norton|B/T:||",
+  "roster": "Brock DeYoung|B/T:||\nBrayden Mulkey|B/T:||\nJarett Boswell|B/T:||\nSteven Ramos|B/T:||\nSpencer Cox|B/T:||\nKyler Crites|B/T:||\nRock Duer|B/T:||\nBrayden McCormick|B/T:||\nCooper Markle|B/T:||\nGrant Harlan|B/T:||\nAJ Atkinson|B/T:||\nSpencer Coon|B/T:||\nLucius Sokolovic|B/T:||\nRoman Cariaga|B/T:||\nAlex Caddell|B/T:||\nGriffin Lyczkowski|B/T:||\nRobert Hamman|B/T:||\nTommy Mulkern|B/T:||\nBraxton Heffernan|B/T:||\nHagen Tijerina|B/T:||\nBranden West|B/T:||\nHayden Swenson|B/T:||\nJohn Morrow|B/T:||\nBrody Kahle|B/T:||\nAndrew Sanchez|B/T:||\nKannon Ritchie|B/T:||\nTyler Sessions|B/T:||\nKrayton Ritchie|B/T:||\nTyson Brooks|B/T:||\nBrady Boozer|B/T:||\nMatthew Williams|B/T:||\nAdrian Baston|B/T:||\nLucas Ponce|B/T:||\nEthan Minjarez|B/T:||\nCarter Norton|B/T:||",
   "season": "2025",
   "coaches": [
    [
@@ -48334,7 +48342,7 @@
   "checked": "2026-11-24",
   "rosterUrl": "https://citycollegeofchicagoathletics.com/sports/baseball/roster",
   "coachUrl": "https://citycollegeofchicagoathletics.com/sports/baseball/coaches",
-  "roster": "Adrian Arteaga|||\nFavian Barcena|||\nAlejandro Barrera|||\nSemaj Beecham|||\nChika Boghean|||\nAdriel Castro|||\nOscar De La Torre|||\nDaquan Dennis|||\nJoseph Diaz|||\nSebastian Diaz|||\nJo'mari Dixon|||\nTerrence Giles|||\nIsaac Guevara|||\nLuis Haz Gil|||\nAngel Hernandez|||\nSteve Martinez|||\nRichard Motycka|||\nAngel Najera|||\nOswaldo Patino-Gonzalez|||\nIsaiah Patterson|||\nTristan Phipps|||\nAdrian Ramirez|||\nHugo Ramirez|||\nIsrael Roa|||\nJarius Simmons-Watson|||\nJayden Vega|||\nOsiah Vega|||\nNoah Walls|||\nDevin Whitaker|||\nSamuel Williams|||\nMatthew Zebrauskas|||",
+  "roster": "",
   "season": "",
   "camps": [],
   "enroll": 1661,
@@ -48554,7 +48562,8 @@
   },
   "flags": [
    "The roster page couldn't be reached today; showing the last good copy."
-  ]
+  ],
+  "roster": ""
  },
  {
   "id": "collegeofdupage",

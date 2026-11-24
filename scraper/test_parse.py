@@ -1,6 +1,6 @@
 """Parser checks against small pages shaped like real Sidearm roster/coaches/RSS markup.
 Run: python -m pytest -q   (or python test_parse.py)"""
-from scrape import camp_date, parse_sidearm_roster, parse_sidearm_coaches, parse_rss_camps, norm_year, split_hometown
+from scrape import clean_roster, camp_date, parse_sidearm_roster, parse_sidearm_coaches, parse_rss_camps, norm_year, split_hometown
 
 ROSTER_TABLE = """
 <h2>2026 Baseball Roster</h2>
@@ -69,6 +69,12 @@ def test_person_cards_skip_staff():
            card("Elizabeth Allred Sports Dietitian", [], "")
     _, rows = parse_sidearm_roster(html)
     assert rows == ["Sam York|INF|Jr|El Dorado, AR"], rows
+
+
+
+def test_clean_roster():
+    kept = "Sam York|INF|Jr|Hometown El Dorado, Ark.\nMark Wasikowski|||\nLindsey Bingham Academic Advisor /Baseball Phone 541|||\nJo Lee||So|Ada, OK"
+    assert clean_roster(kept) == "Sam York|INF|Jr|El Dorado, AR\nJo Lee||So|Ada, OK"
 
 
 if __name__ == "__main__":
