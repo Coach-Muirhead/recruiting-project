@@ -56,15 +56,17 @@ def get(url, **kw):
 
 def wget(url, params):
     """Wikipedia/Wikidata request: one at a time, honours 429 Retry-After, up to 5 tries."""
-    params = {**params, "maxlag": 5}
-    for attempt in range(5):
-        r = get(url, params=params, timeout=40)
-        if r is not None and r.status_code == 200 and "maxlag" not in r.text[:300]:
+    for attempt in range(6):
+        q = {**params, "maxlag": 5} if attempt < 4 else params  # busy servers: ask politely first, then plainly
+        r = get(url, params=q, timeout=40)
+        if r is not None and r.status_code == 200 and '"error"' not in r.text[:300]:
             time.sleep(0.5)
             return r
+        if r is not None and r.status_code == 200:
+            log(f"  {urlparse(url).netloc} said: {r.text[:160]}")
         wait = int(r.headers.get("Retry-After", "0") or 0) if r is not None else 0
         time.sleep(max(wait, 5 * (attempt + 1)))
-    return r
+    return None
 
 
 def norm(s: str) -> str:
@@ -283,14 +285,24 @@ def home_athletics_link(school_url: str) -> str | None:
     HOME_DIAG[school_url] = f"home:{r.status_code if r is not None else 0}:{len(r.text) if r is not None else 0}:links={len(re.findall('<a ', r.text)) if r is not None else 0}"
     if r is None or r.status_code != 200:
         return None
-    best = None
+    school = domain(r.url).split(".")[-2] if "." in domain(r.url) else domain(r.url)
+    outside, best = [], None
     for href, text in re.findall(r'<a[^>]+href="([^"#]+)"[^>]*>(.*?)</a>', r.text, re.S | re.I):
         t = re.sub(r"<[^>]+>|\s+", " ", text).strip().lower()
         u = urljoin(r.url, href)
-        if ("athletic" in t and len(t) < 40) or (t in ("sports", "go ") ) or re.search(r"prestosports\.com|sidearmsports\.com", u):
-            if domain(u) != domain(r.url):
-                return u  # an outside athletics site: the usual case
-            best = best or u
+        if re.search(r"\.(js|css|png|jpe?g|svg|gif|pdf|ico)(\?|$)", u, re.I) or not u.startswith("http"):
+            continue
+        if re.search(r"/(news|taxonomy|tag|tags|category|stories|blog|events?)/", urlparse(u).path, re.I):
+            continue
+        if not (("athletic" in t and len(t) < 40) or t in ("sports", "go") or ATHLETIC_HOSTS.search(u)):
+            continue
+        d = domain(u)
+        if d == domain(r.url) or d.endswith("." + domain(r.url)) or school in d.split(".")[:-1] and "athletic" not in d:
+            best = best or u  # a page on the school's own site
+        elif not re.search(r"facebook|twitter|x\.com|instagram|youtube|ncaa\.org|njcaa\.org|naia\.org|tiktok|linkedin", d):
+            outside.append(u)
+    if outside:
+        return outside[0]  # an outside athletics site: the usual case
     if best:  # an /athletics page on the school site: look there for the outside site
         r2 = get(best)
         if r2 is not None and r2.status_code == 200:
