@@ -407,8 +407,11 @@ def scrape_school(row: dict, prev: dict | None, key: str | None) -> dict:
         if c.get("enroll"):
             s["enroll"], s["enrollNote"] = c["enroll"], "undergraduates (College Scorecard)"
         # federal tuition lags a year or two: only fill a gap, never replace a rate read off the school's own page
-        if c.get("inS") and (not s.get("tuition") or s["tuition"].get("missing")):
-            s["tuition"] = {"yr": "most recent federal figure", "inS": c["inS"], "inNote": "tuition (College Scorecard; may lag a year)", "outS": c["outS"], "outNote": "tuition (College Scorecard)", "u": "https://collegescorecard.ed.gov/"}
+        t = s.get("tuition") or {}
+        federal = "collegescorecard" in t.get("u", "")
+        # a federal figure is refreshed (e.g. after a school is re-matched); a rate read off the school's own page is kept
+        if c.get("inS") and (not t or t.get("missing") or (federal and str(t.get("unitid", "")) != str(c["unitid"]))):
+            s["tuition"] = {"yr": "most recent federal figure", "inS": c["inS"], "inNote": "tuition (College Scorecard; may lag a year)", "outS": c["outS"], "outNote": "tuition (College Scorecard)", "u": "https://collegescorecard.ed.gov/", "unitid": c["unitid"]}
 
     s["flags"] = flags
     return s
