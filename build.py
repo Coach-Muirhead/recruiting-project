@@ -55,6 +55,7 @@ def summary(s: dict, today: str) -> dict:
     return {
         "id": s["id"], "name": s["name"], "short": s.get("short", ""), "city": s.get("city", ""), "div": s.get("div", ""), "conf": s.get("conf", ""),
         "lat": s.get("lat"), "lon": s.get("lon"), "enroll": s.get("enroll"), "season": s.get("season", ""), "checked": s.get("checked", ""),
+        "ls": 1 if s.get("listing") else 0,
         "n": n, "lv": sum(cnt[k][3] + cnt[k][4] for k in POS), "cnt": cnt, "hc": hc,
         "camp": {k: camps[0][k] for k in ("n", "d", "e") if k in camps[0]} if camps else None,
         "tuition": {k: t[k] for k in ("yr", "inS", "outS") if t.get(k)},

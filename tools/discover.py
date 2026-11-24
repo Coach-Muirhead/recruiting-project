@@ -41,6 +41,8 @@ WIKI_PAGES = {"d1": "List_of_NCAA_Division_I_baseball_programs", "d2": "List_of_
               "njcaa3": "List_of_NJCAA_Division_III_schools", "nwac": "Northwest_Athletic_Conference"}
 STATES = {"Alabama": "AL", "Alaska": "AK", "Arizona": "AZ", "Arkansas": "AR", "California": "CA", "Colorado": "CO", "Connecticut": "CT", "Delaware": "DE", "District of Columbia": "DC", "Florida": "FL", "Georgia": "GA", "Hawaii": "HI", "Idaho": "ID", "Illinois": "IL", "Indiana": "IN", "Iowa": "IA", "Kansas": "KS", "Kentucky": "KY", "Louisiana": "LA", "Maine": "ME", "Maryland": "MD", "Massachusetts": "MA", "Michigan": "MI", "Minnesota": "MN", "Mississippi": "MS", "Missouri": "MO", "Montana": "MT", "Nebraska": "NE", "Nevada": "NV", "New Hampshire": "NH", "New Jersey": "NJ", "New Mexico": "NM", "New York": "NY", "North Carolina": "NC", "North Dakota": "ND", "Ohio": "OH", "Oklahoma": "OK", "Oregon": "OR", "Pennsylvania": "PA", "Rhode Island": "RI", "South Carolina": "SC", "South Dakota": "SD", "Tennessee": "TN", "Texas": "TX", "Utah": "UT", "Vermont": "VT", "Virginia": "VA", "Washington": "WA", "West Virginia": "WV", "Wisconsin": "WI", "Wyoming": "WY", "Puerto Rico": "PR"}
 SEASONS = ["2026-27", "2025-26"]
+EADA_CLASS = {"d1": r"NCAA Division I(-|\s+without)", "d2": r"NCAA Division II\s", "d3": r"NCAA Division III", "naia": r"NAIA", "njcaa1": r"NJCAA Division I\s*$",
+              "njcaa2": r"NJCAA Division II\s*$", "njcaa3": r"NJCAA Division III", "cccaa": r"CCCAA", "nwac": r"NWAC"}
 
 
 def log(*a):
@@ -506,6 +508,25 @@ def main():
             p["city"] = p.get("city") or c.get("school.city") or ""
             p["state"] = p.get("state") or c.get("school.state") or ""
     log(f"scorecard matched {sum(1 for p in programs if p.get('unitid'))} of {len(programs)}")
+
+    # Federal athletics reports (EADA) confirm which schools field men's baseball, and add programs no list had
+    eada_file = ROOT / "data" / "eada_baseball.json"
+    eada = json.loads(eada_file.read_text()) if eada_file.exists() else {}
+    have = {str(p["unitid"]) for p in programs if p.get("unitid")}
+    for src in a.levels.split(","):
+        extra = [u for u, e in eada.items() if re.match(EADA_CLASS[src], e.get("classification") or "") and u not in have and u in by_id]
+        if a.limit:
+            extra = extra[: a.limit]
+        for u in extra:
+            c = by_id[u]
+            programs.append({"full": c["school.name"], "short": c["school.name"], "nickname": "", "city": c.get("school.city") or "", "state": c.get("school.state") or "",
+                             "conf": "", "div": LEVELS[src], "unitid": c["id"], "sc_name": c["school.name"], "lat": c.get("location.lat"), "lon": c.get("location.lon"),
+                             "enroll": c.get("latest.student.size"), "school_url": c.get("school.school_url") or "", "source": "federal athletics report"})
+            have.add(u)
+        log(f"list {src}: {len(extra)} more programs from the federal athletics report")
+    for p in programs:
+        p["baseball"] = "federal report" if str(p.get("unitid") or "") in eada else ("baseball list" if p["div"] in ("D1", "D2") and not p.get("source") else "")
+    log(f"confirmed baseball: {sum(1 for p in programs if p['baseball'])} of {len(programs)}")
     counter = {"n": 0}
 
     def step(p):
@@ -518,7 +539,7 @@ def main():
     with ThreadPoolExecutor(a.workers) as ex:
         done = list(ex.map(step, programs))
 
-    cols = ["div", "conf", "short", "nickname", "full", "city", "state", "unitid", "sc_name", "lat", "lon", "enroll", "school_url", "wiki_site", "site_source", "athletics_base", "platform", "roster_path", "coaches_path", "probe", "home_link", "home_diag"]
+    cols = ["div", "conf", "short", "nickname", "full", "city", "state", "unitid", "sc_name", "lat", "lon", "enroll", "school_url", "wiki_site", "site_source", "athletics_base", "platform", "roster_path", "coaches_path", "probe", "home_link", "home_diag", "baseball", "source"]
     part = ROOT / "data" / "discovered" / f"{a.levels.replace(',', '+')}.csv"
     part.parent.mkdir(parents=True, exist_ok=True)
     with part.open("w", newline="") as f:
@@ -544,7 +565,7 @@ def merge():
         w = csv.DictWriter(f, fieldnames=cols, restval=""); w.writeheader(); w.writerows(done)
     existing = [r for r in csv.DictReader(SCHOOLS.open()) if r["id"] in HAND_ENTERED]  # rebuilt from scratch each merge
     fields = list(existing[0].keys())
-    for col in ("roster_path", "coaches_path", "scorecard_name"):
+    for col in ("roster_path", "coaches_path", "scorecard_name", "note"):
         if col not in fields:
             fields.append(col)
     have_ids = {r["id"] for r in existing}
@@ -552,6 +573,8 @@ def merge():
     have_base = {domain(r["athletics_base"]) for r in existing}
     fix = {r["athletics_domain"]: r for r in csv.DictReader((ROOT / "tools" / "overrides.csv").open())} if (ROOT / "tools" / "overrides.csv").exists() else {}
     added = 0
+    READY = ("sidearm", "presto", "table")
+    done.sort(key=lambda p: p["platform"] not in READY)  # readable programs claim their sites first, directory entries after
     for p in done:
         o = fix.get(domain(p.get("athletics_base") or ""))
         if o:  # hand corrections that survive every rebuild
@@ -560,9 +583,20 @@ def merge():
                 p["lat"], p["lon"] = o["lat"], o["lon"]
             if o["city"]:
                 p["city"], p["state"] = [x.strip() for x in o["city"].rsplit(",", 1)]
-        if p["platform"] not in ("sidearm", "presto", "table") or p.get("lat") in (None, ""):
+        if p.get("lat") in (None, ""):
             continue
-        if (p.get("unitid") and str(p["unitid"]) in have_unit) or domain(p["athletics_base"]) in have_base:
+        if p["platform"] in READY:
+            if (p.get("unitid") and str(p["unitid"]) in have_unit) or domain(p["athletics_base"]) in have_base:
+                continue
+            note = ""
+        elif p.get("baseball") and p.get("unitid") and str(p["unitid"]) not in have_unit:
+            # confirmed baseball program we can't read: a directory entry with a link to the school's own site
+            site = p["athletics_base"] if p["platform"] == "blocked" else (p.get("home_link") or p.get("school_url") or p.get("athletics_base") or "")
+            site = site if not site or "//" in site else "https://" + site
+            note = ("This program's athletics website blocks automated visitors, so its roster, coaches and camps can't be shown here."
+                    if p["platform"] == "blocked" else "We couldn't find this program's roster online in a format we can read.")
+            p = {**p, "platform": "listing", "athletics_base": site, "roster_path": "", "coaches_path": ""}
+        else:
             continue
         p["short"] = re.sub(r"^(alternately|also|or|formerly)\s+", "", p["short"] or "", flags=re.I).strip() or p["full"]
         i = slug(p["short"])
@@ -573,7 +607,7 @@ def merge():
         have_ids.add(i); have_base.add(domain(p["athletics_base"])); have_unit.add(str(p.get("unitid") or ""))
         existing.append({"id": i, "name": p.get("sc_name") or p["full"], "short": p["short"], "city": ", ".join(x for x in (p["city"], p["state"]) if x), "div": p["div"], "conf": p["conf"],
                          "lat": round(float(p["lat"]), 3), "lon": round(float(p["lon"]), 3), "platform": p["platform"], "athletics_base": p["athletics_base"],
-                         "unitid": p.get("unitid") or "", "roster_path": p["roster_path"], "coaches_path": p.get("coaches_path", ""), "scorecard_name": p.get("scorecard_name", "")})
+                         "unitid": p.get("unitid") or "", "roster_path": p["roster_path"], "coaches_path": p.get("coaches_path", ""), "scorecard_name": p.get("scorecard_name", ""), "note": note})
         added += 1
     with SCHOOLS.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore", lineterminator="\n"); w.writeheader(); w.writerows(existing)
@@ -582,6 +616,10 @@ def merge():
         "by_level": Counter(p["div"] for p in done),
         "ready": Counter(p["div"] for p in done if p["platform"] in ("sidearm", "presto", "table")),
         "by_platform": Counter(p["platform"] or "not found" for p in done),
+        "confirmed_baseball": Counter(p["div"] for p in done if p.get("baseball") or p["platform"] in READY),
+        "on_page": Counter(r["div"] for r in existing),
+        "on_page_with_rosters": Counter(r["div"] for r in existing if r.get("platform") != "listing"),
+        "directory_only": Counter(r["div"] for r in existing if r.get("platform") == "listing"),
         "blocked": Counter(p["div"] for p in done if p["platform"] == "blocked"),
         "not_found": Counter(p["div"] for p in done if not p["platform"]),
         "no_scorecard_match": sum(1 for p in done if not p.get("unitid")),

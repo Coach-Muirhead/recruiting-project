@@ -364,6 +364,11 @@ def scrape_school(row: dict, prev: dict | None, key: str | None) -> dict:
         coach_url = base + row["coaches_path"] if row.get("coaches_path") else ""
         rss_url = ""
         parse_roster = parse_sidearm_roster
+    elif row["platform"] == "listing":  # confirmed program whose roster we can't read: directory entry only
+        s.update({"roster": "", "coaches": [], "camps": [], "rosterUrl": base, "coachUrl": base, "listing": row.get("note") or "Roster not available here."})
+        s["flags"] = [s["listing"] + " Use the link to see them on the school's own site."]
+        REPORT.setdefault(row["id"], {})["roster"] = "directory entry (not scraped)"
+        return s
     else:
         log(f"  {row['id']}: unsupported platform {row['platform']}")
         s.setdefault("flags", []).append("This site's layout isn't supported by the scraper yet.")

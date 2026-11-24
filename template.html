@@ -107,6 +107,7 @@ select{font:16px Barlow;padding:10px;border-radius:8px;border:1px solid var(--li
 @media(max-width:820px){.grid{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:600px){.depth{border-spacing:2px}.depth td{height:50px}.depth td b{font-size:18px}.dots{display:none}.money{grid-template-columns:1fr}.list .hide{display:none}.result{grid-template-columns:4.5em minmax(0,1fr)}}
 @media(prefers-reduced-motion:no-preference){.panel:not([hidden]) .card{animation:up .35s ease both}@keyframes up{from{opacity:0;transform:translateY(6px)}}}
+.btn{display:inline-block;padding:.6rem 1rem;border-radius:8px;background:var(--grass);color:var(--chalk)!important;text-decoration:none;font-weight:600}
 </style>
 </head>
 <body>
@@ -221,9 +222,10 @@ async function look(id){
  const camp=c=>{const d=new Date(c.d+'T12:00:00');return `<div class="camp ${(c.e||c.d)<TODAY?'past':''}"><time datetime="${c.d}">${d.toLocaleDateString('en-US',{month:'short'})}<span>${d.getDate()}</span>${d.getFullYear()}</time><div><b>${esc(c.n)}</b>${c.e?` <span class="meta">to ${fmtD(c.e)}</span>`:''}<br><span class="meta">${esc(c.info)}</span><br><a href="${c.u}">Registration page</a></div></div>`};
  const t=s.tuition||{yr:'not published',u:'https://collegescorecard.ed.gov/',missing:/academy|air force|army|navy|coast guard/i.test(s.name)?'Service academies charge no tuition; cadets and midshipmen serve after graduating.':'No tuition figure found for this school yet. Check the school\'s cost-of-attendance page.'};
  document.getElementById('p-look').innerHTML=`
- <div class="top"><div><h2>${esc(s.name)} ${favBtn(s.id)}</h2><div class="chips"><span class="chip">${({D1:'NCAA Division I',D2:'NCAA Division II',D3:'NCAA Division III',NAIA:'NAIA',JUCO:'Junior college'})[s.div]||s.div}</span><span class="chip">${s.conf}</span><span class="chip">${s.city}</span>${s.enroll?`<span class="chip">${s.enroll.toLocaleString()} undergrads</span>`:''}</div></div><span class="meta">Checked ${fmtD(s.checked)} · <a href="${s.rosterUrl}">roster source</a></span></div>
- ${(s.flags||[]).map(f=>`<p class="flag">Heads up: ${esc(f)}</p>`).join('')}
+ <div class="top"><div><h2>${esc(s.name)} ${favBtn(s.id)}</h2><div class="chips"><span class="chip">${({D1:'NCAA Division I',D2:'NCAA Division II',D3:'NCAA Division III',NAIA:'NAIA',JUCO:'Junior college'})[s.div]||s.div}</span>${s.conf?`<span class="chip">${esc(s.conf)}</span>`:''}<span class="chip">${s.city}</span>${s.enroll?`<span class="chip">${s.enroll.toLocaleString()} undergrads</span>`:''}</div></div><span class="meta">Checked ${fmtD(s.checked)} · <a href="${s.rosterUrl}">${s.listing?'athletics site':'roster source'}</a></span></div>
+ ${(s.listing?[]:s.flags||[]).map(f=>`<p class="flag">Heads up: ${esc(f)}</p>`).join('')}
  <div class="grid">
+  ${s.listing?`<div class="card span"><h3>Roster, coaches and camps</h3><p class="sub">Confirmed baseball program (federal athletics report)</p><p>${esc(s.listing)} You can still see them on the school's own site.</p><p><a class="btn" href="${s.rosterUrl}" target="_blank" rel="noopener">Open the athletics website</a></p></div>`:`
   <div class="card"><h3>Depth chart by class</h3><p class="sub">${s.season} roster${n?`: ${n} players, ${lv} seniors or grads, ${yg} freshmen and sophomores`:''}</p>${depth(s)}
    <div class="legend"><span class="l">Seniors and grads (leaving)</span><span>Returning classes</span></div></div>
   <div class="card"><h3>Where the roster is from</h3><p class="sub">Players by home state</p>${geo(s)}</div>
@@ -231,6 +233,7 @@ async function look(id){
    <table class="list"><thead><tr><th>Coach</th><th class="hide">Title</th><th>Email</th></tr></thead><tbody>${s.coaches.map(([a,b,e])=>`<tr><td><b>${esc(a)}</b><br><span class="meta">${esc(b)}</span></td><td class="hide">${esc(b)}</td><td>${e?`<span style="overflow-wrap:anywhere">${esc(e)}</span><br><button class="copy" data-c="${esc(e)}">Copy</button>`:'<span class="none">Not listed</span>'}</td></tr>`).join('')}</tbody></table></div>
   <div class="card"><h3>Camps on campus</h3><p class="sub">${up.length?up.length+' upcoming':'No upcoming camps posted as of '+fmtD(TODAY)}</p>
    ${up.map(camp).join('')}${past.length?`<details${up.length?'':' open'}><summary>Most recent camps (${past.length})</summary>${past.map(camp).join('')}</details>`:'<p class="none">None found on the school site or Ryzer.</p>'}</div>
+  `}
   <div class="card span"><h3>Tuition, ${t.yr}</h3><p class="sub">Published sticker price before aid. <a href="${t.u}">Source</a></p>
    ${t.missing?`<p class="flag">${esc(t.missing)}</p>`:`<div class="money"><div><span class="meta">In-state</span><b>${t.inS}</b><span class="meta">${t.inNote}</span></div><div><span class="meta">Out of state</span><b>${t.outS||'–'}</b><span class="meta">${t.outS?t.outNote:'Not published on the page checked'}</span></div></div>`}
    <p class="note">${s.enroll?`Enrollment: ${s.enroll.toLocaleString()} ${s.enrollNote}.`:'Enrollment not loaded yet.'}</p></div>
@@ -256,7 +259,7 @@ function find(){
  const pool=SCHOOLS.filter(ok),all=pool.filter(usable).map(s=>({s,r:score(s,ps)})).filter(x=>x.r).sort((a,b)=>b.r.sc-a.r.sc),scored=all.slice(0,60),wait=pool.filter(s=>!usable(s)||!score(s,ps));
  const missing=ds.filter(d=>!SCHOOLS.some(s=>s.div===d)).map(d=>d==='JUCO'?'junior college':d==='NAIA'?'NAIA':'Division '+(d==='D2'?'II':d));
  out.innerHTML=(scored.length?scored.map(({s,r})=>`<div class="result"><div class="score ${r.sc>=70?'hot':''}"><b>${r.sc}</b><small>${r.sc>=70?'Strong opening':r.sc>=45?'Worth a look':'Crowded'}</small></div><div><button class="link" data-go="${s.id}">${esc(s.name)}</button>${favBtn(s.id,1)}<div class="meta">${s.div} · ${s.conf} · ${Math.round(miles(home[0],home[1],s.lat,s.lon))} miles · ${s.enroll?s.enroll.toLocaleString()+' undergrads · ':''}${s.season} roster</div><ul class="why">${r.why.map(w=>`<li>${w}</li>`).join('')}</ul></div></div>`).join(''):'<p class="none">No programs with a posted roster match these filters. Try a wider distance or more levels.</p>')
- +(wait.length?`<p class="note">Also matches your filters but can't be scored yet (roster not posted, or most players have no listed position): ${wait.slice(0,40).map(s=>`<button class="copy" data-go="${s.id}">${esc(s.short)}</button>`).join(' ')}${wait.length>40?` and ${wait.length-40} more`:''}</p>`:'')
+ +(wait.length?`<p class="note">Also matches your filters but can't be scored yet (roster not posted or not readable, or most players have no listed position): ${wait.slice(0,40).map(s=>`<button class="copy" data-go="${s.id}">${esc(s.short)}</button>`).join(' ')}${wait.length>40?` and ${wait.length-40} more`:''}</p>`:'')
  +(all.length>60?`<p class="note">Showing the top 60 of ${all.length} programs. Narrow the distance, level or size to see others.</p>`:'')
  +(missing.length?`<p class="note">No ${missing.join(', ')} programs are loaded yet.</p>`:'');
 }
@@ -295,7 +298,7 @@ tabs.forEach(b=>b.addEventListener('click',()=>show(b.dataset.p)));
 
 const q=document.getElementById('q'),menu=document.getElementById('menu');let idx=0,hits=[];
 const draw=()=>{const v=q.value.trim().toLowerCase();hits=SCHOOLS.filter(s=>!v||(s.name+' '+s.short+' '+s.city+' '+s.conf).toLowerCase().includes(v)).slice(0,12);idx=Math.min(idx,Math.max(0,hits.length-1));
- menu.innerHTML=hits.length?hits.map((s,i)=>`<button type="button" class="${i===idx?'on':''}" data-go="${s.id}"><span>${esc(s.name)}</span><small>${s.div} · ${s.city}</small></button>`).join(''):`<div style="padding:12px 16px" class="none">Not found. ${SCHOOLS.length.toLocaleString()} programs are loaded so far; try the school's short name or city.</div>`;menu.hidden=false};
+ menu.innerHTML=hits.length?hits.map((s,i)=>`<button type="button" class="${i===idx?'on':''}" data-go="${s.id}"><span>${esc(s.name)}</span><small>${s.div} · ${s.city}${s.ls?' · directory only':''}</small></button>`).join(''):`<div style="padding:12px 16px" class="none">Not found. ${SCHOOLS.length.toLocaleString()} programs are loaded so far; try the school's short name or city.</div>`;menu.hidden=false};
 const pick=id=>{current=id;const s=SCHOOLS.find(x=>x.id===id);q.value=s.name;menu.hidden=true;look(id);show('look');try{localStorage.setItem('rp-last',id)}catch(e){}};
 q.addEventListener('input',()=>{idx=0;draw()});q.addEventListener('focus',draw);
 q.addEventListener('keydown',e=>{if(menu.hidden)return;if(e.key==='ArrowDown'){idx=Math.min(idx+1,hits.length-1);draw();e.preventDefault()}else if(e.key==='ArrowUp'){idx=Math.max(idx-1,0);draw();e.preventDefault()}else if(e.key==='Enter'&&hits[idx]){pick(hits[idx].id);e.preventDefault()}else if(e.key==='Escape')menu.hidden=true});
