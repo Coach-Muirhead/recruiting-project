@@ -564,6 +564,7 @@ def merge():
             continue
         if (p.get("unitid") and str(p["unitid"]) in have_unit) or domain(p["athletics_base"]) in have_base:
             continue
+        p["short"] = re.sub(r"^(alternately|also|or|formerly)\s+", "", p["short"] or "", flags=re.I).strip() or p["full"]
         i = slug(p["short"])
         if i in have_ids:
             i = slug(p["short"] + p["state"])
