@@ -54,6 +54,21 @@ def test_camps_only():
 def test_normalisers():
     assert [norm_year(x) for x in ["FR", "Fy.", "R-So.", "GRD", "Fifth Year"]] == ["Fr", "Fr", "So", "Gr", "Gr"]
     assert split_hometown("Lansdale, Pa. / La Salle") == "Lansdale, PA"
+    assert split_hometown("Hometown Mission Viejo, Calif.") == "Mission Viejo, CA"
+    assert split_hometown("Shawnee, OK /") == "Shawnee, OK"
+    assert split_hometown("Charleston, W.Va.") == "Charleston, WV"
+    assert split_hometown("Daegu, South Korea") == "Daegu, South Korea"
+
+
+def test_person_cards_skip_staff():
+    card = lambda name, stats, home: f'''<div class="s-person-card"><span class="s-person-details__personal-single-line">{name}</span>
+      {"".join(f'<span class="s-person-details__bio-stats-item">{x}</span>' for x in stats)}
+      <span class="s-person-card__content__person__location-item">{home}</span></div>'''
+    html = card("Sam York", ["Position INF", "Academic Year Jr."], "Hometown El Dorado, Ark.") + \
+           card("John Dunn Associate Director of Equipment Services /Baseball Phone 292-1679", [], "") + \
+           card("Elizabeth Allred Sports Dietitian", [], "")
+    _, rows = parse_sidearm_roster(html)
+    assert rows == ["Sam York|INF|Jr|El Dorado, AR"], rows
 
 
 if __name__ == "__main__":

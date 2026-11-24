@@ -181,17 +181,17 @@ select{font:16px Barlow;padding:10px;border-radius:8px;border:1px solid var(--li
 {
 fetch('data/index.json',{cache:'no-cache'}).then(r=>r.json()).then(SCHOOLS=>{
 const TODAY=SCHOOLS.map(s=>s.checked).sort().pop();
-const POS=[['P','Pitchers'],['C','Catchers'],['INF','Infield'],['OF','Outfield'],['UTIL','Utility']];
+const POS=[['P','Pitchers'],['C','Catchers'],['INF','Infield'],['OF','Outfield'],['UTIL','Utility'],['NA','Position not listed']];
 const YRS=['Fr','So','Jr','Sr','Gr'],LEAVE=['Sr','Gr'];
 const SHARE={P:.45,C:.10,INF:.25,OF:.17};
 const ST={AL:[32.8,-86.8],AK:[61.4,-150],AZ:[34.2,-111.6],AR:[34.9,-92.4],CA:[37.2,-119.5],CO:[39,-105.5],CT:[41.6,-72.7],DE:[39,-75.5],DC:[38.9,-77],FL:[28.6,-82.4],GA:[32.7,-83.4],HI:[20.8,-156.3],ID:[44.4,-114.6],IL:[40,-89.2],IN:[39.9,-86.3],IA:[42,-93.5],KS:[38.5,-98.4],KY:[37.5,-85.3],LA:[31,-92],ME:[45.3,-69.2],MD:[39,-76.8],MA:[42.3,-71.8],MI:[44.3,-85.4],MN:[46.3,-94.3],MS:[32.7,-89.7],MO:[38.4,-92.5],MT:[47,-109.6],NE:[41.5,-99.8],NV:[39.3,-116.6],NH:[43.7,-71.6],NJ:[40.19,-74.67],NM:[34.4,-106.1],NY:[42.9,-75.5],NC:[35.5,-79.4],ND:[47.5,-100.5],OH:[40.3,-82.8],OK:[35.6,-97.5],OR:[43.9,-120.6],PA:[40.9,-77.8],RI:[41.7,-71.5],SC:[33.9,-80.9],SD:[44.4,-100.2],TN:[35.9,-86.4],TX:[31.5,-99.3],UT:[39.3,-111.7],VT:[44,-72.7],VA:[37.5,-78.8],WA:[47.4,-120.5],WV:[38.6,-80.6],WI:[44.6,-89.9],WY:[43,-107.5]};
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const pos=p=>{const t=p.split('/')[0].toUpperCase();return /HP$|^P$/.test(t)?'P':t==='C'?'C':t==='OF'?'OF':/^UT/.test(t)?'UTIL':'INF'};
+const pos=p=>{const t=p.split('/')[0].toUpperCase().replace(/[^A-Z0-9 -]/g,'').trim();return /HP\b|PITCH|^[SR]?P$|^(RIGHT|LEFT)[ -]?HAND/.test(t)?'P':(t==='C'||t.includes('CATCH'))?'C':(['CF','LF','RF'].includes(t)||t.startsWith('OF')||t.includes('OUTF'))?'OF':(/^UT/.test(t)||t==='DH')?'UTIL':(['MI','MIF','CIF','1B','2B','3B','SS','FIRST','SECOND','THIRD'].includes(t)||/^IN?F|INF|SHORT|BASE/.test(t))?'INF':'NA'};
 const yr=y=>{const t=y.replace(/^R-/,'').replace('.','').toLowerCase();return t.startsWith('fr')?'Fr':t.startsWith('so')?'So':t.startsWith('jr')?'Jr':t.startsWith('sr')?'Sr':'Gr'};
 const st=h=>{if(!h||!h.includes(','))return 'Not listed';const s=(h.split(',').pop()||'').trim().replace(/\./g,'').toUpperCase();return s==='ON'?'Ontario':s};
 const cur=+TODAY.slice(0,4)+(+TODAY.slice(5,7)>=8?1:0);
 const DETAIL={};
-function prep(s){s.flags=(s.flags||[]).filter(f=>!/roster not posted yet\. Seniors/.test(f));if(s.season&&+s.season<cur&&s.roster)s.flags.unshift(`${cur} roster not posted yet. The seniors and grads shown played their final season in spring ${s.season}.`);s.players=s.roster.trim()?s.roster.trim().split('\n').map(l=>{const[n,p,y,h]=l.split('|');return{n:n||'',raw:p,p:pos(p),two:p.includes('/'),y:yr(y),red:/^R-/.test(y),h,st:st(h)}}):[];return s}
+function prep(s){s.camps=s.camps||[];s.coaches=s.coaches||[];s.roster=s.roster||'';s.flags=(s.flags||[]).filter(f=>!/roster not posted yet\. Seniors/.test(f));if(s.season&&+s.season<cur&&s.roster)s.flags.unshift(`${cur} roster not posted yet. The seniors and grads shown played their final season in spring ${s.season}.`);s.players=s.roster.trim()?s.roster.trim().split('\n').map(l=>{const[n,p,y,h]=l.split('|');return{n:n||'',raw:p,p:pos(p),two:p.includes('/'),y:yr(y),red:/^R-/.test(y),h,st:st(h)}}):[];return s}
 const detail=id=>DETAIL[id]?Promise.resolve(DETAIL[id]):fetch('data/s/'+id+'.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>DETAIL[id]=prep(d));
 const sum=a=>a.reduce((x,y)=>x+y,0);
 const miles=(a,b,c,d)=>{const r=x=>x*Math.PI/180,R=3959,dl=r(c-a),dn=r(d-b),q=Math.sin(dl/2)**2+Math.cos(r(a))*Math.cos(r(c))*Math.sin(dn/2)**2;return 2*R*Math.asin(Math.sqrt(q))};
@@ -200,7 +200,7 @@ const fmtD=d=>new Date(d+'T12:00:00').toLocaleDateString('en-US',{month:'short',
 function depth(s){
  if(!s.players.length)return `<p class="none">No players listed for the ${s.season} season yet.</p>`;
  const head=`<thead><tr><th></th>${YRS.map(y=>`<th class="${LEAVE.includes(y)?'leaveh':''}">${y==='Gr'?'Grad':y}</th>`).join('')}<th>Total</th></tr></thead>`;
- const rows=POS.map(([k,l])=>{const at=s.players.filter(p=>p.p===k);if(!at.length&&k==='UTIL')return'';
+ const rows=POS.map(([k,l])=>{const at=s.players.filter(p=>p.p===k);if(!at.length&&(k==='UTIL'||k==='NA'))return'';
   const hand=k==='P'?` <span class="meta">${at.filter(p=>/^RHP/.test(p.raw)).length}R · ${at.filter(p=>/^LHP/.test(p.raw)).length}L</span>`:'';
   return `<tr><th class="rowh" scope="row">${l}${hand}</th>${YRS.map(y=>{const c=at.filter(p=>p.y===y);return `<td class="${LEAVE.includes(y)?'leave':''}" title="${esc(c.map(p=>p.n||p.h).join(', '))}"><b>${c.length||'–'}</b><div class="dots">${'<i></i>'.repeat(c.length)}</div></td>`}).join('')}<td class="tot">${at.length}</td></tr>`}).join('');
  return `<div class="scroll"><table class="depth">${head}<tbody>${rows}</tbody></table></div>`;
@@ -219,7 +219,7 @@ async function look(id){
  const n=s.players.length,lv=s.players.filter(p=>LEAVE.includes(p.y)).length,yg=s.players.filter(p=>['Fr','So'].includes(p.y)).length;
  const cs=s.camps.filter(c=>c.d);const up=cs.filter(c=>(c.e||c.d)>=TODAY),past=cs.filter(c=>(c.e||c.d)<TODAY).sort((a,b)=>b.d.localeCompare(a.d));
  const camp=c=>{const d=new Date(c.d+'T12:00:00');return `<div class="camp ${(c.e||c.d)<TODAY?'past':''}"><time datetime="${c.d}">${d.toLocaleDateString('en-US',{month:'short'})}<span>${d.getDate()}</span>${d.getFullYear()}</time><div><b>${esc(c.n)}</b>${c.e?` <span class="meta">to ${fmtD(c.e)}</span>`:''}<br><span class="meta">${esc(c.info)}</span><br><a href="${c.u}">Registration page</a></div></div>`};
- const t=s.tuition;
+ const t=s.tuition||{yr:'not published',u:'https://collegescorecard.ed.gov/',missing:/academy|air force|army|navy|coast guard/i.test(s.name)?'Service academies charge no tuition; cadets and midshipmen serve after graduating.':'No tuition figure found for this school yet. Check the school\'s cost-of-attendance page.'};
  document.getElementById('p-look').innerHTML=`
  <div class="top"><div><h2>${esc(s.name)} ${favBtn(s.id)}</h2><div class="chips"><span class="chip">${({D1:'NCAA Division I',D2:'NCAA Division II',D3:'NCAA Division III',NAIA:'NAIA',JUCO:'Junior college'})[s.div]||s.div}</span><span class="chip">${s.conf}</span><span class="chip">${s.city}</span>${s.enroll?`<span class="chip">${s.enroll.toLocaleString()} undergrads</span>`:''}</div></div><span class="meta">Checked ${fmtD(s.checked)} · <a href="${s.rosterUrl}">roster source</a></span></div>
  ${(s.flags||[]).map(f=>`<p class="flag">Heads up: ${esc(f)}</p>`).join('')}
@@ -241,6 +241,7 @@ function score(s,ps){
  const N=s.n;let best=null;
  for(const k of ps){const at=k==='INF'?s.cnt.INF.map((v,i)=>v+s.cnt.UTIL[i]):s.cnt[k],c=sum(at),l=at[3]+at[4],y=at[0]+at[1],need=Math.max(1,Math.round(N*SHARE[k]));
   const gap=Math.min(1,Math.max(0,(need-(c-l))/need)),lr=c?l/c:1,yr2=c?y/c:0,sc=Math.round(100*(.5*gap+.35*lr+.15*(1-yr2)));
+  if(!c&&N>=20)continue;  // a full roster with nobody at this spot usually groups positions differently (e.g. catchers listed as INF)
   const lab=POS.find(x=>x[0]===k)[1].toLowerCase();
   const r={k,sc,why:[`${l} of ${c} ${lab} are seniors or grads`,`${c-l} return against about ${need} a roster this size usually carries`,`${y} ${y===1?'freshman or sophomore':'freshmen and sophomores'} in the pipeline`]};
   if(!best||r.sc>best.sc)best=r}
@@ -251,10 +252,12 @@ function find(){
  const ok=s=>ds.includes(s.div)&&(size==='any'||(s.enroll&&size==='s'&&s.enroll<5000)||(size==='m'&&s.enroll>=5000&&s.enroll<=15000)||(size==='l'&&s.enroll>15000))&&miles(home[0],home[1],s.lat,s.lon)<=mx;
  const out=document.getElementById('results');
  if(!ps.length){out.innerHTML='<p class="none">Pick at least one position.</p>';return}
- const pool=SCHOOLS.filter(ok),scored=pool.filter(s=>s.n).map(s=>({s,r:score(s,ps)})).sort((a,b)=>b.r.sc-a.r.sc),wait=pool.filter(s=>!s.n);
+ const usable=s=>s.n&&sum((s.cnt.NA||[0]))/s.n<=.25;  // most players need a listed position to judge depth
+ const pool=SCHOOLS.filter(ok),all=pool.filter(usable).map(s=>({s,r:score(s,ps)})).filter(x=>x.r).sort((a,b)=>b.r.sc-a.r.sc),scored=all.slice(0,60),wait=pool.filter(s=>!usable(s)||!score(s,ps));
  const missing=ds.filter(d=>!SCHOOLS.some(s=>s.div===d)).map(d=>d==='JUCO'?'junior college':d==='NAIA'?'NAIA':'Division '+(d==='D2'?'II':d));
  out.innerHTML=(scored.length?scored.map(({s,r})=>`<div class="result"><div class="score ${r.sc>=70?'hot':''}"><b>${r.sc}</b><small>${r.sc>=70?'Strong opening':r.sc>=45?'Worth a look':'Crowded'}</small></div><div><button class="link" data-go="${s.id}">${esc(s.name)}</button>${favBtn(s.id,1)}<div class="meta">${s.div} · ${s.conf} · ${Math.round(miles(home[0],home[1],s.lat,s.lon))} miles · ${s.enroll?s.enroll.toLocaleString()+' undergrads · ':''}${s.season} roster</div><ul class="why">${r.why.map(w=>`<li>${w}</li>`).join('')}</ul></div></div>`).join(''):'<p class="none">No programs with a posted roster match these filters. Try a wider distance or more levels.</p>')
- +(wait.length?`<p class="note">Also matches your filters but can't be scored until its roster is posted: ${wait.slice(0,40).map(s=>`<button class="copy" data-go="${s.id}">${esc(s.short)}</button>`).join(' ')}${wait.length>40?` and ${wait.length-40} more`:''}</p>`:'')
+ +(wait.length?`<p class="note">Also matches your filters but can't be scored yet (roster not posted, or most players have no listed position): ${wait.slice(0,40).map(s=>`<button class="copy" data-go="${s.id}">${esc(s.short)}</button>`).join(' ')}${wait.length>40?` and ${wait.length-40} more`:''}</p>`:'')
+ +(all.length>60?`<p class="note">Showing the top 60 of ${all.length} programs. Narrow the distance, level or size to see others.</p>`:'')
  +(missing.length?`<p class="note">No ${missing.join(', ')} programs are loaded yet.</p>`:'');
 }
 

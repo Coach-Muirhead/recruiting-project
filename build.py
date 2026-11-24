@@ -13,18 +13,22 @@ from pathlib import Path
 
 root = Path(__file__).resolve().parent
 YRS = ["Fr", "So", "Jr", "Sr", "Gr"]
-POS = ["P", "C", "INF", "OF", "UTIL"]
+POS = ["P", "C", "INF", "OF", "UTIL", "NA"]
 
 
 def pos(p: str) -> str:  # same rules as the page
-    t = p.split("/")[0].upper()
-    if re.search(r"HP$", t) or t == "P":
+    t = re.sub(r"[^A-Z0-9 -]", "", p.split("/")[0].upper()).strip()
+    if re.search(r"HP\b|PITCH|^[SR]?P$|^(RIGHT|LEFT)[ -]?HAND", t):
         return "P"
-    if t in ("C", "OF"):
-        return t
-    if t.startswith("UT"):
+    if t == "C" or "CATCH" in t:
+        return "C"
+    if t in ("CF", "LF", "RF") or t.startswith("OF") or "OUTF" in t:
+        return "OF"
+    if t.startswith("UT") or t == "DH":
         return "UTIL"
-    return "INF"
+    if t in ("MI", "MIF", "CIF", "1B", "2B", "3B", "SS", "FIRST", "SECOND", "THIRD") or t.startswith(("IF", "INF")) or re.search("INF|SHORT|BASE", t):
+        return "INF"
+    return "NA"
 
 
 def yr(y: str) -> str:

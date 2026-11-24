@@ -116,18 +116,30 @@ def norm_year(y: str) -> str:
     return clean(y)
 
 
+AP_STATES = {"Ala": "AL", "Alaska": "AK", "Ariz": "AZ", "Ark": "AR", "Calif": "CA", "Cal": "CA", "Colo": "CO", "Conn": "CT", "Del": "DE", "D.C": "DC", "Fla": "FL",
+             "Ga": "GA", "Hawaii": "HI", "Idaho": "ID", "Ill": "IL", "Ind": "IN", "Iowa": "IA", "Kan": "KS", "Kans": "KS", "Ky": "KY", "La": "LA", "Maine": "ME",
+             "Md": "MD", "Mass": "MA", "Mich": "MI", "Minn": "MN", "Miss": "MS", "Mo": "MO", "Mont": "MT", "Neb": "NE", "Nebr": "NE", "Nev": "NV", "N.H": "NH",
+             "N.J": "NJ", "N.M": "NM", "N.Y": "NY", "N.C": "NC", "N.D": "ND", "Ohio": "OH", "Okla": "OK", "Ore": "OR", "Oreg": "OR", "Pa": "PA", "Penn": "PA",
+             "R.I": "RI", "S.C": "SC", "S.D": "SD", "Tenn": "TN", "Texas": "TX", "Tex": "TX", "Utah": "UT", "Vt": "VT", "Va": "VA", "Wash": "WA", "W.Va": "WV",
+             "W. Va": "WV", "Wis": "WI", "Wisc": "WI", "Wyo": "WY"}
+FULL_STATES = {"Alabama": "AL", "Arizona": "AZ", "Arkansas": "AR", "California": "CA", "Colorado": "CO", "Connecticut": "CT", "Delaware": "DE", "Florida": "FL",
+               "Georgia": "GA", "Illinois": "IL", "Indiana": "IN", "Kansas": "KS", "Kentucky": "KY", "Louisiana": "LA", "Maryland": "MD", "Massachusetts": "MA",
+               "Michigan": "MI", "Minnesota": "MN", "Mississippi": "MS", "Missouri": "MO", "Montana": "MT", "Nebraska": "NE", "Nevada": "NV", "New Hampshire": "NH",
+               "New Jersey": "NJ", "New Mexico": "NM", "New York": "NY", "North Carolina": "NC", "North Dakota": "ND", "Oklahoma": "OK", "Oregon": "OR",
+               "Pennsylvania": "PA", "Rhode Island": "RI", "South Carolina": "SC", "South Dakota": "SD", "Tennessee": "TN", "Vermont": "VT", "Virginia": "VA",
+               "Washington": "WA", "West Virginia": "WV", "Wisconsin": "WI", "Wyoming": "WY"}
+
+
 def split_hometown(h: str) -> str:
-    """'Wall, N.J. / Wall'  ->  'Wall, NJ'   (drops the high school part)"""
-    h = clean(h).split(" / ")[0]
-    h = re.sub(r"\bN\.?\s?J\.?$", "NJ", h)
-    h = re.sub(r"\bN\.?\s?Y\.?$", "NY", h)
-    h = re.sub(r"\bPa\.?$", "PA", h)
-    h = re.sub(r"\bConn\.?$", "CT", h)
-    h = re.sub(r"\bMass\.?$", "MA", h)
-    h = re.sub(r"\bMd\.?$", "MD", h)
-    h = re.sub(r"\bDel\.?$", "DE", h)
-    h = re.sub(r"\bVa\.?$", "VA", h)
-    h = re.sub(r"\bFla\.?$", "FL", h)
+    """'Hometown Wall, N.J. / Wall HS'  ->  'Wall, NJ'   (drops the label and the high school part)"""
+    h = re.sub(r"^\s*(hometown|home town)\s*:?\s*", "", clean(h), flags=re.I)
+    h = re.split(r"\s+/\s*|\s*/\s+|\s*/$", h)[0].strip(" ,/")
+    if "," in h:
+        city, _, st = h.rpartition(",")
+        st = st.strip().rstrip(".")
+        code = AP_STATES.get(st) or FULL_STATES.get(st) or (st.upper() if re.fullmatch(r"[A-Za-z]{2}", st) else None)
+        if code:
+            return f"{city.strip()}, {code}"
     return h
 
 
@@ -184,7 +196,8 @@ def parse_sidearm_roster(html: str) -> tuple[str | None, list[str]]:
             pos = next((b.replace("Position", "").strip() for b in bits if b.lower().startswith("position")), "")
             yr = next((b.replace("Academic Year", "").strip() for b in bits if "year" in b.lower()), "")
             home = clean((card.select_one(".s-person-card__content__person__location-item") or BeautifulSoup("", "html.parser")).get_text(" "))
-            if name:
+            staff = re.search(r"\b(director|coordinator|trainer|dietitian|manager|coach|strength|equipment|communications|phone)\b|@", name, re.I)
+            if name and (pos or yr) and not staff:  # staff cards share this layout but have no position or class year
                 rows.append("|".join([name, pos, norm_year(yr), split_hometown(home)]))
     return season, rows
 
