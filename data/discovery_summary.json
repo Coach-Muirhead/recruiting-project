@@ -1,34 +1,40 @@
 {
- "programs": 2001,
+ "programs": 1857,
  "by_level": {
-  "JUCO": 775,
+  "JUCO": 631,
   "D1": 305,
   "D2": 259,
   "D3": 424,
   "NAIA": 238
  },
  "ready": {
-  "JUCO": 67,
-  "D1": 299,
-  "D2": 240,
-  "D3": 293,
-  "NAIA": 111
+  "JUCO": 72,
+  "D1": 303,
+  "D2": 239,
+  "D3": 296,
+  "NAIA": 110
+ },
+ "by_platform": {
+  "not found": 313,
+  "blocked": 524,
+  "presto": 6,
+  "table": 5,
+  "sidearm": 1009
  },
  "blocked": {
-  "JUCO": 357,
+  "JUCO": 351,
   "D1": 2,
   "D2": 16,
-  "D3": 72,
+  "D3": 71,
   "NAIA": 84
  },
  "not_found": {
-  "JUCO": 351,
-  "D1": 4,
-  "D2": 3,
-  "D3": 59,
-  "NAIA": 43
+  "JUCO": 208,
+  "D2": 4,
+  "D3": 57,
+  "NAIA": 44
  },
- "no_scorecard_match": 199,
- "schools_csv_rows": 980,
- "added_this_merge": 969
+ "no_scorecard_match": 53,
+ "schools_csv_rows": 991,
+ "added_this_merge": 980
 }
