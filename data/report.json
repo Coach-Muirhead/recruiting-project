@@ -4,5874 +4,4883 @@
   "montclair": {
    "roster": 0,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 185590)"
-  },
-  "ramapo": {
-   "roster": 33,
-   "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 186201)"
+   "coaches": 5
   },
   "kean": {
    "roster": 39,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 185262)"
+   "coaches": 6
+  },
+  "ramapo": {
+   "roster": 33,
+   "season": "2026",
+   "coaches": 6
   },
   "rowan": {
    "roster": 37,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 184782)"
+   "coaches": 5
   },
   "setonhall": {
    "roster": 37,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 186584)"
+   "coaches": 4
   },
   "rutgers": {
    "roster": 40,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 186380)"
-  },
-  "canadacollege": {
-   "roster": "unreachable",
-   "costs": "ok (federal id 111434)"
-  },
-  "rutgerscamden": {
-   "roster": 37,
-   "season": "2026",
-   "coaches": 8,
-   "costs": "ok (federal id 186371)"
+   "coaches": "none parsed, kept last copy"
   },
   "stockton": {
    "roster": 31,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 186876)"
+   "coaches": 7
   },
   "rutgersnewark": {
    "roster": 43,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 186399)"
+   "coaches": 6
   },
-  "wpu": {
-   "roster": 35,
+  "rutgerscamden": {
+   "roster": 37,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 187444)"
+   "coaches": 8
   },
   "tcnj": {
    "roster": 36,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 187134)"
+   "coaches": 6
+  },
+  "canadacollege": {
+   "roster": "unreachable"
+  },
+  "wpu": {
+   "roster": 35,
+   "season": "2026",
+   "coaches": 4
   },
   "montereypeninsulacollege": {
    "roster": 37,
    "season": null,
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 119067)"
+   "coaches": "none parsed, kept last copy"
   },
   "mtsanantoniocollege": {
-   "roster": "unreachable",
-   "costs": "ok (federal id 119164)"
+   "roster": "unreachable"
   },
   "sanbernardinovalleycollege": {
-   "roster": "unreachable",
-   "costs": "ok (federal id 123527)"
-  },
-  "binghamtonuniversity": {
-   "roster": 33,
-   "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 196079)"
-  },
-  "bryantuniversity": {
-   "roster": 46,
-   "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 217165)"
+   "roster": "unreachable"
   },
   "albany": {
    "roster": 31,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 196060)"
+   "coaches": "none parsed, kept last copy"
   },
-  "universityofmaine": {
-   "roster": 36,
+  "binghamtonuniversity": {
+   "roster": 33,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 161253)"
+   "coaches": 5
   },
   "njit": {
    "roster": 34,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 185828)"
+   "coaches": 4
+  },
+  "bryantuniversity": {
+   "roster": 46,
+   "season": "2027",
+   "coaches": 4
+  },
+  "universityofmaine": {
+   "roster": 36,
+   "season": "2027",
+   "coaches": 6
   },
   "umasslowell": {
    "roster": 38,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 166513)"
+   "coaches": 5
   },
   "umbc": {
    "roster": 31,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 163268)"
+   "coaches": 5
   },
   "charlotte": {
    "roster": 38,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 199139)"
-  },
-  "eastcarolinauniversity": {
-   "roster": 45,
-   "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 198464)"
+   "coaches": 5
   },
   "fau": {
    "roster": 35,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 133669)"
+   "coaches": 5
   },
-  "riceuniversity": {
-   "roster": 44,
-   "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 227757)"
+  "eastcarolinauniversity": {
+   "roster": 45,
+   "season": null,
+   "coaches": 6
   },
   "universityofmemphis": {
    "roster": 40,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 220862)"
+   "coaches": 6
+  },
+  "riceuniversity": {
+   "roster": 44,
+   "season": "2026",
+   "coaches": 4
   },
   "usf": {
    "roster": 37,
-   "season": "2027",
-   "coaches": 10,
-   "costs": "ok (federal id 137351)"
+   "season": null,
+   "coaches": 10
   },
   "tulaneuniversity": {
    "roster": 34,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 160755)"
+   "coaches": 4
+  },
+  "utsa": {
+   "roster": 0,
+   "season": null
   },
   "uab": {
    "roster": 40,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 100663)"
-  },
-  "utsa": {
-   "roster": 0,
-   "season": null,
-   "costs": "ok (federal id 229027)"
+   "coaches": 6
   },
   "wichitastateuniversity": {
    "roster": 37,
    "season": "2027",
-   "coaches": 9,
-   "costs": "ok (federal id 156125)"
+   "coaches": 9
   },
   "bostoncollege": {
    "roster": 46,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 164924)"
+   "coaches": 7
   },
   "californiacal": {
    "roster": 46,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 110635)"
+   "coaches": 6
   },
   "clemsonuniversity": {
    "roster": 0,
-   "season": null,
-   "costs": "ok (federal id 217882)"
+   "season": null
   },
   "dukeuniversity": {
    "roster": 48,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 198419)"
+   "coaches": 5
   },
   "floridastateuniversity": {
    "roster": 39,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 134097)"
+   "coaches": 7
   },
   "georgiatech": {
    "roster": 0,
-   "season": null,
-   "costs": "ok (federal id 139755)"
+   "season": null
   },
   "universityoflouisville": {
    "roster": 43,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 157289)"
+   "coaches": 5
   },
   "universityofmiami": {
    "roster": 0,
-   "season": null,
-   "costs": "ok (federal id 135726)"
+   "season": null
   },
   "northcarolinacarolina": {
    "roster": 40,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 199120)"
-  },
-  "universityofnotredame": {
-   "roster": 36,
-   "season": null,
-   "costs": "ok (federal id 152080)"
+   "coaches": 7
   },
   "ncstate": {
    "roster": 37,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 199193)"
+   "coaches": 7
+  },
+  "universityofnotredame": {
+   "roster": 36,
+   "season": null
   },
   "pitt": {
    "roster": 37,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 215293)"
+   "coaches": "none parsed, kept last copy"
   },
   "stanforduniversity": {
    "roster": 0,
-   "season": null,
-   "costs": "ok (federal id 243744)"
+   "season": null
   },
   "universityofvirginia": {
    "roster": 0,
-   "season": null,
-   "costs": "ok (federal id 234076)"
+   "season": null
   },
   "virginiatech": {
    "roster": 0,
-   "season": null,
-   "costs": "ok (federal id 233921)"
+   "season": null
   },
   "bellarmineuniversity": {
    "roster": 51,
    "season": "2027",
-   "coaches": 8,
-   "costs": "ok (federal id 156286)"
+   "coaches": 8
   },
   "wakeforestuniversity": {
    "roster": 35,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 199847)"
+   "coaches": 4
   },
   "fgcu": {
    "roster": 37,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 433660)"
+   "coaches": 4
   },
   "jacksonvilleuniversity": {
    "roster": 37,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 134945)"
+   "coaches": 4
   },
   "lipscombuniversity": {
    "roster": 35,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 219976)"
+   "coaches": 6
   },
   "universityofnorthflorida": {
    "roster": 41,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 136172)"
+   "coaches": 5
   },
   "stetsonuniversity": {
    "roster": 38,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 137546)"
+   "coaches": 6
   },
   "queensuniversityofcharlotte": {
    "roster": 42,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 199412)"
+   "coaches": 6
   },
   "universityofdayton": {
    "roster": 39,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 202480)"
+   "coaches": 4
   },
   "davidsoncollege": {
    "roster": 42,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 198385)"
+   "coaches": 5
   },
   "fordhamuniversity": {
    "roster": 39,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 191241)"
+   "coaches": 3
   },
   "georgemasonuniversity": {
    "roster": 0,
    "season": "2027",
-   "coaches": 8,
-   "costs": "ok (federal id 232186)"
+   "coaches": 8
   },
   "lasalleuniversity": {
    "roster": 54,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 213367)"
-  },
-  "universityofrhodeisland": {
-   "roster": 41,
-   "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 217484)"
+   "coaches": 4
   },
   "georgewashingtonuniversity": {
    "roster": 37,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 131469)"
+   "coaches": 5
+  },
+  "universityofrhodeisland": {
+   "roster": 41,
+   "season": "2027",
+   "coaches": 5
   },
   "universityofrichmond": {
    "roster": 40,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 233374)"
+   "coaches": 4
   },
   "stbonaventureuniversity": {
    "roster": 31,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 195164)"
+   "coaches": 4
   },
   "saintjosephsuniversity": {
    "roster": 38,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 215770)"
+   "coaches": "none parsed, kept last copy"
   },
   "saintlouisuniversity": {
    "roster": 36,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 179159)"
-  },
-  "vcu": {
-   "roster": 34,
-   "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 234030)"
+   "coaches": "none parsed, kept last copy"
   },
   "butleruniversity": {
    "roster": 36,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 150163)"
+   "coaches": 4
   },
-  "creightonuniversity": {
-   "roster": 36,
+  "vcu": {
+   "roster": 34,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 181002)"
+   "coaches": 6
   },
   "georgetownuniversity": {
    "roster": 39,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 131496)"
+   "coaches": 2
   },
-  "uconn": {
-   "roster": 41,
+  "creightonuniversity": {
+   "roster": 36,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 129020)"
-  },
-  "villanovauniversity": {
-   "roster": 33,
-   "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 216597)"
-  },
-  "xavieruniversity": {
-   "roster": 45,
-   "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 206622)"
+   "coaches": 5
   },
   "stjohnsuniversity": {
    "roster": 39,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 195809)"
+   "coaches": 4
+  },
+  "villanovauniversity": {
+   "roster": 33,
+   "season": "2027",
+   "coaches": 4
+  },
+  "uconn": {
+   "roster": 41,
+   "season": null,
+   "coaches": 4
+  },
+  "xavieruniversity": {
+   "roster": 45,
+   "season": "2027",
+   "coaches": 5
   },
   "charlestonsouthernuniversity": {
    "roster": 47,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 217688)"
+   "coaches": 6
   },
   "gardnerwebbuniversity": {
    "roster": 51,
    "season": "2026",
-   "coaches": 9,
-   "costs": "ok (federal id 198561)"
+   "coaches": 9
   },
   "highpointuniversity": {
    "roster": 39,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 198695)"
-  },
-  "presbyteriancollege": {
-   "roster": 39,
-   "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 218539)"
+   "coaches": 7
   },
   "longwooduniversity": {
    "roster": 39,
    "season": "2027",
-   "coaches": 8,
-   "costs": "ok (federal id 232566)"
+   "coaches": 8
+  },
+  "presbyteriancollege": {
+   "roster": 39,
+   "season": "2026",
+   "coaches": 5
   },
   "radforduniversity": {
    "roster": 21,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 233277)"
-  },
-  "uncasheville": {
-   "roster": 32,
-   "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 199111)"
+   "coaches": 5
   },
   "uscupstate": {
    "roster": 37,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 218742)"
+   "coaches": 7
+  },
+  "uncasheville": {
+   "roster": 32,
+   "season": "2026",
+   "coaches": 4
   },
   "winthropuniversity": {
    "roster": 38,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 218964)"
-  },
-  "universityofillinoisurbanach": {
-   "roster": 34,
-   "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 145637)"
+   "coaches": 6
   },
   "indianauniversitybloomington": {
    "roster": 39,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 151351)"
+   "coaches": 5
+  },
+  "universityofillinoisurbanach": {
+   "roster": 34,
+   "season": "2027",
+   "coaches": 6
   },
   "universityofiowa": {
    "roster": 0,
-   "season": null,
-   "costs": "ok (federal id 153658)"
-  },
-  "universityofmarylandcollegep": {
-   "roster": 38,
-   "season": null,
-   "coaches": 5,
-   "costs": "ok (federal id 163286)"
+   "season": null
   },
   "universityofmichigan": {
    "roster": 44,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 170976)"
+   "coaches": 4
+  },
+  "universityofmarylandcollegep": {
+   "roster": 38,
+   "season": "2027",
+   "coaches": 5
   },
   "michiganstateuniversity": {
    "roster": 30,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 171100)"
+   "coaches": 5
+  },
+  "universityofnebraskalincolnn": {
+   "roster": 41,
+   "season": null
   },
   "universityofminnesota": {
    "roster": 35,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 174066)"
-  },
-  "universityofnebraskalincolnn": {
-   "roster": 41,
-   "season": null,
-   "costs": "ok (federal id 181464)"
+   "coaches": 6
   },
   "northwesternuniversity": {
    "roster": 0,
-   "season": null,
-   "costs": "ok (federal id 147767)"
+   "season": null
+  },
+  "pennstate": {
+   "roster": 38,
+   "season": null
   },
   "universityoforegon": {
    "roster": 0,
    "season": "2027",
-   "coaches": 9,
-   "costs": "ok (federal id 209551)"
+   "coaches": 9
   },
   "ohiostateuniversity": {
    "roster": 36,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 204796)"
-  },
-  "pennstate": {
-   "roster": 38,
-   "season": null,
-   "costs": "ok (federal id 214777)"
+   "coaches": 7
   },
   "purdueuniversity": {
    "roster": 40,
-   "season": null,
-   "costs": "ok (federal id 243780)"
+   "season": null
   },
   "ucla": {
    "roster": 0,
-   "season": "2026",
-   "costs": "ok (federal id 110662)"
+   "season": "2026"
   },
   "uscsoutherncal": {
    "roster": 40,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 123961)"
+   "coaches": 7
   },
   "universityofwashington": {
    "roster": 35,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 236948)"
+   "coaches": 7
   },
   "universityofarizona": {
    "roster": 0,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 104179)"
+   "coaches": 4
   },
   "arizonastateuniversity": {
    "roster": 0,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 104151)"
+   "coaches": "none parsed, kept last copy"
+  },
+  "byu": {
+   "roster": 37,
+   "season": null
   },
   "bayloruniversity": {
    "roster": 37,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 223232)"
-  },
-  "byu": {
-   "roster": 37,
-   "season": null,
-   "costs": "ok (federal id 230038)"
+   "coaches": 6
   },
   "universityofcincinnati": {
    "roster": 0,
-   "season": "2027",
-   "costs": "ok (federal id 201885)"
+   "season": "2027"
   },
   "universityofhouston": {
    "roster": 43,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 225511)"
+   "coaches": 4
   },
   "universityofkansas": {
    "roster": 39,
    "season": "2027",
-   "coaches": 8,
-   "costs": "ok (federal id 155317)"
+   "coaches": 8
   },
   "kansasstateuniversity": {
    "roster": 36,
    "season": "2027",
-   "coaches": 8,
-   "costs": "ok (federal id 155399)"
-  },
-  "tcu": {
-   "roster": 42,
-   "season": null,
-   "coaches": 9,
-   "costs": "ok (federal id 228875)"
+   "coaches": 8
   },
   "oklahomastateuniversity": {
    "roster": 42,
    "season": null,
-   "coaches": 5,
-   "costs": "ok (federal id 207388)"
+   "coaches": 5
+  },
+  "tcu": {
+   "roster": 42,
+   "season": "2027",
+   "coaches": 9
   },
   "texastechuniversity": {
    "roster": 40,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 229115)"
+   "coaches": 5
   },
   "ucf": {
    "roster": 47,
-   "season": null,
-   "costs": "ok (federal id 132903)"
+   "season": null
   },
   "universityofutah": {
    "roster": 35,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 230764)"
+   "coaches": 5
   },
   "westvirginiauniversity": {
    "roster": 48,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 238032)"
+   "coaches": 7
   },
   "californiabaptistuniversity": {
    "roster": 37,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 110361)"
-  },
-  "calpoly": {
-   "roster": 37,
-   "season": null,
-   "coaches": 5,
-   "costs": "ok (federal id 110422)"
+   "coaches": 5
   },
   "calstatefullerton": {
    "roster": 39,
    "season": "2027",
-   "coaches": 8,
-   "costs": "ok (federal id 110565)"
+   "coaches": 8
+  },
+  "calpoly": {
+   "roster": 37,
+   "season": null,
+   "coaches": 5
   },
   "csuncalstatenorthridge": {
    "roster": 38,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 110608)"
+   "coaches": 6
   },
   "bakersfieldcsubakersfield": {
    "roster": 39,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 110486)"
-  },
-  "longbeachstate": {
-   "roster": 41,
-   "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 110583)"
+   "coaches": 7
   },
   "sacramentostate": {
    "roster": 35,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 110617)"
+   "coaches": 4
+  },
+  "longbeachstate": {
+   "roster": 41,
+   "season": "2026",
+   "coaches": 4
   },
   "ucriverside": {
    "roster": 0,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 110671)"
+   "coaches": 5
   },
   "ucirvine": {
    "roster": 40,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 110653)"
+   "coaches": 6
   },
   "ucsandiego": {
    "roster": 40,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 110680)"
+   "coaches": 4
   },
   "ucsantabarbara": {
    "roster": 43,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 110705)"
+   "coaches": 5
   },
   "utahvalleyuniversity": {
    "roster": 40,
    "season": "2027",
-   "coaches": 9,
-   "costs": "ok (federal id 230737)"
+   "coaches": 9
   },
   "campbelluniversity": {
    "roster": 42,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 198136)"
-  },
-  "charleston": {
-   "roster": 44,
-   "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 217819)"
+   "coaches": 5
   },
   "elonuniversity": {
    "roster": 40,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 198516)"
+   "coaches": 5
+  },
+  "charleston": {
+   "roster": 44,
+   "season": "2027",
+   "coaches": 5
   },
   "hofstrauniversity": {
    "roster": 37,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 191649)"
+   "coaches": 5
   },
   "monmouthuniversity": {
    "roster": 41,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 185572)"
+   "coaches": "none parsed, kept last copy"
   },
   "northcarolinaat": {
    "roster": 37,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 199102)"
+   "coaches": 6
   },
   "northeasternuniversity": {
    "roster": 37,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 167358)"
-  },
-  "stonybrookuniversity": {
-   "roster": 31,
-   "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 196097)"
+   "coaches": 7
   },
   "towsonuniversity": {
    "roster": 0,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 164076)"
+   "coaches": 4
+  },
+  "stonybrookuniversity": {
+   "roster": 31,
+   "season": "2027",
+   "coaches": 5
   },
   "uncwilmingtonuncw": {
    "roster": 36,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 199218)"
+   "coaches": 5
   },
   "collegeofwilliammary": {
    "roster": 39,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 231624)"
+   "coaches": 4
   },
   "universityofdelaware": {
    "roster": 38,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 130943)"
+   "coaches": 4
   },
   "fiu": {
    "roster": 40,
    "season": "2027",
-   "coaches": 9,
-   "costs": "ok (federal id 133951)"
+   "coaches": 9
   },
   "kennesawstateuniversity": {
    "roster": 0,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 486840)"
+   "coaches": 4
   },
   "libertyuniversity": {
    "roster": 36,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 232557)"
+   "coaches": 6
   },
   "middletennessee": {
    "roster": 37,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 220978)"
+   "coaches": 5
   },
   "missouristateuniversity": {
    "roster": 35,
-   "season": null,
-   "coaches": 7,
-   "costs": "ok (federal id 179566)"
+   "season": "2027",
+   "coaches": 7
   },
   "newmexicostateuniversity": {
    "roster": 33,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 188030)"
+   "coaches": 5
   },
   "samhouston": {
    "roster": 36,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 227881)"
-  },
-  "milwaukee": {
-   "roster": 34,
-   "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 240453)"
+   "coaches": "none parsed, kept last copy"
   },
   "wku": {
    "roster": 37,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 157951)"
+   "coaches": "none parsed, kept last copy"
+  },
+  "milwaukee": {
+   "roster": 34,
+   "season": "2027",
+   "coaches": 6
   },
   "niu": {
    "roster": 34,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 147703)"
+   "coaches": 4
   },
   "northernkentuckyuniversity": {
    "roster": 36,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 157447)"
+   "coaches": 5
   },
   "oaklanduniversity": {
    "roster": 36,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 171571)"
+   "coaches": 5
   },
   "wrightstateuniversity": {
    "roster": 38,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 206604)"
+   "coaches": 7
   },
   "youngstownstateuniversity": {
    "roster": 39,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 206695)"
+   "coaches": 6
   },
   "brownuniversity": {
    "roster": 37,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 217156)"
-  },
-  "columbiauniversity": {
-   "roster": 42,
-   "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 190150)"
+   "coaches": 5
   },
   "cornelluniversity": {
    "roster": 40,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 190415)"
+   "coaches": 3
   },
-  "penn": {
-   "roster": 37,
+  "columbiauniversity": {
+   "roster": 42,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 215062)"
+   "coaches": 4
   },
   "dartmouthcollege": {
    "roster": 33,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 182670)"
+   "coaches": 4
   },
   "harvarduniversity": {
    "roster": 29,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 166027)"
+   "coaches": 5
+  },
+  "penn": {
+   "roster": 37,
+   "season": "2027",
+   "coaches": 5
+  },
+  "princetonuniversity": {
+   "roster": 28,
+   "season": "2026",
+   "coaches": 3
   },
   "yaleuniversity": {
    "roster": 31,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 130794)"
-  },
-  "princetonuniversity": {
-   "roster": 28,
-   "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 186131)"
+   "coaches": 4
   },
   "canisiusuniversity": {
    "roster": 38,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 189705)"
+   "coaches": 4
   },
   "fairfielduniversity": {
    "roster": 35,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 129242)"
-  },
-  "manhattanuniversity": {
-   "roster": 47,
-   "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 192703)"
+   "coaches": 4
   },
   "ionauniversity": {
    "roster": 41,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 191931)"
+   "coaches": 6
   },
-  "maristuniversity": {
-   "roster": 38,
-   "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 192819)"
-  },
-  "merrimackcollege": {
-   "roster": 42,
-   "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 166850)"
+  "manhattanuniversity": {
+   "roster": 47,
+   "season": "2026",
+   "coaches": 6
   },
   "mountstmarysuniversity": {
    "roster": 41,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 163462)"
+   "coaches": 5
+  },
+  "maristuniversity": {
+   "roster": 38,
+   "season": "2027",
+   "coaches": 4
+  },
+  "merrimackcollege": {
+   "roster": 42,
+   "season": "2027",
+   "coaches": 3
   },
   "niagarauniversity": {
    "roster": 34,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 193973)"
-  },
-  "quinnipiacuniversity": {
-   "roster": 35,
-   "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 130226)"
+   "coaches": 2
   },
   "rideruniversity": {
    "roster": 32,
    "season": "2027",
-   "coaches": 2,
-   "costs": "ok (federal id 186283)"
+   "coaches": 2
+  },
+  "quinnipiacuniversity": {
+   "roster": 35,
+   "season": "2026",
+   "coaches": 4
   },
   "saintpetersuniversity": {
    "roster": 16,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 186432)"
+   "coaches": 4
   },
   "sienauniversity": {
    "roster": 34,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 195474)"
+   "coaches": 3
   },
   "sacredheartuniversity": {
    "roster": 38,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 130253)"
+   "coaches": 4
   },
   "universityofakron": {
    "roster": 39,
    "season": null,
-   "coaches": 4,
-   "costs": "ok (federal id 200800)"
+   "coaches": 4
   },
   "ballstateuniversity": {
    "roster": 39,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 150136)"
+   "coaches": 6
   },
   "bowlinggreen": {
    "roster": 36,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 201441)"
+   "coaches": "none parsed, kept last copy"
   },
   "centralmichiganuniversity": {
    "roster": 42,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 169248)"
-  },
-  "kentstateuniversity": {
-   "roster": 35,
-   "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 203517)"
+   "coaches": 5
   },
   "easternmichiganuniversity": {
    "roster": 36,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 169798)"
+   "coaches": 6
+  },
+  "kentstateuniversity": {
+   "roster": 35,
+   "season": "2027",
+   "coaches": 7
   },
   "massachusettsumass": {
    "roster": 37,
-   "season": null,
-   "coaches": 4,
-   "costs": "ok (federal id 166629)"
+   "season": "2027",
+   "coaches": 4
   },
   "miamiofohio": {
    "roster": 39,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 204024)"
+   "coaches": 5
   },
   "ohiouniversity": {
    "roster": 39,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 204857)"
+   "coaches": 7
   },
   "bradleyuniversity": {
    "roster": 0,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 143358)"
+   "coaches": 6
   },
   "westernmichiganuniversity": {
    "roster": 32,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 172699)"
+   "coaches": 4
   },
   "universityoftoledo": {
    "roster": 36,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 206084)"
+   "coaches": 6
   },
   "universityofevansville": {
    "roster": 39,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 150534)"
+   "coaches": 5
   },
   "illinoisstateuniversity": {
    "roster": 38,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 145813)"
+   "coaches": 5
   },
   "indianastateuniversity": {
    "roster": 0,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 151324)"
-  },
-  "southernillinoissiu": {
-   "roster": 34,
-   "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 149222)"
-  },
-  "uic": {
-   "roster": 36,
-   "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 145600)"
+   "coaches": 4
   },
   "murraystateuniversity": {
    "roster": 37,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 157401)"
+   "coaches": 7
   },
   "valparaisouniversity": {
    "roster": 33,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 152600)"
+   "coaches": 7
+  },
+  "southernillinoissiu": {
+   "roster": 34,
+   "season": null,
+   "coaches": 5
+  },
+  "uic": {
+   "roster": 36,
+   "season": "2027",
+   "coaches": 4
   },
   "airforce": {
    "roster": 41,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 128328)"
+   "coaches": 6
   },
   "grandcanyonuniversity": {
    "roster": 41,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 104717)"
-  },
-  "hawaii": {
-   "roster": 39,
-   "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 141574)"
+   "coaches": 7
   },
   "universityofnevadarenonevada": {
    "roster": 35,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 182290)"
+   "coaches": 4
   },
   "universityofnewmexico": {
    "roster": 0,
-   "season": null,
-   "costs": "ok (federal id 187985)"
+   "season": null
+  },
+  "hawaii": {
+   "roster": 39,
+   "season": "2027",
+   "coaches": 5
   },
   "sanjosestateuniversity": {
    "roster": 0,
-   "season": null,
-   "costs": "ok (federal id 122755)"
+   "season": null
   },
   "ucdavis": {
    "roster": 36,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 110644)"
+   "coaches": 4
   },
   "unlv": {
    "roster": 35,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 182281)"
+   "coaches": 4
   },
   "utahtechuniversity": {
    "roster": 39,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 230171)"
+   "coaches": 5
   },
   "coppinstateuniversity": {
    "roster": 30,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 162283)"
+   "coaches": 5
   },
   "delawarestateuniversity": {
    "roster": 35,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 130934)"
+   "coaches": 4
   },
   "fairleighdickinsonuniversity": {
    "roster": 37,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 184603)"
+   "coaches": 5
   },
   "lemoynecollege": {
    "roster": 36,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 192323)"
+   "coaches": 3
   },
   "liu": {
    "roster": 35,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 192448)"
+   "coaches": 4
   },
   "umes": {
    "roster": 32,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 163338)"
+   "coaches": 4
   },
   "norfolkstateuniversity": {
    "roster": 35,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 232937)"
+   "coaches": 4
   },
   "stonehillcollege": {
    "roster": 39,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 167996)"
+   "coaches": 6
   },
   "wagnercollege": {
    "roster": 0,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 197197)"
+   "coaches": 6
   },
   "easternillinoisuniversity": {
    "roster": 40,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 144892)"
+   "coaches": 6
   },
   "lindenwooduniversity": {
    "roster": 33,
-   "season": "2027",
-   "costs": "ok (federal id 177968)"
+   "season": "2027"
   },
   "moreheadstateuniversity": {
    "roster": 36,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 157386)"
-  },
-  "southeastmissourisemo": {
-   "roster": 38,
-   "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 179557)"
+   "coaches": 5
   },
   "siuedwardsvillesiue": {
    "roster": 33,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 149231)"
+   "coaches": 5
+  },
+  "southeastmissourisemo": {
+   "roster": 38,
+   "season": "2027",
+   "coaches": 4
   },
   "universityofsouthernindiana": {
    "roster": 41,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 151306)"
+   "coaches": 5
   },
   "utmartin": {
    "roster": 35,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 221768)"
-  },
-  "westernillinoisuniversity": {
-   "roster": 34,
-   "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 149772)"
+   "coaches": 5
   },
   "dallasbaptistuniversity": {
    "roster": 38,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 224226)"
+   "coaches": 7
+  },
+  "westernillinoisuniversity": {
+   "roster": 34,
+   "season": "2027",
+   "coaches": 3
   },
   "fresnostate": {
    "roster": 36,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 110556)"
-  },
-  "oregonstateuniversity": {
-   "roster": 40,
-   "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 209542)"
+   "coaches": 7
   },
   "gonzagauniversity": {
    "roster": 38,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 235316)"
+   "coaches": 7
+  },
+  "oregonstateuniversity": {
+   "roster": 40,
+   "season": "2027",
+   "coaches": 5
   },
   "sandiegostateuniversity": {
    "roster": 0,
-   "season": null,
-   "costs": "ok (federal id 122409)"
+   "season": null
   },
   "texasstateuniversity": {
    "roster": 38,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 228459)"
+   "coaches": 6
   },
   "washingtonstateuniversity": {
    "roster": 0,
-   "season": null,
-   "costs": "ok (federal id 236939)"
+   "season": null
   },
   "army": {
    "roster": 38,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 197036)"
+   "coaches": 4
   },
   "collegeoftheholycross": {
    "roster": 40,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 166124)"
+   "coaches": 4
   },
   "bucknelluniversity": {
    "roster": 37,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 211291)"
+   "coaches": 5
   },
   "lafayettecollege": {
    "roster": 42,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 213385)"
+   "coaches": 5
   },
   "navy": {
    "roster": 41,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 164155)"
+   "coaches": 5
   },
   "lehighuniversity": {
    "roster": 39,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 213543)"
+   "coaches": 4
   },
   "universityofarkansas": {
    "roster": 39,
-   "season": null,
-   "costs": "ok (federal id 106397)"
+   "season": null
+  },
+  "auburnuniversity": {
+   "roster": 0,
+   "season": null
   },
   "universityofalabama": {
    "roster": 0,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 100751)"
-  },
-  "auburnuniversity": {
-   "roster": 0,
-   "season": null,
-   "costs": "ok (federal id 100858)"
+   "coaches": 4
   },
   "universityofflorida": {
    "roster": 41,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 134130)"
-  },
-  "universityofgeorgia": {
-   "roster": 39,
-   "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 139959)"
+   "coaches": 7
   },
   "universityofkentucky": {
    "roster": 38,
    "season": null,
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 157085)"
+   "coaches": "none parsed, kept last copy"
+  },
+  "universityofgeorgia": {
+   "roster": 39,
+   "season": "2027",
+   "coaches": 5
   },
   "lsu": {
    "roster": 0,
-   "season": null,
-   "costs": "ok (federal id 159391)"
+   "season": null
   },
   "olemiss": {
    "roster": 42,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 176017)"
+   "coaches": 4
   },
   "mississippistateuniversity": {
    "roster": 41,
    "season": "2027",
-   "coaches": 9,
-   "costs": "ok (federal id 176080)"
+   "coaches": 9
   },
   "mizzou": {
    "roster": 42,
-   "season": "2027",
-   "costs": "ok (federal id 178396)"
+   "season": "2027"
   },
   "universityofsouthcarolina": {
    "roster": 34,
    "season": null,
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 218663)"
+   "coaches": "none parsed, kept last copy"
   },
   "universityofoklahoma": {
    "roster": 40,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 207500)"
+   "coaches": 6
   },
   "universityoftennessee": {
    "roster": 37,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 221759)"
+   "coaches": 6
+  },
+  "tamu": {
+   "roster": 0,
+   "season": "2027"
   },
   "universityoftexasataustintex": {
    "roster": 39,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 228778)"
-  },
-  "tamu": {
-   "roster": 0,
-   "season": "2027",
-   "costs": "ok (federal id 228723)"
+   "coaches": 5
   },
   "vanderbiltuniversity": {
    "roster": 39,
-   "season": null,
-   "costs": "ok (federal id 221999)"
-  },
-  "thecitadel": {
-   "roster": 45,
-   "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 217864)"
+   "season": null
   },
   "etsu": {
    "roster": 37,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 220075)"
+   "coaches": 6
+  },
+  "thecitadel": {
+   "roster": 45,
+   "season": null,
+   "coaches": 5
   },
   "merceruniversity": {
    "roster": 37,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 140447)"
+   "coaches": 4
   },
   "uncgreensborouncg": {
    "roster": 37,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 199148)"
+   "coaches": 5
   },
   "vmi": {
    "roster": 23,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 234085)"
+   "coaches": 5
   },
   "samforduniversity": {
    "roster": 38,
    "season": null,
-   "coaches": 6,
-   "costs": "ok (federal id 102049)"
+   "coaches": 6
   },
   "woffordcollege": {
    "roster": 46,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 218973)"
+   "coaches": 4
   },
   "houstonchristianuniversity": {
    "roster": 41,
    "season": "2026",
-   "coaches": 8,
-   "costs": "ok (federal id 225399)"
+   "coaches": 8
   },
   "uiw": {
    "roster": 34,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 225627)"
+   "coaches": 6
   },
   "lamaruniversity": {
    "roster": 37,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 226091)"
+   "coaches": 6
   },
   "lsuneworleans": {
    "roster": 45,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 159939)"
+   "coaches": 4
   },
   "westerncarolinauniversity": {
    "roster": 45,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 200004)"
+   "coaches": 6
   },
   "mcneese": {
    "roster": 39,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 159717)"
+   "coaches": 4
   },
   "nicholls": {
    "roster": 41,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 159966)"
+   "coaches": 5
   },
   "northwesternstateuniversity": {
    "roster": 42,
    "season": "2015",
-   "coaches": 6,
-   "costs": "ok (federal id 160038)"
-  },
-  "southeasternlouisianaunivers": {
-   "roster": 41,
-   "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 160612)"
+   "coaches": 6
   },
   "texasamuniversitycorpuschris": {
    "roster": 38,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 224147)"
+   "coaches": 7
+  },
+  "southeasternlouisianaunivers": {
+   "roster": 41,
+   "season": "2027",
+   "coaches": 3
   },
   "alabamaamuniversity": {
    "roster": 26,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 100654)"
+   "coaches": 4
   },
   "alabamastateuniversity": {
    "roster": 38,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 100724)"
+   "coaches": 5
   },
   "alcornstateuniversity": {
    "roster": 35,
    "season": "2027",
-   "coaches": 1,
-   "costs": "ok (federal id 175342)"
+   "coaches": 1
   },
   "arkansaspinebluff": {
    "roster": 41,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 106412)"
+   "coaches": 6
   },
   "bethunecookmanuniversity": {
    "roster": 35,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 132602)"
+   "coaches": 5
   },
   "gramblingstateuniversity": {
    "roster": 35,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 159009)"
+   "coaches": 4
   },
   "jacksonstateuniversity": {
    "roster": 36,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 175856)"
+   "coaches": 4
   },
   "mississippivalleystateuniver": {
    "roster": 0,
    "season": "2027",
-   "coaches": 1,
-   "costs": "ok (federal id 176044)"
+   "coaches": 1
   },
   "prairieviewamuniversity": {
    "roster": 20,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 227526)"
+   "coaches": 5
   },
   "southernuniversity": {
    "roster": 40,
    "season": "2026",
-   "coaches": 8,
-   "costs": "ok (federal id 160621)"
+   "coaches": 8
   },
   "texassouthernuniversity": {
    "roster": 17,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 229063)"
+   "coaches": 5
   },
   "northdakotastateuniversity": {
    "roster": 39,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 200332)"
+   "coaches": 4
   },
   "universityofnortherncolorado": {
    "roster": 34,
-   "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 127741)"
+   "season": "2026",
+   "coaches": 6
   },
   "omaha": {
    "roster": 39,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 181394)"
+   "coaches": 6
   },
   "oralrobertsuniversity": {
    "roster": 34,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 207582)"
+   "coaches": 6
   },
   "universityofstthomas": {
    "roster": 35,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 174914)"
+   "coaches": 7
   },
   "southdakotastateuniversity": {
    "roster": 35,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 219356)"
-  },
-  "arkansasstateuniversity": {
-   "roster": 38,
-   "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 106458)"
+   "coaches": 4
   },
   "appalachianstateuniversity": {
    "roster": 36,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 197869)"
+   "coaches": 5
+  },
+  "arkansasstateuniversity": {
+   "roster": 38,
+   "season": "2027",
+   "coaches": 4
   },
   "coastalcarolinauniversity": {
    "roster": 39,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 218724)"
+   "coaches": 4
   },
   "georgiasouthernuniversity": {
    "roster": 35,
    "season": "2027",
-   "coaches": 8,
-   "costs": "ok (federal id 139931)"
+   "coaches": 8
   },
   "georgiastateuniversity": {
    "roster": 38,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 139940)"
+   "coaches": 4
   },
   "jamesmadisonuniversity": {
    "roster": 38,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 232423)"
+   "coaches": 5
   },
   "louisianamonroeulm": {
    "roster": 43,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 159993)"
+   "coaches": 5
   },
   "universityoflouisianaatlafay": {
    "roster": 36,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 160658)"
-  },
-  "marshalluniversity": {
-   "roster": 35,
-   "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 237525)"
+   "coaches": 7
   },
   "louisianatechuniversity": {
    "roster": 40,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 159647)"
+   "coaches": 4
   },
   "olddominionuniversity": {
    "roster": 0,
-   "season": null,
-   "costs": "ok (federal id 232982)"
+   "season": null
+  },
+  "marshalluniversity": {
+   "roster": 35,
+   "season": "2027",
+   "coaches": 5
   },
   "universityofsouthalabama": {
    "roster": 41,
    "season": "2027",
-   "coaches": 8,
-   "costs": "ok (federal id 102094)"
+   "coaches": 8
   },
   "southernmiss": {
    "roster": 43,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 176372)"
+   "coaches": 6
   },
   "troyuniversity": {
    "roster": 35,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 102368)"
+   "coaches": 7
   },
   "austinpeay": {
    "roster": 39,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 219602)"
-  },
-  "universityofcentralarkansas": {
-   "roster": 36,
-   "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 106704)"
+   "coaches": 4
   },
   "abilenechristianuniversity": {
    "roster": 36,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 222178)"
+   "coaches": 6
+  },
+  "universityofcentralarkansas": {
+   "roster": 36,
+   "season": "2027",
+   "coaches": 5
   },
   "littlerock": {
-   "roster": "unreachable",
-   "costs": "ok (federal id 106245)"
+   "roster": "unreachable"
   },
   "eku": {
    "roster": 37,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 156620)"
+   "coaches": 4
   },
   "universityofnorthalabama": {
    "roster": 39,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 101879)"
+   "coaches": 4
   },
   "tarletonstateuniversity": {
    "roster": 36,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 228529)"
-  },
-  "lmu": {
-   "roster": 43,
-   "season": "2026",
-   "coaches": 9,
-   "costs": "ok (federal id 117946)"
-  },
-  "universityofthepacific": {
-   "roster": 18,
-   "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 120883)"
+   "coaches": 5
   },
   "utarlingtonuta": {
    "roster": 34,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 228769)"
+   "coaches": 5
+  },
+  "lmu": {
+   "roster": 43,
+   "season": "2026",
+   "coaches": 9
+  },
+  "universityofthepacific": {
+   "roster": 18,
+   "season": "2027",
+   "coaches": 5
   },
   "pepperdineuniversity": {
    "roster": 37,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 121150)"
+   "coaches": 5
   },
   "universityofportland": {
    "roster": 41,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 209825)"
+   "coaches": 7
   },
   "saintmaryssmc": {
    "roster": 39,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 123554)"
+   "coaches": 6
   },
   "universityofsandiego": {
    "roster": 38,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 122436)"
+   "coaches": 5
   },
   "santaclarauniversity": {
    "roster": 43,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 122931)"
+   "coaches": 5
   },
   "universityofsanfrancisco": {
    "roster": 20,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 122612)"
+   "coaches": 4
   },
   "seattleuniversity": {
    "roster": 0,
-   "season": "2027",
-   "costs": "ok (federal id 236595)"
+   "season": "2027"
   },
   "tennesseestateuniversity": {
    "roster": 0,
    "season": null,
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 221838)"
+   "coaches": "none parsed, kept last copy"
   },
   "mercyhurstuniversity": {
    "roster": 49,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 213987)"
+   "coaches": 4
   },
   "universityofnewhaven": {
    "roster": 35,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 129941)"
+   "coaches": 3
   },
   "universityofwestflorida": {
    "roster": 40,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 138354)"
+   "coaches": 5
   },
   "universityofwestgeorgia": {
    "roster": 43,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 141334)"
+   "coaches": 4
   },
   "adamsstate": {
    "roster": 33,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 126182)"
+   "coaches": 4
   },
   "adelphi": {
    "roster": 35,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 188429)"
+   "coaches": 4
   },
   "alabamahuntsville": {
    "roster": 38,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 100706)"
+   "coaches": 3
   },
   "albanystate": {
    "roster": 32,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 138716)"
+   "coaches": 3
   },
   "americaninternational": {
    "roster": 48,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 164447)"
+   "coaches": 4
   },
   "anderson": {
    "roster": 28,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 217633)"
+   "coaches": 4
   },
   "angelostate": {
    "roster": 43,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 222831)"
+   "coaches": 4
   },
   "arkansastech": {
    "roster": 46,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 106467)"
+   "coaches": 5
   },
   "arkansasfortsmith": {
    "roster": 33,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 108092)"
+   "coaches": 3
   },
   "arkansasmonticello": {
    "roster": 56,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 106485)"
+   "coaches": "none parsed, kept last copy"
   },
   "ashland": {
    "roster": 44,
-   "season": "2026",
-   "costs": "ok (federal id 201104)"
+   "season": "2026"
   },
   "assumption": {
    "roster": 54,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 164562)"
+   "coaches": 4
   },
   "auburnmontgomery": {
    "roster": 40,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 100830)"
+   "coaches": 3
   },
   "augusta": {
    "roster": 42,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 482149)"
+   "coaches": 5
   },
   "augustana": {
    "roster": 48,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 219000)"
-  },
-  "barry": {
-   "roster": 20,
-   "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 132471)"
+   "coaches": 5
   },
   "belmontabbey": {
    "roster": 0,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 197984)"
+   "coaches": 4
+  },
+  "barry": {
+   "roster": 20,
+   "season": "2027",
+   "coaches": 6
   },
   "barton": {
    "roster": 44,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 197911)"
+   "coaches": "none parsed, kept last copy"
   },
   "bemidjistate": {
    "roster": 57,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 173124)"
+   "coaches": 3
   },
   "bentley": {
    "roster": 29,
    "season": "2027",
-   "coaches": 2,
-   "costs": "ok (federal id 164739)"
+   "coaches": 2
   },
   "biola": {
    "roster": 42,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 110097)"
-  },
-  "bluefieldstate": {
-   "roster": 41,
-   "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 237215)"
+   "coaches": 5
   },
   "caldwell": {
    "roster": 38,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 183910)"
+   "coaches": 4
   },
   "calpolypomona": {
    "roster": 39,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 110529)"
+   "coaches": 7
+  },
+  "bluefieldstate": {
+   "roster": 41,
+   "season": "2027",
+   "coaches": 5
   },
   "calstatedominguezhills": {
    "roster": 41,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 110547)"
+   "coaches": 4
   },
   "calstateeastbay": {
    "roster": 42,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 110574)"
+   "coaches": 5
   },
   "calstatelosangeles": {
    "roster": 36,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 110592)"
+   "coaches": 2
   },
   "calstatemontereybay": {
    "roster": 47,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 409698)"
-  },
-  "calstatesanbernardino": {
-   "roster": 36,
-   "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 110510)"
+   "coaches": 3
   },
   "calstatesanmarcos": {
    "roster": 37,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 366711)"
+   "coaches": 6
   },
   "calstatestanislaus": {
    "roster": 0,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 110495)"
+   "coaches": 4
   },
-  "californiapa": {
-   "roster": 45,
+  "calstatesanbernardino": {
+   "roster": 36,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 498571)"
+   "coaches": 7
   },
   "cameron": {
    "roster": 55,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 206914)"
+   "coaches": 3
+  },
+  "californiapa": {
+   "roster": 45,
+   "season": "2026",
+   "coaches": 4
   },
   "catawba": {
    "roster": 36,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 198215)"
-  },
-  "cedarville": {
-   "roster": 40,
-   "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 201654)"
-  },
-  "centralmissouri": {
-   "roster": 52,
-   "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 176965)"
+   "coaches": 6
   },
   "centraloklahoma": {
    "roster": 52,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 206941)"
+   "coaches": 5
   },
-  "centralwashington": {
-   "roster": 38,
+  "cedarville": {
+   "roster": 40,
+   "season": "2026",
+   "coaches": 4
+  },
+  "centralmissouri": {
+   "roster": 52,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 234827)"
+   "coaches": 7
   },
   "chaminade": {
    "roster": 40,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 141486)"
+   "coaches": 6
+  },
+  "centralwashington": {
+   "roster": 38,
+   "season": "2027",
+   "coaches": 5
   },
   "chicostate": {
    "roster": 25,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 110538)"
+   "coaches": 3
   },
   "charlestonwv": {
    "roster": 59,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 237312)"
+   "coaches": 4
   },
   "chestnuthill": {
    "roster": 40,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 211583)"
+   "coaches": 5
   },
   "chowan": {
    "roster": 44,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 198303)"
-  },
-  "christianbrothers": {
-   "roster": 37,
-   "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 219833)"
+   "coaches": 3
   },
   "claflin": {
    "roster": 0,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 217873)"
+   "coaches": 4
+  },
+  "christianbrothers": {
+   "roster": 37,
+   "season": "2026",
+   "coaches": 2
   },
   "clarkatlanta": {
    "roster": 25,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 138947)"
-  },
-  "clarion": {
-   "roster": 41,
-   "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 498571)"
+   "coaches": 3
   },
   "coloradochristian": {
    "roster": 40,
    "season": "2027",
-   "coaches": 2,
-   "costs": "ok (federal id 126669)"
+   "coaches": 2
   },
   "coloradomesa": {
    "roster": 46,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 127556)"
+   "coaches": 7
+  },
+  "clarion": {
+   "roster": 41,
+   "season": "2027",
+   "coaches": 3
   },
   "coloradomines": {
    "roster": 40,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 126775)"
+   "coaches": 3
   },
   "columbusstate": {
    "roster": 43,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 139366)"
-  },
-  "concord": {
-   "roster": 55,
-   "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 237330)"
-  },
-  "concordiastpaul": {
-   "roster": 38,
-   "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 173328)"
+   "coaches": 5
   },
   "concordiairvine": {
    "roster": 39,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 112075)"
+   "coaches": 5
+  },
+  "concord": {
+   "roster": 55,
+   "season": "2026",
+   "coaches": 4
+  },
+  "concordiastpaul": {
+   "roster": 38,
+   "season": "2027",
+   "coaches": 6
   },
   "csupueblo": {
    "roster": 40,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 128106)"
-  },
-  "davenport": {
-   "roster": 54,
-   "season": "2026",
-   "coaches": 9,
-   "costs": "ok (federal id 169479)"
+   "coaches": 3
   },
   "daviselkins": {
    "roster": 36,
    "season": "2027",
-   "coaches": 2,
-   "costs": "ok (federal id 237358)"
+   "coaches": 2
+  },
+  "davenport": {
+   "roster": 54,
+   "season": "2026",
+   "coaches": 9
   },
   "deltastate": {
    "roster": 45,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 175616)"
+   "coaches": 6
   },
   "drury": {
    "roster": 54,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 177214)"
+   "coaches": 5
   },
   "dyouville": {
    "roster": 35,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 190716)"
+   "coaches": 5
   },
   "eastcentral": {
    "roster": 89,
-   "season": "2027",
-   "costs": "ok (federal id 207041)"
+   "season": "2027"
   },
   "eaststroudsburg": {
    "roster": 45,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 212115)"
+   "coaches": "none parsed, kept last copy"
   },
   "easternnewmexico": {
    "roster": 45,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 187648)"
-  },
-  "eckerd": {
-   "roster": 51,
-   "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 133492)"
+   "coaches": 4
   },
   "edwardwaters": {
    "roster": 34,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 133526)"
+   "coaches": 3
   },
   "embryriddle": {
    "roster": 47,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 133553)"
+   "coaches": 5
+  },
+  "eckerd": {
+   "roster": 51,
+   "season": "2026",
+   "coaches": 5
   },
   "emporiastate": {
    "roster": 51,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 155025)"
+   "coaches": 4
   },
   "erskine": {
    "roster": 0,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 217998)"
+   "coaches": 6
   },
   "fairmontstate": {
    "roster": 31,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 237367)"
+   "coaches": 4
   },
   "felician": {
    "roster": 60,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 184612)"
+   "coaches": 7
   },
   "ferrum": {
    "roster": 56,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 232089)"
+   "coaches": 6
   },
   "findlay": {
    "roster": 45,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 202763)"
+   "coaches": 4
   },
   "flagler": {
    "roster": 41,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 133711)"
+   "coaches": 4
   },
   "floridasouthern": {
    "roster": 46,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 134079)"
+   "coaches": 6
   },
   "floridatech": {
    "roster": 40,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 133881)"
+   "coaches": 4
   },
   "forthaysstate": {
    "roster": 37,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 155061)"
+   "coaches": 3
   },
   "francismarion": {
    "roster": 42,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 218061)"
-  },
-  "franklinpierce": {
-   "roster": 36,
-   "season": "2027",
-   "coaches": 2,
-   "costs": "ok (federal id 182795)"
+   "coaches": 5
   },
   "fresnopacific": {
    "roster": 49,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 114813)"
+   "coaches": 5
+  },
+  "franklinpierce": {
+   "roster": 36,
+   "season": "2027",
+   "coaches": 2
   },
   "frostburgstate": {
    "roster": 42,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 162584)"
+   "coaches": 4
   },
   "gannon": {
    "roster": 44,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 212601)"
+   "coaches": 3
   },
   "georgiacollege": {
    "roster": 45,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 139861)"
+   "coaches": 5
   },
   "georgiasouthwesternstate": {
    "roster": 33,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 139764)"
+   "coaches": 4
   },
   "glenvillestate": {
    "roster": 41,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 237385)"
+   "coaches": 5
   },
   "goldeybeacom": {
    "roster": 40,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 130989)"
+   "coaches": 7
   },
   "grandvalleystate": {
    "roster": 42,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 170082)"
+   "coaches": 4
   },
   "harding": {
    "roster": 42,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 107044)"
+   "coaches": 7
   },
   "hawaiihilo": {
    "roster": 0,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 141565)"
+   "coaches": 7
+  },
+  "hillsdale": {
+   "roster": "unreachable"
+  },
+  "hendersonstate": {
+   "roster": 59,
+   "season": "2027"
   },
   "hawaiipacific": {
    "roster": 47,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 141644)"
-  },
-  "hillsdale": {
-   "roster": "unreachable",
-   "costs": "ok (federal id 170286)"
-  },
-  "hendersonstate": {
-   "roster": 59,
-   "season": "2027",
-   "costs": "ok (federal id 107071)"
+   "coaches": 5
   },
   "holyfamily": {
    "roster": 47,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 212984)"
+   "coaches": 5
   },
   "indianapolis": {
    "roster": 41,
    "season": "2026",
-   "coaches": 8,
-   "costs": "ok (federal id 151263)"
+   "coaches": 8
   },
   "iup": {
    "roster": 45,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 213020)"
+   "coaches": 6
   },
   "jamestown": {
    "roster": 54,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 200156)"
+   "coaches": 6
   },
   "jefferson": {
    "roster": 36,
    "season": "2026",
-   "coaches": 1,
-   "costs": "ok (federal id 216366)"
+   "coaches": 1
   },
   "jessup": {
    "roster": 0,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 122728)"
+   "coaches": 6
   },
   "kentuckystate": {
    "roster": 36,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 157058)"
-  },
-  "kutztown": {
-   "roster": 0,
-   "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 213349)"
+   "coaches": 2
   },
   "kentuckywesleyan": {
    "roster": 36,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 157076)"
+   "coaches": 3
   },
   "king": {
    "roster": 55,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 220516)"
+   "coaches": 3
+  },
+  "kutztown": {
+   "roster": 0,
+   "season": "2027",
+   "coaches": 5
   },
   "lander": {
    "roster": 50,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 218229)"
+   "coaches": 3
   },
   "lakeerie": {
    "roster": 43,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 203580)"
+   "coaches": 3
   },
   "lee": {
    "roster": 38,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 220613)"
+   "coaches": 7
   },
   "lemoyneowen": {
    "roster": 21,
    "season": "2025",
-   "coaches": 3,
-   "costs": "ok (federal id 220604)"
+   "coaches": 3
   },
   "lenoirrhyne": {
    "roster": 54,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 198835)"
+   "coaches": 7
   },
   "lewis": {
    "roster": 52,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 146612)"
+   "coaches": 6
   },
   "lincolnmo": {
    "roster": 46,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 177940)"
-  },
-  "lincolnpa": {
-   "roster": 32,
-   "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 213598)"
+   "coaches": 3
   },
   "lincolnmemorial": {
    "roster": 39,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 220631)"
+   "coaches": 5
+  },
+  "lincolnpa": {
+   "roster": 32,
+   "season": "2026",
+   "coaches": 3
   },
   "lubbockchristian": {
    "roster": 37,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 226383)"
-  },
-  "malone": {
-   "roster": 44,
-   "season": "2026",
-   "coaches": 11,
-   "costs": "ok (federal id 203775)"
+   "coaches": 5
   },
   "lynn": {
    "roster": 46,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 132657)"
+   "coaches": 4
+  },
+  "malone": {
+   "roster": 44,
+   "season": "2026",
+   "coaches": 11
   },
   "mary": {
    "roster": 46,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 200217)"
+   "coaches": 3
   },
   "maryvillemo": {
    "roster": 40,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 178059)"
+   "coaches": 5
   },
   "mckendree": {
    "roster": 51,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 147013)"
-  },
-  "mercy": {
-   "roster": 39,
-   "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 193016)"
+   "coaches": 4
   },
   "menlo": {
    "roster": 54,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 118693)"
+   "coaches": "none parsed, kept last copy"
+  },
+  "mercy": {
+   "roster": 39,
+   "season": "2027",
+   "coaches": 6
   },
   "metropolitanstate": {
-   "roster": 41,
-   "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 127565)"
+   "roster": 39,
+   "season": "2027",
+   "coaches": "none parsed, kept last copy"
   },
   "miles": {
    "roster": 41,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 101675)"
+   "coaches": 2
   },
   "millersville": {
    "roster": 36,
    "season": "2027",
-   "coaches": 11,
-   "costs": "ok (federal id 214041)"
+   "coaches": 11
   },
   "minnesotastate": {
    "roster": 33,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 173920)"
+   "coaches": 4
   },
   "minnesotacrookston": {
    "roster": 48,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 174075)"
+   "coaches": 5
   },
   "minnesotaduluth": {
    "roster": 33,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 174233)"
-  },
-  "mississippichristian": {
-   "roster": 40,
-   "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 176053)"
+   "coaches": 3
   },
   "minotstate": {
    "roster": 37,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 200253)"
+   "coaches": 5
+  },
+  "mississippichristian": {
+   "roster": 40,
+   "season": "2027",
+   "coaches": 5
   },
   "missourisouthern": {
    "roster": 35,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 178341)"
-  },
-  "missourist": {
-   "roster": 42,
-   "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 178411)"
+   "coaches": 4
   },
   "missouriwestern": {
    "roster": 38,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 178387)"
+   "coaches": 6
+  },
+  "missourist": {
+   "roster": 42,
+   "season": "2026",
+   "coaches": 2
   },
   "molloy": {
    "roster": 32,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 193292)"
+   "coaches": 5
   },
   "montanastatebillings": {
    "roster": 43,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 180179)"
+   "coaches": 5
   },
   "montevallo": {
    "roster": 42,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 101709)"
+   "coaches": "none parsed, kept last copy"
   },
   "morehouse": {
    "roster": 65,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 140553)"
-  },
-  "mountolive": {
-   "roster": 46,
-   "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 199069)"
+   "coaches": 6
   },
   "newmexicohighlands": {
    "roster": 38,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 187897)"
+   "coaches": 7
+  },
+  "mountolive": {
+   "roster": 46,
+   "season": "2027",
+   "coaches": 4
   },
   "newberry": {
    "roster": 55,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 218414)"
+   "coaches": 5
   },
   "newman": {
    "roster": 0,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 155335)"
+   "coaches": 5
   },
   "northgeorgia": {
    "roster": 45,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 482680)"
+   "coaches": 5
   },
   "northgreenville": {
    "roster": 42,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 218441)"
+   "coaches": 7
   },
   "northeasternstate": {
    "roster": 52,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 207263)"
+   "coaches": 5
   },
   "northernstate": {
    "roster": 42,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 219259)"
+   "coaches": 4
   },
   "northwestmissouristate": {
    "roster": 40,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 178624)"
+   "coaches": 6
   },
   "northwestnazarene": {
    "roster": 54,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 142461)"
+   "coaches": 7
   },
   "northwesternoklahomastate": {
    "roster": 60,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 207306)"
+   "coaches": 7
   },
   "novasoutheastern": {
    "roster": 34,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 136215)"
+   "coaches": "none parsed, kept last copy"
   },
   "ohiodominican": {
    "roster": 45,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 204617)"
+   "coaches": 5
   },
   "oklahomabaptist": {
    "roster": 28,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 207403)"
+   "coaches": 4
   },
   "oklahomachristian": {
    "roster": 46,
    "season": "2026",
-   "coaches": 9,
-   "costs": "ok (federal id 207324)"
+   "coaches": 9
   },
   "ouachitabaptist": {
    "roster": 37,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 107512)"
+   "coaches": 4
   },
   "pace": {
    "roster": 34,
    "season": "2027",
-   "coaches": 2,
-   "costs": "ok (federal id 194310)"
+   "coaches": 2
   },
   "palmbeachatlantic": {
    "roster": 44,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 136330)"
-  },
-  "pittsburgstate": {
-   "roster": 56,
-   "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 155681)"
+   "coaches": 3
   },
   "parkside": {
    "roster": 45,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 240374)"
+   "coaches": 4
+  },
+  "pittsburgstate": {
+   "roster": 56,
+   "season": "2027",
+   "coaches": 5
   },
   "pittjohnstown": {
    "roster": 47,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 215284)"
+   "coaches": 3
   },
   "pointlomanazarene": {
    "roster": 30,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 121309)"
+   "coaches": 4
   },
   "pointpark": {
    "roster": 29,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 215442)"
-  },
-  "post": {
-   "roster": 45,
-   "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 130183)"
+   "coaches": "none parsed, kept last copy"
   },
   "purduenorthwest": {
    "roster": 36,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 490805)"
+   "coaches": 4
   },
   "queensny": {
    "roster": 30,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 190664)"
+   "coaches": 7
+  },
+  "post": {
+   "roster": 45,
+   "season": "2026",
+   "coaches": 2
   },
   "quincy": {
    "roster": 63,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 148131)"
+   "coaches": 7
   },
   "regis": {
    "roster": 52,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 127918)"
+   "coaches": 5
   },
   "rockhurst": {
    "roster": 62,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 179043)"
+   "coaches": "none parsed, kept last copy"
   },
   "rogersstate": {
    "roster": 27,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 207661)"
-  },
-  "roosevelt": {
-   "roster": 59,
-   "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 148487)"
+   "coaches": 3
   },
   "rollins": {
    "roster": 40,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 136950)"
+   "coaches": 4
+  },
+  "roosevelt": {
+   "roster": 59,
+   "season": "2026",
+   "coaches": 6
   },
   "saginawvalleystate": {
    "roster": 40,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 172051)"
+   "coaches": "none parsed, kept last copy"
   },
   "saintanselm": {
    "roster": 54,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 183239)"
+   "coaches": 3
   },
   "stcloudstate": {
    "roster": 47,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 174783)"
-  },
-  "stedwards": {
-   "roster": 56,
-   "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 227845)"
-  },
-  "saintmartins": {
-   "roster": 47,
-   "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 236452)"
-  },
-  "stmarys": {
-   "roster": 35,
-   "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 228149)"
+   "coaches": 5
   },
   "saintleo": {
    "roster": 38,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 137032)"
+   "coaches": 4
+  },
+  "stedwards": {
+   "roster": 56,
+   "season": "2026",
+   "coaches": 5
+  },
+  "saintmartins": {
+   "roster": 47,
+   "season": "2027",
+   "coaches": 6
+  },
+  "stmarys": {
+   "roster": 35,
+   "season": "2027",
+   "coaches": 4
   },
   "saintmichaels": {
    "roster": 37,
-   "season": "2026",
-   "costs": "ok (federal id 231059)"
+   "season": "2026"
   },
   "sanfranciscostate": {
    "roster": 40,
    "season": "2025",
-   "coaches": 4,
-   "costs": "ok (federal id 122597)"
+   "coaches": 4
   },
   "savannahstate": {
    "roster": 37,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 140960)"
+   "coaches": 7
   },
   "setonhill": {
    "roster": 0,
    "season": null,
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 215947)"
+   "coaches": "none parsed, kept last copy"
   },
   "shawneestate": {
    "roster": 39,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 205443)"
+   "coaches": "none parsed, kept last copy"
   },
   "shepherd": {
    "roster": 34,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 237792)"
+   "coaches": "none parsed, kept last copy"
   },
   "shippensburg": {
    "roster": 30,
    "season": "2027",
-   "coaches": 2,
-   "costs": "ok (federal id 216010)"
+   "coaches": 2
   },
   "shorter": {
    "roster": 17,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 140988)"
+   "coaches": 4
   },
   "siouxfalls": {
    "roster": 48,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 219383)"
+   "coaches": 4
   },
   "slipperyrock": {
    "roster": 36,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 216038)"
+   "coaches": 4
   },
   "southeasternoklahomastate": {
    "roster": 49,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 207847)"
+   "coaches": 3
   },
   "southernarkansas": {
    "roster": 52,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 107983)"
+   "coaches": 4
   },
   "southernconnecticut": {
    "roster": 34,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 130493)"
+   "coaches": 4
   },
   "southernnazarene": {
    "roster": 47,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 206862)"
+   "coaches": 5
   },
   "southernnewhampshire": {
    "roster": 40,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 183026)"
+   "coaches": 4
   },
   "southernwesleyan": {
    "roster": 0,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 217776)"
+   "coaches": 5
   },
   "southwestbaptist": {
    "roster": 49,
-   "season": "2027",
-   "costs": "ok (federal id 179326)"
+   "season": "2027"
   },
   "southwestminnesotastate": {
    "roster": 40,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 175078)"
+   "coaches": 3
   },
   "southwesternoklahomastate": {
    "roster": 36,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 207865)"
-  },
-  "springhill": {
-   "roster": 39,
-   "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 102234)"
+   "coaches": 3
   },
   "statenisland": {
    "roster": 31,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 190558)"
+   "coaches": 6
   },
   "sulrossstate": {
    "roster": 22,
    "season": "2027",
-   "coaches": 1,
-   "costs": "ok (federal id 228501)"
+   "coaches": 1
+  },
+  "springhill": {
+   "roster": 39,
+   "season": "2026",
+   "coaches": 4
   },
   "texasaminternational": {
    "roster": 48,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 226152)"
+   "coaches": 3
   },
   "texasamkingsville": {
    "roster": 43,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 228705)"
+   "coaches": 5
   },
   "thomasmore": {
    "roster": 43,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 157809)"
+   "coaches": 3
   },
   "tiffin": {
    "roster": 53,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 206048)"
-  },
-  "treveccanazarene": {
-   "roster": 38,
-   "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 221892)"
+   "coaches": 5
   },
   "truman": {
    "roster": 34,
    "season": "2027",
-   "coaches": 1,
-   "costs": "ok (federal id 178615)"
+   "coaches": 1
+  },
+  "treveccanazarene": {
+   "roster": 38,
+   "season": "2027",
+   "coaches": 6
   },
   "tuskegee": {
    "roster": 41,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 102377)"
+   "coaches": 2
   },
   "uccs": {
    "roster": 44,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 126580)"
+   "coaches": 5
   },
   "uis": {
    "roster": 48,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 148654)"
+   "coaches": 3
   },
   "umsl": {
    "roster": 39,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 178420)"
+   "coaches": 5
   },
   "uncpembroke": {
    "roster": 26,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 199281)"
+   "coaches": 3
   },
   "union": {
    "roster": 30,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 221971)"
+   "coaches": 4
   },
   "upperiowa": {
    "roster": 57,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 154493)"
+   "coaches": 5
   },
   "uscaiken": {
    "roster": 40,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 218645)"
+   "coaches": 5
   },
   "uscbeaufort": {
    "roster": 52,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 218654)"
+   "coaches": 6
   },
   "utdallas": {
    "roster": 46,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 228787)"
+   "coaches": 5
   },
   "utpermianbasin": {
    "roster": 41,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 229018)"
+   "coaches": 4
   },
   "uttyler": {
    "roster": 47,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 228802)"
+   "coaches": 4
   },
   "valdostastate": {
    "roster": 41,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 141264)"
+   "coaches": 5
   },
   "uvawise": {
    "roster": 60,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 233897)"
+   "coaches": 5
   },
   "vanguard": {
    "roster": 0,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 123651)"
+   "coaches": 4
   },
   "virginiastate": {
    "roster": 32,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 234155)"
+   "coaches": 4
   },
   "walsh": {
    "roster": 34,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 206437)"
+   "coaches": 6
   },
   "washburn": {
    "roster": 45,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 156082)"
+   "coaches": 3
   },
   "waynestatemi": {
    "roster": 36,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 172644)"
+   "coaches": 6
   },
   "waynestatene": {
    "roster": 40,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 181783)"
+   "coaches": "none parsed, kept last copy"
   },
   "westalabama": {
    "roster": 45,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 101587)"
+   "coaches": 6
   },
   "westchester": {
    "roster": 35,
    "season": "2026",
-   "coaches": 8,
-   "costs": "ok (federal id 216764)"
+   "coaches": 8
   },
   "westliberty": {
    "roster": 38,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 237932)"
+   "coaches": 3
   },
   "westtexasam": {
    "roster": 48,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 229814)"
+   "coaches": 5
   },
   "westvirginiastate": {
    "roster": 31,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 237899)"
+   "coaches": 4
   },
   "westvirginiawesleyan": {
    "roster": 45,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 237969)"
+   "coaches": 2
   },
   "westernoregon": {
    "roster": 36,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 210429)"
-  },
-  "wheeling": {
-   "roster": 43,
-   "season": "2026",
-   "coaches": 8,
-   "costs": "ok (federal id 238078)"
+   "coaches": 5
   },
   "westmont": {
    "roster": 54,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 125727)"
+   "coaches": 6
+  },
+  "wheeling": {
+   "roster": 43,
+   "season": "2026",
+   "coaches": 8
   },
   "williamjewell": {
    "roster": 41,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 179955)"
+   "coaches": 4
   },
   "wingate": {
    "roster": 48,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 199962)"
+   "coaches": 3
   },
   "winonastate": {
    "roster": 49,
-   "season": "2027",
-   "costs": "ok (federal id 175272)"
+   "season": "2027"
   },
   "youngharris": {
    "roster": 49,
    "season": "2027",
-   "coaches": 2,
-   "costs": "ok (federal id 141361)"
+   "coaches": 2
   },
   "lackawanna": {
    "roster": 44,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 213376)"
+   "coaches": 4
   },
   "loyolala": {
    "roster": 37,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 159656)"
+   "coaches": "none parsed, kept last copy"
   },
   "texaswesleyan": {
    "roster": 33,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 229160)"
+   "coaches": 2
   },
   "adriancollege": {
    "roster": 50,
    "season": "2025",
-   "coaches": 6,
-   "costs": "ok (federal id 168528)"
+   "coaches": 6
   },
   "albioncollege": {
    "roster": 44,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 168546)"
+   "coaches": 6
   },
   "albrightcollege": {
    "roster": 65,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 210571)"
+   "coaches": 7
   },
   "alfreduniversity": {
    "roster": 38,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 188641)"
+   "coaches": 2
   },
   "alfredstatecollege": {
    "roster": 49,
    "season": "2027",
-   "coaches": 9,
-   "costs": "ok (federal id 196006)"
+   "coaches": 9
   },
   "alleghenycollege": {
    "roster": 42,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 210669)"
+   "coaches": 5
   },
   "arcadiauniversity": {
    "roster": 45,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 211088)"
+   "coaches": 6
   },
   "asburyuniversity": {
    "roster": 39,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 156213)"
+   "coaches": 6
   },
   "augsburguniversity": {
    "roster": 26,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 173045)"
+   "coaches": 5
   },
   "augustanacollege": {
    "roster": 28,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 143084)"
+   "coaches": 6
   },
   "aurorauniversity": {
    "roster": 20,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 143118)"
+   "coaches": 3
   },
   "averettuniversity": {
    "roster": 44,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 231420)"
+   "coaches": 3
   },
   "azusapacificuniversity": {
    "roster": 38,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 109785)"
+   "coaches": 6
   },
   "babsoncollege": {
    "roster": 47,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 164580)"
+   "coaches": 4
   },
   "baldwinwallaceuniversity": {
    "roster": 33,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 201195)"
+   "coaches": "none parsed, kept last copy"
   },
   "bardcollege": {
    "roster": 35,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 189088)"
+   "coaches": 2
   },
   "baruchcollege": {
    "roster": 22,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 190512)"
+   "coaches": 3
   },
   "batescollege": {
    "roster": 33,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 160977)"
+   "coaches": 4
   },
   "battenuniversity": {
    "roster": 54,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 234173)"
+   "coaches": 5
   },
   "belhavenuniversity": {
    "roster": 46,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 175421)"
-  },
-  "bereacollege": {
-   "roster": 32,
-   "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 156295)"
+   "coaches": 4
   },
   "beloitcollege": {
    "roster": 51,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 238333)"
+   "coaches": 5
+  },
+  "bereacollege": {
+   "roster": 32,
+   "season": "2027",
+   "coaches": 4
   },
   "berrycollege": {
    "roster": 43,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 139144)"
+   "coaches": 3
   },
   "bethanycollege": {
    "roster": 34,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 237181)"
+   "coaches": 5
   },
   "betheluniversity": {
    "roster": 51,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 173160)"
+   "coaches": 6
   },
   "bowdoincollege": {
    "roster": 33,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 161004)"
+   "coaches": 7
   },
   "brandeisuniversity": {
    "roster": 40,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 165015)"
+   "coaches": 5
   },
   "bridgewatercollege": {
    "roster": 48,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 231581)"
+   "coaches": 6
   },
   "buenavistauniversity": {
    "roster": 51,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 153001)"
+   "coaches": 4
   },
   "cairnuniversity": {
    "roster": 27,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 215114)"
+   "coaches": 4
   },
   "californiainstituteoftechnol": {
    "roster": 15,
    "season": "2027",
-   "coaches": 2,
-   "costs": "ok (federal id 110404)"
+   "coaches": 2
   },
   "californialutheranuniversity": {
    "roster": 40,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 110413)"
-  },
-  "calvinuniversity": {
-   "roster": 46,
-   "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 169080)"
+   "coaches": 6
   },
   "universityofcaliforniasantac": {
    "roster": 0,
    "season": null,
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 110714)"
+   "coaches": "none parsed, kept last copy"
+  },
+  "calvinuniversity": {
+   "roster": 46,
+   "season": "2026",
+   "coaches": 5
   },
   "capitaluniversity": {
    "roster": 48,
    "season": "2026",
-   "coaches": 9,
-   "costs": "ok (federal id 201548)"
-  },
-  "carrolluniversity": {
-   "roster": 40,
-   "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 238458)"
+   "coaches": 9
   },
   "carletoncollege": {
    "roster": 33,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 173258)"
+   "coaches": 3
+  },
+  "carrolluniversity": {
+   "roster": 40,
+   "season": "2026",
+   "coaches": 6
   },
   "carthagecollege": {
    "roster": 40,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 238476)"
-  },
-  "casewesternreserveuniversity": {
-   "roster": 42,
-   "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 201645)"
-  },
-  "catholicuniversityofamerica": {
-   "roster": 48,
-   "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 131283)"
+   "coaches": 5
   },
   "centenaryuniversity": {
    "roster": 0,
    "season": "2027",
-   "coaches": 2,
-   "costs": "ok (federal id 183974)"
+   "coaches": 2
+  },
+  "casewesternreserveuniversity": {
+   "roster": 42,
+   "season": "2027",
+   "coaches": 6
+  },
+  "catholicuniversityofamerica": {
+   "roster": 48,
+   "season": "2026",
+   "coaches": 6
   },
   "centralcollege": {
    "roster": 54,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 153108)"
+   "coaches": 5
   },
   "chapmanuniversity": {
    "roster": 30,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 111948)"
+   "coaches": 3
   },
   "universityofchicago": {
    "roster": 43,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 144050)"
-  },
-  "clarkuniversity": {
-   "roster": 41,
-   "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 165334)"
+   "coaches": 5
   },
   "christophernewportuniversity": {
    "roster": 54,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 231712)"
+   "coaches": 3
   },
   "claremontmckennacollegeharve": {
    "roster": 44,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 112260)"
+   "coaches": 4
+  },
+  "clarkuniversity": {
+   "roster": 41,
+   "season": "2026",
+   "coaches": 5
   },
   "clarksonuniversity": {
    "roster": 41,
    "season": null,
-   "coaches": 4,
-   "costs": "ok (federal id 190044)"
+   "coaches": 4
   },
   "coecollege": {
    "roster": 51,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 153144)"
+   "coaches": 7
   },
   "colbycollege": {
    "roster": 42,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 161086)"
+   "coaches": "none parsed, kept last copy"
   },
   "colbysawyercollege": {
    "roster": 41,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 182634)"
+   "coaches": 6
   },
   "concordiauniversitychicago": {
    "roster": 43,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 144351)"
+   "coaches": 3
   },
   "concordiauniversitytexas": {
    "roster": 50,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 224004)"
+   "coaches": 5
   },
   "concordiauniversitywisconsin": {
    "roster": 51,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 238616)"
+   "coaches": 3
   },
   "cornellcollege": {
    "roster": 46,
    "season": "2027",
-   "coaches": 2,
-   "costs": "ok (federal id 153162)"
+   "coaches": 2
   },
   "covenantcollege": {
    "roster": 49,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 139393)"
+   "coaches": 3
   },
   "crowncollege": {
-   "roster": "unreachable",
-   "costs": "ok (federal id 174862)"
-  },
-  "universityofdallas": {
-   "roster": 41,
-   "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 224323)"
+   "roster": "unreachable"
   },
   "deancollege": {
    "roster": 31,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 165574)"
+   "coaches": 5
   },
-  "denisonuniversity": {
-   "roster": 48,
+  "universityofdallas": {
+   "roster": 41,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 202523)"
+   "coaches": 2
   },
   "depauwuniversity": {
    "roster": 47,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 150400)"
+   "coaches": 2
+  },
+  "denisonuniversity": {
+   "roster": 48,
+   "season": "2026",
+   "coaches": 4
   },
   "desalesuniversity": {
    "roster": 34,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 210739)"
+   "coaches": 4
   },
   "dickinsoncollege": {
    "roster": 40,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 212009)"
+   "coaches": 4
   },
   "dominicanuniversity": {
    "roster": 34,
-   "season": "2027",
-   "costs": "ok (federal id 148496)"
+   "season": "2027"
   },
   "drewuniversity": {
    "roster": 44,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 184348)"
+   "coaches": 5
   },
   "earlhamcollege": {
    "roster": 0,
    "season": "2027",
-   "coaches": 10,
-   "costs": "ok (federal id 150455)"
+   "coaches": 10
   },
   "universityofdubuque": {
    "roster": 50,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 153278)"
+   "coaches": 5
   },
   "easternconnecticutstateunive": {
    "roster": 38,
    "season": "2027",
-   "coaches": 8,
-   "costs": "ok (federal id 129215)"
+   "coaches": 8
   },
   "easternmennoniteuniversity": {
    "roster": 29,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 232043)"
+   "coaches": 4
   },
   "edgewooduniversity": {
    "roster": 34,
    "season": "2026",
-   "coaches": 9,
-   "costs": "ok (federal id 238661)"
+   "coaches": 9
   },
   "elizabethtowncollege": {
    "roster": 48,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 212197)"
-  },
-  "elmhurstuniversity": {
-   "roster": 41,
-   "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 144962)"
+   "coaches": 6
   },
   "elmiracollege": {
    "roster": 33,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 190983)"
+   "coaches": 6
+  },
+  "elmhurstuniversity": {
+   "roster": 41,
+   "season": "2026",
+   "coaches": 6
   },
   "emoryuniversity": {
    "roster": 37,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 139658)"
+   "coaches": 3
   },
   "farmingdalestatecollege": {
    "roster": 35,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 196042)"
+   "coaches": 4
   },
   "franciscanuniversityofsteube": {
    "roster": 40,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 205957)"
+   "coaches": 6
   },
   "franklinmarshallcollege": {
    "roster": 37,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 212577)"
-  },
-  "genevacollege": {
-   "roster": 37,
-   "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 212656)"
+   "coaches": "none parsed, kept last copy"
   },
   "franklincollege": {
    "roster": 47,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 150604)"
+   "coaches": "none parsed, kept last copy"
+  },
+  "genevacollege": {
+   "roster": 37,
+   "season": "2027",
+   "coaches": 7
   },
   "georgefoxuniversity": {
    "roster": 47,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 208822)"
+   "coaches": "none parsed, kept last copy"
   },
   "gettysburgcollege": {
    "roster": 54,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 212674)"
+   "coaches": 4
   },
   "gordoncollege": {
    "roster": 27,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 165936)"
+   "coaches": 5
   },
   "greensborocollege": {
    "roster": 49,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 198598)"
+   "coaches": 5
   },
   "grinnellcollege": {
    "roster": 41,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 153384)"
+   "coaches": 4
   },
   "grovecitycollege": {
    "roster": 35,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 212805)"
+   "coaches": 4
   },
   "guilfordcollege": {
    "roster": 48,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 198613)"
+   "coaches": 4
   },
   "gustavusadolphuscollege": {
    "roster": 65,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 173647)"
+   "coaches": 6
   },
   "gwyneddmercyuniversity": {
    "roster": 41,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 212832)"
+   "coaches": 5
   },
   "hamiltoncollege": {
    "roster": 35,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 191515)"
-  },
-  "hampdensydneycollege": {
-   "roster": 22,
-   "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 232256)"
+   "coaches": 3
   },
   "hamlineuniversity": {
    "roster": 44,
    "season": "2026",
-   "coaches": 9,
-   "costs": "ok (federal id 173665)"
+   "coaches": 9
   },
-  "hanovercollege": {
-   "roster": 54,
-   "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 150756)"
+  "hampdensydneycollege": {
+   "roster": 22,
+   "season": "2027",
+   "coaches": 4
   },
   "hardinsimmonsuniversity": {
    "roster": 47,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 225247)"
+   "coaches": "none parsed, kept last copy"
+  },
+  "hanovercollege": {
+   "roster": 54,
+   "season": "2026",
+   "coaches": 3
   },
   "universityofhartford": {
    "roster": 48,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 129525)"
+   "coaches": 4
   },
   "haverfordcollege": {
    "roster": 33,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 212911)"
+   "coaches": 6
   },
   "heidelberguniversity": {
    "roster": 53,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 203085)"
-  },
-  "hiramcollege": {
-   "roster": 48,
-   "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 203128)"
+   "coaches": 4
   },
   "hilbertcollege": {
    "roster": 38,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 191621)"
+   "coaches": 6
+  },
+  "hiramcollege": {
+   "roster": 48,
+   "season": "2026",
+   "coaches": 3
   },
   "hobartcollege": {
    "roster": 42,
    "season": null,
-   "coaches": 4,
-   "costs": "ok (federal id 191630)"
+   "coaches": 4
   },
   "hoodcollege": {
    "roster": 0,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 162760)"
+   "coaches": 3
   },
   "houghtonuniversity": {
    "roster": 41,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 191676)"
+   "coaches": 4
   },
   "hussonuniversity": {
    "roster": 33,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 487524)"
+   "coaches": 6
   },
   "illinoiscollege": {
    "roster": 55,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 145691)"
+   "coaches": 5
   },
   "illinoisinstituteoftechnolog": {
    "roster": 37,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 145725)"
+   "coaches": 3
   },
   "illinoiswesleyanuniversity": {
    "roster": 54,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 145646)"
+   "coaches": 4
   },
   "immaculatauniversity": {
    "roster": 40,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 213011)"
+   "coaches": 3
   },
   "ithacacollege": {
    "roster": 43,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 191968)"
+   "coaches": 4
   },
   "johncarrolluniversity": {
    "roster": 59,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 203368)"
+   "coaches": 6
   },
   "johnjaycollegeofcriminaljust": {
    "roster": 28,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 190600)"
-  },
-  "johnshopkinsuniversity": {
-   "roster": 44,
-   "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 162928)"
+   "coaches": 4
   },
   "johnsonwalesuniversity": {
    "roster": 35,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 217235)"
+   "coaches": 4
+  },
+  "johnshopkinsuniversity": {
+   "roster": 44,
+   "season": "2026",
+   "coaches": 6
   },
   "johnsonwalesuniversitycharlo": {
    "roster": 40,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 445708)"
+   "coaches": 5
   },
   "kalamazoocollege": {
    "roster": 46,
    "season": "2026",
-   "coaches": 8,
-   "costs": "ok (federal id 170532)"
+   "coaches": 8
   },
   "keenestatecollege": {
    "roster": 40,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 183062)"
+   "coaches": 5
   },
   "keukacollege": {
    "roster": 38,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 192192)"
-  },
-  "kenyoncollege": {
-   "roster": 37,
-   "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 203535)"
+   "coaches": 4
   },
   "kingscollege": {
    "roster": 53,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 213321)"
+   "coaches": 7
+  },
+  "kenyoncollege": {
+   "roster": 37,
+   "season": "2026",
+   "coaches": 3
   },
   "knoxcollege": {
    "roster": 0,
    "season": null,
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 146427)"
+   "coaches": "none parsed, kept last copy"
   },
   "lagrangecollege": {
    "roster": 56,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 140234)"
+   "coaches": "none parsed, kept last copy"
   },
   "lakelanduniversity": {
    "roster": 47,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 238980)"
+   "coaches": 3
   },
   "lancasterbiblecollege": {
    "roster": 41,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 213400)"
+   "coaches": 6
   },
   "lebanonvalleycollege": {
    "roster": 44,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 213507)"
-  },
-  "lehmancollege": {
-   "roster": 24,
-   "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 190637)"
+   "coaches": "none parsed, kept last copy"
   },
   "letourneauuniversity": {
    "roster": 43,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 226231)"
+   "coaches": 4
+  },
+  "lehmancollege": {
+   "roster": 24,
+   "season": "2026",
+   "coaches": 6
   },
   "lewisclarkcollege": {
    "roster": 30,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 209056)"
+   "coaches": 6
   },
   "linfielduniversity": {
    "roster": 41,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 209065)"
+   "coaches": 5
   },
   "lorascollege": {
    "roster": 32,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 153825)"
+   "coaches": 7
   },
   "luthercollege": {
    "roster": 48,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 153834)"
-  },
-  "universityoflynchburg": {
-   "roster": 56,
-   "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 232609)"
+   "coaches": 5
   },
   "lycomingcollege": {
    "roster": 45,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 213668)"
+   "coaches": 6
+  },
+  "universityoflynchburg": {
+   "roster": 56,
+   "season": "2026",
+   "coaches": "none parsed, kept last copy"
   },
   "macalestercollege": {
    "roster": 40,
    "season": "2027",
-   "coaches": 8,
-   "costs": "ok (federal id 173902)"
+   "coaches": 8
   },
   "manchesteruniversity": {
    "roster": 61,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 151777)"
+   "coaches": 5
   },
   "manhattanvilleuniversity": {
    "roster": 48,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 192749)"
+   "coaches": 4
   },
   "maranathabaptistuniversity": {
    "roster": 13,
-   "season": "2026",
-   "costs": "ok (federal id 239071)"
+   "season": "2026"
   },
   "marianuniversity": {
    "roster": 40,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 239080)"
+   "coaches": 6
   },
   "martinluthercollege": {
    "roster": 20,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 173452)"
+   "coaches": 4
   },
   "marybaldwinuniversity": {
    "roster": 38,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 232672)"
+   "coaches": 4
   },
   "universityofmarywashington": {
    "roster": 34,
    "season": "2027",
-   "coaches": 1,
-   "costs": "ok (federal id 232681)"
+   "coaches": 1
   },
   "marymountuniversity": {
    "roster": 47,
    "season": "2027",
-   "coaches": 9,
-   "costs": "ok (federal id 232706)"
-  },
-  "universityofmassachusettsbos": {
-   "roster": 40,
-   "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 166638)"
-  },
-  "marywooduniversity": {
-   "roster": 46,
-   "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 213826)"
+   "coaches": 9
   },
   "maryvillecollege": {
    "roster": 38,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 220710)"
+   "coaches": 4
+  },
+  "universityofmassachusettsbos": {
+   "roster": 40,
+   "season": "2026",
+   "coaches": 6
+  },
+  "marywooduniversity": {
+   "roster": 46,
+   "season": "2026",
+   "coaches": 6
   },
   "universityofmassachusettsdar": {
    "roster": 41,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 167987)"
+   "coaches": 6
   },
   "massachusettsinstituteoftech": {
    "roster": 27,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 166683)"
+   "coaches": 4
   },
   "mcdanielcollege": {
    "roster": 40,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 164270)"
+   "coaches": 5
   },
   "mcmurryuniversity": {
    "roster": 44,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 226587)"
+   "coaches": 5
   },
   "messiahuniversity": {
    "roster": 48,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 213996)"
+   "coaches": 6
   },
   "methodistuniversity": {
    "roster": 32,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 198969)"
+   "coaches": 3
   },
   "middleburycollege": {
    "roster": 35,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 230959)"
+   "coaches": 4
   },
   "millikinuniversity": {
    "roster": 46,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 147244)"
+   "coaches": 5
   },
   "millsapscollege": {
    "roster": 53,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 175980)"
+   "coaches": 4
   },
   "misericordiauniversity": {
-   "roster": "unreachable",
-   "costs": "ok (federal id 214069)"
-  },
-  "universityofminnesotamorris": {
-   "roster": 43,
-   "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 174251)"
+   "roster": "unreachable"
   },
   "milwaukeeschoolofengineering": {
    "roster": 44,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 239318)"
+   "coaches": 5
+  },
+  "universityofminnesotamorris": {
+   "roster": 43,
+   "season": "2027",
+   "coaches": 3
   },
   "mississippiuniversityforwome": {
    "roster": 14,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 176035)"
+   "coaches": 4
   },
   "monmouthcollege": {
    "roster": 45,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 147341)"
+   "coaches": "none parsed, kept last copy"
   },
   "mountaloysiuscollege": {
    "roster": 44,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 214166)"
+   "coaches": 3
   },
   "mountstjosephuniversity": {
    "roster": 42,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 204200)"
+   "coaches": 7
   },
   "mountsaintmarycollege": {
    "roster": 41,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 193353)"
+   "coaches": 5
   },
   "universityofmountsaintvincen": {
    "roster": 48,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 193399)"
+   "coaches": 6
   },
   "universityofmountunion": {
    "roster": 53,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 204185)"
+   "coaches": 5
   },
   "muhlenbergcollege": {
    "roster": 41,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 214175)"
+   "coaches": 3
   },
   "nebraskawesleyanuniversity": {
    "roster": 41,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 181446)"
+   "coaches": 4
   },
   "neumannuniversity": {
    "roster": 37,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 214272)"
+   "coaches": 5
   },
   "newenglandcollege": {
    "roster": 33,
    "season": "2026",
-   "coaches": 8,
-   "costs": "ok (federal id 182980)"
+   "coaches": 8
   },
   "stateuniversityofnewyorkatbr": {
    "roster": 45,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 196121)"
+   "coaches": "none parsed, kept last copy"
   },
   "stateuniversityofnewyorkatca": {
    "roster": 34,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 196015)"
+   "coaches": 5
   },
   "stateuniversityofnewyorkatco": {
    "roster": 44,
    "season": "2026",
-   "coaches": 10,
-   "costs": "ok (federal id 196149)"
+   "coaches": 10
   },
   "stateuniversityofnewyorkatfr": {
    "roster": 26,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 196158)"
+   "coaches": 4
   },
   "stateuniversityofnewyorkmari": {
    "roster": 37,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 196291)"
+   "coaches": 2
   },
   "stateuniversityofnewyorkatne": {
    "roster": 38,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 196176)"
+   "coaches": 2
   },
   "stateuniversityofnewyorkatol": {
    "roster": 37,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 196237)"
+   "coaches": "none parsed, kept last copy"
   },
   "stateuniversityofnewyorkaton": {
    "roster": 44,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 196185)"
+   "coaches": 6
   },
   "stateuniversityofnewyorkatos": {
    "roster": 41,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 196194)"
+   "coaches": 4
   },
   "stateuniversityofnewyorkatpl": {
    "roster": 46,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 196246)"
+   "coaches": 3
   },
   "stateuniversityofnewyorkatpu": {
    "roster": 33,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 196219)"
-  },
-  "newyorkuniversity": {
-   "roster": 42,
-   "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 193900)"
+   "coaches": 5
   },
   "nicholscollege": {
    "roster": 51,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 167260)"
+   "coaches": 5
+  },
+  "newyorkuniversity": {
+   "roster": 42,
+   "season": "2026",
+   "coaches": 4
   },
   "northcarolinawesleyanunivers": {
    "roster": 59,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 199209)"
+   "coaches": 6
   },
   "northcentralcollege": {
    "roster": 40,
    "season": "2026",
-   "coaches": 14,
-   "costs": "ok (federal id 147660)"
+   "coaches": 14
   },
   "northcentraluniversity": {
    "roster": 29,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 174437)"
-  },
-  "universityofnorthwesternstpa": {
-   "roster": 40,
-   "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 174491)"
+   "coaches": 5
   },
   "northparkuniversity": {
    "roster": 50,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 147679)"
+   "coaches": 6
+  },
+  "universityofnorthwesternstpa": {
+   "roster": 40,
+   "season": "2026",
+   "coaches": 5
   },
   "norwichuniversity": {
    "roster": 34,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 230995)"
+   "coaches": 5
   },
   "notredameofmarylanduniversit": {
    "roster": 36,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 163578)"
+   "coaches": 6
   },
   "oberlincollege": {
    "roster": 42,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 204501)"
+   "coaches": 6
   },
   "occidentalcollege": {
    "roster": 40,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 120254)"
+   "coaches": "none parsed, kept last copy"
   },
   "ohiowesleyanuniversity": {
    "roster": 37,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 204909)"
+   "coaches": 5
   },
   "otterbeinuniversity": {
    "roster": 50,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 204936)"
+   "coaches": 4
   },
   "universityoftheozarks": {
    "roster": 38,
    "season": "2027",
-   "coaches": 2,
-   "costs": "ok (federal id 107558)"
+   "coaches": 2
   },
   "pacificlutheranuniversity": {
    "roster": 37,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 236230)"
+   "coaches": 5
   },
   "pacificuniversity": {
    "roster": 54,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 209612)"
+   "coaches": 4
   },
   "pennsylvaniacollegeoftechnol": {
    "roster": 42,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 366252)"
+   "coaches": 5
   },
   "pennsylvaniastateuniversitya": {
    "roster": 49,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 214801)"
+   "coaches": 5
   },
   "pennsylvaniastateuniversityb": {
    "roster": 25,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 214704)"
-  },
-  "pennsylvaniastateuniversityh": {
-   "roster": 46,
-   "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 214713)"
+   "coaches": 4
   },
   "pfeifferuniversity": {
    "roster": 58,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 199306)"
+   "coaches": 4
+  },
+  "pennsylvaniastateuniversityh": {
+   "roster": 46,
+   "season": "2026",
+   "coaches": 4
+  },
+  "universityofpittsburghatgree": {
+   "roster": 35,
+   "season": "2026"
   },
   "piedmontuniversity": {
    "roster": 43,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 140818)"
-  },
-  "universityofpittsburghatgree": {
-   "roster": 35,
-   "season": "2026",
-   "costs": "ok (federal id 215275)"
+   "coaches": 3
   },
   "plymouthstateuniversity": {
    "roster": 35,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 183080)"
+   "coaches": 3
   },
   "pomonacollegeandpitzercolleg": {
    "roster": 38,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 121345)"
+   "coaches": 5
   },
   "principiacollege": {
    "roster": 28,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 148016)"
-  },
-  "randolphmaconcollege": {
-   "roster": 44,
-   "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 233295)"
+   "coaches": 4
   },
   "universityofpugetsound": {
    "roster": 48,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 236328)"
+   "coaches": 6
+  },
+  "randolphmaconcollege": {
+   "roster": 44,
+   "season": "2026",
+   "coaches": "none parsed, kept last copy"
   },
   "universityofredlands": {
    "roster": 33,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 121691)"
-  },
-  "rensselaerpolytechnicinstitu": {
-   "roster": 34,
-   "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 194824)"
+   "coaches": 7
   },
   "regentuniversity": {
    "roster": 46,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 231651)"
+   "coaches": 3
   },
-  "riponcollege": {
-   "roster": 27,
-   "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 239628)"
+  "rensselaerpolytechnicinstitu": {
+   "roster": 34,
+   "season": "2026",
+   "coaches": 4
   },
   "rhodeislandcollege": {
    "roster": 30,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 217420)"
+   "coaches": 3
   },
   "rivieruniversity": {
    "roster": 45,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 183211)"
+   "coaches": 7
+  },
+  "riponcollege": {
+   "roster": 27,
+   "season": "2027",
+   "coaches": 5
   },
   "roanokecollege": {
    "roster": 34,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 233426)"
+   "coaches": 4
   },
   "universityofrochester": {
    "roster": 32,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 195030)"
+   "coaches": 5
   },
   "rochesterinstituteoftechnolo": {
    "roster": 42,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 195003)"
-  },
-  "rogerwilliamsuniversity": {
-   "roster": 47,
-   "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 217518)"
+   "coaches": 4
   },
   "rockforduniversity": {
    "roster": 48,
    "season": "2026",
-   "coaches": 9,
-   "costs": "ok (federal id 148405)"
+   "coaches": 9
+  },
+  "rogerwilliamsuniversity": {
+   "roster": 47,
+   "season": "2026",
+   "coaches": 5
   },
   "rosehulmaninstituteoftechnol": {
    "roster": 35,
    "season": "2027",
-   "coaches": 2,
-   "costs": "ok (federal id 152318)"
+   "coaches": 2
   },
   "stjohnfisheruniversity": {
    "roster": 40,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 195720)"
+   "coaches": 5
   },
   "saintjohnsuniversity": {
    "roster": 54,
    "season": "2026",
-   "coaches": 8,
-   "costs": "ok (federal id 174747)"
+   "coaches": 8
   },
   "saintjosephscollegeofmaine": {
    "roster": 44,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 161518)"
+   "coaches": "none parsed, kept last copy"
   },
   "stlawrenceuniversity": {
    "roster": 43,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 195216)"
+   "coaches": 2
   },
   "stmaryscollegeofmaryland": {
    "roster": 44,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 163912)"
+   "coaches": 3
   },
   "saintmarysuniversityofminnes": {
    "roster": 54,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 174817)"
+   "coaches": 5
   },
   "stnorbertcollege": {
    "roster": 50,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 239716)"
+   "coaches": 7
   },
   "thecollegeofstscholastica": {
    "roster": 53,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 174899)"
+   "coaches": 5
   },
   "universityofstthomastexas": {
    "roster": 47,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 227863)"
+   "coaches": 5
   },
   "saintvincentcollege": {
    "roster": 49,
    "season": "2026",
-   "coaches": 1,
-   "costs": "ok (federal id 215798)"
+   "coaches": 1
   },
   "salisburyuniversity": {
    "roster": 38,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 163851)"
+   "coaches": 5
   },
   "salvereginauniversity": {
    "roster": 48,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 217536)"
+   "coaches": 6
   },
   "universityofscranton": {
    "roster": 50,
    "season": "2026",
-   "coaches": 8,
-   "costs": "ok (federal id 215929)"
-  },
-  "skidmorecollege": {
-   "roster": 33,
-   "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 195526)"
+   "coaches": 8
   },
   "shenandoahuniversity": {
    "roster": 62,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 233541)"
+   "coaches": 7
+  },
+  "skidmorecollege": {
+   "roster": 33,
+   "season": "2026",
+   "coaches": 4
   },
   "universityofsouthernmaine": {
    "roster": 41,
    "season": "2026",
-   "coaches": 8,
-   "costs": "ok (federal id 161554)"
+   "coaches": 8
   },
   "southernvirginiauniversity": {
    "roster": 38,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 233611)"
+   "coaches": 3
+  },
+  "spaldinguniversity": {
+   "roster": "unreachable"
   },
   "southwesternuniversity": {
    "roster": 40,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 228343)"
-  },
-  "spaldinguniversity": {
-   "roster": "unreachable",
-   "costs": "ok (federal id 157757)"
+   "coaches": "none parsed, kept last copy"
   },
   "springfieldcollege": {
    "roster": 39,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 167899)"
+   "coaches": 5
   },
   "stevensinstituteoftechnology": {
    "roster": 40,
    "season": "2026",
-   "coaches": 9,
-   "costs": "ok (federal id 186867)"
-  },
-  "stevensonuniversity": {
-   "roster": 42,
-   "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 164173)"
+   "coaches": 9
   },
   "texaslutheranuniversity": {
    "roster": 42,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 228981)"
+   "coaches": 3
   },
-  "thomascollege": {
-   "roster": 0,
-   "season": "2027",
-   "coaches": 2,
-   "costs": "ok (federal id 161563)"
+  "stevensonuniversity": {
+   "roster": 42,
+   "season": "2026",
+   "coaches": 6
   },
   "thielcollege": {
    "roster": 37,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 216357)"
+   "coaches": 6
+  },
+  "thomascollege": {
+   "roster": 0,
+   "season": "2027",
+   "coaches": 2
   },
   "transylvaniauniversity": {
    "roster": 47,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 157818)"
+   "coaches": 3
   },
   "trineuniversity": {
    "roster": 63,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 152567)"
+   "coaches": 4
   },
   "trinitycollege": {
    "roster": 32,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 130590)"
-  },
-  "trinityuniversity": {
-   "roster": 52,
-   "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 229267)"
+   "coaches": 5
   },
   "tuftsuniversity": {
    "roster": 42,
    "season": "2026",
-   "coaches": 8,
-   "costs": "ok (federal id 168148)"
+   "coaches": 8
+  },
+  "trinityuniversity": {
+   "roster": 52,
+   "season": "2026",
+   "coaches": 5
   },
   "unioncollege": {
    "roster": 36,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 196866)"
+   "coaches": 4
   },
   "unitedstatescoastguardacadem": {
    "roster": 34,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 130624)"
+   "coaches": 3
   },
   "unitedstatesmerchantmarineac": {
    "roster": 35,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 197027)"
+   "coaches": 5
   },
   "ursinuscollege": {
    "roster": 47,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 216524)"
+   "coaches": 5
   },
   "uticauniversity": {
    "roster": 60,
    "season": "2026",
-   "coaches": 8,
-   "costs": "ok (federal id 197045)"
+   "coaches": 8
   },
   "vassarcollege": {
    "roster": 27,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 197133)"
+   "coaches": 5
   },
   "wabashcollege": {
    "roster": 40,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 152673)"
+   "coaches": 6
   },
   "wartburgcollege": {
    "roster": 52,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 154527)"
+   "coaches": "none parsed, kept last copy"
   },
   "washingtonjeffersoncollege": {
    "roster": 53,
    "season": "2026",
-   "coaches": 10,
-   "costs": "ok (federal id 216667)"
+   "coaches": 10
   },
   "washingtonandleeuniversity": {
    "roster": 29,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 234207)"
-  },
-  "washingtoncollege": {
-   "roster": 46,
-   "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 164216)"
-  },
-  "waynesburguniversity": {
-   "roster": 0,
-   "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 216694)"
+   "coaches": 2
   },
   "washingtonuniversityinstloui": {
    "roster": 37,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 179867)"
+   "coaches": 5
+  },
+  "washingtoncollege": {
+   "roster": 46,
+   "season": "2026",
+   "coaches": 4
+  },
+  "waynesburguniversity": {
+   "roster": 0,
+   "season": "2027",
+   "coaches": "none parsed, kept last copy"
   },
   "websteruniversity": {
    "roster": 0,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 179894)"
+   "coaches": 5
   },
   "wesleyanuniversity": {
    "roster": 39,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 130697)"
+   "coaches": 4
   },
   "westernconnecticutstateunive": {
    "roster": 36,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 130776)"
+   "coaches": 6
   },
   "westernnewenglanduniversity": {
    "roster": 54,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 168254)"
+   "coaches": 5
   },
   "wheatoncollege": {
    "roster": 41,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 168281)"
+   "coaches": 7
   },
   "whitmancollege": {
    "roster": 42,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 237057)"
+   "coaches": 4
   },
   "wideneruniversity": {
    "roster": 41,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 216852)"
+   "coaches": 5
   },
   "wilkesuniversity": {
    "roster": 43,
    "season": "2026",
-   "coaches": 8,
-   "costs": "ok (federal id 216931)"
+   "coaches": 8
   },
   "williampeaceuniversity": {
    "roster": 56,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 199272)"
+   "coaches": 5
   },
   "williamscollege": {
    "roster": 30,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 168342)"
+   "coaches": 4
   },
   "wilmingtoncollege": {
    "roster": 39,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 206507)"
+   "coaches": 3
   },
   "universityofwisconsineauclai": {
    "roster": 56,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 240268)"
+   "coaches": 5
   },
   "universityofwisconsinlacross": {
    "roster": 33,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 240329)"
+   "coaches": 4
   },
   "wisconsinlutherancollege": {
    "roster": 40,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 240338)"
+   "coaches": 6
   },
   "universityofwisconsinoshkosh": {
    "roster": 39,
    "season": "2026",
-   "coaches": 7,
-   "costs": "ok (federal id 240365)"
+   "coaches": 7
   },
   "universityofwisconsinplattev": {
    "roster": 0,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 240462)"
+   "coaches": 5
   },
   "universityofwisconsinriverfa": {
    "roster": 41,
    "season": "2026",
-   "coaches": 8,
-   "costs": "ok (federal id 240471)"
+   "coaches": 8
   },
   "universityofwisconsinstevens": {
    "roster": 43,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 240480)"
+   "coaches": 4
   },
   "universityofwisconsinstoutpo": {
    "roster": 23,
    "season": "2027",
-   "coaches": 2,
-   "costs": "ok (federal id 240417)"
+   "coaches": 2
   },
   "universityofwisconsinwhitewa": {
    "roster": 35,
    "season": "2026",
-   "coaches": 8,
-   "costs": "ok (federal id 240189)"
+   "coaches": 8
   },
   "collegeofwooster": {
    "roster": 42,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 206589)"
+   "coaches": 3
   },
   "worcesterpolytechnicinstitut": {
    "roster": 42,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 168421)"
+   "coaches": "none parsed, kept last copy"
   },
   "yeshivauniversity": {
    "roster": 33,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 197708)"
+   "coaches": 5
   },
   "yorkcollegeofpennsylvania": {
    "roster": 40,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 217059)"
+   "coaches": 4
   },
   "abrahambaldwinagriculturalco": {
    "roster": 40,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 138558)"
+   "coaches": 2
   },
   "andrewcollege": {
    "roster": 44,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 138761)"
+   "coaches": 4
+  },
+  "arkansasbaptistcollege": {
+   "roster": 19,
+   "season": "2025"
   },
   "aquinascollege": {
    "roster": 62,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 168786)"
+   "coaches": 4
   },
   "avemariauniversity": {
    "roster": 37,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 446048)"
-  },
-  "arkansasbaptistcollege": {
-   "roster": 19,
-   "season": "2025",
-   "costs": "ok (federal id 106306)"
+   "coaches": 5
   },
   "benedictinecollege": {
    "roster": 49,
    "season": "2027",
-   "coaches": 2,
-   "costs": "ok (federal id 154712)"
+   "coaches": 2
   },
   "betheluniversityin": {
    "roster": 37,
    "season": "2027",
-   "coaches": 2,
-   "costs": "ok (federal id 150145)"
+   "coaches": 2
   },
   "betheluniversitytn": {
    "roster": 28,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 219718)"
+   "coaches": 3
   },
   "bismarckstatecollege": {
    "roster": 39,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 200022)"
+   "coaches": 2
   },
   "bluefielduniversity": {
    "roster": 30,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 231554)"
+   "coaches": 4
   },
   "brewtonparkerchristianuniver": {
    "roster": 58,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 139205)"
+   "coaches": 3
   },
   "briarcliffuniversity": {
    "roster": 64,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 152992)"
+   "coaches": 5
   },
   "bushnelluniversity": {
    "roster": 49,
    "season": "2027",
-   "coaches": 8,
-   "costs": "ok (federal id 209409)"
+   "coaches": 8
   },
   "campbellsvilleuniversity": {
    "roster": 41,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 156365)"
+   "coaches": 4
   },
   "carolinauniversity": {
    "roster": 58,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 489937)"
-  },
-  "centralchristiancollegeofkan": {
-   "roster": 66,
-   "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 154855)"
+   "coaches": 5
   },
   "columbiacollegemo": {
    "roster": 42,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 177065)"
+   "coaches": 5
+  },
+  "centralchristiancollegeofkan": {
+   "roster": 66,
+   "season": "2026",
+   "coaches": 4
   },
   "columbiainternationalunivers": {
    "roster": 46,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 217925)"
+   "coaches": 4
   },
   "corbanuniversity": {
    "roster": 47,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 210331)"
+   "coaches": 4
   },
   "universityofthecumberlands": {
    "roster": 35,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 156541)"
+   "coaches": 3
   },
   "dakotastateuniversity": {
    "roster": 47,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 219082)"
+   "coaches": 5
   },
   "dickinsonstateuniversity": {
    "roster": 42,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 200059)"
+   "coaches": 3
   },
   "dordtuniversity": {
    "roster": 44,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 153250)"
+   "coaches": 4
   },
   "easternoregonuniversity": {
    "roster": 47,
    "season": "2027",
-   "coaches": 2,
-   "costs": "ok (federal id 208646)"
-  },
-  "faulkneruniversity": {
-   "roster": 42,
-   "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 101189)"
+   "coaches": 2
   },
   "evangeluniversity": {
    "roster": 46,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 177339)"
+   "coaches": "none parsed, kept last copy"
+  },
+  "faulkneruniversity": {
+   "roster": 42,
+   "season": "2026",
+   "coaches": 6
   },
   "floridamemorialuniversity": {
    "roster": 34,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 133979)"
+   "coaches": 3
   },
   "freedhardemanuniversity": {
    "roster": 40,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 220215)"
-  },
-  "floridanationaluniversity": {
-   "roster": 82,
-   "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 408844)"
+   "coaches": 3
   },
   "friendsuniversity": {
    "roster": 58,
    "season": "2025",
-   "coaches": 3,
-   "costs": "ok (federal id 155089)"
+   "coaches": 3
+  },
+  "floridanationaluniversity": {
+   "roster": 82,
+   "season": "2026",
+   "coaches": 4
   },
   "georgiagwinnettcollege": {
    "roster": 38,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 447689)"
+   "coaches": 6
   },
   "goshencollege": {
    "roster": 40,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 150668)"
+   "coaches": 4
   },
   "gracecollegeseminary": {
    "roster": 35,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 150677)"
+   "coaches": 5
   },
   "grandviewuniversity": {
    "roster": 63,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 153375)"
+   "coaches": "none parsed, kept last copy"
   },
   "hanniballagrangeuniversity": {
    "roster": 36,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 177542)"
+   "coaches": 4
   },
   "harrisstowestateuniversity": {
    "roster": 34,
    "season": "2026",
-   "coaches": 1,
-   "costs": "ok (federal id 177551)"
+   "coaches": 1
   },
   "hesstoncollege": {
    "roster": 50,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 155177)"
+   "coaches": 4
   },
   "hopeinternationaluniversity": {
    "roster": 30,
    "season": "2027",
-   "coaches": 8,
-   "costs": "ok (federal id 120537)"
+   "coaches": 8
   },
   "hustontillotsonuniversity": {
    "roster": 40,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 225575)"
+   "coaches": "none parsed, kept last copy"
   },
   "collegeofidaho": {
    "roster": 58,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 142294)"
+   "coaches": 4
   },
   "indianatech": {
    "roster": 68,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 151290)"
+   "coaches": 7
   },
   "iusouthbend": {
    "roster": 38,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 151342)"
+   "coaches": 5
   },
   "iusoutheastorius": {
    "roster": 40,
    "season": "2025",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 151379)"
+   "coaches": "none parsed, kept last copy"
   },
   "indianawesleyanuniversity": {
    "roster": 40,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 151801)"
+   "coaches": 6
   },
   "kansaswesleyanuniversity": {
    "roster": 56,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 155414)"
-  },
-  "lewisclarkstatecollege": {
-   "roster": 15,
-   "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 142328)"
-  },
-  "lawrencetech": {
-   "roster": 44,
-   "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 170675)"
+   "coaches": 5
   },
   "keiseruniversity": {
    "roster": 38,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 135081)"
+   "coaches": 5
+  },
+  "lewisclarkstatecollege": {
+   "roster": 15,
+   "season": "2027",
+   "coaches": 5
+  },
+  "lawrencetech": {
+   "roster": 44,
+   "season": "2027",
+   "coaches": 7
   },
   "lindseywilsonuniversity": {
    "roster": 39,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 157216)"
+   "coaches": "none parsed, kept last copy"
   },
   "louisianachristianuniversity": {
    "roster": 43,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 159568)"
-  },
-  "lsualexandria": {
-   "roster": 43,
-   "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 159382)"
-  },
-  "marianuniversityin": {
-   "roster": 41,
-   "season": "2027",
-   "coaches": 8,
-   "costs": "ok (federal id 151786)"
+   "coaches": 4
   },
   "mcphersoncollege": {
    "roster": 40,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 155511)"
+   "coaches": 5
+  },
+  "marianuniversityin": {
+   "roster": 41,
+   "season": "2027",
+   "coaches": 8
   },
   "madonnauniversity": {
    "roster": 61,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 170806)"
+   "coaches": 5
+  },
+  "lsualexandria": {
+   "roster": 43,
+   "season": "2026",
+   "coaches": 5
   },
   "midamericachristianuniversit": {
    "roster": 90,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 245953)"
+   "coaches": 4
   },
   "midamericanazareneuniversity": {
    "roster": 21,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 155520)"
+   "coaches": 4
   },
   "midwayuniversity": {
    "roster": 61,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 157377)"
-  },
-  "milliganuniversity": {
-   "roster": 69,
-   "season": "2026",
-   "coaches": 9,
-   "costs": "ok (federal id 486901)"
+   "coaches": 5
   },
   "missionuniversity": {
    "roster": 36,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 176664)"
+   "coaches": 2
+  },
+  "milliganuniversity": {
+   "roster": 69,
+   "season": "2026",
+   "coaches": 9
+  },
+  "universityofmontanawestern": {
+   "roster": 10,
+   "season": null
   },
   "missouribaptistuniversity": {
    "roster": 54,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 178244)"
-  },
-  "universityofmontanawestern": {
-   "roster": 10,
-   "season": null,
-   "costs": "ok (federal id 180692)"
+   "coaches": 6
   },
   "montreatcollege": {
    "roster": 50,
    "season": "2026",
-   "coaches": 9,
-   "costs": "ok (federal id 199032)"
+   "coaches": 9
   },
   "mountmartyuniversity": {
    "roster": 59,
    "season": "2027",
-   "coaches": 7,
-   "costs": "ok (federal id 219198)"
+   "coaches": 7
   },
   "newcollegeofflorida": {
    "roster": 50,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 262129)"
+   "coaches": 5
   },
   "oakwooduniversity": {
    "roster": 23,
-   "season": "2026",
-   "costs": "ok (federal id 101912)"
-  },
-  "northwesterncollege": {
-   "roster": 54,
-   "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 154101)"
+   "season": "2026"
   },
   "oklahomacityuniversity": {
    "roster": 33,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 207458)"
+   "coaches": 2
+  },
+  "northwesterncollege": {
+   "roster": 54,
+   "season": "2027",
+   "coaches": 4
   },
   "oklahomawesleyanuniversity": {
    "roster": 48,
    "season": "2026",
-   "coaches": 9,
-   "costs": "ok (federal id 206835)"
+   "coaches": 9
   },
   "oregontech": {
    "roster": 42,
    "season": "2027",
-   "coaches": 6,
-   "costs": "ok (federal id 209506)"
+   "coaches": 6
   },
   "ottawauniversity": {
    "roster": 66,
    "season": "2027",
-   "coaches": 8,
-   "costs": "ok (federal id 155627)"
+   "coaches": 8
   },
   "parkuniversity": {
    "roster": 45,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 178721)"
-  },
-  "perustatecollege": {
-   "roster": 47,
-   "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 181534)"
+   "coaches": 5
   },
   "universityofpikeville": {
    "roster": 42,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 157535)"
+   "coaches": 4
+  },
+  "perustatecollege": {
+   "roster": 47,
+   "season": "2026",
+   "coaches": 6
   },
   "universityofstfrancis": {
    "roster": 49,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 148584)"
+   "coaches": 5
   },
   "universityofsaintmary": {
    "roster": 35,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 155812)"
+   "coaches": 3
   },
   "stthomasuniversity": {
    "roster": 40,
    "season": "2026",
-   "coaches": 9,
-   "costs": "ok (federal id 137476)"
+   "coaches": 9
   },
   "saintxavieruniversity": {
    "roster": 49,
    "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 148627)"
+   "coaches": "none parsed, kept last copy"
   },
   "simpsonuniversity": {
    "roster": 61,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 123457)"
-  },
-  "universityofthesouthwest": {
-   "roster": 59,
-   "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 188182)"
+   "coaches": 5
   },
   "southeasternuniversity": {
    "roster": 54,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 137564)"
+   "coaches": 4
+  },
+  "universityofthesouthwest": {
+   "roster": 59,
+   "season": "2026",
+   "coaches": 4
   },
   "southwesterncollege": {
    "roster": 72,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 155900)"
+   "coaches": 4
   },
   "springarboruniversity": {
    "roster": 31,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 172334)"
-  },
-  "talladegacollege": {
-   "roster": 35,
-   "season": "2025",
-   "coaches": 2,
-   "costs": "ok (federal id 102298)"
+   "coaches": 5
   },
   "taborcollege": {
    "roster": 64,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 155973)"
+   "coaches": 5
+  },
+  "talladegacollege": {
+   "roster": 35,
+   "season": "2025",
+   "coaches": 2
   },
   "utsouthern": {
    "roster": 33,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 220701)"
-  },
-  "truettmcconnelluniversity": {
-   "roster": 47,
-   "season": "2027",
-   "costs": "ok (federal id 141237)"
+   "coaches": 3
   },
   "thomasuniversity": {
    "roster": 63,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 141167)"
+   "coaches": 5
+  },
+  "truettmcconnelluniversity": {
+   "roster": 47,
+   "season": "2027"
   },
   "unitedstatessportsuniversity": {
    "roster": 33,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 102395)"
-  },
-  "voorheesuniversity": {
-   "roster": 30,
-   "season": "2025",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 218919)"
+   "coaches": 3
   },
   "valleycitystateuniversity": {
    "roster": 45,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 200572)"
+   "coaches": 3
+  },
+  "voorheesuniversity": {
+   "roster": 30,
+   "season": "2025",
+   "coaches": "none parsed, kept last copy"
   },
   "warneruniversity": {
    "roster": 66,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 138275)"
+   "coaches": 4
   },
   "warnerpacificuniversity": {
    "roster": 45,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 210304)"
+   "coaches": 5
   },
   "waylandbaptistuniversity": {
    "roster": 40,
-   "season": "2027",
-   "costs": "ok (federal id 229780)"
+   "season": "2027"
   },
   "webberinternationaluniversit": {
    "roster": 32,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 138293)"
+   "coaches": 6
   },
   "williamcareyuniversity": {
    "roster": 38,
    "season": "2026",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 176479)"
+   "coaches": "none parsed, kept last copy"
   },
   "williamwoodsuniversity": {
    "roster": 50,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 179964)"
-  },
-  "yorkuniversity": {
-   "roster": 38,
-   "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 181853)"
-  },
-  "floridapoly": {
-   "roster": 35,
-   "season": "2027",
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 482936)"
+   "coaches": 4
   },
   "xavieruniversityoflouisiana": {
    "roster": 42,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 160904)"
+   "coaches": 4
+  },
+  "yorkuniversity": {
+   "roster": 38,
+   "season": "2027",
+   "coaches": "none parsed, kept last copy"
   },
   "enterpriseozarkcommunitycoll": {
-   "roster": "unreachable",
-   "costs": "ok (federal id 101143)"
+   "roster": "unreachable"
+  },
+  "floridapoly": {
+   "roster": 35,
+   "season": "2027",
+   "coaches": "none parsed, kept last copy"
   },
   "indianriverstatecollege": {
-   "roster": "unreachable",
-   "costs": "ok (federal id 134608)"
+   "roster": "unreachable"
   },
   "wallacecommunitycollege": {
    "roster": 34,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 101286)"
+   "coaches": 3
   },
   "coloradonorthwesterncommunit": {
    "roster": 29,
    "season": "2025",
-   "coaches": 3,
-   "costs": "ok (federal id 126748)"
+   "coaches": 3
+  },
+  "seminolestatecollegeofflorid": {
+   "roster": 28,
+   "season": "2027"
   },
   "polkstatecollege": {
    "roster": 27,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 136516)"
-  },
-  "seminolestatecollegeofflorid": {
-   "roster": 28,
-   "season": "2027",
-   "costs": "ok (federal id 137209)"
-  },
-  "collegeofsouthernidaho": {
-   "roster": 40,
-   "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 142559)"
+   "coaches": 4
   },
   "southfloridastatecollege": {
    "roster": 0,
    "season": null,
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 137315)"
+   "coaches": "none parsed, kept last copy"
   },
-  "cloudcountycommunitycollege": {
-   "roster": 36,
+  "collegeofsouthernidaho": {
+   "roster": 40,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 154907)"
+   "coaches": 3
   },
   "tritoncollege": {
    "roster": 38,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 149532)"
+   "coaches": 5
   },
-  "louisianastateuniversityateu": {
-   "roster": 46,
+  "cloudcountycommunitycollege": {
+   "roster": 36,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 159407)"
+   "coaches": 4
   },
   "delgadocommunitycollege": {
    "roster": 43,
-   "season": "2027",
-   "costs": "ok (federal id 158662)"
+   "season": "2027"
   },
   "dodgecitycommunitycollege": {
    "roster": 44,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 154998)"
+   "coaches": 5
+  },
+  "louisianastateuniversityateu": {
+   "roster": 46,
+   "season": "2027",
+   "coaches": 5
   },
   "alleganycollegeofmaryland": {
    "roster": 43,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 161688)"
-  },
-  "coahomacommunitycollege": {
-   "roster": 27,
-   "season": "2025",
-   "coaches": 2,
-   "costs": "ok (federal id 175519)"
+   "coaches": 4
   },
   "harfordcommunitycollege": {
    "roster": 29,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 162706)"
+   "coaches": 5
   },
-  "southwestmississippicommunit": {
-   "roster": 36,
-   "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 176354)"
+  "coahomacommunitycollege": {
+   "roster": 27,
+   "season": "2025",
+   "coaches": 2
   },
   "jonescountyjuniorcollege": {
    "roster": 20,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 175883)"
+   "coaches": 3
   },
   "northwestmississippicommunit": {
    "roster": 31,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 176178)"
+   "coaches": 3
+  },
+  "southwestmississippicommunit": {
+   "roster": 36,
+   "season": "2026",
+   "coaches": 4
   },
   "collegeofsouthernnevada": {
    "roster": 40,
    "season": "2027",
-   "coaches": 5,
-   "costs": "ok (federal id 182005)"
+   "coaches": 5
   },
   "murraystatecollege": {
    "roster": 49,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 207236)"
+   "coaches": 4
   },
   "universityofsouthcarolinalan": {
    "roster": 34,
    "season": "2025",
-   "coaches": 3,
-   "costs": "ok (federal id 218672)"
+   "coaches": 3
   },
   "columbiastatecommunitycolleg": {
-   "roster": "unreachable",
-   "costs": "ok (federal id 219888)"
+   "roster": "unreachable"
   },
   "universityofsouthcarolinasal": {
    "roster": 0,
    "season": null,
-   "coaches": "none parsed, kept last copy",
-   "costs": "ok (federal id 218681)"
-  },
-  "navarrocollege": {
-   "roster": 36,
-   "season": "2025",
-   "coaches": 2,
-   "costs": "ok (federal id 227146)"
+   "coaches": "none parsed, kept last copy"
   },
   "blinncollege": {
    "roster": 36,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 223427)"
+   "coaches": 3
   },
   "northeasttexascommunitycolle": {
    "roster": 12,
-   "season": "2026",
-   "costs": "ok (federal id 227225)"
+   "season": "2026"
+  },
+  "navarrocollege": {
+   "roster": 36,
+   "season": "2025",
+   "coaches": 2
   },
   "saltlakecommunitycollege": {
    "roster": 41,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 230746)"
-  },
-  "northarkansascollege": {
-   "roster": 56,
-   "season": null,
-   "costs": "ok (federal id 107460)"
+   "coaches": 4
   },
   "pascohernandostatecollege": {
    "roster": 0,
-   "season": null,
-   "costs": "ok (federal id 136400)"
+   "season": null
+  },
+  "northarkansascollege": {
+   "roster": 56,
+   "season": null
   },
   "danvilleareacommunitycollege": {
    "roster": 37,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 144564)"
-  },
-  "mortoncollege": {
-   "roster": 34,
-   "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 147411)"
+   "coaches": 2
   },
   "heartlandcommunitycollege": {
    "roster": 37,
    "season": "2027",
-   "coaches": 4,
-   "costs": "ok (federal id 384342)"
+   "coaches": 4
+  },
+  "mortoncollege": {
+   "roster": 34,
+   "season": "2026",
+   "coaches": 3
   },
   "oliveharveycollege": {
    "roster": 31,
-   "season": null,
-   "costs": "ok (federal id 144175)"
+   "season": null
   },
   "parklandcollege": {
    "roster": 37,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 147916)"
+   "coaches": 2
   },
   "prairiestatecollege": {
    "roster": 32,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 148007)"
+   "coaches": 3
   },
   "highlandcommunitycollege": {
    "roster": 41,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 155186)"
-  },
-  "harcumcollege": {
-   "roster": "unreachable",
-   "costs": "ok (federal id 212869)"
+   "coaches": 2
   },
   "macombcommunitycollege": {
    "roster": 53,
    "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 170790)"
+   "coaches": 6
   },
   "collegeofdupage": {
    "roster": 32,
    "season": "2026",
-   "coaches": 1,
-   "costs": "ok (federal id 144865)"
+   "coaches": 1
   },
   "jolietjuniorcollege": {
    "roster": 45,
    "season": "2026",
-   "coaches": 4,
-   "costs": "ok (federal id 146296)"
+   "coaches": 4
+  },
+  "harcumcollege": {
+   "roster": "unreachable"
   },
   "rockvalleycollege": {
    "roster": 40,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 148380)"
+   "coaches": 3
   },
   "northlandcommunitytechnicalc": {
    "roster": 34,
    "season": "2025",
-   "coaches": 2,
-   "costs": "ok (federal id 174473)"
+   "coaches": 2
   },
   "boroughofmanhattancommunityc": {
    "roster": 23,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 190521)"
+   "coaches": 3
   },
   "bronxcommunitycollege": {
    "roster": 21,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 190530)"
+   "coaches": 2
   },
   "kingsboroughcommunitycollege": {
    "roster": 0,
    "season": "2026",
-   "coaches": 8,
-   "costs": "ok (federal id 190619)"
+   "coaches": 8
   },
   "nassaucommunitycollege": {
    "roster": 25,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 193478)"
+   "coaches": 3
   },
   "onondagacommunitycollege": {
    "roster": 40,
    "season": "2026",
-   "coaches": 8,
-   "costs": "ok (federal id 194222)"
+   "coaches": 8
   },
   "queensboroughcommunitycolleg": {
    "roster": 21,
    "season": "2026",
-   "coaches": 2,
-   "costs": "ok (federal id 190673)"
+   "coaches": 2
   },
   "northamptoncommunitycollege": {
    "roster": 33,
    "season": "2025",
-   "coaches": 2,
-   "costs": "ok (federal id 214379)"
+   "coaches": 2
   },
   "madisonareatechnicalcollege": {
    "roster": 32,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 238263)"
+   "coaches": 5
   },
   "milwaukeeareatechnicalcolleg": {
    "roster": 31,
    "season": "2026",
-   "coaches": 5,
-   "costs": "ok (federal id 239248)"
+   "coaches": 5
   },
   "columbiabasincollege": {
    "roster": 42,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 234979)"
+   "coaches": 3
   },
   "graysharborcollege": {
    "roster": 28,
    "season": "2026",
-   "coaches": 3,
-   "costs": "ok (federal id 235334)"
+   "coaches": 3
   },
   "lowercolumbiacollege": {
    "roster": 39,
    "season": "2027",
-   "coaches": 3,
-   "costs": "ok (federal id 235750)"
-  },
-  "yakimavalleycollege": {
-   "roster": 48,
-   "season": "2026",
-   "coaches": 6,
-   "costs": "ok (federal id 237109)"
+   "coaches": 3
   },
   "southwesternoregoncommunityc": {
    "roster": 26,
    "season": "2025",
-   "coaches": 2,
-   "costs": "ok (federal id 210155)"
+   "coaches": 2
+  },
+  "yakimavalleycollege": {
+   "roster": 48,
+   "season": "2026",
+   "coaches": 6
   }
  }
 }
