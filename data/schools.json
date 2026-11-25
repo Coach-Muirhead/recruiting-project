@@ -4694,7 +4694,7 @@
   "rosterUrl": "https://ohiostatebuckeyes.com/sports/baseball/roster",
   "coachUrl": "https://ohiostatebuckeyes.com/sports/baseball/coaches",
   "roster": "Sam York|INF|Jr|El Dorado, AR\nAndrew Fulmer|INF|So|Tullahoma, TN\nAlex Bemis|OF|Sr|Monroe, OH\nJordan Serrano|OF|So|Somerdale, NJ\nZak Sigman|RHP|Sr|Grove City, OH\nAddison Binnie|OF|Sr|Clinton, IA\nCJ Reid|INF|Sr|Colorado Springs, CO\nBrock Moore|C|Jr|Urbandale, IA\nConnor Fuhrer|RHP|So|Loveland, OH\nWilson Wells|RHP/OF|Fr|Granville, OH\nGavin West|INF|Sr|Macon, GA\nJacob Parr|OF|So|Lemont, IL\nSahil Patel|LHP|Gr|Buford, GA\nOwen Graf|RHP|So|Toledo, OH\nJack Cecil|RHP|Jr|Lebanon, OH\nDane Harvey|1B|Sr|Warfordsburg, PA\nChris Domke|RHP|Sr|North Royalton, OH\nJake Michalak|RHP|Sr|North Royalton, OH\nPierce Herrenbruck|RHP|Sr|Evansville, IN\nJude Fisher|RHP|So|Cleveland, OH\nNathan Bryant|RHP|Fr|Akron, OH\nKayden Campbell|INF|Fr|Kennesaw, GA\nMartin Serrano|C|Jr|Pocatello, ID\nLandon Thiel|LHP|Fr|Massillon, OH\nMack Hieber|RHP|Fr|Hamler, OH\nRyder Hernandez|INF|Gr|Cedar Park, TX\nLincoln McVicker|RHP|Sr|Highlands Ranch, CO\nAustin Rose|C|So|Newark, OH\nChance Key|LHP|Gr|Waverly, IA\nJaxon Murray|INF|Fr|Beallsville, OH\nRyan Zamora|RHP|Gr|Elk Grove, CA\nLogan Cole|RHP|Fr|Liberty Township, OH\nKellan Klosterman|RHP|Jr|Loveland, OH\nBrady Lester|OF|Sr|Fredericktown, OH\nGavin Kuzniewski|RHP|Jr|Fishers, IN\nNick Sawyer|RHP|Sr|Upper Arlington, OH",
-  "season": "2026",
+  "season": "2027",
   "coaches": [
    [
     "Justin Haire",
@@ -5633,7 +5633,7 @@
   "rosterUrl": "https://utahutes.com/sports/baseball/roster",
   "coachUrl": "https://utahutes.com/sports/baseball/coaches",
   "roster": "Jackson Wilkerson|LHP|Jr|Houston, TX\nMaddox Riske|INF|Jr|Las Vegas, NV\nLuke Jacobs|OF|Sr|Centerville, UT\nCarson Page|INF|Jr|Valdosta, GA\nBobby Pierce Jr.|INF|Jr|Chandler, AZ\nCal Kilgore|C/OF|Sr|Overland Park, KS\nJack Kleveno|C|Sr|Riverside, CA\nCal Miller|INF|So|Centerville, UT\nDavid Galindo|RHP|Jr|Phoenix, AZ\nDillon Fine|RHP|So|Caldwell, ID\nJake Bitonti|INF/OF|Fr|Hesperia, CA\nDavis Germann|OF|Sr|Kitchener, Ontario\nDemitri Diamant|RHP|Sr|Las Vegas, NV\nGavin McLendon|LHP|Jr|Rocklin, CA\nBradley Navarro|OF|Sr|Huntington Beach, CA\nCameron Gurney|INF|Sr|Scotland, Ontario\nIan Lenius|LHP|So|Middleton, ID\nBoston Snyder|RHP|So|Herriman, UT\nPayton Riske|RHP|Sr|Las Vegas, NV\nJackson Kirby|RHP|So|St. George, UT\nBentley Crook|LHP|So|Sandy, UT\nDylan Venturini|RHP|Jr|Las Vegas, NV\nHayden Smith|C|Jr|Santa Clara, UT\nAnson McGorman|RHP|Sr|Parksville, British Columbia\nRocco Loffredo|RHP|So|Stilwell, KS\nKaden Cloward|RHP|Sr|Salem, UT\nGage Olsen|RHP|Sr|West Jordan, UT\nAnthony Mazza|C|Jr|Prairie Village, KS\nMalik Harris|RHP|Jr|Draper, UT\nRoman Trinidad|OF|Jr|Emerald Hills, CA\nJustin Santiago|RHP|Jr|La Vern, CA\nSeth Petersen|INF|Fr|Gillette, WY\nTurner Spoljaric|RHP|Sr|Lisle, Ontario\nBrandon Thomas|RHP|So|Cypress, CA\nWyatt Thornbury|RHP|Sr|Carlsbad, CA",
-  "season": "2027",
+  "season": "2026",
   "coaches": [
    [
     "Gary Henderson",
@@ -8043,7 +8043,9 @@
    "u": "https://collegescorecard.ed.gov/",
    "unitid": 166027
   },
-  "flags": [],
+  "flags": [
+   "The current roster page is up but lists no players yet."
+  ],
   "season": "2027",
   "coaches": [
    [
