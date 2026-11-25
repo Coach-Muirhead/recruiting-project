@@ -339,6 +339,22 @@ def scorecard(row: dict, key: str) -> dict:
 
 
 # ---------------------------------------------------------------- one school
+def apply_costs(s: dict, row: dict, key: str | None) -> None:
+    """Enrollment and federal tuition from College Scorecard (only when run with --with-costs)."""
+    if not key:
+        return
+    c = scorecard(row, key)
+    REPORT.setdefault(row["id"], {})["costs"] = f"ok (federal id {c['unitid']})" if c.get("enroll") else "no exact match - pin the unitid in schools.csv"
+    if c.get("enroll"):
+        s["enroll"], s["enrollNote"] = c["enroll"], "undergraduates (College Scorecard)"
+    # federal tuition lags a year or two: only fill a gap, never replace a rate read off the school's own page
+    t = s.get("tuition") or {}
+    federal = "collegescorecard" in t.get("u", "")
+    # a federal figure is refreshed (e.g. after a school is re-matched); a rate read off the school's own page is kept
+    if c.get("inS") and (not t or t.get("missing") or (federal and str(t.get("unitid", "")) != str(c["unitid"]))):
+        s["tuition"] = {"yr": "most recent federal figure", "inS": c["inS"], "inNote": "tuition (College Scorecard; may lag a year)", "outS": c["outS"], "outNote": "tuition (College Scorecard)", "u": "https://collegescorecard.ed.gov/", "unitid": c["unitid"]}
+
+
 def scrape_school(row: dict, prev: dict | None, key: str | None) -> dict:
     base = row["athletics_base"].rstrip("/")
     s = dict(prev or {})
@@ -368,6 +384,7 @@ def scrape_school(row: dict, prev: dict | None, key: str | None) -> dict:
         s.update({"roster": "", "coaches": [], "camps": [], "rosterUrl": base, "coachUrl": base, "listing": row.get("note") or "Roster not available here."})
         s["flags"] = [s["listing"] + " Use the link to see them on the school's own site."]
         REPORT.setdefault(row["id"], {})["roster"] = "directory entry (not scraped)"
+        apply_costs(s, row, key)
         return s
     else:
         log(f"  {row['id']}: unsupported platform {row['platform']}")
@@ -406,17 +423,7 @@ def scrape_school(row: dict, prev: dict | None, key: str | None) -> dict:
             c["d"], exact = camp_date(c.get("n", ""), c.pop("posted", ""))
             c["n"] = c["n"].title() if c.get("n", "").isupper() else c.get("n", "")
 
-    if key:
-        c = scorecard(row, key)
-        REPORT.setdefault(row["id"], {})["costs"] = f"ok (federal id {c['unitid']})" if c.get("enroll") else "no exact match - pin the unitid in schools.csv"
-        if c.get("enroll"):
-            s["enroll"], s["enrollNote"] = c["enroll"], "undergraduates (College Scorecard)"
-        # federal tuition lags a year or two: only fill a gap, never replace a rate read off the school's own page
-        t = s.get("tuition") or {}
-        federal = "collegescorecard" in t.get("u", "")
-        # a federal figure is refreshed (e.g. after a school is re-matched); a rate read off the school's own page is kept
-        if c.get("inS") and (not t or t.get("missing") or (federal and str(t.get("unitid", "")) != str(c["unitid"]))):
-            s["tuition"] = {"yr": "most recent federal figure", "inS": c["inS"], "inNote": "tuition (College Scorecard; may lag a year)", "outS": c["outS"], "outNote": "tuition (College Scorecard)", "u": "https://collegescorecard.ed.gov/", "unitid": c["unitid"]}
+    apply_costs(s, row, key)
 
     s["flags"] = flags
     return s
