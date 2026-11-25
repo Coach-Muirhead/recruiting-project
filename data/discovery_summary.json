@@ -1,14 +1,14 @@
 {
- "programs": 1990,
+ "programs": 2020,
  "by_level": {
-  "JUCO": 731,
+  "JUCO": 761,
   "D1": 312,
   "D2": 272,
   "D3": 431,
   "NAIA": 244
  },
  "ready": {
-  "JUCO": 80,
+  "JUCO": 84,
   "D1": 309,
   "D2": 248,
   "D3": 300,
@@ -16,13 +16,12 @@
  },
  "by_platform": {
   "table": 6,
-  "sidearm": 1039,
-  "presto": 3,
-  "not found": 354,
-  "blocked": 588
+  "sidearm": 1046,
+  "not found": 362,
+  "blocked": 606
  },
  "confirmed_baseball": {
-  "JUCO": 391,
+  "JUCO": 581,
   "D1": 312,
   "D2": 272,
   "D3": 386,
@@ -30,39 +29,40 @@
  },
  "on_page": {
   "D1": 311,
-  "D3": 375,
-  "JUCO": 352,
+  "D3": 376,
+  "JUCO": 488,
   "D2": 263,
   "NAIA": 183
  },
  "on_page_with_rosters": {
   "D1": 309,
-  "D3": 290,
-  "JUCO": 62,
+  "D3": 292,
+  "JUCO": 68,
   "D2": 239,
   "NAIA": 99
  },
  "directory_only": {
-  "JUCO": 290,
+  "JUCO": 420,
   "D1": 2,
   "D2": 24,
-  "D3": 85,
+  "D3": 84,
   "NAIA": 84
  },
  "blocked": {
-  "JUCO": 411,
+  "JUCO": 429,
   "D1": 3,
   "D2": 17,
   "D3": 71,
   "NAIA": 86
  },
  "not_found": {
-  "JUCO": 240,
+  "JUCO": 248,
   "D2": 7,
   "D3": 60,
   "NAIA": 47
  },
  "no_scorecard_match": 53,
- "schools_csv_rows": 1484,
- "added_this_merge": 1473
+ "schools_csv_rows": 1621,
+ "added_this_merge": 1608,
+ "kept_from_before": 9
 }
