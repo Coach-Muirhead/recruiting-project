@@ -36,7 +36,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with: { name: eada, path: data }
       - run: pip install requests beautifulsoup4
-      - run: python tools/discover.py --levels "${{ matrix.level }}" --limit "${{ inputs.limit }}" --no-merge
+      - run: python tools/discover.py --levels "${{ matrix.level }}" --limit "${{ inputs.limit }}" --workers 16 --no-merge
         env: { SCORECARD_API_KEY: "${{ secrets.SCORECARD_API_KEY }}" }
       - uses: actions/upload-artifact@v4
         with: { name: "discovered-${{ matrix.level }}", path: "data/discovered/${{ matrix.level }}.csv" }

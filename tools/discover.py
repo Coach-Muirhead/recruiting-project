@@ -51,7 +51,7 @@ def log(*a):
 
 def get(url, **kw):
     try:
-        return S.get(url, timeout=kw.pop("timeout", 12), **kw)
+        return S.get(url, timeout=kw.pop("timeout", 8), **kw)
     except requests.RequestException as e:
         return None
 
@@ -563,7 +563,8 @@ def merge():
     cols = list(dict.fromkeys(k for p in done for k in p))  # files from different runs may differ by a column
     with OUT.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=cols, restval=""); w.writeheader(); w.writerows(done)
-    existing = [r for r in csv.DictReader(SCHOOLS.open()) if r["id"] in HAND_ENTERED]  # rebuilt from scratch each merge
+    previous = list(csv.DictReader(SCHOOLS.open()))
+    existing = [r for r in previous if r["id"] in HAND_ENTERED]  # rebuilt from scratch each merge
     fields = list(existing[0].keys())
     for col in ("roster_path", "coaches_path", "scorecard_name", "note"):
         if col not in fields:
@@ -609,6 +610,18 @@ def merge():
                          "lat": round(float(p["lat"]), 3), "lon": round(float(p["lon"]), 3), "platform": p["platform"], "athletics_base": p["athletics_base"],
                          "unitid": p.get("unitid") or "", "roster_path": p["roster_path"], "coaches_path": p.get("coaches_path", ""), "scorecard_name": p.get("scorecard_name", ""), "note": note})
         added += 1
+    # once readable, a school stays: a site that blocks us on one night, or a lookup that fails on one run,
+    # shouldn't drop it (the nightly job keeps its last good copy and flags real changes)
+    now_ready = {r.get("unitid") or r["id"] for r in existing if r.get("platform") != "listing"}
+    kept = 0
+    for r in previous:
+        key = r.get("unitid") or r["id"]
+        if r.get("platform") in ("sidearm", "presto", "table") and key not in now_ready:
+            existing = [e for e in existing if (e.get("unitid") or e["id"]) != key or e["id"] in HAND_ENTERED]
+            if r["id"] in {e["id"] for e in existing}:
+                continue
+            existing.append(r); now_ready.add(key); kept += 1
+    log(f"kept {kept} previously readable schools this run couldn't confirm")
     with SCHOOLS.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore", lineterminator="\n"); w.writeheader(); w.writerows(existing)
     summary = {
@@ -623,7 +636,7 @@ def merge():
         "blocked": Counter(p["div"] for p in done if p["platform"] == "blocked"),
         "not_found": Counter(p["div"] for p in done if not p["platform"]),
         "no_scorecard_match": sum(1 for p in done if not p.get("unitid")),
-        "schools_csv_rows": len(existing), "added_this_merge": added,
+        "schools_csv_rows": len(existing), "added_this_merge": added, "kept_from_before": kept,
     }
     (ROOT / "data" / "discovery_summary.json").write_text(json.dumps(summary, indent=1))
     log(json.dumps(summary, indent=1))
