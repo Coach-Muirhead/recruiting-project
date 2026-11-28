@@ -1,15 +1,15 @@
 {
- "date": "2026-11-27",
+ "date": "2026-11-28",
  "schools": {
-  "montclair": {
-   "roster": 0,
-   "season": "2027",
-   "coaches": 5
-  },
   "ramapo": {
    "roster": 33,
    "season": "2026",
    "coaches": 6
+  },
+  "montclair": {
+   "roster": 0,
+   "season": "2027",
+   "coaches": 5
   },
   "rowan": {
    "roster": 37,
@@ -31,30 +31,30 @@
    "season": "2027",
    "coaches": "none parsed, kept last copy"
   },
-  "rutgerscamden": {
-   "roster": 37,
-   "season": "2026",
-   "coaches": 8
-  },
   "rutgersnewark": {
    "roster": 43,
    "season": "2026",
    "coaches": 6
+  },
+  "rutgerscamden": {
+   "roster": 37,
+   "season": "2026",
+   "coaches": 8
   },
   "tcnj": {
    "roster": 36,
    "season": "2026",
    "coaches": 6
   },
-  "stockton": {
-   "roster": 31,
-   "season": "2026",
-   "coaches": 7
-  },
   "wpu": {
    "roster": 35,
    "season": "2026",
    "coaches": 4
+  },
+  "stockton": {
+   "roster": 31,
+   "season": "2026",
+   "coaches": 7
   },
   "montereypeninsulacollege": {
    "roster": 37,
@@ -66,15 +66,15 @@
    "season": null,
    "coaches": "none parsed, kept last copy"
   },
-  "albany": {
-   "roster": 32,
-   "season": "2027",
-   "coaches": "none parsed, kept last copy"
-  },
   "binghamtonuniversity": {
    "roster": 33,
    "season": "2027",
    "coaches": 5
+  },
+  "albany": {
+   "roster": 32,
+   "season": "2027",
+   "coaches": "none parsed, kept last copy"
   },
   "bryantuniversity": {
    "roster": 46,
@@ -103,27 +103,31 @@
   },
   "charlotte": {
    "roster": 38,
-   "season": "2027",
-   "coaches": 5
+   "season": "2027"
   },
-  "fau": {
-   "roster": 35,
+  "eastcarolinauniversity": {
+   "roster": 45,
    "season": "2027",
-   "coaches": 5
+   "coaches": 6
   },
   "universityofmemphis": {
    "roster": 40,
    "season": "2027",
    "coaches": 6
   },
+  "fau": {
+   "roster": 35,
+   "season": "2027",
+   "coaches": 5
+  },
   "riceuniversity": {
    "roster": 44,
-   "season": "2026",
+   "season": "2027",
    "coaches": 4
   },
   "usf": {
    "roster": 37,
-   "season": null,
+   "season": "2027",
    "coaches": 10
   },
   "tulaneuniversity": {
@@ -131,24 +135,24 @@
    "season": "2027",
    "coaches": 4
   },
-  "uab": {
-   "roster": 40,
-   "season": "2026",
-   "coaches": 6
-  },
   "utsa": {
    "roster": 0,
    "season": null
   },
-  "bostoncollege": {
-   "roster": 46,
-   "season": "2027",
-   "coaches": 7
+  "uab": {
+   "roster": 40,
+   "season": null,
+   "coaches": 6
   },
   "wichitastateuniversity": {
    "roster": 37,
    "season": "2027",
    "coaches": 9
+  },
+  "bostoncollege": {
+   "roster": 46,
+   "season": "2027",
+   "coaches": 7
   },
   "californiacal": {
    "roster": 46,
@@ -164,19 +168,14 @@
    "season": "2027",
    "coaches": 5
   },
-  "eastcarolinauniversity": {
-   "roster": 45,
-   "season": "2027",
-   "coaches": 6
+  "floridastateuniversity": {
+   "roster": 39,
+   "season": null,
+   "coaches": 7
   },
   "georgiatech": {
    "roster": 0,
    "season": null
-  },
-  "floridastateuniversity": {
-   "roster": 39,
-   "season": "2027",
-   "coaches": 7
   },
   "universityofmiami": {
    "roster": 0,
@@ -278,15 +277,15 @@
    "season": "2027",
    "coaches": 8
   },
-  "georgewashingtonuniversity": {
-   "roster": 37,
-   "season": "2027",
-   "coaches": 5
-  },
   "lasalleuniversity": {
    "roster": 54,
    "season": "2026",
    "coaches": 4
+  },
+  "georgewashingtonuniversity": {
+   "roster": 37,
+   "season": "2027",
+   "coaches": 5
   },
   "stbonaventureuniversity": {
    "roster": 31,
@@ -308,50 +307,50 @@
    "season": "2027",
    "coaches": "none parsed, kept last copy"
   },
-  "vcu": {
-   "roster": 34,
-   "season": "2027",
-   "coaches": 6
-  },
   "saintlouisuniversity": {
    "roster": 36,
    "season": "2027",
    "coaches": "none parsed, kept last copy"
+  },
+  "vcu": {
+   "roster": 34,
+   "season": "2027",
+   "coaches": 6
   },
   "butleruniversity": {
    "roster": 36,
    "season": "2027",
    "coaches": 4
   },
-  "georgetownuniversity": {
-   "roster": 39,
-   "season": "2026",
-   "coaches": 2
-  },
   "creightonuniversity": {
    "roster": 36,
    "season": "2027",
    "coaches": 5
   },
-  "uconn": {
-   "roster": 41,
-   "season": "2027",
-   "coaches": 4
+  "georgetownuniversity": {
+   "roster": 39,
+   "season": "2026",
+   "coaches": 2
   },
   "stjohnsuniversity": {
    "roster": 39,
    "season": "2026",
    "coaches": 4
   },
-  "villanovauniversity": {
-   "roster": 33,
-   "season": "2027",
+  "uconn": {
+   "roster": 41,
+   "season": null,
    "coaches": 4
   },
   "xavieruniversity": {
    "roster": 45,
    "season": "2027",
    "coaches": 5
+  },
+  "villanovauniversity": {
+   "roster": 33,
+   "season": "2027",
+   "coaches": 4
   },
   "charlestonsouthernuniversity": {
    "roster": 47,
@@ -388,29 +387,29 @@
    "season": "2026",
    "coaches": 4
   },
-  "uscupstate": {
-   "roster": 37,
-   "season": "2026",
-   "coaches": 7
-  },
   "winthropuniversity": {
    "roster": 38,
    "season": "2027",
    "coaches": 6
+  },
+  "uscupstate": {
+   "roster": 37,
+   "season": "2026",
+   "coaches": 7
   },
   "universityofillinoisurbanach": {
    "roster": 34,
    "season": "2027",
    "coaches": 6
   },
+  "universityofiowa": {
+   "roster": 0,
+   "season": null
+  },
   "indianauniversitybloomington": {
    "roster": 39,
    "season": "2027",
    "coaches": 5
-  },
-  "universityofiowa": {
-   "roster": 0,
-   "season": null
   },
   "universityofmarylandcollegep": {
    "roster": 38,
@@ -427,40 +426,40 @@
    "season": "2027",
    "coaches": 5
   },
+  "universityofnebraskalincolnn": {
+   "roster": 41,
+   "season": null
+  },
   "universityofminnesota": {
    "roster": 35,
    "season": "2027",
    "coaches": 6
   },
-  "universityofnebraskalincolnn": {
-   "roster": 41,
-   "season": null
-  },
   "northwesternuniversity": {
    "roster": 0,
    "season": null
+  },
+  "ohiostateuniversity": {
+   "roster": 36,
+   "season": "2027",
+   "coaches": 7
   },
   "universityoforegon": {
    "roster": 0,
    "season": "2027",
    "coaches": 9
   },
-  "ohiostateuniversity": {
-   "roster": 36,
-   "season": "2026",
-   "coaches": 7
-  },
   "pennstate": {
    "roster": 38,
+   "season": null
+  },
+  "purdueuniversity": {
+   "roster": 40,
    "season": null
   },
   "ucla": {
    "roster": 0,
    "season": "2026"
-  },
-  "purdueuniversity": {
-   "roster": 40,
-   "season": null
   },
   "uscsoutherncal": {
    "roster": 40,
@@ -497,7 +496,7 @@
   },
   "universityofhouston": {
    "roster": 43,
-   "season": "2026",
+   "season": "2027",
    "coaches": 4
   },
   "kansasstateuniversity": {
@@ -531,7 +530,7 @@
   },
   "universityofutah": {
    "roster": 35,
-   "season": "2026",
+   "season": "2027",
    "coaches": 5
   },
   "westvirginiauniversity": {
@@ -551,7 +550,7 @@
   },
   "calpoly": {
    "roster": 37,
-   "season": "2027",
+   "season": null,
    "coaches": 5
   },
   "csuncalstatenorthridge": {
@@ -629,19 +628,24 @@
    "season": "2027",
    "coaches": 6
   },
-  "stonybrookuniversity": {
-   "roster": 31,
-   "season": "2027",
-   "coaches": 5
-  },
   "northeasternuniversity": {
    "roster": 37,
    "season": "2027",
    "coaches": 7
   },
+  "stonybrookuniversity": {
+   "roster": 31,
+   "season": "2027",
+   "coaches": 5
+  },
   "towsonuniversity": {
    "roster": 0,
    "season": "2026",
+   "coaches": 4
+  },
+  "collegeofwilliammary": {
+   "roster": 39,
+   "season": "2027",
    "coaches": 4
   },
   "uncwilmingtonuncw": {
@@ -649,13 +653,13 @@
    "season": "2027",
    "coaches": 5
   },
-  "collegeofwilliammary": {
-   "roster": 39,
+  "universityofdelaware": {
+   "roster": 38,
    "season": "2027",
    "coaches": 4
   },
-  "universityofdelaware": {
-   "roster": 38,
+  "kennesawstateuniversity": {
+   "roster": 0,
    "season": "2027",
    "coaches": 4
   },
@@ -663,11 +667,6 @@
    "roster": 40,
    "season": "2027",
    "coaches": 9
-  },
-  "kennesawstateuniversity": {
-   "roster": 0,
-   "season": "2027",
-   "coaches": 4
   },
   "libertyuniversity": {
    "roster": 36,
@@ -689,25 +688,25 @@
    "season": "2027",
    "coaches": 5
   },
-  "samhouston": {
-   "roster": 36,
-   "season": "2027",
-   "coaches": "none parsed, kept last copy"
-  },
-  "wku": {
-   "roster": 37,
-   "season": "2027",
-   "coaches": "none parsed, kept last copy"
-  },
   "milwaukee": {
    "roster": 34,
    "season": "2027",
    "coaches": 6
   },
+  "samhouston": {
+   "roster": 36,
+   "season": "2027",
+   "coaches": "none parsed, kept last copy"
+  },
   "niu": {
    "roster": 34,
    "season": "2027",
    "coaches": 4
+  },
+  "wku": {
+   "roster": 37,
+   "season": "2027",
+   "coaches": "none parsed, kept last copy"
   },
   "northernkentuckyuniversity": {
    "roster": 36,
@@ -726,7 +725,7 @@
   },
   "youngstownstateuniversity": {
    "roster": 39,
-   "season": "2026",
+   "season": null,
    "coaches": 6
   },
   "brownuniversity": {
@@ -734,35 +733,30 @@
    "season": "2027",
    "coaches": 5
   },
-  "cornelluniversity": {
-   "roster": 40,
-   "season": "2026",
-   "coaches": 3
-  },
   "columbiauniversity": {
    "roster": 42,
    "season": "2027",
    "coaches": 4
+  },
+  "cornelluniversity": {
+   "roster": 40,
+   "season": "2026",
+   "coaches": 3
   },
   "dartmouthcollege": {
    "roster": 33,
    "season": "2026",
    "coaches": 4
   },
-  "harvarduniversity": {
-   "roster": 29,
-   "season": "2027",
-   "coaches": 5
-  },
   "penn": {
    "roster": 37,
    "season": "2027",
    "coaches": 5
   },
-  "princetonuniversity": {
-   "roster": 28,
+  "harvarduniversity": {
+   "roster": 29,
    "season": "2027",
-   "coaches": 3
+   "coaches": 5
   },
   "canisiusuniversity": {
    "roster": 38,
@@ -774,39 +768,49 @@
    "season": "2027",
    "coaches": 4
   },
+  "princetonuniversity": {
+   "roster": 28,
+   "season": "2026",
+   "coaches": 3
+  },
   "fairfielduniversity": {
    "roster": 35,
    "season": "2027",
    "coaches": 4
-  },
-  "manhattanuniversity": {
-   "roster": 47,
-   "season": "2026",
-   "coaches": 6
   },
   "ionauniversity": {
    "roster": 41,
    "season": "2027",
    "coaches": 6
   },
-  "maristuniversity": {
-   "roster": 38,
-   "season": "2027",
-   "coaches": 4
+  "manhattanuniversity": {
+   "roster": 47,
+   "season": "2026",
+   "coaches": 6
   },
   "merrimackcollege": {
    "roster": 42,
    "season": "2027",
    "coaches": 3
   },
+  "maristuniversity": {
+   "roster": 38,
+   "season": "2027",
+   "coaches": 4
+  },
+  "niagarauniversity": {
+   "roster": 34,
+   "season": "2026",
+   "coaches": 2
+  },
   "mountstmarysuniversity": {
    "roster": 41,
    "season": "2027",
    "coaches": 5
   },
-  "niagarauniversity": {
-   "roster": 34,
-   "season": "2026",
+  "rideruniversity": {
+   "roster": 32,
+   "season": "2027",
    "coaches": 2
   },
   "quinnipiacuniversity": {
@@ -814,18 +818,13 @@
    "season": "2026",
    "coaches": 4
   },
-  "rideruniversity": {
-   "roster": 32,
-   "season": "2027",
-   "coaches": 2
-  },
-  "sacredheartuniversity": {
-   "roster": 38,
+  "saintpetersuniversity": {
+   "roster": 16,
    "season": "2027",
    "coaches": 4
   },
-  "saintpetersuniversity": {
-   "roster": 16,
+  "sacredheartuniversity": {
+   "roster": 38,
    "season": "2027",
    "coaches": 4
   },
@@ -849,15 +848,20 @@
    "season": "2026",
    "coaches": "none parsed, kept last copy"
   },
-  "kentstateuniversity": {
-   "roster": 35,
+  "easternmichiganuniversity": {
+   "roster": 36,
    "season": "2027",
-   "coaches": 7
+   "coaches": 6
   },
   "centralmichiganuniversity": {
    "roster": 41,
    "season": "2027",
    "coaches": 5
+  },
+  "kentstateuniversity": {
+   "roster": 35,
+   "season": "2027",
+   "coaches": 7
   },
   "massachusettsumass": {
    "roster": 37,
@@ -869,28 +873,23 @@
    "season": "2027",
    "coaches": 5
   },
-  "easternmichiganuniversity": {
-   "roster": 36,
+  "westernmichiganuniversity": {
+   "roster": 32,
    "season": "2027",
-   "coaches": 6
+   "coaches": 4
   },
   "ohiouniversity": {
    "roster": 39,
    "season": "2027",
    "coaches": 7
   },
-  "westernmichiganuniversity": {
-   "roster": 32,
-   "season": "2027",
-   "coaches": 4
-  },
-  "universityoftoledo": {
-   "roster": 36,
+  "bradleyuniversity": {
+   "roster": 0,
    "season": "2027",
    "coaches": 6
   },
-  "bradleyuniversity": {
-   "roster": 0,
+  "universityoftoledo": {
+   "roster": 36,
    "season": "2027",
    "coaches": 6
   },
@@ -909,16 +908,6 @@
    "season": "2027",
    "coaches": 4
   },
-  "murraystateuniversity": {
-   "roster": 37,
-   "season": "2027",
-   "coaches": 7
-  },
-  "southernillinoissiu": {
-   "roster": 34,
-   "season": null,
-   "coaches": 5
-  },
   "uic": {
    "roster": 36,
    "season": "2027",
@@ -929,20 +918,30 @@
    "season": "2027",
    "coaches": 7
   },
+  "murraystateuniversity": {
+   "roster": 37,
+   "season": "2027",
+   "coaches": 7
+  },
+  "southernillinoissiu": {
+   "roster": 34,
+   "season": null,
+   "coaches": 5
+  },
   "airforce": {
    "roster": 41,
    "season": "2027",
    "coaches": 6
   },
-  "hawaii": {
-   "roster": 39,
-   "season": "2027",
-   "coaches": 5
-  },
   "grandcanyonuniversity": {
    "roster": 41,
    "season": "2027",
    "coaches": 7
+  },
+  "hawaii": {
+   "roster": 39,
+   "season": "2027",
+   "coaches": 5
   },
   "universityofnevadarenonevada": {
    "roster": 35,
@@ -957,29 +956,29 @@
    "roster": 0,
    "season": null
   },
-  "utahtechuniversity": {
-   "roster": 39,
-   "season": "2027",
-   "coaches": 5
-  },
   "ucdavis": {
    "roster": 36,
    "season": "2027",
    "coaches": 4
+  },
+  "utahtechuniversity": {
+   "roster": 39,
+   "season": "2027",
+   "coaches": 5
   },
   "coppinstateuniversity": {
    "roster": 30,
    "season": "2026",
    "coaches": 5
   },
-  "unlv": {
-   "roster": 35,
-   "season": "2027",
-   "coaches": 4
-  },
   "delawarestateuniversity": {
    "roster": 35,
    "season": "2026",
+   "coaches": 4
+  },
+  "unlv": {
+   "roster": 35,
+   "season": "2027",
    "coaches": 4
   },
   "fairleighdickinsonuniversity": {
@@ -1031,11 +1030,6 @@
    "season": "2027",
    "coaches": 5
   },
-  "siuedwardsvillesiue": {
-   "roster": 33,
-   "season": "2027",
-   "coaches": 5
-  },
   "southeastmissourisemo": {
    "roster": 38,
    "season": "2027",
@@ -1046,10 +1040,10 @@
    "season": "2027",
    "coaches": 5
   },
-  "westernillinoisuniversity": {
-   "roster": 34,
+  "siuedwardsvillesiue": {
+   "roster": 33,
    "season": "2027",
-   "coaches": 3
+   "coaches": 5
   },
   "utmartin": {
    "roster": 35,
@@ -1060,6 +1054,11 @@
    "roster": 38,
    "season": "2026",
    "coaches": 7
+  },
+  "westernillinoisuniversity": {
+   "roster": 34,
+   "season": "2027",
+   "coaches": 3
   },
   "fresnostate": {
    "roster": 36,
@@ -1089,19 +1088,14 @@
    "roster": 0,
    "season": null
   },
-  "army": {
-   "roster": 38,
-   "season": "2027",
-   "coaches": 4
-  },
-  "bucknelluniversity": {
-   "roster": 37,
-   "season": "2027",
-   "coaches": 5
-  },
   "collegeoftheholycross": {
    "roster": 40,
    "season": "2026",
+   "coaches": 4
+  },
+  "army": {
+   "roster": 38,
+   "season": "2027",
    "coaches": 4
   },
   "lafayettecollege": {
@@ -1119,28 +1113,28 @@
    "season": "2027",
    "coaches": 4
   },
+  "universityofarkansas": {
+   "roster": 39,
+   "season": null
+  },
   "universityofalabama": {
    "roster": 0,
    "season": "2027",
    "coaches": 4
   },
-  "universityofarkansas": {
-   "roster": 39,
-   "season": null
-  },
   "auburnuniversity": {
    "roster": 0,
    "season": null
-  },
-  "universityofflorida": {
-   "roster": 41,
-   "season": "2026",
-   "coaches": 7
   },
   "universityofkentucky": {
    "roster": 38,
    "season": null,
    "coaches": "none parsed, kept last copy"
+  },
+  "universityofflorida": {
+   "roster": 41,
+   "season": "2026",
+   "coaches": 7
   },
   "universityofgeorgia": {
    "roster": 39,
@@ -1153,7 +1147,7 @@
   },
   "olemiss": {
    "roster": 42,
-   "season": "2027",
+   "season": null,
    "coaches": 4
   },
   "mississippistateuniversity": {
@@ -1165,29 +1159,28 @@
    "roster": 42,
    "season": "2027"
   },
-  "universityofsouthcarolina": {
-   "roster": 34,
-   "season": null,
-   "coaches": "none parsed, kept last copy"
-  },
   "universityofoklahoma": {
    "roster": 40,
    "season": "2027",
    "coaches": 6
+  },
+  "universityofsouthcarolina": {
+   "roster": 34,
+   "season": null,
+   "coaches": "none parsed, kept last copy"
   },
   "universityoftennessee": {
    "roster": 37,
    "season": "2027",
    "coaches": 6
   },
+  "bucknelluniversity": {
+   "roster": "unreachable",
+   "coaches": 5
+  },
   "tamu": {
    "roster": 0,
    "season": "2027"
-  },
-  "universityoftexasataustintex": {
-   "roster": 39,
-   "season": "2027",
-   "coaches": 5
   },
   "vanderbiltuniversity": {
    "roster": 39,
@@ -1196,6 +1189,11 @@
   "thecitadel": {
    "roster": 45,
    "season": "2026",
+   "coaches": 5
+  },
+  "universityoftexasataustintex": {
+   "roster": 39,
+   "season": "2027",
    "coaches": 5
   },
   "etsu": {
@@ -1210,7 +1208,7 @@
   },
   "samforduniversity": {
    "roster": 38,
-   "season": "2026",
+   "season": null,
    "coaches": 6
   },
   "uncgreensborouncg": {
@@ -1243,15 +1241,15 @@
    "season": "2027",
    "coaches": 6
   },
-  "westerncarolinauniversity": {
-   "roster": 45,
-   "season": "2026",
-   "coaches": 6
-  },
   "lsuneworleans": {
    "roster": 45,
    "season": "2027",
    "coaches": 4
+  },
+  "westerncarolinauniversity": {
+   "roster": 45,
+   "season": "2026",
+   "coaches": 6
   },
   "mcneese": {
    "roster": 39,
@@ -1273,15 +1271,15 @@
    "season": "2027",
    "coaches": 3
   },
-  "texasamuniversitycorpuschris": {
-   "roster": 38,
-   "season": "2027",
-   "coaches": 7
-  },
   "alabamaamuniversity": {
    "roster": 26,
    "season": "2027",
    "coaches": 4
+  },
+  "texasamuniversitycorpuschris": {
+   "roster": 38,
+   "season": "2027",
+   "coaches": 7
   },
   "alabamastateuniversity": {
    "roster": 38,
@@ -1303,13 +1301,13 @@
    "season": "2026",
    "coaches": 5
   },
-  "gramblingstateuniversity": {
-   "roster": 35,
+  "jacksonstateuniversity": {
+   "roster": 36,
    "season": "2026",
    "coaches": 4
   },
-  "jacksonstateuniversity": {
-   "roster": 36,
+  "gramblingstateuniversity": {
+   "roster": 35,
    "season": "2026",
    "coaches": 4
   },
@@ -1388,20 +1386,20 @@
    "season": "2027",
    "coaches": 4
   },
-  "jamesmadisonuniversity": {
-   "roster": 38,
+  "universityoflouisianaatlafay": {
+   "roster": 36,
    "season": "2027",
-   "coaches": 5
+   "coaches": 7
   },
   "louisianamonroeulm": {
    "roster": 43,
    "season": "2027",
    "coaches": 5
   },
-  "universityoflouisianaatlafay": {
-   "roster": 36,
+  "jamesmadisonuniversity": {
+   "roster": 38,
    "season": "2027",
-   "coaches": 7
+   "coaches": 5
   },
   "louisianatechuniversity": {
    "roster": 40,
@@ -1447,13 +1445,13 @@
    "season": "2027",
    "coaches": 5
   },
-  "littlerock": {
-   "roster": "unreachable"
-  },
   "eku": {
    "roster": 37,
    "season": "2027",
    "coaches": 4
+  },
+  "littlerock": {
+   "roster": "unreachable"
   },
   "universityofnorthalabama": {
    "roster": 39,
@@ -1549,14 +1547,14 @@
    "season": "2026",
    "coaches": 5
   },
-  "belmontuniversity": {
-   "roster": 36,
-   "season": "2027",
-   "coaches": 4
-  },
   "purdueuniversityfortwayne": {
    "roster": 0,
    "season": null,
+   "coaches": 4
+  },
+  "belmontuniversity": {
+   "roster": 36,
+   "season": "2027",
    "coaches": 4
   },
   "theuniversityoftexasriogrand": {
@@ -1569,13 +1567,13 @@
    "season": "2027",
    "coaches": 4
   },
-  "adelphi": {
-   "roster": 35,
+  "adamsstate": {
+   "roster": 33,
    "season": "2026",
    "coaches": 4
   },
-  "adamsstate": {
-   "roster": 33,
+  "adelphi": {
+   "roster": 35,
    "season": "2026",
    "coaches": 4
   },
@@ -1609,15 +1607,15 @@
    "season": "2027",
    "coaches": 5
   },
-  "arkansasmonticello": {
-   "roster": 56,
-   "season": "2027",
-   "coaches": "none parsed, kept last copy"
-  },
   "arkansasfortsmith": {
    "roster": 33,
    "season": "2027",
    "coaches": 3
+  },
+  "arkansasmonticello": {
+   "roster": 56,
+   "season": "2027",
+   "coaches": "none parsed, kept last copy"
   },
   "ashland": {
    "roster": 44,
@@ -1643,30 +1641,30 @@
    "season": "2027",
    "coaches": 5
   },
-  "barry": {
-   "roster": 20,
-   "season": "2027",
-   "coaches": 6
-  },
   "barton": {
    "roster": 44,
    "season": "2026",
    "coaches": "none parsed, kept last copy"
+  },
+  "barry": {
+   "roster": 20,
+   "season": "2027",
+   "coaches": 6
   },
   "belmontabbey": {
    "roster": 0,
    "season": "2027",
    "coaches": 4
   },
-  "benedict": {
-   "roster": 26,
-   "season": "2026",
-   "coaches": 1
-  },
   "bemidjistate": {
    "roster": 57,
    "season": "2026",
    "coaches": 3
+  },
+  "benedict": {
+   "roster": 26,
+   "season": "2026",
+   "coaches": 1
   },
   "bentley": {
    "roster": 29,
@@ -1803,6 +1801,11 @@
    "season": "2026",
    "coaches": 3
   },
+  "coloradochristian": {
+   "roster": 40,
+   "season": "2027",
+   "coaches": 2
+  },
   "clarion": {
    "roster": 41,
    "season": "2027",
@@ -1813,25 +1816,20 @@
    "season": "2026",
    "coaches": 7
   },
-  "coloradochristian": {
-   "roster": 40,
-   "season": "2027",
-   "coaches": 2
-  },
   "coloradomines": {
    "roster": 40,
    "season": "2027",
    "coaches": 3
   },
-  "columbusstate": {
-   "roster": 49,
-   "season": "2027",
-   "coaches": 5
-  },
   "concord": {
    "roster": 55,
    "season": "2026",
    "coaches": 4
+  },
+  "columbusstate": {
+   "roster": 49,
+   "season": "2027",
+   "coaches": 5
   },
   "concordiairvine": {
    "roster": 39,
@@ -1853,20 +1851,15 @@
    "season": "2026",
    "coaches": 9
   },
-  "deltastate": {
-   "roster": 45,
-   "season": "2026",
-   "coaches": 6
-  },
   "daviselkins": {
    "roster": 36,
    "season": "2027",
    "coaches": 2
   },
-  "dyouville": {
-   "roster": 35,
+  "deltastate": {
+   "roster": 45,
    "season": "2026",
-   "coaches": 5
+   "coaches": 6
   },
   "drury": {
    "roster": 54,
@@ -1876,6 +1869,11 @@
   "eastcentral": {
    "roster": 89,
    "season": "2027"
+  },
+  "dyouville": {
+   "roster": 35,
+   "season": "2026",
+   "coaches": 5
   },
   "eaststroudsburg": {
    "roster": 45,
@@ -1897,44 +1895,44 @@
    "season": "2026",
    "coaches": 3
   },
-  "embryriddle": {
-   "roster": 47,
-   "season": "2027",
-   "coaches": 5
-  },
   "emporiastate": {
    "roster": 51,
    "season": "2027",
    "coaches": 4
+  },
+  "embryriddle": {
+   "roster": 47,
+   "season": "2027",
+   "coaches": 5
   },
   "erskine": {
    "roster": 0,
    "season": "2027",
    "coaches": 6
   },
-  "felician": {
-   "roster": 60,
-   "season": "2027",
-   "coaches": 7
-  },
   "fairmontstate": {
    "roster": 31,
    "season": "2026",
    "coaches": 4
+  },
+  "felician": {
+   "roster": 60,
+   "season": "2027",
+   "coaches": 7
   },
   "ferrum": {
    "roster": 56,
    "season": "2026",
    "coaches": 6
   },
-  "flagler": {
-   "roster": 41,
-   "season": "2026",
-   "coaches": 4
-  },
   "findlay": {
    "roster": 45,
    "season": "2027",
+   "coaches": 4
+  },
+  "flagler": {
+   "roster": 41,
+   "season": "2026",
    "coaches": 4
   },
   "floridasouthern": {
@@ -1952,15 +1950,15 @@
    "season": "2027",
    "coaches": 3
   },
-  "francismarion": {
-   "roster": 42,
-   "season": "2026",
-   "coaches": 5
-  },
   "franklinpierce": {
    "roster": 36,
    "season": "2027",
    "coaches": 2
+  },
+  "francismarion": {
+   "roster": 42,
+   "season": "2026",
+   "coaches": 5
   },
   "fresnopacific": {
    "roster": 49,
@@ -1972,15 +1970,15 @@
    "season": "2026",
    "coaches": 4
   },
-  "georgiacollege": {
-   "roster": 45,
-   "season": "2027",
-   "coaches": 5
-  },
   "gannon": {
    "roster": 44,
    "season": "2026",
    "coaches": 3
+  },
+  "georgiacollege": {
+   "roster": 45,
+   "season": "2027",
+   "coaches": 5
   },
   "georgiasouthwesternstate": {
    "roster": 33,
@@ -2024,15 +2022,15 @@
    "roster": 59,
    "season": "2027"
   },
-  "indianapolis": {
-   "roster": 41,
-   "season": "2026",
-   "coaches": 8
-  },
   "holyfamily": {
    "roster": 47,
    "season": "2026",
    "coaches": 5
+  },
+  "indianapolis": {
+   "roster": 41,
+   "season": "2026",
+   "coaches": 8
   },
   "iup": {
    "roster": 45,
@@ -2114,25 +2112,25 @@
    "season": "2026",
    "coaches": 3
   },
+  "lincolnmemorial": {
+   "roster": 39,
+   "season": "2026",
+   "coaches": 5
+  },
   "lubbockchristian": {
    "roster": 37,
    "season": "2026",
    "coaches": 5
-  },
-  "lynn": {
-   "roster": 46,
-   "season": "2026",
-   "coaches": 4
   },
   "malone": {
    "roster": 44,
    "season": "2026",
    "coaches": 11
   },
-  "lincolnmemorial": {
-   "roster": 39,
+  "lynn": {
+   "roster": 46,
    "season": "2026",
-   "coaches": 5
+   "coaches": 4
   },
   "mary": {
    "roster": 46,
@@ -2154,30 +2152,30 @@
    "season": "2027",
    "coaches": "none parsed, kept last copy"
   },
-  "mercy": {
-   "roster": 39,
-   "season": "2027",
-   "coaches": 6
-  },
   "metropolitanstate": {
    "roster": 39,
    "season": "2027",
    "coaches": "none parsed, kept last copy"
+  },
+  "mercy": {
+   "roster": 39,
+   "season": "2027",
+   "coaches": 6
   },
   "miles": {
    "roster": 41,
    "season": "2026",
    "coaches": 2
   },
-  "millersville": {
-   "roster": 36,
-   "season": "2027",
-   "coaches": 11
-  },
   "minnesotastate": {
    "roster": 33,
    "season": "2026",
    "coaches": 4
+  },
+  "millersville": {
+   "roster": 36,
+   "season": "2027",
+   "coaches": 11
   },
   "minnesotacrookston": {
    "roster": 48,
@@ -2264,15 +2262,15 @@
    "season": "2027",
    "coaches": 7
   },
-  "northeasternstate": {
-   "roster": 52,
-   "season": "2027",
-   "coaches": 5
-  },
   "northernstate": {
    "roster": 42,
    "season": "2027",
    "coaches": 4
+  },
+  "northeasternstate": {
+   "roster": 52,
+   "season": "2027",
+   "coaches": 5
   },
   "northwestnazarene": {
    "roster": 54,
@@ -2294,13 +2292,18 @@
    "season": "2026",
    "coaches": "none parsed, kept last copy"
   },
+  "oklahomabaptist": {
+   "roster": 28,
+   "season": "2027",
+   "coaches": 4
+  },
   "ohiodominican": {
    "roster": 45,
    "season": "2026",
    "coaches": 5
   },
-  "oklahomabaptist": {
-   "roster": 28,
+  "ouachitabaptist": {
+   "roster": 37,
    "season": "2027",
    "coaches": 4
   },
@@ -2309,25 +2312,20 @@
    "season": "2026",
    "coaches": 9
   },
-  "ouachitabaptist": {
-   "roster": 37,
-   "season": "2027",
-   "coaches": 4
-  },
   "pace": {
    "roster": 34,
    "season": "2027",
    "coaches": 2
   },
-  "parkside": {
-   "roster": 45,
-   "season": "2027",
-   "coaches": 4
-  },
   "palmbeachatlantic": {
    "roster": 44,
    "season": "2027",
    "coaches": 3
+  },
+  "parkside": {
+   "roster": 45,
+   "season": "2027",
+   "coaches": 4
   },
   "pittsburgstate": {
    "roster": 56,
@@ -2369,15 +2367,15 @@
    "season": "2026",
    "coaches": 7
   },
-  "rockhurst": {
-   "roster": 62,
-   "season": "2027",
-   "coaches": "none parsed, kept last copy"
-  },
   "regis": {
    "roster": 52,
    "season": "2027",
    "coaches": 5
+  },
+  "rockhurst": {
+   "roster": 62,
+   "season": "2027",
+   "coaches": "none parsed, kept last copy"
   },
   "rogersstate": {
    "roster": 27,
@@ -2468,20 +2466,15 @@
    "season": "2026",
    "coaches": 4
   },
-  "siouxfalls": {
-   "roster": 48,
-   "season": "2027",
-   "coaches": 4
-  },
   "slipperyrock": {
    "roster": 36,
    "season": "2026",
    "coaches": 4
   },
-  "southeasternoklahomastate": {
-   "roster": 49,
+  "siouxfalls": {
+   "roster": 48,
    "season": "2027",
-   "coaches": 3
+   "coaches": 4
   },
   "southernarkansas": {
    "roster": 52,
@@ -2492,6 +2485,11 @@
    "roster": 34,
    "season": "2026",
    "coaches": 4
+  },
+  "southeasternoklahomastate": {
+   "roster": 49,
+   "season": "2027",
+   "coaches": 3
   },
   "southernnazarene": {
    "roster": 47,
@@ -2537,9 +2535,9 @@
    "season": "2027",
    "coaches": 1
   },
-  "texasaminternational": {
-   "roster": 48,
-   "season": "2026",
+  "thomasmore": {
+   "roster": 43,
+   "season": "2027",
    "coaches": 3
   },
   "texasamkingsville": {
@@ -2547,9 +2545,9 @@
    "season": "2026",
    "coaches": 5
   },
-  "thomasmore": {
-   "roster": 43,
-   "season": "2027",
+  "texasaminternational": {
+   "roster": 48,
+   "season": "2026",
    "coaches": 3
   },
   "tiffin": {
@@ -2572,6 +2570,11 @@
    "season": "2026",
    "coaches": 2
   },
+  "uis": {
+   "roster": 48,
+   "season": "2026",
+   "coaches": 3
+  },
   "uccs": {
    "roster": 44,
    "season": "2027",
@@ -2581,11 +2584,6 @@
    "roster": 39,
    "season": "2027",
    "coaches": 5
-  },
-  "uis": {
-   "roster": 48,
-   "season": "2026",
-   "coaches": 3
   },
   "uncpembroke": {
    "roster": 26,
@@ -2612,15 +2610,15 @@
    "season": "2027",
    "coaches": 6
   },
-  "utpermianbasin": {
-   "roster": 41,
-   "season": "2027",
-   "coaches": 4
-  },
   "utdallas": {
    "roster": 46,
    "season": "2027",
    "coaches": 5
+  },
+  "utpermianbasin": {
+   "roster": 41,
+   "season": "2027",
+   "coaches": 4
   },
   "uttyler": {
    "roster": 47,
@@ -2731,15 +2729,15 @@
    "season": "2027",
    "coaches": 2
   },
-  "loyolala": {
-   "roster": 37,
-   "season": "2027",
-   "coaches": "none parsed, kept last copy"
-  },
   "lackawanna": {
    "roster": 44,
    "season": "2027",
    "coaches": 4
+  },
+  "loyolala": {
+   "roster": 37,
+   "season": "2027",
+   "coaches": "none parsed, kept last copy"
   },
   "texaswesleyan": {
    "roster": 33,
@@ -2766,6 +2764,11 @@
    "season": "2027",
    "coaches": 6
   },
+  "alfreduniversity": {
+   "roster": 38,
+   "season": "2026",
+   "coaches": 2
+  },
   "albrightcollege": {
    "roster": 65,
    "season": "2026",
@@ -2775,11 +2778,6 @@
    "roster": 49,
    "season": "2027",
    "coaches": 9
-  },
-  "alfreduniversity": {
-   "roster": 38,
-   "season": "2026",
-   "coaches": 2
   },
   "alleghenycollege": {
    "roster": 42,
@@ -2831,15 +2829,15 @@
    "season": "2026",
    "coaches": 2
   },
-  "batescollege": {
-   "roster": 33,
-   "season": "2026",
-   "coaches": 4
-  },
   "baruchcollege": {
    "roster": 22,
    "season": "2026",
    "coaches": 3
+  },
+  "batescollege": {
+   "roster": 33,
+   "season": "2026",
+   "coaches": 4
   },
   "battenuniversity": {
    "roster": 54,
@@ -2851,11 +2849,6 @@
    "season": "2026",
    "coaches": 4
   },
-  "beloitcollege": {
-   "roster": 51,
-   "season": "2027",
-   "coaches": 5
-  },
   "bereacollege": {
    "roster": 32,
    "season": "2027",
@@ -2866,6 +2859,11 @@
    "season": "2027",
    "coaches": 3
   },
+  "beloitcollege": {
+   "roster": 51,
+   "season": "2027",
+   "coaches": 5
+  },
   "bethanycollege": {
    "roster": 34,
    "season": "2026",
@@ -2875,11 +2873,6 @@
    "roster": 51,
    "season": "2026",
    "coaches": 6
-  },
-  "brandeisuniversity": {
-   "roster": 40,
-   "season": "2027",
-   "coaches": 5
   },
   "bowdoincollege": {
    "roster": 33,
@@ -2895,6 +2888,11 @@
    "roster": 51,
    "season": "2027",
    "coaches": 4
+  },
+  "brandeisuniversity": {
+   "roster": 40,
+   "season": "2027",
+   "coaches": 5
   },
   "cairnuniversity": {
    "roster": 27,
@@ -2916,45 +2914,45 @@
    "season": "2026",
    "coaches": 5
   },
-  "universityofcaliforniasantac": {
-   "roster": 0,
-   "season": null,
-   "coaches": "none parsed, kept last copy"
-  },
   "capitaluniversity": {
    "roster": 48,
    "season": "2026",
    "coaches": 9
   },
-  "carletoncollege": {
-   "roster": 33,
-   "season": "2026",
-   "coaches": 3
+  "universityofcaliforniasantac": {
+   "roster": 0,
+   "season": null,
+   "coaches": "none parsed, kept last copy"
   },
   "carrolluniversity": {
    "roster": 40,
    "season": "2026",
    "coaches": 6
   },
+  "carletoncollege": {
+   "roster": 33,
+   "season": "2026",
+   "coaches": 3
+  },
   "carthagecollege": {
    "roster": 40,
    "season": "2026",
    "coaches": 5
   },
-  "casewesternreserveuniversity": {
-   "roster": 42,
+  "centenaryuniversity": {
+   "roster": 0,
    "season": "2027",
-   "coaches": 6
+   "coaches": 2
   },
   "catholicuniversityofamerica": {
    "roster": 48,
    "season": "2026",
    "coaches": 6
   },
-  "centenaryuniversity": {
-   "roster": 0,
+  "casewesternreserveuniversity": {
+   "roster": 42,
    "season": "2027",
-   "coaches": 2
+   "coaches": 6
   },
   "centralcollege": {
    "roster": 54,
@@ -2971,6 +2969,11 @@
    "season": "2026",
    "coaches": 5
   },
+  "christophernewportuniversity": {
+   "roster": 54,
+   "season": "2027",
+   "coaches": 3
+  },
   "claremontmckennacollegeharve": {
    "roster": 44,
    "season": "2026",
@@ -2981,20 +2984,15 @@
    "season": "2026",
    "coaches": 5
   },
-  "christophernewportuniversity": {
-   "roster": 54,
-   "season": "2027",
-   "coaches": 3
+  "coecollege": {
+   "roster": 51,
+   "season": "2026",
+   "coaches": 7
   },
   "clarksonuniversity": {
    "roster": 41,
    "season": null,
    "coaches": 4
-  },
-  "coecollege": {
-   "roster": 51,
-   "season": "2026",
-   "coaches": 7
   },
   "colbycollege": {
    "roster": 42,
@@ -3026,13 +3024,13 @@
    "season": "2027",
    "coaches": 2
   },
-  "crowncollege": {
-   "roster": "unreachable"
-  },
   "covenantcollege": {
    "roster": 49,
    "season": "2027",
    "coaches": 3
+  },
+  "crowncollege": {
+   "roster": "unreachable"
   },
   "universityofdallas": {
    "roster": 41,
@@ -3113,15 +3111,15 @@
    "season": "2026",
    "coaches": 6
   },
-  "farmingdalestatecollege": {
-   "roster": 35,
-   "season": "2026",
-   "coaches": 4
-  },
   "emoryuniversity": {
    "roster": 37,
    "season": "2026",
    "coaches": 3
+  },
+  "farmingdalestatecollege": {
+   "roster": 35,
+   "season": "2026",
+   "coaches": 4
   },
   "franciscanuniversityofsteube": {
    "roster": 40,
@@ -3143,15 +3141,15 @@
    "season": "2027",
    "coaches": 7
   },
-  "georgefoxuniversity": {
-   "roster": 47,
-   "season": "2026",
-   "coaches": "none parsed, kept last copy"
-  },
   "gettysburgcollege": {
    "roster": 54,
    "season": "2026",
    "coaches": 4
+  },
+  "georgefoxuniversity": {
+   "roster": 47,
+   "season": "2026",
+   "coaches": "none parsed, kept last copy"
   },
   "gordoncollege": {
    "roster": 27,
@@ -3163,25 +3161,25 @@
    "season": "2027",
    "coaches": 5
   },
-  "guilfordcollege": {
-   "roster": 48,
-   "season": "2026",
-   "coaches": 4
-  },
   "grinnellcollege": {
    "roster": 41,
    "season": "2027",
    "coaches": 4
   },
-  "gustavusadolphuscollege": {
-   "roster": 65,
+  "guilfordcollege": {
+   "roster": 48,
    "season": "2026",
-   "coaches": 6
+   "coaches": 4
   },
   "gwyneddmercyuniversity": {
    "roster": 41,
    "season": "2026",
    "coaches": 5
+  },
+  "gustavusadolphuscollege": {
+   "roster": 65,
+   "season": "2026",
+   "coaches": 6
   },
   "hamiltoncollege": {
    "roster": 35,
@@ -3203,11 +3201,6 @@
    "season": "2026",
    "coaches": 3
   },
-  "hardinsimmonsuniversity": {
-   "roster": 47,
-   "season": "2026",
-   "coaches": "none parsed, kept last copy"
-  },
   "universityofhartford": {
    "roster": 48,
    "season": "2026",
@@ -3217,6 +3210,11 @@
    "roster": 33,
    "season": "2026",
    "coaches": 6
+  },
+  "hardinsimmonsuniversity": {
+   "roster": 47,
+   "season": "2026",
+   "coaches": "none parsed, kept last copy"
   },
   "heidelberguniversity": {
    "roster": 53,
@@ -3233,11 +3231,6 @@
    "season": "2026",
    "coaches": 3
   },
-  "hoodcollege": {
-   "roster": 0,
-   "season": "2027",
-   "coaches": 3
-  },
   "hobartcollege": {
    "roster": 42,
    "season": null,
@@ -3247,6 +3240,11 @@
    "roster": 41,
    "season": "2026",
    "coaches": 4
+  },
+  "hoodcollege": {
+   "roster": 0,
+   "season": "2027",
+   "coaches": 3
   },
   "howardpayneuniversity": {
    "roster": 45,
@@ -3268,15 +3266,15 @@
    "season": "2027",
    "coaches": 4
   },
-  "immaculatauniversity": {
-   "roster": 40,
-   "season": "2026",
-   "coaches": 3
-  },
   "ithacacollege": {
    "roster": 43,
    "season": "2026",
    "coaches": 4
+  },
+  "immaculatauniversity": {
+   "roster": 40,
+   "season": "2026",
+   "coaches": 3
   },
   "johncarrolluniversity": {
    "roster": 59,
@@ -3293,6 +3291,11 @@
    "season": "2026",
    "coaches": 6
   },
+  "johnsonwalesuniversitycharlo": {
+   "roster": 40,
+   "season": "2027",
+   "coaches": 5
+  },
   "johnsonwalesuniversity": {
    "roster": 35,
    "season": "2026",
@@ -3308,30 +3311,25 @@
    "season": "2026",
    "coaches": 5
   },
-  "johnsonwalesuniversitycharlo": {
-   "roster": 40,
-   "season": "2027",
-   "coaches": 5
+  "keukacollege": {
+   "roster": 38,
+   "season": "2026",
+   "coaches": 4
+  },
+  "kingscollege": {
+   "roster": 53,
+   "season": "2026",
+   "coaches": 7
   },
   "kenyoncollege": {
    "roster": 37,
    "season": "2026",
    "coaches": 3
   },
-  "keukacollege": {
-   "roster": 38,
-   "season": "2026",
-   "coaches": 4
-  },
   "knoxcollege": {
    "roster": 0,
    "season": null,
    "coaches": "none parsed, kept last copy"
-  },
-  "kingscollege": {
-   "roster": 53,
-   "season": "2026",
-   "coaches": 7
   },
   "lagrangecollege": {
    "roster": 56,
@@ -3358,15 +3356,15 @@
    "season": "2026",
    "coaches": 6
   },
-  "letourneauuniversity": {
-   "roster": 43,
-   "season": "2027",
-   "coaches": 4
-  },
   "lewisclarkcollege": {
    "roster": 30,
    "season": "2026",
    "coaches": 6
+  },
+  "letourneauuniversity": {
+   "roster": 43,
+   "season": "2027",
+   "coaches": 4
   },
   "linfielduniversity": {
    "roster": 41,
@@ -3383,6 +3381,11 @@
    "season": "2026",
    "coaches": 5
   },
+  "macalestercollege": {
+   "roster": 40,
+   "season": "2027",
+   "coaches": 8
+  },
   "lycomingcollege": {
    "roster": 45,
    "season": "2026",
@@ -3393,34 +3396,29 @@
    "season": "2026",
    "coaches": "none parsed, kept last copy"
   },
-  "macalestercollege": {
-   "roster": 40,
-   "season": "2027",
-   "coaches": 8
+  "manhattanvilleuniversity": {
+   "roster": 48,
+   "season": "2026",
+   "coaches": 4
   },
   "manchesteruniversity": {
    "roster": 61,
    "season": "2026",
    "coaches": 5
   },
-  "manhattanvilleuniversity": {
-   "roster": 48,
-   "season": "2026",
-   "coaches": 4
-  },
   "maranathabaptistuniversity": {
    "roster": 13,
    "season": "2026"
-  },
-  "martinluthercollege": {
-   "roster": 20,
-   "season": "2026",
-   "coaches": 4
   },
   "marianuniversity": {
    "roster": 40,
    "season": "2026",
    "coaches": 6
+  },
+  "martinluthercollege": {
+   "roster": 20,
+   "season": "2026",
+   "coaches": 4
   },
   "marybaldwinuniversity": {
    "roster": 38,
@@ -3447,40 +3445,40 @@
    "season": "2026",
    "coaches": 6
   },
-  "universityofmassachusettsbos": {
-   "roster": 40,
-   "season": "2026",
-   "coaches": 6
-  },
   "universityofmassachusettsdar": {
    "roster": 41,
    "season": "2026",
    "coaches": 6
   },
-  "massachusettsinstituteoftech": {
-   "roster": 27,
+  "universityofmassachusettsbos": {
+   "roster": 40,
    "season": "2026",
-   "coaches": 4
+   "coaches": 6
   },
   "mcdanielcollege": {
    "roster": 40,
    "season": "2026",
    "coaches": 5
   },
+  "massachusettsinstituteoftech": {
+   "roster": 27,
+   "season": "2026",
+   "coaches": 4
+  },
   "mcmurryuniversity": {
    "roster": 44,
    "season": "2026",
    "coaches": 5
   },
-  "messiahuniversity": {
-   "roster": 48,
-   "season": "2026",
-   "coaches": 6
-  },
   "methodistuniversity": {
    "roster": 32,
    "season": "2026",
    "coaches": 3
+  },
+  "messiahuniversity": {
+   "roster": 48,
+   "season": "2026",
+   "coaches": 6
   },
   "middleburycollege": {
    "roster": 35,
@@ -3492,6 +3490,11 @@
    "season": "2027",
    "coaches": 5
   },
+  "millsapscollege": {
+   "roster": 53,
+   "season": "2027",
+   "coaches": 4
+  },
   "misericordiauniversity": {
    "roster": "unreachable"
   },
@@ -3499,11 +3502,6 @@
    "roster": 44,
    "season": "2026",
    "coaches": 5
-  },
-  "millsapscollege": {
-   "roster": 53,
-   "season": "2027",
-   "coaches": 4
   },
   "universityofminnesotamorris": {
    "roster": 43,
@@ -3520,6 +3518,11 @@
    "season": "2027",
    "coaches": "none parsed, kept last copy"
   },
+  "mountstjosephuniversity": {
+   "roster": 42,
+   "season": "2027",
+   "coaches": 7
+  },
   "mountaloysiuscollege": {
    "roster": 44,
    "season": "2026",
@@ -3529,11 +3532,6 @@
    "roster": 41,
    "season": "2026",
    "coaches": 5
-  },
-  "mountstjosephuniversity": {
-   "roster": 42,
-   "season": "2027",
-   "coaches": 7
   },
   "universityofmountsaintvincen": {
    "roster": 48,
@@ -3560,15 +3558,15 @@
    "season": "2026",
    "coaches": 5
   },
-  "newenglandcollege": {
-   "roster": 33,
-   "season": "2026",
-   "coaches": 8
-  },
   "stateuniversityofnewyorkatbr": {
    "roster": 45,
    "season": "2026",
    "coaches": "none parsed, kept last copy"
+  },
+  "newenglandcollege": {
+   "roster": 33,
+   "season": "2026",
+   "coaches": 8
   },
   "stateuniversityofnewyorkatca": {
    "roster": 34,
@@ -3585,13 +3583,18 @@
    "season": "2027",
    "coaches": 4
   },
-  "stateuniversityofnewyorkatne": {
-   "roster": 38,
+  "stateuniversityofnewyorkmari": {
+   "roster": 37,
    "season": "2026",
    "coaches": 2
   },
-  "stateuniversityofnewyorkmari": {
-   "roster": 37,
+  "stateuniversityofnewyorkaton": {
+   "roster": 44,
+   "season": "2026",
+   "coaches": 6
+  },
+  "stateuniversityofnewyorkatne": {
+   "roster": 38,
    "season": "2026",
    "coaches": 2
   },
@@ -3600,15 +3603,15 @@
    "season": "2026",
    "coaches": "none parsed, kept last copy"
   },
-  "stateuniversityofnewyorkaton": {
-   "roster": 44,
-   "season": "2026",
-   "coaches": 6
-  },
   "stateuniversityofnewyorkatos": {
    "roster": 41,
    "season": "2026",
    "coaches": 4
+  },
+  "stateuniversityofnewyorkatpu": {
+   "roster": 33,
+   "season": "2026",
+   "coaches": 5
   },
   "stateuniversityofnewyorkatpl": {
    "roster": 46,
@@ -3625,11 +3628,6 @@
    "season": "2026",
    "coaches": 5
   },
-  "stateuniversityofnewyorkatpu": {
-   "roster": 33,
-   "season": "2026",
-   "coaches": 5
-  },
   "northcarolinawesleyanunivers": {
    "roster": 59,
    "season": "2026",
@@ -3640,18 +3638,13 @@
    "season": "2026",
    "coaches": 14
   },
-  "northcentraluniversity": {
-   "roster": 29,
-   "season": "2026",
-   "coaches": 5
-  },
   "northparkuniversity": {
    "roster": 50,
    "season": "2026",
    "coaches": 6
   },
-  "norwichuniversity": {
-   "roster": 34,
+  "northcentraluniversity": {
+   "roster": 29,
    "season": "2026",
    "coaches": 5
   },
@@ -3660,60 +3653,65 @@
    "season": "2026",
    "coaches": 5
   },
-  "oberlincollege": {
-   "roster": 42,
-   "season": "2027",
-   "coaches": 6
+  "norwichuniversity": {
+   "roster": 34,
+   "season": "2026",
+   "coaches": 5
   },
   "notredameofmarylanduniversit": {
    "roster": 36,
    "season": "2026",
    "coaches": 6
   },
-  "occidentalcollege": {
-   "roster": 40,
-   "season": "2026",
-   "coaches": "none parsed, kept last copy"
+  "oberlincollege": {
+   "roster": 42,
+   "season": "2027",
+   "coaches": 6
   },
   "ohiowesleyanuniversity": {
    "roster": 37,
    "season": "2026",
    "coaches": 5
   },
+  "occidentalcollege": {
+   "roster": 40,
+   "season": "2026",
+   "coaches": "none parsed, kept last copy"
+  },
   "otterbeinuniversity": {
    "roster": 50,
    "season": "2026",
    "coaches": 4
-  },
-  "universityoftheozarks": {
-   "roster": 38,
-   "season": "2027",
-   "coaches": 2
-  },
-  "pacificlutheranuniversity": {
-   "roster": 37,
-   "season": "2026",
-   "coaches": 5
   },
   "pacificuniversity": {
    "roster": 54,
    "season": "2026",
    "coaches": 4
   },
+  "pacificlutheranuniversity": {
+   "roster": 37,
+   "season": "2026",
+   "coaches": 5
+  },
+  "universityoftheozarks": {
+   "roster": 38,
+   "season": "2027",
+   "coaches": 2
+  },
   "pennsylvaniacollegeoftechnol": {
    "roster": 42,
    "season": "2027",
+   "coaches": 5
+  },
+  "pennsylvaniastateuniversitya": {
+   "roster": "directory entry (not scraped)",
+   "season": "2026",
    "coaches": 5
   },
   "pennsylvaniastateuniversityb": {
    "roster": "directory entry (not scraped)",
    "season": "2026",
    "coaches": 4
-  },
-  "pennsylvaniastateuniversitya": {
-   "roster": "directory entry (not scraped)",
-   "season": "2026",
-   "coaches": 5
   },
   "pennsylvaniastateuniversityh": {
    "roster": 46,
@@ -3784,15 +3782,15 @@
    "season": "2027",
    "coaches": 5
   },
-  "rivieruniversity": {
-   "roster": 45,
-   "season": "2026",
-   "coaches": 7
-  },
   "roanokecollege": {
    "roster": 34,
    "season": "2027",
    "coaches": 4
+  },
+  "rivieruniversity": {
+   "roster": 45,
+   "season": "2026",
+   "coaches": 7
   },
   "universityofrochester": {
    "roster": 32,
@@ -3814,30 +3812,30 @@
    "season": "2026",
    "coaches": 5
   },
-  "rosehulmaninstituteoftechnol": {
-   "roster": 35,
-   "season": "2027",
-   "coaches": 2
-  },
   "stjohnfisheruniversity": {
    "roster": 40,
    "season": "2026",
    "coaches": 5
+  },
+  "rosehulmaninstituteoftechnol": {
+   "roster": 35,
+   "season": "2027",
+   "coaches": 2
   },
   "saintjohnsuniversity": {
    "roster": 54,
    "season": "2026",
    "coaches": 8
   },
-  "saintjosephscollegeofmaine": {
-   "roster": 44,
-   "season": "2027",
-   "coaches": "none parsed, kept last copy"
-  },
   "stlawrenceuniversity": {
    "roster": 43,
    "season": "2026",
    "coaches": 2
+  },
+  "saintjosephscollegeofmaine": {
+   "roster": 44,
+   "season": "2027",
+   "coaches": "none parsed, kept last copy"
   },
   "stmaryscollegeofmaryland": {
    "roster": 44,
@@ -3859,73 +3857,73 @@
    "season": "2027",
    "coaches": 5
   },
-  "thecollegeofstscholastica": {
-   "roster": 53,
-   "season": "2026",
-   "coaches": 5
-  },
   "saintvincentcollege": {
    "roster": 49,
    "season": "2026",
    "coaches": 1
+  },
+  "thecollegeofstscholastica": {
+   "roster": 53,
+   "season": "2026",
+   "coaches": 5
   },
   "salisburyuniversity": {
    "roster": 38,
    "season": "2026",
    "coaches": 5
   },
-  "salvereginauniversity": {
-   "roster": 48,
-   "season": "2026",
-   "coaches": 6
-  },
   "universityofscranton": {
    "roster": 50,
    "season": "2026",
    "coaches": 8
+  },
+  "salvereginauniversity": {
+   "roster": 48,
+   "season": "2026",
+   "coaches": 6
   },
   "shenandoahuniversity": {
    "roster": 62,
    "season": "2026",
    "coaches": 7
   },
-  "skidmorecollege": {
-   "roster": 33,
+  "universityofsouthernmaine": {
+   "roster": 41,
    "season": "2026",
-   "coaches": 4
+   "coaches": 8
   },
   "southernvirginiauniversity": {
    "roster": 38,
    "season": "2026",
    "coaches": 3
   },
-  "universityofsouthernmaine": {
-   "roster": 41,
+  "skidmorecollege": {
+   "roster": 33,
    "season": "2026",
-   "coaches": 8
+   "coaches": 4
+  },
+  "spaldinguniversity": {
+   "roster": "unreachable"
   },
   "southwesternuniversity": {
    "roster": 40,
    "season": "2026",
    "coaches": "none parsed, kept last copy"
   },
-  "spaldinguniversity": {
-   "roster": "unreachable"
-  },
   "springfieldcollege": {
    "roster": 39,
    "season": "2026",
    "coaches": 5
   },
-  "stevensinstituteoftechnology": {
-   "roster": 40,
-   "season": "2026",
-   "coaches": 9
-  },
   "stevensonuniversity": {
    "roster": 42,
    "season": "2026",
    "coaches": 6
+  },
+  "stevensinstituteoftechnology": {
+   "roster": 40,
+   "season": "2026",
+   "coaches": 9
   },
   "thielcollege": {
    "roster": 37,
@@ -3947,15 +3945,15 @@
    "season": "2026",
    "coaches": 3
   },
-  "trinitycollege": {
-   "roster": 32,
-   "season": "2026",
-   "coaches": 5
-  },
   "trineuniversity": {
    "roster": 63,
    "season": "2026",
    "coaches": 4
+  },
+  "trinitycollege": {
+   "roster": 32,
+   "season": "2026",
+   "coaches": 5
   },
   "tuftsuniversity": {
    "roster": 42,
@@ -3972,25 +3970,25 @@
    "season": "2026",
    "coaches": 4
   },
-  "unitedstatescoastguardacadem": {
-   "roster": 34,
-   "season": "2026",
-   "coaches": 3
-  },
   "unitedstatesmerchantmarineac": {
    "roster": 35,
    "season": "2026",
    "coaches": 5
   },
-  "ursinuscollege": {
-   "roster": 47,
+  "unitedstatescoastguardacadem": {
+   "roster": 34,
    "season": "2026",
-   "coaches": 5
+   "coaches": 3
   },
   "uticauniversity": {
    "roster": 60,
    "season": "2026",
    "coaches": 8
+  },
+  "ursinuscollege": {
+   "roster": 47,
+   "season": "2026",
+   "coaches": 5
   },
   "vassarcollege": {
    "roster": 27,
@@ -4007,15 +4005,20 @@
    "season": "2026",
    "coaches": "none parsed, kept last copy"
   },
+  "washingtonjeffersoncollege": {
+   "roster": 53,
+   "season": "2026",
+   "coaches": 10
+  },
   "washingtonandleeuniversity": {
    "roster": 29,
    "season": "2026",
    "coaches": 2
   },
-  "washingtonjeffersoncollege": {
-   "roster": 53,
+  "washingtonuniversityinstloui": {
+   "roster": 37,
    "season": "2026",
-   "coaches": 10
+   "coaches": 5
   },
   "washingtoncollege": {
    "roster": 46,
@@ -4027,35 +4030,30 @@
    "season": "2027",
    "coaches": "none parsed, kept last copy"
   },
-  "washingtonuniversityinstloui": {
-   "roster": 37,
-   "season": "2026",
-   "coaches": 5
-  },
   "websteruniversity": {
    "roster": 0,
    "season": "2027",
    "coaches": 5
-  },
-  "westernconnecticutstateunive": {
-   "roster": 36,
-   "season": "2026",
-   "coaches": 6
   },
   "wesleyanuniversity": {
    "roster": 39,
    "season": "2026",
    "coaches": 4
   },
-  "wheatoncollege": {
-   "roster": 41,
+  "westernconnecticutstateunive": {
+   "roster": 36,
    "season": "2026",
-   "coaches": 7
+   "coaches": 6
   },
   "westernnewenglanduniversity": {
    "roster": 54,
    "season": "2026",
    "coaches": 5
+  },
+  "wheatoncollege": {
+   "roster": 41,
+   "season": "2026",
+   "coaches": 7
   },
   "whitmancollege": {
    "roster": 42,
@@ -4112,15 +4110,15 @@
    "season": "2027",
    "coaches": 5
   },
-  "universityofwisconsinstevens": {
-   "roster": 43,
-   "season": "2026",
-   "coaches": 4
-  },
   "universityofwisconsinriverfa": {
    "roster": 41,
    "season": "2026",
    "coaches": 8
+  },
+  "universityofwisconsinstevens": {
+   "roster": 43,
+   "season": "2026",
+   "coaches": 4
   },
   "universityofwisconsinstoutpo": {
    "roster": 23,
@@ -4142,6 +4140,11 @@
    "season": "2026",
    "coaches": "none parsed, kept last copy"
   },
+  "yeshivauniversity": {
+   "roster": 33,
+   "season": "2026",
+   "coaches": 5
+  },
   "yorkcollegeofpennsylvania": {
    "roster": 40,
    "season": "2026",
@@ -4151,11 +4154,6 @@
    "roster": 40,
    "season": "2026",
    "coaches": 2
-  },
-  "yeshivauniversity": {
-   "roster": 33,
-   "season": "2026",
-   "coaches": 5
   },
   "andrewcollege": {
    "roster": 44,
@@ -4177,19 +4175,24 @@
    "season": "2027",
    "coaches": 2
   },
+  "arkansasbaptistcollege": {
+   "roster": 19,
+   "season": "2025"
+  },
   "betheluniversityin": {
    "roster": 37,
    "season": "2027",
    "coaches": 2
   },
-  "arkansasbaptistcollege": {
-   "roster": 19,
-   "season": "2025"
-  },
   "betheluniversitytn": {
    "roster": 28,
    "season": "2027",
    "coaches": 3
+  },
+  "bluefielduniversity": {
+   "roster": 30,
+   "season": "2026",
+   "coaches": 4
   },
   "bismarckstatecollege": {
    "roster": 39,
@@ -4206,11 +4209,6 @@
    "season": "2027",
    "coaches": 5
   },
-  "bluefielduniversity": {
-   "roster": 30,
-   "season": "2026",
-   "coaches": 4
-  },
   "bushnelluniversity": {
    "roster": 49,
    "season": "2027",
@@ -4221,20 +4219,20 @@
    "season": "2026",
    "coaches": 4
   },
-  "carolinauniversity": {
-   "roster": 58,
+  "centralchristiancollegeofkan": {
+   "roster": 66,
    "season": "2026",
-   "coaches": 5
+   "coaches": 4
   },
   "columbiacollegemo": {
    "roster": 42,
    "season": "2027",
    "coaches": 5
   },
-  "centralchristiancollegeofkan": {
-   "roster": 66,
+  "carolinauniversity": {
+   "roster": 58,
    "season": "2026",
-   "coaches": 4
+   "coaches": 5
   },
   "columbiainternationalunivers": {
    "roster": 46,
@@ -4251,6 +4249,11 @@
    "season": "2027",
    "coaches": 3
   },
+  "dakotastateuniversity": {
+   "roster": 47,
+   "season": "2026",
+   "coaches": 5
+  },
   "dickinsonstateuniversity": {
    "roster": 42,
    "season": "2027",
@@ -4260,11 +4263,6 @@
    "roster": 44,
    "season": "2026",
    "coaches": 4
-  },
-  "dakotastateuniversity": {
-   "roster": 47,
-   "season": "2026",
-   "coaches": 5
   },
   "easternoregonuniversity": {
    "roster": 47,
@@ -4281,11 +4279,6 @@
    "season": "2026",
    "coaches": 6
   },
-  "floridamemorialuniversity": {
-   "roster": 34,
-   "season": "2026",
-   "coaches": 3
-  },
   "floridanationaluniversity": {
    "roster": 82,
    "season": "2026",
@@ -4293,6 +4286,11 @@
   },
   "freedhardemanuniversity": {
    "roster": 40,
+   "season": "2026",
+   "coaches": 3
+  },
+  "floridamemorialuniversity": {
+   "roster": 34,
    "season": "2026",
    "coaches": 3
   },
@@ -4371,11 +4369,6 @@
    "season": "2027",
    "coaches": 6
   },
-  "kansaswesleyanuniversity": {
-   "roster": 56,
-   "season": "2027",
-   "coaches": 5
-  },
   "keiseruniversity": {
    "roster": 38,
    "season": "2026",
@@ -4385,6 +4378,11 @@
    "roster": 44,
    "season": "2027",
    "coaches": 7
+  },
+  "kansaswesleyanuniversity": {
+   "roster": 56,
+   "season": "2027",
+   "coaches": 5
   },
   "lewisclarkstatecollege": {
    "roster": 15,
@@ -4411,15 +4409,15 @@
    "season": "2026",
    "coaches": 5
   },
-  "mcphersoncollege": {
-   "roster": 40,
-   "season": "2027",
-   "coaches": 5
-  },
   "marianuniversityin": {
    "roster": 41,
    "season": "2027",
    "coaches": 8
+  },
+  "mcphersoncollege": {
+   "roster": 40,
+   "season": "2027",
+   "coaches": 5
   },
   "midamericachristianuniversit": {
    "roster": 90,
@@ -4460,24 +4458,24 @@
    "season": "2026",
    "coaches": 9
   },
-  "newcollegeofflorida": {
-   "roster": 50,
-   "season": "2026",
-   "coaches": 5
-  },
   "mountmartyuniversity": {
    "roster": 59,
    "season": "2027",
    "coaches": 7
   },
-  "oakwooduniversity": {
-   "roster": 23,
-   "season": "2026"
+  "newcollegeofflorida": {
+   "roster": 50,
+   "season": "2026",
+   "coaches": 5
   },
   "northwesterncollege": {
    "roster": 54,
    "season": "2027",
    "coaches": 4
+  },
+  "oakwooduniversity": {
+   "roster": 23,
+   "season": "2026"
   },
   "oklahomacityuniversity": {
    "roster": 33,
@@ -4489,15 +4487,15 @@
    "season": "2026",
    "coaches": 9
   },
-  "oregontech": {
-   "roster": 42,
-   "season": "2027",
-   "coaches": 6
-  },
   "ottawauniversity": {
    "roster": 66,
    "season": "2027",
    "coaches": 8
+  },
+  "oregontech": {
+   "roster": 42,
+   "season": "2027",
+   "coaches": 6
   },
   "parkuniversity": {
    "roster": 45,
@@ -4514,11 +4512,6 @@
    "season": "2026",
    "coaches": 4
   },
-  "universityofstfrancis": {
-   "roster": 49,
-   "season": "2027",
-   "coaches": 5
-  },
   "universityofsaintmary": {
    "roster": 35,
    "season": "2027",
@@ -4528,6 +4521,11 @@
    "roster": 40,
    "season": "2026",
    "coaches": 9
+  },
+  "universityofstfrancis": {
+   "roster": 49,
+   "season": "2027",
+   "coaches": 5
   },
   "saintxavieruniversity": {
    "roster": 49,
@@ -4544,14 +4542,14 @@
    "season": "2026",
    "coaches": 4
   },
-  "universityofthesouthwest": {
-   "roster": 59,
-   "season": "2026",
-   "coaches": 4
-  },
   "southwesterncollege": {
    "roster": 72,
    "season": "2027",
+   "coaches": 4
+  },
+  "universityofthesouthwest": {
+   "roster": 59,
+   "season": "2026",
    "coaches": 4
   },
   "springarboruniversity": {
@@ -4569,15 +4567,15 @@
    "season": "2025",
    "coaches": 2
   },
-  "thomasuniversity": {
-   "roster": 63,
-   "season": "2026",
-   "coaches": 5
-  },
   "utsouthern": {
    "roster": 33,
    "season": "2027",
    "coaches": 3
+  },
+  "thomasuniversity": {
+   "roster": 63,
+   "season": "2026",
+   "coaches": 5
   },
   "unitedstatessportsuniversity": {
    "roster": 33,
@@ -4598,15 +4596,15 @@
    "season": "2025",
    "coaches": "none parsed, kept last copy"
   },
-  "warnerpacificuniversity": {
-   "roster": 45,
-   "season": "2026",
-   "coaches": 5
-  },
   "warneruniversity": {
    "roster": 66,
    "season": "2026",
    "coaches": 4
+  },
+  "warnerpacificuniversity": {
+   "roster": 45,
+   "season": "2026",
+   "coaches": 5
   },
   "waylandbaptistuniversity": {
    "roster": 40,
@@ -4637,11 +4635,6 @@
    "season": "2027",
    "coaches": "none parsed, kept last copy"
   },
-  "coloradonorthwesterncommunit": {
-   "roster": 29,
-   "season": "2025",
-   "coaches": 3
-  },
   "floridapoly": {
    "roster": 35,
    "season": "2027",
@@ -4650,6 +4643,11 @@
   "wallacecommunitycollege": {
    "roster": 34,
    "season": "2026",
+   "coaches": 3
+  },
+  "coloradonorthwesterncommunit": {
+   "roster": 29,
+   "season": "2025",
    "coaches": 3
   },
   "polkstatecollege": {
@@ -4695,11 +4693,6 @@
    "season": "2027",
    "coaches": 5
   },
-  "alleganycollegeofmaryland": {
-   "roster": 43,
-   "season": "2026",
-   "coaches": 4
-  },
   "harfordcommunitycollege": {
    "roster": 29,
    "season": "2026",
@@ -4709,6 +4702,11 @@
    "roster": 27,
    "season": "2025",
    "coaches": 2
+  },
+  "alleganycollegeofmaryland": {
+   "roster": 43,
+   "season": "2026",
+   "coaches": 4
   },
   "jonescountyjuniorcollege": {
    "roster": 20,
@@ -4730,20 +4728,20 @@
    "season": "2027",
    "coaches": 5
   },
-  "murraystatecollege": {
-   "roster": 49,
-   "season": "2026",
-   "coaches": 4
+  "universityofsouthcarolinasal": {
+   "roster": 0,
+   "season": null,
+   "coaches": "none parsed, kept last copy"
   },
   "universityofsouthcarolinalan": {
    "roster": 34,
    "season": "2025",
    "coaches": 3
   },
-  "universityofsouthcarolinasal": {
-   "roster": 0,
-   "season": null,
-   "coaches": "none parsed, kept last copy"
+  "murraystatecollege": {
+   "roster": 49,
+   "season": "2026",
+   "coaches": 4
   },
   "blinncollege": {
    "roster": 36,
@@ -4764,24 +4762,24 @@
    "season": "2027",
    "coaches": 4
   },
+  "highlandcommunitycollege": {
+   "roster": 37,
+   "season": "2025",
+   "coaches": 2
+  },
   "citycollegesofchicagokennedy": {
    "roster": 31,
    "season": null
   },
-  "highlandcommunitycollege": {
-   "roster": 37,
-   "season": "2025",
+  "highlandcommunitycollegeks": {
+   "roster": 41,
+   "season": "2026",
    "coaches": 2
   },
   "vernoncollege": {
    "roster": 0,
    "season": null,
    "coaches": "none parsed, kept last copy"
-  },
-  "highlandcommunitycollegeks": {
-   "roster": 41,
-   "season": "2026",
-   "coaches": 2
   },
   "northarkansascollege": {
    "roster": 56,
@@ -4791,25 +4789,25 @@
    "roster": 0,
    "season": null
   },
-  "heartlandcommunitycollege": {
-   "roster": 37,
-   "season": "2027",
-   "coaches": 4
-  },
   "danvilleareacommunitycollege": {
    "roster": 37,
    "season": "2026",
    "coaches": 2
   },
-  "parklandcollege": {
+  "heartlandcommunitycollege": {
    "roster": 37,
-   "season": "2026",
-   "coaches": 2
+   "season": "2027",
+   "coaches": 4
   },
   "mortoncollege": {
    "roster": 34,
    "season": "2026",
    "coaches": 3
+  },
+  "parklandcollege": {
+   "roster": 37,
+   "season": "2026",
+   "coaches": 2
   },
   "prairiestatecollege": {
    "roster": 32,
@@ -4849,11 +4847,6 @@
    "season": "2026",
    "coaches": 1
   },
-  "northlandcommunitytechnicalc": {
-   "roster": 34,
-   "season": "2025",
-   "coaches": 2
-  },
   "jolietjuniorcollege": {
    "roster": 45,
    "season": "2026",
@@ -4864,44 +4857,54 @@
    "season": "2026",
    "coaches": 3
   },
+  "northlandcommunitytechnicalc": {
+   "roster": 34,
+   "season": "2025",
+   "coaches": 2
+  },
   "bronxcommunitycollege": {
    "roster": 21,
    "season": "2026",
    "coaches": 2
-  },
-  "kingsboroughcommunitycollege": {
-   "roster": 0,
-   "season": "2026",
-   "coaches": 8
   },
   "nassaucommunitycollege": {
    "roster": 25,
    "season": "2026",
    "coaches": 3
   },
+  "kingsboroughcommunitycollege": {
+   "roster": 0,
+   "season": "2026",
+   "coaches": 8
+  },
   "onondagacommunitycollege": {
    "roster": 40,
    "season": "2026",
    "coaches": 8
-  },
-  "queensboroughcommunitycolleg": {
-   "roster": 21,
-   "season": "2026",
-   "coaches": 2
   },
   "northamptoncommunitycollege": {
    "roster": 33,
    "season": "2025",
    "coaches": 2
   },
+  "queensboroughcommunitycolleg": {
+   "roster": 21,
+   "season": "2026",
+   "coaches": 2
+  },
+  "columbiabasincollege": {
+   "roster": 42,
+   "season": "2027",
+   "coaches": 3
+  },
   "universityofconnecticutavery": {
    "roster": 25,
    "season": "2026",
    "coaches": 7
   },
-  "columbiabasincollege": {
-   "roster": 42,
-   "season": "2027",
+  "graysharborcollege": {
+   "roster": 28,
+   "season": "2026",
    "coaches": 3
   },
   "lowercolumbiacollege": {
@@ -4909,23 +4912,18 @@
    "season": "2027",
    "coaches": 3
   },
-  "graysharborcollege": {
-   "roster": 28,
-   "season": "2026",
-   "coaches": 3
-  },
   "southwesternoregoncommunityc": {
    "roster": 26,
    "season": "2025",
    "coaches": 2
   },
-  "americanrivercollege": {
-   "roster": "directory entry (not scraped)"
-  },
   "wenatcheevalleycollege": {
    "roster": 45,
    "season": "2025",
    "coaches": "none parsed, kept last copy"
+  },
+  "americanrivercollege": {
+   "roster": "directory entry (not scraped)"
   },
   "yakimavalleycollege": {
    "roster": 48,
@@ -6774,22 +6772,22 @@
   "mtsanantoniocollege": {
    "roster": "unreachable"
   },
-  "oliveharveycollege": {
-   "roster": 31,
-   "season": null
-  },
   "sanbernardinovalleycollege": {
    "roster": "unreachable"
   },
-  "grovecitycollege": {
-   "roster": 35,
-   "season": "2026",
-   "coaches": 4
+  "oliveharveycollege": {
+   "roster": 31,
+   "season": null
   },
   "illinoisinstituteoftechnolog": {
    "roster": 37,
    "season": "2027",
    "coaches": 3
+  },
+  "grovecitycollege": {
+   "roster": 35,
+   "season": "2026",
+   "coaches": 4
   }
  }
 }
